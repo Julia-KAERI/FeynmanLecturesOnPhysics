@@ -6,7 +6,7 @@ crossref:
   chapters: true
 ---
 
-{{< include ../../../latexmacros.qmd >}} 
+{{< include ../../latexmacros.qmd >}} 
 
 ## II.1 전기와 자기
 

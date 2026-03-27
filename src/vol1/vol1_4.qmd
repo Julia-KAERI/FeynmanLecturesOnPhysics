@@ -6,7 +6,7 @@ crossref:
   chapters: true
 ---
 
-{{< include ../../../latexmacros.qmd >}} 
+{{< include ../../latexmacros.qmd >}} 
 
 ## I.39. 기체 운동론 {#sec-FLP_1_39}
 

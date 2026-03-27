@@ -7,7 +7,7 @@ crossref:
 ---
 
 
-{{< include ../../../latexmacros.qmd >}} 
+{{< include ../../latexmacros.qmd >}} 
 
 ## I.2. 기본적인 물리 {#sec-FLP_1_2}
 

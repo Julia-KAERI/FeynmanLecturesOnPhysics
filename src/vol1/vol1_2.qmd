@@ -7,7 +7,7 @@ crossref:
 ---
 
 
-{{< include ../../../latexmacros.qmd >}} 
+{{< include ../../latexmacros.qmd >}} 
 
 
 ## I.15. 특수 상대성 이론 {#sec-FLP_1_15}

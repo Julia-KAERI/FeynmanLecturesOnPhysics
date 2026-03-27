@@ -7,7 +7,7 @@ crossref:
 ---
 
 
-{{< include ../../../latexmacros.qmd >}} 
+{{< include ../../latexmacros.qmd >}} 
 
 
 ## I.37 Quantum Behavior {#sec-FLP_1_37}
