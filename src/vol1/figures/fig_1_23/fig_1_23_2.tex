@@ -1,0 +1,76 @@
+
+\documentclass[border=10pt]{standalone}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+    \def\w0{2.0}
+    \def\g{0.3}
+    \def\k1{1.84}
+    \def\l1{2.15}
+    \begin{scope}
+        \begin{axis}
+        [
+            axis line style={shorten >=-10pt, shorten <=-10pt},
+            axis y line=center,
+            axis x line=middle,
+            no markers,
+            % ytick={1.6 ,1.85},
+            yticklabels=\empty,
+            xtick={0.5, 1.0, 1.5, \w0, 2.5, 3.0, 3.5},
+            xticklabels={, , , $\omega_0$, , ,},
+            xlabel style={
+                        anchor=west,
+                        at={(ticklabel* cs:1.0)},
+                        xshift=10pt
+            },
+                    ylabel style={
+                        anchor=south,
+                        at={(ticklabel* cs:1.0)},
+                        yshift=10pt
+                    },
+            xlabel=$\omega$,ylabel=$\rho^2$,
+        ]
+        \addplot+[blue, thick, domain=0:4, samples=250] {((\g^2)*(\w0^2))/((\x^2-\w0^2)^2+(\g^2)*(\w0^2))};
+        \draw[red] (axis cs:{\k1}, 0.45) -- (axis cs:{\k1}, 0.55);
+        \draw[red] (axis cs:{\l1}, 0.45) -- (axis cs:{\l1}, 0.55);
+        \draw[red, -latex] (axis cs:{\k1-0.3}, 0.5) -- (axis cs:{\k1}, 0.5);
+        \draw[red, -latex] (axis cs:{\l1+0.3}, 0.5) -- (axis cs:{\l1}, 0.5);
+        \node[red] at (\w0, 0.5) {$\gamma$};
+        \end{axis}
+    \end{scope}
+    \begin{scope}[xshift=250]
+        \begin{axis}
+        [
+            axis line style={shorten >=-10pt, shorten <=1pt},
+            axis y line=center,
+            axis x line shift = -100,
+            no markers,
+            ymin = -190,
+            ymax = 10,
+            xmin = 0,
+            xmax = 4,
+            ytick={0, -90, -180},
+            yticklabels={$0$, $\pi/2$, $\pi$},
+            xtick={0.5, 1.0, 1.5, \w0, 2.5, 3.0, 3.5},
+            xticklabels={, , , $\omega_0$, , ,},
+            xlabel style={
+                        anchor=west,
+                        at={(ticklabel* cs:1.0)},
+                        xshift=10pt
+            },
+                    ylabel style={
+                        anchor=south,
+                        at={(ticklabel* cs:1.0)},
+                        yshift=10pt
+                    },
+            xlabel=$\omega$,ylabel=$\theta$,
+        ]
+        \addplot+[blue, thick, domain=0:4, samples=250] {-atan2(\g*\x, (\w0^2-\x^2) )};
+
+        \end{axis}
+    \end{scope}
+
+\end{tikzpicture}
+\end{document}

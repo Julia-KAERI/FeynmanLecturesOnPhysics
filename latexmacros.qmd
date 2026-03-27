@@ -1,0 +1,51 @@
+---
+format: html
+---
+
+::: {.hidden}
+
+%\newcommand*{\e}{\mathrm{e}}
+%\renewcommand{\P}{\mathrm{P}}
+
+%\newcommand{\bf}[1]{\boldsymbol{#1}}
+\newcommand{\bftilde}[1]{\bf{\widetilde{{#1}}}}
+
+\newcommand{\dbar}{{d\hspace{-0.08em}\bar{}\hspace{0.1em}}}
+
+
+
+
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\bfhat}{\bf{}}
+
+
+
+\def\Xint#1{\mathchoice
+   {\XXint\displaystyle\textstyle{#1}}%
+   {\XXint\textstyle\scriptstyle{#1}}%
+   {\XXint\scriptstyle\scriptscriptstyle{#1}}%
+   {\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+   \!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+     \vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+
+
+$$
+\DeclarePairedDelimiters{\set}{\{}{\}}
+\DeclareMathOperator*{\argmax}{argmax}
+$$
+
+
+:::

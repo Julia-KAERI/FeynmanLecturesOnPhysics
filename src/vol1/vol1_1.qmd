@@ -1,0 +1,1212 @@
+---
+title: "$I$-1 : 고전역학"
+number-sections: true
+number-depth: 0
+crossref:
+  chapters: true
+---
+
+
+{{< include ../../../latexmacros.qmd >}} 
+
+## I.2. 기본적인 물리 {#sec-FLP_1_2}
+
+### I.2.1 소개 {#sec-FLP_1_2_1}
+
+</br>
+
+### I.2.2 1920 년 이전의 물리학 {#sec-FLP_1_2_2}
+
+- 1920 년 이전의 우리의 세계관
+  - 우주가 펼쳐지는 무대는 3차원 공간이며 시간이라는 매개체 속에서 사물이 변화한다.
+  - 이 무대의 elements 는 입자(예를 들면 원자) 이며 두가지 성질을 가진다.
+
+
+- 입자의 두가지 성질
+  1. 관성 : 힘이 작용하지 않는다면 입자는 하던 운동을 계속한다. 
+  2. 힘 : 
+     1. 여러 원자들의 복잡하고 상이한 조합을 유지하는 상호작용.
+     2. 중력 
+
+</br>
+
+## I.9. 뉴턴의 동역학 법칙 {#sec-FLP_1_9}
+
+::: {.callout-important icon="false"}
+
+#### **갈릴레오의 관성의 법칙** 혹은 **뉴턴의 제 1 운동법칙**
+
+물체 하나만 존재한다면(if an object is left alone), 운동하고 있는 물제는 직선상의 등속운동을 하고 정지해 있는 물체는 정지해 있다. 이러한 성질을 **관성(inertia)** 라고 한다.
+
+:::
+
+
+::: {.callout-note icon="false"}
+
+#### **운동량**
+
+운동량 $\bf{p}$ 는 질량 $m$ 과 속도 $\bf{v}$ 의 곱으로 정의된다.
+
+$$
+\bf{p}:=m\bf{v}.
+$$ {#eq-FLP_1_definition_of_momentum}
+:::
+
+::: {.callout-important icon="false"}
+
+#### **뉴턴의 제 2 운동법칙**
+
+운동량 $\bf{p}=m\bf{v}$ 의 시간에 대한 변화량이 힘 $\bf{F}$ 이다. 
+$$
+\bf{F}=\dfrac{d\bf{p}}{dt} = \dfrac{d}{dt}(m\bf{v}).
+$$ {#eq-FLP_newton_2nd_law}
+
+:::
+
+
+::: {.callout-note icon="false"}
+
+#### **보편 중력**
+
+각각의 질량이 $m,\,M$ 인 두 입자가 각각 $\bf{r}_1,\,\bf{r}_2$ 에 위치했을 때 $m$ 인 입자가 느끼는 힘 $\bf{F}_m$ 은 다음과 같다.
+
+$$
+\bf{F}_m = \dfrac{GmM \hat{\bf{r}}}{r^3} = \dfrac{GmM(\bf{r}_2-\bf{r}_1)}{\|\bf{r}_2-\bf{r}_1\|^3}.
+$$
+
+여기서 $\bf{r}=\bf{r}_2-\bf{r}_1,\,r=\|\bf{r}\|,\, \hat{\bf{r}}=\bf{r}/r$ 이다. 
+
+:::
+
+</br>
+
+## I.10. 운동량 보존 {#sec-FLP_1_10}
+
+### I.10-1 뉴턴의 제 3 운동법칙 {#sec-FLP_1_10_1}
+
+- 뉴턴이 자신의 물리법칙을 발표했을 때 보편중력에 대한 정확한 식을 알고 있었으며, 보편 중력 이외의 다른 힘에 대해서는 정확한 식을 알고 있지는 않았다. 그러나 모든 힘이 따라야 할 하나의 규칙을 알고 있었으며 이것을 운동법칙으로 표현한다.
+
+
+::: {.callout-important icon="false"}
+
+#### **뉴턴의 제 3 운동법칙**
+
+한 입자 $A$ 의 존재에 의해 다른 입자 $B$ 에 힘 $\bf{F}$ 가 가해질 때(작용) $B$ 의 존재에 의해 $A$ 에 $-\bf{F}$ 의 힘이 가해진다. 
+
+:::
+
+- 뉴턴은 작용과 반작용이 같은 직선상에 존재한다고 생각했지만(작용-반작용의 강한 조건), 같은 직선상에 존재하지 않는다는 것이 밝혀 졌다. 다만 $\bf{F}$ 와 $-\bf{F}$ 의 관계인 것은 유지된다(작용-반작용의 약한 조건).
+
+</br>
+
+### I.10-2 운동량 보존 {#sec-FLP_1_10_2}
+
+$N$ 개의 입자의 경우를 생각하자. $i$ 입자에 의해 $j$ 입자가 받는 힘을 $\bf{F}_{ij}$ 라고 하고 $i$ 번째 입자의 운동량을 $\bf{p}_i$ 라고 하자. 그리고 이 $N$ 개의 입자의 상호작용 이외의 힘은 작용하지 않는다고 하자. 뉴튼의 제 2 운동법칙에 의해
+
+$$
+\dfrac{d\bf{p}_i}{dt} = \sum_{j=1,\, j\ne i}^N \bf{F}_{ji}
+$$ {#eq-FLP_1_10_1}
+
+이다. 이 계의 총 운동량 $\bf{p}_\text{tot}$ 를 모든 입자의 운동량의 합으로 정의하자.
+
+$$
+\bf{p}_\text{tot} := \sum_{i=1}^N \bf{p}_i.
+$$
+
+뉴튼의 제 3 운동법칙에 의해 $\bf{F}_{ij}+\bf{F}_{ji}=0$ 임을 이용하면 아래와 같이 $d\bf{p}_\text{tot}/dt=0$ 임을 보일 수 있다.
+
+$$
+\dfrac{d\bf{p}_\text{tot}}{dt}=\dfrac{d}{dt}\sum_{i=1}^N \bf{p}_i = \sum_{i=1}^N \sum_{j=1,\,i\ne i}^N \bf{F}_{ij} = \sum_{i=1}^N \sum_{j=1}^{i-1} ({\bf{F}_{ij}+\bf{F}_{ji}}) = 0.
+$$ {#eq-FLP_1_10_2}
+
+즉 외부로부터 힘이 작용하지 않는 계의 입자들의 운동량의 합은 항상 일정하다.
+
+$$
+\bf{p}_\text{tot} = \sum_{i=1}^N m_i\bf{v}_i = \text{constant}.
+$$ {#eq-FLP_1_10_3}
+
+
+뉴튼의 제 2 운동법칙으로부터 **갈릴레이 상대성 원리(Galilean relativity)** 를 얻을 수 있다.
+
+
+::: {.callout-important icon="false"}
+
+#### **갈릴레이 상대성 원리**
+
+정지한 기준틀과 이 기준틀에 대해 등속직선운동을 하는 기준틀에 대해 물리 법칙은 동일하다. 
+
+:::
+
+</br>
+
+### I.10-3 운동량은 보존된다! {#sec-FLP_1_30_3}
+
+</br>
+
+### I.10-4 운동량과 에너지 {#sec-FLP_1_30_4}
+
+- 운동량 보존
+- 운동에너지가 보존되는 충돌은 탄성 충돌. 
+- 운동 에너지 이외에 열과 다른 에너지가 관계됨.
+
+</br>
+
+### I.10-5 상대론적 운동량 {#sec-FLP_1_10_5}
+
+상대성 이론에서의 운동량 $\bf{p}_\text{rel}$ 은 아래와 같이 정의된다. 
+
+$$
+\bf{p}_\text{rel} := \dfrac{m\bf{v}}{\sqrt{1-\|\bf{v}\|^2/c^2}}.
+$$ {#eq-FLP_1_10_8}
+
+
+- 상대성 이론에서의 중요한 가정은 상호작용이 전달되는데 시간이 걸린다는 것이다. 두 물체의 상호작용중에 한 물체의 운동량이 변했다면 이 변화가 다른 물체에게 전달되는데 시간이 지연되며, 따라서 이 지연되는 순간 사이에서는 두 물체의 운동량은 보존되지 않는다. 이 때 우리는 장(field) 의 운동량을 고려해야 한다. 즉 두 물체의 운동량과 장의 운동량의 합은 항상 보존된다. 그렇다면 중력에서는? 즉 일반상대론에서는?
+- (ChatGPT 에 의하면) 일반상대성 이론에서 중력은 전자기장과는 달리 시공간 위의 장이 아니라 시공간의 기하 자체이다. 이로부터 중력에 대한 에너지 운동량 텐서는 좌독립적이며 국소적으로 깔끔하게 정의 할 수 없다는 결론이 나온다. 일단 여기까지.. 파인만이 중력에 대해 언급하지 않은것은 이 내용이 어렵기 때문
+- 양자역학에서는 입자의 속도를 명확히 정의 할 수 없으며, 따라서 운동량은 더이상 입자의 질량과 속도의 곱이 아니다. 그럼에도 불구하고 양자역학에서는 입자의 운동량이 정의되며 운동량 보존도 성립한다. 
+
+</br>
+
+## I.12 힘의 성질 {#sec-FLP_1_12}
+
+### I.12-1 힘이란 무엇인가? {#sec-FLP_1_12_1}
+
+- 힘의 본질에 대한 질문
+
+- 뉴턴의 제 2 법칙 $\bf{F}=m\bf{a}= d\bf{p}/dt$ 에서 일단 우리는 질량, 속도, 가속도와 운동량에 대해 알고 있다. 그렇다면 힘 $\bf{F}$ 는?
+    - 일단 $\bf{F}=m\bf{a}$ 는 힘에 대한 정의가 아니다. 
+    - 힘은 운동량을 변화시키는 어떤 독립적이며 물질로부터 발생하는 성질이다.
+    - 힘을 정확히 정의하는 것은 Feynmann 에 따르면 불가능하다.
+
+- 뉴턴은 보편 중력에 대해서 제시했다. 만약 우주의 힘이 보편중력 뿐이라면 완결적인 이론이 되겠지만 중력 이외의 다른 힘도 존재한다는 것은 뉴턴도 알고 있었다(물질이 서로 달라붙는 힘, 화학반응, 표면장력 등).
+
+</br>
+
+### I.12-2 마찰력 {#sec-FLP_1_12_2}
+
+- 다양한 형태의 마찰력 
+  - 고속의 비행기에 작용하는 공기에 의한 마찰력 : $\propto v^2$,
+  - 유체 속에서 저속으로 움직이는 물체에 작용하는 마찰력 : $\propto v$,
+    - 예를 들어 비행기 전체에 작용하는 공기에 의한 마찰력은 각 부분에 작용하는 마찰력의 단순 결합으로 표현 할 수 없고 복잡한 관계가 얽혀 있다. 
+  - 미끌어짐 마찰력 : 고체 표면에서 천천히 움직이는 고체에서 발생하는 마찰력. 많은 경우 수직 항력(normal force) $N$ 에 비례하며 이 비례 계수를 *마찰 계수(coefficient of friction)* 라고 한다. 마찰 계수 $\mu$ 에 대해 아래와 같이 표현 할 수 있다. 
+    $$
+    F=\mu N.
+    $$ {#eq-FLP_1_12_1}
+   
+
+</b>
+
+### I.12-3 분자들 사이의 힘 {#sec-FLP_1_12_3}
+
+![파인만 물리학 강의 I. Fig. 12-2. 두 원자 사이에 작용하는 힘 $F$ 와 거리 $r$ 의 관계](figures/fig_1_12/fig_1_12_2.png){#fig-FLP_1_12_2 width=400}
+
+- 실험적으로 두 원자 사이의 힘과 거리의 관계는 대략 @fig-FLP_1_12_2 와 같다. 
+
+- 물 분자에서 양의 전하의 중심과 음의 전하의 중심의 위치는 다르다. 따라서 근처의 다른 분자는 상대적으로 큰 전기 쌍극자 사이의 힘이다. 산소 분자와 같이 대칭성이 큰 경우는 양의 전하와 음의 전하의 분포는 다르더라도 그 중심이 일치한다. 분자의 양전하와 음전하의 중심이 일치하지 않는 분자를 **극성 분자 (polar molecure)** 라고 하며 극성 분자에서 전하와 거리의 곱을 **쌍극자 모멘트(dipole moment)** 라고 한다.
+
+- **비극성 분자(nonpolar molecure)** 사이에도 거리가 상당히 먼 경우 $1/r^7$ 에 비례하는 인력이 작용한다. (이것을 이해하려면 양자역학이 필요하다.) 쌍극자가 존재하는 경우 분자 사이의 인력이 훨씬 크다. 두 분자 사이의 간격이 지나치게 가깝다면 두 분자 사이에 척력이 작용한다. 
+
+- 분자 사이의 거리가 $d$ 에 매우 가까울 때 상수 $k$ 에 대해 $F(r)=-k(r-d)$ 로 표현 할 수 있다. 이 때 $k = |F'(d)|$ 이다. 
+
+</br>
+
+### I.12-4 근본적인 힘과 장 {#sec-FLP_1_12_4}
+
+- 쿨롱 힘 : $\bf{F}=\dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2\hat{\bf{r}}}{r^2}$
+- 전기장 $\bf{E}(\bf{r},\,t)$ : 시간 $t$, 위치 $\bf{r}$ 에 단위전하가 받는 힘.
+- 따라서 $\bf{r}$ 에 위치한 전하 $q$ 가 받는 힘 $\bf{F}=q\bf{E}(\bf{r})$.
+- 중력장 $\bf{C}$ 도 마찬가지로 어떤 위치 $\bf{r}$ 에 위치한 단위질량이 받는 힘으로 정의 할 수 있음. 즉 $\bf{F}=m\bf{C}$. 
+
+- 이제 힘을 어떤 물리량과 장의 곱으로 표현할 수 있는다. 상황이 단순한 경우는 큰 의미가 없지만 상황이 복잡한 경우에는 매우 유용하다. 예를 들어 $\bf{E}$ 가 어제의 전하 $Q$ 의 위치에 의해 정해진다면 (실제로 그러하다) 우리는 어제의 전하 $Q$ 의 위치에 대해 추적할 수 있어야 하며 이것이 장의 성질이다. 힘이 복잡할수록 장은 현실적이 되며 물리량과 장을 분리하는것은 덜 인위적이 된다.
+  
+- 장을 이용하여 힘을 분석하려면 두가지가 필요하다.
+  - 물리량의 장에 대한 반응 $\longrightarrow$ 운동방정식.
+  - 장을 결정하는 법칙. 즉 장방정식(field equations).
+
+
+- 장의 성질
+  - **중첩 원리 (principle of superposition)** : $i$ 번째 source 에 의한 장이 $\bf{C}_i$ 라면 전체 source 에 의한 장은 $\sum_i \bf{C}_i$ 이다. 
+    - 전기장에 대해서는 항상 성립한다.
+    - 중력장에 대해서는 일반상대론까지 가면 중력장이 매우 큰 경우 성립하지 않는다.
+
+  
+</br>
+
+### I.12-5 관성력 또는 가짜힘 {#sec-FLP_1_12_5}
+
+- 비관성 기준틀에서 발생하는 가짜 힘.
+- 의사 힘은 항상 질량에 비례한다. $\bf{a}$ 의 가속도로 움직이는 비관성좌표계에서의 운동방정식은 아래와 같으며 여기서 $-m\bf{a}$ 가 관성력이다.
+  $$
+  m\dfrac{d^2\bf{x}}{dt^2} = \bf{F}-\underbrace{m\bf{a}}_{\text{pseudo force}}.
+  $$
+
+- 관성력과 중력은 질량에 비례하며 아인슈타인은 관성력과 중력은 구분할 수 없다는 **등가 원리 (equivalence principle)** 을 제안하였다.
+  
+</br>
+
+### I.12-6 핵력 {#sec-FLP_1_12_6}
+
+- 핵력의 범위 : ~ 10<sup>-15</sup> m.
+- 양자역학에서 다루는 영역에 들어가며 따라서 힘 보다는 상호작용으로 다루게 된다.
+- 매우 복잡하며 간단한 식으로 기술 될 수 없다.(적어도 현재까지는)
+
+</br>
+
+## I.13. 일과 포텐셜 에너지 (A) {#sec-FLP_1_13}
+
+### I.13-1 자유낙하하는 물체의 에너지 {#sec-FLP_1_13_1}
+
+::: {.callout-note icon="false"}
+
+#### **운동에너지**
+
+질량 $m$ 인 입자의 속도가 $\bf{v}$ 일 때 
+
+$$
+\dfrac{1}{2}m\|\bf{v}\|^2
+$$ {#eq-FLP_definition_of_kinetic_energy}
+
+를 입자의 **운동에너지 (kinetic energy)** 라고 한다.
+
+:::
+
+운동에너지 $T=mv^2/2$ 의 시간에 대한 변화량은 다음과 같다. 
+
+$$
+\dfrac{dT}{dt} = m\bf{v \cdot}\dfrac{d\bf{v}}{dt} = \bf{F \cdot v}
+$$ {#eq-FLP_1_13_7}
+
+::: {.callout-note icon="false"}
+
+#### **일률**
+
+외부에서 힘 $\bf{F}$ 가 속도 $\bf{v}$ 인 입자에 가해질 때 $\bf{F\cdot v}$ 를 **일률 (power)** 라고 한다.
+:::
+
+즉 @eq-FLOP_1_13_9 은 운동에너지의 변화율은 외부에서 가하지는 힘에 의한 일률과 같음을 의미한다. 이제 이 물체가 $[t_1,\,t_2]$ 의 시간 간격동안 $\bf{s}(t)$ 의 경로로 이동했다고 하자. $\bf{v} = d\bf{s}/dt$ 이므로
+
+$$
+\Delta T = \int_{t_1}^{t_2}\left(\dfrac{dT}{dt}\right)\,dt = \int_{t_1}^{t_2}\bf{F\cdot v}\,dt  = \int_{s_1}^{s_2}\bf{F\cdot }d\bf{s}
+$$ {#eq-FLOP_1_13_9}
+
+이다. 
+
+::: {.callout-note icon="false"}
+
+#### **일**
+
+외부에서 힘 $\bf{F}$ 가 가해지며 물체가 어떤 경로 $\bf{s}$ 로 움직였을 때 
+
+$$
+\int_{\bf{s}_1}^{\bf{s}_2} \bf{F\cdot} d\bf{s}
+$$ {#eq-FLP_definition_of_work}
+
+를 외부에서 물체에 해준 **일 (work)** 이라고 한다.
+
+:::
+
+@eq-FLOP_1_13_9 는 물체의 운동에너지의 변화량은 외부의 힘이 해준 일과 같다는 것을 의미한다.
+
+</br>
+
+### I.13-2 중력에 의한 일 {#sec-FLP_1_13_2}
+
+질량이 $m$ 인 물체가 질량이 $M$ 인 물체가 있다. $\bf{r}=\bf{r}_m - \bf{r}_M$ 이라고 하자. 의한 중력의 영향으로 $\bf{r}_1$ 에서 $\bf{r}_2$ 로 움직였다고 하자. $\bf{r}_1$ 과 $\bf{r}_2$ 에서의 운동에너지를 각각 $T_1,\,T_2$ 라고 하면 @eq-FLOP_1_13_9 에 의해
+
+$$
+T_2-T_1 = - \int_{\bf{r}_1}^{\bf{r}_2} \dfrac{GMm}{r^2} \hat{\bf{r}}\bf{\cdot}d\bf{r} = GMn\left(\dfrac{1}{r_2} - \dfrac{1}{r_1}\right)
+$$
+
+이다. $r_1=r_2 \implies T_2=T_1$. 즉 중력에 의해 움직이는 물체에서 거리가 같아진다면 운동에너지도 같다. 
+
+
+::: {.callout-note icon="false"}
+
+#### **보존력** 과 **포텐셜 에너지**
+
+힘 $\bf{F}$ 가 어떤 스칼라장의 미분이라면 즉 어떤 스칼라장 $U$ 에 대해
+
+$$
+\bf{F} = - \nabla U
+$$
+
+일 때 $\bf{F}$ 를 **보존력 (conservative force)** 라고 하고 $U$ 를 힘 $\bf{F}$ 에 대한 **포텐셜 에너지 (potential energy)** 라고 한다.
+
+:::
+
+
+우리는 다음을 보일 수 있다.
+
+::: {.callout-important icon="false"}
+
+#### **포텐셜의 성질**
+
+**1.** 힘이 $kr^{2}\hat{\bf{r}}$ 형태이면 포텐셜 에너지가 존재한다.
+
+$$
+\dfrac{\bf{r}}{r^{3}} = -\nabla \left(\dfrac{1}{r}\right).
+$$
+
+**2.** 포텐셜 에너지가 존재한다면 일은 경로와 무관한 위치만의 함수이다.
+
+$$
+W = \int_1^2 \bf{F\cdot}d\bf{s} = -\int_1^2 (\nabla U) \bf{\cdot}d\bf{s} = U(\bf{r}_1)- U(\bf{r}_2)
+$$
+
+**3.** 힘에 대한 포텐셜 에너지가 존재할 때 운동에너지와 포텐셜 에너지의 합은 항상 일정하다. 
+
+$$
+T_2-T_1 = W = U_1-U_2 \implies T_2+U_2 = T_1+U_1
+$$
+
+**4.** 보존력의 합은 보존력이다. 
+
+:::
+
+이로부터 중력 $\bf{F}=-\dfrac{GmM\hat{\bf{r}}}{r^2}$ 에 대한 포텐셜 $U(r)= - \dfrac{GMm}{r}$ 임을 안다.
+
+
+</br>
+
+### I.13-3 에너지의 합 {#sec-FLP_1_13_3}
+
+
+$N$ 개의 입자 사이에 보존력이 작용하는 계를 생각하자. 나머지 입자 전체에 의해 $i$ 번째 입자가 받는 힘을 $\bf{F}_i$ 라고 하면 $\bf{F}_i = -\nabla U_i$ 인 스칼라장 $U_i$ 가 존재한다. 시간 $t_1,\,t_2$ 에서의 이 계의 총 운동에너지 $T_\text{tot} = \sum_i \frac{1}{2}m_iv_i^2$ 의 변화량은 다음과 같다.
+$$
+\begin{aligned}
+\Delta T_\text{tot} &= \int_{t_1}^{t_2}\dfrac{dT_\text{tot}}{dt} = \int_{t_1}^{t_2}\left[\dfrac{d}{dt}\left(\sum_{i=1}^N \dfrac{m_iv_i^2}{2}\right) \right]\,dt  \\[0.3em]
+&= \sum_{i=1}^N \int_{t_1}^{t_2} \left(m\dfrac{d\bf{v}_i}{dt}\bf{\cdot v}_i\right) dt = \sum_i^N \int_{t_1}^{t_2} \bf{F}_i\bf{\cdot v}_i dt \\[0.3em]
+&= \sum_i U_i(t_2) - U_i(t_1) 
+\end{aligned}
+$$
+
+$U = \sum_i U_i$ 라고 하면
+
+$$
+T_\text{tot}(t) + U(t) = \text{constant}.
+$$
+
+이다. 즉 운동에너지와 포텐셜 에너지의 합이 항상 일정하다. 
+
+
+</br>
+
+### I.13-4 큰 물체에 의한 중력장 {#sec-FLP_1_13_4}
+
+반지름이 $a$ 이고 총 질량이 $M$ 인 구를 생각하자. 이 때 밀도 $\rho = \dfrac{3M}{4\pi a^3}$ 이며 구 바깥에서 구의 중심으로부터 거리 $R(>a)$ 만큼 떨어진 위치에서의 중력포텐셜을 구의 중심을 원점으로 하고 포텐설을 측정하는 위치를 $z$ 축으로 삼아 구면좌표계에서 구하면
+
+$$
+\begin{aligned}
+U(R>a) &= -\int_V \dfrac{G \rho d^3\bf{r}}{\sqrt{R^2+r^2-2rR\cos \theta}}\,d^3\bf{r} \\[0.3em]
+&= -G\rho \int_0^a \int_0^\pi \int_0^{2\pi} \dfrac{r^2 \sin \theta d\varphi d\theta dr}{\sqrt{R^2+r^2-2rR\cos\theta}} \\[0.3em]
+&= -\dfrac{GMm}{R}
+\end{aligned}
+$$
+
+이다. 즉 중력포텐셜은 구의 질량이 모두 구의 중심에 모여있다고 가정하고 계산했을 때와 같다. 이제 구의 내부에서 구의 중심으로부터의 거리가 $R<a$ 일 경우에는 
+
+$$
+U(R<a)= - \dfrac{GMm}{a}
+$$
+
+이다.
+
+## I.14. 일과 포텐셜 에너지 (결론) {#sec-FLP_1_14}
+
+### I.14-1 일 {#sec-FLP_1_14_1}
+
+</br>
+
+### I.14-2 구속된 운동 {#sec-FLP_1_14_2}
+
+- fixed, frictionless constaints 의 경우 constraint force 는 운동방향에 수직방향으로 항상 작용하기 때문에 constraint force 에 의한 일은 0 이다.
+
+</br>
+
+### I.14-3 보존력 {#sec-FLP_1_14_3}
+
+
+</br>
+
+### I.14-4 비보존력 {#sec-FLP_1_14_4}
+
+- 자연계의 힘들은 현재까지는 보존력으로 간주된다. 뉴턴 자신은 힘이 보존력이 마찰력과 같이 힘이 보존력이 아닐 수도 있다는 것을 알고 있었다.
+
+</br>
+
+### I.14-5 포텐셜과 장 {#sec-FLP_1_14_5}
+
+
+::: {.callout-note icon="false"}
+
+#### **포텐셜**
+
+벡터장 $\bf{C}$ 에 대해 어떤 스칼라장 $\Psi$ 가 존재하여 $\bf{C}= -\nabla \Psi$ 일 때 $\Psi$ 를 장 $\bf{C}$ 에 대한 **포텐셜 (potential)** 이라고 한다.
+
+:::
+
+$m_1,\ldots,\,m_N$ 를 각각의 질량으로 갖는 $N$ 개의 입자가 각각 $\bf{r}_1,\ldots,\,\bf{r}_N$ 에 위치해 있다. 이 $N$ 개의 입자에 의한 $\bf{r}$ 에서의 중력장 $\bf{C}(\bf{r})$ 는
+
+$$
+\bf{C}(\bf{r}) = -\sum_{i=1}^N \dfrac{Gm_i(\bf{r}-\bf{r}_i)}{\|\bf{r}-\bf{r}_i\|^3}
+$$
+
+이며 이 중력장 $G$ 에 대한 중력포텐셜 $\Psi$ 는 아래와 같다.
+
+$$
+\Psi(\bf{r}) = -\sum_{i=1}^N \dfrac{Gm_i}{\|\bf{r}-\bf{r}_i\|}.
+$$ {#eq-FLP_1_14_8}
+
+포텐셜 역시 각각의 source 에 대한 기여의 합이다. 
+
+</br>
+
+## I.18. 2차원 회전 {#sec-FLP_1_18}
+
+### I.18-1 질량 중심
+
+이제 단순한 입자가 아닌 이러한 입자가 결합된, 좀 더 복잡한 물체에 대해 다루기로 하자. 우리는 입자의 중력장 하에서의 운동이 포물선임을 알고 있다. 이런 질문을 던져보자: 여러 입자가 결합된, 예를 들면 돌을 던질 때 정확히 포물선을 따라 가는 것은 무엇일까?
+
+$N(\sim 10^{23})$ 개의 입자로 이루어진 물체의 $i$ 번째 입자에 가해지는 힘을 $\bf{F}_i$ 라고 하면 운동방정식은 다음과 같다.
+
+$$
+\bf{F}_i = m_i \dfrac{d^2\bf{r}_i}{dt^2}.
+$$
+
+각각의 입자에 가해지는 힘의 합을 $\bf{F}$ 라고 하면
+
+$$
+\bf{F}=\sum_i \bf{F}_i = \sum_i \dfrac{d^2 \left(m_i\bf{r}_i\right)}{dt^2}
+$$ {#eq-FLP_1_18_3}
+
+이다. 여기서 중요한 것은 물체 내에서 벌어지는 상호작용에 의한 힘은 뉴튼의 제 3 운동법칙에 의해 $\bf{F} = \sum_i \bf{F}_i$ 에서 상쇄된다는 것이다. 따라서 $\bf{F}$ 는 내부에서 주고 받는 힘이 아닌 순수한 외부에서 작용하는 힘만 남게된다. 
+
+
+::: {.callout-note icon="false"}
+
+#### **질량 중심**
+
+**질량중심 (center of mass)** $\bf{R}_\text{CM}$ 은 아래와 같이 정의된다.
+
+$$
+\bf{R}_\text{CM} := \dfrac{\sum_i m_i\bf{r}_i}{\sum_i m_i} = \dfrac{1}{M}\sum_i m_i\bf{r_i},\qquad \text{where } M = \sum_i m_i.
+$$ {#eq-FLP_1_18_4}
+
+:::
+
+그렇다면 @eq-FLP_1_18_3 은 다음과 같이 쓸 수 있다.
+
+$$
+\bf{F} = M\dfrac{d^2 \bf{R}_\text{CM}}{dt^2}.
+$$ {#eq-FLP_1_18_5}
+
+이제 우리는 답을 알게 되었다. 돌을 던졌을 때 포물선을 따라가는 것은 돌의 질량중심이다. 그리고 @eq-FLP_1_18_5 에 대해 다음과 같은 것을 알 수 있다.
+
+1. 외력이 없다면 물체의 질량중심은 정지하거나 등속 직선운동을 한다.
+2. 물체의 질량중심은 물체 내부의 복잡한 상호작용과 분리하여 처리 될 수 있다.
+
+</br>
+
+### I.18-2 강체의 회전
+
+#### **강체의 회전과 각속도, 각가속도**
+
+::: {.callout-note icon="false"}
+
+#### **강체**
+
+물질 내의 입자들 간의 힘이 매우 강하여 입자간의 상대적인 위치가 바뀌지 않는 가상의 물체.
+
+:::
+
+문제를 단순화하기 위해 강체의 회전을 생각한다. 그리고 강체 안에 고정된 직선이 있어 이 직선을 중심으로 강체가 회전한다고 하자. 이 고정된 직선이 회전축이다. 강체 안의 회전축상에 있지 않은 한 점을 특정하고, 회전 운동 후 이 점이 어디있는지 안다면 물체가 어디에 있는 지 알 수 있다. 회전각은 두 시점에서 물체가 얼마나 회전했는지에 대한 값이다. 
+
+직선상의 운동에서 정의된 속도, 가속도와 마찬가지로 각에 대해서 각속도와 각가속도를 정의 할 수 있다. 시간에 대한 회전각을 $\theta = \theta(t)$ 라고 하면 **각속도 (angular velocity)** $\omega$ 와 **각가속도 (angular acceleration)** $\alpha$ 는 다음과 같이 정의된다.
+
+$$
+\omega := \dfrac{d\theta}{dt},\qquad \alpha = \dfrac{d^2\theta}{dt^2}.
+$$ {#eq-FLP_definition_of_angular_velocity_and_angular_acceleration}
+
+![파인만 물리학 강의 I. Fig. 18-1. 2차원 회전](figures/fig_1_18/fig_1_18_1.png){#fig-FLP_1_18_1 width=260}
+
+위의 그림과 같은 2차원 회전을 생각하자. 점 $P$ 가 $O$ 를 중심으로 $\Delta t$ 동안 $\Delta \theta$ 만큼 회전했다고 하자. $P$ 의 좌표를 $(x,\,y)$ 라고 하자. 그렇다면
+
+$$
+\Delta x = - PQ\sin \theta = - r\Delta \theta \cdot (y/r) = -y \Delta \theta
+$$ {#eq-FLP_1_18_6}
+
+이며 같은 방법으로
+
+$$
+\Delta y = + x\Delta \theta 
+$$ {#eq-FLP_1_18_7}
+
+임을 안다. 위의 두 식을 $\Delta t$ 로 나누어주면
+
+$$
+v_x = -\omega y,\qquad v_y = +\omega x
+$$ {#eq-FLP_1_18_8}
+
+이며 따라서 아래와 같은 속도와 각속도의 관계를 얻는다.
+
+$$
+v=\sqrt{v_x^2+v_y^2} = \omega r.
+$$ {#eq-FLP_1_18_9}
+
+#### **토크**
+
+속도-각속도, 가속도-각가속도의 관계와 같이 선형 이동과 회전 이동 사이의 유사성이 힘에도 존재한다. 힘 $\bf{F}$ 에 의해 작은 회전에 의한 위치 변화 $\Delta x,\, \Delta y$ 가 생겼다고 하자. 이 때 힘이 한 일 $\Delta W$ 는
+
+$$
+\Delta W = F_x \Delta x + F_y \Delta y
+$$ {#eq-FLP_1_18_10}
+
+이다. $\Delta x,\, \Delta y$ 에 @eq-FLP_1_18_6, @eq-FLP_1_18_7 을 대입하면
+
+$$
+\Delta W = (xF_y - yF_x)\Delta \theta
+$$ {#eq-FLP_1_18_11}
+
+이다. 
+
+::: {.callout-note icon="false"}
+
+#### **토크**
+
+@eq-FLP_1_18_11 에서 $\tau = xF_y - yF_x$ 를 **토크 (torque)** 라고 한다. 
+
+:::
+
+- 여러 힘이 동시에 작용할 때 @eq-FLP_1_18_10 과 @eq-FLP_1_18_11 로부터 유추 할 수 있듯이 전체 토크는 각각의 힘에에 의한 토크의 합이다. 
+- 토크는 회전축에 대해 정해진다. 회전축이 바뀐다면 당연히 토크도 바뀐다.
+
+::: {.callout-note icon="false"}
+
+#### **역학적 평형 상태**
+
+물체가 평형상태에 있다는 것은 모든 작은 변위에 대해 일이 $0$ 이다. 즉 물체가 역학적 평형 상태에 있다는 것은 물체에 작용하는 힘과 토크가 모두 $0$ 이라는 의미이다. 
+
+:::
+
+![파인만 물리학 강의 I. Fig. 18-2. 힘에 의한 토크](figures/fig_1_18/fig_1_18_2.png){#fig-FLP_1_18_2 width=360}
+
+
+위의 그림과 같이 $\bf{r}$ 에 위치한 점 $P$ 에 힘 $\bf{F}$ 가 작용하고 있다고 있으며 이 힘에 의해 $O$ 를 중심으로 $\Delta \theta$ 만큼 움직였다고 하자. $\bf{F}$ 는 회전에 대한 접선 방향의 $\bf{F}$ 와 수직방향의 $\bf{F}_r$ 로 분해 할 수 있으며 $\bf{F}_r$ 은 운동방향에 수직방향이므로 일을 하지 않는다. 즉 힘 $\bf{F}$ 에 의한 일은
+
+$$
+W = \|\bf{F}_t \| \, r \Delta \theta
+$$
+
+이다. 이로부터 노크는 가해지는 힘의 회전에 대한 접선 방향 성분에 회전 반경을 곱한 값이라는 것을 알 수 있다.
+
+
+</br>
+
+### I.18-3 각운동량 {#sec-FLP_1_18_3}
+
+#### **각운동량**
+
+지금까지 강체라는 특수한 경우만을 고려했지만 토크의 특성과 그 수학적 관계는 물체가 강체가 아니더라도 적용할 수 있다. 힘 $F$ 가 $F=dp/dt$ 인 것처럼 토크 $\tau$ 는 각운동량이라고 부르는 양 $L$ 에 대해 $\tau = dL/dt$ 임을 보이자.
+
+$$
+\begin{aligned}
+\tau &= xF_y - y F_x = mx \dfrac{d^2y}{dt^2} - my \dfrac{d^2x}{dt^2} \\[0.3em]
+&= mx \dfrac{d^2y}{dt^2} + m \dfrac{dx}{dt}\dfrac{dy}{dt} - m\dfrac{dx}{dt}\dfrac{dy}{dt} - my \dfrac{d^2x}{dt^2} \\[0.3em]
+&= \dfrac{d}{dt}\left[m x \dfrac{dy}{dt} - m y\dfrac{dx}{dt}\right].
+\end{aligned}
+$$
+
+
+::: {.callout-note icon="false"}
+
+#### **각운동량**
+
+2차원 회전에서 각운동량 $L$ 은 다음과 같이 정의된다.
+
+$$
+L := mx\dfrac{dy}{dt} - my\dfrac{dx}{dt} = xp_y - yp_x.
+$$ {#eq-FLP_1_18_16}
+:::
+
+즉 토크($\tau$) 는 각운동량($L$) 의 시간에 대한 변화량이다.
+
+$$
+\tau = \dfrac{dL}{dt}.
+$$
+
+#### **행성의 운동의 각운동량**
+
+중력에 의한 태양과 행성의 운동을 살펴보자. 중력은 항상 두 행성을 잇는 직선방향을 따라 작용한다. 즉 운동의 접선방향으로 작용하는 힘이 없기 때문에 중력에 의한 토크는 $0$ 이다.
+
+</br>
+
+### I.18-4 각운동량 보존 {#sec-FLP_1_18_4}
+
+#### **각운동량 보존**
+
+많은 입자로 이루어진 시스템에서 입자들은 상호작용하며 외부에서 힘이 작용할 수도 있다. 이 경우 어떤 고정축에 대한 $i$ 번째 입자에 작용하는 토크는 $i$ 번째 입자의 각운동량의 시간에 대한 미분이며, 전체 토크는 개별 입자의 토크의 합이므로 전체 각운동량은 개별 각운동량의 합이라는 것을 알 수 있다. 즉 $L=\sum_i L_i$ 라고 하면, 
+
+$$
+\tau = \sum_i \tau_i = \sum_i \dfrac{dL_i}{dt}= \dfrac{dL}{dt}
+$$ {#eq-FLP_1_18_18}
+
+이다. 이제 작용-반작용의 강한 조건, 즉 입자들 사이의 상호작용에 의한 힘은 두 입자를 잇는 직선상에서 작용한다는 조건이 부여된다고 하자. 그렇다면 두 입자 사이의 상호작용에 의한 두 입장의 토크는 상쇠된다. 따라서 힘에서와 같이 내부의 상호작용에 의한 토크의 합은 $0$ 이다. 즉 입자계에서의 토크의 합은 외부의 힘에 의한 토크이다. 이제 우리는 다음과 같은 수학적 정리를 얻게 된다. 
+
+::: {.callout-important icon="false"}
+
+#### **각운동량 보존**
+
+외부에서 작용하는 힘에 의한 토크가 $0$ 이면 입자들의 총 각운동량은 보존된다.
+
+:::
+
+#### **관성 모멘트**
+
+$N$ 개의 입자로 이루어진 강체가 정해진 회전축에 대해 각속도 $\omega$ 로 회전한다고 하자. $i$ 번째 입자의 질량, 회전축에서의 거리, 속도가 각각 $m_i,\,r_i,\,v_i$ 라고 하자. 이때 총 각운동량 $L$ 은 다음과 같다.
+
+$$
+L=\sum_{i} L_i = \sum_i m_i r_i v_i = \left(\sum_i m_i r_i^2\right) \omega 
+$$ {#eq-FLP_1_18_20}
+
+::: {.callout-note icon="false"}
+
+#### **관성 모멘트**
+
+강체가 회전할 때 아래와 같이 **관성 모멘트(moment of inertia)** $I$ 를 정의 할 수 있다.
+
+$$
+I := \sum_i m_i r_i^2.
+$$ {#eq-FLP_1_18_22}
+
+:::
+
+
+위와같이 정의된 관성 모멘트 $I$ 에 대해 각운동량 $L$ 은 다음과 같다.
+
+$$
+L = I\omega.
+$$ {#eq-FLP_1_18_21}
+
+</br>
+
+## I.19. 질량 중심과 관성 모멘트 {#sec-FLP_1_19}
+
+### I.19-1 질량 중심의 성질 {#sec-FLP_1_19_1}
+
+
+다양한 질량의 물체가 합쳐진 복잡한 물체에 작용하는 많은 힘에 대해, 그것이 강체인지 여부와 관계 없이, 모든 외부에서 작용하는 힘의 합과 질량중심 $\bf{R}_\text{CM}$ 에 대한 운동방정식을 얻었다(@eq-FLP_1_18_5). 이 운동방정식이 의미하는 것은 물채 전체를 대표하는 질량중심 $\bf{R}_\text{CM}$ 이 존재하여 이 물체에 작용하는 모든 외부의 힘이 마치 물체의 질량이 이 점에 집중되어 있는 것과 같이 이 점의 가속도를 결정한다는 것이다. 그리고 이 질량중심의 성질은 아래와 같이 정리 할 수 있다.
+
+::: {.callout-tip icon="false"}
+
+#### 질량 중심의 성질 {#sec-FLP_properties_of_center_of_mass}
+
+**1.** 어떤 면을 중심으로 대칭이 있을 경우 질량중심은 대칭면상에 위치한다.
+
+**2.** 물체를 여러 부분으로 나눌 경우 전체의 질량중심은 각 부분별 질량중심의 질량중심이다. 예를 들어 전체 물체를 $A$, $B$ 두 부분으로 나누며 각각의 질량의 합이 $M_A,\,M_B$ 이고 각각의 질량중심의 반경벡터가 $\bf{r}_A,\,\bf{r}_B$ 라면 전체의 질량중심 $\bf{R}_\text{CM}$ 은 다음과 같다.
+
+$$
+\bf{R}_{CM} = \dfrac{M_A\bf{r}_A+M_B\bf{r}_B}{M_A+M_B}.
+$$
+
+**3.** 중력이 균일할 경우 질량 중심은 [**중력 중심 (center of gravity)**](#sec-FLP_center_of_gravity) 과 같다. 중력이 $\bf{g}$ 로 균일하다면 물체에 작용하는 토크의 합 $\bf{\tau}$ 는 아래와 같다.
+
+$$
+\bf{\tau} = \sum_i m_i \bf{r}_i \times \bf{g} = \left(\sum_i m_i\right) \bf{R}_\text{CM}\times \bf{g}.
+$$
+
+따라서 $\bf{\tau}=0$ 이려면 $\bf{R}_{\text{CM}}=0$ 이어야 한다. 즉 균일한 중력장에서 질량 중심이 회전축상에 있을 때 토크는 $0$ 이다. 
+
+
+:::
+
+::: {.callout-note icon="false"}
+
+#### **중력 중심** {#sec-FLP_center_of_gravity}
+
+$N$ 개의 입자의 총 질량이 $M$ 이라고 하자. $i$ 번째 입자의 질량과 반경벡터를 각각 $m_i$, $\bf{r}_i$ 라고 하자. 위치 $\bf{r}$ 에서의 중력장을 $\bf{G}(\bf{r})$ 이라고 할 때 **중력 중심 (center of gravity)** $\bf{R}_\text{gr}$ 은 다음과 같이 정의된다.
+
+$$
+\bf{R}_\text{gr} := \dfrac{\sum_i \bf{r}_i m_i\bf{G}(\bf{r}_i)}{\sum_i  m_i\bf{G}(\bf{r}_i)}.
+$$ {#eq-FLP_definition_of_center_of_gravity}
+
+:::
+
+#### **질량중심과 관성력**
+
+[질량 중심의 성질](#sec-FLP_properties_of_center_of_mass) 3. 은 질량 중심을 떠받치고 있으며 중력이 균일하다면 토크가 발생하지 않는다는 것을 말해준다. 
+
+이제 중력 대신 가속도에 의한 관셩력이 작용한다고 하자. 관셩력은 물체 전체에 균일한 힘을 가하기 때문에 질량 중심을 떠받치고 있다면 균일한 중력과 마찬가지로 토크가 발생하지 않는다. 이로부터 흥미로운 결론을 내릴 수 있다. 관성기준틀에서 토크는 항상 각운동량의 시간에 대한 변화량이다. 물체가 가속운동을 하는 경우에도 질량중심이 회전축이라면 토크가 각운동량의 시간에 대한 변화량이라는 것은 변하지 않는다. 즉 (1) 관성기준틀에서의 임의의 축에대한 회전과 (2) 비관성 기준틀에서의 질량중심을 지나는 축에 대한 회전에 대해 $\bf{\tau} = d\bf{L}/dt$ 이다.
+
+</br>
+
+### I.19-2 질량 중심의 계산 {#sec-FLP_1_19_2}
+
+[파푸스의 무게중심 정리](https://en.wikipedia.org/wiki/Pappus's_centroid_theorem) 를 이용한 질량 중심 계산.
+
+</br>
+
+### I.19-3 관성 모먼트의 계산 {#sec-FLP_1_19_3}
+
+::: {.callout-note icon="false"}
+
+#### **관성모멘트** 
+
+$z$ 축을 회전축으로 할 경우 관성모먼트 $I$ 는 질량 분포가 이산적인 경우와 연속인 경우(이 때 밀도를 $\rho(\bf{r})$ 라고 하자) 에 각각 다음과 같다.
+
+$$
+\begin{aligned}
+I &= \sum_i m_i \left(x_i^2+y_i^2\right), \\[0.3em]
+I &= \int (x^2+y^2)\,dm = \int (x^2+y^2)\, \rho(\bf{r})\, d^3\bf{r}.
+\end{aligned}
+$$ {#eq-FLP_1_19_4}
+:::
+
+
+이를 이용하여 기본적인 도형의 관성 모멘트를 계산하면 아래와 같다.
+
+![다양한 물체의 관성 모멘트](figures/fig_1_19/moment_of_inertias/moment_of_inertia.png){#fig-FLP_1_19_moment_of_inertia width=460}
+
+</br><div class="border" style="background-color:#FFF0F5 ;padding:5px;">
+
+::: {#thm-FLP-parallel_axis_theorem}
+
+#### 평행축 정리 
+
+질량이 $M$ 인 물체의 무게중심을 지나는 회전축 대한 관성모먼트가 $I_\text{CM}$ 일 때 이 축과 $h$ 만큼 떨어진 평행한 다른 축에 대한 관성모멘트 $I$ 는 다음과 같다.
+
+$$
+I = I_\text{CM} + Mh^2.
+$$ {#eq-FLP_paralle_axis_theorem}
+
+:::
+
+</div>
+
+::: {.proof}
+
+일반석을 잃지 않고 회전축이 $z$ 축과 평행하다고 할 수 있다. 질량 중심의 위치를 원점으로 잠고 새로운 축의 위치를 $(a,\,b)$ 라고 하면 $h=\sqrt{a^2+b^2}$ 이며
+$$
+\begin{aligned}
+I &= \sum_i ((x_i-a)^2+(y_i-b)^2)m_i \\[0.3em]
+&= \underbrace{\sum_i \left(x_i^2+y_i^2\right)m_i}_{=I_\text{CM}} - 2a\underbrace{\sum_i x_im_i}_{=x_\text{cm}=0} -2b\underbrace{\sum_i y_i m_i}_{y_{\text{cm}}=0} +  + \sum_i \underbrace{(a^2+b^2)}_{=h^2}m_i \\[0.3em]
+&= I_\text{CM} + Mh^2
+\end{aligned}
+$$
+
+이다. $\square$
+:::
+
+</br>
+
+### I.19-4 회전 운동 에너지 {#sec-FLP_1_19_4}
+
+$\omega$ 의 각속도 회전하는 강체의 운동에너지를 계산해 보자. $i$ 번째 입자의 회전축으로부터의 거리를 $r_i$ 라고 하면 회전 속도 $v_i = r_i \omega_i$ 이므로 그 운동에너지 $T$ 는 다음과 같다.
+
+$$
+T=\dfrac{1}{2}\sum_i m_i v_i^2 = \dfrac{1}{2}\sum_i m_i (r_i \omega)^2 = \dfrac{1}{2}I\omega^2
+$$ {#eq-FLP_1_19_8}
+
+
+</br>
+
+## I.20. 공간에서의 회전 {#sec-FLP_1_20}
+
+### I.20-1 3차원 토크 {#sec-FLP-1_20_1}
+
+*3차원 벡터 외적에 대한 설명들*
+
+</brt>
+
+### I.20-2 외적과 회전 방정식
+
+::: {.callout-note icon="false"}
+
+#### **각운동량과 토크** 
+
+3차원에서의 각운동량 $\bf{L}$ 은 아래와 같이 정의된다.
+
+$$
+\bf{L}:= \bf{r}\times \bf{p}.
+$$ {#eq-FLP_1_20_12}
+
+3차원에서의 토크는 아래와 같이 정의된다.
+
+$$
+\bf{\tau} := \bf{r}\times \bf{F}
+$$ {#eq-FLP_1_20_11}
+
+:::
+
+$\bf{F}=d\bf{p}/dt$ 와 같이 토크와 각운동량은 아래의 관계를 갖는다.
+
+$$
+\bf{\tau} = \dfrac{d\bf{L}}{dt}
+$$ {#eq-FLP_1_20_13}
+
+
+... to be done.. .. 자이로스코프에 관련된 ..
+
+
+</br>
+
+## I.21 조화 진동자 {#sec-FLP_1_21}
+
+### I.21-1 선형미분방정식 {#sec-FLP_1_21_1}
+
+아래와 같은 형태의 미분방정식을 $n$-계 선형미분방정식이라고 한다.
+
+$$
+a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n01}} + \cdots + a_1 \dfrac{dx}{dt} + a_0 x = f(t)
+$$ {#eq-FLP_1_21_1}
+
+
+</br>
+
+### I.21-2 조화진동자 {#sec-FLP_1_21_2}
+
+1차원 단순조화진동자 (Simple harmonic oscilator, 이하 SHO) 는 아래와 같은 2계 선형미분방정식의 해이다.
+
+$$
+m\dfrac{d^2x}{dt^2} = -kx.
+$$ {#eq-FLP_1_21_3}
+
+또한 우리는 이 미분방정식의 일반해 $x(t)$ 가 다음과 같다는 것을 안다.
+
+$$
+x(t) = A \cos (\omega_0 t + \phi_0),\qquad \text{where }\omega_0 = \sqrt{k/m}.
+$$ {#eq-FLP_1_21_6}
+
+여기서 $A$ 를 **진폭 (amplitude)** 이라고 하고 $\phi_0$ 를 **위상차 (phase shift)** 라고 한다. 
+
+</br>
+
+### I.21-3 조화운동과 원운동 {#sec-FLP_21_3}
+
+</br>
+
+### I.21-4 초기조건
+
+@eq-FLP_1_21_6 에서 우리가 $t=0$ 일 때의 위치 $x_0$ 와 속도 $v_0$ 를 안다고 하자. 그렇다면 
+
+$$
+A\cos \phi_0 = x_0,\qquad -A \omega_0\sin \phi_0 = v_0
+$$ 
+
+이며 이로부터 $A,\, \phi_0$ 를 결정 할 수 있다. 이제 이 단순조화진동자의 에너지를 구해보자. 우선 운동에너지 $T$ 와 포텐셜 에너지 $U$ 는 다음과 같다.
+
+$$
+T=\dfrac{1}{2}mv^2 = \dfrac{m\omega_0^2 \sin^2(\omega_0 t+ \phi_0)}{2},\qquad U = \dfrac{1}{2}kx^2 = \dfrac{m\omega_0^2 \cos^2 (\omega_0 t+\phi_0)}{2}
+$$
+
+
+마찰력이 없다면 $F=-kx$ 는 보존력이므로 역학적 에너지 $E$ 가 보존되며 다음과 같다는 것을 알 수 있다.
+
+$$
+E =  T+U = \dfrac{1}{2}m\omega_0^2 A^2 .
+$$
+
+즉 에너지는 진폭의 제곱에 의존한다. 따라서 진폭을 2배 늘린다면 에너지는 4배가 증가한다. 또한 한 주기동안의 평균운동에너자와 위치에너지는 같으며 전체 역학적 에너지의 반이다.
+
+
+</br>
+
+### I.21-5 강제 진동 {#sec-FLP_1_21_5}
+
+조화진동자에 외부에서 힘이 가해질 때 **강제조화진동자(forced harmonic oscillator)** 라고 한다. 외부의 힘이 $F(t)$ 라면 운동방정식은 아래와 같다.
+
+$$
+m\ddot{x} = -kx + F(t).
+$$ {#eq-FLP_2_21_8}
+
+가장 간단한 경우는 다음과 같은 경우이다.
+
+$$
+F(t) = F_0 \cos \omega t.
+$$ {#eq-FLP_2_21_9}
+
+
+이제 이 힘에 의한 미분방정식 @eq-FLP_2_21_8 를 풀어보자. 한 특이해는 다음과 같이 주어진다.
+
+$$
+x(t) = C\cos \omega t.
+$$ {#eq-FLP_2_21_10}
+
+이 식이 @eq-FLP_2_21_8 를 만족한다면
+
+$$
+C= \dfrac{F_0}{m (\omega_0^2 - \omega^2)}
+$$ {#eq-FLP_2_21_12}
+
+이다. 더 일반적인 해는 이후에 구해보기로 하고 @eq-FLP_2_21_12 에 의한 해만 새각해보자. $\omega \ll \omega_0$ 라면 $x(t)$ 와 $F(t)$ 가 거의 같은 방향이며 $\omega >\omega_0$ 이면 $x(t)$ 와 $F(t)$ 가 반대 방향이고 $\omega \gg \omega_0$ 라면 @eq-FLP_2_21_10 는 매우 작은 진폭을 갖게 된다. $\omega \approx \omega_0$ 이면 @eq-FLP_2_21_10 는 매우 큰 진폭을 갖게 되며 $\omega=\omega_0$ 이면 무한대의 진폭을 갖게 된다. 물론 이것은 불가능하다. 
+
+</br>
+
+## I.23 공명 {#sec-FLP_1_23}
+
+### I.23-1. 복소수와 조화 운동 {#sec-FLP_1_23_1}
+
+@eq-FLP_1_21_1 형태의 선형미분방정식을 생각하자. $f(t) = f_0 \cos (\omega t-\phi_0)$ 를 복소함수 
+
+$$
+f(t) = f_0e^{-i\phi_0}e^{i\omega t} = \hat{f} e^{i\omega t},\quad\text{ where } \hat{f} = f_0e^{-i\phi_0} 
+$$ 
+
+로 표현하자. 그리고 @eq-FLP_1_21_1 를 복소선형미분방정식으로 아래와 같이 쓸 수 있다.
+
+$$
+a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n01}} + \cdots + a_1 \dfrac{x}{dt} + a_0 x = f(t) = \hat{f} e^{i\omega t}.
+$$ 
+
+위의 미분방정식을 만족하는 복소함수 $\hat{x}(t)$ 를 구한다면 $\text{Re}(x(t))$ 는 @eq-FLP_1_21_1 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 @eq-FLP_2_21_8 에 적용하자. 외부의 힘 $F(t) = F_0 \cos \omega t$ 를 $\hat{F}(t) = \hat{F} e^{i\omega t}$ 로 표현하면
+
+$$
+m \dfrac{d^2 x}{dt^2} + k x = \hat{F} e^{i\omega t}
+$$ {#eq-FLP_1_23_2}
+
+이다. 앞서와 같이 특수해 $x(t) = \hat{x} e^{i\omega t}$ 를 사용한다면 
+
+$$
+-\omega^2 \hat{x} + \omega_0^2 \hat{x} = \dfrac{\hat{F}}{m},\qquad \text{where } \omega_0 = \sqrt{\dfrac{k}{m}}
+$$ {#eq-FLP_1_23_4}
+
+이다. 즉
+
+$$
+\hat{x} = \dfrac{\hat{F}}{\omega_0^2-\omega^2}
+$$ {#eq-FLP_1_23_5}
+
+이며 이것은 @eq-FLP_2_21_12 의 결과를 포함한다. 또한 우리는 $\hat{F}=F_0e^{-i\phi_0}$ 일 때 
+
+$$
+\hat{x} = \dfrac{F_0e^{-i\phi_0}}{\omega_0^2-\omega^2}
+$$
+
+임을 안다. 즉 $\hat{F}$ 와 $\hat{x}$ 는 같은 위상차를 갖는다.
+
+</br>
+
+### I.23-2 강제 감쇄 조화진동 {#sec-FLP_1_23_2}
+
+실제의 많은 경우 운동을 방해하는 마찰력이 작용한다. 이 마찰을 간단한 식으로 표현하는 것은 대부분 어렵지만 속도에 비례하는 마찰력이 수학적으로 비교적 다루기 쉬우며 실제에도 적용되는 경우가 많다. 이제 속도에 비례하는 마찰력을 @eq-FLP_1_23_2 에 도입하면 운동방정식은 다음과 같다.
+
+$$
+m\dfrac{d^2 x}{dt^2} + c\dfrac{dx}{dt} + k x = F(t).
+$$ {#eq-FLP_1_23_6}
+
+이제 $\gamma = c/m$, $\omega_0 = \sqrt{k/m}$ 을 도입하면 운동방정식은 다음과 같다.
+
+$$
+\dfrac{d^2x}{dt^2} + \gamma \dfrac{dx}{dt} + \omega_0^2 x = \dfrac{F(t)}{m}.
+$$ {#eq-FLP_1_23_6_a}
+
+여기서 $\beta$ 가 매우 작다고 가정하자. $\beta$ 값의 다양한 경우에 대해서는 [감쇄 조화 진동자](#sec-CM_1d_dsho) 를 참고하라. 외부의 힘 $F(t) = F\cos (\omega t -\phi_0)$ 이 작용한다고 하자. $x=\hat{x}e^{i\omega t}$, $F=\hat{F}e^{i\omega t}$ 로 놓고 풀면 아래의 식을 만족해야 함을 안다.
+
+$$
+-\omega^2 \hat{x} + i \gamma \omega \hat{x} + \omega_0^2 \hat{x} = \hat{F}/m
+$$ {#eq-FLP_1_23_2}
+
+그렇다면 
+
+$$
+\begin{aligned}
+\hat{x} &= \dfrac{\hat{F}}{m\left(\omega_0^2 - \omega^2 +i\gamma \omega\right)} = \dfrac{\hat{F}e^{i\theta}}{m\sqrt{(\omega_0^2 - \omega^2)^2 + \gamma^2\omega^2}},\\[0.3em]
+&\qquad \qquad \qquad \text{where } \theta = -\tan^{-1}\left(\dfrac{\gamma\omega}{\omega_0^2-\omega^2}\right)
+\end{aligned}
+$$ {#eq-FLP_1_23_11}
+
+위의 식에서 $|\hat{x}|^2$ 은 아래와 같이 정의되는 $\rho^2$ 에 비례하는데 물리적으로 중요하다. 
+
+$$
+\rho^2 = \dfrac{1}{(\omega^2-\omega_0^2)^2 + \gamma^2 \omega^2}
+$$
+
+$\rho^2$ 와 $\theta$ 의 $\omega$ 의존성은 아래 그림과 같다.
+
+![$\rho^2(\omega)$ 와 $\theta(\omega)$](figures/fig_1_23/fig_1_23_2.png){#fig-FLP_1_23_2 width=600}
+
+$\omega \approx \omega_0$ 일 경우 @eq-FLP_2_21_12 와 같이 무한히 폭주하지 않지만 $\rho^2$ 값은 유한한 범위에서 매우 커지며 $\theta \approx \pi/2$ 이다. 그리고 $\rho^2(\omega)$ 에서의 반치전폭(Full with at half maximum, FWHM) 은 $\gamma$ 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 $Q:=\omega_/\gamma$ 이다.위의 @eq-FLP_1_23_11 에서는 $Q=6.67$ 이다.
+
+</br>
+
+### I.23-3 전기적 공명 {#sec-FLP_2_23_3}
+
+
+![파인만 물리학 강의 $I$. Fig. 23-4 수동소자 세가지](figures/fig_1_23/fig_1_23_4.png){#fig-FLP_1_23_4 width=300}
+
+전자회로의 중요한 세가지 수동소자는 축전기(capacitor), 저항(resistor), 인덕터 (inductor) 이다. 축전기는 금속 판 사이에 부도체를 채운 것으로 전하가 금속판이 각각 $+Q$, $-Q$ 의 전하가 대전되면 양쪽 터미널 $A,\,B$ 에 전위차 $V$ 가 아래와 같이 발생한다.
+
+$$
+V= \dfrac{\sigma d}{\epsilon} = \dfrac{d}{\epsilon A}Q.
+$$ {#eq-FLP_1_23_14}
+
+여기서 $d$ 는 평행판 사이의 거리, $A$ 는 평행판의 면적, $\epsilon$ 는 도체 판 사이에 삽입된 부도체의 **유전율 (permitivity)** 이다.$^1$[$^1$ 파인만 교재에는 $\epsilon_0$ 라고 되어 있는데 왜그런지 모르겠다. ]{.aside} 평형판 대신에 다른 모양일 수도 있지만 전위차가 대전된 전하량 $Q$ 에 비례하여 $V=Q/C$ 의 관계가 성립한다. 이 때 $C$ 를 **용량(capacitance)** 이라고 한다. 저항은 금속 선과 전기의 흐름으르 방해하는 물질로 이루어져 있으며 저항 양 끝단에 전위차 $V$ 를 가하면
+
+$$
+V=RI = R \dfrac{dq}{dt}
+$$ {#eq-FLP_1_23_15}
+
+의 관계가 성립한다. 여기서 $I:=dq/dt$ 를 **전류 (current)** 라고 하며 $R$ 을 **전기 저항** 혹은 **저항 (resistance)** 라고 한다. 인덕터는 전류가 흐를 때 자기장을 생성하며 자기장의 크기는 $dI/dt$ 에 비례한다. 자기장은 전류에 비례하며 유도된 전위차는 전류의 시간에 대한 변화에 비례한다. 즉
+
+$$
+V = L \dfrac{dI}{dt} = L \dfrac{dq^2}{dt}
+$$ {#eq-FLP_1_23_6}
+
+의 관계가 성립한다. 비례상수 $L$ 을 **자기 유도계수 (self inductance)** 라고 한다. 아래와 같은 화로를 구성해 보자.
+
+![파인만 물리학 강의 $I$. Fig. 23-5 저항, 축전기, 인덕터로 이루어진 진동하는 전기 회로](figures/fig_1_23/fig_1_23_5.png){#fig-FLP_1_23_5 width=300}
+
+위의 그림에서 1 번과 2번 터미널 사이에 전압 $V(t)$ 를 가해주면 아래와 같은 미분방정식을 만족한다.
+
+$$
+L \dfrac{d^2q}{dt} + R \dfrac{dq}{dt} + \dfrac{1}{C}q = V(t).
+$$ {#eq-FLP_1_23_17}
+
+@eq-FLP_1_23_6 와 비교해보면 $L$ 은 질량의 역할을, $1/C$ 는 용수철 상수의 역할을 $R$ 은 말 그대로 저항의 역할을 하는 것을 알 수 있다. $V(t) = \hat{V}e^{i\omega t}$ 의 전위차를 가해준다면 $\hat{x}$ 를 구했을 때와 같이 $\hat{q}$ 를 얻는다.
+
+$$
+\hat{q} = \dfrac{\hat{V}}{-L\omega^2 + 1/C + iR\omega} = \dfrac{\hat{V}}{L(\omega_0^2-\omega^2 + i\gamma \omega)}.
+$$ {#eq-FLP_1_23_18}
+
+여기서 $\omega_0^2 = 1/LC,\, \gamma = R/L$ 이다.
+
+</br>
+
+### I.23-4 자연에서의 공명 {#sec-FLP_2_23_4}
+
+
+
+</br>
+
+## I.24 진동의 감쇄 {#sec-FLP_2_24}
+
+### I.24-1 진동자의 에너지 {#sec-FLP_1_24_1}
+
+#### **강제 감쇄 진동자의 일률**
+
+진동자의 운동방정식 @eq-FLP_1_23_6 은 $\omega_0 = \sqrt{k/m},\, \gamma = c/m$ 을 도임하여 아래와 같이 쓸 수 있다.
+
+$$
+m \dfrac{d^2x}{dt^2} + \gamma m \dfrac{dx}{dt} + m \omega_0^2 x = F(t).
+$$ {#eq-FLP_1_24_1}
+
+이번 절에서는 $F(t)$ 는 $\cos$ 함수라고 가정한다. 외부에서 작용하는 힘 $F(t)$ 에 의한 일률(power) $P$ 는 다음과 같다.
+
+$$
+\begin{aligned}
+P = F\dfrac{dx}{dt} &= m \left[\left(\dfrac{dx}{dt}\right)\left(\dfrac{dx^2}{dt^2}\right) + \omega_0^2 x \left(\dfrac{dx}{dt}\right)\right] + \gamma m \left(\dfrac{dx}{dt}\right)^2 \\[0.3em]
+&=\dfrac{d}{dt} {\huge[}\underbrace{\dfrac{1}{2}m \left(\dfrac{dx}{dt} \right)^2}_{=T} + \underbrace{\dfrac{1}{2}m\omega_0^2 x^2}_{=U}{\huge ]}+ \gamma m \left(\dfrac{dx}{dt}\right)^2 \\[0.3em]
+\end{aligned}
+$$
+
+여기서 $T$ 는 질량 $m$ 의 운동에너지, $U$ 는 단진자의 포텐셜 에너지임을 안다. 이 $E=T+U$ 를 진동에 저장되는 에너지라고 볼 수 있다. 많은 주기가 지나면 이 저장되는 에너지의 시간에 대한 변화율은 $0$ 이 되며 결국은 감쇄 효과만 남는다. 한 주기에서의 물리량 $X$ 의 평균을 $\langle X\rangle$ 로 표기한다면 $\langle P\rangle$ 은 다음과 같다.
+
+$$
+\langle P \rangle = \left\langle \gamma m \left(\dfrac{dx}{dt}\right)^2\right \rangle.
+$${#eq-FLP_1_24_3}
+
+$x(t)=\hat{x}e^{i\omega t}$ 라면 $\dot{x}(t) = i\omega \hat{x}e^{i\omega t}$ 이며 실제 시스템을 기술하는 것은 $\text{Re}(x(t))$ 이므로
+
+$$
+\langle P \rangle = \dfrac{1}{2}\gamma m \omega^2 x_0^2
+$$ {#eq-FLP_1_24_4}
+
+이다.
+
+#### **저장되는 에너지**
+
+저장되는 에너지 $E=T+U$ 의 주기에 대한 평균 $\langle E\rangle$ 은
+
+$$
+\begin{aligned}
+\langle E\rangle &= \dfrac{1}{2}m \left\langle \left(\dfrac{dx}{dt}\right)^2\right\rangle + \dfrac{1}{2}m\omega_0^2 \langle x^2\rangle = \dfrac{1}{2}m(\omega_0^2 + \omega^2) \dfrac{1}{2}x_0^2
+\end{aligned}
+$$ {#eq-FLP_1_24_6}
+
+$\omega \approx \omega_0$ 이면 $x_0$ 가 매우 커지기 때문에 저장되는 에너지가 매우 커진다. 
+
+#### **$Q$ 인자**
+
+한 주기에서 강제 감쇄 조화진동자에 외부의 힘이 해주는 일과 저장되는 에너지 사이의 비율에 $2\pi$ 를 곱한 값을 $Q$ 값, 혹은 $Q$ 인자라고 한다. 
+
+$$
+Q := 2\pi \dfrac{\langle P\rangle}{\langle T+U\rangle} = \dfrac{\omega^2 + \omega_0^2}{2\gamma \omega}.
+$$ {#eq-FLP_1_24_7}
+
+$Q$ 값은 이 진동자가 얼마나 효율적인지에 대한 척도이다.
+
+</br>
+
+### II.24-2 감쇄 진동 {#sec-FLP_1_24_2}
+
+*파인만의 내용전개와 다르게...*
+
+#### **강제감쇄진동 미분방정식의 해**
+
+강제감쇄조화진동자의 운동방정식
+
+$$
+\ddot{x}+\gamma \dot{x} + \omega_0^2 x = F(t)/m
+$$ {#eq-FLP_FDHO_1}
+
+을 생각하자. 이 때 $F(t) = 0$ 으로 놓으면 선형 제차 미분방정식이며 그 해를 **과도해 (transient solution)** 라고 한다.$^2$[$^2$ 과도(過度) 가 아니라 과도(過渡) 이다.]{.aside} 과도해를 $x_h(t)$ 라고 하고 @eq-FLP_FDHO_1 의 과도해와 독립적인 해를 $x_p(t)$ 라고 하자. 그렇다면 $x_h(t) + x_p(t)$ 역시 @eq-FLP_FDHO_1 의 해이다. 우선 과도해를 구해보자.
+
+#### **강제감쇄진동 미분방정식의 과도해**
+
+이 방정식의 해를 구하는 방법은 $x(t) = e^{\lambda t}$ 로 놓고 위 의 미분방정식에 대입하면, 
+
+$$
+\lambda^2 + \gamma \lambda + \omega_0^2 = 0
+$$
+
+을 얻으며, $\lambda$ 에 대한 2차방정식의 해는
+
+$$
+\lambda = \dfrac{-\gamma \pm \sqrt{\gamma^2-4\omega_0^2}}{2}
+$$
+
+이다. $\gamma^2-4\omega_0^2$ 의 부호에 따라 해를 세가지로 분류 할 수 있다.
+
+**1. Overdamped** : $\gamma^2 > 4\omega_0^2$ 일 경우 
+
+$$
+\alpha_1 = \dfrac{-\gamma - \sqrt{\gamma^2-4\omega_0^2}}{2},\quad \alpha_2 = \dfrac{-\gamma + \sqrt{\gamma2-4\omega_0^2}}{2}
+$$ 
+
+는 실수이며 과도해는 
+
+$$
+x(t) = A_1 e^{-\alpha_1 t} + A_2 e^{-\alpha_2 t}
+$$ {#eq-FLP_FDHO_2}
+
+이다. 이 경우를 **overdamped** 라고 하며 진동 없이 시간에 따라 감소한다.
+
+**2. Underdamped** : 반대로 $\gamma^2<4\omega^2_0$ 일 경우 $\omega_\gamma =  \sqrt{\omega_0^2-\gamma^2/4}$ 에 대해 
+
+$$
+x(t) = e^{-\gamma t/2 }\text{Re}(A_1 e^{i\omega_\gamma t} + A_2 e^{-i \omega_\gamma t}) = A e^{-\gamma t/2} \cos (\omega_\gamma t + \theta_0)
+$$ {#eq-FLP_FDHO_3}
+
+를 얻는다.[$\operatorname{Re}(a)$ 는 복소수 $a$ 에 대해 실수부만을 취하는 함수이다.]{.aside} 이런 경우를 **underdamped** 라고 하며, overdamped 와는 달리 진동이 존재한다.
+
+**3. Critically dampled** : $\gamma ^2=4\omega_0^2$ 인 경우를 **critically damped** 라고 한다. 이 경우에는 $te^{-\gamma t/2}$ 도 해가 된다. $x(t) = te^{-\gamma t/2 }$ 에 대해
+
+$$
+\ddot{x} + \gamma \dot{x} + \omega_0^2 x =  0
+$$ 
+
+이다. 따라서 이 경우의 해는
+
+$$
+x(t) = (A_1+A_2t)e^{-\gamma t/2}
+$${#eq-FLP_FDHO_4}
+
+이다. 세가지 경우 모두 $A_1,\,A_2$ 는 초기조건 의해 정해진다. 
+
+#### **에너지 변화**
+
+과도해 $x_h(t)$ 에 가능한 모든 경우에서 
+
+$$
+\lim_{t\to +\infty} x_h(t) = \lim_{t \to +\infty} \dfrac{dx_h(t)}{dt} = 0
+$$ 
+
+이다. 즉 충분히 많은 시간이 지나면 과도해는 무시 할 수 있다. 

@@ -1,0 +1,58 @@
+\documentclass[border=5pt,tikz]{standalone}
+\usepackage{amsmath} % for \dfrac
+
+\usepackage{tikz}   %TikZ is required for this to work.  Make sure this exists before the next line
+\usepackage{tikz-3dplot} %requires 3dplot.sty to be in same directory, or in your LaTeX installation
+\usepackage[active,tightpage]{preview}  %generates a tightly fitting border around the work
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{2mm}
+
+\begin{document}
+
+
+\tdplotsetmaincoords{60}{110}
+
+\pgfmathsetmacro{\rvec}{.8}
+\pgfmathsetmacro{\thetavec}{50}
+\pgfmathsetmacro{\phivec}{90}
+
+\begin{tikzpicture}[scale=5,tdplot_main_coords]
+
+\draw[fill=green!20, thick] (-0.5, -0.5, 0) -- (-0.5, 1, 0) -- (0.5, 1, 0) -- (0.5, -0.5, 0) -- cycle;
+
+
+\coordinate (O) at (0,0,0);
+
+
+\tdplotsetcoord{P}{\rvec}{\thetavec}{\phivec}
+
+\draw[very thick, dashed] (0, 0, -0.1) -- (O); 
+\draw[very thick, -latex] (O) -- node [left] {$\boldsymbol{a}'$}(0, 0, 0.13) ; 
+\draw[thin] (O) -- (0, 0, 1);
+\draw[fill=black] (O) circle (0.4pt);
+
+\draw[very thick, -stealth,color=red] (O) --node[above, yshift=7, xshift=5] {$r$}  (P);
+
+
+\draw[color=red] (O) -- (Pxy);
+
+\tdplotsetthetaplanecoords{\phivec}
+
+%draw theta arc and label, using rotated coordinate system
+\tdplotdrawarc[tdplot_rotated_coords]{(0,0,0)}{0.2}{0}{\thetavec}{anchor=south west}{$\theta$}
+
+
+\tdplotsetrotatedcoords{\phivec}{\thetavec}{0}
+
+
+\tdplotsetrotatedcoordsorigin{(P)}
+
+
+\draw[very thick,tdplot_rotated_coords,->] (-0.1,0,0) -- node[anchor= west]{$\boldsymbol{E}$} (0.1,0,0) ;
+
+\tdplotsetrotatedthetaplanecoords{45}
+
+
+\end{tikzpicture}
+
+\end{document}

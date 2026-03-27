@@ -1,0 +1,32 @@
+---
+title: "파인만 물리학 강의 번역서를 읽을 때 주의할 것"
+number-sections: true
+number-depth: 3
+crossref:
+  chapters: true
+---
+
+{{< include ../../latexmacros.qmd >}}
+
+
+
+## Vol 1
+
+- 파인만 물리학 강의 I 2006년 1월 5 일 (1판 4쇄 기준)
+
+#### 39-4-1
+
+- 번역 : 온도가 다른 두 개의 기체 상자를 서로 붙여 놓고 <u>통로를 만들어 놓으면</u> 기체들이 섞이면서..
+- 원문 : *We know that if we take two boxes of gas and let them sit next to each other long enough, even if at the start they were at what we call different temperatures, they will in the end come to the same temperature.*
+
+
+</br>
+
+#### 39-4-3
+
+
+
+- 번역 : 왼쪽의 작은 기체 분자는 벽에 나 있는 조그만 구멍을 통해 오른쪽으로 이동 할 수 있지만 오른쪽의 기체 분자즌 덩치가 커서 왼쪽으로 이동 할 수 없다고 하자. ...
+- 원문 : *One way is to argue that if we have a fixed partition with a tiny hole in it (Fig. 39–4) so that one gas could leak out through the holes while the other could not, because the molecules are too big, and these had attained equilibrium, then we know that in one part, where they are mixed, they have the same average kinetic energy, but some come through the hole without loss of kinetic energy, so the average kinetic energy in the pure gas and in the mixture must be the same. That is not too satisfactory, because maybe there are no holes, for this kind of molecule, that separate one kind from the other.*
+- 원문에서는 작은 기체가 작은 구멍을 통과할 수 있다고만 나왔지 왼쪽에서 오른쪽으로 이동할 수있다는 말은 없다. 번역에서는 빼먹었지만 왼쪽에서 오른쪽으로 이동한 작은 기체는 다시 왼쪽으로 갈 수 있다. 그리고 당연히 그래야지만 평형상태에 도달 할 수 있다.
+

@@ -1,0 +1,238 @@
+% Author: Izaak Neutelings (January 2021)
+\documentclass[border=15pt,tikz]{standalone}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage[outline]{contour} % glow around text
+\usetikzlibrary{calc}
+\usetikzlibrary{angles,quotes} % for pic
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{patterns}
+\usetikzlibrary{bending} % for arrow head angle
+\tikzset{>=latex} % for LaTeX arrow head
+\contourlength{0.8pt}
+
+\colorlet{xcol}{blue!70!black}
+\colorlet{myred}{red!65!black}
+\tikzstyle{rvec}=[->,xcol,very thick,line cap=round]
+\tikzstyle{mass line}=[line width=0.5,draw=red!30!black]
+\tikzstyle{myarr}=[-{Latex[length=3,width=2]},blue!40!black]
+\tikzstyle{myarr2}=[{Latex[length=3,width=2]}-{Latex[length=3,width=2]},blue!40!black]
+\tikzstyle{mass}=[mass line, %rounded corners=1,
+                  top color=red!40!black!30,bottom color=red!40!black!10,shading angle=30]
+\tikzstyle{middle mass}=[mass line,top color=red!40!black!50,bottom color=red!40!black!50,
+                         middle color=red!40!black!10,shading angle=30]
+
+\def\r{0.05} % pulley small radius
+\tikzset{
+  pics/rotarr/.style={
+    code={
+      \draw[white,line width=0.8] ({#1*cos(210)},0) arc(-210:35:{#1} and {0.35*#1});
+      \draw[-{>[flex'=1]}] ({#1*cos(210)},0) coordinate (W1) arc(-210:35:{#1} and {0.35*#1})
+        node[midway] (W2) {} --++ (150:0.1) coordinate (W3);
+  }},
+  pics/rotarr/.default=0.3,
+}
+
+
+\begin{document}
+
+
+% MOMENT OF INERTIA - masses on rods
+\def\ang{-20} % angle of whole picture
+\begin{tikzpicture}[scale=1]
+    \begin{scope}[rotate=-20]
+        \def\h{0.9}   % length z axis
+        \def\L{3.0}   % length rod
+        \def\R{1.9}   % circle radius
+        \def\r{1.4}   % mass radius (inner sep)
+        \coordinate (O) at (0,0);
+        \coordinate (L) at (-\R/2,0);
+        \coordinate (R) at ( \R/2,0);
+        \draw (0,-\h) -- (0,\h) coordinate (T);
+        \pic[xscale=1,rotate=\ang] at (0,0.7*\h) {rotarr};
+        \node[below=1,right=1] at (W3) {$\omega$};
+        \draw[line width=1.8,red!25!black] (L) -- (R);
+        \node[mass,circle,inner sep=\r,scale=0.8] (L') at (L) {$m$};
+        \node[mass,circle,inner sep=\r,scale=0.8] (R') at (R) {$m$};
+        \draw[<->] (L)++(0,-0.2*\R) --++ ( \R/2,0) node[midway,below=-1] {$r$}; %\frac{r}{2}
+        \draw[<->] (R)++(0,-0.2*\R) --++ (-\R/2,0) node[midway,below=-1] {$r$};
+        \node[scale=0.8]  at (0, -1.5) {$I=2mr^2$};
+    \end{scope}
+
+    \begin{scope}[xshift=100, rotate=-20]
+        \def\h{0.8}   % length z axis
+        \def\L{3.0}   % length rod
+        \def\Ry{0.12} % horizontal radius
+        \def\Rx{0.04} % vertical radius
+        \def\ang{-20} % angle of whole picture
+        \def\rod{
+        \draw[middle mass,shading angle=\ang+30]
+            (-\L/2,-\Ry) coordinate (BL) -++ (\L,0)
+            arc(270:90:{\Rx} and {\Ry}) --++ (-\L,0)
+            arc(90:270:{\Rx} and {\Ry});
+        \draw[middle mass,shading angle=\ang+30]
+            (\L/2,0) ellipse({\Rx} and {\Ry});
+        }
+
+        \draw[line cap=round] (0,0) --++ (0,-\h);
+        \rod
+        \draw[line cap=round] (0,0.8*\Ry) --++ (0,\h);
+        \pic[xscale=1,rotate=\ang] at (0,0.7*\h) {rotarr};
+        \node[right=0] at (W3) {$\omega$};
+        \draw[white,line width=0.7] (BL)++(0,-1.8*\Ry) --++ (\L,0);
+        \draw[myarr2] (BL)++(0,-1.8*\Ry) --++ (\L,0)
+            node[pos=0.3,below=-1,scale=0.9] {$L$};
+        \node[scale=0.8]  at (0, -1.5) {$I=\dfrac{ML^2}{12}$};
+    \end{scope}
+
+    \begin{scope}[xshift=200, rotate=-20]
+        \def\h{0.8}   % length z axis
+        \def\L{3.0}   % length rod
+        \def\Ry{0.12} % horizontal radius
+        \def\Rx{0.04} % vertical radius
+        \def\ang{-20} % angle of whole picture
+        \def\rod{
+        \draw[middle mass,shading angle=\ang+30]
+            (-\L/2,-\Ry) coordinate (BL) -++ (\L,0)
+            arc(270:90:{\Rx} and {\Ry}) --++ (-\L,0)
+            arc(90:270:{\Rx} and {\Ry});
+        \draw[middle mass,shading angle=\ang+30]
+            (\L/2,0) ellipse({\Rx} and {\Ry});
+        }
+        \rod
+        \draw[line cap=round] (\L/2,-0.8*\h) --++ (0,2*\h);
+        \pic[xscale=1,rotate=\ang] at (\L/2,0.7*\h) {rotarr};
+        \node[right=0] at (W3) {$\omega$};
+        \draw[white,line width=0.7] (BL)++(0,-1.8*\Ry) --++ (\L,0);
+        \draw[myarr2] (BL)++(0,-1.8*\Ry) --++ (\L,0)
+            node[midway,below=-1,scale=0.9] {$L$};
+         \node[scale=0.8]  at (0, -1.5) {$I=\dfrac{ML^2}{3}$};
+    \end{scope}
+
+
+
+    \begin{scope}[xshift=0, yshift=-130, rotate = -20]
+        % MOMENT OF INERTIA - SOLID CYLINDER
+        \def\H{1.6}   % cylinder length
+        \def\Rx{0.70} % horizontal radius
+        \def\Ry{0.20} % vertical radius
+        
+        \coordinate (O) at (0,\H);
+        \draw[line cap=round] (0,0) --++ (0,-2.6*\Ry);
+        \draw[middle mass,shading angle=90+\ang]
+            (-\Rx,0) --++ (0,\H) arc(-180:0:{\Rx} and {\Ry}) --++ (0,-\H) arc(0:-180:{\Rx} and {\Ry});
+        \draw[mass] (O) ellipse({\Rx} and \Ry);
+        \draw[line cap=round] (O) --++ (0,3.0*\Ry); %node[left] {$z$};
+        \pic[xscale=1,rotate=\ang] at (0,\H+2.6*\Ry) {rotarr};
+        \node[right=0] at (W3) {$\omega$};
+        \draw[myarr] (O) --++ (5:{\Rx} and {\Ry}) node[right=-2,scale=0.9] {$R$};
+         \node[scale=0.8]  at (0, -1.3) {$I=\dfrac{MR^2}{2}$};
+    \end{scope}
+
+    \begin{scope}[xshift=100, yshift=-130, rotate = -20]
+        % MOMENT OF INERTIA - HOLLOW CYLINDER
+
+        \def\sx{0.68}
+        \def\sy{0.45}
+        \def\H{1.6}   % cylinder length
+        \def\Rx{0.70} % horizontal radius
+        \def\Ry{0.20} % vertical radius
+        \coordinate (O) at (0,\H);
+        \draw[line cap=round] (0,0) -- (0,-2.6*\Ry);
+        \draw[mass,shading angle=\ang-20]
+            (O) ellipse({\Rx} and \Ry);
+        \draw[middle mass,shading angle=90+\ang]
+            (-\Rx,0) --++ (0,\H) arc(-180:0:{\Rx} and {\Ry}) --++ (0,-\H) arc(0:-180:{\Rx} and {\Ry});
+        \draw[mass,even odd rule]
+            (O) ellipse({\Rx} and \Ry) ellipse({\sx*\Rx} and {\sy*\Ry});
+        \draw[line cap=round] (0,\H-\sy*\Ry+0.01) -- (0,\H+3.0*\Ry);
+        \draw[mass line] % hide round cap
+            (0,\H)++(-91:{\sx*\Rx} and {\sy*\Ry}) arc(-91:-89:{\sx*\Rx} and {\sy*\Ry});
+        \pic[xscale=1,rotate=\ang] at (0,\H+2.6*\Ry) {rotarr};
+        \node[right=0] at (W3) {$\omega$};
+        \draw[myarr] (O) --++ (-112:{\Rx} and {\Ry})
+            node[below=5,left=-7,scale=0.9,opacity=0.6] {\contour{white}{$R_1$}}
+            node[below=5,left=-7,scale=0.9] {$R_1$};
+        \draw[myarr] (O) --++ (0:{\sx*\Rx} and {\sy*\Ry})
+            node[above=2,right=-5,scale=0.9,opacity=0.6] {\contour{white}{$R_2$}}
+            node[above=2,right=-5,scale=0.9] {$R_2$};
+        \node[scale=0.8]  at (0, -1.3) {$I=\dfrac{M(R_1^2+R_2^2)}{2}$};
+       
+    \end{scope}
+
+    \begin{scope}[xshift=200, yshift=-130, rotate = -20]
+        % MOMENT OF INERTIA - HOLLOW CYLINDER SHELL
+        \def\sx{0.88}
+        \def\sy{0.70}
+        \def\H{1.6}   % cylinder length
+        \def\Rx{0.70} % horizontal radius
+        \def\Ry{0.20} % vertical radius
+        \coordinate (O) at (0,\H);
+        \draw (0,0) -- (0,-2.6*\Ry);
+        \draw[mass,shading angle=\ang-20]
+            (O) ellipse({\Rx} and \Ry);
+        \draw[middle mass,shading angle=90+\ang]
+            (-\Rx,0) --++ (0,\H) arc(-180:0:{\Rx} and {\Ry}) --++ (0,-\H) arc(0:-180:{\Rx} and {\Ry});
+        \draw[mass,even odd rule]
+            (O) ellipse({\Rx} and \Ry) ellipse({\sx*\Rx} and {\sy*\Ry});
+        \draw (0,\H-\sy*\Ry+0.01) -- (0,\H+3.0*\Ry);
+        \pic[xscale=1,rotate=\ang] at (0,\H+2.6*\Ry) {rotarr};
+        \node[right=0] at (W3) {$\omega$};
+        \draw[myarr] (O) --++ (0:{0.5*(\sx+0.96)*\Rx} and {0.5*(\sy+0.96)*\Ry})
+            node[below=2,right=-2,scale=0.9] {$R$};
+         \node[scale=0.8]  at (0, -1.3) {$I=MR^2$};
+    \end{scope}
+
+    \begin{scope}[xshift=0, yshift=-240, rotate = -20]
+        % MOMENT OF INERTIA - SPHERES
+        \node[] at (0, 1.8) {Sphere};
+        \def\R{1.0}  % thickness
+    
+        \coordinate (O) at (0,0);
+        \draw (O) -- (0,-1.3*\R);
+        \draw[ball color=myred] (O) circle(\R);
+        \draw[line width=0.6,draw=red!30!black,fill=red!40!black!10,fill opacity=0.76]
+            (O) circle(\R);
+        \draw[line cap=round] (0,0.85*\R) -- (0,1.45*\R);
+        \pic[xscale=1,rotate=\ang] at (0,1.3*\R) {rotarr};
+        \node[right=0] at (W3) {$\omega$};
+         \node[scale=0.8]  at (0, -1.9) {$I=\dfrac{2MR^2}{5}$};
+    \end{scope}
+
+    \begin{scope}[xshift=100, yshift=-240, rotate = -20]
+        % MOMENT OF INERTIA - SPHERES
+        \def\R{1.0}  % thickness
+        \node[] at (0, 1.8) {Spherical shell};
+        \coordinate (O) at (0,0);
+        \draw (O) -- (0,-1.3*\R);
+        \draw[ball color=myred] (O) circle(\R);
+        
+        \draw[line width=0.6,draw=red!30!black,fill=red!40!black!10,fill opacity=0.76]
+            (O) circle(\R);
+        \draw[black, thick, dashed] (O) circle({\R-0.05});
+        \draw[line cap=round] (0,0.85*\R) -- (0,1.45*\R);
+        \pic[xscale=1,rotate=\ang] at (0,1.3*\R) {rotarr};
+        \node[right=0] at (W3) {$\omega$};
+         \node[scale=0.8]  at (0, -1.9) {$I=\dfrac{2MR^2}{3}$};
+    \end{scope}
+    
+    % \begin{scope}[xshift=100, yshift=-270, rotate = -20]
+    %     % MOMENT OF INERTIA - SPHERES
+    %     \def\R{1.0}  % thickness
+
+    %     \coordinate (O) at (0,0);
+    %     \draw[line cap=round] (0,\R) -- (0,-1.3*\R);
+    %     \draw[ball color=myred] (O) circle(\R);
+    %     \draw[opacity=0.3] (0,-\R) -- (0,-0.85*\R);
+    %     \draw[line cap=round] (0,-0.85*\R) -- (0,0.9*\R);
+    %     \draw[line width=0.6,draw=red!30!black,fill=red!40!black!10,fill opacity=0.76]
+    %         (O) circle(\R);
+    %     \draw[line cap=round] (0,0.85*\R) -- (0,1.45*\R);
+    %     \pic[xscale=1,rotate=\ang] at (0,1.3*\R) {rotarr};
+    %     \node[right=0] at (W3) {$\omega$};
+    % \end{scope}
+    
+\end{tikzpicture}
+
+
+\end{document}

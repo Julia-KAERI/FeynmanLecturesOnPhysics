@@ -1,0 +1,10 @@
+---
+title: "파인만의 물리학 강의"
+number-sections: true
+number-depth: 2
+crossref:
+  chapters: true
+  
+---
+
+파인만의 물리학 강의 I, II, III 권에 대한 메모와 노트
