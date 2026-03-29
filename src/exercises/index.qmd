@@ -1,0 +1,10 @@
+---
+title: "파인만의 물리학 강의 연습문제"
+number-sections: true
+number-depth: 2
+crossref:
+  chapters: true
+  
+---
+
+@feynman2014exercises 
