@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>1&nbsp; I-1 : 고전역학 – 파인만 물리학 강의</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../src/00_index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3e2728906df7980cb53b491a61d13d7e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -366,7 +364,7 @@ window.Quarto = {
 
 <div class="hidden">
 <p>% %</p>
-<p>% </p>
+%
 <p><span class="math display">\[
 \DeclarePairedDelimiters{\set}{\{}{\}}
 \DeclareMathOperator*{\argmax}{argmax}
@@ -1124,34 +1122,51 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 <h2 class="anchored" data-anchor-id="sec-FLP_1_12">I.12 힘의 성질</h2>
 <section id="sec-FLP_1_12_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_12_1">I.12-1 힘이란 무엇인가?</h3>
+<section id="뉴턴의-제-2-법칙과-힘" class="level4">
+<h4 class="anchored" data-anchor-id="뉴턴의-제-2-법칙과-힘"><strong>뉴턴의 제 2 법칙과 힘</strong></h4>
 <ul>
-<li><p>힘의 본질에 대한 질문</p></li>
-<li><p>뉴턴의 제 2 법칙 <span class="math inline">\(\boldsymbol{F}=m\boldsymbol{a}= d\boldsymbol{p}/dt\)</span> 에서 일단 우리는 질량, 속도, 가속도와 운동량에 대해 알고 있다. 그렇다면 힘 <span class="math inline">\(\boldsymbol{F}\)</span> 는?</p>
+<li>뉴턴의 제 2 법칙 <span class="math inline">\(\boldsymbol{F}=m\boldsymbol{a}= d\boldsymbol{p}/dt\)</span> 에서 일단 우리는 질량, 속도, 가속도와 운동량에 대해 알고 있다. 그렇다면 힘 <span class="math inline">\(\boldsymbol{F}\)</span> 는?
 <ul>
-<li>일단 <span class="math inline">\(\boldsymbol{F}=m\boldsymbol{a}\)</span> 는 힘에 대한 정의가 아니다.</li>
-<li>힘은 운동량을 변화시키는 어떤 독립적이며 물질로부터 발생하는 성질이다.</li>
-<li>힘을 정확히 정의하는 것은 Feynmann 에 따르면 불가능하다.</li>
+<li>일단 <span class="math inline">\(\boldsymbol{F}=m\boldsymbol{a}\)</span> 는 힘에 대한 정의가 아니다. 이걸 힘에 대한 정의라고 하면 뉴턴의 제 2 법칙은 힘을 정의한 것이지 자연법칙이 아니게 된다.</li>
 </ul></li>
-<li><p>뉴턴은 보편 중력에 대해서 제시했다. 만약 우주의 힘이 보편중력 뿐이라면 완결적인 이론이 되겠지만 중력 이외의 다른 힘도 존재한다는 것은 뉴턴도 알고 있었다(물질이 서로 달라붙는 힘, 화학반응, 표면장력 등).</p></li>
+<li>뉴턴 법칙의 실제 내용은 다음과 같다:
+<ul>
+<li>힘은 <span class="math inline">\(\boldsymbol{F}=m\boldsymbol{a}\)</span> 외에 몇 가지 독립적인 성질을 가져야 한다고 여겨지지만, 힘이 가진 구체적인 독립적인 성질은 뉴턴이나 다른 사람에 의해 완전히 설명되지 않았으며, 따라서 물리 법칙 <span class="math inline">\(\boldsymbol{F}=m\boldsymbol{a}\)</span> 는 불완전한 법칙이다.</li>
+<li>질량에 가속도를 곱한 것을 연구하고 그 곱을 힘이라고 부르면, 힘이라고 부르는 것들에 대한 일관성을 발견하게 된다는 것을 의미한다. 이런 의미에서 뉴턴의 제 2 법칙은 자연을 분석하는 데 좋은 프로그램이며, 힘이 단순하고 일관될 것이라는 제안이다.</li>
+</ul></li>
+<li>뉴턴은 보편 중력에 대해서 제시했다. 만약 우주의 힘이 보편중력 뿐이라면 완결적인 이론이 되겠지만 중력 이외의 다른 힘도 존재한다는 것은 뉴턴도 알고 있었다(물질이 서로 달라붙는 힘, 화학반응, 표면장력 등).</li>
+</ul>
+</section>
+<section id="힘의-성질" class="level4">
+<h4 class="anchored" data-anchor-id="힘의-성질"><strong>힘의 성질</strong></h4>
+<ul>
+<li>물리적인 물체가 존재하지 않으면 힘이 0과 동일하다고 암묵적으로 가정된다. 힘이 0 이 아니면 무언가 물리적인 실체가 있다고 가정된다.</li>
+<li>뉴턴의 제 2 법칙과 제 3 법칙은 근사적인 사실을 뿐이다. 뉴턴의 제 2 법칙이 정의라면 그것은 항상 사실이어야 한다.</li>
+<li>힘을 명확하게 정의 할 수 없다. 이 문장이 어떤 의미이건 간에.</li>
 </ul>
 <p><br></p>
 </section>
+</section>
 <section id="sec-FLP_1_12_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_12_2">I.12-2 마찰력</h3>
+<section id="저항력과-뉴턴의-제-2-법칙" class="level4">
+<h4 class="anchored" data-anchor-id="저항력과-뉴턴의-제-2-법칙"><strong>저항력과 뉴턴의 제 2 법칙</strong></h4>
 <ul>
 <li>다양한 형태의 마찰력
 <ul>
-<li>고속의 비행기에 작용하는 공기에 의한 마찰력 : <span class="math inline">\(\propto v^2\)</span>,</li>
-<li>유체 속에서 저속으로 움직이는 물체에 작용하는 마찰력 : <span class="math inline">\(\propto v\)</span>,
+<li>고속의 비행기에 작용하는 공기에 의한 저항력(drag) <span class="math inline">\(\propto v^2\)</span>,</li>
+<li>유체 속에서 저속으로 움직이는 물체에 작용하는 저항력 <span class="math inline">\(\propto v\)</span>.</li>
+</ul></li>
+<li>위의 힘들과 <span class="math inline">\(F=ma\)</span> 와의 차이는?
 <ul>
-<li>예를 들어 비행기 전체에 작용하는 공기에 의한 마찰력은 각 부분에 작용하는 마찰력의 단순 결합으로 표현 할 수 없고 복잡한 관계가 얽혀 있다.</li>
+<li>둘 다 실험적이다. 그러나 <span class="math inline">\(F=ma\)</span> 는 근본 법칙이지만 마찰력들은 공기와 비행기 각 부분간의 다양하고 복잡한 관계의 결과이다.</li>
 </ul></li>
 <li>미끌어짐 마찰력 : 고체 표면에서 천천히 움직이는 고체에서 발생하는 마찰력. 많은 경우 수직 항력(normal force) <span class="math inline">\(N\)</span> 에 비례하며 이 비례 계수를 <em>마찰 계수(coefficient of friction)</em> 라고 한다. 마찰 계수 <span class="math inline">\(\mu\)</span> 에 대해 아래와 같이 표현 할 수 있다. <span id="eq-FLP_1_12_1"><span class="math display">\[
-F=\mu N.
-\tag{1.14}\]</span></span></li>
-</ul></li>
+  F=\mu N.
+   \tag{1.14}\]</span></span></li>
 </ul>
 <p></p>
+</section>
 </section>
 <section id="sec-FLP_1_12_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_12_3">I.12-3 분자들 사이의 힘</h3>
