@@ -275,7 +275,11 @@ window.Quarto = {
   <li><a href="#sec-FLP_1_7_7" id="toc-sec-FLP_1_7_7" class="nav-link" data-scroll-target="#sec-FLP_1_7_7">I.7.7 중력이란 무엇인가?</a></li>
   <li><a href="#sec-FLP_1_7_8" id="toc-sec-FLP_1_7_8" class="nav-link" data-scroll-target="#sec-FLP_1_7_8">I.7.8 중력과 상대성이론</a></li>
   </ul></li>
-  <li><a href="#sec-FLP_1_9" id="toc-sec-FLP_1_9" class="nav-link" data-scroll-target="#sec-FLP_1_9">I.9. 뉴턴의 동역학 법칙</a></li>
+  <li><a href="#sec-FLP_1_9" id="toc-sec-FLP_1_9" class="nav-link" data-scroll-target="#sec-FLP_1_9">I.9. 뉴턴의 동역학 법칙</a>
+  <ul class="collapse">
+  <li><a href="#sec-FLP_1_9_1" id="toc-sec-FLP_1_9_1" class="nav-link" data-scroll-target="#sec-FLP_1_9_1">I.9.1 운동량과 힘</a></li>
+  <li><a href="#sec-FLP_1_9_4" id="toc-sec-FLP_1_9_4" class="nav-link" data-scroll-target="#sec-FLP_1_9_4">I.9.4 힘은 무엇인가?</a></li>
+  </ul></li>
   <li><a href="#sec-FLP_1_10" id="toc-sec-FLP_1_10" class="nav-link" data-scroll-target="#sec-FLP_1_10">I.10. 운동량 보존</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_1_10_1" id="toc-sec-FLP_1_10_1" class="nav-link" data-scroll-target="#sec-FLP_1_10_1">I.10-1 뉴턴의 제 3 운동법칙</a></li>
@@ -284,6 +288,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_1_30_4" id="toc-sec-FLP_1_30_4" class="nav-link" data-scroll-target="#sec-FLP_1_30_4">I.10-4 운동량과 에너지</a></li>
   <li><a href="#sec-FLP_1_10_5" id="toc-sec-FLP_1_10_5" class="nav-link" data-scroll-target="#sec-FLP_1_10_5">I.10-5 상대론적 운동량</a></li>
   </ul></li>
+  <li><a href="#sec-FLP_1_11" id="toc-sec-FLP_1_11" class="nav-link" data-scroll-target="#sec-FLP_1_11">I.11 벡터</a></li>
   <li><a href="#sec-FLP_1_12" id="toc-sec-FLP_1_12" class="nav-link" data-scroll-target="#sec-FLP_1_12">I.12 힘의 성질</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_1_12_1" id="toc-sec-FLP_1_12_1" class="nav-link" data-scroll-target="#sec-FLP_1_12_1">I.12-1 힘이란 무엇인가?</a></li>
@@ -930,6 +935,10 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 </section>
 <section id="sec-FLP_1_9" class="level2">
 <h2 class="anchored" data-anchor-id="sec-FLP_1_9">I.9. 뉴턴의 동역학 법칙</h2>
+<section id="sec-FLP_1_9_1" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_9_1">I.9.1 운동량과 힘</h3>
+<section id="관성과-관성의-법칙" class="level4">
+<h4 class="anchored" data-anchor-id="관성과-관성의-법칙"><strong>관성과 관성의 법칙</strong></h4>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -940,9 +949,12 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>물체 하나만 존재한다면(if an object is left alone), 운동하고 있는 물제는 직선상의 등속운동을 하고 정지해 있는 물체는 정지해 있다. 이러한 성질을 <strong>관성(inertia)</strong> 라고 한다.</p>
+<p>물체 하나만 존재하고(if an object is left alone) 다른 영향을 받지 않는다면, 운동하고 있는 물제는 직선상의 등속운동을 하고 정지해 있는 물체는 정지해 있다. 이러한 성질을 <strong>관성(inertia)</strong> 라고 한다.</p>
 </div>
 </div>
+</section>
+<section id="운동량과-뉴턴의-제-2-운동법칙" class="level4">
+<h4 class="anchored" data-anchor-id="운동량과-뉴턴의-제-2-운동법칙"><strong>운동량과 뉴턴의 제 2 운동법칙</strong></h4>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -969,11 +981,23 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>운동량 <span class="math inline">\(\boldsymbol{p}=m\boldsymbol{v}\)</span> 의 시간에 대한 변화량이 힘 <span class="math inline">\(\boldsymbol{F}\)</span> 이다. <span id="eq-FLP_newton_2nd_law"><span class="math display">\[
+<p>힘 <span class="math inline">\(\boldsymbol{F}\)</span> 가 주어졌을 때 다음이 성립한다. <span id="eq-FLP_newton_2nd_law"><span class="math display">\[
 \boldsymbol{F}=\dfrac{d\boldsymbol{p}}{dt} = \dfrac{d}{dt}(m\boldsymbol{v}).
 \tag{1.9}\]</span></span></p>
 </div>
 </div>
+<p><br></p>
+</section>
+</section>
+<section id="sec-FLP_1_9_4" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_9_4">I.9.4 힘은 무엇인가?</h3>
+<ul>
+<li>힘에 대해 뉴턴 자신이 몇 가지 예를 제시했다.
+<ul>
+<li>중력에 대한 구체적인 공식을 제시했다.</li>
+<li>다른 힘의 경우 그는 제3법칙에서 정보를 일부 제공했다. 이후에 설명한다.</li>
+</ul></li>
+</ul>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -992,6 +1016,7 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 </div>
 </div>
 <p><br></p>
+</section>
 </section>
 <section id="sec-FLP_1_10" class="level2">
 <h2 class="anchored" data-anchor-id="sec-FLP_1_10">I.10. 운동량 보존</h2>
@@ -1020,7 +1045,9 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 </section>
 <section id="sec-FLP_1_10_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_10_2">I.10-2 운동량 보존</h3>
-<p><span class="math inline">\(N\)</span> 개의 입자의 경우를 생각하자. <span class="math inline">\(i\)</span> 입자에 의해 <span class="math inline">\(j\)</span> 입자가 받는 힘을 <span class="math inline">\(\boldsymbol{F}_{ij}\)</span> 라고 하고 <span class="math inline">\(i\)</span> 번째 입자의 운동량을 <span class="math inline">\(\boldsymbol{p}_i\)</span> 라고 하자. 그리고 이 <span class="math inline">\(N\)</span> 개의 입자의 상호작용 이외의 힘은 작용하지 않는다고 하자. 뉴튼의 제 2 운동법칙에 의해</p>
+<section id="운동량-보존" class="level4">
+<h4 class="anchored" data-anchor-id="운동량-보존"><strong>운동량 보존</strong></h4>
+<p><span class="math inline">\(N\)</span> 개의 입자의 경우를 생각하자. <span class="math inline">\(j\)</span> 입자에 의해 <span class="math inline">\(i\)</span> 입자가 받는 힘을 <span class="math inline">\(\boldsymbol{F}_{ji}\)</span> 라고 하고 <span class="math inline">\(i\)</span> 번째 입자의 운동량을 <span class="math inline">\(\boldsymbol{p}_i\)</span> 라고 하자. 그리고 이 <span class="math inline">\(N\)</span> 개의 입자의 상호작용 이외의 힘은 작용하지 않는다고 하자. 뉴턴의 제 2 운동법칙에 의해</p>
 <p><span id="eq-FLP_1_10_1"><span class="math display">\[
 \dfrac{d\boldsymbol{p}_i}{dt} = \sum_{j=1,\, j\ne i}^N \boldsymbol{F}_{ji}
 \tag{1.10}\]</span></span></p>
@@ -1028,7 +1055,7 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 <p><span class="math display">\[
 \boldsymbol{p}_\text{tot} := \sum_{i=1}^N \boldsymbol{p}_i.
 \]</span></p>
-<p>뉴튼의 제 3 운동법칙에 의해 <span class="math inline">\(\boldsymbol{F}_{ij}+\boldsymbol{F}_{ji}=0\)</span> 임을 이용하면 아래와 같이 <span class="math inline">\(d\boldsymbol{p}_\text{tot}/dt=0\)</span> 임을 보일 수 있다.</p>
+<p>뉴턴의 제 3 운동법칙에 의해 <span class="math inline">\(\boldsymbol{F}_{ij}+\boldsymbol{F}_{ji}=0\)</span> 임을 이용하면 아래와 같이 <span class="math inline">\(d\boldsymbol{p}_\text{tot}/dt=0\)</span> 임을 보일 수 있다.</p>
 <p><span id="eq-FLP_1_10_2"><span class="math display">\[
 \dfrac{d\boldsymbol{p}_\text{tot}}{dt}=\dfrac{d}{dt}\sum_{i=1}^N \boldsymbol{p}_i = \sum_{i=1}^N \sum_{j=1,\,i\ne i}^N \boldsymbol{F}_{ij} = \sum_{i=1}^N \sum_{j=1}^{i-1} ({\boldsymbol{F}_{ij}+\boldsymbol{F}_{ji}}) = 0.
 \tag{1.11}\]</span></span></p>
@@ -1036,7 +1063,11 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 <p><span id="eq-FLP_1_10_3"><span class="math display">\[
 \boldsymbol{p}_\text{tot} = \sum_{i=1}^N m_i\boldsymbol{v}_i = \text{constant}.
 \tag{1.12}\]</span></span></p>
-<p>뉴튼의 제 2 운동법칙으로부터 <strong>갈릴레이 상대성 원리(Galilean relativity)</strong> 를 얻을 수 있다.</p>
+<p><br></p>
+</section>
+<section id="갈릴레이-상대성-원리" class="level4">
+<h4 class="anchored" data-anchor-id="갈릴레이-상대성-원리"><strong>갈릴레이 상대성 원리</strong></h4>
+<p>뉴턴의 제 2 운동법칙으로부터 <strong>갈릴레이 상대성 원리(Galilean relativity)</strong> 를 얻을 수 있다.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1050,7 +1081,11 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 <p>정지한 기준틀과 이 기준틀에 대해 등속직선운동을 하는 기준틀에 대해 물리 법칙은 동일하다.</p>
 </div>
 </div>
+<ul>
+<li>갈릴레이 상대성 원리와 운동량 보존은 수학적으로 동치이다. 운동량 보존으로부터 갈릴레이 상대성 원리를 유도할 수 있으며, 반대로 갈릴레이 상대성 원리로부터 운동량 보존을 유도할 수 있다.</li>
+</ul>
 <p><br></p>
+</section>
 </section>
 <section id="sec-FLP_1_30_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_30_3">I.10-3 운동량은 보존된다!</h3>
@@ -1078,6 +1113,10 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 </ul>
 <p><br></p>
 </section>
+</section>
+<section id="sec-FLP_1_11" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLP_1_11">I.11 벡터</h2>
+<p><br></p>
 </section>
 <section id="sec-FLP_1_12" class="level2">
 <h2 class="anchored" data-anchor-id="sec-FLP_1_12">I.12 힘의 성질</h2>
@@ -1390,7 +1429,7 @@ U(R&lt;a)= - \dfrac{GMm}{a}
 <p><span id="eq-FLP_1_18_3"><span class="math display">\[
 \boldsymbol{F}=\sum_i \boldsymbol{F}_i = \sum_i \dfrac{d^2 \left(m_i\boldsymbol{r}_i\right)}{dt^2}
 \tag{1.20}\]</span></span></p>
-<p>이다. 여기서 중요한 것은 물체 내에서 벌어지는 상호작용에 의한 힘은 뉴튼의 제 3 운동법칙에 의해 <span class="math inline">\(\boldsymbol{F} = \sum_i \boldsymbol{F}_i\)</span> 에서 상쇄된다는 것이다. 따라서 <span class="math inline">\(\boldsymbol{F}\)</span> 는 내부에서 주고 받는 힘이 아닌 순수한 외부에서 작용하는 힘만 남게된다.</p>
+<p>이다. 여기서 중요한 것은 물체 내에서 벌어지는 상호작용에 의한 힘은 뉴턴의 제 3 운동법칙에 의해 <span class="math inline">\(\boldsymbol{F} = \sum_i \boldsymbol{F}_i\)</span> 에서 상쇄된다는 것이다. 따라서 <span class="math inline">\(\boldsymbol{F}\)</span> 는 내부에서 주고 받는 힘이 아닌 순수한 외부에서 작용하는 힘만 남게된다.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
