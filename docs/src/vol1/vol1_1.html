@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>1&nbsp; I-1 : 고전역학 – 파인만 물리학 강의</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,15 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../src/00_index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3e2728906df7980cb53b491a61d13d7e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -364,7 +366,7 @@ window.Quarto = {
 
 <div class="hidden">
 <p>% %</p>
-%
+<p>% </p>
 <p><span class="math display">\[
 \DeclarePairedDelimiters{\set}{\{}{\}}
 \DeclareMathOperator*{\argmax}{argmax}
@@ -1173,7 +1175,7 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 <div id="fig-FLP_1_12_2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_12_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/fig_1_12/fig_1_12_2.png" class="img-fluid figure-img" width="400">
+<img src="figures/fig_1_12/fig_1_12_2.png" class="img-fluid figure-img" width="300">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_1_12_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 그림&nbsp;1.4: 파인만 물리학 강의 I. Fig. 12-2. 두 원자 사이에 작용하는 힘 <span class="math inline">\(F\)</span> 와 거리 <span class="math inline">\(r\)</span> 의 관계
@@ -1181,36 +1183,48 @@ G= 6.670 \times 10^{−11} \text{ N} \cdot \text{m}^2/\text{kg}^2.
 </figure>
 </div>
 <ul>
-<li><p>실험적으로 두 원자 사이의 힘과 거리의 관계는 대략 <a href="#fig-FLP_1_12_2" class="quarto-xref">그림&nbsp;<span>1.4</span></a> 와 같다.</p></li>
-<li><p>물 분자에서 양의 전하의 중심과 음의 전하의 중심의 위치는 다르다. 따라서 근처의 다른 분자는 상대적으로 큰 전기 쌍극자 사이의 힘이다. 산소 분자와 같이 대칭성이 큰 경우는 양의 전하와 음의 전하의 분포는 다르더라도 그 중심이 일치한다. 분자의 양전하와 음전하의 중심이 일치하지 않는 분자를 <strong>극성 분자 (polar molecure)</strong> 라고 하며 극성 분자에서 전하와 거리의 곱을 <strong>쌍극자 모멘트(dipole moment)</strong> 라고 한다.</p></li>
+<li><p>실험적으로 두 원자 사이의 힘과 거리의 관계는 대략 <a href="#fig-FLP_1_12_2" class="quarto-xref">그림&nbsp;<span>1.4</span></a> 와 같다. 이 힘은 고전물리학으로 설명 될 수 없으며 양자역학을 통해 이해되어야 한다.</p></li>
+<li><p>물 분자에서 양의 전하의 중심과 음의 전하의 중심의 위치는 다르다. 따라서 근처의 다른 물 분는 상대적으로 큰 전기 쌍극자에 의한 힘을 느낀다. 산소 분자와 같이 대칭성이 큰 경우는 양의 전하와 음의 전하의 분포는 다르더라도 그 중심이 일치한다. 분자의 양전하와 음전하의 중심이 일치하지 않는 분자를 <strong>극성 분자 (polar molecure)</strong> 라고 하며 극성 분자에서 전하와 거리의 곱을 <strong>쌍극자 모멘트(dipole moment)</strong> 라고 한다.</p></li>
 <li><p><strong>비극성 분자(nonpolar molecure)</strong> 사이에도 거리가 상당히 먼 경우 <span class="math inline">\(1/r^7\)</span> 에 비례하는 인력이 작용한다. (이것을 이해하려면 양자역학이 필요하다.) 쌍극자가 존재하는 경우 분자 사이의 인력이 훨씬 크다. 두 분자 사이의 간격이 지나치게 가깝다면 두 분자 사이에 척력이 작용한다.</p></li>
+<li><p>이런 분자 사이의 인력은 근본적인 것이 아니다. 이 인력은 한 분자에 있는 모든 전자+핵 과 다른 분자에 있는 모든 전자+핵 사이의 복잡한 상호작용에 기인한다. 우리가 얻는 모든 단순해 보이는 공식은 이 복잡한 상호작용의 총합이다.</p></li>
+<li><p>특정 지점 주위로 인력과 척력이 교차한다. 분자들이 너무 가까워지는 것도, 너무 멀어지는 것에도 부담을 주기 때문에 분자들이 모여 고체를 이룰 수 있다.</p></li>
 <li><p>분자 사이의 거리가 <span class="math inline">\(d\)</span> 에 매우 가까울 때 상수 <span class="math inline">\(k\)</span> 에 대해 <span class="math inline">\(F(r)=-k(r-d)\)</span> 로 표현 할 수 있다. 이 때 <span class="math inline">\(k = |F'(d)|\)</span> 이다.</p></li>
 </ul>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_12_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_12_4">I.12-4 근본적인 힘과 장</h3>
+<section id="쿨롱-힘" class="level4">
+<h4 class="anchored" data-anchor-id="쿨롱-힘"><strong>쿨롱 힘</strong></h4>
+<p><span class="math display">\[
+\boldsymbol{F}=\dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2\hat{\boldsymbol{r}}}{r^2}
+\]</span></p>
 <ul>
-<li><p>쿨롱 힘 : <span class="math inline">\(\boldsymbol{F}=\dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2\hat{\boldsymbol{r}}}{r^2}\)</span></p></li>
-<li><p>전기장 <span class="math inline">\(\boldsymbol{E}(\boldsymbol{r},\,t)\)</span> : 시간 <span class="math inline">\(t\)</span>, 위치 <span class="math inline">\(\boldsymbol{r}\)</span> 에 단위전하가 받는 힘.</p></li>
+<li>인력과 척력이 가능함. 이 힘은 정지한 두 전하 사이에 작용하는 힘으로 실제는 더 복잡해짐.</li>
+</ul>
+</section>
+<section id="장-field" class="level4">
+<h4 class="anchored" data-anchor-id="장-field"><strong>장 (Field)</strong></h4>
+<ul>
+<li><p><strong>전기장 (electric field)</strong> <span class="math inline">\(\boldsymbol{E}(\boldsymbol{r},\,t)\)</span> : 시간 <span class="math inline">\(t\)</span>, 위치 <span class="math inline">\(\boldsymbol{r}\)</span> 에서 단위전하가 받는 힘.</p></li>
 <li><p>따라서 <span class="math inline">\(\boldsymbol{r}\)</span> 에 위치한 전하 <span class="math inline">\(q\)</span> 가 받는 힘 <span class="math inline">\(\boldsymbol{F}=q\boldsymbol{E}(\boldsymbol{r})\)</span>.</p></li>
 <li><p>중력장 <span class="math inline">\(\boldsymbol{C}\)</span> 도 마찬가지로 어떤 위치 <span class="math inline">\(\boldsymbol{r}\)</span> 에 위치한 단위질량이 받는 힘으로 정의 할 수 있음. 즉 <span class="math inline">\(\boldsymbol{F}=m\boldsymbol{C}\)</span>.</p></li>
-<li><p>이제 힘을 어떤 물리량과 장의 곱으로 표현할 수 있는다. 상황이 단순한 경우는 큰 의미가 없지만 상황이 복잡한 경우에는 매우 유용하다. 예를 들어 <span class="math inline">\(\boldsymbol{E}\)</span> 가 어제의 전하 <span class="math inline">\(Q\)</span> 의 위치에 의해 정해진다면 (실제로 그러하다) 우리는 어제의 전하 <span class="math inline">\(Q\)</span> 의 위치에 대해 추적할 수 있어야 하며 이것이 장의 성질이다. 힘이 복잡할수록 장은 현실적이 되며 물리량과 장을 분리하는것은 덜 인위적이 된다.</p></li>
-<li><p>장을 이용하여 힘을 분석하려면 두가지가 필요하다.</p>
+<li><p>이제 힘을 어떤 물리량과 장의 곱으로 표현할 수 있다. 상황이 단순한 경우는 큰 의미가 없지만 상황이 복잡한 경우에는 매우 유용하다. 예를 들어 <span class="math inline">\(\boldsymbol{E}\)</span> 가 전하 <span class="math inline">\(Q\)</span> 의 어제의 위치에 의해 정해진다면 (실제로 그럴 수 있다) 우리는 전하 <span class="math inline">\(Q\)</span> 의 어제의 위치에 대해 추적할 수 있어야 하며 이것이 장의 성질이다. 힘이 복잡할수록 장은 현실적이 되며 전하나 질량과 같은 물리량과 장을 분리하는것은 덜 인위적이 된다.</p></li>
+<li><p>장을 이용하여 분석하려면 두가지가 필요하다.</p>
 <ul>
 <li>물리량의 장에 대한 반응 <span class="math inline">\(\longrightarrow\)</span> 운동방정식.</li>
 <li>장을 결정하는 법칙. 즉 장방정식(field equations).</li>
 </ul></li>
-<li><p>장의 성질</p>
-<ul>
-<li><strong>중첩 원리 (principle of superposition)</strong> : <span class="math inline">\(i\)</span> 번째 source 에 의한 장이 <span class="math inline">\(\boldsymbol{C}_i\)</span> 라면 전체 source 에 의한 장은 <span class="math inline">\(\sum_i \boldsymbol{C}_i\)</span> 이다.
+<li><p><strong>중첩 원리 (principle of superposition)</strong> : <span class="math inline">\(i\)</span> 번째 source 에 의한 장이 <span class="math inline">\(\boldsymbol{C}_i\)</span> 라면 전체 source 에 의한 장은 <span class="math inline">\(\sum_i \boldsymbol{C}_i\)</span> 이다.</p>
 <ul>
 <li>전기장에 대해서는 항상 성립한다.</li>
 <li>중력장에 대해서는 일반상대론까지 가면 중력장이 매우 큰 경우 성립하지 않는다.</li>
 </ul></li>
-</ul></li>
+<li><p>자기장 <span class="math inline">\(\boldsymbol{B}\)</span> : <span class="math inline">\(\boldsymbol{v}\)</span> 의 속도로 움직이는 전하에 전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 와 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 가 걸려있을 때 이 전하가 받는 힘은 아래와 같다. <span id="eq-FLP_1_12_11"><span class="math display">\[
+\boldsymbol{F}=q(\boldsymbol{E}+\boldsymbol{v}\times \boldsymbol{B}).
+\tag{1.15}\]</span></span> <br></p></li>
 </ul>
-<p><br></p>
+</section>
 </section>
 <section id="sec-FLP_1_12_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_12_5">I.12-5 관성력 또는 가짜힘</h3>
@@ -1250,14 +1264,14 @@ m\dfrac{d^2\boldsymbol{x}}{dt^2} = \boldsymbol{F}-\underbrace{m\boldsymbol{a}}_{
 <p>질량 <span class="math inline">\(m\)</span> 인 입자의 속도가 <span class="math inline">\(\boldsymbol{v}\)</span> 일 때</p>
 <p><span id="eq-FLP_definition_of_kinetic_energy"><span class="math display">\[
 \dfrac{1}{2}m\|\boldsymbol{v}\|^2
-\tag{1.15}\]</span></span></p>
+\tag{1.16}\]</span></span></p>
 <p>를 입자의 <strong>운동에너지 (kinetic energy)</strong> 라고 한다.</p>
 </div>
 </div>
 <p>운동에너지 <span class="math inline">\(T=mv^2/2\)</span> 의 시간에 대한 변화량은 다음과 같다.</p>
 <p><span id="eq-FLP_1_13_7"><span class="math display">\[
 \dfrac{dT}{dt} = m\boldsymbol{v \cdot}\dfrac{d\boldsymbol{v}}{dt} = \boldsymbol{F \cdot v}
-\tag{1.16}\]</span></span></p>
+\tag{1.17}\]</span></span></p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1271,10 +1285,10 @@ m\dfrac{d^2\boldsymbol{x}}{dt^2} = \boldsymbol{F}-\underbrace{m\boldsymbol{a}}_{
 <p>외부에서 힘 <span class="math inline">\(\boldsymbol{F}\)</span> 가 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 인 입자에 가해질 때 <span class="math inline">\(\boldsymbol{F\cdot v}\)</span> 를 <strong>일률 (power)</strong> 라고 한다.</p>
 </div>
 </div>
-<p>즉 <a href="#eq-FLOP_1_13_9" class="quarto-xref">식&nbsp;<span>1.17</span></a> 은 운동에너지의 변화율은 외부에서 가하지는 힘에 의한 일률과 같음을 의미한다. 이제 이 물체가 <span class="math inline">\([t_1,\,t_2]\)</span> 의 시간 간격동안 <span class="math inline">\(\boldsymbol{s}(t)\)</span> 의 경로로 이동했다고 하자. <span class="math inline">\(\boldsymbol{v} = d\boldsymbol{s}/dt\)</span> 이므로</p>
+<p>즉 <a href="#eq-FLOP_1_13_9" class="quarto-xref">식&nbsp;<span>1.18</span></a> 은 운동에너지의 변화율은 외부에서 가하지는 힘에 의한 일률과 같음을 의미한다. 이제 이 물체가 <span class="math inline">\([t_1,\,t_2]\)</span> 의 시간 간격동안 <span class="math inline">\(\boldsymbol{s}(t)\)</span> 의 경로로 이동했다고 하자. <span class="math inline">\(\boldsymbol{v} = d\boldsymbol{s}/dt\)</span> 이므로</p>
 <p><span id="eq-FLOP_1_13_9"><span class="math display">\[
 \Delta T = \int_{t_1}^{t_2}\left(\dfrac{dT}{dt}\right)\,dt = \int_{t_1}^{t_2}\boldsymbol{F\cdot v}\,dt  = \int_{s_1}^{s_2}\boldsymbol{F\cdot }d\boldsymbol{s}
-\tag{1.17}\]</span></span></p>
+\tag{1.18}\]</span></span></p>
 <p>이다.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1288,19 +1302,19 @@ m\dfrac{d^2\boldsymbol{x}}{dt^2} = \boldsymbol{F}-\underbrace{m\boldsymbol{a}}_{
 <div class="callout-body-container callout-body">
 <p>외부에서 힘 <span class="math inline">\(\boldsymbol{F}\)</span> 가 가해지며 물체가 어떤 경로 <span class="math inline">\(\boldsymbol{s}\)</span> 로 움직였을 때</p>
 <p><span id="eq-FLP_definition_of_work"><span class="math display">\[
-\int_{\boldsymbol{s}_1}^{\boldsymbol{s}_2} \boldsymbol{F\cdot} d\boldsymbol{s}
-\tag{1.18}\]</span></span></p>
+W=\int_{\boldsymbol{s}_1}^{\boldsymbol{s}_2} \boldsymbol{F\cdot} d\boldsymbol{s}
+\tag{1.19}\]</span></span></p>
 <p>를 외부에서 물체에 해준 <strong>일 (work)</strong> 이라고 한다.</p>
 </div>
 </div>
-<p><a href="#eq-FLOP_1_13_9" class="quarto-xref">식&nbsp;<span>1.17</span></a> 는 물체의 운동에너지의 변화량은 외부의 힘이 해준 일과 같다는 것을 의미한다.</p>
+<p><a href="#eq-FLOP_1_13_9" class="quarto-xref">식&nbsp;<span>1.18</span></a> 는 물체의 운동에너지의 변화량은 외부의 힘이 해준 일과 같다는 것을 의미한다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_13_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_13_2">I.13-2 중력에 의한 일</h3>
-<p>질량이 <span class="math inline">\(m\)</span> 인 물체가 질량이 <span class="math inline">\(M\)</span> 인 물체가 있다. <span class="math inline">\(\boldsymbol{r}=\boldsymbol{r}_m - \boldsymbol{r}_M\)</span> 이라고 하자. 의한 중력의 영향으로 <span class="math inline">\(\boldsymbol{r}_1\)</span> 에서 <span class="math inline">\(\boldsymbol{r}_2\)</span> 로 움직였다고 하자. <span class="math inline">\(\boldsymbol{r}_1\)</span> 과 <span class="math inline">\(\boldsymbol{r}_2\)</span> 에서의 운동에너지를 각각 <span class="math inline">\(T_1,\,T_2\)</span> 라고 하면 <a href="#eq-FLOP_1_13_9" class="quarto-xref">식&nbsp;<span>1.17</span></a> 에 의해</p>
+<p>질량이 <span class="math inline">\(m\)</span> 인 물체와 질량이 <span class="math inline">\(M\)</span> 물체 사이에 보편중력이 작용하며, 질량 <span class="math inline">\(M\)</span> 인 물체는 정지해 있다고 하자. 중력의 영향으로 질량 <span class="math inline">\(m\)</span> 인 물체가 <span class="math inline">\(P_1\)</span> 에서 <span class="math inline">\(P_2\)</span> 로 움직였다고 하자. <span class="math inline">\(M\)</span> 과의 상대적 거리를 각각 <span class="math inline">\(r_1,\,r_2\)</span> 라고 하자. <span class="math inline">\(P_1\)</span> 과 <span class="math inline">\(P_2\)</span> 에서의 운동에너지를 각각 <span class="math inline">\(T_1,\,T_2\)</span> 라고 하면 <a href="#eq-FLOP_1_13_9" class="quarto-xref">식&nbsp;<span>1.18</span></a> 에 의해</p>
 <p><span class="math display">\[
-T_2-T_1 = - \int_{\boldsymbol{r}_1}^{\boldsymbol{r}_2} \dfrac{GMm}{r^2} \hat{\boldsymbol{r}}\boldsymbol{\cdot}d\boldsymbol{r} = GMn\left(\dfrac{1}{r_2} - \dfrac{1}{r_1}\right)
+T_2-T_1 = - \int_{P_1}^{P_2} \dfrac{GMm}{r^2} \hat{\boldsymbol{r}}\boldsymbol{\cdot}d\boldsymbol{r} = GMm\left(\dfrac{1}{r_2} - \dfrac{1}{r_1}\right)
 \]</span></p>
 <p>이다. <span class="math inline">\(r_1=r_2 \implies T_2=T_1\)</span>. 즉 중력에 의해 움직이는 물체에서 거리가 같아진다면 운동에너지도 같다.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -1346,12 +1360,14 @@ T_2-T_1 = W = U_1-U_2 \implies T_2+U_2 = T_1+U_1
 <p><strong>4.</strong> 보존력의 합은 보존력이다.</p>
 </div>
 </div>
-<p>이로부터 중력 <span class="math inline">\(\boldsymbol{F}=-\dfrac{GmM\hat{\boldsymbol{r}}}{r^2}\)</span> 에 대한 포텐셜 <span class="math inline">\(U(r)= - \dfrac{GMm}{r}\)</span> 임을 안다.</p>
+<p>이로부터 중력 <span class="math inline">\(\boldsymbol{F}=-\dfrac{GmM\hat{\boldsymbol{r}}}{r^2}\)</span> 에 대한 포텐셜 에너지 <span class="math inline">\(U(r)= - \dfrac{GMm}{r}\)</span> 임을 안다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_13_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_13_3">I.13-3 에너지의 합</h3>
-<p><span class="math inline">\(N\)</span> 개의 입자 사이에 보존력이 작용하는 계를 생각하자. 나머지 입자 전체에 의해 <span class="math inline">\(i\)</span> 번째 입자가 받는 힘을 <span class="math inline">\(\boldsymbol{F}_i\)</span> 라고 하면 <span class="math inline">\(\boldsymbol{F}_i = -\nabla U_i\)</span> 인 스칼라장 <span class="math inline">\(U_i\)</span> 가 존재한다. 시간 <span class="math inline">\(t_1,\,t_2\)</span> 에서의 이 계의 총 운동에너지 <span class="math inline">\(T_\text{tot} = \sum_i \frac{1}{2}m_iv_i^2\)</span> 의 변화량은 다음과 같다. <span class="math display">\[
+<section id="보존계에서의-에너지-보존" class="level4">
+<h4 class="anchored" data-anchor-id="보존계에서의-에너지-보존"><strong>보존계에서의 에너지 보존</strong></h4>
+<p><span class="math inline">\(N\)</span> 개의 입자 사이에 보존력이 작용하는 계를 생각하자. 이러한 계를 <strong>보존계 (conservative system)</strong> 이라고 한다. 나머지 입자 전체에 의해 <span class="math inline">\(i\)</span> 번째 입자가 받는 힘을 <span class="math inline">\(\boldsymbol{F}_i\)</span> 라고 하면 <span class="math inline">\(\boldsymbol{F}_i = -\nabla U_i\)</span> 인 포텐셜 에너지 <span class="math inline">\(U_i\)</span> 가 존재한다. 시간 <span class="math inline">\(t_1,\,t_2\)</span> 에서의 이 계의 총 운동에너지 <span class="math inline">\(T_\text{tot} = \sum_i \frac{1}{2}m_iv_i^2\)</span> 의 변화량은 다음과 같다. <span class="math display">\[
 \begin{aligned}
 \Delta T_\text{tot} &amp;= \int_{t_1}^{t_2}\dfrac{dT_\text{tot}}{dt} = \int_{t_1}^{t_2}\left[\dfrac{d}{dt}\left(\sum_{i=1}^N \dfrac{m_iv_i^2}{2}\right) \right]\,dt  \\[0.3em]
 &amp;= \sum_{i=1}^N \int_{t_1}^{t_2} \left(m\dfrac{d\boldsymbol{v}_i}{dt}\boldsymbol{\cdot v}_i\right) dt = \sum_i^N \int_{t_1}^{t_2} \boldsymbol{F}_i\boldsymbol{\cdot v}_i dt \\[0.3em]
@@ -1364,6 +1380,7 @@ T_\text{tot}(t) + U(t) = \text{constant}.
 \]</span></p>
 <p>이다. 즉 운동에너지와 포텐셜 에너지의 합이 항상 일정하다.</p>
 <p><br></p>
+</section>
 </section>
 <section id="sec-FLP_1_13_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_13_4">I.13-4 큰 물체에 의한 중력장</h3>
@@ -1386,6 +1403,9 @@ U(R&lt;a)= - \dfrac{GMm}{a}
 <h2 class="anchored" data-anchor-id="sec-FLP_1_14">I.14. 일과 포텐셜 에너지 (결론)</h2>
 <section id="sec-FLP_1_14_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_14_1">I.14-1 일</h3>
+<ul>
+<li><span class="math inline">\(W=int \boldsymbol{F\cdot}d\boldsymbol{s}\)</span> 의 의미에 대한 설명.</li>
+</ul>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_14_2" class="level3">
@@ -1428,7 +1448,7 @@ U(R&lt;a)= - \dfrac{GMm}{a}
 <p>이며 이 중력장 <span class="math inline">\(G\)</span> 에 대한 중력포텐셜 <span class="math inline">\(\Psi\)</span> 는 아래와 같다.</p>
 <p><span id="eq-FLP_1_14_8"><span class="math display">\[
 \Psi(\boldsymbol{r}) = -\sum_{i=1}^N \dfrac{Gm_i}{\|\boldsymbol{r}-\boldsymbol{r}_i\|}.
-\tag{1.19}\]</span></span></p>
+\tag{1.20}\]</span></span></p>
 <p>포텐셜 역시 각각의 source 에 대한 기여의 합이다.</p>
 <p><br></p>
 </section>
@@ -1445,7 +1465,7 @@ U(R&lt;a)= - \dfrac{GMm}{a}
 <p>각각의 입자에 가해지는 힘의 합을 <span class="math inline">\(\boldsymbol{F}\)</span> 라고 하면</p>
 <p><span id="eq-FLP_1_18_3"><span class="math display">\[
 \boldsymbol{F}=\sum_i \boldsymbol{F}_i = \sum_i \dfrac{d^2 \left(m_i\boldsymbol{r}_i\right)}{dt^2}
-\tag{1.20}\]</span></span></p>
+\tag{1.21}\]</span></span></p>
 <p>이다. 여기서 중요한 것은 물체 내에서 벌어지는 상호작용에 의한 힘은 뉴턴의 제 3 운동법칙에 의해 <span class="math inline">\(\boldsymbol{F} = \sum_i \boldsymbol{F}_i\)</span> 에서 상쇄된다는 것이다. 따라서 <span class="math inline">\(\boldsymbol{F}\)</span> 는 내부에서 주고 받는 힘이 아닌 순수한 외부에서 작용하는 힘만 남게된다.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1460,14 +1480,14 @@ U(R&lt;a)= - \dfrac{GMm}{a}
 <p><strong>질량중심 (center of mass)</strong> <span class="math inline">\(\boldsymbol{R}_\text{CM}\)</span> 은 아래와 같이 정의된다.</p>
 <p><span id="eq-FLP_1_18_4"><span class="math display">\[
 \boldsymbol{R}_\text{CM} := \dfrac{\sum_i m_i\boldsymbol{r}_i}{\sum_i m_i} = \dfrac{1}{M}\sum_i m_i\boldsymbol{r_i},\qquad \text{where } M = \sum_i m_i.
-\tag{1.21}\]</span></span></p>
+\tag{1.22}\]</span></span></p>
 </div>
 </div>
-<p>그렇다면 <a href="#eq-FLP_1_18_3" class="quarto-xref">식&nbsp;<span>1.20</span></a> 은 다음과 같이 쓸 수 있다.</p>
+<p>그렇다면 <a href="#eq-FLP_1_18_3" class="quarto-xref">식&nbsp;<span>1.21</span></a> 은 다음과 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_1_18_5"><span class="math display">\[
 \boldsymbol{F} = M\dfrac{d^2 \boldsymbol{R}_\text{CM}}{dt^2}.
-\tag{1.22}\]</span></span></p>
-<p>이제 우리는 답을 알게 되었다. 돌을 던졌을 때 포물선을 따라가는 것은 돌의 질량중심이다. 그리고 <a href="#eq-FLP_1_18_5" class="quarto-xref">식&nbsp;<span>1.22</span></a> 에 대해 다음과 같은 것을 알 수 있다.</p>
+\tag{1.23}\]</span></span></p>
+<p>이제 우리는 답을 알게 되었다. 돌을 던졌을 때 포물선을 따라가는 것은 돌의 질량중심이다. 그리고 <a href="#eq-FLP_1_18_5" class="quarto-xref">식&nbsp;<span>1.23</span></a> 에 대해 다음과 같은 것을 알 수 있다.</p>
 <ol type="1">
 <li>외력이 없다면 물체의 질량중심은 정지하거나 등속 직선운동을 한다.</li>
 <li>물체의 질량중심은 물체 내부의 복잡한 상호작용과 분리하여 처리 될 수 있다.</li>
@@ -1495,7 +1515,7 @@ U(R&lt;a)= - \dfrac{GMm}{a}
 <p>직선상의 운동에서 정의된 속도, 가속도와 마찬가지로 각에 대해서 각속도와 각가속도를 정의 할 수 있다. 시간에 대한 회전각을 <span class="math inline">\(\theta = \theta(t)\)</span> 라고 하면 <strong>각속도 (angular velocity)</strong> <span class="math inline">\(\omega\)</span> 와 <strong>각가속도 (angular acceleration)</strong> <span class="math inline">\(\alpha\)</span> 는 다음과 같이 정의된다.</p>
 <p><span id="eq-FLP_definition_of_angular_velocity_and_angular_acceleration"><span class="math display">\[
 \omega := \dfrac{d\theta}{dt},\qquad \alpha = \dfrac{d^2\theta}{dt^2}.
-\tag{1.23}\]</span></span></p>
+\tag{1.24}\]</span></span></p>
 <div id="fig-FLP_1_18_1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_18_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1509,30 +1529,30 @@ U(R&lt;a)= - \dfrac{GMm}{a}
 <p>위의 그림과 같은 2차원 회전을 생각하자. 점 <span class="math inline">\(P\)</span> 가 <span class="math inline">\(O\)</span> 를 중심으로 <span class="math inline">\(\Delta t\)</span> 동안 <span class="math inline">\(\Delta \theta\)</span> 만큼 회전했다고 하자. <span class="math inline">\(P\)</span> 의 좌표를 <span class="math inline">\((x,\,y)\)</span> 라고 하자. 그렇다면</p>
 <p><span id="eq-FLP_1_18_6"><span class="math display">\[
 \Delta x = - PQ\sin \theta = - r\Delta \theta \cdot (y/r) = -y \Delta \theta
-\tag{1.24}\]</span></span></p>
+\tag{1.25}\]</span></span></p>
 <p>이며 같은 방법으로</p>
 <p><span id="eq-FLP_1_18_7"><span class="math display">\[
 \Delta y = + x\Delta \theta
-\tag{1.25}\]</span></span></p>
+\tag{1.26}\]</span></span></p>
 <p>임을 안다. 위의 두 식을 <span class="math inline">\(\Delta t\)</span> 로 나누어주면</p>
 <p><span id="eq-FLP_1_18_8"><span class="math display">\[
 v_x = -\omega y,\qquad v_y = +\omega x
-\tag{1.26}\]</span></span></p>
+\tag{1.27}\]</span></span></p>
 <p>이며 따라서 아래와 같은 속도와 각속도의 관계를 얻는다.</p>
 <p><span id="eq-FLP_1_18_9"><span class="math display">\[
 v=\sqrt{v_x^2+v_y^2} = \omega r.
-\tag{1.27}\]</span></span></p>
+\tag{1.28}\]</span></span></p>
 </section>
 <section id="토크" class="level4">
 <h4 class="anchored" data-anchor-id="토크"><strong>토크</strong></h4>
 <p>속도-각속도, 가속도-각가속도의 관계와 같이 선형 이동과 회전 이동 사이의 유사성이 힘에도 존재한다. 힘 <span class="math inline">\(\boldsymbol{F}\)</span> 에 의해 작은 회전에 의한 위치 변화 <span class="math inline">\(\Delta x,\, \Delta y\)</span> 가 생겼다고 하자. 이 때 힘이 한 일 <span class="math inline">\(\Delta W\)</span> 는</p>
 <p><span id="eq-FLP_1_18_10"><span class="math display">\[
 \Delta W = F_x \Delta x + F_y \Delta y
-\tag{1.28}\]</span></span></p>
-<p>이다. <span class="math inline">\(\Delta x,\, \Delta y\)</span> 에 <a href="#eq-FLP_1_18_6" class="quarto-xref">식&nbsp;<span>1.24</span></a>, <a href="#eq-FLP_1_18_7" class="quarto-xref">식&nbsp;<span>1.25</span></a> 을 대입하면</p>
+\tag{1.29}\]</span></span></p>
+<p>이다. <span class="math inline">\(\Delta x,\, \Delta y\)</span> 에 <a href="#eq-FLP_1_18_6" class="quarto-xref">식&nbsp;<span>1.25</span></a>, <a href="#eq-FLP_1_18_7" class="quarto-xref">식&nbsp;<span>1.26</span></a> 을 대입하면</p>
 <p><span id="eq-FLP_1_18_11"><span class="math display">\[
 \Delta W = (xF_y - yF_x)\Delta \theta
-\tag{1.29}\]</span></span></p>
+\tag{1.30}\]</span></span></p>
 <p>이다.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1544,11 +1564,11 @@ v=\sqrt{v_x^2+v_y^2} = \omega r.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="#eq-FLP_1_18_11" class="quarto-xref">식&nbsp;<span>1.29</span></a> 에서 <span class="math inline">\(\tau = xF_y - yF_x\)</span> 를 <strong>토크 (torque)</strong> 라고 한다.</p>
+<p><a href="#eq-FLP_1_18_11" class="quarto-xref">식&nbsp;<span>1.30</span></a> 에서 <span class="math inline">\(\tau = xF_y - yF_x\)</span> 를 <strong>토크 (torque)</strong> 라고 한다.</p>
 </div>
 </div>
 <ul>
-<li>여러 힘이 동시에 작용할 때 <a href="#eq-FLP_1_18_10" class="quarto-xref">식&nbsp;<span>1.28</span></a> 과 <a href="#eq-FLP_1_18_11" class="quarto-xref">식&nbsp;<span>1.29</span></a> 로부터 유추 할 수 있듯이 전체 토크는 각각의 힘에에 의한 토크의 합이다.</li>
+<li>여러 힘이 동시에 작용할 때 <a href="#eq-FLP_1_18_10" class="quarto-xref">식&nbsp;<span>1.29</span></a> 과 <a href="#eq-FLP_1_18_11" class="quarto-xref">식&nbsp;<span>1.30</span></a> 로부터 유추 할 수 있듯이 전체 토크는 각각의 힘에에 의한 토크의 합이다.</li>
 <li>토크는 회전축에 대해 정해진다. 회전축이 바뀐다면 당연히 토크도 바뀐다.</li>
 </ul>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -1607,7 +1627,7 @@ W = \|\boldsymbol{F}_t \| \, r \Delta \theta
 <p>2차원 회전에서 각운동량 <span class="math inline">\(L\)</span> 은 다음과 같이 정의된다.</p>
 <p><span id="eq-FLP_1_18_16"><span class="math display">\[
 L := mx\dfrac{dy}{dt} - my\dfrac{dx}{dt} = xp_y - yp_x.
-\tag{1.30}\]</span></span></p>
+\tag{1.31}\]</span></span></p>
 </div>
 </div>
 <p>즉 토크(<span class="math inline">\(\tau\)</span>) 는 각운동량(<span class="math inline">\(L\)</span>) 의 시간에 대한 변화량이다.</p>
@@ -1628,7 +1648,7 @@ L := mx\dfrac{dy}{dt} - my\dfrac{dx}{dt} = xp_y - yp_x.
 <p>많은 입자로 이루어진 시스템에서 입자들은 상호작용하며 외부에서 힘이 작용할 수도 있다. 이 경우 어떤 고정축에 대한 <span class="math inline">\(i\)</span> 번째 입자에 작용하는 토크는 <span class="math inline">\(i\)</span> 번째 입자의 각운동량의 시간에 대한 미분이며, 전체 토크는 개별 입자의 토크의 합이므로 전체 각운동량은 개별 각운동량의 합이라는 것을 알 수 있다. 즉 <span class="math inline">\(L=\sum_i L_i\)</span> 라고 하면,</p>
 <p><span id="eq-FLP_1_18_18"><span class="math display">\[
 \tau = \sum_i \tau_i = \sum_i \dfrac{dL_i}{dt}= \dfrac{dL}{dt}
-\tag{1.31}\]</span></span></p>
+\tag{1.32}\]</span></span></p>
 <p>이다. 이제 작용-반작용의 강한 조건, 즉 입자들 사이의 상호작용에 의한 힘은 두 입자를 잇는 직선상에서 작용한다는 조건이 부여된다고 하자. 그렇다면 두 입자 사이의 상호작용에 의한 두 입장의 토크는 상쇠된다. 따라서 힘에서와 같이 내부의 상호작용에 의한 토크의 합은 <span class="math inline">\(0\)</span> 이다. 즉 입자계에서의 토크의 합은 외부의 힘에 의한 토크이다. 이제 우리는 다음과 같은 수학적 정리를 얻게 된다.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1649,7 +1669,7 @@ L := mx\dfrac{dy}{dt} - my\dfrac{dx}{dt} = xp_y - yp_x.
 <p><span class="math inline">\(N\)</span> 개의 입자로 이루어진 강체가 정해진 회전축에 대해 각속도 <span class="math inline">\(\omega\)</span> 로 회전한다고 하자. <span class="math inline">\(i\)</span> 번째 입자의 질량, 회전축에서의 거리, 속도가 각각 <span class="math inline">\(m_i,\,r_i,\,v_i\)</span> 라고 하자. 이때 총 각운동량 <span class="math inline">\(L\)</span> 은 다음과 같다.</p>
 <p><span id="eq-FLP_1_18_20"><span class="math display">\[
 L=\sum_{i} L_i = \sum_i m_i r_i v_i = \left(\sum_i m_i r_i^2\right) \omega
-\tag{1.32}\]</span></span></p>
+\tag{1.33}\]</span></span></p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1663,13 +1683,13 @@ L=\sum_{i} L_i = \sum_i m_i r_i v_i = \left(\sum_i m_i r_i^2\right) \omega
 <p>강체가 회전할 때 아래와 같이 <strong>관성 모멘트(moment of inertia)</strong> <span class="math inline">\(I\)</span> 를 정의 할 수 있다.</p>
 <p><span id="eq-FLP_1_18_22"><span class="math display">\[
 I := \sum_i m_i r_i^2.
-\tag{1.33}\]</span></span></p>
+\tag{1.34}\]</span></span></p>
 </div>
 </div>
 <p>위와같이 정의된 관성 모멘트 <span class="math inline">\(I\)</span> 에 대해 각운동량 <span class="math inline">\(L\)</span> 은 다음과 같다.</p>
 <p><span id="eq-FLP_1_18_21"><span class="math display">\[
 L = I\omega.
-\tag{1.34}\]</span></span></p>
+\tag{1.35}\]</span></span></p>
 <p><br></p>
 </section>
 </section>
@@ -1678,7 +1698,7 @@ L = I\omega.
 <h2 class="anchored" data-anchor-id="sec-FLP_1_19">I.19. 질량 중심과 관성 모멘트</h2>
 <section id="sec-FLP_1_19_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_19_1">I.19-1 질량 중심의 성질</h3>
-<p>다양한 질량의 물체가 합쳐진 복잡한 물체에 작용하는 많은 힘에 대해, 그것이 강체인지 여부와 관계 없이, 모든 외부에서 작용하는 힘의 합과 질량중심 <span class="math inline">\(\boldsymbol{R}_\text{CM}\)</span> 에 대한 운동방정식을 얻었다(<a href="#eq-FLP_1_18_5" class="quarto-xref">식&nbsp;<span>1.22</span></a>). 이 운동방정식이 의미하는 것은 물채 전체를 대표하는 질량중심 <span class="math inline">\(\boldsymbol{R}_\text{CM}\)</span> 이 존재하여 이 물체에 작용하는 모든 외부의 힘이 마치 물체의 질량이 이 점에 집중되어 있는 것과 같이 이 점의 가속도를 결정한다는 것이다. 그리고 이 질량중심의 성질은 아래와 같이 정리 할 수 있다.</p>
+<p>다양한 질량의 물체가 합쳐진 복잡한 물체에 작용하는 많은 힘에 대해, 그것이 강체인지 여부와 관계 없이, 모든 외부에서 작용하는 힘의 합과 질량중심 <span class="math inline">\(\boldsymbol{R}_\text{CM}\)</span> 에 대한 운동방정식을 얻었다(<a href="#eq-FLP_1_18_5" class="quarto-xref">식&nbsp;<span>1.23</span></a>). 이 운동방정식이 의미하는 것은 물채 전체를 대표하는 질량중심 <span class="math inline">\(\boldsymbol{R}_\text{CM}\)</span> 이 존재하여 이 물체에 작용하는 모든 외부의 힘이 마치 물체의 질량이 이 점에 집중되어 있는 것과 같이 이 점의 가속도를 결정한다는 것이다. 그리고 이 질량중심의 성질은 아래와 같이 정리 할 수 있다.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1714,7 +1734,7 @@ L = I\omega.
 <p><span class="math inline">\(N\)</span> 개의 입자의 총 질량이 <span class="math inline">\(M\)</span> 이라고 하자. <span class="math inline">\(i\)</span> 번째 입자의 질량과 반경벡터를 각각 <span class="math inline">\(m_i\)</span>, <span class="math inline">\(\boldsymbol{r}_i\)</span> 라고 하자. 위치 <span class="math inline">\(\boldsymbol{r}\)</span> 에서의 중력장을 <span class="math inline">\(\boldsymbol{G}(\boldsymbol{r})\)</span> 이라고 할 때 <strong>중력 중심 (center of gravity)</strong> <span class="math inline">\(\boldsymbol{R}_\text{gr}\)</span> 은 다음과 같이 정의된다.</p>
 <p><span id="eq-FLP_definition_of_center_of_gravity"><span class="math display">\[
 \boldsymbol{R}_\text{gr} := \dfrac{\sum_i \boldsymbol{r}_i m_i\boldsymbol{G}(\boldsymbol{r}_i)}{\sum_i  m_i\boldsymbol{G}(\boldsymbol{r}_i)}.
-\tag{1.35}\]</span></span></p>
+\tag{1.36}\]</span></span></p>
 </div>
 </div>
 <section id="질량중심과-관성력" class="level4">
@@ -1747,7 +1767,7 @@ L = I\omega.
 I &amp;= \sum_i m_i \left(x_i^2+y_i^2\right), \\[0.3em]
 I &amp;= \int (x^2+y^2)\,dm = \int (x^2+y^2)\, \rho(\boldsymbol{r})\, d^3\boldsymbol{r}.
 \end{aligned}
-\tag{1.36}\]</span></span></p>
+\tag{1.37}\]</span></span></p>
 </div>
 </div>
 <p>이를 이용하여 기본적인 도형의 관성 모멘트를 계산하면 아래와 같다.</p>
@@ -1767,7 +1787,7 @@ I &amp;= \int (x^2+y^2)\,dm = \int (x^2+y^2)\, \rho(\boldsymbol{r})\, d^3\boldsy
 <p><span class="theorem-title"><strong>정리 1.1 (평행축 정리)</strong></span> 질량이 <span class="math inline">\(M\)</span> 인 물체의 무게중심을 지나는 회전축 대한 관성모먼트가 <span class="math inline">\(I_\text{CM}\)</span> 일 때 이 축과 <span class="math inline">\(h\)</span> 만큼 떨어진 평행한 다른 축에 대한 관성모멘트 <span class="math inline">\(I\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_paralle_axis_theorem"><span class="math display">\[
 I = I_\text{CM} + Mh^2.
-\tag{1.37}\]</span></span></p>
+\tag{1.38}\]</span></span></p>
 </div>
 </div>
 <div class="proof">
@@ -1787,7 +1807,7 @@ I &amp;= \sum_i ((x_i-a)^2+(y_i-b)^2)m_i \\[0.3em]
 <p><span class="math inline">\(\omega\)</span> 의 각속도 회전하는 강체의 운동에너지를 계산해 보자. <span class="math inline">\(i\)</span> 번째 입자의 회전축으로부터의 거리를 <span class="math inline">\(r_i\)</span> 라고 하면 회전 속도 <span class="math inline">\(v_i = r_i \omega_i\)</span> 이므로 그 운동에너지 <span class="math inline">\(T\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_1_19_8"><span class="math display">\[
 T=\dfrac{1}{2}\sum_i m_i v_i^2 = \dfrac{1}{2}\sum_i m_i (r_i \omega)^2 = \dfrac{1}{2}I\omega^2
-\tag{1.38}\]</span></span></p>
+\tag{1.39}\]</span></span></p>
 <p><br></p>
 </section>
 </section>
@@ -1813,17 +1833,17 @@ T=\dfrac{1}{2}\sum_i m_i v_i^2 = \dfrac{1}{2}\sum_i m_i (r_i \omega)^2 = \dfrac{
 <p>3차원에서의 각운동량 <span class="math inline">\(\boldsymbol{L}\)</span> 은 아래와 같이 정의된다.</p>
 <p><span id="eq-FLP_1_20_12"><span class="math display">\[
 \boldsymbol{L}:= \boldsymbol{r}\times \boldsymbol{p}.
-\tag{1.39}\]</span></span></p>
+\tag{1.40}\]</span></span></p>
 <p>3차원에서의 토크는 아래와 같이 정의된다.</p>
 <p><span id="eq-FLP_1_20_11"><span class="math display">\[
 \boldsymbol{\tau} := \boldsymbol{r}\times \boldsymbol{F}
-\tag{1.40}\]</span></span></p>
+\tag{1.41}\]</span></span></p>
 </div>
 </div>
 <p><span class="math inline">\(\boldsymbol{F}=d\boldsymbol{p}/dt\)</span> 와 같이 토크와 각운동량은 아래의 관계를 갖는다.</p>
 <p><span id="eq-FLP_1_20_13"><span class="math display">\[
 \boldsymbol{\tau} = \dfrac{d\boldsymbol{L}}{dt}
-\tag{1.41}\]</span></span></p>
+\tag{1.42}\]</span></span></p>
 <p>… to be done.. .. 자이로스코프에 관련된 ..</p>
 <p><br></p>
 </section>
@@ -1835,7 +1855,7 @@ T=\dfrac{1}{2}\sum_i m_i v_i^2 = \dfrac{1}{2}\sum_i m_i (r_i \omega)^2 = \dfrac{
 <p>아래와 같은 형태의 미분방정식을 <span class="math inline">\(n\)</span>-계 선형미분방정식이라고 한다.</p>
 <p><span id="eq-FLP_1_21_1"><span class="math display">\[
 a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n01}} + \cdots + a_1 \dfrac{dx}{dt} + a_0 x = f(t)
-\tag{1.42}\]</span></span></p>
+\tag{1.43}\]</span></span></p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_21_2" class="level3">
@@ -1843,11 +1863,11 @@ a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n01}} + \cdots + a_1 \dfr
 <p>1차원 단순조화진동자 (Simple harmonic oscilator, 이하 SHO) 는 아래와 같은 2계 선형미분방정식의 해이다.</p>
 <p><span id="eq-FLP_1_21_3"><span class="math display">\[
 m\dfrac{d^2x}{dt^2} = -kx.
-\tag{1.43}\]</span></span></p>
+\tag{1.44}\]</span></span></p>
 <p>또한 우리는 이 미분방정식의 일반해 <span class="math inline">\(x(t)\)</span> 가 다음과 같다는 것을 안다.</p>
 <p><span id="eq-FLP_1_21_6"><span class="math display">\[
 x(t) = A \cos (\omega_0 t + \phi_0),\qquad \text{where }\omega_0 = \sqrt{k/m}.
-\tag{1.44}\]</span></span></p>
+\tag{1.45}\]</span></span></p>
 <p>여기서 <span class="math inline">\(A\)</span> 를 <strong>진폭 (amplitude)</strong> 이라고 하고 <span class="math inline">\(\phi_0\)</span> 를 <strong>위상차 (phase shift)</strong> 라고 한다.</p>
 <p><br></p>
 </section>
@@ -1857,7 +1877,7 @@ x(t) = A \cos (\omega_0 t + \phi_0),\qquad \text{where }\omega_0 = \sqrt{k/m}.
 </section>
 <section id="i.21-4-초기조건" class="level3">
 <h3 class="anchored" data-anchor-id="i.21-4-초기조건">I.21-4 초기조건</h3>
-<p><a href="#eq-FLP_1_21_6" class="quarto-xref">식&nbsp;<span>1.44</span></a> 에서 우리가 <span class="math inline">\(t=0\)</span> 일 때의 위치 <span class="math inline">\(x_0\)</span> 와 속도 <span class="math inline">\(v_0\)</span> 를 안다고 하자. 그렇다면</p>
+<p><a href="#eq-FLP_1_21_6" class="quarto-xref">식&nbsp;<span>1.45</span></a> 에서 우리가 <span class="math inline">\(t=0\)</span> 일 때의 위치 <span class="math inline">\(x_0\)</span> 와 속도 <span class="math inline">\(v_0\)</span> 를 안다고 하자. 그렇다면</p>
 <p><span class="math display">\[
 A\cos \phi_0 = x_0,\qquad -A \omega_0\sin \phi_0 = v_0
 \]</span></p>
@@ -1877,20 +1897,20 @@ E =  T+U = \dfrac{1}{2}m\omega_0^2 A^2 .
 <p>조화진동자에 외부에서 힘이 가해질 때 <strong>강제조화진동자(forced harmonic oscillator)</strong> 라고 한다. 외부의 힘이 <span class="math inline">\(F(t)\)</span> 라면 운동방정식은 아래와 같다.</p>
 <p><span id="eq-FLP_2_21_8"><span class="math display">\[
 m\ddot{x} = -kx + F(t).
-\tag{1.45}\]</span></span></p>
+\tag{1.46}\]</span></span></p>
 <p>가장 간단한 경우는 다음과 같은 경우이다.</p>
 <p><span id="eq-FLP_2_21_9"><span class="math display">\[
 F(t) = F_0 \cos \omega t.
-\tag{1.46}\]</span></span></p>
-<p>이제 이 힘에 의한 미분방정식 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>1.45</span></a> 를 풀어보자. 한 특이해는 다음과 같이 주어진다.</p>
+\tag{1.47}\]</span></span></p>
+<p>이제 이 힘에 의한 미분방정식 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>1.46</span></a> 를 풀어보자. 한 특이해는 다음과 같이 주어진다.</p>
 <p><span id="eq-FLP_2_21_10"><span class="math display">\[
 x(t) = C\cos \omega t.
-\tag{1.47}\]</span></span></p>
-<p>이 식이 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>1.45</span></a> 를 만족한다면</p>
+\tag{1.48}\]</span></span></p>
+<p>이 식이 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>1.46</span></a> 를 만족한다면</p>
 <p><span id="eq-FLP_2_21_12"><span class="math display">\[
 C= \dfrac{F_0}{m (\omega_0^2 - \omega^2)}
-\tag{1.48}\]</span></span></p>
-<p>이다. 더 일반적인 해는 이후에 구해보기로 하고 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>1.48</span></a> 에 의한 해만 새각해보자. <span class="math inline">\(\omega \ll \omega_0\)</span> 라면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 거의 같은 방향이며 <span class="math inline">\(\omega &gt;\omega_0\)</span> 이면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 반대 방향이고 <span class="math inline">\(\omega \gg \omega_0\)</span> 라면 <a href="#eq-FLP_2_21_10" class="quarto-xref">식&nbsp;<span>1.47</span></a> 는 매우 작은 진폭을 갖게 된다. <span class="math inline">\(\omega \approx \omega_0\)</span> 이면 <a href="#eq-FLP_2_21_10" class="quarto-xref">식&nbsp;<span>1.47</span></a> 는 매우 큰 진폭을 갖게 되며 <span class="math inline">\(\omega=\omega_0\)</span> 이면 무한대의 진폭을 갖게 된다. 물론 이것은 불가능하다.</p>
+\tag{1.49}\]</span></span></p>
+<p>이다. 더 일반적인 해는 이후에 구해보기로 하고 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>1.49</span></a> 에 의한 해만 새각해보자. <span class="math inline">\(\omega \ll \omega_0\)</span> 라면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 거의 같은 방향이며 <span class="math inline">\(\omega &gt;\omega_0\)</span> 이면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 반대 방향이고 <span class="math inline">\(\omega \gg \omega_0\)</span> 라면 <a href="#eq-FLP_2_21_10" class="quarto-xref">식&nbsp;<span>1.48</span></a> 는 매우 작은 진폭을 갖게 된다. <span class="math inline">\(\omega \approx \omega_0\)</span> 이면 <a href="#eq-FLP_2_21_10" class="quarto-xref">식&nbsp;<span>1.48</span></a> 는 매우 큰 진폭을 갖게 되며 <span class="math inline">\(\omega=\omega_0\)</span> 이면 무한대의 진폭을 갖게 된다. 물론 이것은 불가능하다.</p>
 <p><br></p>
 </section>
 </section>
@@ -1898,27 +1918,27 @@ C= \dfrac{F_0}{m (\omega_0^2 - \omega^2)}
 <h2 class="anchored" data-anchor-id="sec-FLP_1_23">I.23 공명</h2>
 <section id="sec-FLP_1_23_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_23_1">I.23-1. 복소수와 조화 운동</h3>
-<p><a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>1.42</span></a> 형태의 선형미분방정식을 생각하자. <span class="math inline">\(f(t) = f_0 \cos (\omega t-\phi_0)\)</span> 를 복소함수</p>
+<p><a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>1.43</span></a> 형태의 선형미분방정식을 생각하자. <span class="math inline">\(f(t) = f_0 \cos (\omega t-\phi_0)\)</span> 를 복소함수</p>
 <p><span class="math display">\[
 f(t) = f_0e^{-i\phi_0}e^{i\omega t} = \hat{f} e^{i\omega t},\quad\text{ where } \hat{f} = f_0e^{-i\phi_0}
 \]</span></p>
-<p>로 표현하자. 그리고 <a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>1.42</span></a> 를 복소선형미분방정식으로 아래와 같이 쓸 수 있다.</p>
+<p>로 표현하자. 그리고 <a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>1.43</span></a> 를 복소선형미분방정식으로 아래와 같이 쓸 수 있다.</p>
 <p><span class="math display">\[
 a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n01}} + \cdots + a_1 \dfrac{x}{dt} + a_0 x = f(t) = \hat{f} e^{i\omega t}.
 \]</span></p>
-<p>위의 미분방정식을 만족하는 복소함수 <span class="math inline">\(\hat{x}(t)\)</span> 를 구한다면 <span class="math inline">\(\text{Re}(x(t))\)</span> 는 <a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>1.42</span></a> 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>1.45</span></a> 에 적용하자. 외부의 힘 <span class="math inline">\(F(t) = F_0 \cos \omega t\)</span> 를 <span class="math inline">\(\hat{F}(t) = \hat{F} e^{i\omega t}\)</span> 로 표현하면</p>
+<p>위의 미분방정식을 만족하는 복소함수 <span class="math inline">\(\hat{x}(t)\)</span> 를 구한다면 <span class="math inline">\(\text{Re}(x(t))\)</span> 는 <a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>1.43</span></a> 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>1.46</span></a> 에 적용하자. 외부의 힘 <span class="math inline">\(F(t) = F_0 \cos \omega t\)</span> 를 <span class="math inline">\(\hat{F}(t) = \hat{F} e^{i\omega t}\)</span> 로 표현하면</p>
 <p><span id="eq-FLP_1_23_2"><span class="math display">\[
 m \dfrac{d^2 x}{dt^2} + k x = \hat{F} e^{i\omega t}
-\tag{1.49}\]</span></span></p>
+\tag{1.50}\]</span></span></p>
 <p>이다. 앞서와 같이 특수해 <span class="math inline">\(x(t) = \hat{x} e^{i\omega t}\)</span> 를 사용한다면</p>
 <p><span id="eq-FLP_1_23_4"><span class="math display">\[
 -\omega^2 \hat{x} + \omega_0^2 \hat{x} = \dfrac{\hat{F}}{m},\qquad \text{where } \omega_0 = \sqrt{\dfrac{k}{m}}
-\tag{1.50}\]</span></span></p>
+\tag{1.51}\]</span></span></p>
 <p>이다. 즉</p>
 <p><span id="eq-FLP_1_23_5"><span class="math display">\[
 \hat{x} = \dfrac{\hat{F}}{\omega_0^2-\omega^2}
-\tag{1.51}\]</span></span></p>
-<p>이며 이것은 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>1.48</span></a> 의 결과를 포함한다. 또한 우리는 <span class="math inline">\(\hat{F}=F_0e^{-i\phi_0}\)</span> 일 때</p>
+\tag{1.52}\]</span></span></p>
+<p>이며 이것은 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>1.49</span></a> 의 결과를 포함한다. 또한 우리는 <span class="math inline">\(\hat{F}=F_0e^{-i\phi_0}\)</span> 일 때</p>
 <p><span class="math display">\[
 \hat{x} = \dfrac{F_0e^{-i\phi_0}}{\omega_0^2-\omega^2}
 \]</span></p>
@@ -1927,25 +1947,25 @@ m \dfrac{d^2 x}{dt^2} + k x = \hat{F} e^{i\omega t}
 </section>
 <section id="sec-FLP_1_23_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_23_2">I.23-2 강제 감쇄 조화진동</h3>
-<p>실제의 많은 경우 운동을 방해하는 마찰력이 작용한다. 이 마찰을 간단한 식으로 표현하는 것은 대부분 어렵지만 속도에 비례하는 마찰력이 수학적으로 비교적 다루기 쉬우며 실제에도 적용되는 경우가 많다. 이제 속도에 비례하는 마찰력을 <a href="#eq-FLP_1_23_2" class="quarto-xref">식&nbsp;<span>1.54</span></a> 에 도입하면 운동방정식은 다음과 같다.</p>
+<p>실제의 많은 경우 운동을 방해하는 마찰력이 작용한다. 이 마찰을 간단한 식으로 표현하는 것은 대부분 어렵지만 속도에 비례하는 마찰력이 수학적으로 비교적 다루기 쉬우며 실제에도 적용되는 경우가 많다. 이제 속도에 비례하는 마찰력을 <a href="#eq-FLP_1_23_2" class="quarto-xref">식&nbsp;<span>1.55</span></a> 에 도입하면 운동방정식은 다음과 같다.</p>
 <p><span id="eq-FLP_1_23_6"><span class="math display">\[
 m\dfrac{d^2 x}{dt^2} + c\dfrac{dx}{dt} + k x = F(t).
-\tag{1.52}\]</span></span></p>
+\tag{1.53}\]</span></span></p>
 <p>이제 <span class="math inline">\(\gamma = c/m\)</span>, <span class="math inline">\(\omega_0 = \sqrt{k/m}\)</span> 을 도입하면 운동방정식은 다음과 같다.</p>
 <p><span id="eq-FLP_1_23_6_a"><span class="math display">\[
 \dfrac{d^2x}{dt^2} + \gamma \dfrac{dx}{dt} + \omega_0^2 x = \dfrac{F(t)}{m}.
-\tag{1.53}\]</span></span></p>
+\tag{1.54}\]</span></span></p>
 <p>여기서 <span class="math inline">\(\beta\)</span> 가 매우 작다고 가정하자. <span class="math inline">\(\beta\)</span> 값의 다양한 경우에 대해서는 <a href="#sec-CM_1d_dsho">감쇄 조화 진동자</a> 를 참고하라. 외부의 힘 <span class="math inline">\(F(t) = F\cos (\omega t -\phi_0)\)</span> 이 작용한다고 하자. <span class="math inline">\(x=\hat{x}e^{i\omega t}\)</span>, <span class="math inline">\(F=\hat{F}e^{i\omega t}\)</span> 로 놓고 풀면 아래의 식을 만족해야 함을 안다.</p>
 <p><span id="eq-FLP_1_23_2"><span class="math display">\[
 -\omega^2 \hat{x} + i \gamma \omega \hat{x} + \omega_0^2 \hat{x} = \hat{F}/m
-\tag{1.54}\]</span></span></p>
+\tag{1.55}\]</span></span></p>
 <p>그렇다면</p>
 <p><span id="eq-FLP_1_23_11"><span class="math display">\[
 \begin{aligned}
 \hat{x} &amp;= \dfrac{\hat{F}}{m\left(\omega_0^2 - \omega^2 +i\gamma \omega\right)} = \dfrac{\hat{F}e^{i\theta}}{m\sqrt{(\omega_0^2 - \omega^2)^2 + \gamma^2\omega^2}},\\[0.3em]
 &amp;\qquad \qquad \qquad \text{where } \theta = -\tan^{-1}\left(\dfrac{\gamma\omega}{\omega_0^2-\omega^2}\right)
 \end{aligned}
-\tag{1.55}\]</span></span></p>
+\tag{1.56}\]</span></span></p>
 <p>위의 식에서 <span class="math inline">\(|\hat{x}|^2\)</span> 은 아래와 같이 정의되는 <span class="math inline">\(\rho^2\)</span> 에 비례하는데 물리적으로 중요하다.</p>
 <p><span class="math display">\[
 \rho^2 = \dfrac{1}{(\omega^2-\omega_0^2)^2 + \gamma^2 \omega^2}
@@ -1961,7 +1981,7 @@ m\dfrac{d^2 x}{dt^2} + c\dfrac{dx}{dt} + k x = F(t).
 </figcaption>
 </figure>
 </div>
-<p><span class="math inline">\(\omega \approx \omega_0\)</span> 일 경우 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>1.48</span></a> 와 같이 무한히 폭주하지 않지만 <span class="math inline">\(\rho^2\)</span> 값은 유한한 범위에서 매우 커지며 <span class="math inline">\(\theta \approx \pi/2\)</span> 이다. 그리고 <span class="math inline">\(\rho^2(\omega)\)</span> 에서의 반치전폭(Full with at half maximum, FWHM) 은 <span class="math inline">\(\gamma\)</span> 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 <span class="math inline">\(Q:=\omega_/\gamma\)</span> 이다.위의 <a href="#eq-FLP_1_23_11" class="quarto-xref">식&nbsp;<span>1.55</span></a> 에서는 <span class="math inline">\(Q=6.67\)</span> 이다.</p>
+<p><span class="math inline">\(\omega \approx \omega_0\)</span> 일 경우 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>1.49</span></a> 와 같이 무한히 폭주하지 않지만 <span class="math inline">\(\rho^2\)</span> 값은 유한한 범위에서 매우 커지며 <span class="math inline">\(\theta \approx \pi/2\)</span> 이다. 그리고 <span class="math inline">\(\rho^2(\omega)\)</span> 에서의 반치전폭(Full with at half maximum, FWHM) 은 <span class="math inline">\(\gamma\)</span> 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 <span class="math inline">\(Q:=\omega_/\gamma\)</span> 이다.위의 <a href="#eq-FLP_1_23_11" class="quarto-xref">식&nbsp;<span>1.56</span></a> 에서는 <span class="math inline">\(Q=6.67\)</span> 이다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_23_3" class="level3 page-columns page-full">
@@ -1979,15 +1999,15 @@ m\dfrac{d^2 x}{dt^2} + c\dfrac{dx}{dt} + k x = F(t).
 <p>전자회로의 중요한 세가지 수동소자는 축전기(capacitor), 저항(resistor), 인덕터 (inductor) 이다. 축전기는 금속 판 사이에 부도체를 채운 것으로 전하가 금속판이 각각 <span class="math inline">\(+Q\)</span>, <span class="math inline">\(-Q\)</span> 의 전하가 대전되면 양쪽 터미널 <span class="math inline">\(A,\,B\)</span> 에 전위차 <span class="math inline">\(V\)</span> 가 아래와 같이 발생한다.</p>
 <p><span id="eq-FLP_1_23_14"><span class="math display">\[
 V= \dfrac{\sigma d}{\epsilon} = \dfrac{d}{\epsilon A}Q.
-\tag{1.56}\]</span></span></p>
+\tag{1.57}\]</span></span></p>
 <div class="page-columns page-full"><p>여기서 <span class="math inline">\(d\)</span> 는 평행판 사이의 거리, <span class="math inline">\(A\)</span> 는 평행판의 면적, <span class="math inline">\(\epsilon\)</span> 는 도체 판 사이에 삽입된 부도체의 <strong>유전율 (permitivity)</strong> 이다.<span class="math inline">\(^1\)</span> 평형판 대신에 다른 모양일 수도 있지만 전위차가 대전된 전하량 <span class="math inline">\(Q\)</span> 에 비례하여 <span class="math inline">\(V=Q/C\)</span> 의 관계가 성립한다. 이 때 <span class="math inline">\(C\)</span> 를 <strong>용량(capacitance)</strong> 이라고 한다. 저항은 금속 선과 전기의 흐름으르 방해하는 물질로 이루어져 있으며 저항 양 끝단에 전위차 <span class="math inline">\(V\)</span> 를 가하면</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 파인만 교재에는 <span class="math inline">\(\epsilon_0\)</span> 라고 되어 있는데 왜그런지 모르겠다.</span></div></div>
 <p><span id="eq-FLP_1_23_15"><span class="math display">\[
 V=RI = R \dfrac{dq}{dt}
-\tag{1.57}\]</span></span></p>
+\tag{1.58}\]</span></span></p>
 <p>의 관계가 성립한다. 여기서 <span class="math inline">\(I:=dq/dt\)</span> 를 <strong>전류 (current)</strong> 라고 하며 <span class="math inline">\(R\)</span> 을 <strong>전기 저항</strong> 혹은 <strong>저항 (resistance)</strong> 라고 한다. 인덕터는 전류가 흐를 때 자기장을 생성하며 자기장의 크기는 <span class="math inline">\(dI/dt\)</span> 에 비례한다. 자기장은 전류에 비례하며 유도된 전위차는 전류의 시간에 대한 변화에 비례한다. 즉</p>
 <p><span id="eq-FLP_1_23_6"><span class="math display">\[
 V = L \dfrac{dI}{dt} = L \dfrac{dq^2}{dt}
-\tag{1.58}\]</span></span></p>
+\tag{1.59}\]</span></span></p>
 <p>의 관계가 성립한다. 비례상수 <span class="math inline">\(L\)</span> 을 <strong>자기 유도계수 (self inductance)</strong> 라고 한다. 아래와 같은 화로를 구성해 보자.</p>
 <div id="fig-FLP_1_23_5" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -2002,11 +2022,11 @@ V = L \dfrac{dI}{dt} = L \dfrac{dq^2}{dt}
 <p>위의 그림에서 1 번과 2번 터미널 사이에 전압 <span class="math inline">\(V(t)\)</span> 를 가해주면 아래와 같은 미분방정식을 만족한다.</p>
 <p><span id="eq-FLP_1_23_17"><span class="math display">\[
 L \dfrac{d^2q}{dt} + R \dfrac{dq}{dt} + \dfrac{1}{C}q = V(t).
-\tag{1.59}\]</span></span></p>
-<p><a href="#eq-FLP_1_23_6" class="quarto-xref">식&nbsp;<span>1.58</span></a> 와 비교해보면 <span class="math inline">\(L\)</span> 은 질량의 역할을, <span class="math inline">\(1/C\)</span> 는 용수철 상수의 역할을 <span class="math inline">\(R\)</span> 은 말 그대로 저항의 역할을 하는 것을 알 수 있다. <span class="math inline">\(V(t) = \hat{V}e^{i\omega t}\)</span> 의 전위차를 가해준다면 <span class="math inline">\(\hat{x}\)</span> 를 구했을 때와 같이 <span class="math inline">\(\hat{q}\)</span> 를 얻는다.</p>
+\tag{1.60}\]</span></span></p>
+<p><a href="#eq-FLP_1_23_6" class="quarto-xref">식&nbsp;<span>1.59</span></a> 와 비교해보면 <span class="math inline">\(L\)</span> 은 질량의 역할을, <span class="math inline">\(1/C\)</span> 는 용수철 상수의 역할을 <span class="math inline">\(R\)</span> 은 말 그대로 저항의 역할을 하는 것을 알 수 있다. <span class="math inline">\(V(t) = \hat{V}e^{i\omega t}\)</span> 의 전위차를 가해준다면 <span class="math inline">\(\hat{x}\)</span> 를 구했을 때와 같이 <span class="math inline">\(\hat{q}\)</span> 를 얻는다.</p>
 <p><span id="eq-FLP_1_23_18"><span class="math display">\[
 \hat{q} = \dfrac{\hat{V}}{-L\omega^2 + 1/C + iR\omega} = \dfrac{\hat{V}}{L(\omega_0^2-\omega^2 + i\gamma \omega)}.
-\tag{1.60}\]</span></span></p>
+\tag{1.61}\]</span></span></p>
 <p>여기서 <span class="math inline">\(\omega_0^2 = 1/LC,\, \gamma = R/L\)</span> 이다.</p>
 <p><br></p>
 </section>
@@ -2021,10 +2041,10 @@ L \dfrac{d^2q}{dt} + R \dfrac{dq}{dt} + \dfrac{1}{C}q = V(t).
 <h3 class="anchored" data-anchor-id="sec-FLP_1_24_1">I.24-1 진동자의 에너지</h3>
 <section id="강제-감쇄-진동자의-일률" class="level4">
 <h4 class="anchored" data-anchor-id="강제-감쇄-진동자의-일률"><strong>강제 감쇄 진동자의 일률</strong></h4>
-<p>진동자의 운동방정식 <a href="#eq-FLP_1_23_6" class="quarto-xref">식&nbsp;<span>1.58</span></a> 은 <span class="math inline">\(\omega_0 = \sqrt{k/m},\, \gamma = c/m\)</span> 을 도임하여 아래와 같이 쓸 수 있다.</p>
+<p>진동자의 운동방정식 <a href="#eq-FLP_1_23_6" class="quarto-xref">식&nbsp;<span>1.59</span></a> 은 <span class="math inline">\(\omega_0 = \sqrt{k/m},\, \gamma = c/m\)</span> 을 도임하여 아래와 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_1_24_1"><span class="math display">\[
 m \dfrac{d^2x}{dt^2} + \gamma m \dfrac{dx}{dt} + m \omega_0^2 x = F(t).
-\tag{1.61}\]</span></span></p>
+\tag{1.62}\]</span></span></p>
 <p>이번 절에서는 <span class="math inline">\(F(t)\)</span> 는 <span class="math inline">\(\cos\)</span> 함수라고 가정한다. 외부에서 작용하는 힘 <span class="math inline">\(F(t)\)</span> 에 의한 일률(power) <span class="math inline">\(P\)</span> 는 다음과 같다.</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -2035,11 +2055,11 @@ P = F\dfrac{dx}{dt} &amp;= m \left[\left(\dfrac{dx}{dt}\right)\left(\dfrac{dx^2}
 <p>여기서 <span class="math inline">\(T\)</span> 는 질량 <span class="math inline">\(m\)</span> 의 운동에너지, <span class="math inline">\(U\)</span> 는 단진자의 포텐셜 에너지임을 안다. 이 <span class="math inline">\(E=T+U\)</span> 를 진동에 저장되는 에너지라고 볼 수 있다. 많은 주기가 지나면 이 저장되는 에너지의 시간에 대한 변화율은 <span class="math inline">\(0\)</span> 이 되며 결국은 감쇄 효과만 남는다. 한 주기에서의 물리량 <span class="math inline">\(X\)</span> 의 평균을 <span class="math inline">\(\langle X\rangle\)</span> 로 표기한다면 <span class="math inline">\(\langle P\rangle\)</span> 은 다음과 같다.</p>
 <p><span id="eq-FLP_1_24_3"><span class="math display">\[
 \langle P \rangle = \left\langle \gamma m \left(\dfrac{dx}{dt}\right)^2\right \rangle.
-\tag{1.62}\]</span></span></p>
+\tag{1.63}\]</span></span></p>
 <p><span class="math inline">\(x(t)=\hat{x}e^{i\omega t}\)</span> 라면 <span class="math inline">\(\dot{x}(t) = i\omega \hat{x}e^{i\omega t}\)</span> 이며 실제 시스템을 기술하는 것은 <span class="math inline">\(\text{Re}(x(t))\)</span> 이므로</p>
 <p><span id="eq-FLP_1_24_4"><span class="math display">\[
 \langle P \rangle = \dfrac{1}{2}\gamma m \omega^2 x_0^2
-\tag{1.63}\]</span></span></p>
+\tag{1.64}\]</span></span></p>
 <p>이다.</p>
 </section>
 <section id="저장되는-에너지" class="level4">
@@ -2049,7 +2069,7 @@ P = F\dfrac{dx}{dt} &amp;= m \left[\left(\dfrac{dx}{dt}\right)\left(\dfrac{dx^2}
 \begin{aligned}
 \langle E\rangle &amp;= \dfrac{1}{2}m \left\langle \left(\dfrac{dx}{dt}\right)^2\right\rangle + \dfrac{1}{2}m\omega_0^2 \langle x^2\rangle = \dfrac{1}{2}m(\omega_0^2 + \omega^2) \dfrac{1}{2}x_0^2
 \end{aligned}
-\tag{1.64}\]</span></span></p>
+\tag{1.65}\]</span></span></p>
 <p><span class="math inline">\(\omega \approx \omega_0\)</span> 이면 <span class="math inline">\(x_0\)</span> 가 매우 커지기 때문에 저장되는 에너지가 매우 커진다.</p>
 </section>
 <section id="q-인자" class="level4">
@@ -2057,7 +2077,7 @@ P = F\dfrac{dx}{dt} &amp;= m \left[\left(\dfrac{dx}{dt}\right)\left(\dfrac{dx^2}
 <p>한 주기에서 강제 감쇄 조화진동자에 외부의 힘이 해주는 일과 저장되는 에너지 사이의 비율에 <span class="math inline">\(2\pi\)</span> 를 곱한 값을 <span class="math inline">\(Q\)</span> 값, 혹은 <span class="math inline">\(Q\)</span> 인자라고 한다.</p>
 <p><span id="eq-FLP_1_24_7"><span class="math display">\[
 Q := 2\pi \dfrac{\langle P\rangle}{\langle T+U\rangle} = \dfrac{\omega^2 + \omega_0^2}{2\gamma \omega}.
-\tag{1.65}\]</span></span></p>
+\tag{1.66}\]</span></span></p>
 <p><span class="math inline">\(Q\)</span> 값은 이 진동자가 얼마나 효율적인지에 대한 척도이다.</p>
 <p><br></p>
 </section>
@@ -2070,8 +2090,8 @@ Q := 2\pi \dfrac{\langle P\rangle}{\langle T+U\rangle} = \dfrac{\omega^2 + \omeg
 <p>강제감쇄조화진동자의 운동방정식</p>
 <p><span id="eq-FLP_FDHO_1"><span class="math display">\[
 \ddot{x}+\gamma \dot{x} + \omega_0^2 x = F(t)/m
-\tag{1.66}\]</span></span></p>
-<div class="page-columns page-full"><p>을 생각하자. 이 때 <span class="math inline">\(F(t) = 0\)</span> 으로 놓으면 선형 제차 미분방정식이며 그 해를 <strong>과도해 (transient solution)</strong> 라고 한다.<span class="math inline">\(^2\)</span> 과도해를 <span class="math inline">\(x_h(t)\)</span> 라고 하고 <a href="#eq-FLP_FDHO_1" class="quarto-xref">식&nbsp;<span>1.66</span></a> 의 과도해와 독립적인 해를 <span class="math inline">\(x_p(t)\)</span> 라고 하자. 그렇다면 <span class="math inline">\(x_h(t) + x_p(t)\)</span> 역시 <a href="#eq-FLP_FDHO_1" class="quarto-xref">식&nbsp;<span>1.66</span></a> 의 해이다. 우선 과도해를 구해보자.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> 과도(過度) 가 아니라 과도(過渡) 이다.</span></div></div>
+\tag{1.67}\]</span></span></p>
+<div class="page-columns page-full"><p>을 생각하자. 이 때 <span class="math inline">\(F(t) = 0\)</span> 으로 놓으면 선형 제차 미분방정식이며 그 해를 <strong>과도해 (transient solution)</strong> 라고 한다.<span class="math inline">\(^2\)</span> 과도해를 <span class="math inline">\(x_h(t)\)</span> 라고 하고 <a href="#eq-FLP_FDHO_1" class="quarto-xref">식&nbsp;<span>1.67</span></a> 의 과도해와 독립적인 해를 <span class="math inline">\(x_p(t)\)</span> 라고 하자. 그렇다면 <span class="math inline">\(x_h(t) + x_p(t)\)</span> 역시 <a href="#eq-FLP_FDHO_1" class="quarto-xref">식&nbsp;<span>1.67</span></a> 의 해이다. 우선 과도해를 구해보자.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> 과도(過度) 가 아니라 과도(過渡) 이다.</span></div></div>
 </section>
 <section id="강제감쇄진동-미분방정식의-과도해" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="강제감쇄진동-미분방정식의-과도해"><strong>강제감쇄진동 미분방정식의 과도해</strong></h4>
@@ -2091,12 +2111,12 @@ Q := 2\pi \dfrac{\langle P\rangle}{\langle T+U\rangle} = \dfrac{\omega^2 + \omeg
 <p>는 실수이며 과도해는</p>
 <p><span id="eq-FLP_FDHO_2"><span class="math display">\[
 x(t) = A_1 e^{-\alpha_1 t} + A_2 e^{-\alpha_2 t}
-\tag{1.67}\]</span></span></p>
+\tag{1.68}\]</span></span></p>
 <p>이다. 이 경우를 <strong>overdamped</strong> 라고 하며 진동 없이 시간에 따라 감소한다.</p>
 <p><strong>2. Underdamped</strong> : 반대로 <span class="math inline">\(\gamma^2&lt;4\omega^2_0\)</span> 일 경우 <span class="math inline">\(\omega_\gamma =  \sqrt{\omega_0^2-\gamma^2/4}\)</span> 에 대해</p>
 <p><span id="eq-FLP_FDHO_3"><span class="math display">\[
 x(t) = e^{-\gamma t/2 }\text{Re}(A_1 e^{i\omega_\gamma t} + A_2 e^{-i \omega_\gamma t}) = A e^{-\gamma t/2} \cos (\omega_\gamma t + \theta_0)
-\tag{1.68}\]</span></span></p>
+\tag{1.69}\]</span></span></p>
 <div class="page-columns page-full"><p>를 얻는다. 이런 경우를 <strong>underdamped</strong> 라고 하며, overdamped 와는 달리 진동이 존재한다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(\operatorname{Re}(a)\)</span> 는 복소수 <span class="math inline">\(a\)</span> 에 대해 실수부만을 취하는 함수이다.</span></div></div>
 <p><strong>3. Critically dampled</strong> : <span class="math inline">\(\gamma ^2=4\omega_0^2\)</span> 인 경우를 <strong>critically damped</strong> 라고 한다. 이 경우에는 <span class="math inline">\(te^{-\gamma t/2}\)</span> 도 해가 된다. <span class="math inline">\(x(t) = te^{-\gamma t/2 }\)</span> 에 대해</p>
 <p><span class="math display">\[
@@ -2105,7 +2125,7 @@ x(t) = e^{-\gamma t/2 }\text{Re}(A_1 e^{i\omega_\gamma t} + A_2 e^{-i \omega_\ga
 <p>이다. 따라서 이 경우의 해는</p>
 <p><span id="eq-FLP_FDHO_4"><span class="math display">\[
 x(t) = (A_1+A_2t)e^{-\gamma t/2}
-\tag{1.69}\]</span></span></p>
+\tag{1.70}\]</span></span></p>
 <p>이다. 세가지 경우 모두 <span class="math inline">\(A_1,\,A_2\)</span> 는 초기조건 의해 정해진다.</p>
 </section>
 <section id="에너지-변화" class="level4">
