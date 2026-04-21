@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>2&nbsp; I-2: 특수상대성이론과 광학 – 파인만 물리학 강의</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,15 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../src/vol1/vol1_1.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3e2728906df7980cb53b491a61d13d7e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -319,7 +321,7 @@ window.Quarto = {
 
 <div class="hidden">
 <p>% %</p>
-%
+<p>% </p>
 <p><span class="math display">\[
 \DeclarePairedDelimiters{\set}{\{}{\}}
 \DeclareMathOperator*{\argmax}{argmax}
@@ -331,17 +333,20 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="sec-FLP_1_15_1">I.15-1 상대성 이론</h3>
 <ul>
 <li>정지 질량과 상대론적 질량 (현대적인 상대론에서는 상대론적인 질량이란 개념을 사용하지 않는다.)</li>
-<li>뉴턴의 상대성 이론, 즉 갈릴레이의 상대성 이론</li>
-<li>멕스웰 방정식은 갈릴레이 상대성 이론과 일치하지 않는다. 즉 멕스웰 방정식이 갈릴레이 변환에 대해 불변이 아님.</li>
+<li>뉴턴의 상대성 이론, 즉 갈릴레이의 상대성 이론(<a href="../../src/vol1/vol1_1.html#sec-FLP_1_10_2_galilean_relativity">갈릴레이 상대성 원리</a> )</li>
+<li>멕스웰 방정식의 결론 가운데 하나는 전자기장의 교란에 의해 빛이 발생할 경우, 그 발생원이 움직이더라도 빛의 속도는 동일해야 한다는 것이다. 멕스웰 방정식은 갈릴레이 상대성 이론과 일치하지 않으며 멕스웰 방정식이 갈릴레이 변환에 대해 불변이 아님.</li>
 <li>멕스웰 방정식을 이용하여 절대적인 속도를 얻기 위한 노력이 있었으나 무산됨 (예:마이켈슨-몰리 실험)</li>
 </ul>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_15_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_15_2">I.15-2 로렌츠 변환</h3>
+<section id="로렌츠-변환" class="level4">
+<h4 class="anchored" data-anchor-id="로렌츠-변환"><strong>로렌츠 변환</strong></h4>
 <ul>
-<li><p>멕스웰 방정식과 갈릴레이 상대성 이론을 조화시키려는 노력, 그리고 실패</p></li>
-<li><p>로런츠 변환의 등장</p>
+<li><p>갈릴레이 상대성 이론에 맞게 멕스웰 방정식을 변경시키려는 노력. 그러나 실패.</p></li>
+<li><p>로런츠 변환의 등장</p></li>
+</ul>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -352,7 +357,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>한 기준틀 <span class="math inline">\(S' = (t',\,x',\,y',\,z')\)</span> 이 다른 기준틀 <span class="math inline">\(S=(t,\,x,\,y,\,z)\)</span> 에 대해 <span class="math inline">\(\boldsymbol{u}=u\hat{\boldsymbol{x}}\)</span> 의 속도로 움직일 때 아래의 관계를 <strong>갈릴레이 변환 (Galilean transformation)</strong> 이라고 한다.</p>
+<p>한 관성기준틀 <span class="math inline">\(S' = (t',\,x',\,y',\,z')\)</span> 이 다른 관성기준틀 <span class="math inline">\(S=(t,\,x,\,y,\,z)\)</span> 에 대해 <span class="math inline">\(\boldsymbol{u}=u\hat{\boldsymbol{x}}\)</span> 의 속도로 움직일 때 아래의 관계를 <strong>갈릴레이 변환 (Galilean transformation)</strong> 이라고 한다.</p>
 <p><span id="eq-FLP_1_15_2"><span class="math display">\[
 x' = x-ut,\quad y'=y,\quad z'=z,\quad t'=t.
 \tag{2.1}\]</span></span></p>
@@ -361,15 +366,20 @@ x' = x-ut,\quad y'=y,\quad z'=z,\quad t'=t.
 x'=\dfrac{x-ut}{\sqrt{1-u^2/c^2}},\quad y'=y,\quad z'=z,\quad t' = \dfrac{t-ux/c^2}{\sqrt{1-u^2/c^2}}
 \tag{2.2}\]</span></span></p>
 </div>
-</div></li>
-<li><p>푸앙카레의 주장</p>
+</div>
+<ul>
+<li>멕스웰 방정식이 로런츠 변환에 대해 불변임.</li>
+</ul>
+</section>
+<section id="푸앙카레의-주장과-아인슈타인의-제안" class="level4">
+<h4 class="anchored" data-anchor-id="푸앙카레의-주장과-아인슈타인의-제안"><strong>푸앙카레의 주장과 아인슈타인의 제안</strong></h4>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">중요</span>푸앵카레가 ’물리 법칙의 로렌츠 불변성(혹은 로렌츠 변환/로렌츠 군)’을 말한 1차 자료
+<span class="screen-reader-only">중요</span>푸앵카레가 ‘물리 법칙의 로렌츠 불변성(혹은 로렌츠 변환/로렌츠 군)’을 말한 1차 자료
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -390,10 +400,12 @@ x'=\dfrac{x-ut}{\sqrt{1-u^2/c^2}},\quad y'=y,\quad z'=z,\quad t' = \dfrac{t-ux/c
 </ul>
 <p>(from ChatGPT, need to be checked)</p>
 </div>
-</div></li>
-<li><p>아인슈타인의 특수상대성 이론의 등장</p></li>
+</div>
+<ul>
+<li>아인슈타인은 푸앙카레의 제안을 따라, 모든 물리 법칙이 로렌츠 변환 하에서 변하지 않아야 한다고 제안했다. 다시 말해, 바뀌어야 하는 것은 전기역학의 법칙이 아니라 역학 법칙이어야 한다. 어떻게?</li>
 </ul>
 <p><br></p>
+</section>
 </section>
 <section id="sec-FLP_1_15_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_15_3">I.15-3 마이켈슨-몰리 실험</h3>
@@ -407,6 +419,18 @@ x'=\dfrac{x-ut}{\sqrt{1-u^2/c^2}},\quad y'=y,\quad z'=z,\quad t' = \dfrac{t-ux/c
 </figcaption>
 </figure>
 </div>
+<section id="실험-구성" class="level4">
+<h4 class="anchored" data-anchor-id="실험-구성"><strong>실험 구성</strong></h4>
+<ul>
+<li><span class="math inline">\(A\)</span> : 광원, <span class="math inline">\(C\)</span>, <span class="math inline">\(E\)</span> : 거울, <span class="math inline">\(B\)</span> : 부분적으로 은으로 도금된 유리판.</li>
+<li><span class="math inline">\(BC\)</span> 와 <span class="math inline">\(BE\)</span> 사이의 거리는 <span class="math inline">\(L\)</span> 로 동일함.</li>
+<li><span class="math inline">\(B\)</span> 는 빛을 부분적으로 통과시키고 부분적으로 90 도 굴절시킴.</li>
+<li><span class="math inline">\(D\)</span> 는 <span class="math inline">\(BEB\)</span> 의 경로를 따라 온 빛, <span class="math inline">\(F\)</span> 는 <span class="math inline">\(BCB\)</span> 의 경로를 따른 빛. 두 빛의 위상에 따라 간섭이 발생함.</li>
+<li><span class="math inline">\(\boldsymbol{u}\)</span> 의 상대속도로 움직일 때 실험장비 밖의 정지된 기준틀에서 봤을 때 <span class="math inline">\(C',\, E',\, B'\)</span> 과 빛 <span class="math inline">\(D',\,F'\)</span> 이 결정됨.</li>
+</ul>
+</section>
+<section id="정지한-좌표계에서" class="level4">
+<h4 class="anchored" data-anchor-id="정지한-좌표계에서"><strong>정지한 좌표계에서</strong></h4>
 <p>실험 장비가 <span class="math inline">\(u\)</span> 의 속도로 움직이고 있다고 하자. 정지한 좌표계에서 빛이 <span class="math inline">\(A-E'\)</span> 으로 진행하는데 걸린 시간 <span class="math inline">\(t_1\)</span> 은 <span class="math inline">\(ct_1 = L+ut_1\)</span> 로부터 계산 할 수 있고 <span class="math inline">\(E'\)</span> 에서 반사되어 <span class="math inline">\(E'-B'\)</span> 경로를 진행하는데 걸린 시간 <span class="math inline">\(t_2\)</span> 는 <span class="math inline">\(ct_2 =L-ut_2\)</span> 로부터 계산 할 수 있다. 여기서 빛이 <span class="math inline">\(B\)</span> 로부터 진행하여 <span class="math inline">\(B'\)</span> 으로 돌아오는데 걸린 시간 <span class="math inline">\(t_1+t_2\)</span> 는 아래와 같다.</p>
 <p><span id="eq-FLP_1_15_4"><span class="math display">\[
 t_1+t_2 = \dfrac{L}{c-u}+ \dfrac{L}{c+u} = \dfrac{2L/c}{1-u^2/c^2}.
@@ -415,16 +439,21 @@ t_1+t_2 = \dfrac{L}{c-u}+ \dfrac{L}{c+u} = \dfrac{2L/c}{1-u^2/c^2}.
 <p><span id="eq-FLP_1_15_5"><span class="math display">\[
 2t_3 = \dfrac{2L/c}{\sqrt{1-u^2/c^2}}
 \tag{2.4}\]</span></span></p>
-<p>이다. 마이켈슨-몰리 실험의 결과는 <span class="math inline">\(t_1+t_2 = 2t_3\)</span> 인 것이며 이는 <a href="#eq-FLP_1_15_4" class="quarto-xref">식&nbsp;<span>2.3</span></a> 과 <a href="#eq-FLP_1_15_5" class="quarto-xref">식&nbsp;<span>2.4</span></a> 가운데 오류가 있다는 것을 의미한다. 로런츠는 로런츠 변환에서 움직인는 물체의 길이는 움직이는 방향으로 수축된다고 주장하였으며 그 수축된 길이 <span class="math inline">\(L_\parallel = L\sqrt{1-u^2/c^2}\)</span> 이다. 이를 적용하면</p>
+<p>이다. <a href="#eq-FLP_1_15_4" class="quarto-xref">식&nbsp;<span>2.3</span></a> 와 <a href="#eq-FLP_1_15_5" class="quarto-xref">식&nbsp;<span>2.4</span></a> 를 비교해보면 분모에서 차이가 나며 분모는 <span class="math inline">\(u\)</span> 의 함수이다.</p>
+</section>
+<section id="실험-결과" class="level4">
+<h4 class="anchored" data-anchor-id="실험-결과"><strong>실험 결과</strong></h4>
+<p>마이켈슨-몰리 실험의 결과는 <span class="math inline">\(t_1+t_2 = 2t_3\)</span> 이었다. 이는 <a href="#eq-FLP_1_15_4" class="quarto-xref">식&nbsp;<span>2.3</span></a> 과 <a href="#eq-FLP_1_15_5" class="quarto-xref">식&nbsp;<span>2.4</span></a> 가운데 오류가 있다는 것을 의미한다. 로런츠는 움직이는 물체의 길이는 움직이는 방향으로 수축되어 <span class="math inline">\(L_\parallel = L\sqrt{1-u^2/c^2}\)</span> 라고 주장했다. 이를 적용하면</p>
 <p><span id="eq-FLP_1_15_7"><span class="math display">\[
 t_1+t_2 = \dfrac{L_\parallel}{c-u}+ \dfrac{L_\parallel}{c+u} = \dfrac{2L/c}{\sqrt{1-u^2/c^2}} = 2t_3.
 \tag{2.5}\]</span></span></p>
-<p>이다.</p>
+<p>이다. 하지만 이것은 실험 결과를 맞추기 위한 인위적인 조작이라는 반대에 부딛쳤다. 그러나 이후의 많은 실험 결과가 로런츠의 주장이 실재로 성립한다는 것을 보였다.</p>
 <p><br></p>
+</section>
 </section>
 <section id="sec-FLP_1_15_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_15_4">I.15-4 시간의 변환</h3>
-<p><a href="#sec-FLP_15_3">15-3 마이켈슨 몰리 실험</a> 은 지구와 같이 움직이는 관찰자가 아닌 정지한 관찰자의 입장에서 <span class="math inline">\(t_1,\,t_2,\,t_3\)</span> 를 측정하고 계산한 실험이다. 이제 지구와 같이 움직이는 관찰자의 입장에서 보자. 구별하기 위해 <span class="math inline">\(\overline{t}_1,\,\overline{t}_2,\,\overline{t}_3\)</span> 라고 하면</p>
+<p><a href="#sec-FLP_1_15_3">I.15-3 마이켈슨 몰리 실험</a> 은 지구와 같이 움직이는 관찰자가 아닌 정지한 관찰자의 입장에서 <span class="math inline">\(t_1,\,t_2,\,t_3\)</span> 를 측정하고 계산한 실험이다. 이제 지구와 같이 움직이는 관찰자의 입장에서 보자. 구별하기 위해 <span class="math inline">\(\overline{t}_1,\,\overline{t}_2,\,\overline{t}_3\)</span> 라고 하면</p>
 <p><span class="math display">\[
 \overline{t}_1 = \overline{t}_2 = \overline{t}_3 = L/c
 \]</span></p>
@@ -458,10 +487,12 @@ t_3 = \dfrac{L/c}{\sqrt{1-u^2/c^2}} &gt; \dfrac{L}{c}= \overline{t}_3
 <section id="sec-FLP_1_15_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_15_5">I.15-5 로런츠 수축</h3>
 <ul>
-<li>마이켈슨-몰리 실험은 두 경로 (<span class="math inline">\(BCB\)</span>, <span class="math inline">\(BEB\)</span>) 의 두 빛이 위상차를 전혀 갖지 않는다는 것을 보여준다. <span class="math inline">\(BC\)</span> 의 길이는 두 좌표계 <span class="math inline">\(S,\,S'\)</span> 에서 변하지 않는다는 것을 안다.</li>
-<li>이것으로부터 <span class="math inline">\(BE\)</span> 의 길이가 <span class="math inline">\(L\sqrt{1-u^2/c^2}\)</span> 만큼 줄어들었을 때 실험 결과를 잘 성명한다는 것도 알게 되었다. 그렇다면 <span class="math inline">\(S\)</span> 에서의 측정과 <span class="math inline">\(S'\)</span> 에서의 <span class="math inline">\(BE\)</span> 의 길이 측정에 무슨 차이가 존재할까?</li>
+<li><p>마이켈슨-몰리 실험은 두 경로 (<span class="math inline">\(BCB\)</span>, <span class="math inline">\(BEB\)</span>) 의 두 빛이 위상차를 전혀 갖지 않는다는 것을 보여준다. <span class="math inline">\(BC\)</span> 의 길이는 두 좌표계 <span class="math inline">\(S,\,S'\)</span> 에서 변하지 않는다는 것을 안다.</p></li>
+<li><p>이것으로부터 <span class="math inline">\(BE\)</span> 의 길이가 수축되어 <span class="math inline">\(L\sqrt{1-u^2/c^2}\)</span> 가 되었을 때 실험 결과를 잘 성명한다는 것도 알게 되었다. 그렇다면 <span class="math inline">\(S\)</span> 에서의 측정과 <span class="math inline">\(S'\)</span> 에서의 <span class="math inline">\(BE\)</span> 의 길이 측정에 무슨 차이가 존재할까?</p></li>
+<li><p><span class="math inline">\(S'\)</span> 좌표계에 <span class="math inline">\(x'\)</span> 미터 짜리 막대기를 놓았다고 하자. <span class="math inline">\(S\)</span> 좌표계에서 이 막대기의 길이는 <span class="math inline">\(x'\sqrt{1-u^2/c^2}\)</span> 미터이며 이로부터 <span class="math inline">\(x = x'\sqrt{1-u^2/c^2}+ut\)</span> 이다. 즉 <span class="math display">\[
+x' = \dfrac{x-ut}{\sqrt{1-u^2/c^2}}
+\]</span> 을 얻는다. 이것은 로렌츠 변환 <a href="#eq-FLP_1_15_3" class="quarto-xref">식&nbsp;<span>2.2</span></a> 의 첫번재 식이다.</p></li>
 </ul>
-<p>기타..</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_15_6" class="level3">
@@ -472,16 +503,20 @@ t_3 = \dfrac{L/c}{\sqrt{1-u^2/c^2}} &gt; \dfrac{L}{c}= \overline{t}_3
 t'_2-t'_1 = \dfrac{(t_2-ux_2/c^2)-(t_1-ux_1/c^2)}{\sqrt{1-u^2/c^2}} = \dfrac{u(x_1-x_2)/c^2}{\sqrt{1-u^2/c^2}}
 \]</span></p>
 <p>즉 <span class="math inline">\(S\)</span> 기준틀에서 동시인 사건은 <span class="math inline">\(S'\)</span> 기준틀에서 같은 위치에서 발생하지 않았다면 동시인 사건이 아니다.</p></li>
+<li><p>우주선(시스템 <span class="math inline">\(S'\)</span>) 에서 이동하는 사람이 우주선의 양 끝에 시계를 배치하고 두 시계가 동기화되어 있는지 확인하고자 한다고 하자. 한가지 방법은 두 시계 사이의 정확한 중간점을 정확히 찾는다. 그리고 이 중간점에서 두 시계로 빛 신호를 보내면 이 신호를 시계를 동기화하는 데 사용할 수 있다. 이 방법으로 <span class="math inline">\(S'\)</span> 의 사람이 시계를 동기화했다고 가정해 보자. 시스템 <span class="math inline">\(S\)</span> 의 관찰자는 이 두 시계가 동기화 되었다는 것에 동의할까?. <span class="math inline">\(S\)</span> 에 있던 사람은 배가 앞으로 움직이고 있기 때문에 앞쪽 시계가 빛 신호에서 멀어지고 있었으며, 따라서 빛이 따라잡기 위해 절반 이상 올라가야 했다고 생각한다. 그러나 뒤쪽 시계는 빛 신호를 맞추기 위해 전진하고 있었기 때문에 이 거리가 짧아졌습니다. 따라서 신호는 먼저 후방 시계에 도달한다. 즉 <span class="math inline">\(S'\)</span> 과 <span class="math inline">\(S\)</span> 의 동시는 일치하지 않는다.</p></li>
 </ul>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_15_7" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_15_7">I.15-7 4-벡터</h3>
-<p>3차원 좌표공간에서 회전 변환 <span class="math inline">\(R\)</span> 에 의해 거리가 보존되며 <span class="math inline">\(\boldsymbol{x}'=R\boldsymbol{x}\)</span> 에 대해 <span class="math inline">\(\|\boldsymbol{x}'\|=\|\boldsymbol{x}\|\)</span> 이다. 로런츠 변환에 대해서는</p>
-<p><span class="math display">\[
+<p>3차원 유클리드 공간에서는 회전 변환 <span class="math inline">\(R\)</span> 에 의해 거리가 보존되며 <span class="math inline">\(\boldsymbol{x}'=R\boldsymbol{x}\)</span> 에 대해 <span class="math inline">\(\|\boldsymbol{x}'\|=\|\boldsymbol{x}\|\)</span> 이다. 4차원 시공간에서의 로런츠 변환에 대해서는</p>
+<p><span id="eq-FLP_1_15_9"><span class="math display">\[
 (ct')^2 - x'^2 - y'^2 - z'^2 = ct^2 - x^2 - y^2 - z^2
-\]</span></p>
-<p>이 성립한다. 이제 4차원 벡터 <span class="math inline">\(X^\mu =(ct,\,x,\,y,\,z)\)</span> 에 대해 <span class="math inline">\(\|X^\mu \| = \sqrt{ct^2 - x^2 - y^2 - z^2}\)</span> 라고 정의하면 로런츠 변환에 대해 <span class="math inline">\(\|X'^\nu\| = \|X^\mu\|\)</span> 이다. <span class="math inline">\(X^\mu=(ct,\,x,\,y,\,z)\)</span> 형식의 벡터를 4-벡터 라고 한다.</p>
+\tag{2.7}\]</span></span></p>
+<p>이 성립한다. 이제 4차원 벡터 <span class="math inline">\(X^\mu = (X^0,\,X^1,\,X^2,\,X^3) = (ct,\,x,\,y,\,z)\)</span> 에 대해 <span class="math inline">\(X^\mu\)</span> 의 <strong>시공간 간격 (space time interval)</strong> <span class="math inline">\(\|X^\mu\|\)</span> 를</p>
+<p><span class="math display">\[
+\|X^\mu \| := \sqrt{ct^2 - x^2 - y^2 - z^2}
+\]</span> 라고 정의하면 로런츠 변환에 대해 <span class="math inline">\(\|X'^\nu\| = \|X^\mu\|\)</span> 이다. 이렇게 로렌츠 변환에 대해 시공간 간격이 불변인 4차원 벡터를 <strong>4-벡터 (4-vector)</strong> 라고 한다.</p>
 <div class="page-columns page-full"><p>4-벡터의 인덱스는 관습적으로 <span class="math inline">\(\mu,\,\nu\)</span> 와 같은 그리스 문자를 사용하며 0 부터 3 까지의 인덱스를 사용한다. 위첨자로 표현되는 벡터와 아래첨자로 표현되는 벡터는 특수상대성 이론에서 다음과 같다.<span class="math inline">\(^1\)</span></p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 일반상대성 이론에서는 공변벡터와 반변벡터가 아래와 같이 단순한 관계가 성립하지 않는다는 것은 알아두자</span></div></div>
 <p><span class="math display">\[
 X^\mu = (ct,\,x,\,y,\,z),\qquad X_\mu = (ct,\,-x,\,-y,\,-z).
@@ -497,8 +532,8 @@ X^\mu = (ct,\,x,\,y,\,z),\qquad X_\mu = (ct,\,-x,\,-y,\,-z).
 \]</span></p>
 <p>이다. 상대성 이론에서는 운동량이 아래와 같이 정의된다. 이것은 아인슈타인에 의해 정의되었다.</p>
 <p><span id="eq-FLP_1_15_10"><span class="math display">\[
-\boldsymbol{p}= \dfrac{m\boldsymbol{v}}{\sqrt{1-v^2/c^2}}.
-\tag{2.7}\]</span></span></p>
+\boldsymbol{p} := \dfrac{m\boldsymbol{v}}{\sqrt{1-v^2/c^2}}.
+\tag{2.8}\]</span></span></p>
 <p>작용-반작용이 <u>최종적으로</u> 서로 같다면 위와 같이 정의된 운동량은 보존된다.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -522,7 +557,7 @@ X^\mu = (ct,\,x,\,y,\,z),\qquad X_\mu = (ct,\,-x,\,-y,\,-z).
 <p><span class="math display">\[
 v(t)= \dfrac{Ft/m}{\sqrt {1+ \left(Ft/mc\right)^2}}
 \]</span></p>
-<p>이다. <span class="math inline">\(t\to infty\)</span> 극한에서 <span class="math inline">\(v(t) \to c\)</span> 임을 안다. 이것은 뉴턴역학과 다른 결과인데 뉴턴역학에서는 일정한 힘을 계속 가할 수 있다면 <span class="math inline">\(v&gt;c\)</span> 가 가능하다.</p>
+<p>이다. <span class="math inline">\(t\to \infty\)</span> 극한에서 <span class="math inline">\(v(t) \to c\)</span> 임을 안다. 이것은 뉴턴역학과 다른 결과인데 뉴턴역학에서는 일정한 힘을 계속 가할 수 있다면 <span class="math inline">\(v&gt;c\)</span> 가 가능하다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_15_9" class="level3">
@@ -530,7 +565,7 @@ v(t)= \dfrac{Ft/m}{\sqrt {1+ \left(Ft/mc\right)^2}}
 <p>아인슈타인은 에너지를 아래와 같이 정의했다.</p>
 <p><span id="eq-FLP_1_relativistic_energy"><span class="math display">\[
 E:= \dfrac{mc^2}{\sqrt{1-v^2/c^2}}.
-\tag{2.8}\]</span></span></p>
+\tag{2.9}\]</span></span></p>
 <p>이를 테일러 전개 하면</p>
 <p><span class="math display">\[
 E=mc^2 + \dfrac{mv^2}{2} + \cdots
@@ -562,7 +597,7 @@ E=mc^2 + \dfrac{mv^2}{2} + \cdots
 <p>두 기준틀 <span class="math inline">\(S,\,S'\)</span> 이 <span class="math inline">\(\boldsymbol{u}=u\hat{\boldsymbol{x}}\)</span> 의 상대적인 운동을 하고 있을 때 두 기준틀 사이의 로런츠 변환은 다음과 같다.</p>
 <p><span id="eq-FLP_lorent_transform_in_16_3"><span class="math display">\[
 \begin{array}{rl} x'&amp;= \dfrac{x-ut}{\sqrt{1-u^2/c^2}},\\[0.3em] y'&amp;=y, \\[0.3em]z'&amp;=z, \\ t'&amp;=\dfrac{t-ux/c^2}{\sqrt{1-u^2/c^2}}\dots\end{array} \quad \iff \quad \begin{array}{rl} x&amp;= \dfrac{x'+ut'}{\sqrt{1-u^2/c^2}},\\[0.3em] y&amp;=y', \\[0.3em] z&amp;=z', \\ t&amp;=\dfrac{t'+ux'/c^2}{\sqrt{1-u^2/c^2}}.\end{array}
-\tag{2.9}\]</span></span></p>
+\tag{2.10}\]</span></span></p>
 <p>여기서 <span class="math inline">\(S'\)</span> 기준틀에서 <span class="math inline">\(v_{x'}\)</span> 의 속도로 일정하게 움직이는 입자를 생각하자. <span class="math inline">\(x'=v_{x'}t\)</span> 이므로</p>
 <p><span class="math display">\[
 x=\dfrac{v_{x'}t' + ut'}{\sqrt{1-u^2/c^2}},\qquad t = \dfrac{t'+uv_{x'}t/c^2}{\sqrt{1-u^2/c^2}}
@@ -570,7 +605,7 @@ x=\dfrac{v_{x'}t' + ut'}{\sqrt{1-u^2/c^2}},\qquad t = \dfrac{t'+uv_{x'}t/c^2}{\s
 <p>이며, 따라서 <span class="math inline">\(S\)</span> 기준틀에서의 속도 <span class="math inline">\(\boldsymbol{v} = (v_x,\,v_y,\,v_z)\)</span> 는 아래와 같다.</p>
 <p><span id="eq-FLP_1_16_6"><span class="math display">\[
 v_x = \dfrac{x}{t}=\dfrac{v_{x'}+u}{1+uv_{x'}/c^2},\qquad v_y = 0,\qquad v_z = 0 .
-\tag{2.10}\]</span></span></p>
+\tag{2.11}\]</span></span></p>
 <p>여기서 <span class="math inline">\(v_{x'}=c\)</span> 라면, 즉 기준틀 <span class="math inline">\(S'\)</span> 에서 광속으로 움직인다면</p>
 <p><span class="math display">\[
 v_x = \dfrac{c+u}{1+u/c}= c
@@ -579,12 +614,12 @@ v_x = \dfrac{c+u}{1+u/c}= c
 <p>이제 <span class="math inline">\(S'\)</span> 의 기준틀에의 속도가 <span class="math inline">\((v_{x'},\,v_{y'})\)</span> 으로 주어지는 경우를 생각해보자. <span class="math inline">\(y'=v_{y'}t'\)</span> 이므로 <span class="math inline">\(v_y\)</span> 는 아래와 같다.</p>
 <p><span id="eq-FLP_1_16_7_0"><span class="math display">\[
 v_y = \dfrac{y}{t} = \dfrac{v_{y'}t'}{\dfrac{t'+uv_{x'}t'/c^2}{\sqrt{1-u^2/c^2}}} = \dfrac{v_{y'}}{1+uv_{x'}/c^2}\sqrt{1-u^2/c^2}
-\tag{2.11}\]</span></span></p>
+\tag{2.12}\]</span></span></p>
 <p>주의할 것은 <span class="math inline">\(v_y\)</span> 는 <span class="math inline">\(u,\,v_{y'}\)</span> 뿐만 아니라 <span class="math inline">\(v_{x'}\)</span> 에도 의존한다는 것이다. 물론 <span class="math inline">\(v_x'=0\)</span> 인 경우</p>
 <p><span id="eq-FLP_1_16_7"><span class="math display">\[
 v_y = v_y'\sqrt{1-u^2/c^2}
-\tag{2.12}\]</span></span></p>
-<p>이다. 이 식을 상대성 이론의 기본 원리로부터 직접 구해보자. 우리는 앞서 <a href="#sec-FLP_15_4">15-4 시간의 변환</a> 에서 정지한 기준트로가 움직이는 기준틀에서의 시간이 다르게 흐른다는 것을 알았다. 속도는 시간에 반비례하며 그 비율이 <span class="math inline">\(\sqrt{1-u^2/c^2}\)</span> 이므로 우리는 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.12</span></a> 을 얻을 수 있다.</p>
+\tag{2.13}\]</span></span></p>
+<p>이다. 이 식을 상대성 이론의 기본 원리로부터 직접 구해보자. 우리는 앞서 <a href="#sec-FLP_15_4">15-4 시간의 변환</a> 에서 정지한 기준트로가 움직이는 기준틀에서의 시간이 다르게 흐른다는 것을 알았다. 속도는 시간에 반비례하며 그 비율이 <span class="math inline">\(\sqrt{1-u^2/c^2}\)</span> 이므로 우리는 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.13</span></a> 을 얻을 수 있다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_16_4" class="level3">
@@ -619,18 +654,18 @@ v_y = v_y'\sqrt{1-u^2/c^2}
 </figcaption>
 </figure>
 </div>
-<p>그렇다면 (a) <span class="math inline">\(\to\)</span> (b) 변환에서 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.12</span></a> 로부터 <span class="math inline">\(u \tan \alpha = w\sqrt{1-u^2/c^2}\)</span> 임을 알 수 있다. 이 때 (b) 시점에서 2 입자의 수직방향 운동량의 변화 <span class="math inline">\(\Delta p_{b, 2}\)</span> 는 <span class="math inline">\(\Delta p_{b, 2} = 2\gamma(w) mw\)</span> 이며 1번 입자의 속력은 <span class="math inline">\(v\)</span> 이고 속력의 수직방향의 변화 <span class="math inline">\(\Delta p_{b, 1}\)</span> 는</p>
+<p>그렇다면 (a) <span class="math inline">\(\to\)</span> (b) 변환에서 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.13</span></a> 로부터 <span class="math inline">\(u \tan \alpha = w\sqrt{1-u^2/c^2}\)</span> 임을 알 수 있다. 이 때 (b) 시점에서 2 입자의 수직방향 운동량의 변화 <span class="math inline">\(\Delta p_{b, 2}\)</span> 는 <span class="math inline">\(\Delta p_{b, 2} = 2\gamma(w) mw\)</span> 이며 1번 입자의 속력은 <span class="math inline">\(v\)</span> 이고 속력의 수직방향의 변화 <span class="math inline">\(\Delta p_{b, 1}\)</span> 는</p>
 <p><span class="math display">\[
 \Delta p_{b, 1} = 2 \gamma(v) u\tan \alpha = 2 \gamma(v) w \sqrt{1-u^2/c^2}
 \]</span></p>
 <p>이다. <span class="math inline">\(\Delta p_{b, 2}= \Delta p_{b, 1}\)</span> 이어야 하므로</p>
 <p><span id="eq-FLP_1_16_9_modified"><span class="math display">\[
 \dfrac{\gamma(w)}{\gamma (v)} = \sqrt{1-u^2/c^2}
-\tag{2.13}\]</span></span></p>
+\tag{2.14}\]</span></span></p>
 <p>이다. 이제 <span class="math inline">\(w\to 0\)</span> 인 극한에서 생각해보자. 이 극한에서 <span class="math inline">\(v \to u\)</span> 이며 따라서 다음과 같다.</p>
 <p><span id="eq-FLP_1_16_10_modified"><span class="math display">\[
 \gamma(v) = \dfrac{\gamma(0)}{\sqrt{1-v^2/c^2}}
-\tag{2.14}\]</span></span></p>
+\tag{2.15}\]</span></span></p>
 <p><span class="math inline">\(\boldsymbol{p}=\gamma(v)m\boldsymbol{v}\)</span> 임을 생각하자. <span class="math inline">\(v\to 0\)</span> 인 극한에서 뉴튼의 운동량과 일치시키려면 <span class="math inline">\(\gamma(0)=1\)</span> 로 놓을 수 있다. 즉</p>
 <p><span class="math display">\[
 \gamma(v) = \dfrac{1}{\sqrt{1-v^2/c^2}}
@@ -653,7 +688,7 @@ v_y = v_y'\sqrt{1-u^2/c^2}
 <p>임을 안다. <span class="math inline">\(u\to 0\)</span> 극한에 대해</p>
 <p><span id="eq-FLP_1_16_11_modified"><span class="math display">\[
 M = 2\gamma (w) m
-\tag{2.15}\]</span></span></p>
+\tag{2.16}\]</span></span></p>
 <p>임을 안다. 즉 질량 <span class="math inline">\(m\)</span> 인 두 입자가 합쳐졌을 때의 질량이 두 입자의 질량의 합이 아니게 된다.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -665,7 +700,7 @@ M = 2\gamma (w) m
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>참고로 <span class="math inline">\(\gamma(v) := 1/\sqrt{1-v^2/c^2}\)</span> 는 상대론에서 아주 많이 사용되며, 필요하다면 속도 <span class="math inline">\(v\)</span> 를 명시적으로 표기하지 않고 단지 <span class="math inline">\(\gamma\)</span> 라고 표기하거나 아래첨자로 <span class="math inline">\(\gamma_v\)</span> 형태로 많이 사용한다. 또한 <span class="math inline">\(\beta := v/c\)</span> 혹은 <span class="math inline">\(\beta_v\)</span> 역시 많이 사용된다. 따라서 <a href="#eq-FLP_1_relativistic_energy" class="quarto-xref">식&nbsp;<span>2.8</span></a> 의 상대론적 에너지 <span class="math inline">\(E=\gamma mc^2\)</span> 이며 운동량 <span class="math inline">\(\boldsymbol{p}=\gamma m\boldsymbol{v}\)</span> 이다. 또한 <span class="math inline">\(\gamma_v = 1/\sqrt{1-{\beta_v}^2}\)</span> 의 관계가 성립한다.</p>
+<p>참고로 <span class="math inline">\(\gamma(v) := 1/\sqrt{1-v^2/c^2}\)</span> 는 상대론에서 아주 많이 사용되며, 필요하다면 속도 <span class="math inline">\(v\)</span> 를 명시적으로 표기하지 않고 단지 <span class="math inline">\(\gamma\)</span> 라고 표기하거나 아래첨자로 <span class="math inline">\(\gamma_v\)</span> 형태로 많이 사용한다. 또한 <span class="math inline">\(\beta := v/c\)</span> 혹은 <span class="math inline">\(\beta_v\)</span> 역시 많이 사용된다. 따라서 <a href="#eq-FLP_1_relativistic_energy" class="quarto-xref">식&nbsp;<span>2.9</span></a> 의 상대론적 에너지 <span class="math inline">\(E=\gamma mc^2\)</span> 이며 운동량 <span class="math inline">\(\boldsymbol{p}=\gamma m\boldsymbol{v}\)</span> 이다. 또한 <span class="math inline">\(\gamma_v = 1/\sqrt{1-{\beta_v}^2}\)</span> 의 관계가 성립한다.</p>
 </div>
 </div>
 <p><br></p>
@@ -675,17 +710,17 @@ M = 2\gamma (w) m
 <p>입자에 일을 해 주었을 때의 운동에너지의 변화는 다음과 같다.</p>
 <p><span id="eq-FLP_1_16_12"><span class="math display">\[
 \Delta T = \dfrac{mc^2}{\sqrt{1-v^2/c^2}}-mc^2 = \gamma mc^2-mc^2
-\tag{2.16}\]</span></span></p>
+\tag{2.17}\]</span></span></p>
 <p>여기서 더 나아가서 입자의 에너지가 <span class="math inline">\(\gamma mc^2\)</span> 이라고 추측할 수도 있다.</p>
 <p>우리가 앞서 다룬 두 입자가 합쳐저서 하나의 정지한 입자를 생성하는 경우를 살펴보자. 앞서 보았듯이 생성된 입자의 질량은 두 입자의 질량의 합보다 크다. 그렇다면 그 차이는 어디로 갔는가? 양성자와 중성자가 합쳐지는 경우 각각은 <span class="math inline">\(M\)</span> 내부에서 움직이며 각각의 정지질량과 합쳐진 질량의 차이는 합쳐진 양성자와 중성자와 중성자가 내부에서 움직이는 에너지 만큼이다. 이것은 에너지가 관성(inertia) 가 있음을 의미한다.</p>
-<p>만약 두 입자가 합쳐저서 하나의 입자가 되면서 포텐셜 에너지나 다른 형태의 애너지가 생성됬다면 그 에너지는 <span class="math inline">\(E=Mc^2\)</span> 속에 포함된다. 즉 질량 <span class="math inline">\(M\)</span> 에 포함된다. 즉 질량은 단순히 부분 질량의 합이 아니라 내부에서 이루어지는 모든 에너지적인 활동의 총합이다. 이런 의미에서 상대성 이론에서는 뉴턴 역학에서의 비탄성 충돌이 존재하지 않는다. 예를 들어 앞서의 동일한 입자가 충돌하여 합쳐지는 경우 충돌 전 후의 에너지가 같다고 놓으면 <a href="#eq-FLP_1_16_11_modified" class="quarto-xref">식&nbsp;<span>2.15</span></a> 를 그대로 얻는다.</p>
+<p>만약 두 입자가 합쳐저서 하나의 입자가 되면서 포텐셜 에너지나 다른 형태의 애너지가 생성됬다면 그 에너지는 <span class="math inline">\(E=Mc^2\)</span> 속에 포함된다. 즉 질량 <span class="math inline">\(M\)</span> 에 포함된다. 즉 질량은 단순히 부분 질량의 합이 아니라 내부에서 이루어지는 모든 에너지적인 활동의 총합이다. 이런 의미에서 상대성 이론에서는 뉴턴 역학에서의 비탄성 충돌이 존재하지 않는다. 예를 들어 앞서의 동일한 입자가 충돌하여 합쳐지는 경우 충돌 전 후의 에너지가 같다고 놓으면 <a href="#eq-FLP_1_16_11_modified" class="quarto-xref">식&nbsp;<span>2.16</span></a> 를 그대로 얻는다.</p>
 <p>마지막으로 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 와 운동량 <span class="math inline">\(\boldsymbol{p}\)</span>, 그리고 에너지 <span class="math inline">\(E\)</span> 와 질량 <span class="math inline">\(m\)</span> 사이에는 아래와 같은 간단한 관계식이 존재한다.</p>
 <p><span id="eq-FLP_1_16_13"><span class="math display">\[
 E^2 - p^2c^2 = m^2c^4,
-\tag{2.17}\]</span></span></p>
+\tag{2.18}\]</span></span></p>
 <p><span id="eq-FLP_1_16_14"><span class="math display">\[
 \boldsymbol{p}= \dfrac{E}{c^2}\boldsymbol{v}.
-\tag{2.18}\]</span></span></p>
+\tag{2.19}\]</span></span></p>
 <p><br></p>
 </section>
 </section>
@@ -693,14 +728,14 @@ E^2 - p^2c^2 = m^2c^4,
 <h2 class="anchored" data-anchor-id="sec-FLP_1_17">I.17. 시공간</h2>
 <section id="sec-FLP_1_17_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_17_1">I.17-1 시공간의 기하학</h3>
-<p><span class="math inline">\(\boldsymbol{u}=u\hat{\boldsymbol{x}}\)</span> 로 병진운동하는 두 기준틀에 대해 앞서 로런츠 변환 <a href="#eq-FLP_lorent_transform_in_16_3" class="quarto-xref">식&nbsp;<span>2.9</span></a> 을 <span class="math inline">\(\gamma=1/\sqrt{1-u^2/c^2}\)</span> 와 <span class="math inline">\(\beta = u/c\)</span> 를 사용하여 기술하면 아래와 같다.</p>
+<p><span class="math inline">\(\boldsymbol{u}=u\hat{\boldsymbol{x}}\)</span> 로 병진운동하는 두 기준틀에 대해 앞서 로런츠 변환 <a href="#eq-FLP_lorent_transform_in_16_3" class="quarto-xref">식&nbsp;<span>2.10</span></a> 을 <span class="math inline">\(\gamma=1/\sqrt{1-u^2/c^2}\)</span> 와 <span class="math inline">\(\beta = u/c\)</span> 를 사용하여 기술하면 아래와 같다.</p>
 <p><span id="eq-FLP_1_17_1"><span class="math display">\[
 x'=\gamma_u (x-\beta_u ct),\quad y'=y,\quad z'=z,\quad ct=\gamma_u(ct-\beta_u x).
-\tag{2.19}\]</span></span></p>
+\tag{2.20}\]</span></span></p>
 <p>이것을 회전 변환과 비교해 보자.</p>
 <p><span id="eq-FLP_1_17_2"><span class="math display">\[
 x'=x\cos\theta + y \sin \theta, \quad y'=-x\sin \theta + y \cos \theta,\quad z'=z.
-\tag{2.20}\]</span></span></p>
+\tag{2.21}\]</span></span></p>
 <div id="fig-FLP_1_17_1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_17_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -711,7 +746,7 @@ x'=x\cos\theta + y \sin \theta, \quad y'=-x\sin \theta + y \cos \theta,\quad z'=
 </figcaption>
 </figure>
 </div>
-<p>회전변환은 공간에서의 선형변환이며 그중에 직교 변환(orthogonal transform) 으로 거리를 보존한다. 회전 변환은 공간상의 다른 방향에서 보는 것이라고 할 수 있다. 로런츠 변환은 4차원 시공간에서의 선형 변환으로 회전변환에 비유하자면 4차원 시공간의 다른 방향에서 보는 것이다. 그리고 이 방향은 <a href="#eq-FLP_1_17_1" class="quarto-xref">식&nbsp;<span>2.19</span></a> 의 <span class="math inline">\(u\)</span> 이다. 여기서 시공간상의 한 점 <span class="math inline">\((x,\,y,\,z,\,t)\)</span> 를 <strong>사건 (event)</strong> 라고 한다.</p>
+<p>회전변환은 공간에서의 선형변환이며 그중에 직교 변환(orthogonal transform) 으로 거리를 보존한다. 회전 변환은 공간상의 다른 방향에서 보는 것이라고 할 수 있다. 로런츠 변환은 4차원 시공간에서의 선형 변환으로 회전변환에 비유하자면 4차원 시공간의 다른 방향에서 보는 것이다. 그리고 이 방향은 <a href="#eq-FLP_1_17_1" class="quarto-xref">식&nbsp;<span>2.20</span></a> 의 <span class="math inline">\(u\)</span> 이다. 여기서 시공간상의 한 점 <span class="math inline">\((x,\,y,\,z,\,t)\)</span> 를 <strong>사건 (event)</strong> 라고 한다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_17_2" class="level3">
@@ -719,7 +754,7 @@ x'=x\cos\theta + y \sin \theta, \quad y'=-x\sin \theta + y \cos \theta,\quad z'=
 <p>4-벡터로 표현된 사건 <span class="math inline">\(X=(ct,\,x,\,y,\,z)\)</span> 과 <span class="math inline">\(X\)</span> 를 로렌츠 변환 시킨 <span class="math inline">\(X'=(ct',\,x',\,y',\,z')\)</span> 를 생각하자. 이 때</p>
 <p><span id="eq-FLP_1_17_3"><span class="math display">\[
 c^2t'^2 -x'^2 - y'^2 - z'^2 = ct^2 - x^2 - y^2 - z^2
-\tag{2.21}\]</span></span></p>
+\tag{2.22}\]</span></span></p>
 <p>이며 이것은 앞서 <a href="#sec-FLP_15_7">4-벡터</a> 에서 다룬 바에 의해 <span class="math inline">\(\|X\| = \|X'\|\)</span> 이다. 이 때 <span class="math inline">\(\|X\|\)</span> 를 원점과 사건 <span class="math inline">\(X\)</span> 의 <strong>시공간 간격 (space-time interval)</strong> 혹은 줄여서 <strong>간격(interval)</strong> 이라고 한다.</p>
 <p>시공간과 일반적인 공간 사이에는 흥미로운 차이가 존재한다. 예를 들어 <span class="math inline">\(X=(ct,\,x,\,y,\,z)\)</span> 에서 <span class="math inline">\(t=0\)</span> 일 때 <span class="math inline">\(\|X\|\)</span> 는 허수이며 이 때 두 점-원점 <span class="math inline">\(\mathcal{O}\)</span> 와 <span class="math inline">\(X\)</span> 의 간격을 <strong>공간적 간격 (space-like interval)</strong> 이라고 한다. 반대로 <span class="math inline">\(\|X\|\)</span> 기 실수이면 <strong>시간적 간격 (time-like interval)</strong> 이라고 한다.</p>
 <p><br></p>
@@ -740,7 +775,7 @@ c^2t'^2 -x'^2 - y'^2 - z'^2 = ct^2 - x^2 - y^2 - z^2
 <section id="sec-FLP_1_17_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_17_4">I.17-4 4-벡터에 더하여</h3>
 <p>수학적으로 4차원 시공간에서의 선형변환 <span class="math inline">\(\Lambda\)</span> 가 임의의 4-벡터 <span class="math inline">\(X\)</span> 에 대해 <span class="math inline">\(\|\Lambda X\|=\|X\|\)</span> 이며 <span class="math inline">\(\det \Lambda = 1\)</span> 일 때 <span class="math inline">\(\Lambda\)</span> 를 로렌츠 변환이라고 하며, 우리가 이미 알고 있는 로렌츠 변환과 동일하다. 여기서 4차원 시공간에서 정의된 벡터의 좌표변환이 로렌츠 변환에 의해 정의될 때 즉 <span class="math inline">\(A=(A^0,\,A^1,\,A^2,\,A^3)\)</span> 의 좌표변환이 <span class="math inline">\(A'=\Lambda A\)</span> 를 따를 때 이 <span class="math inline">\(A\)</span> 를 4-벡터 라고 한다. 이제 시공간에서의 위치 벡터 이외의 4-벡터가 존재함을 보이자.</p>
-<p>우리는 이전에 에너지와 운동량을 <span class="math inline">\(E=\gamma_v mc^2\)</span>, <span class="math inline">\(\boldsymbol{p}=\gamma_v m\boldsymbol{v}\)</span> 로 정의하였으며 <span class="math inline">\(E^2-p^2c^2 = m^2c^4\)</span> 임을 안다. 이것이 기술된 <span class="math inline">\(S\)</span> 기준틀에 대해 <span class="math inline">\(\boldsymbol{u}=u\hat{\boldsymbol{x}}\)</span> 의 속도로 움직이는 <span class="math inline">\(S'\)</span> 기준틀을 생각하자. 그렇다면 <a href="#eq-FLP_1_16_6" class="quarto-xref">식&nbsp;<span>2.10</span></a>, <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.12</span></a> 에 의해</p>
+<p>우리는 이전에 에너지와 운동량을 <span class="math inline">\(E=\gamma_v mc^2\)</span>, <span class="math inline">\(\boldsymbol{p}=\gamma_v m\boldsymbol{v}\)</span> 로 정의하였으며 <span class="math inline">\(E^2-p^2c^2 = m^2c^4\)</span> 임을 안다. 이것이 기술된 <span class="math inline">\(S\)</span> 기준틀에 대해 <span class="math inline">\(\boldsymbol{u}=u\hat{\boldsymbol{x}}\)</span> 의 속도로 움직이는 <span class="math inline">\(S'\)</span> 기준틀을 생각하자. 그렇다면 <a href="#eq-FLP_1_16_6" class="quarto-xref">식&nbsp;<span>2.11</span></a>, <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.13</span></a> 에 의해</p>
 <p><span class="math display">\[
 v'_x = \dfrac{v_x-u}{1-uv_x/c^2},\quad v'_y = v_y/\gamma_u,\qquad v'_z = v_z/ \gamma_u
 \]</span></p>
@@ -852,7 +887,7 @@ P^\mu=\left(E/c,\,p_x,\,p_y,\,p_z\right)
 <p>페르마의 최소시간 원리로부터 스넬의 법칙을 유도 할 수 있으며 굴절률 <span class="math inline">\(n\)</span> 과 매질에서의 빛의 속도 <span class="math inline">\(c_n\)</span> 그리고 진공중에서의 빛의 속도 <span class="math inline">\(c\)</span> 사이에는 다음의 관계가 성립함을 안다.</p>
 <p><span id="eq-FLP_reflective_index_and_speed_of_light_in_the_medium"><span class="math display">\[
 nc_n = c
-\tag{2.22}\]</span></span></p>
+\tag{2.23}\]</span></span></p>
 <div id="fig-FLP_1_26_3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_26_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -959,7 +994,7 @@ nc_n = c
 <p>빛이 매질 <span class="math inline">\(1\)</span> 에서 매질 <span class="math inline">\(2\)</span> 로 들어갈 때 <span class="math inline">\(\sin \theta_1 = n_{12}\sin \theta_2\)</span> 의 관계가 성립한다고 하자. 또한 빛이 매질 <span class="math inline">\(2\)</span> 에서 매질 <span class="math inline">\(3\)</span> 으로 들어갈 때 <span class="math inline">\(\sin \theta_2 = n_{23}\sin \theta_3\)</span> 의 관계가 성립한다고 하자. 이 때 빛이 매질 <span class="math inline">\(1\)</span> 에서 매질 <span class="math inline">\(3\)</span> 으로 들어갈 때 <span class="math inline">\(\sin \theta_1 = n_{13}\sin \theta_3\)</span> 를 만족하는 <span class="math inline">\(n_{13}\)</span> 는 아래와 같이 구할 수 있다.</p>
 <p><span id="eq-FLP_1_26_5"><span class="math display">\[
 n_{13}= \dfrac{n_3}{n_1}= \dfrac{n_3}{n_2}\dfrac{n_2}{n_1} = \dfrac{n_{23}}{n_{12}}.
-\tag{2.23}\]</span></span></p>
+\tag{2.24}\]</span></span></p>
 <p>스넬의 법칙 단독으로는 위의 규칙을 얻을 수 없지만 페르마의 최소시간의 원리로는 이 규칙을 얻는다.</p>
 </section>
 <section id="매질에서의-빛의-속도" class="level4">
@@ -1042,7 +1077,7 @@ P_B \propto  \left|\sum_{\alpha \in \text{all possible paths}} \rho_\alpha e^{i\
 <p>위의 그림에서 <span class="math inline">\(\Delta = s-d = \sqrt{d^2-h^2}-d\)</span> 이므로 다음이 성립한다.</p>
 <p><span id="eq-FLP-1_27_1"><span class="math display">\[
 \Delta  \approx \dfrac{h^2}{2s}
-\tag{2.24}\]</span></span></p></li>
+\tag{2.25}\]</span></span></p></li>
 </ul>
 <p><br></p>
 </section>
@@ -1076,28 +1111,28 @@ P_B \propto  \left|\sum_{\alpha \in \text{all possible paths}} \rho_\alpha e^{i\
 <p>이며 <span class="math inline">\(|VQ| = h^2/2R\)</span> 이므로 다음의 관계가 성립한다.</p>
 <p><span id="eq-FLP_1_27_2"><span class="math display">\[
 \dfrac{h^2}{2s} + n\dfrac{h^2}{2s'} = (n-1)\dfrac{h^2}{2R}.
-\tag{2.25}\]</span></span></p>
+\tag{2.26}\]</span></span></p>
 <p>즉</p>
 <p><span id="eq-FLP_1_27_3"><span class="math display">\[
 \dfrac{1}{s} + \dfrac{n}{s'} = \dfrac{n-1}{R}.
-\tag{2.26}\]</span></span></p>
-<p>즉 우리가 <span class="math inline">\(O\)</span> 와 <span class="math inline">\(O'\)</span> 의 위치를 알면 구면의 반경 <span class="math inline">\(R\)</span> 을 구할 수 있다. 또한 같은 재질 <span class="math inline">\(n\)</span>, 같은 반경 <span class="math inline">\(R\)</span> 의 구면 렌즈는 <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.26</span></a> 를 만족하는 모든 <span class="math inline">\(s,\,s'\)</span> 에 대해서도 성립한다. 특히 흥미로운 것은 <span class="math inline">\(s\to \infty\)</span> 극한에서이다. 이 경우</p>
+\tag{2.27}\]</span></span></p>
+<p>즉 우리가 <span class="math inline">\(O\)</span> 와 <span class="math inline">\(O'\)</span> 의 위치를 알면 구면의 반경 <span class="math inline">\(R\)</span> 을 구할 수 있다. 또한 같은 재질 <span class="math inline">\(n\)</span>, 같은 반경 <span class="math inline">\(R\)</span> 의 구면 렌즈는 <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.27</span></a> 를 만족하는 모든 <span class="math inline">\(s,\,s'\)</span> 에 대해서도 성립한다. 특히 흥미로운 것은 <span class="math inline">\(s\to \infty\)</span> 극한에서이다. 이 경우</p>
 <p><span id="eq-FLP_1_27_4"><span class="math display">\[
 f'=s'(s\to \infty)=\dfrac{nR}{n-1}
-\tag{2.27}\]</span></span></p>
+\tag{2.28}\]</span></span></p>
 <p>을 <strong>초점 거리 (focal length)</strong> 라고 하며 <span class="math inline">\(OO'\)</span> 에 평행하게 오는 근축광선은 모두 <span class="math inline">\(O'\)</span> 에 모이게 된다. 거꾸로 유리 안쪽에서 구면에 매우 먼 빛이 들어온다면 <span class="math inline">\(s'\approx \infty\)</span> 대기중으로 나온 빛은</p>
 <p><span id="eq-FLP_1_27_5"><span class="math display">\[
 f=s(s'\to \infty) = \dfrac{R}{n-1}
-\tag{2.28}\]</span></span></p>
-<p>에 모이게 된다. 이를 이용하면 <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.26</span></a> 을 아래와 같이 쓸 수 있다.</p>
+\tag{2.29}\]</span></span></p>
+<p>에 모이게 된다. 이를 이용하면 <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.27</span></a> 을 아래와 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_1_27_6"><span class="math display">\[
 \dfrac{1}{s}+ \dfrac{n}{s'} = \dfrac{1}{f}.
-\tag{2.29}\]</span></span></p>
+\tag{2.30}\]</span></span></p>
 <p><br></p>
 </section>
 <section id="실상과-허상" class="level4">
 <h4 class="anchored" data-anchor-id="실상과-허상"><strong>실상과 허상</strong></h4>
-<p><a href="#eq-FLP_1_27_6" class="quarto-xref">식&nbsp;<span>2.29</span></a> 에서 <span class="math inline">\(s&lt;f\)</span> 인 경우 <span class="math inline">\(s'&lt;0\)</span> 이며 <span class="math inline">\(|s'|=(-s') &gt; ns &gt; s\)</span> 이며 <span class="math inline">\(O\)</span> 에서 출발한 빛의 경로는 아래 그림과 같다. <span class="math inline">\(O\)</span> 에서 출발한 빛은 유리를 넘어 한 점에서 모이지 않고 아래 그림의 실선과 같이 발산한다. 하지만 발산하는 경로의 연장선은 아래 그림의 <span class="math inline">\(O'\)</span> 으로 모인다. 즉 렌즈 안의 빛의 경로는 마치 <span class="math inline">\(O'\)</span> 을 광원으로 하는 빛의 경로와 같다.</p>
+<p><a href="#eq-FLP_1_27_6" class="quarto-xref">식&nbsp;<span>2.30</span></a> 에서 <span class="math inline">\(s&lt;f\)</span> 인 경우 <span class="math inline">\(s'&lt;0\)</span> 이며 <span class="math inline">\(|s'|=(-s') &gt; ns &gt; s\)</span> 이며 <span class="math inline">\(O\)</span> 에서 출발한 빛의 경로는 아래 그림과 같다. <span class="math inline">\(O\)</span> 에서 출발한 빛은 유리를 넘어 한 점에서 모이지 않고 아래 그림의 실선과 같이 발산한다. 하지만 발산하는 경로의 연장선은 아래 그림의 <span class="math inline">\(O'\)</span> 으로 모인다. 즉 렌즈 안의 빛의 경로는 마치 <span class="math inline">\(O'\)</span> 을 광원으로 하는 빛의 경로와 같다.</p>
 <div id="fig-FLP_1_27_3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_27_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1141,11 +1176,11 @@ f=s(s'\to \infty) = \dfrac{R}{n-1}
 </figcaption>
 </figure>
 </div>
-<p>대부분의 랜즈는 두개의 면을 가진다. 위의 그림과 같이 <span class="math inline">\(R_1,\,R_2\)</span> 의 두개의 곡률반경을 갖는 렌즈를 생각하자. <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.26</span></a> 을 이용하여 첫번째 면 <span class="math inline">\(1\)</span> 에 대해 <span class="math inline">\(O\)</span> 를 지나는 빛이 모이는 <span class="math inline">\(O'\)</span>. 그리고 <span class="math inline">\(O'\)</span> 에 대해 <a href="#fig-FLP_1_27_3" class="quarto-xref">그림&nbsp;<span>2.20</span></a> 의 방법을 (역으로) 이용하여 이 양면렌즈의 상(허상)이 맺히는 <span class="math inline">\(O''\)</span> 을 잡을 수 있다.</p>
-<p>식 <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.26</span></a> 은 굴절률 <span class="math inline">\(1\)</span> 인 매질에서 <span class="math inline">\(n\)</span> 인 매질로 입사할때의 식이다. 각각의 매질이 <span class="math inline">\(n_1\)</span>, <span class="math inline">\(n_2\)</span> 의 굴절률을 갖고 있다면 다음을 만족한다는 것을 보일 수 있다.</p>
+<p>대부분의 랜즈는 두개의 면을 가진다. 위의 그림과 같이 <span class="math inline">\(R_1,\,R_2\)</span> 의 두개의 곡률반경을 갖는 렌즈를 생각하자. <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.27</span></a> 을 이용하여 첫번째 면 <span class="math inline">\(1\)</span> 에 대해 <span class="math inline">\(O\)</span> 를 지나는 빛이 모이는 <span class="math inline">\(O'\)</span>. 그리고 <span class="math inline">\(O'\)</span> 에 대해 <a href="#fig-FLP_1_27_3" class="quarto-xref">그림&nbsp;<span>2.20</span></a> 의 방법을 (역으로) 이용하여 이 양면렌즈의 상(허상)이 맺히는 <span class="math inline">\(O''\)</span> 을 잡을 수 있다.</p>
+<p>식 <a href="#eq-FLP_1_27_3" class="quarto-xref">식&nbsp;<span>2.27</span></a> 은 굴절률 <span class="math inline">\(1\)</span> 인 매질에서 <span class="math inline">\(n\)</span> 인 매질로 입사할때의 식이다. 각각의 매질이 <span class="math inline">\(n_1\)</span>, <span class="math inline">\(n_2\)</span> 의 굴절률을 갖고 있다면 다음을 만족한다는 것을 보일 수 있다.</p>
 <p><span id="eq-FLP_1_27_7"><span class="math display">\[
 \dfrac{n_1}{s}+ \dfrac{n_2}{s'}= \dfrac{n_2-n_1}{R}
-\tag{2.30}\]</span></span></p>
+\tag{2.31}\]</span></span></p>
 <p>아래 그림과 같이 두개의 양의 반지름을 갖는 매우 얇은 렌즈에 의한 효과를 알아보자. 매우 얇다는 것은 렌즈의 두께에 의한 효과를 무시할 수 있다는 뜻이다.</p>
 <div id="fig-FLP_1_27_6" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1160,19 +1195,19 @@ f=s(s'\to \infty) = \dfrac{R}{n-1}
 <p>위의 그림에서 <span class="math inline">\(O\)</span> 에서 나온 빛이 <span class="math inline">\(O'\)</span> 이 지나도록 어떻게 할 수 있을까? 빛이 <span class="math inline">\(P\)</span> (렌즈의 가장 얇은 부분)를 지난다면 <span class="math inline">\(OPO\)</span> 경로와 <span class="math inline">\(OO'\)</span> 경롤르 따를 때의 시간이 같기 위해서는 <span class="math inline">\(OO'\)</span> 선상의 두께 <span class="math inline">\(T\)</span> 에 대해</p>
 <p><span id="eq-FLP_1_27_8"><span class="math display">\[
 \dfrac{n_1 h^2}{2s} + \dfrac{n_1 h^2}{2s'} = (n_2-n_1)T
-\tag{2.31}\]</span></span></p>
+\tag{2.32}\]</span></span></p>
 <p>의 관계를 만족해야 한다. 두 반경을 <span class="math inline">\(R_1,\,R_2 (0&lt;R_1&lt;R_2)\)</span> 라고 하면</p>
 <p><span id="eq-FLP_1_27_9"><span class="math display">\[
 T = \dfrac{h^2}{2R_1} - \dfrac{h^2}{2R_2}
-\tag{2.32}\]</span></span></p>
+\tag{2.33}\]</span></span></p>
 <p>이므로</p>
 <p><span id="eq-FLP_1_27_10"><span class="math display">\[
 \dfrac{n_1}{s} + \dfrac{n_1}{s'} = (n_1-n_2)\left(\dfrac{1}{R_1} - \dfrac{1}{R_2}\right)
-\tag{2.33}\]</span></span></p>
+\tag{2.34}\]</span></span></p>
 <p>이다. 이로부터 이 렌즈의 초점거리 <span class="math inline">\(f\)</span> 는 <span class="math inline">\(f=\lim_{s\to \infty} s'\)</span> 로부터</p>
 <p><span id="eq-FLP_1_27_11"><span class="math display">\[
 \dfrac{1}{f} = \left(\dfrac{n_2}{n_1}-1\right)\left(\dfrac{1}{R_1} - \dfrac{1}{R_2}\right)
-\tag{2.34}\]</span></span></p>
+\tag{2.35}\]</span></span></p>
 <p>임을 안다. 또한 <span class="math inline">\(f'=\lim_{s'\to \infty}s\)</span> 로부터</p>
 <p><span class="math display">\[
 f'=f
@@ -1180,7 +1215,7 @@ f'=f
 <p>임을 안다. 또한 초점거리 <span class="math inline">\(f\)</span> 를 이용하면</p>
 <p><span id="eq-FLP_1_27_12"><span class="math display">\[
 \dfrac{1}{s} + \dfrac{1}{s'}= \dfrac{1}{f}
-\tag{2.35}\]</span></span></p>
+\tag{2.36}\]</span></span></p>
 <p>임을 안다.</p>
 <ol type="1">
 <li>평행한 빛은 렌즈에서 <span class="math inline">\(f\)</span> 만큼 떨어진 촛점으로 모인다.</li>
@@ -1204,11 +1239,11 @@ f'=f
 <p>앞서 언급한 얇은 렌즈가 위의 그림의 <span class="math inline">\(QT\)</span> 에 놓여 있다고 하자. 위의 그림에서 <span class="math inline">\(U,\,R\)</span> 은 초점으로 초점의 반대쪽 면에서 입사하는 평행 광선은 항상 초점을 지난다는 것을 안다. 초점에서 <span class="math inline">\(x\)</span> 만큼 떨어진 위치의 <span class="math inline">\(V\)</span> 에 높이 <span class="math inline">\(y\)</span> 의 물체가 서 있다고 하자. 즉 물체는 <span class="math inline">\(PV\)</span> 상에 위치한다. <span class="math inline">\(P\)</span> 로부터 <span class="math inline">\(Q\)</span> 를 지나는 빛은 초점 <span class="math inline">\(R\)</span> 을 통과한다. 또한 <span class="math inline">\(P\)</span> 에서 초점 <span class="math inline">\(U\)</span> 를 지나는 빛은 렌즈를 거쳐 (<span class="math inline">\(T\)</span>) 평행 광선이 된다. 이 두 경로의 빛이 만나는 점이 그림에서의 <span class="math inline">\(S\)</span> 이며 이 점에 의해 상의 위치 <span class="math inline">\(W\)</span> 와(그리고 <span class="math inline">\(R\)</span> 로부터의 거리 <span class="math inline">\(x'\)</span> 과) 높이 <span class="math inline">\(y'\)</span> 이 결정된다. <span class="math inline">\(\triangle PVU\)</span> 와 <span class="math inline">\(\triangle TXU\)</span> 는 닮았고, <span class="math inline">\(\triangle SWR\)</span> 과 <span class="math inline">\(\triangle QXR\)</span> 역시 닮았으므로</p>
 <p><span id="eq-FLP_1_27_13"><span class="math display">\[
 \dfrac{y'}{f} = \dfrac{y}{x},\qquad \dfrac{y'}{x} = \dfrac{y}{f}
-\tag{2.36}\]</span></span></p>
+\tag{2.37}\]</span></span></p>
 <p>이며 이로부터</p>
 <p><span id="eq-FLP_1_27_16"><span class="math display">\[
 xx' = f^2
-\tag{2.37}\]</span></span></p>
+\tag{2.38}\]</span></span></p>
 <p>을 얻는다.</p>
 <p><br></p>
 </section>
@@ -1252,7 +1287,7 @@ xx' = f^2
 <p>일단 수차를 무시하고 점 <span class="math inline">\(P\)</span> 에서 출발한 광선은 (<a href="#fig-FLP_1_27_0" class="quarto-xref">그림&nbsp;<span>2.25</span></a>) 동일한 시간을 거쳐 <span class="math inline">\(T\)</span> 에 도달한다고 하정하자. (완전한 시스템이 아니기 때문에 사실이 아니지만, 그것은 별도의 문제이다.) 이제 <span class="math inline">\(P\)</span> 근처의 <span class="math inline">\(P'\)</span> 에 대해 상이 <span class="math inline">\(T\)</span> 와 구별되는지 확인해보자. 물론, 기하광학에 따르면 두 점의 상이 있어야 하지만, 우리가 보는 것이 흐릿해서 구분하지 못할 수도 있다. <span class="math inline">\(P'\)</span> 의 상이 <span class="math inline">\(T\)</span> 와 명확히 다른 위치에 발생하기 위해서는 렌즈의 개구부 양쪽에서 한쪽 끝에서 다른쪽 끝까지 이동하는 <span class="math inline">\(P'ST\)</span> 와 <span class="math inline">\(P'RT\)</span> 의 소요시간이 <span class="math inline">\(PST\)</span> 와 <span class="math inline">\(PRT\)</span> 의 소요시간과 달라야 한다. 시간이 동일하다면 당연히 두 점 모두 같은 지점에 초점을 맞을 것이기 때문이다. 그렇다면 이 소요시간은 얼마나 차이가 나야 할까? 모든 광학 기기의 해상도에 대한 일반 규칙은 다음과 같다: 두 개의 서로 다른 점광원에 대해 한 점에서 출발하여 랜즈를 통과하여 상에 맺히는 곳까지의 최대 소요시간 <span class="math inline">\(t_1\)</span> 과 다른 점에서 출발하여 그 점까지의 최대 소요시간 <span class="math inline">\(t_2\)</span> 를 비교하면 빛의 진동수 <span class="math inline">\(\nu\)</span> 에 대해 다음을 만족해야 한다.</p>
 <p><span id="eq-FLP_1_27_17"><span class="math display">\[
 t_2-t_1 &gt; \dfrac{1}{\nu}.
-\tag{2.38}\]</span></span></p>
+\tag{2.39}\]</span></span></p>
 <p>이로부터 두 점 사이의 거리가 <span class="math inline">\(D\)</span> 이고 점에서 랜즈 끝을 바라볼 때의 각을 <span class="math inline">\(\theta\)</span>, 점 <span class="math inline">\(P\)</span> 에서의 굴절률을 <span class="math inline">\(n\)</span> 이라고 하면 <span class="math inline">\(D&gt;\lambda/(2n\sin\theta)\)</span> 이어야 함을 알 수 있다. 따라서 광학 현미경을 통해 우리가 볼 수 있는 가장 작은 것들은 대략 빛의 파장 정도의 크기이다.</p>
 <p><br></p>
 </section>
@@ -1277,19 +1312,19 @@ t_2-t_1 &gt; \dfrac{1}{\nu}.
 <ul>
 <li>뉴튼의 보편 중력 법칙 <span id="eq-FLP_1_28_1"><span class="math display">\[
 \boldsymbol{F} = \dfrac{GmM}{r^2}\boldsymbol{e}_r.
-\tag{2.39}\]</span></span></li>
+\tag{2.40}\]</span></span></li>
 <li>주어진 전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 와 자기장 <span class="math inline">\(\boldsymbol{E}\)</span> 에서의 로런츠 힘 <span id="eq-FLP_1_28_2"><span class="math display">\[
 \boldsymbol{F} = q(\boldsymbol{E}+ \boldsymbol{v}\times \boldsymbol{B}).
-\tag{2.40}\]</span></span></li>
+\tag{2.41}\]</span></span></li>
 </ul></li>
 <li><p>여기서 <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 는 개별적인 전하에 의해 생성되는 전기장과 자기장의 벡터합이며 이렇게 개별적인 장의 벡터합으로 표현되는 것을 <strong>중첩 (superposition)</strong> 이라고 한다.</p></li>
 <li><p>하나의 개별 전하에 의한 전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 는 아래와 같다. 사실, 전기와 자기의 올바른 법칙을 표기하는 가장 유용한 방법은 지금 우리가 쓰는 방식이 아니지만 우리가 아직 다루지 않았기 때문에 현재 우리가 알고 있는 표기법으로 표현하면 아래와 같다,</p>
 <p><span id="eq-FLP_1_28_3"><span class="math display">\[
 \boldsymbol{E} = \dfrac{-q}{4\pi \epsilon_0} \left[\dfrac{\boldsymbol{e}_{r'}}{r'^2} + \dfrac{r'}{c} \dfrac{d}{dt}\left(\dfrac{\boldsymbol{e}_{r'}}{r'^2}\right) + \dfrac{1}{c^2} \dfrac{d^2 \boldsymbol{e}_{r'}}{dt^2}\right].
-\tag{2.41}\]</span></span></p>
+\tag{2.42}\]</span></span></p>
 <ul>
 <li>첫번째 항은 쿨롱항이다 즉 <span class="math inline">\(\boldsymbol{E}_C = \dfrac{-q\boldsymbol{e}_{r'}}{4\pi \epsilon_0 r'^2}\)</span>. 여기서 <span class="math inline">\(r\)</span> 은 전하 <span class="math inline">\(q\)</span> 와 전기장이 측정되는 위치 <span class="math inline">\(P\)</span> 사이의 거리이다. 이미 19세기에 모든 영향은 어떤 근본적인 상수로 정해지는 속도보다 빨리 전달 될 수 없다는 것이 발견되었다. 이 근본적인 속도가 빛의 속도 <span class="math inline">\(c\)</span> 이다.</li>
-<li>쿨롱의 법칙이 옳지 않은 것은 전하의 <em>현재</em> 위치와 전하와의 <em>현재</em> 거리를 알수 없을 뿐만 아니라 현재의 <span class="math inline">\(P\)</span> 점에서의 전기장에 영향을 주는 것은 과거, 정확히 <span class="math inline">\(r'/c\)</span> 만큼 이전의 과거이며 이 차이를 <strong>지연 시간 (retarded time)</strong> 이라고 한다. <span class="math inline">\(r'\)</span> 은 <span class="math inline">\(q\)</span> 를 떠난 신호가 시간 <span class="math inline">\(t\)</span> 에 <span class="math inline">\(P\)</span> 에 도달했을 때의 거리이다. 따라서 <a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.41</span></a> 에 등장하는 방향은 <strong>지연 거리(retarded distance)</strong> <span class="math inline">\(r'\)</span> 에 대한 소위 <strong>지연 방향 (retarded direction)</strong> 인 <span class="math inline">\(\boldsymbol{e}_{r'}\)</span> 이 된다.</li>
+<li>쿨롱의 법칙이 옳지 않은 것은 전하의 <em>현재</em> 위치와 전하와의 <em>현재</em> 거리를 알수 없을 뿐만 아니라 현재의 <span class="math inline">\(P\)</span> 점에서의 전기장에 영향을 주는 것은 과거, 정확히 <span class="math inline">\(r'/c\)</span> 만큼 이전의 과거이며 이 차이를 <strong>지연 시간 (retarded time)</strong> 이라고 한다. <span class="math inline">\(r'\)</span> 은 <span class="math inline">\(q\)</span> 를 떠난 신호가 시간 <span class="math inline">\(t\)</span> 에 <span class="math inline">\(P\)</span> 에 도달했을 때의 거리이다. 따라서 <a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.42</span></a> 에 등장하는 방향은 <strong>지연 거리(retarded distance)</strong> <span class="math inline">\(r'\)</span> 에 대한 소위 <strong>지연 방향 (retarded direction)</strong> 인 <span class="math inline">\(\boldsymbol{e}_{r'}\)</span> 이 된다.</li>
 <li>두번째 항은 지연된 시간과 전기장의 시간에 대한 변화율을 곱한 값이다.</li>
 <li>세번째 항은 지연 방향의 시간에 대한 이차 미분이다.</li>
 </ul></li>
@@ -1297,7 +1332,7 @@ t_2-t_1 &gt; \dfrac{1}{\nu}.
 </ul>
 <p><span id="eq-FLP_1_28_4"><span class="math display">\[
 \boldsymbol{B} = - \dfrac{\boldsymbol{e}_{r'}\times \boldsymbol{E}}{c}.
-\tag{2.42}\]</span></span></p>
+\tag{2.43}\]</span></span></p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1309,7 +1344,7 @@ t_2-t_1 &gt; \dfrac{1}{\nu}.
 </div>
 <div class="callout-body-container callout-body">
 <blockquote class="blockquote">
-<p>For those purists who know more (the professors who happen to be reading this), we should add that when we say that (<a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.41</span></a>) is a complete expression of the knowledge of electrodynamics, we are not being entirely accurate. There was a problem that was not quite solved at the end of the 19th century. When we try to calculate the field from all the charges including the charge itself that we want the field to act on, we get into trouble trying to find the distance, for example, of a charge from itself, and dividing something by that distance, which is zero. The problem of how to handle the part of this field which is generated by the very charge on which we want the field to act is not yet solved today. So we leave it there; we do not have a complete solution to that puzzle yet, and so we shall avoid the puzzle for as long as we can.</p>
+<p>For those purists who know more (the professors who happen to be reading this), we should add that when we say that (<a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.42</span></a>) is a complete expression of the knowledge of electrodynamics, we are not being entirely accurate. There was a problem that was not quite solved at the end of the 19th century. When we try to calculate the field from all the charges including the charge itself that we want the field to act on, we get into trouble trying to find the distance, for example, of a charge from itself, and dividing something by that distance, which is zero. The problem of how to handle the part of this field which is generated by the very charge on which we want the field to act is not yet solved today. So we leave it there; we do not have a complete solution to that puzzle yet, and so we shall avoid the puzzle for as long as we can.</p>
 </blockquote>
 <p>고전 전자기학에서 점전하에서 자기 자신이 생성하는 장의 영향은 개념적으로 완전히 깔끔하게 해결되지 않았다.</p>
 <p>조금만 더 정리한다면 :</p>
@@ -1325,13 +1360,13 @@ t_2-t_1 &gt; \dfrac{1}{\nu}.
 </section>
 <section id="sec-FLP_1_28_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_28_2">I.28-2 전자기 복사</h3>
-<p><a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.41</span></a> 에는 거리의 제곱이 아니라 거리에 반비례하는 항이 존재하며, 충분히 먼 거리에서는 이 항이 지배적이 된다. 구체적으로 찾아보는 것은 다음으로 미루기로 하고 일단 이것을 받아들이기로 하자. 정답은 세번째 항이다. 이제 우리는 당분간 다음을 법칙으로 받아들이자.</p>
+<p><a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.42</span></a> 에는 거리의 제곱이 아니라 거리에 반비례하는 항이 존재하며, 충분히 먼 거리에서는 이 항이 지배적이 된다. 구체적으로 찾아보는 것은 다음으로 미루기로 하고 일단 이것을 받아들이기로 하자. 정답은 세번째 항이다. 이제 우리는 당분간 다음을 법칙으로 받아들이자.</p>
 <p><span id="eq-FLP_1_28_5"><span class="math display">\[
 \boldsymbol{E}= -\dfrac{q}{4\pi \epsilon_0 c^2} \dfrac{d^2 \boldsymbol{e}_{r'}}{dt^2}.
-\tag{2.43}\]</span></span></p>
+\tag{2.44}\]</span></span></p>
 <ul>
 <li><span class="math inline">\(\boldsymbol{e}_{r'}\)</span> 이 시간에 대한 이차 변화를 radial 방향과 transverse 방향으로 분해 할 수 있다. 이 때 radial 방향의 변화는 <span class="math inline">\(1/r'^2\)</span> 에 비례 하여 변하며 transverse 방향은 <span class="math inline">\(1/r'\)</span> 에 비례한다. 따라서 우리는 충분히 멀다면 transverse 방향만 고려해야 한다는 것을 알 수 있다.</li>
-<li><a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.41</span></a> 는 상대성 이론에 의한 효과까지 포함되어 있다.</li>
+<li><a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>2.42</span></a> 는 상대성 이론에 의한 효과까지 포함되어 있다.</li>
 </ul>
 <p>이제 좀 더 단순한 상황을 생각해보자. 전하의 움직임은 느리고 움직이는 범위는 작다. 그렇다면 지연 시간은 거의 상수 <span class="math inline">\(r/c\)</span> 이다. 이제 전하가 <span class="math inline">\(x\)</span> 방향으로만 움직인다고 가정한다. 그렇다면</p>
 <p><span class="math display">\[
@@ -1339,12 +1374,12 @@ t_2-t_1 &gt; \dfrac{1}{\nu}.
 \]</span></p>
 <p>이며 따라서 전기장은 대부븐 <span class="math inline">\(E_x\)</span> 이고 다음과 같다. <span id="eq-FLP_1_28_6"><span class="math display">\[
 E_x (t)= - \dfrac{q}{4\pi \epsilon_0 c^2 r} a_x\left(t-\dfrac{r}{c}\right)
-\tag{2.44}\]</span></span></p>
+\tag{2.45}\]</span></span></p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_28_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_28_3">I.28-3 쌍극자 복사체</h3>
-<p>우리는 <a href="#eq-FLP_1_28_6" class="quarto-xref">식&nbsp;<span>2.44</span></a> 를 (1) 우리가 보는 방향에 대해 직각 방향으로 (2) 천천히 움직이는(non-relativistic) (3) 멀리 떨어져 있는 전자기 복사에 대한 기본 법칙으로 (당분간) 간주한다. 이 식의 가속도는 <span class="math inline">\(r/c\)</span> 만큼의 시간 이전의 가속도이다. 이 장에서는 이 식의 물리적 의미에 대해 다루며 이후에는 빛과 전파(라디오파)의 전달에 대한 모든 현상-반사, 굴절, 간섭, 회절, 산란 과 같은-을 설명하는데 사용할 것이다.</p>
+<p>우리는 <a href="#eq-FLP_1_28_6" class="quarto-xref">식&nbsp;<span>2.45</span></a> 를 (1) 우리가 보는 방향에 대해 직각 방향으로 (2) 천천히 움직이는(non-relativistic) (3) 멀리 떨어져 있는 전자기 복사에 대한 기본 법칙으로 (당분간) 간주한다. 이 식의 가속도는 <span class="math inline">\(r/c\)</span> 만큼의 시간 이전의 가속도이다. 이 장에서는 이 식의 물리적 의미에 대해 다루며 이후에는 빛과 전파(라디오파)의 전달에 대한 모든 현상-반사, 굴절, 간섭, 회절, 산란 과 같은-을 설명하는데 사용할 것이다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_dipole_genertor" class="theorem example">
 <p><span class="theorem-title"><strong>예제 2.1 (<strong>고주파 신호 발생기 와 쌍극자 안테나</strong>)</strong></span> &nbsp;</p>
@@ -1394,10 +1429,10 @@ E_x (t)= - \dfrac{q}{4\pi \epsilon_0 c^2 r} a_x\left(t-\dfrac{r}{c}\right)
 </figcaption>
 </figure>
 </div>
-<p>위의 그림과 같은 상황에서 <a href="#eq-FLP_1_28_6" class="quarto-xref">식&nbsp;<span>2.44</span></a> 은 아래와 같다.</p>
+<p>위의 그림과 같은 상황에서 <a href="#eq-FLP_1_28_6" class="quarto-xref">식&nbsp;<span>2.45</span></a> 은 아래와 같다.</p>
 <p><span id="eq-FLP_1_29_1"><span class="math display">\[
 E(t) = - \dfrac{qa(t-r/c) \sin \theta}{4\pi \epsilon_0 c^2r}.
-\tag{2.45}\]</span></span></p>
+\tag{2.46}\]</span></span></p>
 <p>여기서 <span class="math inline">\(a(t-r/c)\)</span> 는 시간이 <span class="math inline">\(t-r/c\)</span> 일 때의 가속도로 <strong>지연 가속도(retarded acceleration)</strong> 라고 한다.</p>
 <p><br></p>
 <div id="fig-FLP_1_29_2" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -1415,11 +1450,11 @@ E(t) = - \dfrac{qa(t-r/c) \sin \theta}{4\pi \epsilon_0 c^2r}.
 <li><p>특별이 전하 <span class="math inline">\(q\)</span> 가 <span class="math inline">\(x=x_0 \cos \omega t\)</span> 와 같이 움직일 경우 가속도는</p>
 <p><span id="eq-FLP_1_29_2"><span class="math display">\[
 a=-\omega^2 x_0 \cos \omega t = a_0 \cos \omega t
-\tag{2.46}\]</span></span></p>
-<p>와 같고 전기장은 <a href="#eq-FLP_1_29_1" class="quarto-xref">식&nbsp;<span>2.45</span></a> 에 의해 아래와 같다.</p>
+\tag{2.47}\]</span></span></p>
+<p>와 같고 전기장은 <a href="#eq-FLP_1_29_1" class="quarto-xref">식&nbsp;<span>2.46</span></a> 에 의해 아래와 같다.</p>
 <p><span id="eq-FLP_1-20_3"><span class="math display">\[
 E= - q \sin \theta \dfrac{a_0 \cos \omega (t-r/c)}{4\pi \epsilon_0 rc^2}.
-\tag{2.47}\]</span></span> <br></p></li>
+\tag{2.48}\]</span></span> <br></p></li>
 </ul>
 </section>
 <section id="sec-FLP_1_29_2" class="level3">
@@ -1433,9 +1468,9 @@ E= - q \sin \theta \dfrac{a_0 \cos \omega (t-r/c)}{4\pi \epsilon_0 rc^2}.
 <section id="sec-FLP_1_29_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_29_3">I.29-3 사인파</h3>
 <ul>
-<li><p>각진동수 <span class="math inline">\(\omega\)</span> 에 대해 파수(wave number) <span class="math inline">\(k\)</span> 를 단위 거리당 변경되는 파동의 위상으로 정의하자. <a href="#eq-FLP_1-20_3" class="quarto-xref">식&nbsp;<span>2.47</span></a> 에서 위상 <span class="math inline">\(\phi = \omega (t-r/c)\)</span> 이므로 <span id="eq-FLP_1_29_4"><span class="math display">\[
+<li><p>각진동수 <span class="math inline">\(\omega\)</span> 에 대해 파수(wave number) <span class="math inline">\(k\)</span> 를 단위 거리당 변경되는 파동의 위상으로 정의하자. <a href="#eq-FLP_1-20_3" class="quarto-xref">식&nbsp;<span>2.48</span></a> 에서 위상 <span class="math inline">\(\phi = \omega (t-r/c)\)</span> 이므로 <span id="eq-FLP_1_29_4"><span class="math display">\[
 k = \left|\dfrac{d\phi}{dr}\right| = \dfrac{\omega}{c}
-\tag{2.48}\]</span></span></p>
+\tag{2.49}\]</span></span></p>
 <p>이다. 참고로 빛이 아닌 경우 각진동수와 파수 사이에는 위와 같은 간단한 관계가 일반적으로 성립하지 않는다. 또한 파장 <span class="math inline">\(\lambda\)</span> 는 한 주기의 파동이 공간상에서 차지하는 거리이며 <span class="math inline">\(\lambda = 2\pi/k\)</span> 이다.</p></li>
 <li><p>이제 위상을 파수와 각진동수에 대해 <span class="math inline">\(\phi = \omega t - k x\)</span> 와 같이 쓸 수 있다.</p></li>
 <li><p>실제로 전기장은 <span class="math inline">\(1/r\)</span> 항 이외에 <span class="math inline">\(n&gt;1\)</span> 에 대한 <span class="math inline">\(1/r^n\)</span> 항이 존재한다. <span class="math inline">\(r\)</span> 이 충분히 크면 <span class="math inline">\(1/r^n\)</span> 항을 무시할 수 있다. 정성적으로 <span class="math inline">\(1/r^n\)</span> 항에서 <span class="math inline">\(r &gt; n \lambda\)</span> 보다 크면 무시 할 수 있다.</p></li>
@@ -1508,7 +1543,7 @@ k = \left|\dfrac{d\phi}{dr}\right| = \dfrac{\omega}{c}
 <p>같은 간격으로 직선상에 위치한 동일한 <span class="math inline">\(n\)</span> 개의 진동자를 생각하자. 각각의 진동자의 진폭은 같지만 위상은 다르다. 위상 차이는 실제적인 두 진동자의 위상 차이일 수도 있고 각 진동자로부터의 거리차이로 인한 위상차 일 수 있다. <span class="math inline">\(0\)</span> 번째 진동자부터 시작하여 <span class="math inline">\(j\)</span> 번째 진동자 위상이 <span class="math inline">\(j\phi\)</span> 일 때 이 진동자에 의한 진폭을 합친 최종 진폭(resultant amplitude) <span class="math inline">\(R\)</span> 은 아래와 같다.</p>
 <p><span id="eq-FLP_1_30_1"><span class="math display">\[
 R = A\left[\cos (\omega t) + \cos (\omega t+ \phi) + \cdots + \cos (\omega t + (n-1) \phi)\right].
-\tag{2.49}\]</span></span></p>
+\tag{2.50}\]</span></span></p>
 <p>여기서 <span class="math inline">\(\phi = \alpha + 2\pi d \sin \theta/\lambda\)</span> 인 경우를 생각해보자.</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -1520,11 +1555,11 @@ R &amp;= \dfrac{1}{2} \left[\sum_{j=0}^{n-1} Ae^{i(\omega t + j\phi)} + (\text{c
 <p>따라서 최종 진폭 <span class="math inline">\(A_R\)</span> 은</p>
 <p><span id="eq-FLP_1_30_2"><span class="math display">\[
 A_R = A \dfrac{\sin (n \phi/2)}{\sin (\phi/2)}
-\tag{2.50}\]</span></span></p>
+\tag{2.51}\]</span></span></p>
 <p>이며 최종 intensity 는</p>
 <p><span id="eq-FLP_1_30_3"><span class="math display">\[
 I = I_0 \dfrac{\sin^2 (n\phi/2)}{\sin^2 (\phi/2)}
-\tag{2.51}\]</span></span></p>
+\tag{2.52}\]</span></span></p>
 <p>이다.</p>
 <p>우리는 <span class="math inline">\(\phi \sim 0\)</span> 에서 <span class="math inline">\(I=n^2I_0\)</span> 임을 알 수 있다. 즉 <span class="math inline">\(n\)</span> 개의 동일한 진동자에 의해 발생되는 에너지는 가장 큰 방향으로는 <span class="math inline">\(n^2\)</span> 에 비례하여 발생한다. (같은 위상의, <span class="math inline">\(\lambda\)</span> 만큼씩 떨여져 있는 <span class="math inline">\(n\)</span> 개의 진동자의 경우와 같다.) 위의 식을 통해 아래의 그림을 그릴 수 있다. <span class="math inline">\(n\phi = 2m\pi\)</span> 인 정수 <span class="math inline">\(m\)</span> 이 존재할 때 <span class="math inline">\(I=0\)</span> 이다. 또한 아래 그래프에서 전체 영역 <span class="math inline">\([-\pi,\, \pi]\)</span> 에 대한 적분은 <span class="math inline">\(2\pi n I_0\)</span> 임을 계산 할 수 있다.(see <a href="https://math.stackexchange.com/questions/1304167/integral-of-frac-sin2nx-2-sin2x-2-over-pi-pi">StackExchange</a>)</p>
 <div id="fig-FLP_1_30_2" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -1560,17 +1595,17 @@ I = I_0 \dfrac{\sin^2 (n\phi/2)}{\sin^2 (\phi/2)}
 </div>
 <p>측정하는 위치에서는 진동자 자체의 위상과 시간 지연에 의한 위상이 합쳐진 위상으로 느끼므로 측정하는 위치에서의 인접한 진동자의 위상차 <span class="math inline">\(\phi\)</span> 는 아래와 같다. <span id="eq-FLP_1_30_4"><span class="math display">\[
 \phi = \alpha + 2\pi d \sin \theta/\lambda = \alpha + kd\sin \theta.
-\tag{2.52}\]</span></span></p>
-<p>우선 <span class="math inline">\(\alpha=0\)</span> 인 경우는 <a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>2.51</span></a> 의 경우와 같다. 이 때 첫번째 극소점은 <span class="math inline">\(\phi = 2\pi/n\)</span> 일 때이며 이는 <span id="eq-FLP_1_30_5"><span class="math display">\[
-\lambda = nd\sin \theta
 \tag{2.53}\]</span></span></p>
+<p>우선 <span class="math inline">\(\alpha=0\)</span> 인 경우는 <a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>2.52</span></a> 의 경우와 같다. 이 때 첫번째 극소점은 <span class="math inline">\(\phi = 2\pi/n\)</span> 일 때이며 이는 <span id="eq-FLP_1_30_5"><span class="math display">\[
+\lambda = nd\sin \theta
+\tag{2.54}\]</span></span></p>
 <p>를 의미한다. <a href="#fig-FLP_1_30_3" class="quarto-xref">그림&nbsp;<span>2.36</span></a> 에서 <span class="math inline">\(\Delta = L\sin\theta = nd\sin\theta\)</span> 이며 따라서 첫번째 극소점은 <span class="math inline">\(\Delta =\lambda\)</span> 일 경우이다.</p>
-<p><a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>2.51</span></a> 에서 알 수 있는 하나 중요한 사실은 정수 <span class="math inline">\(m\)</span> 에 대해 <span class="math inline">\(\phi = 2 m\pi\)</span> 일 때 최대값이 등장한다는 것이다. 즉 <span class="math inline">\(2\pi d \sin \theta/\lambda = 2\pi m\)</span> 조건이며 이로부터</p>
+<p><a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>2.52</span></a> 에서 알 수 있는 하나 중요한 사실은 정수 <span class="math inline">\(m\)</span> 에 대해 <span class="math inline">\(\phi = 2 m\pi\)</span> 일 때 최대값이 등장한다는 것이다. 즉 <span class="math inline">\(2\pi d \sin \theta/\lambda = 2\pi m\)</span> 조건이며 이로부터</p>
 <p><span id="eq-FLP_1_30_6"><span class="math display">\[
 d\sin\theta = m\lambda
-\tag{2.54}\]</span></span></p>
-<p>을 얻는다. <a href="#fig-FLP_tfig2" class="quarto-xref">그림&nbsp;<span>2.35</span></a> 에서 <span class="math inline">\(2\pi\)</span> 주기로 나타나는 큰 픽을을 의미하며 <a href="#eq-FLP_1_30_5" class="quarto-xref">식&nbsp;<span>2.53</span></a> 와 비슷하지만 완전히 다른 의미임을 명심하라. 여기서 <span class="math inline">\(m\)</span> 의 빔의 <strong>차수 (order)</strong> 라고 하며 <span class="math inline">\(m\)</span> 값에 따라 <span class="math inline">\(0\)</span>-차 빔(zero-order beam), $<span class="math inline">\(1\)</span>-차 빔(first-order beam), <span class="math inline">\(2\)</span>-차 빔(second-order beam) … 이라고 한다.</p>
-<p><a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>2.54</span></a> 에서 주의해야 할 것은 <span class="math inline">\(d\le \lambda\)</span> 이면 가능한 해는 <span class="math inline">\(m=0\)</span> 일 때 뿐이라는 것이다. 따라서 강한 신호를 보내려면 간격 <span class="math inline">\(d\)</span> 를 파장보다 크게 잡아야 한다.</p>
+\tag{2.55}\]</span></span></p>
+<p>을 얻는다. <a href="#fig-FLP_tfig2" class="quarto-xref">그림&nbsp;<span>2.35</span></a> 에서 <span class="math inline">\(2\pi\)</span> 주기로 나타나는 큰 픽을을 의미하며 <a href="#eq-FLP_1_30_5" class="quarto-xref">식&nbsp;<span>2.54</span></a> 와 비슷하지만 완전히 다른 의미임을 명심하라. 여기서 <span class="math inline">\(m\)</span> 의 빔의 <strong>차수 (order)</strong> 라고 하며 <span class="math inline">\(m\)</span> 값에 따라 <span class="math inline">\(0\)</span>-차 빔(zero-order beam), $<span class="math inline">\(1\)</span>-차 빔(first-order beam), <span class="math inline">\(2\)</span>-차 빔(second-order beam) … 이라고 한다.</p>
+<p><a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>2.55</span></a> 에서 주의해야 할 것은 <span class="math inline">\(d\le \lambda\)</span> 이면 가능한 해는 <span class="math inline">\(m=0\)</span> 일 때 뿐이라는 것이다. 따라서 강한 신호를 보내려면 간격 <span class="math inline">\(d\)</span> 를 파장보다 크게 잡아야 한다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_3_20" class="level3 page-columns page-full">
@@ -1582,7 +1617,7 @@ d\sin\theta = m\lambda
 <h4 class="anchored" data-anchor-id="산란"><strong>산란</strong></h4>
 <ul>
 <li>서로 <span class="math inline">\(d\)</span> 만큼 떨어진 평행한 전선과 아주 멀리 떨어진(실용적으로 무한대만큼 떨여졌다고 볼 수 있는) 라디오파 발생장치를 생각하자. 각각의 전선에 도달할 때 같은 위상을 가진다고 간주 할 수 있다. 전달된 전자기장에 의해 도선의 전하는 진동하며 따라서 새로운 전자기파 발생장치로 볼 수 있다. 이 현상을 <strong>산란 (scattering)</strong> 이라고 한다.</li>
-<li>라디오 발상장치에서의 라디오파가 전선들이 이루는 평면에 수직하게 입사된다면, 그리고 전선의 간격이 파장보다 크다면 이 평면에 수직한 방향과 <a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>2.54</span></a> 에 의해 정해지는 방향으로 강력한 전자기파가 발생한다.</li>
+<li>라디오 발상장치에서의 라디오파가 전선들이 이루는 평면에 수직하게 입사된다면, 그리고 전선의 간격이 파장보다 크다면 이 평면에 수직한 방향과 <a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>2.55</span></a> 에 의해 정해지는 방향으로 강력한 전자기파가 발생한다.</li>
 </ul>
 </section>
 <section id="회절-격자" class="level4">
@@ -1591,7 +1626,7 @@ d\sin\theta = m\lambda
 <li>유리판에 일렬로 작은 흠을 파서 흠(notch)이 파이지 않은 다른 부분과 다소 다르게 산란되도록 한다. 흠 사이의 간격은 매우 일정하며 빛의 파장보다는 크다.<br>
 </li>
 <li>여기에 빛을 비추면 일부의 빛은 유리를 통과하지만 각각의 흠이 광원의 역할을 하며 특정한 각도로 강한 빛이 나온다. 이 각도는 틈의 간격과 관련이 있다. 이를 <strong>회절 격자 (diffraction grating)</strong> 라고 한다.</li>
-<li>여러 파장의 빛이 섞여 있을 경우 <a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>2.54</span></a> 를 보면 알 수 있듯이 강한 빛이 나오는 각도가 빛의 진동수(파장, 에너지…) 에 따라 다르다. 따라서 백색광선을 사용한다면 프리즘과 같은 효과를 낸다. <span class="math inline">\(m\)</span> 차 빔도 당연히 발생한다.</li>
+<li>여러 파장의 빛이 섞여 있을 경우 <a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>2.55</span></a> 를 보면 알 수 있듯이 강한 빛이 나오는 각도가 빛의 진동수(파장, 에너지…) 에 따라 다르다. 따라서 백색광선을 사용한다면 프리즘과 같은 효과를 낸다. <span class="math inline">\(m\)</span> 차 빔도 당연히 발생한다.</li>
 <li>이전의 논의에 의하면 각각의 <span class="math inline">\(m\)</span> 차 빔은 같은 빛의 세기를 가져야 하지만 실제로는 그렇지 않다. 심지어 같은 차수 빔의 왼쪽과 오른쪽이 다르기도 하다. 이것을 의도하고 홈의 모양을 비대칭적으로 만들기도 한다.</li>
 </ul>
 <p>지금까지는 광원에서의 위상이 모두 같은 경우를 생각했다. 회절 격자를 이용해 임의의 위상차를 주는 방법을 알아보자. 아래 그림과 같이 <span class="math inline">\(d\)</span> 의 간격을 갖는 회절격자에 <span class="math inline">\(\theta_\text{in}\)</span> 의 입사각으로 빛을 쐬어준다고 하자. 그리고 <span class="math inline">\(\theta_{\text{out}}\)</span> 만큼의 산란각을 갖는다고 하자.</p>
@@ -1611,16 +1646,16 @@ d\sin\theta = m\lambda
 \phi &amp;= \dfrac{2\pi d \sin \theta_\text{out}}{\lambda} - \dfrac{2 \pi d \sin \theta_\text{in}}{\lambda} = \dfrac{2\pi d}{\lambda}(\sin \theta_{\text{out}}- \sin \theta_\text{in})\\[0.3em]
 &amp; = \dfrac{4\pi d}{\lambda}\cos \left(\dfrac{\theta_{\text{out}} + \theta_\text{in}}{2}\right) \sin \left(\dfrac{\theta_\text{out} - \theta_\text{in}}{2}\right)
 \end{aligned}
-\tag{2.55}\]</span></span></p>
+\tag{2.56}\]</span></span></p>
 <p>강한 intensity 를 얻으려면 <span class="math inline">\(\phi\)</span> 가 <span class="math inline">\(2\pi\)</span> 의 정수배 이어야 한다. 즉 <span class="math inline">\(\phi = 2\pi m\)</span>.</p>
 <p><strong>1.</strong> <span class="math inline">\(d&lt;\lambda/2\)</span> 인 경우 <span class="math inline">\(\phi &lt; \pi (\sin \theta_{\text{out}}- \sin \theta_\text{in}) &lt; 2\pi\)</span> 이다. 즉 <span class="math inline">\(m=0\)</span> 이다. 여기에 가능한 두가지 경우를 보자.</p>
 <ul>
 <li><p><span class="math inline">\(\theta_\text{out} = \pi - \theta_\text{in}\)</span> 인 경우. 여기서 빛은 방향을 바꾸지 않는다. 그러나 산란된 빛은 입사된 빛이 아니라 산란 과정에서 발생한 빛이며 단지 입사각과 산란각이 같을 뿐이다.</p></li>
 <li><p><span class="math inline">\(\theta_\text{out} =\theta_\text{in}=\pi\)</span> 인 경우. 즉 <strong>반사(reflection)</strong>. 반사 과정에서 입사된 빛이 반사체의 원자들을 여기(excite) 시키고, 이 반사체의 원자들이 입사각과 같은 방향으로 새로운 파동을 발생시킨다.</p></li>
 </ul>
-<p><strong>2.</strong> <span class="math inline">\(d\)</span> 가 매우 작은 상황을 생각하자. <a href="#eq-FLP_1_30_7" class="quarto-xref">식&nbsp;<span>2.55</span></a> 에서 <span class="math inline">\(\phi\)</span> 역시 매우 작아진다. 안테나에서 간격 <span class="math inline">\(d\)</span> 가 매우 작은 대신에 더 많은 진동자를 넣어 총 위상차, 즉 처음과 마지막의 위상차가 동일한 경우를 생각해보자. <a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>2.51</span></a> 에서 <span class="math inline">\(\Phi = n\phi\)</span> 라고 놓자. <span class="math inline">\(\phi \approx 0\)</span> 이며 최대 intensity <span class="math inline">\(I_M = n^2I_0\)</span> 를 생각하면 아래 식을 얻는다. <span id="eq-FLP_1_30_8"><span class="math display">\[
+<p><strong>2.</strong> <span class="math inline">\(d\)</span> 가 매우 작은 상황을 생각하자. <a href="#eq-FLP_1_30_7" class="quarto-xref">식&nbsp;<span>2.56</span></a> 에서 <span class="math inline">\(\phi\)</span> 역시 매우 작아진다. 안테나에서 간격 <span class="math inline">\(d\)</span> 가 매우 작은 대신에 더 많은 진동자를 넣어 총 위상차, 즉 처음과 마지막의 위상차가 동일한 경우를 생각해보자. <a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>2.52</span></a> 에서 <span class="math inline">\(\Phi = n\phi\)</span> 라고 놓자. <span class="math inline">\(\phi \approx 0\)</span> 이며 최대 intensity <span class="math inline">\(I_M = n^2I_0\)</span> 를 생각하면 아래 식을 얻는다. <span id="eq-FLP_1_30_8"><span class="math display">\[
   I=I_M \dfrac{\sin^2 (\Phi/2)}{n^2 \sin^2(\phi/2)} \approx 4 I_M \dfrac{\sin ^2 (\Phi/2)}{\Phi^2}.
-   \tag{2.56}\]</span></span></p>
+   \tag{2.57}\]</span></span></p>
 <p>위의 식을 그래프로 그리면 아래 <a href="#fig-FLP_1_30_tfig1" class="quarto-xref">그림&nbsp;<span>2.38</span></a> 와 같다. 그림은 <span class="math inline">\(d&lt;2/\lambda/2\)</span> 인 경우와 유사하지만 여기서는 고차 빔에서의 최대점이 사라진다.</p>
 <div id="fig-FLP_1_30_tfig1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1628,7 +1663,7 @@ d\sin\theta = m\lambda
 <img src="figures/fig_1_30/tfig1/tfig1.png" class="img-fluid figure-img" width="300">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_1_30_tfig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;2.38: <a href="#eq-FLP_1_30_8" class="quarto-xref">식&nbsp;<span>2.56</span></a> 의 그래프
+그림&nbsp;2.38: <a href="#eq-FLP_1_30_8" class="quarto-xref">식&nbsp;<span>2.57</span></a> 의 그래프
 </figcaption>
 </figure>
 </div>
@@ -1643,7 +1678,7 @@ d\sin\theta = m\lambda
 <p>파장 <span class="math inline">\(\lambda'\)</span> 인 빛에 대해 경로차 <span class="math inline">\(\Delta\)</span> (<a href="#fig-FLP_1_30_3" class="quarto-xref">그림&nbsp;<span>2.36</span></a>) 가 <span class="math inline">\(n\lambda'\)</span> 과 같을 때 intensity maximum peak 이며 <span class="math inline">\(m\)</span>-th order beam 에 대해서는 <span class="math inline">\(\Delta = mn\lambda'\)</span> 이어야 한다. <span class="math inline">\(\lambda'\)</span> 과 약간 차이가 나는 파장 <span class="math inline">\(\lambda\)</span> 에 대해서 역시 <span class="math inline">\(\Delta = mn\lambda + \lambda = mn\lambda'\)</span> 이 되도록 하자. <span class="math inline">\(\Delta \lambda = \lambda'-\lambda\)</span> 라고 하면</p>
 <p><span id="eq-FLP_1_30_9"><span class="math display">\[
 \dfrac{\Delta \lambda}{\lambda} = \dfrac{1}{mn}
-\tag{2.57}\]</span></span></p>
+\tag{2.58}\]</span></span></p>
 <p>이며 이 때 <span class="math inline">\(\lambda/\Delta \lambda\)</span> 를 <strong>회절격자의 분해능 (resolving power of grating)</strong> 이라고 한다.</p>
 <p>여기서 경로차에 의한 시간차 <span class="math inline">\(T = \Delta /c\)</span> 를 생각하자. <span class="math inline">\(T=mn\lambda'/c\)</span> 이며 진동수 <span class="math inline">\(\nu' = c/\lambda',\, \nu = c/\lambda\)</span> 를 생각하면</p>
 <p><span class="math display">\[
@@ -1665,17 +1700,17 @@ d\sin\theta = m\lambda
 <h3 class="anchored" data-anchor-id="sec-FLP_1_32_3">I.32_3 복사 감쇄</h3>
 <p><span id="eq-FLP_1_32_8"><span class="math display">\[
 Q = - \dfrac{\omega W}{dW/dt}.
-\tag{2.58}\]</span></span></p>
+\tag{2.59}\]</span></span></p>
 <p><span id="eq-FLP_1_32_12"><span class="math display">\[
 Q=\dfrac{3\lambda}{4\pi r_0} \approx 5 \times 10^7.
-\tag{2.59}\]</span></span></p>
+\tag{2.60}\]</span></span></p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_32_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_32_5">I.32_5 광산란</h3>
 <p><span id="eq-FLP_1_32_19"><span class="math display">\[
 \sigma_s = \dfrac{8 \pi r_0^2}{3} \cdot \dfrac{\omega^4}{\left(\omega^2 - \omega_0^2\right)^2}
-\tag{2.60}\]</span></span></p>
+\tag{2.61}\]</span></span></p>
 
 
 </section>
