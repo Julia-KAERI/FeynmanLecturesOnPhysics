@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>2&nbsp; I-2: 특수상대성이론과 광학 – 파인만 물리학 강의</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../src/vol1/vol1_1.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3e2728906df7980cb53b491a61d13d7e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -250,7 +248,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_1_16" id="toc-sec-FLP_1_16" class="nav-link" data-scroll-target="#sec-FLP_1_16">I.16. 상대론적 에너지와 운동량</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_1_16_1" id="toc-sec-FLP_1_16_1" class="nav-link" data-scroll-target="#sec-FLP_1_16_1">I.16-1 상대론과 철학자들</a></li>
-  <li><a href="#sec-FLP_1_16_2" id="toc-sec-FLP_1_16_2" class="nav-link" data-scroll-target="#sec-FLP_1_16_2">I.16-2 쌍동이 역설</a></li>
+  <li><a href="#sec-FLP_1_16_2" id="toc-sec-FLP_1_16_2" class="nav-link" data-scroll-target="#sec-FLP_1_16_2">I.16-2 쌍둥이 역설</a></li>
   <li><a href="#sec-FLP_1_16_3" id="toc-sec-FLP_1_16_3" class="nav-link" data-scroll-target="#sec-FLP_1_16_3">I.16-3 속도의 변환</a></li>
   <li><a href="#sec-FLP_1_16_4" id="toc-sec-FLP_1_16_4" class="nav-link" data-scroll-target="#sec-FLP_1_16_4">I.16-4 상대론적 질량</a></li>
   <li><a href="#sec-FLP_I_16_5" id="toc-sec-FLP_I_16_5" class="nav-link" data-scroll-target="#sec-FLP_I_16_5">I.16-5 상대론적 에너지</a></li>
@@ -321,7 +319,7 @@ window.Quarto = {
 
 <div class="hidden">
 <p>% %</p>
-<p>% </p>
+%
 <p><span class="math display">\[
 \DeclarePairedDelimiters{\set}{\{}{\}}
 \DeclareMathOperator*{\argmax}{argmax}
@@ -379,7 +377,7 @@ x'=\dfrac{x-ut}{\sqrt{1-u^2/c^2}},\quad y'=y,\quad z'=z,\quad t' = \dfrac{t-ux/c
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">중요</span>푸앵카레가 ‘물리 법칙의 로렌츠 불변성(혹은 로렌츠 변환/로렌츠 군)’을 말한 1차 자료
+<span class="screen-reader-only">중요</span>푸앵카레가 ’물리 법칙의 로렌츠 불변성(혹은 로렌츠 변환/로렌츠 군)’을 말한 1차 자료
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -516,7 +514,20 @@ t'_2-t'_1 = \dfrac{(t_2-ux_2/c^2)-(t_1-ux_1/c^2)}{\sqrt{1-u^2/c^2}} = \dfrac{u(x
 <p>이 성립한다. 이제 4차원 벡터 <span class="math inline">\(X^\mu = (X^0,\,X^1,\,X^2,\,X^3) = (ct,\,x,\,y,\,z)\)</span> 에 대해 <span class="math inline">\(X^\mu\)</span> 의 <strong>시공간 간격 (space time interval)</strong> <span class="math inline">\(\|X^\mu\|\)</span> 를</p>
 <p><span class="math display">\[
 \|X^\mu \| := \sqrt{ct^2 - x^2 - y^2 - z^2}
-\]</span> 라고 정의하면 로런츠 변환에 대해 <span class="math inline">\(\|X'^\nu\| = \|X^\mu\|\)</span> 이다. 이렇게 로렌츠 변환에 대해 시공간 간격이 불변인 4차원 벡터를 <strong>4-벡터 (4-vector)</strong> 라고 한다.</p>
+\]</span> 라고 정의하면 로런츠 변환에 대해 <span class="math inline">\(\|X'^\nu\| = \|X^\mu\|\)</span> 이다.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">중요</span><strong>4-벡터</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>로렌츠 변환에 대해 시공간 간격이 불변인 4차원 벡터를 <strong>4-벡터 (4-vector)</strong> 라고 한다.</p>
+</div>
+</div>
 <div class="page-columns page-full"><p>4-벡터의 인덱스는 관습적으로 <span class="math inline">\(\mu,\,\nu\)</span> 와 같은 그리스 문자를 사용하며 0 부터 3 까지의 인덱스를 사용한다. 위첨자로 표현되는 벡터와 아래첨자로 표현되는 벡터는 특수상대성 이론에서 다음과 같다.<span class="math inline">\(^1\)</span></p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 일반상대성 이론에서는 공변벡터와 반변벡터가 아래와 같이 단순한 관계가 성립하지 않는다는 것은 알아두자</span></div></div>
 <p><span class="math display">\[
 X^\mu = (ct,\,x,\,y,\,z),\qquad X_\mu = (ct,\,-x,\,-y,\,-z).
@@ -583,13 +594,13 @@ E=mc^2 + \dfrac{mv^2}{2} + \cdots
 <blockquote class="blockquote">
 <p>상대성 원리에 따르면, 물리 현상의 법칙들은 정지한 관측자에게서나 그에 대해 등속 병진 운동을 하고 있는 관측자에게서나 동일해야 한다. 따라서 우리는 그러한 운동에 함께 실려 가고 있는지 여부를 판별할 수 있는 어떠한 수단도 가지고 있지 않으며, 앞으로도 가질 수 없을 것이다.</p>
 </blockquote></li>
-<li><p>여기서 “그러한 운동에 함께 실려 가고 있는지 여부를 판별할 수 있는 어떠한 수단도 가지고 있지 않은” 관측자들은 서로 등속병진운동을 하는 관측자들 뿐이다. 그리고 두 기준틀의 상대적 운동은 등속병진운동만 있는것은 아니다.</p></li>
+<li><p>여기서 <strong>그러한 운동에 함께 실려 가고 있는지 여부를 판별할 수 있는 어떠한 수단도 가지고 있지 않은</strong> 관측자들은 서로 등속병진운동을 하는 관측자들 뿐이다. 그리고 두 기준틀의 상대적 운동은 등속병진운동만 있는것은 아니다.</p></li>
 <li><p>그리고 파인만이 철학자들의 과학적 무지함을 까는 이야기</p></li>
 </ul>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_16_2" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_16_2">I.16-2 쌍동이 역설</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_1_16_2">I.16-2 쌍둥이 역설</h3>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_16_3" class="level3">
@@ -619,7 +630,7 @@ v_y = \dfrac{y}{t} = \dfrac{v_{y'}t'}{\dfrac{t'+uv_{x'}t'/c^2}{\sqrt{1-u^2/c^2}}
 <p><span id="eq-FLP_1_16_7"><span class="math display">\[
 v_y = v_y'\sqrt{1-u^2/c^2}
 \tag{2.13}\]</span></span></p>
-<p>이다. 이 식을 상대성 이론의 기본 원리로부터 직접 구해보자. 우리는 앞서 <a href="#sec-FLP_15_4">15-4 시간의 변환</a> 에서 정지한 기준트로가 움직이는 기준틀에서의 시간이 다르게 흐른다는 것을 알았다. 속도는 시간에 반비례하며 그 비율이 <span class="math inline">\(\sqrt{1-u^2/c^2}\)</span> 이므로 우리는 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.13</span></a> 을 얻을 수 있다.</p>
+<p>이다. 이 식을 상대성 이론의 기본 원리로부터 직접 구해보자. 우리는 앞서 <a href="#sec-FLP_15_4">15-4 시간의 변환</a> 에서 정지한 기준틀과 움직이는 기준틀에서의 시간이 다르게 흐른다는 것을 알았다. 속도는 시간에 반비례하며 그 비율이 <span class="math inline">\(\sqrt{1-u^2/c^2}\)</span> 이므로 우리는 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.13</span></a> 을 얻을 수 있다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_16_4" class="level3">
@@ -632,7 +643,7 @@ v_y = v_y'\sqrt{1-u^2/c^2}
 <li>에너지와 운동량이 보존된다.</li>
 <li>운동량은 속도와 같은 방향을 갖는 벡터이며 속도의 함수이다.</li>
 </ol>
-<p>우리는 충돌하는 두 입자의 자세한 상호작용에는 관심이 없으며 상대론적 가정, 즉 모든 물리법칙은 관성기준틀에서 동일하다는 가정과 위의 두 가정만을 이용한다. 우리는 운동량이 속도와 질량의 곱이라고 가정하지 않으며 따라서 <span class="math inline">\(\boldsymbol{p}=\gamma(v) m\boldsymbol{v}\)</span> 와 같이 쓸 수 있다.</p>
+<p>우리는 충돌하는 두 입자의 자세한 상호작용에는 관심이 없으며 상대론적 가정, 즉 모든 물리법칙은 관성기준틀에서 동일하다는 가정과 위의 두 가정만을 이용한다. 우리는 운동량이 속도와 질량의 곱이라고 가정하지 않으며 단지 운동량의 방향이 속도의 방향과 같고 고전역학적 운동량과의 차이는 속력의 함수라고 가정한다. 따라서 <span class="math inline">\(\boldsymbol{p}=\gamma(v) m\boldsymbol{v}\)</span> 로 쓴다. 그리고 <span class="math inline">\(\lim_{v\to 0} \gamma(v)= 1\)</span> 임은 자명하다.</p>
 <div id="fig-FLO_1_16_2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLO_1_16_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -654,7 +665,7 @@ v_y = v_y'\sqrt{1-u^2/c^2}
 </figcaption>
 </figure>
 </div>
-<p>그렇다면 (a) <span class="math inline">\(\to\)</span> (b) 변환에서 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.13</span></a> 로부터 <span class="math inline">\(u \tan \alpha = w\sqrt{1-u^2/c^2}\)</span> 임을 알 수 있다. 이 때 (b) 시점에서 2 입자의 수직방향 운동량의 변화 <span class="math inline">\(\Delta p_{b, 2}\)</span> 는 <span class="math inline">\(\Delta p_{b, 2} = 2\gamma(w) mw\)</span> 이며 1번 입자의 속력은 <span class="math inline">\(v\)</span> 이고 속력의 수직방향의 변화 <span class="math inline">\(\Delta p_{b, 1}\)</span> 는</p>
+<p>그렇다면 (a) <span class="math inline">\(\to\)</span> (b) 변환에서 <a href="#eq-FLP_1_16_7" class="quarto-xref">식&nbsp;<span>2.13</span></a> 로부터 <span class="math inline">\(u \tan \alpha = w\sqrt{1-u^2/c^2}\)</span> 임을 알 수 있다. 이 때 (b) 시점에서 2 입자의 수직방향 운동량의 변화 <span class="math inline">\(\Delta p_{b, 2}\)</span> 는 <span class="math inline">\(\Delta p_{b, 2} = 2\gamma(w) mw\)</span> 이며 1번 입자의 속력은 <span class="math inline">\(v\)</span> 이고 운동량의 수직방향의 변화 <span class="math inline">\(\Delta p_{b, 1}\)</span> 는</p>
 <p><span class="math display">\[
 \Delta p_{b, 1} = 2 \gamma(v) u\tan \alpha = 2 \gamma(v) w \sqrt{1-u^2/c^2}
 \]</span></p>
