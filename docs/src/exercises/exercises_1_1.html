@@ -236,6 +236,8 @@ window.Quarto = {
    
   <ul>
   <li><a href="#sec-FLPEXR_1_1" id="toc-sec-FLPEXR_1_1" class="nav-link active" data-scroll-target="#sec-FLPEXR_1_1">1. Atoms in Motion</a></li>
+  <li><a href="#sec-FLPEXR_1_12" id="toc-sec-FLPEXR_1_12" class="nav-link" data-scroll-target="#sec-FLPEXR_1_12">12. Relativisitic Kinematics and Dynamics. Mass and Rest Energy Equivalence</a></li>
+  <li><a href="#sec-FLPEXR_1_13" id="toc-sec-FLPEXR_1_13" class="nav-link" data-scroll-target="#sec-FLPEXR_1_13">13. 상대론적 에너지와 운동량</a></li>
   </ul>
 </nav>
     </div>
@@ -314,6 +316,355 @@ window.Quarto = {
 </div>
 <div class="proof solution">
 <p><span class="proof-title"><em>(해답)</em>. </span><span class="math inline">\(\,\)</span>(<span class="math inline">\(a\)</span>)</p>
+</div>
+<p><br></p>
+</section>
+<section id="sec-FLPEXR_1_12" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLPEXR_1_12">12. Relativisitic Kinematics and Dynamics. Mass and Rest Energy Equivalence</h2>
+<p><em>파인만 물리학 강의 1 권 15장, 16장에 해당한다.</em></p>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.1</strong> 상대속도가 <span class="math inline">\(x\)</span> 방향의 <span class="math inline">\(V\)</span> 인 두 관성기준틀에 대해 <span class="math inline">\(x,\,y,\,\,z,\,t\)</span> 를 <span class="math inline">\(x',\,y',\,z',\,t'\)</span> 으로 기술하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><a href="../vol1/vol1_2.html#eq-FLP_1_15_3" class="quarto-xref">식&nbsp;<span>2.2</span></a> 에서 <span class="math inline">\(u=V\)</span> 이다. 우선 <span class="math inline">\(y=y',\,z=z'\)</span> 임을 안다. <span class="math inline">\(x,\,y\)</span> 에 대해 풀면 다음을 얻는다.</p>
+<p><span class="math display">\[
+x=\dfrac{x'+ Vt'}{\sqrt{1-V^2/c^2}},\quad y=y',\quad z=z',\quad  t= \dfrac{t'+Vx'/c^2}{\sqrt{1-V^2/c^2}}
+\]</span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.2</strong> 연습문제 <strong>12.1</strong> 에서 얻은 변환식을 미분형태로 쓰고 <span class="math inline">\(dx/dt=v_x\)</span> 를 <span class="math inline">\(v_x',\,V\)</span> 를 이용하여 구하라. <span class="math inline">\(dy/dt\)</span> 도 같이 하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>여기서 <span class="math inline">\(\gamma = 1/\sqrt{1-V^2/c^2}\)</span> 은 상수이다. <span class="math display">\[
+\begin{aligned}
+dx = \gamma dx' + \gamma V dt',\quad dy = dy',\quad dz = dz',\quad dt = \gamma dt' + (V\gamma/c^2) dx'
+\end{aligned}
+\]</span></p>
+<p>이므로</p>
+<p><span class="math display">\[
+\begin{aligned}
+\dfrac{dx}{dt} &amp;= \dfrac{dx'+Vdt'}{dt' + (V/c^2) dx'} = \dfrac{v'_x + V}{1+ Vv'_x/c^2}, \\[0.3em]
+\dfrac{dy}{dt} &amp;= \dfrac{dy'}{\gamma(dt' +(V/c^2) dx')} = \dfrac{v'_y}{\gamma(1+Vv_x/c^2)}.
+\end{aligned}
+\]</span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.3</strong> 입자가 <span class="math inline">\(S\)</span> 기준틀에서 <span class="math inline">\(x\)</span> 축으로 <span class="math inline">\(v_x\)</span> 의 속도와 <span class="math inline">\(a_x\)</span> 의 가속도로 움직인다고 하자. <span class="math inline">\(S\)</span> 기준틀에 대해 <span class="math inline">\(x\)</span> 방향으로 <span class="math inline">\(V\)</span> 의 속도로 움직이는, 그리고 좌표축이 평행한 <span class="math inline">\(S'\)</span> 에서의 속도와 가속도를 구하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><span class="math inline">\(\gamma = 1/\sqrt{1-V^2/c^2}\)</span> 에 대해</p>
+<p><span class="math display">\[
+dx' = \gamma (dx-Vdt),\quad dy' = dy,\quad dz'=dz,\quad dt' = \gamma (dt- Vdx/c^2)
+\]</span></p>
+<p>이며, <strong>12.2</strong> 로부터 <span class="math inline">\(v'_x = (v_x-V)/(1-Vv'_x/c^2)\)</span> 이다. <span class="math display">\[
+\begin{aligned}
+a'_x &amp;= \dfrac{dv'_x}{dt'} = \dfrac{d}{dt'}\left( \dfrac{v_x-V}{1 - Vv'_x/c^2}\right) \\[0.3em]
+&amp;= \dfrac{dv_x/dt'}{1- Vv'_x /c^2} + \dfrac{v_x-V}{(1 - Vv'_x/c^2)^2}\dfrac{V}{c^2} \dfrac{dv_x}{dt'} \\[0.3em]
+&amp;=\dfrac{1-V^2/c^2}{(1-Vv'_x/c^2)^2}\dfrac{dv_x}{dt'}
+\end{aligned}
+\]</span></p>
+<p>여기서</p>
+<p><span class="math display">\[
+\dfrac{dv_x}{dt'}= \dfrac{dt}{dt'}\dfrac{dv_x}{dt} = \dfrac{1}{(dt'/dt)^{-1}}a_x = \dfrac{a_x}{\gamma (1-Vv_x/c^2)}
+\]</span></p>
+<p>이므로</p>
+<p><span class="math display">\[
+a'_x = \dfrac{a_x}{\gamma^3 (1-Vv_x/c^2)^3}
+\]</span></p>
+<p>이다.</p>
+<p><span class="math display">\[
+\begin{aligned}
+a'_y &amp;= \dfrac{dv'_y}{dt'} = \dfrac{d}{dt'}\left(\dfrac{v_y}{\gamma(1-Vv'_x/c^2)}\right) = \dfrac{dv_y/dt'}{\gamma(1-Vv'_x/c^2)} + \dfrac{v_y}{\gamma(1-Vv'_x)^2} \dfrac{V}{c^2}\dfrac{dv_x}{dt'}
+\end{aligned}
+\]</span></p>
+<p>여기서</p>
+<p><span class="math display">\[
+\dfrac{dv_y}{dt'}= \dfrac{dt}{dt'}\dfrac{dv_y}{dt} = \dfrac{a_y}{\gamma (1-Vv_x/c^2)}
+\]</span></p>
+<p>이므로</p>
+<p><span class="math display">\[
+a'_y = \dfrac{a_y}{\gamma^2 (1-Vv_x/c^2)^2} + \dfrac{V v_y a_x/c^2}{\gamma^2 (1-Vv_x/c^2)^3}
+\]</span></p>
+<p>이며, 같은 방법으로 <span class="math inline">\(a'_z\)</span> 를 아래와 같이 구할 수 있다.</p>
+<p><span class="math display">\[
+a'_z = \dfrac{a_z}{\gamma^2 (1-Vv_x/c^2)^2} + \dfrac{V v_z a_x/c^2}{\gamma^2 (1-Vv_x/c^2)^3}
+\]</span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.4</strong> 길이 <span class="math inline">\(L=5\,\text{m}\)</span> 인 막대기가 관성기준틀 <span class="math inline">\(S\)</span> 에 정지해 있다. 이 막대기는 <span class="math inline">\(x\)</span> 축과 <span class="math inline">\(\theta = 30^\circ\)</span> 만큼 기울어져 있다. <span class="math inline">\(S'\)</span> 기준틀이 <span class="math inline">\(x\)</span> 방향으로 <span class="math inline">\(v_x=c/2\)</span> 의 속도로 평행하게 움직일 때 <span class="math inline">\(S'\)</span> 에서 본 막대기의 길이와 기울기를 구하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><span class="math inline">\(L_x = 5 \cos \theta\)</span>, <span class="math inline">\(L_y = 5 \sin \theta\)</span> 이며 <span class="math inline">\(v_x=c/2\)</span> 에 대해 <span class="math inline">\(L'_x = \sqrt{3}L_x/2\)</span>, <span class="math inline">\(L'_y = L_y\)</span> 이므로 <span class="math inline">\(L'=\sqrt{{L'_x}^2+{L_y}^2}=4.51\,\text{m}\)</span> 이고 <span class="math display">\[
+\theta' = \arctan\left(\dfrac{L'_y}{L'_x}\right) = 39.69^\circ
+\]</span></p>
+<p>이다.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.5</strong> 뮤온은 대기의 높은 곳에서 형성되어 속도 <span class="math inline">\(v=0.990c\)</span> 로 붕괴되 기 전까지 5.0 km 을 이동한다.</p>
+<p>(<span class="math inline">\(a\)</span>) 우리 관점에서 뮤온의 생존 시간 <span class="math inline">\(\Delta t\)</span> 는 얼마인가? 뮤온의 기준틀에서의 생존 시간 <span class="math inline">\(\Delta t'\)</span> 은 얼마인가?</p>
+<p>(<span class="math inline">\(b\)</span>) 뮤온의 기준틀에서 뮤온이 이동하는 대기의 두께 <span class="math inline">\(L'\)</span> 은 얼마인가?</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>(<span class="math inline">\(a\)</span>) <span class="math inline">\(\Delta t = 1.68\times 10^{-5}\text{ sec}\)</span>, <span class="math inline">\(\Delta t'= \sqrt{1-0.99^2}\Delta t = 2.38\times 10^{-5}\text{ sec}\)</span></p>
+<p>(<span class="math inline">\(b\)</span>) <span class="math inline">\(L'=\sqrt{1-0.99^2}L=7.05\,\text{km}\)</span>.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.6</strong> 전자의 정지 에너지 <span class="math inline">\(m_ec^2=0.511 \text{MeV}\)</span> 임을 보여라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><span class="math inline">\(m_e = 9.109 \times 10^{-31}\,\text{kg}\)</span> 이므로 <span class="math inline">\(m_ec^2 = 0.511\, \text{MeV}\)</span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.7</strong> 질량 <span class="math inline">\(m\)</span> 인 입자의 위치가 시간에 대해</p>
+<p><span class="math display">\[
+x=\sqrt{b^2+c^2t^2}-b
+\]</span></p>
+<p>이다. 이 운동을 위해 가해져야 하는 힘 <span class="math inline">\(F\)</span> 는?</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><span class="math display">\[
+v= \dfrac{dx}{dt}= \dfrac{c^2t}{\sqrt{b^2+c^2t^2}},\qquad p = \dfrac{mv}{\sqrt{1-c^2}}
+\]</span></p>
+<p>이며</p>
+<p><span class="math display">\[
+p= \dfrac{mv}{\sqrt{1-v^2/c^2}}
+\]</span></p>
+<p>에 대해</p>
+<p><span class="math display">\[
+F = \dfrac{dp}{dt} = \dfrac{dv}{dt}\dfrac{m}{(1-v^2/c^2)^{3/2}}
+\]</span></p>
+<p>이다.</p>
+<p><span class="math display">\[
+\dfrac{dv}{dt}= \dfrac{b^2c^2}{(b^2+c^2t^2)^{3/2}}
+\]</span></p>
+<p>이며</p>
+<p><span class="math display">\[
+1-\dfrac{v^2}{c^2} = 1- \dfrac{c^2t^2}{b^2+c^2t^2} = \dfrac{b^2}{b^2+c^2t^2}
+\]</span></p>
+<p>이므로</p>
+<p><span class="math display">\[
+F= mc^2/b
+\]</span></p>
+<p>이다.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>12.8</strong> 미국에서 1965년도에 생산된 총 전기 에너지는 <span class="math inline">\(1.05 \times 10^{12} \, \text{kWh}\)</span> 이다.</p>
+<p>(<span class="math inline">\(a\)</span>) 이 과정에서 얼마나 많은 질량이 에너지로 변환되었나?</p>
+<p>(<span class="math inline">\(b\)</span>) 이 에너지 변환이 중수소 (<span class="math inline">\(\text{D}_2\)</span>) 가 핼륨으로 변환되는 과정을 통해 얻어진다면, 필요한 중수소를 공급하기 위해 얼마나 많은 부피의 중수가 초당 필요한가?</p>
+<p>여기서 <span class="math inline">\(M_{\text{H}^2} = 2.0147\,\text{u}\)</span>, <span class="math inline">\(M_{\text{He}^4} = 4.0039\,\text{u}\)</span> 이다.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>(<span class="math inline">\(a\)</span>) <span class="math inline">\(1 \text{ kWh} = 3600 \text{ J}\)</span> 이므로 에너지 <span class="math inline">\(3.78\times 10^{18}\,\text{J}\)</span> 에 해당하며 이에 필요한 질량은 <span class="math inline">\(42.058\,\text{kg}\)</span> 이다.</p>
+<p>(<span class="math inline">\(b\)</span>) 1년에 <span class="math inline">\(3.78\times 10^{18}\,\text{J}\)</span> 을 생산하면 초당 <span class="math inline">\(1.20\times 10^{11}\,\text{J}\)</span> 을 생산해야 하며 이는 <span class="math inline">\(1.334 \times 10^{-6}\,\text{kg}\)</span> 에 해당하는 질량이다.</p>
+<p><span class="math inline">\(1\,\text{u}=1.6605 \times 10^{-27}\,\text{kg}\)</span> 이다. 2개의 중수소가 1개의 헬륨이 되는 변환에서의 질량 차이 <span class="math inline">\(\Delta M=0.0255 \,\text{u} = 4.234 \times 10^{-29}\,\text{kg}\)</span> 이다.</p>
+<p>따라서 필요한 중수소의 개수는 초당 <span class="math inline">\(6.301\times 10^{22}\)</span> 이며 이는 중수(<span class="math inline">\(\text{D}_2\text{O}\)</span>) 0.052 몰에 해당한다. 이는 중수 <span class="math inline">\(1 \text{cm}^3\)</span> 에 해당한다. 그런데 해답지에는 <span class="math inline">\(2\text{cm}^3\)</span> 인데 아마 반중수 (DHO) 를 생각해서였을까?</p>
+</div>
+</section>
+<section id="sec-FLPEXR_1_13" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLPEXR_1_13">13. 상대론적 에너지와 운동량</h2>
+<p><em>파인만 물리학 강의 1 권 16장, 17장에 해당한다.</em></p>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.1</strong> <span class="math inline">\(1\,\text{GeV}\)</span> 전자의 속도 <span class="math inline">\(v\)</span> 는 <span class="math inline">\(c\)</span> 와 <span class="math inline">\(c-v = c/(8 \times 10^6)\)</span> 정도임을 보여라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><span class="math inline">\(m_ec^2=0.511\,\text{MeV}\)</span> 이므로 <span class="math inline">\(v = 0.99999987c\)</span> 이며 <span class="math inline">\((c-v)/c = 1/(7.66\times 10^6)\)</span> 정도이다.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.2</strong> (<span class="math inline">\(a\)</span>) 입자의 운동량 <span class="math inline">\(p\)</span> 를 운동에너지 <span class="math inline">\(T\)</span> 와 정지 에너지 <span class="math inline">\(mc^2\)</span> 로 표현하라.</p>
+<p>(<span class="math inline">\(b\)</span>) 운동에너지와 정지에너지가 같을 때의 입자의 속도는 얼마인가?</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>(<span class="math inline">\(a\)</span>) 상대론적 운동에너지 <span class="math inline">\(T= \gamma mc^2 - mc^2\)</span> 이므로</p>
+<p><span class="math display">\[
+\gamma = \dfrac{T+mc^2}{mc^2} = \dfrac{1}{\sqrt{1-v^2/c^2}} \tag{1}
+\]</span></p>
+<p>이다. 이로부터</p>
+<p><span class="math display">\[
+v = \dfrac{\sqrt{T^2 + 2mc^2T}}{T+mc^2} c
+\]</span></p>
+<p>이며</p>
+<p><span class="math display">\[
+p = \gamma mv = \dfrac{T+mc^2}{mc^2} \cdot m\cdot \dfrac{\sqrt{T^2 + 2mc^2T}}{T+mc^2} c = \dfrac{\sqrt{T^2 + 2mc^2T}}{c}.
+\]</span></p>
+<p>(<span class="math inline">\(b\)</span>) (<span class="math inline">\(1\)</span>) 로부터 운동에너지와 정지에너지가 같으면 <span class="math inline">\(\gamma = 2\)</span> 이므로 <span class="math inline">\(v=\sqrt{3}c/2\)</span>.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.3</strong> 양성자 질량 <span class="math inline">\(m_p = 938 \, \text{MeV}\)</span> 이다. 우주방사선의 양성자는 대략 <span class="math inline">\(10^{10}\,\text{GeV}\)</span> 정도의 에너지를 갖는 것으로 간접적으로 관측되었다. 이 에너지의 양성자가 10<sup>5</sup> 광년 정도의 지름을 갖는 은하를 거쳤다고 할 때 양성자의 기준틀에서 <span class="math inline">\(\Delta t\)</span> 는 어느정도인가?</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><span class="math inline">\(\gamma = 10^{10}/0.938 \approx 1.0661\times 10^{10}\)</span> 이며 속도는 거의 광속이므로 지구좌표계에서 5년이라고 간주할 수 있다.</p>
+<p><span class="math display">\[
+10^5\text{ year}/\gamma \approx 296\,\text{sec}
+\]</span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.4</strong> 전하 <span class="math inline">\(q\)</span>, 운동량 <span class="math inline">\(p\)</span> 인 입자가 자기장 <span class="math inline">\(B\)</span> 에서 반지름 <span class="math inline">\(R\)</span> 인 원운동을 한다. 원운동 경로는 자기장에 직각 방향이다.</p>
+<p>(<span class="math inline">\(a\)</span>) 전자 전하 <span class="math inline">\(q_e\)</span> 에 대해 <span class="math inline">\(q=Zq_e\)</span> 이며 <span class="math inline">\(p\)</span> 는 <span class="math inline">\(\text{MeV}/c\)</span> 단위로 측정되었고 <span class="math inline">\(B\)</span> 는 가우스 단위일 때 <span class="math inline">\(p,\,B,\,R\)</span> 의 관계는?</p>
+<p>(<span class="math inline">\(b\)</span>) 운동에너지가 <span class="math inline">\(60\, \text{GeV}\)</span> 이고 자기장 <span class="math inline">\(B=0.3 \, \text{gauss}\)</span> 일 때 양성자의 곡률 반경은 얼마인가?</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.5</strong></p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.6</strong> 실험실에 정지해 있던 질량 <span class="math inline">\(M\)</span> 인 물체가 각각 질량 <span class="math inline">\(m_1,\,m_2\)</span> 인 두 부분으로 붕괴되었다. 각 부분의 상대론적 에너지 <span class="math inline">\(T_1,\,T_2\)</span> 는 무엇인가?</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>붕괴된 후 각각의 운동량과 에너지를 <span class="math inline">\(p_1,\,p_2\)</span>, <span class="math inline">\(E_1,\,E_2\)</span> 라고 하자. 운동량 보존에 의해 <span class="math inline">\(p_1 = -p_2\)</span> 이며, 에너지 보존에 의해</p>
+<p><span class="math display">\[
+Mc^2 = E_1 + E_2 = \sqrt{p_1^2c^2 + m_1^2c^4} + \sqrt{p_2^2c^2 + m_2^2c^4}
+\]</span></p>
+<p>이다. <span class="math inline">\(p=p_1 = -p_2\)</span> 라고 놓으면</p>
+<p><span class="math display">\[
+(Mc^2-E_1)^2 = {E_2}^2 = p^2c^2+m_2^2 c^4 \tag{1}
+\]</span></p>
+<p>이며</p>
+<p><span class="math display">\[
+(Mc^2-E_1)^2 = M^2c^4 - 2Mc^2E_1 + p^2c^2 + m_1^2c^4 \tag{2}
+\]</span></p>
+<p>이므로 (<span class="math inline">\(1\)</span>), (<span class="math inline">\(2\)</span>) 를 연립하여 풀면</p>
+<p><span class="math display">\[
+E_1 = \dfrac{(M^2 + m_1^2 - m_2^2)c^2}{2M} \tag{3}
+\]</span></p>
+<p>이다. 같은 방법으로</p>
+<p><span class="math display">\[
+E_2 = \dfrac{(M^2 + m_2^2 - m_1^2)c^2}{2M} \tag{4}
+\]</span></p>
+<p>임을 보일 수 있다. 따라서,</p>
+<p><span class="math display">\[
+\begin{aligned}
+T_1 &amp;= E_1 - m_1c^2 = \dfrac{((M-m_1)^2- m_2^2)c^2}{2M} \\[0.3em]
+T_2 &amp;= E_2 - m_2c^2 = \dfrac{((M-m_2)^2- m_1^2)c^2}{2M}
+\end{aligned} \tag{5}
+\]</span></p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.7</strong> 정지해 있는 파이온 (<span class="math inline">\(m_\pi = 273\, m_e\)</span>) 이 뮤온 (<span class="math inline">\(m_\mu = 207\, m_e\)</span>) 와 중성미자 (<span class="math inline">\(m_\nu = 0\)</span>) 으로 붕괴되었다. 뮤온의 운동에너지와 운동량 (<span class="math inline">\(T_\mu,\, p_\mu)\)</span> 와 중성미자의 운동에너지와 운동량 (<span class="math inline">\(T_\nu,\, p_\nu\)</span>) 를 <span class="math inline">\(\text{MeV}\)</span> 단위로 구하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><strong>13.6</strong> 의 해답의 식 (<span class="math inline">\(5\)</span>) 로 부터</p>
+<p><span class="math display">\[
+T_\mu = \dfrac{66^2m_e^2 c^2}{546 m_e} =4.08 \, \text{MeV},\quad T_\nu = 29.65 \,\text{MeV}.
+\]</span></p>
+<p>또한 <strong>13.2</strong> 의 해답에서 <span class="math inline">\(p=\sqrt{T^2+2mc^2T}/c\)</span> 임을 보였다. 이를 이용하면 <span class="math display">\[
+p_\nu = T/c = 29.65 \, \text{MeV}/c
+\]</span></p>
+<p>이며 운동량 보존에 의해 <span class="math inline">\(p_\mu = p_\nu\)</span> 이다.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.8</strong> 질량 <span class="math inline">\(m\)</span> 인 들뜬 원자가 주어진 좌표계에서 정지해 있다. 이 원자가 광자를 방출하고 <span class="math inline">\(\Delta E\)</span> 만큼의 에너지를 잃었다. 원자의 recoil 을 고려하여 광자의 에너지 <span class="math inline">\(E_\gamma\)</span> 를 구하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>빛을 방출 한 후 원자의 정지질량 <span class="math inline">\(M= m - \Delta E/c^2\)</span> 이다. 방출 전 원자의 총 에너지 <span class="math inline">\(E_0 = mc^2\)</span> 이고 운동량 <span class="math inline">\(p_0 = 0\)</span> 이다. 광자의 에너지 <span class="math inline">\(E_\gamma\)</span> 에 대해 광자의 운동량 <span class="math inline">\(p_\gamma = E_\gamma/c\)</span> 이다. 운동량 보존에 의해 빛을 방출 한 뒤의 원자의 운동량 <span class="math inline">\(p_1=-p_\gamma\)</span> 이다. 밫을 방출 한 후 원자의 총 에너지 <span class="math inline">\(E_1\)</span> 은</p>
+<p><span class="math display">\[
+E_1 = \sqrt{p^2c^2+M^2c^4} = \sqrt{E_\gamma^2 + M^2c^4}
+\]</span></p>
+<p>이다. 또한 에너지 보존에 의해</p>
+<p><span class="math display">\[
+mc^2 = E_1+E_\gamma = E_\gamma +  \sqrt{E_\gamma^2 + M^2c^4}
+\]</span></p>
+<p>이로부터, 그리고 <span class="math inline">\(M= m - \Delta E/c^2\)</span> 를 대입하면</p>
+<p><span class="math display">\[
+\begin{aligned}
+E_\gamma &amp;= \dfrac{(m^2-M^2)c^2}{2m} = \Delta E - \dfrac{(\Delta E)^2}{2mc^2}
+\end{aligned}
+\]</span></p>
+<p>이다.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.9</strong> 질량 <span class="math inline">\(m\)</span> 인 입자가 <span class="math inline">\(v=4c/5\)</span> 의 속도로 움직이다가 정지한 비슷한 입자와 비탄성적으로 충돌하였다.</p>
+<p>(<span class="math inline">\(a\)</span>) 합쳐진 입자의 속도 <span class="math inline">\(V\)</span> 를 구하라.</p>
+<p>(<span class="math inline">\(b\)</span>) 합쳐진 입자의 질량 <span class="math inline">\(M\)</span> 을 구하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>(<span class="math inline">\(a\)</span>) <span class="math inline">\(v=4c/5\)</span> 인 경우 <span class="math inline">\(\gamma = 5/3\)</span> 이다. 합쳐진 입자의 속도 <span class="math inline">\(V\)</span> 에 대해 <span class="math inline">\(\gamma_V = 1/\sqrt{1-V^2/c^2}\)</span> 이라고 하자. 운동량 보존에 의해</p>
+<p><span class="math display">\[
+\gamma mv = \dfrac{4mc}{3}=\gamma_V MV   \tag{1}
+\]</span></p>
+<p>이며 에너지 보존에 의해</p>
+<p><span class="math display">\[
+\gamma mc^2 +mc^2 = \dfrac{8}{3}mc^2=\gamma_V Mc^2 \tag{2}
+\]</span></p>
+<p>이다. (<span class="math inline">\(1\)</span>), (<span class="math inline">\(2\)</span>) 를 나누면 <span class="math inline">\(V=c/2\)</span> 임을 안다.</p>
+<p>(<span class="math inline">\(b\)</span>) <span class="math inline">\(\gamma_V = 2/\sqrt{3}\)</span> 이므로 <span class="math inline">\(M=4\sqrt{3}m/3\)</span> 이다.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.10</strong> 버클리의 베타트론은 양성자를 높은 에너지로 가속시켜 아래 반응과 같이 양성자-반양성자 쌍을 만들기 위해 설계되었다.</p>
+<p><span class="math display">\[
+p + p \to p+p+(p+\overline{p}).
+\]</span></p>
+<p>이 반응의 문턱에너지는 위 반응식의 오른쪽 항의 네 입자가 질량 <span class="math inline">\(M=4m_p\)</span> 인 하나의 입자처럼 움직이는 경우에 해당한다. 타겟 양성자가 충돌 전에 정지해 있을 때 이 문턱 상태에 도달하려면 입사하는 양성자의 운동에너지 <span class="math inline">\(T\)</span> 는 얼마여야 하는가?</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>에너지 보존에 의해</p>
+<p><span class="math display">\[
+2m_pc^2 + T = \gamma Mc^2 \tag{1}.
+\]</span></p>
+<p>운동량 보존에 의해</p>
+<p><span class="math display">\[
+\dfrac{\sqrt{T^2+2m_pc^2 T}}{c} = \gamma MV \tag{2}
+\]</span></p>
+<p>이로부터 <span class="math inline">\(V\)</span> 와 <span class="math inline">\(\gamma\)</span> 를 구하면</p>
+<p><span class="math display">\[
+V=\dfrac{c\sqrt{T}}{\sqrt{t+2m_pc^2}},\qquad \gamma = \dfrac{\sqrt{T+2m_pc^2}}{\sqrt{2m_pc^2}}. \tag{3}
+\]</span></p>
+<p>위의 <span class="math inline">\(\gamma\)</span> 를 (<span class="math inline">\(1\)</span>) 에 대입하면</p>
+<p><span class="math display">\[
+2m_p c^2+T = \dfrac{\sqrt{T+2m_p c^2} 4m_p c^2}{\sqrt{2m_pc^2}}
+\]</span></p>
+<p>이며 이로부터</p>
+<p><span class="math display">\[
+T=6m_pc^2 = 5.63\,\text{GeV}
+\]</span></p>
+<p>를 얻는다.</p>
+</div>
+<br>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>13.11</strong> 전자-전자 충돌로부터 양성자-반양성자를 생산하는 아래와 같은 반응에서의 문턱 운동 에너지 <span class="math inline">\(T_e\)</span> 를 구하라.</p>
+<p><span class="math display">\[
+e^-+e^- \to e^- + e^- + p^- + p^+.
+\]</span></p>
+<p>여기서 <span class="math inline">\(m_e \approx 0.5\, \text{MeV}\)</span>, <span class="math inline">\(m_p \approx 1\, \text{GeV}\)</span> 를 사용하고 <strong>13.10</strong> 의 문턱에너지와 비교하라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span><span class="math inline">\(M=2m_e+ 2m_p\)</span> 라고 놓자. 에너지 보존에 의해</p>
+<p><span class="math display">\[
+2m_e c^2 + T_e = \gamma Mc^2. \tag{1}
+\]</span></p>
+<p>운동량 보존에 의해</p>
+<p><span class="math display">\[
+\dfrac{\sqrt{T_e^2+ 2m_ec^2 T_e}}{c} = \gamma MV. \tag{2}
+\]</span></p>
+<p>이로부터 <span class="math inline">\(V\)</span> 와 <span class="math inline">\(\gamma\)</span> 를 구하면</p>
+<p><span class="math display">\[
+V= \dfrac{c\sqrt{T_e}}{\sqrt{T_e + 2m_ec^2}},\qquad \gamma = \dfrac{\sqrt{T_e + 2m_ec^2}}{\sqrt{2m_e c^2}} \tag{3}.
+\]</span></p>
+<p><span class="math inline">\(\gamma\)</span> 를 (<span class="math inline">\(1\)</span>) 에 대입하면</p>
+<p><span class="math display">\[
+T_e = \dfrac{(M^2-4m_e^2)c^2}{2m_e} = \dfrac{(4m_p^2+ 8m_em_p)c^2}{2m_e} \approx 4004 \, \text{GeV}.
+\]</span></p>
 </div>
 
 
