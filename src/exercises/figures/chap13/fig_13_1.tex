@@ -1,0 +1,62 @@
+% Author: Izaak Neutelings (October 2021)
+% Inspiration
+%   "Very special relativity - An illustrated guide", Sander Bais (2007)
+%   http://people.uncw.edu/hermanr/GR/Minkowski/Minkowski.pdf
+\documentclass[border=10pt,tikz]{standalone}
+\usepackage{amsmath} % for \text
+\usepackage{etoolbox} % ifthen
+\usepackage[outline]{contour} % glow around text
+\usetikzlibrary{calc} % for adding up coordinates
+\usetikzlibrary{decorations.markings,decorations.pathmorphing}
+\usetikzlibrary{angles,quotes} % for pic (angle labels)
+\usetikzlibrary{arrows.meta} % for arrow size
+\usepackage{xfp} % higher precision (16 digits?)
+\contourlength{1.1pt}
+
+\tikzset{>=latex} % for LaTeX arrow head
+\colorlet{myred}{red!85!black}
+\colorlet{mydarkred}{red!55!black}
+\colorlet{mylightred}{red!85!black!12}
+\colorlet{myfieldred}{mydarkred!5} % for S' background
+\colorlet{myredhighlight}{myred!20} % highlights simultaneity in ladder paradox
+\colorlet{myblue}{blue!80!black}
+\colorlet{mydarkblue}{blue!50!black}
+\colorlet{mylightblue}{blue!50!black!30}
+\colorlet{mylightblue2}{myblue!10}
+\colorlet{mygreen}{green!80!black}
+\colorlet{mypurple}{blue!40!red!80!black}
+\colorlet{mydarkgreen}{green!50!black}
+\colorlet{mydarkpurple}{blue!40!red!50!black}
+\colorlet{myorange}{orange!40!yellow!95!black}
+\colorlet{mydarkorange}{orange!40!yellow!85!black}
+\colorlet{mybrown}{brown!20!orange!90!black}
+\colorlet{mydarkbrown}{brown!20!orange!55!black}
+\colorlet{mypurplehighlight}{mydarkpurple!20} 
+
+\begin{document}
+
+% SPACETIME DIAGRAM - EUCLIDEAN ROTATION
+\begin{tikzpicture}[scale=1.7]
+    \def\th{45};
+    \def\ph{-30};
+    \coordinate (Q) at (-2, 0);
+    \coordinate (O) at (0, 0);
+    \coordinate (P1) at ( {2*cos(\th)}, {2*sin(\th)});
+    \coordinate (P2) at ( {2*cos(\ph)}, {2*sin(\ph)});
+
+    \draw[-{Latex[length=3mm, width=2mm]},, very thick] (Q) -- (O) node[midway, above] {$\pi^0$};
+    % 기본적인 물결 화살표
+    %\draw[->, decorate, decoration={snake}] (O) -- (P1);
+    
+    % 물결의 진폭(amplitude)과 주기(segment length) 조절
+    \draw[-{Latex[length=3mm, width=2mm]}, decorate, decoration={snake, amplitude=1mm, segment length=7.5mm}] (O) -- (P1);
+    \draw[-{Latex[length=3mm, width=2mm]}, decorate, decoration={snake, amplitude=-1mm, segment length=7.5mm}] (O) -- (P2);
+    
+    \draw[dashed, very thick] (O) -- (2.5, 0);
+    \draw [->] (1, 0) arc (0:{\th}:1cm) node[midway, right] {$\theta_1$};
+    \draw [->] (1.2, 0) arc (0:{(\ph+2)}:1.2cm) node[midway, right] {$\theta_2$};
+
+\end{tikzpicture}
+
+
+\end{document}

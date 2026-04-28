@@ -620,7 +620,7 @@ $$
 이로부터 $V$ 와 $\gamma$ 를 구하면
 
 $$
-V=\dfrac{c\sqrt{T}}{\sqrt{t+2m_pc^2}},\qquad \gamma = \dfrac{\sqrt{T+2m_pc^2}}{\sqrt{2m_pc^2}}. \tag{3}
+V=\dfrac{c\sqrt{T}}{\sqrt{T+2m_pc^2}},\qquad \gamma = \dfrac{\sqrt{T+2m_pc^2}}{\sqrt{2m_pc^2}}. \tag{3}
 $$
 
 위의 $\gamma$ 를 ($1$) 에 대입하면
@@ -638,8 +638,6 @@ $$
 를 얻는다.
 
 :::
-
-
 
 </br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
 
@@ -679,4 +677,173 @@ $$
 T_e = \dfrac{(M^2-4m_e^2)c^2}{2m_e} = \dfrac{(4m_p^2+ 8m_em_p)c^2}{2m_e} \approx 4004 \, \text{GeV}.
 $$
 
+:::
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**13.12** 양성자-반양성자 쌍은 정지한 양성자가 광자를 흡수하는 아래 과정에 의해서도 생성된다.
+
+$$
+\gamma + p \to p + (p+\overline{p}).
+$$
+
+광자가 가져야 하는 최소한의 에너지 $E_\gamma$ 는 얼마인가? $E_\gamma$ 를 양성자 에너지 $m_pc^2$ 으로 나타내고 $p-p$ 충돌이나 $e-e$ 충돌에 의한 에너지와 비교하라.
+
+
+</div>
+
+::: {.solution}
+
+에너지 보존에 의해
+
+$$
+E_\gamma + m_pc^2  = \gamma_\gamma (3m_p)c^2. \tag{1}
+$$
+
+주어진 식의 우변의 세 입자가 같은 속도 $V$ 로 움직인다고 하자. 운동량 보존에 의해
+
+$$
+p_\gamma = \gamma_\gamma (3m_p)V. \tag{2}
+$$
+
+$E_\gamma = p_\gamma c$ 이며 위 두 식을 나누면
+
+$$
+\dfrac{V}{c} = \dfrac{p_\gamma}{p_\gamma + m_p c}
+$$
+
+이므로
+
+$$
+\gamma_\gamma = \dfrac{p_\gamma + m_p c}{\sqrt{(m_pc)^2 + 2p_\gamma m_pc}}
+$$
+
+이다. 이 $\gamma_\gamma$ 를 ($1$) 에 대입하면
+
+$$
+p_\gamma = 4 m_p c
+$$
+
+이므로
+
+$$
+E_\gamma = p_\gamma c = 4m_p c^2 = 3.752 \,\text{GeV}.
+$$
+
+
+:::
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**13.13** 질량 $m_p$ 인 양성자가 정지해 있는 양성자와 전면충돌을 하면 아래와 같은 과정을 통해 $\pi$-메존 을 생성한다. 
+
+$$
+p+p \to p+p+\pi.
+$$
+
+$\pi$-메존의 질량 $m_\pi$ 는 $m_p$ 에 비해 매우 작다.
+
+($a$) 입사 양성자의 문턱 에너지 $T_p$ 를 구하라.
+
+($b$) 문턱 상태에서 메존의 운동에너지 $T_\pi$ 는 얼마인가?
+
+($c$) 비 상대론적으로 계산했을 때와의 오차에 대해 근사하라.
+
+</div>
+
+::: {.solution}
+
+($a$) 충돌 후 우변의 세 입자의 속도를 $V$ 라고 하고 $\gamma = 1/\sqrt{1-V^2/c^2}$ 라고 하자. 에너지 보존에 의해
+
+$$
+T_p + 2m_pc^2 = \gamma (2m_p + m_\pi)c^2. \tag{1}
+$$
+
+운동량 보존에 의해
+
+$$
+\dfrac{\sqrt{T_p^2+2m_pc^2 T_p}}{c} = \gamma (2m_p + m_\pi)V. \tag{2}
+$$
+
+이다. 이로부터 
+
+$$
+V=\dfrac{c\sqrt{T_p}}{\sqrt{T_p + 2m_p c^2}},\qquad \gamma = \dfrac{\sqrt{T_p + 2m_pc^2}}{\sqrt{2m_pc^2}}
+$$
+
+이다. ($1$) 에 대입하면
+
+$$
+T_p = 2m_\pi c^2 + \dfrac{m_\pi^2c^2}{2m_p} \approx 279\,\text{MeV}
+$$
+
+
+($b$) $T_\pi = \gamma m_\pi c^2 - m_\pi c^2  \approx 101 \, \text{MeV}$
+
+($c$) 
+:::
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**13.14** $\pi^0$-메존은 두 $\gamma$ 선으로 붕괴된다. 이 때 메존은 정지해 있을 수도 있고 움직이고 있을 수도 있다. $\pi^0 \to \gamma+\gamma$.
+
+![$\pi^0 \to \gamma + \gamma$](figures/chap13/fig_13_1.png){#fig-FLPEXR_1_13_1 width=400}
+
+
+($a$) 붕괴되는 $\pi^0$ 가 속도 $\bf{v}$ 와 질량 $m_\pi$ 를 가지며 방출되는 $\gamma$ 선이 원래 방향에 대해 $\theta$ 의 각으로 방출될 때, $\gamma$ 선의 에너지를 $m_\pi,\, v,\,\theta$ 로 표현하라.
+
+($b$) $\gamma$ 선이 가질 수 있는 최대 에너지 $E_\text{max}$ 와 최소 에너지 $E_\text{min}$ 는 무엇인가? 이 에너지에 대해 방출 각은 무엇인가?
+
+($c$) $\pi^0$ 의 속도에 독립적인 $E_\text{max}$ 와 $E_\text{min}$ 의 관계가 존재하는가? 그리고 그 물리적 의미는 무엇인가?
+
+</div>
+
+::: {.solution}
+
+그림에서 $\theta=\theta_1$ 으로 놓자. $\gamma = 1/\sqrt{1-v^2/c^2}$ 이라고 하고 $\theta_1$ 으로 방출되는 광자의 운동량과 에너지를 $p_1,\,E_1$, $\theta_2$ 로 방출되는 광자의 운동량과 에너지를 $p_2,\,E_2$ 라고 하자. $E_1=p_1c,\, E_2=p_2c$ 의 관계를 갖는다. 
+
+($a$) 에너지 보존에 의해
+
+$$
+\gamma m_\pi c^2 = p_1c + p_2 c. \tag{1}
+$$
+
+$\pi^0$ 의 운동방향과 그 직각방향에 대한 운동량 보존에 의해
+
+$$
+\begin{aligned}
+\gamma m_\pi v &= p_1 \cos \theta_1 + p_2 \cos \theta_2, \\[0.3em]
+0 &= p_1 \sin \theta_1 + p_2 \sin \theta_2. 
+\end{aligned} \tag{2}
+$$
+
+위 식에서 $p_2$ 를 먼저 계산하면
+
+$$
+\begin{aligned}
+p_2^2  &= (\gamma m_\pi v- p_1 \cos \theta_1)^2 + p_1^2 \sin \theta_1^2 \\[0.3em]
+&= \gamma^2 m_\pi^2 v^2 - 2\gamma m_\pi v p_1 \cos\theta_1 + p_1^2
+\end{aligned}
+$$
+
+이며 이 식을 ($1$) 에 대입하면 
+
+$$
+(\gamma m_\pi c^2 - p_1 c) = p_2 c = \sqrt{\gamma^2 m_\pi^2 v^2 - 2\gamma m_\pi v p_1 \cos\theta_1 + p_1^2}c
+$$
+
+이다. 왼쪽과 오른쪽을 제곱하여 정리하면 $p_1$ 을 얻고 $E_1=p_1c$ 이므로 
+
+$$
+E_1=p_1c = \dfrac{\gamma c^2 m_\pi }{2(1-v\cos\theta_1/c)}.
+$$
+
+
+($2$) $E_1$ 이 가질 수 있는 최대 에너지와 최소 에너지는 $\cos\theta_1$ 의 값에 의해 결정된다.
+
+$$
+E_\text{max} = \dfrac{\gamma c^2m_\pi}{2(1-v/c)},\qquad E_\text{min} = \dfrac{\gamma c^2 m_\pi}{2(1+v/c)}.
+$$
+
+($3$) 
 :::
