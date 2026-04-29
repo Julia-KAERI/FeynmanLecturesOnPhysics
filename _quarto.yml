@@ -18,6 +18,8 @@ book:
       - src/vol1/vol1_2.qmd
       - src/vol1/vol1_3.qmd
       - src/vol1/vol1_4.qmd
+      - src/vol1/vol1_5.qmd
+      - src/vol1/vol1_6.qmd
       - src/vol2/vol2_1.qmd
 
     - part: src/exercises/index.qmd
