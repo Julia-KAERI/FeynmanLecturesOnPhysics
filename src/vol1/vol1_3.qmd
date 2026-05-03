@@ -400,11 +400,134 @@ $$
 
 ### I.19-4 회전 운동 에너지 {#sec-FLP_1_19_4}
 
+#### **회전하는 물체의 운동에너지**
+
 $\omega$ 의 각속도 회전하는 강체의 운동에너지를 계산해 보자. $i$ 번째 입자의 회전축으로부터의 거리를 $r_i$ 라고 하면 회전 속도 $v_i = r_i \omega_i$ 이므로 그 운동에너지 $T$ 는 다음과 같다.
 
 $$
 T=\dfrac{1}{2}\sum_i m_i v_i^2 = \dfrac{1}{2}\sum_i m_i (r_i \omega)^2 = \dfrac{1}{2}I\omega^2
 $$ {#eq-FLP_1_19_8}
+
+
+
+</br><div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+
+::: {#exm-FLP_angular_momentum_and_kinetic_energy} 
+
+#### **각운동량의 변화와 회전 운동에너지의 변화**
+![다양한 물체의 관성 모멘트](figures/fig_1_19/fig_1_20_change_of_L.png){#fig-FLP_1_19_change_of_L width=350}
+
+
+관성 모먼트 $I_1$ 인 물체가 각속도 $\omega_1$ 으로 회전하다가 토크를 가하지 않은 상태에서 관성모먼트가 $I_2$ 가 되었다고 하자. 예를 들면 회전하는 받침대 위에 선 사람이 팔을 쭉 펴고 있을 때를 $I_1$, 팔을 오무렸을 때를 $I_2$ 라고 할 수 있다. 이 때의 각속도를 $\omega_2$ 라고 하면 각운동량의 보존에 의해 $I_1\omega_1 = I_2 \omega_2$ 이며 이로부터 $\omega_2$ 가 결정된다. $I_1 > I_2$ 라고 하면 $\omega_1 < \omega_2$ 이다. 회전 운동 에너지는 어떻게 되는가?
+
+$$
+T_2 = \dfrac{1}{2}I_2 \omega_2^2 = \dfrac{1}{2}I_2\omega_2 \omega_2 = \dfrac{1}{2}I_1\omega_1 \omega_2 > \dfrac{1}{2}I_1 \omega_1^2 = T_1
+$$
+
+이므로 운동에너지가 증가한다. 그렇다면 일을 해준 것인데 어떤 힘에 대해 일을 한 것일까? 회전하는 물체는 원심력을 격께 되며 $I_1$ 에서 $I_2$ 로 관성 모먼트가 줄어드는 것은 이 원심력에 대해 일을 한 것이 된다.
+
+위의 그림에서 회전하는 사람의 몸통 내부를 생각해보자. 각속도가 증가하므로 당연히 내부만의 운동에너지도 증가한다. 그런데 위에 언급한 원심력에 반하는 힘은 여기에 작용하지 않았다. 그렇다면 이 에너지 증가는 어디에서 기인하는가? 원심력 이외에 힘이 작용하는데 이 힘을 **코리올리 힘 (Coriolis force)** 라고 한다(@eq-FLP_1_19_add_14). 코리올리 힘은 회전하는 물체가 반지름 방향으로 움직일 때 회전에 대한 접선방향으로 작용한다.
+
+:::
+
+</div></br>
+
+### **회전하는 좌표계 (Additional)** {#sec-FLP_addition_rotating_coordinate}
+
+정지한 관성 좌표계 $S_F$ 와 $\bf{\omega}$ 로 회전하는 좌표계 $S_R$ 을 생각하자. 여기서 $(\cdots)_F$ 와 $(\cdots)_R$ 은 각각 $S_F$ 와 $S_R$ 에서 측정한 값이라고 하자. $(\bf{e}^F_i)$, $(\bf{e}^R_j)$ 를 $S_F,\,S_R$ 의 기저라고 하자. 임의의 벡터 $\bf{Q}$ 는 $S_F$, $S_R$ 에 대해 다음과 같이 표현 할 수 있다.
+
+$$
+\bf{Q} = \sum_{i=1}^3 x^F_i\bf{e}^F_i = \sum_{j=1}^3 x_j^R \bf{e}^R_j.
+$$ {#eq-FLP_1_19_add_1}
+
+$\bf{e}^R_j$ 는 $S^F$ 에서 봤을 때 $\bf{\omega}$ 로 회전하므로
+
+$$
+\left(\dfrac{d\bf{e}^R_j}{dt}\right)_F = \bf{\omega}\times \bf{e}^R_j,\qquad j=1,\,2,\,3
+$${#eq-FLP_1_19_add_2}
+
+임을 안다. 따라서
+
+$$
+\begin{aligned}
+\left(\dfrac{d\bf{Q}}{dt}\right)_F &= \sum_j \left(\dfrac{dx_j^R}{dt}\right)_F \bf{e}_j^R + \sum_j x_j^R \left(\dfrac{d\bf{e}^R_j}{dt}\right)_F 
+\end{aligned}
+$${#eq-FLP_1_19_add_3}
+
+이다. 여기서 우변의 첫번째 항은 단순히 회전하는 좌표계에서의 좌표의 변화이며, 두번째 항에 @eq-FLP_1_19_add_2 를 대입하면 다음을 얻는다.
+
+$$
+\boxed{\left(\dfrac{d\bf{Q}}{dt}\right)_F = \left(\dfrac{d\bf{Q}}{dt}\right)_R + \bf{\omega} \times \bf{Q}.}
+$${#eq-FLP_1_19_add_4}
+
+이제 $S_F$ 와 $S_R$ 사이에 $\bf{R}$ 만큼의 변위 차이가 있다고 하자. 즉 $S_F$ 에서의 벡터 $\bf{r}_F$ 이 $\bf{r}_R$ 에 대해 
+
+$$
+\bf{r}_F = \bf{R} +\bf{r}_R 
+$${#eq-FLP_1_19_add_5}
+
+이라고 하면,
+
+$$
+\left(\dfrac{\bf{r}_F}{dt}\right)_F = \left(\dfrac{d\bf{R}}{dt}\right)_F + \left(\dfrac{d\bf{r}_R}{dt}\right)_F
+$${#eq-FLP_1_19_add_6}
+
+이며 @eq-FLP_1_19_add_4 를 이용하면
+
+$$
+\left(\dfrac{\bf{r}_F}{dt}\right)_F =  \left(\dfrac{d\bf{R}}{dt}\right)_F+ \left(\dfrac{d\bf{r}_R}{dt}\right)_R + \bf{\omega} \times \bf{r}_R.
+$${#eq-FLP_1_19_add_7}
+
+이다. 이제 $\bf{v}_F=\left(\dfrac{\bf{r}_F}{dt}\right)_F$, $\bf{V}=\left(\dfrac{d\bf{R}}{dt}\right)_F$, $\bf{v}_R = \left(\dfrac{d\bf{r}_R}{dt}\right)_R$ 라고 하면
+
+$$
+\bf{v}_F = \bf{V} + \bf{v}_R + \bf{\omega} \times \bf{r}_R
+$${#eq-FLP_1_19_add_8}
+
+로 쓸 수 있다. 이제 뉴튼의 제 2 운동법칙을 생각해보자 $S_F$ 에서의 운동방정식은
+
+$$
+\bf{F} = m\bf{a}_F = m \left(\dfrac{d\bf{r}_F}{dt}\right)_F
+$${#eq-FLP_1_19_add_9}
+
+이다. @eq-FLP_1_19_add_8 로 부터
+$$
+\left(\dfrac{d\bf{v}_F}{dt}\right)_F = \left(\dfrac{d\bf{V}}{dt}\right)_F + \left(\dfrac{d\bf{v}_R}{dt}\right)_F + \dot{\bf{\omega}}\times \bf{r}_R + \bf{\omega}\times \left(\dfrac{d\bf{r}_R}{dt}\right)_F
+$${#eq-FLP_1_19_add_10}
+
+이다. @eq-FLP_1_19_add_4 로 부터
+
+$$
+\begin{aligned}
+\left(\dfrac{d\bf{v}_R}{dt}\right)_F &= \left(\dfrac{d\bf{v}_R}{dt}\right)_R + \bf{\omega} \times \bf{v}_R, \\[0.3em]
+\left(\dfrac{d\bf{r}_R}{dt}\right)_F &= \left(\dfrac{d\bf{r}_R}{dt}\right)_R + \bf{\omega} \times \bf{v}_R = \bf{v}_R + \bf{\omega} \times \bf{v}_R 
+\end{aligned}
+$${#eq-FLP_1_19_add_11}
+이다. 여기서 
+
+$$
+\ddot{\bf{R}}_F := \left(\dfrac{d\bf{V}}{dt}\right)_F,\qquad \bf{a}_R :=\left(\dfrac{d\bf{v}_R}{dt}\right)_R
+$${#eq-FLP_1_19_add_12}
+
+라고 정의하자. $\ddot{\bf{R}}_F$ 는 $S_R$ 의 $S_F$ 에 대한 가속운동을 표현하며 $\bf{a}_R$ 은 $S_R$ 내에서의 가속운동을 표현한다. 그렇다면 다음과 같은 방정식을 얻는다.
+
+$$
+\begin{aligned}
+\bf{F} & = m\bf{a}_F \\[0.3em]
+&= m\ddot{\bf{R}}_F + m\bf{a}_R + m \dot{\bf{\omega}}\times \bf{r}_R + m\bf{\omega}\times (\bf{\omega} \times \bf{v}_R) + 2m\bf{\omega}\times \bf{v}_R
+\end{aligned}
+$${#eq-FLP_1_19_add_13}
+
+그렇다면 $S_R$ 에서 느끼는 힘 $\bf{F}_R = m\bf{a}_R$ 은 다음과 같다.
+
+$$
+\begin{aligned}
+\bf{F}_R &=m\bf{a}_R \\[0.3em]
+&= \bf{F} - m\ddot{\bf{R}}_F - m\dot{\bf{\omega}}\times \bf{r}_R \underbrace{- m \bf{\omega}\times (\bf{\omega}\times \bf{r}_R)}_{\text{centrifugal force}} \underbrace{- 2m\bf{\omega}\times \bf{v}_R}_{\text{Coriolis force}}.
+\end{aligned}
+$${#eq-FLP_1_19_add_14}
+
+여기서 $\bf{F}$ 는 정지한 관성좌표계 $S_F$ 에서 측정한 힘이며 $-\ddot{\bf{R}}_F$ 는 $S_F$ 에 대한 $S_R$ 의 상대적인 가속운동에 의한 관성력을 의미한다. $-m\dot{\bf{\omega}}\times \bf{r}_R$ 은 $S_R$ 의 가속 회전 운동에 의한 관성력이며 나머지 두 항은 식에 표현했듯이 각각 원심력(centrifugal force) 와 코리올리 힘(Coriolis force) 이다. 
 
 
 </br>

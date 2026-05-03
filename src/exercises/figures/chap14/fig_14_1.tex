@@ -1,0 +1,124 @@
+\documentclass[border=10pt,tikz]{standalone}
+\usepackage{amsmath} % for \text
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{1pt}
+%
+% File name: surface-of-revolution.tex
+% Description: 
+% A geometric representation of a surface of revolution is shown.
+% 
+% Date of creation: October, 17th, 2021.
+% Date of last modification: October, 9th, 2022.
+% Author: Efraín Soto Apolinar.
+% https://www.aprendematematicas.org.mx/author/efrain-soto-apolinar/instructing-courses/
+% Source: page 450 of the 
+% Glosario Ilustrado de Matem\'aticas Escolares.
+% https://tinyurl.com/5udm2ufy
+%
+% Terms of use:
+% According to TikZ.net
+% https://creativecommons.org/licenses/by-nc-sa/4.0/
+% Your commitment to the terms of use is greatly appreciated.
+%
+\begin{document}
+	%
+	\tdplotsetmaincoords{70}{30}
+	\begin{tikzpicture}[tdplot_main_coords]
+		% The function that is rotated
+		\tikzmath{function f(\x) {return 1.5 - 0.35*sin(\x r);};}
+        \def\R{3.0}
+        \def\th{20}
+		% \pgfmathsetmacro{\dominio}{2.0}
+		% \pgfmathsetmacro{\xi}{-\dominio}
+		% \pgfmathsetmacro{\step}{(\dominio-\xi)/70.0}
+		% \pgfmathsetmacro{\xs}{\xi+\step}
+		% \pgfmathsetmacro{\max}{3}
+		% Circumferences (behind the coordiante axis)
+		% \foreach \x in {\xi,\xs,...,\dominio}{
+		% 	\pgfmathsetmacro{\radio}{f(\x)}	% radius of the circumference of the solid of revolution
+		% 	\draw[cyan,very thick,opacity=0.35] plot[domain=0.5*pi:2.0*pi,smooth,variable=\t] ({\radio*cos(\t r)},{\x},{\radio*sin(\t r});	
+		% }
+		% % Part of the solid of revolution behind the coordinate axis
+		% \foreach \angulo in {358,356,...,90}{
+		% 	\draw[cyan,very thick,rotate around y=\angulo,opacity=0.35] plot[domain=-\dominio:\dominio,smooth,variable=\t] ({0},{\t},{f(\t)});
+		% }
+		% % Graph of the function rotated about the $y$ axis
+
+        \node [] at (-0.4, 0, 3) {(a)};
+
+        \draw[very thick] (0, 0, -3) -- (0, 0, 3) node [right] {$O$};
+ 
+
+        \draw[thick] ({\R*cos(-\th)}, {\R*sin(-\th)}, 2) arc (-\th:{\th}:\R);
+
+        \draw[red, thick, <->] ({\R*cos(-\th)/2}, {\R*sin(-\th)/2}, 2) arc (-\th:{\th}:{\R/2}) node [midway, right, yshift=-3] {$\alpha$};
+
+
+        \draw[thick] ({\R*cos(-\th)}, {\R*sin(-\th)}, -2) arc (-\th:{\th}:\R);
+
+  
+        \draw[thick] (0, 0, 2) -- ({\R*cos(-\th)}, {\R*sin(-\th)}, 2) 
+            .. controls ({\R*cos(-\th) *1.2}, {\R*sin(-\th) * 1.2}, 1) and ({\R*cos(-\th) * 1.2}, {\R*sin(-\th) * 1.2}, -1) 
+            .. ({\R*cos(-\th)}, {\R*sin(-\th)}, -2)
+            -- (0, 0, -2) -- cycle;
+
+        \draw[thick] (0, 0, 2) -- ({\R*cos(\th)}, {\R*sin(\th)}, 2) 
+            .. controls ({\R*cos(\th) *1.2}, {\R*sin(\th) * 1.2}, 1) and ({\R*cos(\th) * 1.2}, {\R*sin(\th) * 1.2}, -1) 
+            .. ({\R*cos(\th)}, {\R*sin(\th)}, -2);
+            
+        \node [] at ({\R*cos(\th)*1.2}, {\R*sin(\th)*1.2}, 1) {C};
+
+        \draw[thick, dashed] (0, 0, 0) -- ({\R*cos(-\th)*1.1}, {\R*sin(-\th)*1.1}, 0) arc (-\th:{\th}:{\R*1.1}) --cycle node[midway, above] {$r$};
+            
+
+
+        \begin{scope}[xshift=150]
+
+        \node [] at (-0.4, 0, 3) {(b)};
+
+        \draw[very thick] (0, 0, -3) -- (0, 0, 3) node [right] {$O$};
+ 
+
+        \draw[thick] ({\R*cos(-\th)}, {\R*sin(-\th)}, 2) arc (-\th:{\th}:\R);
+
+        \draw[red, thick, <->] ({\R*cos(-\th)/2}, {\R*sin(-\th)/2}, 2) arc (-\th:{\th}:{\R/2}) node [midway, right, yshift=-3] {$\alpha$};
+
+
+        \draw[thick] ({\R*cos(-\th)}, {\R*sin(-\th)}, -2) arc (-\th:{\th}:\R);
+
+  
+        \draw[thick, fill=gray!30] (0, 0, 2) -- ({\R*cos(-\th)}, {\R*sin(-\th)}, 2) 
+            .. controls ({\R*cos(-\th) *1.2}, {\R*sin(-\th) * 1.2}, 1) and ({\R*cos(-\th) * 1.2}, {\R*sin(-\th) * 1.2}, -1) 
+            .. ({\R*cos(-\th)}, {\R*sin(-\th)}, -2)
+            -- (0, 0, -2) -- cycle;
+
+        \draw[thick] (0, 0, 2) -- ({\R*cos(\th)}, {\R*sin(\th)}, 2) 
+            .. controls ({\R*cos(\th) *1.2}, {\R*sin(\th) * 1.2}, 1) and ({\R*cos(\th) * 1.2}, {\R*sin(\th) * 1.2}, -1) 
+            .. ({\R*cos(\th)}, {\R*sin(\th)}, -2);
+            
+        \node [] at ({\R*cos(\th)*1.2}, {\R*sin(\th)*1.2}, 1) {C};
+
+        \draw[thick, dashed] (0, 0, 0) -- ({\R*cos(-\th)*1.1}, {\R*sin(-\th)*1.1}, 0) arc (-\th:{\th}:{\R*1.1}) --cycle node[midway, above] {$r$};
+
+
+        \end{scope}
+		% \draw[red,ultra thick] plot[domain=-\dominio:\dominio,smooth,variable=\t] ({0},{\t},{f(\t)}) node [above right] {$z = f(y)$};
+		% % Coordinate axis
+		% \draw[thick,->] (0,0,0) -- (0,\max,0) node [right] {$y$};
+		% \draw[thick,->] (0,0,0) -- (\max,0,0) node [left] {$x$};
+		% \draw[thick,->] (0,0,0) -- (0,0,\max) node [above] {$z$};
+		% % Circumferences (in front of the coordiante axis)
+		% \foreach \x in {\xi,\xs,...,\dominio}{
+		% 	\pgfmathsetmacro{\radio}{f(\x)}	% Radio del círculo al inicio del sólido de revolución
+		% 	\draw[cyan,very thick,opacity=0.35] plot[domain=0.0:0.5*pi,smooth,variable=\t] ({\radio*cos(\t r)},{\x},{\radio*sin(\t r});	
+		% }
+		% % The solid of revolution (in front of the coordinate axis)
+		% \foreach \angulo in {0,2,...,89}{
+		% 	\draw[cyan,very thick,rotate around y=\angulo,opacity=0.35] plot[domain=-\dominio:\dominio,smooth,variable=\t] ({0},{\t},{f(\t)});
+		% }
+	\end{tikzpicture}
+\end{document}

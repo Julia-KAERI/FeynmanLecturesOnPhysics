@@ -847,3 +847,35 @@ $$
 
 ($3$) 
 :::
+
+</br>
+
+## 14. 2차원 회전과 질량 중심 {#sec-FLPEXR_1_14}
+
+*파인만 물리학 강의 1 권 18장, 19장에 해당한다.*
+
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**14.1** 반지름 $R$ 인 강체인 바퀴가 미끄러지지 않고 수평한 평면 위로 굴러가고 있다. 바퀴 평면은 수직이며 바퀴의 수평방향으로 속도 $V$ 로 움직인다. 바퀴의 축이 $z$ 축과 평행하며, $V$ 는 $+x$ 방향이고 바퀴 가장자리의 지면과 접한 정해진 점 $P$ 가 회전한 각도를 $\theta$ 라고 하자. $P$ 의 속도는 다음과 같음을 보여라.
+
+$$
+\bf{v} = V((1-\cos\theta) \bf{i} + \sin \theta \bf{j})
+$$
+
+</div>
+
+::: {.solution}
+
+바퀴의 중심을 원점으로 잡고 $P$ 의 위치 벡터를 $\bf{r}$ 이라고 하면
+
+$$
+\bf{r} = (Vt-R \sin \theta)\bf{i} - (R \cos \theta +R)\bf{j} 
+$$
+
+이다. 바퀴가 미끌어지지 않고 굴러 가므로 $V=R\dot{\theta}$ 이다.
+
+$$
+\bf{v} = V-R\dot{\theta}\cos \theta \bf{i} + R \dot{\theta} \sin\theta \bf{j} = V(1-\cos \theta)\bf{i} + V \sin \theta \bf{j}
+$$
+
+:::
