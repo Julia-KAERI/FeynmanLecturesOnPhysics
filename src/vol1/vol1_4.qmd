@@ -1,5 +1,5 @@
 ---
-title: "$I$-4: 광학"
+title: "$I$-4: 광학과 전자기 복사"
 number-sections: true
 number-depth: 1
 crossref:

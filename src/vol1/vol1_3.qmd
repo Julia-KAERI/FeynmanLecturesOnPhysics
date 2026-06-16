@@ -602,11 +602,10 @@ $$
 
 ### I.21-1 선형미분방정식 {#sec-FLP_1_21_1}
 
-조화 진동자는 물리학 뿐만 아니라 다른 많은 분야에서도 유사한 현상이 나타난다. 원래 조화진동자는 용수철에 매달린 무게의 운동, 혹은 진동의 폭이 작은 진자를 기술하는 모델로서 특정 미분 방정식으로 기술된다. 이 방정식은 물리학 을 포함한 여러 분야에서 반복적으로 등장하며, 수많은 현상의 일부이므로 면밀히 살펴볼 가치가 있다. 이 방정식과 관련된 현상에는 스프링에 매달린 질량의 진동, 전기 회로에서 전하가 앞뒤로 흐르는 진동, 음파를 발생시키는 튜닝 포크의 진동, 빛 파동을 생성하는 원자 내 전자의 유사한 진동, 온도 조절을 시도하는 서보시스템의 작동 방정식, 화학 반응에서의 복잡한 상호작용, 식량 공급 및 박테리아가 생성하는 독과의 상호작용에서 박테리아 군집의 성장, 여우가 풀을 먹는 토끼 등 On; 이러한 모든 현상은 서로 매우 유사한 방정식을 따르며, 이것이 우리가 기계식 발진기를 이렇게 자세히 연구하는 이유입니다. 그 방정식은 상수 계수를 갖는 선형 미분 방정식이라고 합니다.
-아래와 같은 형태의 미분방정식을 $n$-계 선형미분방정식이라고 한다.
+아래와 같은 형태의 미분방정식을 $n$-계 선형미분방정식이라고 한다. 여기서 $a_1,\ldots,\,a_n$ 은 상수이다.
 
 $$
-a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n01}} + \cdots + a_1 \dfrac{dx}{dt} + a_0 x = f(t)
+a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n-1}} + \cdots + a_1 \dfrac{dx}{dt} + a_0 x = f(t)
 $$ {#eq-FLP_1_21_1}
 
 
@@ -614,7 +613,7 @@ $$ {#eq-FLP_1_21_1}
 
 ### I.21-2 조화진동자 {#sec-FLP_1_21_2}
 
-1차원 단순조화진동자 (Simple harmonic oscilator, 이하 SHO) 는 아래와 같은 2계 선형미분방정식의 해이다.
+이상적인 용수철에 매달린 질랑 $m$ 인 물체의 운동을 1차원 단순조화진동자 (Simple harmonic oscilator, 이하 SHO) 라고 하며 물체의 운동은 아래와 같은 2계 선형미분방정식으로 기술된다.
 
 $$
 m\dfrac{d^2x}{dt^2} = -kx.
@@ -645,7 +644,7 @@ $$
 이며 이로부터 $A,\, \phi_0$ 를 결정 할 수 있다. 이제 이 단순조화진동자의 에너지를 구해보자. 우선 운동에너지 $T$ 와 포텐셜 에너지 $U$ 는 다음과 같다.
 
 $$
-T=\dfrac{1}{2}mv^2 = \dfrac{m\omega_0^2 \sin^2(\omega_0 t+ \phi_0)}{2},\qquad U = \dfrac{1}{2}kx^2 = \dfrac{m\omega_0^2 \cos^2 (\omega_0 t+\phi_0)}{2}
+T=\dfrac{1}{2}mv^2 = \dfrac{m\omega_0^2 A^2 \sin^2(\omega_0 t+ \phi_0)}{2},\qquad U = \dfrac{1}{2}kx^2 = \dfrac{m\omega_0^2 A^2\cos^2 (\omega_0 t+\phi_0)}{2}
 $$
 
 
@@ -655,10 +654,31 @@ $$
 E =  T+U = \dfrac{1}{2}m\omega_0^2 A^2 .
 $$
 
-즉 에너지는 진폭의 제곱에 의존한다. 따라서 진폭을 2배 늘린다면 에너지는 4배가 증가한다. 또한 한 주기동안의 평균운동에너자와 위치에너지는 같으며 전체 역학적 에너지의 반이다.
+즉 에너지는 진폭의 제곱에 의존한다. 따라서 진폭을 2배 늘린다면 에너지는 4배가 증가한다. 또한 한 주기동안의 평균운동에너자와 위치에너지는 같으며 전체 역학적 에너지의 반이다. 
 
+</br><div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+::: {#exm-FLP_average_kinentic_and_potential_energy_of_simple_harmonic_oscillator}
 
-</br>
+#### **단순조화진동자의 평균 운동 에너지와 포텐셜 에너지**
+
+한 주기동안의 평균 운동 에너지 $\langle T \rangle$ 은
+$$
+\begin{aligned}
+\langle T\rangle &= \dfrac{1}{T}\int_0^T \dfrac{1}{2}mv^2\,dt = \dfrac{m\omega_0^2 A^2}{2T}\int_0^T \sin^2 (\omega_0 t+\phi_0)\,dt = \dfrac{m\omega_0^2 A^2}{4}
+\end{aligned}
+$$
+
+이며 같은 방법으로 한 주기동안의 평균 포텐셜 에너지 $\langle U \rangle = \langle T \rangle$ 임을 보일 수 있다. 즉
+
+$$
+\langle T\rangle = \langle U \rangle = \dfrac{E}{2}
+$$
+
+이다.
+
+:::
+
+</div></br>
 
 ### I.21-5 강제 진동 {#sec-FLP_1_21_5}
 
@@ -675,10 +695,10 @@ F(t) = F_0 \cos \omega t.
 $$ {#eq-FLP_2_21_9}
 
 
-이제 이 힘에 의한 미분방정식 @eq-FLP_2_21_8 를 풀어보자. 한 특이해는 다음과 같이 주어진다.
+이제 이 힘에 의한 미분방정식 @eq-FLP_2_21_8 를 풀어보자. 한 특이해(particular solution)$^1$[$^1$파인만은 special solution 이라고 했다.]{.aside} $x_p$ 는 다음과 같이 주어진다.
 
 $$
-x(t) = C\cos \omega t.
+x_p(t) = C \cos \omega t.
 $$ {#eq-FLP_2_21_10}
 
 이 식이 @eq-FLP_2_21_8 를 만족한다면
@@ -695,8 +715,7 @@ $$ {#eq-FLP_2_21_12}
 
 ### I.23-1. 복소수와 조화 운동 {#sec-FLP_1_23_1}
 
-@eq-FLP_1_21_1 형태의 선형미분방정식을 생각하자. $f(t) = f_0 \cos (\omega t-\phi_0)$ 를 복소함수 
-
+@eq-FLP_1_21_1 형태의 선형미분방정식을 생각하자. $f(t) = f_0 \cos (\omega t-\phi_0)$ 에 대해
 $$
 f(t) = f_0e^{-i\phi_0}e^{i\omega t} = \hat{f} e^{i\omega t},\quad\text{ where } \hat{f} = f_0e^{-i\phi_0} 
 $$ 
@@ -704,10 +723,10 @@ $$
 로 표현하자. 그리고 @eq-FLP_1_21_1 를 복소선형미분방정식으로 아래와 같이 쓸 수 있다.
 
 $$
-a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n01}} + \cdots + a_1 \dfrac{x}{dt} + a_0 x = f(t) = \hat{f} e^{i\omega t}.
+a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n-1}} + \cdots + a_1 \dfrac{dx}{dt} + a_0 x = f(t) = \hat{f} e^{i\omega t}.
 $$ 
 
-위의 미분방정식을 만족하는 복소함수 $\hat{x}(t)$ 를 구한다면 $\text{Re}(x(t))$ 는 @eq-FLP_1_21_1 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 @eq-FLP_2_21_8 에 적용하자. 외부의 힘 $F(t) = F_0 \cos \omega t$ 를 $\hat{F}(t) = \hat{F} e^{i\omega t}$ 로 표현하면
+위의 미분방정식을 만족하는 복소함수 $x(t)$ 를 구한다면 $\text{Re}(x(t))$ 는 @eq-FLP_1_21_1 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 @eq-FLP_2_21_8 에 적용하자. 외부의 힘 $F(t) = F_0 \cos \omega t$ 를 $\hat{F}(t) = \hat{F} e^{i\omega t}$ 로 표현하면
 
 $$
 m \dfrac{d^2 x}{dt^2} + k x = \hat{F} e^{i\omega t}
@@ -749,32 +768,58 @@ $$
 \dfrac{d^2x}{dt^2} + \gamma \dfrac{dx}{dt} + \omega_0^2 x = \dfrac{F(t)}{m}.
 $$ {#eq-FLP_1_23_6_a}
 
-여기서 $\beta$ 가 매우 작다고 가정하자. $\beta$ 값의 다양한 경우에 대해서는 [감쇄 조화 진동자](#sec-CM_1d_dsho) 를 참고하라. 외부의 힘 $F(t) = F\cos (\omega t -\phi_0)$ 이 작용한다고 하자. $x=\hat{x}e^{i\omega t}$, $F=\hat{F}e^{i\omega t}$ 로 놓고 풀면 아래의 식을 만족해야 함을 안다.
-
+여기서 $\gamma$ 가 매우 작다고 가정하자. $\gamma$ 값의 다양한 경우에 대해서는 [감쇄 조화 진동자](#sec-FLP_1_24_2) 를 참고하라. 외부의 힘 $F(t) = F_0\cos (\omega t + \phi_0)$ 이 작용한다고 하자. $x(t)=\hat{x}e^{i\omega t}$, $F(t)=\hat{F}e^{i\omega t}$ 로 놓으면 @eq-FLP_1_23_6 은 다음과 같이 된다.
 $$
 -\omega^2 \hat{x} + i \gamma \omega \hat{x} + \omega_0^2 \hat{x} = \hat{F}/m
 $$ {#eq-FLP_1_23_2}
 
-그렇다면 
+그렇다면 이를 만족하는 $\hat{x}$ 는 다음과 같다.
 
 $$
 \begin{aligned}
 \hat{x} &= \dfrac{\hat{F}}{m\left(\omega_0^2 - \omega^2 +i\gamma \omega\right)} = \dfrac{\hat{F}e^{i\theta}}{m\sqrt{(\omega_0^2 - \omega^2)^2 + \gamma^2\omega^2}},\\[0.3em]
 &\qquad \qquad \qquad \text{where } \theta = -\tan^{-1}\left(\dfrac{\gamma\omega}{\omega_0^2-\omega^2}\right)
 \end{aligned}
-$$ {#eq-FLP_1_23_11}
+$$ {#eq-FLP_1_23_8}
 
-위의 식에서 $|\hat{x}|^2$ 은 아래와 같이 정의되는 $\rho^2$ 에 비례하는데 물리적으로 중요하다. 
+여기서 
 
 $$
-\rho^2 = \dfrac{1}{(\omega^2-\omega_0^2)^2 + \gamma^2 \omega^2}
+R:=\dfrac{1}{m(\omega_0^2-\omega^2+i\gamma \omega)} = \rho e^{i\Delta}
+$$ {#eq-FLP_1_23_8_after}
+
+라고 놓으면 
+
+$$
+\hat{x} = \hat{F}R = \rho F_0 e^{i(\phi_0 + \Delta)}
+$${#eq-FLP_1_23_9}
+
+
+이므로 우리는 $x(t)$ 를 아래와 같이 구할 수 있다.
+
+$$
+x(t) = \rho F_0 \cos (\omega_0 t + \phi_0 + \Delta)
+$$ {#eq-FLP_1_23_10}
+
+
+위의 식에서 $F_0$ 는 외부에서 가해지는 힘의 크기이지만 $\rho$ 는 조화진동자에 의해 결정되는 값으로 $\rho^2$ 은 조화진동자의 물리적 성질을 표현하는 중요한 값이다.
+
+$$
+\rho^2 = \dfrac{1}{m^2[(\omega^2-\omega_0^2)^2 + \gamma^2 \omega^2]}
 $$
 
 $\rho^2$ 와 $\theta$ 의 $\omega$ 의존성은 아래 그림과 같다.
 
 ![$\rho^2(\omega)$ 와 $\theta(\omega)$](figures/fig_1_23/fig_1_23_2.png){#fig-FLP_1_23_2 width=600}
 
-$\omega \approx \omega_0$ 일 경우 @eq-FLP_2_21_12 와 같이 무한히 폭주하지 않지만 $\rho^2$ 값은 유한한 범위에서 매우 커지며 $\theta \approx \pi/2$ 이다. 그리고 $\rho^2(\omega)$ 에서의 반치전폭(Full with at half maximum, FWHM) 은 $\gamma$ 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 $Q:=\omega_/\gamma$ 이다.위의 @eq-FLP_1_23_11 에서는 $Q=6.67$ 이다.
+$\omega \approx \omega_0$ 일 경우 @eq-FLP_2_21_12 와 같이 무한히 폭주하지 않지만 $\rho^2$ 값은 유한한 범위에서 매우 커지며 $\theta \approx \pi/2$ 이다. 그리고 $\rho^2(\omega)$ 에서의 반치전폭(Full with at half maximum, FWHM) 은 $\gamma$ 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 아래와 같이 정의된 $Q$ 인자$^2$[$^2$ $Q$ 인자는 두가지 정의가 존재한다.[Wikipedia Q factor](https://en.wikipedia.org/wiki/Q_factor) 를 참고하라. 파인만은 [뒤에](#sec-FLP_second_Q_factor) 별도의 설명 없이 다른 $Q$ 인자를 사용한다.]{.aside}이다.
+
+
+$$
+Q:=\dfrac{\omega_0}{\gamma}.
+$$ {#eq-FLP_defintion_of_first_Q_factor}
+
+위의 @fig-FLP_1_23_2 에서는 $Q=6.67$ 이다.
 
 </br>
 
@@ -783,13 +828,13 @@ $\omega \approx \omega_0$ 일 경우 @eq-FLP_2_21_12 와 같이 무한히 폭주
 
 ![파인만 물리학 강의 $I$. Fig. 23-4 수동소자 세가지](figures/fig_1_23/fig_1_23_4.png){#fig-FLP_1_23_4 width=300}
 
-전자회로의 중요한 세가지 수동소자는 축전기(capacitor), 저항(resistor), 인덕터 (inductor) 이다. 축전기는 금속 판 사이에 부도체를 채운 것으로 전하가 금속판이 각각 $+Q$, $-Q$ 의 전하가 대전되면 양쪽 터미널 $A,\,B$ 에 전위차 $V$ 가 아래와 같이 발생한다.
+전자회로의 중요한 세가지 수동소자는 축전기(capacitor), 저항(resistor), 인덕터 (inductor) 이다. 축전기는 금속 판 사이에 부도체를 채운 것으로 전하가 금속판이 각각 $+q$, $-q$ 의 전하가 대전되면 양쪽 터미널 $A,\,B$ 에 전위차 $V$ 가 아래와 같이 발생한다.
 
 $$
-V= \dfrac{\sigma d}{\epsilon} = \dfrac{d}{\epsilon A}Q.
+V= \dfrac{\sigma d}{\epsilon} = \dfrac{d}{\epsilon A}q.
 $$ {#eq-FLP_1_23_14}
 
-여기서 $d$ 는 평행판 사이의 거리, $A$ 는 평행판의 면적, $\epsilon$ 는 도체 판 사이에 삽입된 부도체의 **유전율 (permitivity)** 이다.$^1$[$^1$ 파인만 교재에는 $\epsilon_0$ 라고 되어 있는데 왜그런지 모르겠다. ]{.aside} 평형판 대신에 다른 모양일 수도 있지만 전위차가 대전된 전하량 $Q$ 에 비례하여 $V=Q/C$ 의 관계가 성립한다. 이 때 $C$ 를 **용량(capacitance)** 이라고 한다. 저항은 금속 선과 전기의 흐름으르 방해하는 물질로 이루어져 있으며 저항 양 끝단에 전위차 $V$ 를 가하면
+여기서 $d$ 는 평행판 사이의 거리, $A$ 는 평행판의 면적, $\epsilon$ 는 도체 판 사이에 삽입된 부도체의 **유전율 (permitivity)** 이다.$^3$[$^3$ 파인만 교재에는 $\epsilon_0$ 라고 되어 있는데 왜그런지 모르겠다. ]{.aside} 평형판 대신에 다른 모양일 수도 있지만 전위차가 대전된 전하량 $Q$ 에 비례하여 $V=q/C$ 의 관계가 성립한다. 이 때 $C$ 를 **용량(capacitance)** 이라고 한다. 저항은 금속 선과 전기의 흐름으르 방해하는 물질로 이루어져 있으며 저항 양 끝단에 전위차 $V$ 를 가하면
 
 $$
 V=RI = R \dfrac{dq}{dt}
@@ -817,13 +862,21 @@ $$
 \hat{q} = \dfrac{\hat{V}}{-L\omega^2 + 1/C + iR\omega} = \dfrac{\hat{V}}{L(\omega_0^2-\omega^2 + i\gamma \omega)}.
 $$ {#eq-FLP_1_23_18}
 
-여기서 $\omega_0^2 = 1/LC,\, \gamma = R/L$ 이다.
+여기서 $\omega_0^2 = 1/LC,\, \gamma = R/L$ 이다. 전기공학에서는 $q$ 보다는 전류 $I$ 가 더 중요한 값이다. $I(t) = \hat{I}e^{i\omega t}$ 라고 하자. $q=\hat{q}e^{i\omega t}$ 에 대해 $I=dq/dt = i\omega q$ 이며 $\hat{I}=i\omega \hat{q}$ 이로부터 **복소 임피던스 (complex impedence)** $\hat{Z}$ 를 아래와 같이 정의하자.
+
+$$
+\boxed{\hat{Z} := (i\omega L + R + 1/(i\omega C))}.
+$$ {#eq-FLP_1_23_19_before}
+
+그렇다면 옴의 법칙과 유사한 아래의 관계를 얻게 된다.
+
+$$
+\boxed{\hat{V}=\hat{Z}\hat{I}}
+$$ {#eq-FLP_1_23_19}
 
 </br>
 
 ### I.23-4 자연에서의 공명 {#sec-FLP_2_23_4}
-
-
 
 </br>
 
@@ -848,7 +901,7 @@ P = F\dfrac{dx}{dt} &= m \left[\left(\dfrac{dx}{dt}\right)\left(\dfrac{dx^2}{dt^
 \end{aligned}
 $$
 
-여기서 $T$ 는 질량 $m$ 의 운동에너지, $U$ 는 단진자의 포텐셜 에너지임을 안다. 이 $E=T+U$ 를 진동에 저장되는 에너지라고 볼 수 있다. 많은 주기가 지나면 이 저장되는 에너지의 시간에 대한 변화율은 $0$ 이 되며 결국은 감쇄 효과만 남는다. 한 주기에서의 물리량 $X$ 의 평균을 $\langle X\rangle$ 로 표기한다면 $\langle P\rangle$ 은 다음과 같다.
+여기서 $T$ 는 질량 $m$ 의 운동에너지, $U$ 는 단순조화진동자의 포텐셜 에너지이다. 이 $E=T+U$ 를 진동자에 저장되는 에너지라고 볼 수 있다. 많은 주기가 지나면 이 저장되는 에너지의 시간에 대한 변화율은 $0$ 이 되며 결국은 감쇄 효과만 남는다. 이 경우 한 주기에서의 일률의 평균 $\langle P\rangle$ 은 다음과 같다.
 
 $$
 \langle P \rangle = \left\langle \gamma m \left(\dfrac{dx}{dt}\right)^2\right \rangle.
@@ -872,11 +925,11 @@ $$
 \end{aligned}
 $$ {#eq-FLP_1_24_6}
 
-$\omega \approx \omega_0$ 이면 $x_0$ 가 매우 커지기 때문에 저장되는 에너지가 매우 커진다. 
+$\omega \approx \omega_0$ 이면 $x_0$ 가 매우 커지기 때문에(@eq-FLP_1_23_8) 저장되는 에너지가 매우 커진다. 
 
-#### **$Q$ 인자**
+#### **$Q$ 인자** {#sec-FLP_second_Q_factor}
 
-한 주기에서 강제 감쇄 조화진동자에 외부의 힘이 해주는 일과 저장되는 에너지 사이의 비율에 $2\pi$ 를 곱한 값을 $Q$ 값, 혹은 $Q$ 인자라고 한다. 
+한 주기에서 강제 감쇄 조화진동자에 외부의 힘이 해주는 일과 저장되는 에너지 사이의 비율에 $2\pi$ 를 곱한 값을 $Q$ 값, 혹은 $Q$ 인자$^4$라고 한다. [$^4$ @eq-FLP_defintion_of_first_Q_factor 와 같은 이름, 다른 정의의 $Q$ 인자이다.]{.aside}
 
 $$
 Q := 2\pi \dfrac{\langle P\rangle}{\langle T+U\rangle} = \dfrac{\omega^2 + \omega_0^2}{2\gamma \omega}.
@@ -886,7 +939,7 @@ $Q$ 값은 이 진동자가 얼마나 효율적인지에 대한 척도이다.
 
 </br>
 
-### II.24-2 감쇄 진동 {#sec-FLP_1_24_2}
+### 24-2 감쇄 진동 {#sec-FLP_1_24_2}
 
 *파인만의 내용전개와 다르게...*
 
@@ -898,7 +951,7 @@ $$
 \ddot{x}+\gamma \dot{x} + \omega_0^2 x = F(t)/m
 $$ {#eq-FLP_FDHO_1}
 
-을 생각하자. 이 때 $F(t) = 0$ 으로 놓으면 선형 제차 미분방정식이며 그 해를 **과도해 (transient solution)** 라고 한다.$^2$[$^2$ 과도(過度) 가 아니라 과도(過渡) 이다.]{.aside} 과도해를 $x_h(t)$ 라고 하고 @eq-FLP_FDHO_1 의 과도해와 독립적인 해를 $x_p(t)$ 라고 하자. 그렇다면 $x_h(t) + x_p(t)$ 역시 @eq-FLP_FDHO_1 의 해이다. 우선 과도해를 구해보자.
+을 생각하자. 이 때 $F(t) = 0$ 으로 놓으면 선형 제차 미분방정식이며 그 해를 **과도해 (transient solution)** 라고 한다.$^5$[$^5$ 과도(過度) 가 아니라 과도(過渡) 이다.]{.aside} 과도해를 $x_h(t)$ 라고 하고 @eq-FLP_FDHO_1 의 과도해와 독립적인 해를 $x_p(t)$ 라고 하자. 그렇다면 $x_h(t) + x_p(t)$ 역시 @eq-FLP_FDHO_1 의 해이다. 우선 과도해를 구해보자.
 
 #### **강제감쇄진동 미분방정식의 과도해**
 
@@ -922,7 +975,7 @@ $$
 \alpha_1 = \dfrac{-\gamma - \sqrt{\gamma^2-4\omega_0^2}}{2},\quad \alpha_2 = \dfrac{-\gamma + \sqrt{\gamma2-4\omega_0^2}}{2}
 $$ 
 
-는 실수이며 과도해는 
+는 실수이며 과도해는 실수 $\alpha_1,\,\alpha_2$ 에 대해
 
 $$
 x(t) = A_1 e^{-\alpha_1 t} + A_2 e^{-\alpha_2 t}
@@ -936,7 +989,7 @@ $$
 x(t) = e^{-\gamma t/2 }\text{Re}(A_1 e^{i\omega_\gamma t} + A_2 e^{-i \omega_\gamma t}) = A e^{-\gamma t/2} \cos (\omega_\gamma t + \theta_0)
 $$ {#eq-FLP_FDHO_3}
 
-를 얻는다.[$\operatorname{Re}(a)$ 는 복소수 $a$ 에 대해 실수부만을 취하는 함수이다.]{.aside} 이런 경우를 **underdamped** 라고 하며, overdamped 와는 달리 진동이 존재한다.
+를 얻는다. 이런 경우를 **underdamped** 라고 하며, overdamped 와는 달리 진동이 존재한다.
 
 **3. Critically dampled** : $\gamma ^2=4\omega_0^2$ 인 경우를 **critically damped** 라고 한다. 이 경우에는 $te^{-\gamma t/2}$ 도 해가 된다. $x(t) = te^{-\gamma t/2 }$ 에 대해
 
@@ -961,4 +1014,75 @@ $$
 $$ 
 
 이다. 즉 충분히 많은 시간이 지나면 과도해는 무시 할 수 있다. 
+
+</br>
+
+### 24-3 전기적 감쇄 {#sec-FLP_1_24_3}
+
+
+![파인만 물리학 강의 I. Fig. 24-2. 전기적 감쇄를 표현하기 위한 전기 회로](figures/fig_1_24/fig_1_24_2.png){#fig-FLP_1_24_2 width=360}
+
+
+</br>
+
+## 25. 선형 시스템 {#sec-FLP_25}
+
+### 25-1 선형 미분 방정식 {#sec-FLP_1_25_1}
+
+여기에서는 진동 시스템의 일반적인 측면에 대해 다룬다. 지금까지는 아래와 같은 미분방정식을 다루었다. 
+
+$$
+m \dfrac{d^2x}{dt^2}+ \gamma m \dfrac{dx}{dt}+m\omega_0^2 x = F(t).
+$$ {#eq-FLP_1_25_1}
+
+이제 @eq-FLP_1_25_1 과 같은 시스템을 다루기 위해 미분연산자 $\mathcal{L}$ 을 도입하기로 하자. 
+$$
+\mathcal{L}(x) := m \dfrac{d^2x}{dt^2}+ \gamma m \dfrac{dx}{dt}+m\omega_0^2 x.
+$${#eq-FLP_1_25_2}
+
+이 때 $\mathcal{L}$ 이 변수 $x,\,y$, 상수 $a$ 에 대해 다음과 같은 성질을 만족함은 쉽게 보일 수 있다.
+
+$$
+\begin{aligned}
+\mathcal{L}(x+y) &= \mathcal{L}(x) + \mathcal{L}(y), \\[0.3em]
+\mathcal{L}(ax) &= a\mathcal{L}(x).
+\end{aligned}
+$$ {#eq-FLP_1_25_3}
+
+
+이제 $F(t)=0$ 인 제차 선형 미분방정식 형태에 대해 알아보자. 즉
+
+$$
+\mathcal{L}(x)=0
+$$ {#eq-FLP_1_25_5}
+
+
+
+의 미분방정식을 생각하자. 위의 방정식은 선형 미분방정식으로 $x,\,y$ 가 미분방정식의 해일 때 임의의 상수 $a,\,b$ 에 대해 $ax+by$ 역시 미분방정식의 해이다. 우리가 어떤 선형 미분방정식의 해의 집합을 구했을 때 선형 독립인 해의 개수가 중요한데 이 선형 독립인 해의 개수를 선형 시스템의 **자유도 (degree of freedom)** 이라고 한다. 우리가 다루는 시스템은 2차 선형 미분방정식이며 자유도는 2 임이 잘 알려져 있다.
+
+이제 
+
+$$
+\mathcal{L}(x) = F(t)
+$$ {#eq-FLP_1_25_6}
+
+과 같이 외부해서 가해지는 힘이 존재하는 경우를 생각하자. 우리가 위 방정식의 어떤 해 $x_p(t)$ 를 얻었다고 하자. 그리고 @eq-FLP_1_25_5 의 해, 즉 과도해 $x_f(t)$ 를 알고 있다고 하자. 그렇다면
+
+$$
+\mathcal{L}(x_p(t) + x_f(t))= F(t)
+$$
+
+이므로 $x_f(t) + x_p(t)$ 역시 @eq-FLP_1_25_6 의 해이다.
+
+</br>
+
+### 25-2해의 중첩 {#sec-FLP_1_25_2}
+
+#### **중첩**
+
+$\mathcal{L}(x_a)=F_a$ 이고 $\mathcal{L}(x_b)=F_b$ 일 때 $\mathcal{L}(x_a+x_b) = F_a+F_b$ 이다. 이를 해의 **중첩 (superposition)** 이라고 한다. 이것은 매우 중요한데 만약 $\mathcal{L}(x)=F(t)$ 에서 $F(t)$ 자체는 복잡하지만 $F=\sum_i F_i$ 이며 $\mathcal{L}(x_i)=F_i$ 는 비교적 쉽게 구할 수 있다면 $x= \sum_i x_i$ 가 $\mathcal{L}(x)=F(t)$ 의 해가 되기 때문이다.
+
+
+
+
 

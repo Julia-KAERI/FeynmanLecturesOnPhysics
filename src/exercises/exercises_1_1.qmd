@@ -879,3 +879,16 @@ $$
 $$
 
 :::
+
+</br>
+
+## 17. 조화진동자, 선형 미분 방정식
+
+
+*파인만 물리학 강의 1 권 21장에 해당한다.*
+
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**17.1** 
+
+</div>
