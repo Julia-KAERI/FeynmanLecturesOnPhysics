@@ -273,6 +273,17 @@
     ]
   },
   {
+    "objectID": "src/vol1/vol1_3.html#sec-FLP_25",
+    "href": "src/vol1/vol1_3.html#sec-FLP_25",
+    "title": "3  \\(I\\)-3 : 고전역학-회전과 진동",
+    "section": "25. 선형 시스템",
+    "text": "25. 선형 시스템\n\n25-1 선형 미분 방정식\n여기에서는 진동 시스템의 일반적인 측면에 대해 다룬다. 지금까지는 아래와 같은 미분방정식을 다루었다.\n\\[\nm \\dfrac{d^2x}{dt^2}+ \\gamma m \\dfrac{dx}{dt}+m\\omega_0^2 x = F(t).\n\\tag{3.71}\\]\n이제 식 3.71 과 같은 시스템을 다루기 위해 미분연산자 \\(\\mathcal{L}\\) 을 도입하기로 하자. \\[\n\\mathcal{L}(x) := m \\dfrac{d^2x}{dt^2}+ \\gamma m \\dfrac{dx}{dt}+m\\omega_0^2 x.\n\\tag{3.72}\\]\n이 때 \\(\\mathcal{L}\\) 이 변수 \\(x,\\,y\\), 상수 \\(a\\) 에 대해 다음과 같은 성질을 만족함은 쉽게 보일 수 있다.\n\\[\n\\begin{aligned}\n\\mathcal{L}(x+y) &= \\mathcal{L}(x) + \\mathcal{L}(y), \\\\[0.3em]\n\\mathcal{L}(ax) &= a\\mathcal{L}(x).\n\\end{aligned}\n\\tag{3.73}\\]\n이제 \\(F(t)=0\\) 인 제차 선형 미분방정식 형태에 대해 알아보자. 즉\n\\[\n\\mathcal{L}(x)=0\n\\tag{3.74}\\]\n의 미분방정식을 생각하자. 위의 방정식은 선형 미분방정식으로 \\(x,\\,y\\) 가 미분방정식의 해일 때 임의의 상수 \\(a,\\,b\\) 에 대해 \\(ax+by\\) 역시 미분방정식의 해이다. 우리가 어떤 선형 미분방정식의 해의 집합을 구했을 때 선형 독립인 해의 개수가 중요한데 이 선형 독립인 해의 개수를 선형 시스템의 자유도 (degree of freedom) 이라고 한다. 우리가 다루는 시스템은 2차 선형 미분방정식이며 자유도는 2 임이 잘 알려져 있다.\n이제\n\\[\n\\mathcal{L}(x) = F(t)\n\\tag{3.75}\\]\n과 같이 외부해서 가해지는 힘이 존재하는 경우를 생각하자. 우리가 위 방정식의 어떤 해 \\(x_p(t)\\) 를 얻었다고 하자. 그리고 식 3.74 의 해, 즉 과도해 \\(x_f(t)\\) 를 알고 있다고 하자. 그렇다면\n\\[\n\\mathcal{L}(x_p(t) + x_f(t))= F(t)\n\\]\n이므로 \\(x_f(t) + x_p(t)\\) 역시 식 3.75 의 해이다.\n\n\n\n25-2해의 중첩\n\n중첩\n\\(\\mathcal{L}(x_a)=F_a\\) 이고 \\(\\mathcal{L}(x_b)=F_b\\) 일 때 \\(\\mathcal{L}(x_a+x_b) = F_a+F_b\\) 이다. 이를 해의 중첩 (superposition) 이라고 한다. 이것은 매우 중요한데 만약 \\(\\mathcal{L}(x)=F(t)\\) 에서 \\(F(t)\\) 자체는 복잡하지만 \\(F=\\sum_i F_i\\) 이며 \\(\\mathcal{L}(x_i)=F_i\\) 는 비교적 쉽게 구할 수 있다면 \\(x= \\sum_i x_i\\) 가 \\(\\mathcal{L}(x)=F(t)\\) 의 해가 되기 때문이다.",
+    "crumbs": [
+      "파인만의 물리학 강의",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>$I$-3 : 고전역학-회전과 진동</span>"
+    ]
+  },
+  {
     "objectID": "src/vol1/vol1_4.html",
     "href": "src/vol1/vol1_4.html",
     "title": "4  \\(I\\)-4: 광학과 전자기 복사",
@@ -613,16 +624,6 @@
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Feynman, Richard P., Robert B. Leighton, Matthew Sands, Michael A.\nGottlieb, and Rudolf Pfeiffer. 2014. Exercises for the\nFeynman Lectures on Physics.\nBasic Books.",
-    "crumbs": [
-      "References"
-    ]
-  },
-  {
     "objectID": "src/exercises/exercises_1_1.html#조화진동자-선형-미분-방정식",
     "href": "src/exercises/exercises_1_1.html#조화진동자-선형-미분-방정식",
     "title": "8  연습문제 1~",
@@ -634,14 +635,13 @@
     ]
   },
   {
-    "objectID": "src/vol1/vol1_3.html#sec-FLP_25",
-    "href": "src/vol1/vol1_3.html#sec-FLP_25",
-    "title": "3  \\(I\\)-3 : 고전역학-회전과 진동",
-    "section": "25. 선형 시스템",
-    "text": "25. 선형 시스템\n\n25-1 선형 미분 방정식\n여기에서는 진동 시스템의 일반적인 측면에 대해 다룬다. 지금까지는 아래와 같은 미분방정식을 다루었다.\n\\[\nm \\dfrac{d^2x}{dt^2}+ \\gamma m \\dfrac{dx}{dt}+m\\omega_0^2 x = F(t).\n\\tag{3.71}\\]\n이제 식 3.71 과 같은 시스템을 다루기 위해 미분연산자 \\(\\mathcal{L}\\) 을 도입하기로 하자. \\[\n\\mathcal{L}(x) := m \\dfrac{d^2x}{dt^2}+ \\gamma m \\dfrac{dx}{dt}+m\\omega_0^2 x.\n\\tag{3.72}\\]\n이 때 \\(\\mathcal{L}\\) 이 변수 \\(x,\\,y\\), 상수 \\(a\\) 에 대해 다음과 같은 성질을 만족함은 쉽게 보일 수 있다.\n\\[\n\\begin{aligned}\n\\mathcal{L}(x+y) &= \\mathcal{L}(x) + \\mathcal{L}(y), \\\\[0.3em]\n\\mathcal{L}(ax) &= a\\mathcal{L}(x).\n\\end{aligned}\n\\tag{3.73}\\]\n이제 \\(F(t)=0\\) 인 제차 선형 미분방정식 형태에 대해 알아보자. 즉\n\\[\n\\mathcal{L}(x)=0\n\\tag{3.74}\\]\n의 미분방정식을 생각하자. 위의 방정식은 선형 미분방정식으로 \\(x,\\,y\\) 가 미분방정식의 해일 때 임의의 상수 \\(a,\\,b\\) 에 대해 \\(ax+by\\) 역시 미분방정식의 해이다. 우리가 어떤 선형 미분방정식의 해의 집합을 구했을 때 선형 독립인 해의 개수가 중요한데 이 선형 독립인 해의 개수를 선형 시스템의 자유도 (degree of freedom) 이라고 한다. 우리가 다루는 시스템은 2차 선형 미분방정식이며 자유도는 2 임이 잘 알려져 있다.\n이제\n\\[\n\\mathcal{L}(x) = F(t)\n\\tag{3.75}\\]\n과 같이 외부해서 가해지는 힘이 존재하는 경우를 생각하자. 우리가 위 방정식의 어떤 해 \\(x_p(t)\\) 를 얻었다고 하자. 그리고 식 3.74 의 해, 즉 과도해 \\(x_f(t)\\) 를 알고 있다고 하자. 그렇다면\n\\[\n\\mathcal{L}(x_p(t) + x_f(t))= F(t)\n\\]\n이므로 \\(x_f(t) + x_p(t)\\) 역시 식 3.75 의 해이다.\n\n\n\n25-2해의 중첩\n\n중첩\n\\(\\mathcal{L}(x_a)=F_a\\) 이고 \\(\\mathcal{L}(x_b)=F_b\\) 일 때 \\(\\mathcal{L}(x_a+x_b) = F_a+F_b\\) 이다. 이를 해의 중첩 (superposition) 이라고 한다. 이것은 매우 중요한데 만약 \\(\\mathcal{L}(x)=F(t)\\) 에서 \\(F(t)\\) 자체는 복잡하지만 \\(F=\\sum_i F_i\\) 이며 \\(\\mathcal{L}(x_i)=F_i\\) 는 비교적 쉽게 구할 수 있다면 \\(x= \\sum_i x_i\\) 가 \\(\\mathcal{L}(x)=F(t)\\) 의 해가 되기 때문이다.",
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Feynman, Richard P., Robert B. Leighton, Matthew Sands, Michael A.\nGottlieb, and Rudolf Pfeiffer. 2014. Exercises for the\nFeynman Lectures on Physics.\nBasic Books.",
     "crumbs": [
-      "파인만의 물리학 강의",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>$I$-3 : 고전역학-회전과 진동</span>"
+      "References"
     ]
   }
 ]
