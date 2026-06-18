@@ -323,6 +323,9 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="ii.1-전기와-자기">II.1 전기와 자기</h2>
 <section id="sec-FLP_2_1_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_1_1">II.1-1 전기력</h3>
+<blockquote class="blockquote">
+<p>We may ask, finally, what holds a negatively charged electron together (since it has no nuclear forces). If an electron is all made of one kind of substance, each part should repel the other parts. Why, then, doesn’t it fly apart? But does the electron have “parts”? Perhaps we should say that the electron is just a point and that electrical forces only act between <em>different</em> point charges, so that the electron does not act upon itself. Perhaps. All we can say is that the question of what holds the electron together has produced many difficulties in the attempts to form a complete theory of electromagnetism. The question has never been answered. We will entertain ourselves by discussing this subject some more in later chapters.</p>
+</blockquote>
 <section id="로런츠-힘과-운동방정식" class="level4">
 <h4 class="anchored" data-anchor-id="로런츠-힘과-운동방정식"><strong>로런츠 힘과 운동방정식</strong></h4>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -337,9 +340,9 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>속도 <span class="math inline">\(\boldsymbol{v}\)</span> 로 움직이는 전하 <span class="math inline">\(q\)</span> 가 받는 힘은 전하의 위치에서의 전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 와 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 에 대해</p>
 <p><span id="eq-FLP_2_1_1"><span class="math display">\[
-\boldsymbol{F}=q(\boldsymbol{E}+\boldsymbol{v}\times \boldsymbol{B})
+\boxed{\boldsymbol{F}=q(\boldsymbol{E}+\boldsymbol{v}\times \boldsymbol{B})}
 \tag{7.1}\]</span></span></p>
-<p>이다.</p>
+<p>이며 이 힘을 <strong>로런츠 힘 (Lorentz force)</strong> 라고 한다.</p>
 </div>
 </div>
 <p>이로부터 로런츠 힘에 의한 운동방정식은 다음과 같다.</p>
@@ -360,7 +363,11 @@ window.Quarto = {
 </section>
 <section id="sec-FLP_2_1_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_1_2">II.1-2 전기장과 자기장</h3>
-<p>전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 와 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 는 시간과 공간에 대한 함수로 주어지며 맥스웰 방정식이라 불리는 관계를 항상 만족한다.</p>
+<p>전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 와 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 는 시간과 공간에 대한 함수로 주어지며 맥스웰 방정식이라 불리는 관계를 항상 만족한다. 즉</p>
+<p><span class="math display">\[
+\boldsymbol{E}=\boldsymbol{E}(\boldsymbol{x},\,t),\qquad \boldsymbol{B}=\boldsymbol{B}(\boldsymbol{x},\,t)
+\]</span></p>
+<p>이다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_1_3" class="level3">
@@ -396,7 +403,8 @@ window.Quarto = {
 \tag{7.7}\]</span></span></p>
 </div>
 </div>
-<p><a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 에서 오른쪽 식의 첫번째 항은 맥스웰이 발견한 것으로 매우 중요하다.</p>
+<p><a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 의 등호 오른쪽 첫번째 항은 소위 변위전류에 대한 것으로 맥스웰이 이론적으로 발견하였으며 매우 중요하다.</p>
+<p><br></p>
 </section>
 <section id="변위-전류" class="level4">
 <h4 class="anchored" data-anchor-id="변위-전류"><strong>변위 전류</strong></h4>
@@ -426,7 +434,7 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 </figcaption>
 </figure>
 </div>
-<p>위의 그림과 같은 축전기에 전류 <span class="math inline">\(I\)</span> 가 흐른다고 해 보자. 도선 주위에 오른쪽과 같은 경로 <span class="math inline">\(C\)</span> 를 잡고 경로 <span class="math inline">\(C\)</span> 에 의해 정해지는 표면 <span class="math inline">\(S_1\)</span> 을 생각하자. 그렇다면 <a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 의 우변이 결정된다. 이제 <a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 에서 변위전류항이 없다고 하자. 그리고 역시 <span class="math inline">\(C\)</span> 를 경계로 하는 표면 <span class="math inline">\(S_2\)</span> 를 생각하자. 분명히 <span class="math inline">\(S_2\)</span> 표면을 지나는 전류가 없으며 따라서 <a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 의 오른쪽은 <span class="math inline">\(0\)</span> 이 된다. 여기서 변위전류를 도입해야 할 필요가 존재한다. 전하가 대전된 도선 판 사이에는 전기장이 생성되며 이 전기장이 자기장에 기여한다. 이 전기장 기여가 변위 전류이다.</p>
+<p>위의 그림과 같은 축전기에 전류 <span class="math inline">\(I\)</span> 가 흐른다고 해 보자. 도선 주위에 왼쪽 그림에서와 같이 경로 <span class="math inline">\(C\)</span> 를 잡고 경로 <span class="math inline">\(C\)</span> 에 의해 정해지는 표면 <span class="math inline">\(S_1\)</span> 을 생각하자. 그렇다면 <a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 의 우변이 결정된다. 이제 <a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 에서 변위전류항이 없다고 하자. 그리고 역시 <span class="math inline">\(C\)</span> 를 경계로 하는 표면 <span class="math inline">\(S_2\)</span> 를 생각하자. 분명히 <span class="math inline">\(S_2\)</span> 표면을 지나는 전류가 없으며 따라서 <a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 의 오른쪽은 <span class="math inline">\(0\)</span> 이 된다. 여기서 변위전류를 도입해야 할 필요가 존재한다. 전하가 대전된 도선 판 사이에는 전기장이 생성되며 이 전기장이 자기장에 기여한다. 이 전기장 기여가 변위 전류이다.</p>
 <p>변위전류는 실제 전류가 아니라 맥스웰 방정식에서 전류와 같은 역할을 하는 전기장의 시간에 대한 변화라는 것을 다시 한번 강조한다.</p>
 <p><br></p>
 </section>
