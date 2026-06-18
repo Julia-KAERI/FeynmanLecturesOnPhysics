@@ -290,8 +290,8 @@ window.Quarto = {
   </ul></li>
   <li><a href="#sec-FLP_1_32" id="toc-sec-FLP_1_32" class="nav-link" data-scroll-target="#sec-FLP_1_32">I.32 복사 감쇄와 광산란</a>
   <ul class="collapse">
-  <li><a href="#sec-FLP_1_32_3" id="toc-sec-FLP_1_32_3" class="nav-link" data-scroll-target="#sec-FLP_1_32_3">I.32_3 복사 감쇄</a></li>
-  <li><a href="#sec-FLP_1_32_5" id="toc-sec-FLP_1_32_5" class="nav-link" data-scroll-target="#sec-FLP_1_32_5">I.32_5 광산란</a></li>
+  <li><a href="#sec-FLP_1_32_3" id="toc-sec-FLP_1_32_3" class="nav-link" data-scroll-target="#sec-FLP_1_32_3">I.32-3 복사 감쇄</a></li>
+  <li><a href="#sec-FLP_1_32_5" id="toc-sec-FLP_1_32_5" class="nav-link" data-scroll-target="#sec-FLP_1_32_5">I.32-5 광산란</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -752,9 +752,9 @@ xx' = f^2
 <ul>
 <li><p><strong>구형 수차 (spherical aberration)</strong> : 렌즈 표면을 구면으로 가공했기 때문에 나타나는 수차. 축에서 멀어질수록, 광선이 초점에서 벗어나기 시작하고 렌즈 상단 가장자리 근처에 닿는 광선은 초점을 상당히 크게 벗어나고 이로 인해 점 이미지 대신 흐리고 번진 이미지를 얻는다. 이를 구형수차라고 하며 구형 수차는 특정 물체 거리와 관계없이 렌즈 표면의 형태를 재구성하거나, 개별 렌즈의 수차가 서로 상쇄하도록 여러 렌즈를 배치함으로써 교정 할 수 있다.</p></li>
 <li><p><strong>색수차 (chromatic aberration)</strong> : 서로 다른 색상의 빛은 유리 내에서 속도가 다르며(굴절률이 역시), 따라서 주어진 렌즈의 초점 거리가 색상에 따라 달라진다. 이 경우 흰 반점을 촬영하면 이미지에 색상이 표시됩되며 빨간 반점을 초점 맞추면 파란색이 초점이 맞지 않게 되며 반대 역시 발생한다. 이 속성을 <strong>색수차 (chromatic aberration)</strong> 라고 한다.</p></li>
-<li><p><strong>코마 수차 (coma aberratiobn)</strong> : 축과 빛의 경로가 나란하지 않을 때 생기는 수차를 코마<span class="math inline">\(^{2}\)</span> 수차라고 한다. 이미지는 보통 꽤 거칠고, 초점이 잘 맞지 않을 수도 있다.</p></li>
+<li><p><strong>코마 수차 (coma aberratiobn)</strong> : 축과 빛의 경로가 나란하지 않을 때 생기는 수차를 코마<span class="math inline">\(^{1}\)</span> 수차라고 한다. 이미지는 보통 꽤 거칠고, 초점이 잘 맞지 않을 수도 있다.</p></li>
 </ul>
-<div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> 혜성의 꼬리를 coma라고 한다.</span></div></section>
+<div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 혜성의 꼬리를 coma라고 한다.</span></div></section>
 <section id="수차의-보정" class="level4">
 <h4 class="anchored" data-anchor-id="수차의-보정"><strong>수차의 보정</strong></h4>
 <p>최소 시간의 관점에서 보면 모든 광선이 가능한 한 거의 동일한 시간을 소요하도록 배치해야 한다고 생각하지만 이것이 사실이 아니다. 기하학적 광학 이론이 통하지 않는 영역에 접근해야 하기 때문이다. 아래는 파인만 강의의 원문이다.</p>
@@ -972,7 +972,7 @@ k = \left|\dfrac{d\phi}{dr}\right| = \dfrac{\omega}{c}
 </section>
 <section id="sec-FLP_1_29_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_29_4">I.29.4 두 쌍극자 복사자</h3>
-<p>두 진동자의 중심과 검출기가 평면상에 있으며 이 평면에 대해 진동자는 이 평면에 대해 수직으로 진동한다고 하자.</p>
+<p>두 진동자의 중심과 검출기가 평면상에 있으며 이 평면에 대해 진동자는 이 평면에 대해 수직으로 진동한다고 하자. 그리고 두 진동자는 진동의 파장의 반(<span class="math inline">\(\lambda/2\)</span>) 만큼 떨어져 있다고 하자. 아래 그림은 이 두 진동자를 위에서 본 그림이다.</p>
 <div id="fig-FLP_1_29_5" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_29_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1006,7 +1006,7 @@ k = \left|\dfrac{d\phi}{dr}\right| = \dfrac{\omega}{c}
 </figcaption>
 </figure>
 </div>
-<p>아래 그림은 <span class="math inline">\(2\lambda\)</span> 만큼씩 떨여지 있는 6개의 쌍극 진동자에 의한 intensity 이다.</p>
+<p>아래 그림은 <span class="math inline">\(10\lambda\)</span> 거리에 등간격으로 배치된 6개의 쌍극 진동자에 의한 intensity 이다.</p>
 <div id="fig-FLP_1_29_8" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_29_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1031,9 +1031,9 @@ k = \left|\dfrac{d\phi}{dr}\right| = \dfrac{\omega}{c}
 <section id="sec-FLP_1_30_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_30_1">I.30-1 <span class="math inline">\(n\)</span> 개의 동일한 진동자에 의한 최종 진폭</h3>
 <ul>
-<li>간섭(interference)과 회절(diffreraction) 의 구분 : 명확한 구분은 없지만 source 가 적으면 간섭, source 가 많으면 회절 이라고 하자.</li>
+<li>간섭(interference)과 회절(diffreraction) 의 구분 : 명확한 구분은 없지만 source 의 개수가 적으면 간섭, 많으면 회절 이라고 하자.</li>
 </ul>
-<p>같은 간격으로 직선상에 위치한 동일한 <span class="math inline">\(n\)</span> 개의 진동자를 생각하자. 각각의 진동자의 진폭은 같지만 위상은 다르다. 위상 차이는 실제적인 두 진동자의 위상 차이일 수도 있고 각 진동자로부터의 거리차이로 인한 위상차 일 수 있다. <span class="math inline">\(0\)</span> 번째 진동자부터 시작하여 <span class="math inline">\(j\)</span> 번째 진동자 위상이 <span class="math inline">\(j\phi\)</span> 일 때 이 진동자에 의한 진폭을 합친 최종 진폭(resultant amplitude) <span class="math inline">\(R\)</span> 은 아래와 같다.</p>
+<p>같은 간격으로 직선상에 위치한 동일한 <span class="math inline">\(n\)</span> 개의 진동자를 생각하자. 각각의 진동자의 진폭은 같지만 위상은 다르다. 위상 차이는 실제적인 두 진동자의 위상 차이일 수도 있고 각 진동자로부터의 거리차이로 인한 위상차 일 수 있다. <span class="math inline">\(0\)</span> 번째 진동자를 기준으로 <span class="math inline">\(j\)</span> 번째 진동자 위상이 <span class="math inline">\(j\phi\)</span> 일 때 이 진동자에 의한 진폭을 합친 최종 진폭(resultant amplitude) <span class="math inline">\(R\)</span> 은 아래와 같다.</p>
 <p><span id="eq-FLP_1_30_1"><span class="math display">\[
 R = A\left[\cos (\omega t) + \cos (\omega t+ \phi) + \cdots + \cos (\omega t + (n-1) \phi)\right].
 \tag{4.28}\]</span></span></p>
@@ -1086,7 +1086,7 @@ I = I_0 \dfrac{\sin^2 (n\phi/2)}{\sin^2 (\phi/2)}
 </figcaption>
 </figure>
 </div>
-<p>측정하는 위치에서는 진동자 자체의 위상과 시간 지연에 의한 위상이 합쳐진 위상으로 느끼므로 측정하는 위치에서의 인접한 진동자의 위상차 <span class="math inline">\(\phi\)</span> 는 아래와 같다. <span id="eq-FLP_1_30_4"><span class="math display">\[
+<p>측정하는 위치에서는 진동자 자체의 위상과 시간 지연에 의한 위상이 합쳐진 위상으로 느끼므로 측정하는 위치에서의 인접한 두 진동자의 위상차 <span class="math inline">\(\phi\)</span> 는 아래와 같다. <span id="eq-FLP_1_30_4"><span class="math display">\[
 \phi = \alpha + 2\pi d \sin \theta/\lambda = \alpha + kd\sin \theta.
 \tag{4.31}\]</span></span></p>
 <p>우선 <span class="math inline">\(\alpha=0\)</span> 인 경우는 <a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>4.30</span></a> 의 경우와 같다. 이 때 첫번째 극소점은 <span class="math inline">\(\phi = 2\pi/n\)</span> 일 때이며 이는 <span id="eq-FLP_1_30_5"><span class="math display">\[
@@ -1097,19 +1097,17 @@ I = I_0 \dfrac{\sin^2 (n\phi/2)}{\sin^2 (\phi/2)}
 <p><span id="eq-FLP_1_30_6"><span class="math display">\[
 d\sin\theta = m\lambda
 \tag{4.33}\]</span></span></p>
-<p>을 얻는다. <a href="#fig-FLP_tfig2" class="quarto-xref">그림&nbsp;<span>4.29</span></a> 에서 <span class="math inline">\(2\pi\)</span> 주기로 나타나는 큰 픽을을 의미하며 <a href="#eq-FLP_1_30_5" class="quarto-xref">식&nbsp;<span>4.32</span></a> 와 비슷하지만 완전히 다른 의미임을 명심하라. 여기서 <span class="math inline">\(m\)</span> 의 빔의 <strong>차수 (order)</strong> 라고 하며 <span class="math inline">\(m\)</span> 값에 따라 <span class="math inline">\(0\)</span>-차 빔(zero-order beam), $<span class="math inline">\(1\)</span>-차 빔(first-order beam), <span class="math inline">\(2\)</span>-차 빔(second-order beam) … 이라고 한다.</p>
-<p><a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>4.33</span></a> 에서 주의해야 할 것은 <span class="math inline">\(d\le \lambda\)</span> 이면 가능한 해는 <span class="math inline">\(m=0\)</span> 일 때 뿐이라는 것이다. 따라서 강한 신호를 보내려면 간격 <span class="math inline">\(d\)</span> 를 파장보다 크게 잡아야 한다.</p>
+<p>을 얻는다. <a href="#fig-FLP_tfig2" class="quarto-xref">그림&nbsp;<span>4.29</span></a> 에서 <span class="math inline">\(2\pi\)</span> 주기로 나타나는 큰 픽을을 의미하며 <a href="#eq-FLP_1_30_5" class="quarto-xref">식&nbsp;<span>4.32</span></a> 와 비슷하지만 완전히 다른 의미임을 명심하라. 여기서 <span class="math inline">\(m\)</span> 의 빔의 <strong>차수 (order)</strong> 라고 하며 <span class="math inline">\(m\)</span> 값에 따라 <span class="math inline">\(0\)</span>-차 빔(zero-order beam), <span class="math inline">\(1\)</span>-차 빔(first-order beam), <span class="math inline">\(2\)</span>-차 빔(second-order beam) … 이라고 한다.</p>
+<p><a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>4.33</span></a> 에서 주의해야 할 것은 <span class="math inline">\(d\le \lambda\)</span> 이면 가능한 해는 <span class="math inline">\(m=0\)</span> 일 때 뿐이라는 것이다. <strong>따라서 강한 신호를 보내려면 간격 <span class="math inline">\(d\)</span> 를 파장보다 크게 잡아야 한다</strong>.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_3_20" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_3_20">I.30-2 회절 격자</h3>
-<ul>
-<li>(파장이 긴 라디오파를 다루는 경우) 안테나와 전선을 다룰 때 모든 작은 진동자, 즉 안테나의 위상을 동일하게 맞출 수 있다. 그렇다면 빛의 경우는? 광학 영역(optical frequency range)<span class="math inline">\(^3\)</span>의 빛의 파장은 매우 짧기 때문에 (파인만 당시에는) 불가능하다. 그러나 다른 방법으로 같은 일을 할 수 있다. </li>
-</ul>
-<div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^3\)</span> 적외선 부터 가시광선을 포함하여 자외선 까지를 광학 영역이라고 한다.</span></div><section id="산란" class="level4">
+<div class="page-columns page-full"><p><strong>[P1]</strong> (파장이 긴 라디오파를 다루는 경우) 안테나와 전선을 다룰 때 모든 작은 진동자, 즉 안테나의 위상을 동일하게 맞출 수 있다. 그렇다면 빛의 경우는? 광학 영역(optical frequency range)<span class="math inline">\(^2\)</span>의 빛의 파장은 매우 짧기 때문에 (파인만 당시에는) 불가능하다. 그러나 다른 방법으로 같은 일을 할 수 있다. </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> 적외선 부터 가시광선을 포함하여 자외선 까지를 광학 영역이라고 한다.</span></div></div>
+<section id="산란" class="level4">
 <h4 class="anchored" data-anchor-id="산란"><strong>산란</strong></h4>
 <ul>
-<li>서로 <span class="math inline">\(d\)</span> 만큼 떨어진 평행한 전선과 아주 멀리 떨어진(실용적으로 무한대만큼 떨여졌다고 볼 수 있는) 라디오파 발생장치를 생각하자. 각각의 전선에 도달할 때 같은 위상을 가진다고 간주 할 수 있다. 전달된 전자기장에 의해 도선의 전하는 진동하며 따라서 새로운 전자기파 발생장치로 볼 수 있다. 이 현상을 <strong>산란 (scattering)</strong> 이라고 한다.</li>
+<li>서로 <span class="math inline">\(d\)</span> 만큼 떨어진 평행한 전선들과 여기서 아주 멀리 떨어진(실용적으로 무한대만큼 떨여졌다고 볼 수 있는) 전기장 발생장치를 생각하자. 각각의 전선에 도달할 때 같은 위상을 가진다하자. 전달된 전자기장에 의해 도선의 전하는 진동하며 따라서 새로운 전자기파 발생장치로 볼 수 있다. 이 현상을 <strong>산란 (scattering)</strong> 이라고 한다. 이렇게 우리는 <strong>[P1]</strong> 에서 하려고 했던 것을 다른 방식으로 구현할 수 있다.</li>
 <li>라디오 발상장치에서의 라디오파가 전선들이 이루는 평면에 수직하게 입사된다면, 그리고 전선의 간격이 파장보다 크다면 이 평면에 수직한 방향과 <a href="#eq-FLP_1_30_6" class="quarto-xref">식&nbsp;<span>4.33</span></a> 에 의해 정해지는 방향으로 강력한 전자기파가 발생한다.</li>
 </ul>
 </section>
@@ -1144,7 +1142,7 @@ d\sin\theta = m\lambda
 <p><strong>1.</strong> <span class="math inline">\(d&lt;\lambda/2\)</span> 인 경우 <span class="math inline">\(\phi &lt; \pi (\sin \theta_{\text{out}}- \sin \theta_\text{in}) &lt; 2\pi\)</span> 이다. 즉 <span class="math inline">\(m=0\)</span> 이다. 여기에 가능한 두가지 경우를 보자.</p>
 <ul>
 <li><p><span class="math inline">\(\theta_\text{out} = \pi - \theta_\text{in}\)</span> 인 경우. 여기서 빛은 방향을 바꾸지 않는다. 그러나 산란된 빛은 입사된 빛이 아니라 산란 과정에서 발생한 빛이며 단지 입사각과 산란각이 같을 뿐이다.</p></li>
-<li><p><span class="math inline">\(\theta_\text{out} =\theta_\text{in}=\pi\)</span> 인 경우. 즉 <strong>반사(reflection)</strong>. 반사 과정에서 입사된 빛이 반사체의 원자들을 여기(excite) 시키고, 이 반사체의 원자들이 입사각과 같은 방향으로 새로운 파동을 발생시킨다.</p></li>
+<li><p><span class="math inline">\(\theta_\text{out} =\theta_\text{in}\)</span> 인 경우. 즉 <strong>반사(reflection)</strong>. 반사 과정에서 입사된 빛이 반사체의 원자들을 여기(excite) 시키고, 이 반사체의 원자들이 입사각과 같은 방향으로 새로운 파동을 발생시킨다.</p></li>
 </ul>
 <p><strong>2.</strong> <span class="math inline">\(d\)</span> 가 매우 작은 상황을 생각하자. <a href="#eq-FLP_1_30_7" class="quarto-xref">식&nbsp;<span>4.34</span></a> 에서 <span class="math inline">\(\phi\)</span> 역시 매우 작아진다. 안테나에서 간격 <span class="math inline">\(d\)</span> 가 매우 작은 대신에 더 많은 진동자를 넣어 총 위상차, 즉 처음과 마지막의 위상차가 동일한 경우를 생각해보자. <a href="#eq-FLP_1_30_3" class="quarto-xref">식&nbsp;<span>4.30</span></a> 에서 <span class="math inline">\(\Phi = n\phi\)</span> 라고 놓자. <span class="math inline">\(\phi \approx 0\)</span> 이며 최대 intensity <span class="math inline">\(I_M = n^2I_0\)</span> 를 생각하면 아래 식을 얻는다. <span id="eq-FLP_1_30_8"><span class="math display">\[
   I=I_M \dfrac{\sin^2 (\Phi/2)}{n^2 \sin^2(\phi/2)} \approx 4 I_M \dfrac{\sin ^2 (\Phi/2)}{\Phi^2}.
@@ -1190,7 +1188,7 @@ d\sin\theta = m\lambda
 <h2 class="anchored" data-anchor-id="sec-FLP_1_32">I.32 복사 감쇄와 광산란</h2>
 <p><br></p>
 <section id="sec-FLP_1_32_3" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_32_3">I.32_3 복사 감쇄</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_1_32_3">I.32-3 복사 감쇄</h3>
 <p><span id="eq-FLP_1_32_8"><span class="math display">\[
 Q = - \dfrac{\omega W}{dW/dt}.
 \tag{4.37}\]</span></span></p>
@@ -1200,7 +1198,7 @@ Q=\dfrac{3\lambda}{4\pi r_0} \approx 5 \times 10^7.
 <p><br></p>
 </section>
 <section id="sec-FLP_1_32_5" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_32_5">I.32_5 광산란</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_1_32_5">I.32-5 광산란</h3>
 <p><span id="eq-FLP_1_32_19"><span class="math display">\[
 \sigma_s = \dfrac{8 \pi r_0^2}{3} \cdot \dfrac{\omega^4}{\left(\omega^2 - \omega_0^2\right)^2}
 \tag{4.39}\]</span></span></p>
