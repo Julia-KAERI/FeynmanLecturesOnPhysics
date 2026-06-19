@@ -67,8 +67,6 @@ $$
 
 ### II.1-3 벡터장의 특성 {#sec-FLP_2_1_3}
 
-
-
 </br>
 
 ### II.1-4 전자기의 법칙 {#sec-FLP_2_1_4}
@@ -97,6 +95,8 @@ $$ {#eq-FLP_2_1_7}
 $$
 \oint_C \left(\nabla \times \bf{B}\right)\bf{\cdot}d\bf{l} = \epsilon_0\mu_0\dfrac{d}{dt}\int_S \bf{E\cdot}d\bf{a} + \mu_0\int_S \bf{J\cdot}d\bf{a}.
 $$ {#eq-FLP_2_1_9}
+
+이 때 $\epsilon_0 \mu_0 = 1/c^2$ 이다.
 
 :::
 
@@ -131,7 +131,7 @@ $$ {#eq-FLP_definition_of_displacememnt_current}
 
 </br>
 
-## II-4 정전기학
+## II-4 정전기학 {#sec-FLP_2_4}
 
 ### II.4-1 정전기와 정자기 {#sec-FLP_2_4_1}
 
@@ -190,7 +190,9 @@ $$ {#eq-FLP_2_4_8}
 
 </br>
 
-### II.4-2 쿨롱의 법칙과 중첩 {#sec-FLP_1_4_2}
+### II.4-2 쿨롱의 법칙과 중첩 {#sec-FLP_2_4_2}
+
+::: {.callout-important icon="false"}
 
 #### **쿨롱의 법칙**
 
@@ -206,12 +208,14 @@ $$
 \bf{F}_1 = \dfrac{1}{4\pi\epsilon_0} \dfrac{q_1q_2\hat{\bf{r}}_{12}}{r_{12}^2},\qquad \text{where } \bf{r}_{12} = \bf{r}_1-\bf{r}_2
 $$ {#eq-FLP_2_4_9}
 
-이다. 이를 쿨롱의 법칙 이라고 한다.
+이다. 
+:::
+
 
 
 #### **전하 분포에 의한 전기장**
 
-전하 밀도 $\rho(\bf{r}')$ 에 의한 전기장 역시 @eq-FLP_2_4_5 에 의해 아래와 같다.
+전하 밀도 분포 $\rho(\bf{r}')$ 에 의한 전기장 역시 @eq-FLP_2_4_5 에 의해 아래와 같다.
 
 $$
 \bf{E}(\bf{r}) = \dfrac{1}{4\pi \epsilon_0} \int_\text{all space} \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3} \,d^3\bf{r}'
@@ -227,10 +231,10 @@ $$
 W = -\int_a^b \bf{F\cdot}d\bf{l}
 $$
 
-전기장 $\bf{E}$ 에 대해 $\bf{F}=q\bf{E}$ 이므로 단위 전하당 해줘야 할 일 $W(\text{uni})$ 을 생각할 수 있으며 이는 다음과 같다.
+전기장 $\bf{E}$ 에 대해 $\bf{F}=q\bf{E}$ 이므로 단위 전하당 해줘야 할 일 $W(\text{unit})$ 을 생각할 수 있으며 이는 다음과 같다.
 
 $$
-W(unit) = -\int_a^b \bf{E\cdot}d\bf{l}.
+W(\text{unit}) = -\int_a^b \bf{E\cdot}d\bf{l}.
 $$ {#eq-FLP_2_4_19}
 
 우리는 벡터장 $\bf{C}$ 에 대해 $\nabla \times \bf{C}=0$ 일 때 $\bf{C}=-\nabla \phi$ 인 스칼라장 $\phi$ 가 존재함을 안다. 또한 $\phi$ 가
@@ -240,6 +244,10 @@ $$
 $$
 
 이며 그 값이 $\bf{r}_0$ 에서 $\bf{r}$ 까지의 경로에 독립적이라는 것을 안다. 여기서 $\bf{r}_0$ 는 임의의 정해진 기준점이다. @eq-FLP_2_4_6 에 의해 정전기의 경우 포텐셜이 존재한다. 
+
+</br>
+
+### II.4-4 $\bf{E}=-\nabla \Phi$ {#sec-FLP_2_4_4}
 
 ::: {.callout-note icon="false"}
 
@@ -264,6 +272,48 @@ $$
 \Phi (\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int\dfrac{\rho(\bf{r}')}{ \|\bf{r}-\bf{r}'\|}\,d^3\bf{r}'.
 $$ {#eq-FLP_2_4_25}
 
+또한 $\bf{E}=-\nabla \Phi$ 일 때 점 $a$ 에서 $b$ 까지의 선적분
+
+$$
+\Phi = \int_a^b \bf{E\cdot}d\bf{l}
+$$
+
+은 그 경로와 무관하게 동일한 값을 가진다는 것을 안다.
+
+</br>
+
+
+### II.4-5 전기장의 플럭스 {#sec-FLP_2_4_5}
+
+닫힌 표면 $S$ 와 $S$ 내부의 총 전하량 $Q_\text{in}$ 에 대해 다음이 성립한다.
+$$
+\oint_S \bf{E\cdot}d\bf{a} = \dfrac{{Q}_\text{in}}{\epsilon_0}.
+$$
+
+</br>
+
+### II.4-6 가우스의 법칙 {#sec-FLP_2_4_6}
+
+$$
+\nabla \bf{\cdot E}= \dfrac{\rho}{\epsilon_0}.
+$$
+
+</br>
+
+### II.4-7 구형 전하분포에 의한 장 {#sec-FLP_2_4_7}
+
+전하가 원점을 중심으로 구형 대칭으로 분포되었을 때, 즉 $\rho(\bf{r})=\rho(r)$ 라고 하자. 또한 $\rho(r>a)= 0$ 라면 $r>a$ 인 위치에서의 전기장은 다음과 같다.
+
+$$
+\bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\dfrac{Q\hat{\bf{r}}}{r^2},\qquad \text{where }Q=\int_{\|\bf{r}'\|<a} \rho(\bf{r}')d^3\bf{r}'.
+$$ {#eq-FLP_2_4_39}
+
+</br>
+
+### II.4-8 등전위면 {#sec-FLP_2_4_8}
+
+$\Phi(\bf{r})$ 값이 일정한 표면을 등전위면이라고 한다. $\bf{E}=-\nabla \Phi$ 로부터 전기장의 방향은 그 지점의 등전위면에 수직함을 안다.
+
 
 </br>
 
@@ -280,42 +330,50 @@ $$ {#eq-FLP_2_4_25}
 
 - 질문 : 다른 전하에 의한 전기장에 의해 점전하는 언제 역학적 안정평형상태에 있을 수 있는가? 예를 들어 세 음전하가 평면상의 정삼각형의 꼭지점에 고정되어 있을 때 정삼각형의 중심의 양전하는 안정평형상태인가?
 
-정답은 정전기 장에 대해 안정평형상태는 한 입자가 다른 입자와 붙어있을 때 밖에 없다. 이는 가우스 법칙으로 보일 수 있다. $P_0$ 에 위치한 양전하를 생각하자. 다른 전하를 포함하지 않는 $P_0$ 를 포함하는 충분히 작은 폐곡면 $S$ 를 생각 할 수 있다. 이 양전하가 안정평형상태이려면 이 폐곡면의 면에서 모두 안쪽을 향하는 전기장이 존재해야 하며 이는 $\oint_S \bf{E\cdot}d\bf{a} < 0$ 이어야 함을 의미한다. 그런데 가우스 법칙에 따라 $\oint_S \bf{E\cdot}d\bf{a} =0$ 이므로 모순이다. $P_0$ 에 음전하가 있을 때도 같은 논리로 모순됨을 보일 수 있다. 따라서 전하가 존재하지 않는 영역에서는 정전기적 안정평형상태가 존재하지 않는다
+</br><div class="border" style="background-color:#FFF0F5 ;padding:5px;">
 
-::: {.callout-important icon="false"}
 
-### **정전기장과 안정평형상태**
 
 ::: {#thm-FLP_electrostatic_field_and_stable_equillibrium}
+
+### **정전기장과 안정평형상태**
 
 정전기장에서 고립된 점전하의 역학적 안정평형상태는 존재하지 않는다.
 
 :::
 
+</div>
+
+::: {.proof}
+
+이는 가우스 법칙으로 보일 수 있다. $P_0$ 에 위치한 양전하를 생각하자. 다른 전하를 포함하지 않는 $P_0$ 를 포함하는 충분히 작은 폐곡면 $S$ 를 생각 할 수 있다. 이 양전하가 안정평형상태이려면 이 폐곡면의 면에서 모두 안쪽을 향하는 전기장이 존재해야 하며 이 때 $\oint_S \bf{E\cdot}d\bf{a} < 0$ 이다. 그러나 가우스 법칙에 따르면 $\oint_S \bf{E\cdot}d\bf{a} =0$. $P_0$ 에 음전하가 있을 때도 같은 논리로 모순됨을 보일 수 있다.$\square$
+
 :::
 
-이에 대한 증명은 [정전기적 안정평형상태](https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_electrostatic_stable_equilibrium) 를 보라. 여기서 또 하나를 짚고 넘어가자.(FLP 에는 안나오는 내용이다.) 증명은 조화함수의 해석적 연속성을 이용하는데 여기서는 증명하지 않는다.
 
-::: {.callout-important icon="false"}
+좀 더 수학적인 증명은 [정전기적 안정평형상태](https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_electrostatic_stable_equilibrium) 를 보라. 여기서 또 하나를 짚고 넘어가자.(FLP 에는 안나오는 내용이다.) 증명은 조화함수의 해석적 연속성을 이용하는데 여기서는 증명하지 않는다.
 
-### **라플라스 방정식의 특성**
+</br><div class="border" style="background-color:#FFF0F5 ;padding:5px;">
 
 ::: {#thm-FLP_electrostatic_potential_and_equilibrium}
 
+#### **라플라스 방정식의 특성**
 어떤 (단순 연결) 자유공간의 전기장 $\bf{E}(\bf{r})$ 을 생각하자. 어떤 $P_0$ 의 근처에서(수학적으로는 $P_0$ 를 포함하는 열린 공간) $\bf{E}=\bf{0}$ 이면 $\bf{E}$ 는 전체 자유공간에서 $\bf{0}$ 이다.
 
 :::
+</div>
 
-:::
+</br>
 
-즉 전체 공간에서 전기장이 $\bf{0}$ 이 아니라면 $\bf{E}(P_0)=0$ 일 때 $\bf{E}$ 의 주변이 모두 $\bf{0}$ 이 아니라는 의미아다. 이로부터 $P_0$ 에서 약간의 위치 변화를 가한다면 어떤 방향으로는 복원력이 작용하더라도 다른 방향으로는 $P_0$ 로부터 멀어지게 하는 힘이 작용한다는 것을 알 수 있다.
+즉 전체 공간에서 전기장이 $\bf{0}$ 이 아니라면 $\bf{E}(P_0)=0$ 일 때 $\bf{E}$ 의 주변이 모두 $\bf{0}$ 이 아니라는 의미이다. 이로부터 $P_0$ 에서 약간의 위치 변화를 가한다면 어떤 방향으로는 복원력이 작용하더라도 다른 방향으로는 $P_0$ 로부터 멀어지게 하는 힘이 작용한다는 것을 알 수 있다.
 
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 
 ::: {#exm-FLP_example_of_electrostatic_stable_equillibrium}
 
+#### 복수 개의 전하의 정전기적 안정평형
 
-막대기의 양 끝에 전하량이 같은 두 전하 $q_1,\,q_2$ 가 붙어 있다고 하자. 이 경우 전기장에 의한 한정평형상태가 존재하는지 살펴보자. 이 막대기와 전하에 가해지는 힘을 위치에 대한 함수로, 즉 벡터장으로 $\bf{F}(\bf{r})$ 이라고 하자. 그렇다면 $\nabla \bf{\cdot F}<0$ 이어야 안정평형상태가 된다. 이 때 외부에서 두 전하에 가해지는 전기장을 각각 $\bf{E}_1,\,\bf{E}_2$ 라고 하면
+막대기의 양 끝에 전하량이 같은 두 전하 $q_1,\,q_2$ 가 붙어 있다고 하자. 이 경우 전기장에 의한 안정평형상태가 존재하는지 살펴보자. 이 막대기와 전하에 가해지는 힘을 위치에 대한 함수로, 즉 벡터장으로 $\bf{F}(\bf{r})$ 이라고 하자. 그렇다면 $\nabla \bf{\cdot F}<0$ 이어야 안정평형상태가 된다. 이 때 외부에서 두 전하에 가해지는 전기장을 각각 $\bf{E}_1,\,\bf{E}_2$ 라고 하면
 
 $$
 \bf{F}=q_1\bf{E}_1 + q_2 \bf{E}_2
@@ -336,6 +394,8 @@ $$
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 
 ::: {#exm-FLP_example_of_electrostatic_stable_equillibrium_with_non_electric_constraint}
+
+#### 역학적 제한이 있을 경우의 정전기적 안정평형
 
 아래 그림과 같은 전하배치를 생각하자. 가운데의 전하는 속이 빈 관에 위치하여 위/아래 방향으로는 움직일 수 없다. 이 경우 안정평형상태임은 쉽게 보일 수 있다. 
 

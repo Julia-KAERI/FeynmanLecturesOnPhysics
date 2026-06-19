@@ -255,11 +255,16 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_1_4" id="toc-sec-FLP_2_1_4" class="nav-link" data-scroll-target="#sec-FLP_2_1_4">II.1-4 전자기의 법칙</a></li>
   <li><a href="#sec-FLP_2_1_5" id="toc-sec-FLP_2_1_5" class="nav-link" data-scroll-target="#sec-FLP_2_1_5">II.1-5 장이란 무엇인가?</a></li>
   </ul></li>
-  <li><a href="#ii-4-정전기학" id="toc-ii-4-정전기학" class="nav-link" data-scroll-target="#ii-4-정전기학">II-4 정전기학</a>
+  <li><a href="#sec-FLP_2_4" id="toc-sec-FLP_2_4" class="nav-link" data-scroll-target="#sec-FLP_2_4">II-4 정전기학</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_2_4_1" id="toc-sec-FLP_2_4_1" class="nav-link" data-scroll-target="#sec-FLP_2_4_1">II.4-1 정전기와 정자기</a></li>
-  <li><a href="#sec-FLP_1_4_2" id="toc-sec-FLP_1_4_2" class="nav-link" data-scroll-target="#sec-FLP_1_4_2">II.4-2 쿨롱의 법칙과 중첩</a></li>
+  <li><a href="#sec-FLP_2_4_2" id="toc-sec-FLP_2_4_2" class="nav-link" data-scroll-target="#sec-FLP_2_4_2">II.4-2 쿨롱의 법칙과 중첩</a></li>
   <li><a href="#sec-FLP_2_4_3" id="toc-sec-FLP_2_4_3" class="nav-link" data-scroll-target="#sec-FLP_2_4_3">II.4-3 정전 포텐셜</a></li>
+  <li><a href="#sec-FLP_2_4_4" id="toc-sec-FLP_2_4_4" class="nav-link" data-scroll-target="#sec-FLP_2_4_4">II.4-4 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span></a></li>
+  <li><a href="#sec-FLP_2_4_5" id="toc-sec-FLP_2_4_5" class="nav-link" data-scroll-target="#sec-FLP_2_4_5">II.4-5 전기장의 플럭스</a></li>
+  <li><a href="#sec-FLP_2_4_6" id="toc-sec-FLP_2_4_6" class="nav-link" data-scroll-target="#sec-FLP_2_4_6">II.4-6 가우스의 법칙</a></li>
+  <li><a href="#sec-FLP_2_4_7" id="toc-sec-FLP_2_4_7" class="nav-link" data-scroll-target="#sec-FLP_2_4_7">II.4-7 구형 전하분포에 의한 장</a></li>
+  <li><a href="#sec-FLP_2_4_8" id="toc-sec-FLP_2_4_8" class="nav-link" data-scroll-target="#sec-FLP_2_4_8">II.4-8 등전위면</a></li>
   </ul></li>
   <li><a href="#ii.5-가우스-법칙의-응용" id="toc-ii.5-가우스-법칙의-응용" class="nav-link" data-scroll-target="#ii.5-가우스-법칙의-응용">II.5 가우스 법칙의 응용</a>
   <ul class="collapse">
@@ -401,6 +406,7 @@ window.Quarto = {
 <p><span id="eq-FLP_2_1_9"><span class="math display">\[
 \oint_C \left(\nabla \times \boldsymbol{B}\right)\boldsymbol{\cdot}d\boldsymbol{l} = \epsilon_0\mu_0\dfrac{d}{dt}\int_S \boldsymbol{E\cdot}d\boldsymbol{a} + \mu_0\int_S \boldsymbol{J\cdot}d\boldsymbol{a}.
 \tag{7.7}\]</span></span></p>
+<p>이 때 <span class="math inline">\(\epsilon_0 \mu_0 = 1/c^2\)</span> 이다.</p>
 </div>
 </div>
 <p><a href="#eq-FLP_2_1_9" class="quarto-xref">식&nbsp;<span>7.7</span></a> 의 등호 오른쪽 첫번째 항은 소위 변위전류에 대한 것으로 맥스웰이 이론적으로 발견하였으며 매우 중요하다.</p>
@@ -444,8 +450,8 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 <p><br></p>
 </section>
 </section>
-<section id="ii-4-정전기학" class="level2">
-<h2 class="anchored" data-anchor-id="ii-4-정전기학">II-4 정전기학</h2>
+<section id="sec-FLP_2_4" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLP_2_4">II-4 정전기학</h2>
 <section id="sec-FLP_2_4_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_4_1">II.4-1 정전기와 정자기</h3>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -500,10 +506,18 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 <p>이 경우 전기장과 자기장은 분리된다.</p>
 <p><br></p>
 </section>
-<section id="sec-FLP_1_4_2" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_4_2">II.4-2 쿨롱의 법칙과 중첩</h3>
-<section id="쿨롱의-법칙" class="level4">
-<h4 class="anchored" data-anchor-id="쿨롱의-법칙"><strong>쿨롱의 법칙</strong></h4>
+<section id="sec-FLP_2_4_2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_4_2">II.4-2 쿨롱의 법칙과 중첩</h3>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">중요</span><strong>쿨롱의 법칙</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 각각 <span class="math inline">\(\boldsymbol{r}_1,\,\boldsymbol{r}_2\)</span> 에 위치한다고 하자. <span class="math inline">\(q_2\)</span> 에 의해 생성되는 전기장을 <span class="math inline">\(\boldsymbol{E}_2(\boldsymbol{r})\)</span> 이라고 하면 <a href="#eq-FLP_2_4_5" class="quarto-xref">식&nbsp;<span>7.13</span></a> 에 의해</p>
 <p><span class="math display">\[
 \boldsymbol{E}_2(\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0}\dfrac{q_2 (\boldsymbol{r}-\boldsymbol{r}_2)}{\|\boldsymbol{r}-\boldsymbol{r}_2\|^3}
@@ -512,11 +526,12 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 <p><span id="eq-FLP_2_4_9"><span class="math display">\[
 \boldsymbol{F}_1 = \dfrac{1}{4\pi\epsilon_0} \dfrac{q_1q_2\hat{\boldsymbol{r}}_{12}}{r_{12}^2},\qquad \text{where } \boldsymbol{r}_{12} = \boldsymbol{r}_1-\boldsymbol{r}_2
 \tag{7.17}\]</span></span></p>
-<p>이다. 이를 쿨롱의 법칙 이라고 한다.</p>
-</section>
+<p>이다.</p>
+</div>
+</div>
 <section id="전하-분포에-의한-전기장" class="level4">
 <h4 class="anchored" data-anchor-id="전하-분포에-의한-전기장"><strong>전하 분포에 의한 전기장</strong></h4>
-<p>전하 밀도 <span class="math inline">\(\rho(\boldsymbol{r}')\)</span> 에 의한 전기장 역시 <a href="#eq-FLP_2_4_5" class="quarto-xref">식&nbsp;<span>7.13</span></a> 에 의해 아래와 같다.</p>
+<p>전하 밀도 분포 <span class="math inline">\(\rho(\boldsymbol{r}')\)</span> 에 의한 전기장 역시 <a href="#eq-FLP_2_4_5" class="quarto-xref">식&nbsp;<span>7.13</span></a> 에 의해 아래와 같다.</p>
 <p><span id="eq-FLP_2_4_16"><span class="math display">\[
 \boldsymbol{E}(\boldsymbol{r}) = \dfrac{1}{4\pi \epsilon_0} \int_\text{all space} \dfrac{\rho(\boldsymbol{r}')(\boldsymbol{r}-\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|^3} \,d^3\boldsymbol{r}'
 \tag{7.18}\]</span></span></p>
@@ -529,15 +544,19 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 <p><span class="math display">\[
 W = -\int_a^b \boldsymbol{F\cdot}d\boldsymbol{l}
 \]</span></p>
-<p>전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 에 대해 <span class="math inline">\(\boldsymbol{F}=q\boldsymbol{E}\)</span> 이므로 단위 전하당 해줘야 할 일 <span class="math inline">\(W(\text{uni})\)</span> 을 생각할 수 있으며 이는 다음과 같다.</p>
+<p>전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 에 대해 <span class="math inline">\(\boldsymbol{F}=q\boldsymbol{E}\)</span> 이므로 단위 전하당 해줘야 할 일 <span class="math inline">\(W(\text{unit})\)</span> 을 생각할 수 있으며 이는 다음과 같다.</p>
 <p><span id="eq-FLP_2_4_19"><span class="math display">\[
-W(unit) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
+W(\text{unit}) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
 \tag{7.19}\]</span></span></p>
 <p>우리는 벡터장 <span class="math inline">\(\boldsymbol{C}\)</span> 에 대해 <span class="math inline">\(\nabla \times \boldsymbol{C}=0\)</span> 일 때 <span class="math inline">\(\boldsymbol{C}=-\nabla \phi\)</span> 인 스칼라장 <span class="math inline">\(\phi\)</span> 가 존재함을 안다. 또한 <span class="math inline">\(\phi\)</span> 가</p>
 <p><span class="math display">\[
 \phi (\boldsymbol{r}) = -\int_{\boldsymbol{r}_0}^\boldsymbol{r} \boldsymbol{C\cdot}d\boldsymbol{l}
 \]</span></p>
 <p>이며 그 값이 <span class="math inline">\(\boldsymbol{r}_0\)</span> 에서 <span class="math inline">\(\boldsymbol{r}\)</span> 까지의 경로에 독립적이라는 것을 안다. 여기서 <span class="math inline">\(\boldsymbol{r}_0\)</span> 는 임의의 정해진 기준점이다. <a href="#eq-FLP_2_4_6" class="quarto-xref">식&nbsp;<span>7.14</span></a> 에 의해 정전기의 경우 포텐셜이 존재한다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_4_4" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_4_4">II.4-4 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span></h3>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -561,6 +580,38 @@ W(unit) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
 \tag{7.21}\]</span></span> <span id="eq-FLP_2_4_25"><span class="math display">\[
 \Phi (\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0}\int\dfrac{\rho(\boldsymbol{r}')}{ \|\boldsymbol{r}-\boldsymbol{r}'\|}\,d^3\boldsymbol{r}'.
 \tag{7.22}\]</span></span></p>
+<p>또한 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span> 일 때 점 <span class="math inline">\(a\)</span> 에서 <span class="math inline">\(b\)</span> 까지의 선적분</p>
+<p><span class="math display">\[
+\Phi = \int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}
+\]</span></p>
+<p>은 그 경로와 무관하게 동일한 값을 가진다는 것을 안다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_4_5" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_4_5">II.4-5 전기장의 플럭스</h3>
+<p>닫힌 표면 <span class="math inline">\(S\)</span> 와 <span class="math inline">\(S\)</span> 내부의 총 전하량 <span class="math inline">\(Q_\text{in}\)</span> 에 대해 다음이 성립한다. <span class="math display">\[
+\oint_S \boldsymbol{E\cdot}d\boldsymbol{a} = \dfrac{{Q}_\text{in}}{\epsilon_0}.
+\]</span></p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_4_6" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_4_6">II.4-6 가우스의 법칙</h3>
+<p><span class="math display">\[
+\nabla \boldsymbol{\cdot E}= \dfrac{\rho}{\epsilon_0}.
+\]</span></p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_4_7" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_4_7">II.4-7 구형 전하분포에 의한 장</h3>
+<p>전하가 원점을 중심으로 구형 대칭으로 분포되었을 때, 즉 <span class="math inline">\(\rho(\boldsymbol{r})=\rho(r)\)</span> 라고 하자. 또한 <span class="math inline">\(\rho(r&gt;a)= 0\)</span> 라면 <span class="math inline">\(r&gt;a\)</span> 인 위치에서의 전기장은 다음과 같다.</p>
+<p><span id="eq-FLP_2_4_39"><span class="math display">\[
+\boldsymbol{E}(\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0}\dfrac{Q\hat{\boldsymbol{r}}}{r^2},\qquad \text{where }Q=\int_{\|\boldsymbol{r}'\|&lt;a} \rho(\boldsymbol{r}')d^3\boldsymbol{r}'.
+\tag{7.23}\]</span></span></p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_4_8" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_4_8">II.4-8 등전위면</h3>
+<p><span class="math inline">\(\Phi(\boldsymbol{r})\)</span> 값이 일정한 표면을 등전위면이라고 한다. <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span> 로부터 전기장의 방향은 그 지점의 등전위면에 수직함을 안다.</p>
 <p><br></p>
 </section>
 </section>
@@ -576,42 +627,27 @@ W(unit) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
 <ul>
 <li>질문 : 다른 전하에 의한 전기장에 의해 점전하는 언제 역학적 안정평형상태에 있을 수 있는가? 예를 들어 세 음전하가 평면상의 정삼각형의 꼭지점에 고정되어 있을 때 정삼각형의 중심의 양전하는 안정평형상태인가?</li>
 </ul>
-<p>정답은 정전기 장에 대해 안정평형상태는 한 입자가 다른 입자와 붙어있을 때 밖에 없다. 이는 가우스 법칙으로 보일 수 있다. <span class="math inline">\(P_0\)</span> 에 위치한 양전하를 생각하자. 다른 전하를 포함하지 않는 <span class="math inline">\(P_0\)</span> 를 포함하는 충분히 작은 폐곡면 <span class="math inline">\(S\)</span> 를 생각 할 수 있다. 이 양전하가 안정평형상태이려면 이 폐곡면의 면에서 모두 안쪽을 향하는 전기장이 존재해야 하며 이는 <span class="math inline">\(\oint_S \boldsymbol{E\cdot}d\boldsymbol{a} &lt; 0\)</span> 이어야 함을 의미한다. 그런데 가우스 법칙에 따라 <span class="math inline">\(\oint_S \boldsymbol{E\cdot}d\boldsymbol{a} =0\)</span> 이므로 모순이다. <span class="math inline">\(P_0\)</span> 에 음전하가 있을 때도 같은 논리로 모순됨을 보일 수 있다. 따라서 전하가 존재하지 않는 영역에서는 정전기적 안정평형상태가 존재하지 않는다</p>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">중요</span><strong>정전기장과 안정평형상태</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<br>
+<div class="border" style="background-color:#FFF0F5 ;padding:5px;">
 <div id="thm-FLP_electrostatic_field_and_stable_equillibrium" class="theorem">
-<p><span class="theorem-title"><strong>정리 7.1</strong></span> 정전기장에서 고립된 점전하의 역학적 안정평형상태는 존재하지 않는다.</p>
+<p><span class="theorem-title"><strong>정리 7.1 (<strong>정전기장과 안정평형상태</strong>)</strong></span> 정전기장에서 고립된 점전하의 역학적 안정평형상태는 존재하지 않는다.</p>
 </div>
 </div>
+<div class="proof">
+<p><span class="proof-title"><em>(증명)</em>. </span>이는 가우스 법칙으로 보일 수 있다. <span class="math inline">\(P_0\)</span> 에 위치한 양전하를 생각하자. 다른 전하를 포함하지 않는 <span class="math inline">\(P_0\)</span> 를 포함하는 충분히 작은 폐곡면 <span class="math inline">\(S\)</span> 를 생각 할 수 있다. 이 양전하가 안정평형상태이려면 이 폐곡면의 면에서 모두 안쪽을 향하는 전기장이 존재해야 하며 이 때 <span class="math inline">\(\oint_S \boldsymbol{E\cdot}d\boldsymbol{a} &lt; 0\)</span> 이다. 그러나 가우스 법칙에 따르면 <span class="math inline">\(\oint_S \boldsymbol{E\cdot}d\boldsymbol{a} =0\)</span>. <span class="math inline">\(P_0\)</span> 에 음전하가 있을 때도 같은 논리로 모순됨을 보일 수 있다.<span class="math inline">\(\square\)</span></p>
 </div>
-<p>이에 대한 증명은 <a href="https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_electrostatic_stable_equilibrium">정전기적 안정평형상태</a> 를 보라. 여기서 또 하나를 짚고 넘어가자.(FLP 에는 안나오는 내용이다.) 증명은 조화함수의 해석적 연속성을 이용하는데 여기서는 증명하지 않는다.</p>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">중요</span><strong>라플라스 방정식의 특성</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>좀 더 수학적인 증명은 <a href="https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_electrostatic_stable_equilibrium">정전기적 안정평형상태</a> 를 보라. 여기서 또 하나를 짚고 넘어가자.(FLP 에는 안나오는 내용이다.) 증명은 조화함수의 해석적 연속성을 이용하는데 여기서는 증명하지 않는다.</p>
+<br>
+<div class="border" style="background-color:#FFF0F5 ;padding:5px;">
 <div id="thm-FLP_electrostatic_potential_and_equilibrium" class="theorem">
-<p><span class="theorem-title"><strong>정리 7.2</strong></span> 어떤 (단순 연결) 자유공간의 전기장 <span class="math inline">\(\boldsymbol{E}(\boldsymbol{r})\)</span> 을 생각하자. 어떤 <span class="math inline">\(P_0\)</span> 의 근처에서(수학적으로는 <span class="math inline">\(P_0\)</span> 를 포함하는 열린 공간) <span class="math inline">\(\boldsymbol{E}=\boldsymbol{0}\)</span> 이면 <span class="math inline">\(\boldsymbol{E}\)</span> 는 전체 자유공간에서 <span class="math inline">\(\boldsymbol{0}\)</span> 이다.</p>
+<p><span class="theorem-title"><strong>정리 7.2 (<strong>라플라스 방정식의 특성</strong>)</strong></span> 어떤 (단순 연결) 자유공간의 전기장 <span class="math inline">\(\boldsymbol{E}(\boldsymbol{r})\)</span> 을 생각하자. 어떤 <span class="math inline">\(P_0\)</span> 의 근처에서(수학적으로는 <span class="math inline">\(P_0\)</span> 를 포함하는 열린 공간) <span class="math inline">\(\boldsymbol{E}=\boldsymbol{0}\)</span> 이면 <span class="math inline">\(\boldsymbol{E}\)</span> 는 전체 자유공간에서 <span class="math inline">\(\boldsymbol{0}\)</span> 이다.</p>
 </div>
 </div>
-</div>
-<p>즉 전체 공간에서 전기장이 <span class="math inline">\(\boldsymbol{0}\)</span> 이 아니라면 <span class="math inline">\(\boldsymbol{E}(P_0)=0\)</span> 일 때 <span class="math inline">\(\boldsymbol{E}\)</span> 의 주변이 모두 <span class="math inline">\(\boldsymbol{0}\)</span> 이 아니라는 의미아다. 이로부터 <span class="math inline">\(P_0\)</span> 에서 약간의 위치 변화를 가한다면 어떤 방향으로는 복원력이 작용하더라도 다른 방향으로는 <span class="math inline">\(P_0\)</span> 로부터 멀어지게 하는 힘이 작용한다는 것을 알 수 있다.</p>
+<p><br></p>
+<p>즉 전체 공간에서 전기장이 <span class="math inline">\(\boldsymbol{0}\)</span> 이 아니라면 <span class="math inline">\(\boldsymbol{E}(P_0)=0\)</span> 일 때 <span class="math inline">\(\boldsymbol{E}\)</span> 의 주변이 모두 <span class="math inline">\(\boldsymbol{0}\)</span> 이 아니라는 의미이다. 이로부터 <span class="math inline">\(P_0\)</span> 에서 약간의 위치 변화를 가한다면 어떤 방향으로는 복원력이 작용하더라도 다른 방향으로는 <span class="math inline">\(P_0\)</span> 로부터 멀어지게 하는 힘이 작용한다는 것을 알 수 있다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_example_of_electrostatic_stable_equillibrium" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.1</strong></span> 막대기의 양 끝에 전하량이 같은 두 전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 붙어 있다고 하자. 이 경우 전기장에 의한 한정평형상태가 존재하는지 살펴보자. 이 막대기와 전하에 가해지는 힘을 위치에 대한 함수로, 즉 벡터장으로 <span class="math inline">\(\boldsymbol{F}(\boldsymbol{r})\)</span> 이라고 하자. 그렇다면 <span class="math inline">\(\nabla \boldsymbol{\cdot F}&lt;0\)</span> 이어야 안정평형상태가 된다. 이 때 외부에서 두 전하에 가해지는 전기장을 각각 <span class="math inline">\(\boldsymbol{E}_1,\,\boldsymbol{E}_2\)</span> 라고 하면</p>
+<p><span class="theorem-title"><strong>예제 7.1 (복수 개의 전하의 정전기적 안정평형)</strong></span> 막대기의 양 끝에 전하량이 같은 두 전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 붙어 있다고 하자. 이 경우 전기장에 의한 안정평형상태가 존재하는지 살펴보자. 이 막대기와 전하에 가해지는 힘을 위치에 대한 함수로, 즉 벡터장으로 <span class="math inline">\(\boldsymbol{F}(\boldsymbol{r})\)</span> 이라고 하자. 그렇다면 <span class="math inline">\(\nabla \boldsymbol{\cdot F}&lt;0\)</span> 이어야 안정평형상태가 된다. 이 때 외부에서 두 전하에 가해지는 전기장을 각각 <span class="math inline">\(\boldsymbol{E}_1,\,\boldsymbol{E}_2\)</span> 라고 하면</p>
 <p><span class="math display">\[
 \boldsymbol{F}=q_1\boldsymbol{E}_1 + q_2 \boldsymbol{E}_2
 \]</span></p>
@@ -625,7 +661,7 @@ W(unit) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
 <p><br></p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_example_of_electrostatic_stable_equillibrium_with_non_electric_constraint" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.2</strong></span> 아래 그림과 같은 전하배치를 생각하자. 가운데의 전하는 속이 빈 관에 위치하여 위/아래 방향으로는 움직일 수 없다. 이 경우 안정평형상태임은 쉽게 보일 수 있다.</p>
+<p><span class="theorem-title"><strong>예제 7.2 (역학적 제한이 있을 경우의 정전기적 안정평형)</strong></span> 아래 그림과 같은 전하배치를 생각하자. 가운데의 전하는 속이 빈 관에 위치하여 위/아래 방향으로는 움직일 수 없다. 이 경우 안정평형상태임은 쉽게 보일 수 있다.</p>
 <div id="fig-FLP_2_5_2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_2_5_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -684,7 +720,7 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p>이므로 전기장은 아래와 같다.</p>
 <p><span id="eq-FLP_2_5_2"><span class="math display">\[
 \boldsymbol{E}(r,\,\theta,\,z)= \dfrac{\lambda}{2\pi \epsilon_0 r}\hat{\boldsymbol{r}}
-\tag{7.23}\]</span></span></p>
+\tag{7.24}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -712,7 +748,7 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p>이 무한 대전 평면이 <span class="math inline">\(xy\)</span> 평면상에 위치한다고 하자. 그렇다면</p>
 <p><span id="eq-FLP_2_5_3"><span class="math display">\[
 \boldsymbol{E}(z&gt;0)= \dfrac{\sigma}{2\epsilon_0}\hat{\boldsymbol{z}},\qquad \boldsymbol{E}(z&lt;0)= - \dfrac{\sigma}{2\epsilon_0}\hat{\boldsymbol{z}}
-\tag{7.24}\]</span></span></p>
+\tag{7.25}\]</span></span></p>
 <p>로 <span class="math inline">\(\boldsymbol{E}\)</span> 는 <span class="math inline">\(z=0\)</span> 에서 <span class="math inline">\(\Delta \boldsymbol{E}(z\approx 0) = \boldsymbol{E}(z=0^+)-\boldsymbol{E}(z=0^-)= \dfrac{\sigma}{\epsilon_0}\)</span> 불연속성을 보여준다.</p>
 </div>
 </div>
@@ -733,7 +769,7 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p>이므로</p>
 <p><span id="eq-FLP_electric_field_due_to_radial-distribution"><span class="math display">\[
 \boldsymbol{E}(\boldsymbol{r}) = \dfrac{1}{4\pi \epsilon_0}\dfrac{Q_r}{r^2}\hat{\boldsymbol{r}}
-\tag{7.25}\]</span></span></p>
+\tag{7.26}\]</span></span></p>
 <p>이다.</p>
 </div>
 </div>
@@ -743,11 +779,11 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p><span class="theorem-title"><strong>예제 7.6 (균일한 구형 전하분포)</strong></span> <span class="quarto-unresolved-ref">?exm-ED_ES_charge_distribution_spherical_symmetry</span> 로부터 <span class="math inline">\(0\le r&lt;R\)</span> 일 때 <span class="math inline">\(\rho(r)=\rho_0\)</span> 이고 <span class="math inline">\(r\ge 0\)</span> 일 때 <span class="math inline">\(\rho(r)=0\)</span> 인 경우를 보자. <span class="math inline">\(0\le r&lt;R\)</span> 일 경우의 전기장 <span class="math inline">\(\boldsymbol{E}_{\text{in}}(r)\)</span> 은</p>
 <p><span id="eq-FLP_electric_field_inside_of_uniformly_charged_sphere"><span class="math display">\[
 \boldsymbol{E}_{\text{in}}(r)= \dfrac{1}{4\pi\epsilon_0}\dfrac{\rho_0 4\pi r^3/3}{r^2}\hat{\boldsymbol{r}}= \dfrac{\rho_0 r}{3\epsilon_0}\hat{\boldsymbol{r}}
-\tag{7.26}\]</span></span></p>
+\tag{7.27}\]</span></span></p>
 <p>이며 <span class="math inline">\(r\ge R\)</span> 일 경우의 전기장 <span class="math inline">\(\boldsymbol{E}_{\text{out}}(r)\)</span> 은</p>
 <p><span id="eq-ED_ES_electric_field_outside_of_uniformly_charged_sphere"><span class="math display">\[
 \boldsymbol{E}_{\text{out}}(r) = \dfrac{1}{4\pi\epsilon_0}\dfrac{\rho_0 4\pi R^3 /3}{r^2}\hat{\boldsymbol{r}} = \dfrac{\rho_0R^3}{3\epsilon_0 r^2} \hat{\boldsymbol{r}}
-\tag{7.27}\]</span></span></p>
+\tag{7.28}\]</span></span></p>
 <p>이다. 이 분포의 총 전하량 <span class="math inline">\(Q=\dfrac{4\pi \rho_0 R^3}{3}\)</span> 을 생각하면 <span class="math inline">\(\boldsymbol{E}_{\text{out}}(r)= \dfrac{Q}{4\pi \epsilon_0 r^2}\hat{\boldsymbol{r}}\)</span> 이므로 모든 전하가 중심에 모여있을 때의 전기장과 같다. 전기장의 세기 <span class="math inline">\(E(r)\)</span> 을 그래프로 그리면 아래와 같다.</p>
 <div id="fig-FLP_electrostatics_uniform_sphere" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -799,8 +835,8 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p>금속 표면이 등전위면이며 정전 포텐셜은 연속함수이므로 금속 표면의 바로 바깥쪽의 전기장은 표면에 수직 방향이며 가우스 법칙에 따라 전기장의 크기는 다음과 같다.</p>
 <p><span id="eq-FLP_2_5_8"><span class="math display">\[
 E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
-\tag{7.28}\]</span></span></p>
-<p><a href="#eq-FLP_2_5_3" class="quarto-xref">식&nbsp;<span>7.24</span></a> 와 비교해 보면 흥미로운 차이가 있는데 이 이유는 짐작하듯이 도체 내부의 전기장이 <span class="math inline">\(0\)</span> 이기 때문, 또한 도체 내부의 전하들이 내부의 전기장을 <span class="math inline">\(0\)</span> 으로 만들도록 배치되기 때문이다.</p>
+\tag{7.29}\]</span></span></p>
+<p><a href="#eq-FLP_2_5_3" class="quarto-xref">식&nbsp;<span>7.25</span></a> 와 비교해 보면 흥미로운 차이가 있는데 이 이유는 짐작하듯이 도체 내부의 전기장이 <span class="math inline">\(0\)</span> 이기 때문, 또한 도체 내부의 전하들이 내부의 전기장을 <span class="math inline">\(0\)</span> 으로 만들도록 배치되기 때문이다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_5_10" class="level3">
@@ -848,17 +884,17 @@ E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
 <p>라플라시안 연산자 <span class="math inline">\(\nabla^2\)</span> 는 아래와 같이 정의된다.</p>
 <p><span id="eq-FLP_2_6_5"><span class="math display">\[
 \nabla^2 \Phi = \nabla \boldsymbol{\cdot}\nabla \Phi = \dfrac{\partial^2 \Phi}{\partial x^2}+\dfrac{\partial^2 \Phi}{\partial y^2} + \dfrac{\partial^2 \Phi}{\partial^2 z}
-\tag{7.29}\]</span></span></p>
+\tag{7.30}\]</span></span></p>
 </div>
 </div>
 <p>정전기 상황에서의 멕스웰 방정식 <a href="#eq-FLP_2_4_5" class="quarto-xref">식&nbsp;<span>7.13</span></a> 과 <a href="#eq-FLP_2_4_6" class="quarto-xref">식&nbsp;<span>7.14</span></a> 을 생각하자. <a href="#eq-FLP_2_4_6" class="quarto-xref">식&nbsp;<span>7.14</span></a> 에 의해 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span> 인 스칼라장 <span class="math inline">\(\Phi\)</span> 가 존재하며 라플라시안 연산자를 이용하면 정전 포텐셜에 대한 다음 식을 얻는다.</p>
 <p><span id="eq-FLP_2_6_6"><span class="math display">\[
 \nabla^2 \Phi = - \dfrac{\rho}{\epsilon_0}.
-\tag{7.30}\]</span></span></p>
+\tag{7.31}\]</span></span></p>
 <p>이 미분방정식을 <strong>푸아송 방정식 (Poisson equation)</strong> 이라고 한다. 우리는 앞서 전하분포 <span class="math inline">\(\rho\)</span> 를 알 경우 이 전하분포에 의한 정전 포텐셜을 구할 수 있다는 것을 보였다.</p>
 <p><span id="eq-FLP_2_6_7"><span class="math display">\[
 \Phi (\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho (\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}' .
-\tag{7.31}\]</span></span></p>
+\tag{7.32}\]</span></span></p>
 <p>이제 몇몇 상황에서의 정전 포텐셜을 구해보자.</p>
 <p><br></p>
 </section>
@@ -877,16 +913,16 @@ E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
 <p>두 점전하 <span class="math inline">\(+q\)</span>, <span class="math inline">\(-q\)</span> 가 위의 그림과 같이 <span class="math inline">\(d\)</span> 만큼의 거리를 두고 <span class="math inline">\(z\)</span> 축상에 위치해 있다고 하자. 정전포텐셜은 <span class="math inline">\(\boldsymbol{r}=(x,\,y,\,z)\)</span> 에서의 정전포텐셜은 다음과 같다.</p>
 <p><span id="eq-FLP_2_6_8"><span class="math display">\[
 \Phi(x,\,y,\,z) = \dfrac{1}{4\pi\epsilon_0} \left[\dfrac{q}{\sqrt{x^2+y^2+(z-d/2)^2}}+\dfrac{-q}{\sqrt{x^2+y^2+(z+d/2)^2}}\right].
-\tag{7.32}\]</span></span></p>
+\tag{7.33}\]</span></span></p>
 <p>많은 경우 우리가 관심있는 상황은 <span class="math inline">\(\|\boldsymbol{r}\|\gg d\)</span> 인 경우, 즉 두전하의 거리보다 우리가 관심있는 영역까지의 거리가 훨씬 큰 경우이며 이 때 이런 전하 분포를 <strong>전기 쌍극자 (electric dipole)</strong> 이라고 한다. 원자에 전기장이 가해지는 경우 원자핵과 전자가 서로 반대 방향으로 힘을 받기 때문에 원자핵의 중심과 전자의 중심이 불일치할 수 있으며 이때 발생하는 전기 쌍극자를 <strong>원자 쌍극자 (atomic dipole)</strong> 이라고 한다. 도체의 경우 자유전자는 표면에 모이며 내부의 전기장이 0 이 된다는 것을 안다. 부도체의 경우 전자가 멀리 가지 못하기 때문에 전자가 약간 움직이게 된다. 원자 혹은 분자 수준에서는 전기적으로 중성이며 다만 미시적으로 쌍극자를 이룬다. 그리고 우리가 관심 있는 영역은 이 미시적인 쌍극자의 크기보다 일반적으로 훨씬 크다. 어떤 경우에는 외부에서 가해지는 전기장이 없더라도 분자수준에서 전기쌍극자가 존재할 수 있다. 가장 대표적으로 물 분자이다.</p>
-<p>이제 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.32</span></a> 을 분석해보자. <span class="math inline">\(r \gg d\)</span> 인 경우</p>
+<p>이제 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.33</span></a> 을 분석해보자. <span class="math inline">\(r \gg d\)</span> 인 경우</p>
 <p><span class="math display">\[
 \dfrac{1}{\sqrt{x^2+y^2+(z-d/2)^2}}\approx \dfrac{1}{\sqrt{r^2 -zd}} \approx \dfrac{1}{r}\left(1-\dfrac{zd}{2r^2}\right)
 \]</span></p>
-<p>이며 이를 이용하면 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.32</span></a> 은 역시 <span class="math inline">\(r \gg d\)</span> 근사에서</p>
+<p>이며 이를 이용하면 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.33</span></a> 은 역시 <span class="math inline">\(r \gg d\)</span> 근사에서</p>
 <p><span id="eq-FLP_2_6_9"><span class="math display">\[
 \Phi(x,\,y,\,z) = \dfrac{1}{4\pi\epsilon_0} \dfrac{qdz}{r^3}
-\tag{7.33}\]</span></span></p>
+\tag{7.34}\]</span></span></p>
 <p>이다. 이것을 좌표계 독립적인 식으로 바꾸자.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -901,19 +937,19 @@ E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
 <p><span class="math inline">\(+q\)</span>, <span class="math inline">\(-q\)</span> 인 두 전하가 각각 <span class="math inline">\(\boldsymbol{r}_+,\,\boldsymbol{r}_-\)</span> 에 위치할 때 위치벡터를 <span class="math inline">\(\boldsymbol{d}=\boldsymbol{r}_+ - \boldsymbol{r}_{-}\)</span> 라고 하자. 이 때 <span class="math inline">\(\boldsymbol{p}= q\boldsymbol{d}\)</span> 를 <strong>전기 쌍극자 모먼트 (electric dipole moment)</strong> 라고 한다.</p>
 </div>
 </div>
-<p>전기 상극자 모먼트 <span class="math inline">\(\boldsymbol{p}\)</span> 에 대해 <a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.33</span></a> 는 다음과 같다.</p>
+<p>전기 상극자 모먼트 <span class="math inline">\(\boldsymbol{p}\)</span> 에 대해 <a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.34</span></a> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_6_13"><span class="math display">\[
 \Phi(\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0}\dfrac{\boldsymbol{p\cdot r}}{r^3}.
-\tag{7.34}\]</span></span></p>
+\tag{7.35}\]</span></span></p>
 <p>전기 쌍극자에 의한 정전 포텐셜을 전기 쌍극자 포텐셜 이라고 한다.</p>
-<p><a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.33</span></a> 에 대한 전기장 <span class="math inline">\(\boldsymbol{E}=(E_x,\,E_y,\,E_z)\)</span> 는 아래와 같다.</p>
+<p><a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.34</span></a> 에 대한 전기장 <span class="math inline">\(\boldsymbol{E}=(E_x,\,E_y,\,E_z)\)</span> 는 아래와 같다.</p>
 <p><span id="eq-FLP_2_6_14"><span class="math display">\[
 \begin{aligned}
 E_z &amp;= -\dfrac{\partial \Phi}{\partial z}= \dfrac{p}{4\pi\epsilon_0}\dfrac{3\cos^2\theta - 1}{r^3},\\[0.3em]
 E_x &amp;= - \dfrac{\partial \Phi}{\partial x} = \dfrac{p}{4\pi\epsilon_0}\dfrac{3zx}{r^5},\\[0.3em]
 E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3zy}{r^5}.
 \end{aligned}
-\tag{7.35}\]</span></span></p>
+\tag{7.36}\]</span></span></p>
 <p><br></p>
 <div id="fig-FLP_electric_field_of_dipole" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -933,12 +969,12 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 </section>
 <section id="sec-FLP_2_6_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_4">II.6-4 그래디언트를 사용한 전기 쌍극자 포텐셜</h3>
-<p><a href="#eq-FLP_2_6_13" class="quarto-xref">식&nbsp;<span>7.34</span></a> 은 다음과 같이 쓸 수 있다. <span id="eq-FLP_2_6_16"><span class="math display">\[
+<p><a href="#eq-FLP_2_6_13" class="quarto-xref">식&nbsp;<span>7.35</span></a> 은 다음과 같이 쓸 수 있다. <span id="eq-FLP_2_6_16"><span class="math display">\[
 \Phi(\boldsymbol{r}) = -\dfrac{1}{4\pi\epsilon_0}\boldsymbol{p\cdot}\nabla \left(\dfrac{1}{r}\right)
-\tag{7.36}\]</span></span></p>
+\tag{7.37}\]</span></span></p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electric_dipole_potential_obtained_in_another_way" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.7</strong></span> 전기상극자의 포텐셜이 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.36</span></a> 형태가 되는 것을 다른 방식으로 확인해보자. 원점에서 <span class="math inline">\(\boldsymbol{d}/2\)</span> 만큼 떨어진 곳에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}\)</span> 에서의 포텐셜 <span class="math inline">\(\Phi_+(\boldsymbol{r})\)</span> 은 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}-\boldsymbol{d}/2\)</span> 에서의 포텐셜과 같다. 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 포텐셜을 <span class="math inline">\(\Phi_0\)</span> 라고 하면</p>
+<p><span class="theorem-title"><strong>예제 7.7</strong></span> 전기상극자의 포텐셜이 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.37</span></a> 형태가 되는 것을 다른 방식으로 확인해보자. 원점에서 <span class="math inline">\(\boldsymbol{d}/2\)</span> 만큼 떨어진 곳에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}\)</span> 에서의 포텐셜 <span class="math inline">\(\Phi_+(\boldsymbol{r})\)</span> 은 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}-\boldsymbol{d}/2\)</span> 에서의 포텐셜과 같다. 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 포텐셜을 <span class="math inline">\(\Phi_0\)</span> 라고 하면</p>
 <p><span class="math display">\[
 \Phi_+(\boldsymbol{r}) = \Phi_0\left(\boldsymbol{r}-\dfrac{\boldsymbol{d}}{2}\right) \approx \Phi_0(\boldsymbol{r}) - \nabla \Phi_0(\boldsymbol{r})\boldsymbol{\cdot}\dfrac{\boldsymbol{d}}{2}
 \]</span></p>
@@ -950,7 +986,7 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 <p><span class="math display">\[
 \Phi (\boldsymbol{r}) = -\nabla \Phi_0 \cdot \boldsymbol{d} = - \nabla \left(\dfrac{1}{4\pi\epsilon_0}\dfrac{q}{r}\right)\boldsymbol{\cdot d}= -\dfrac{1}{4\pi\epsilon_0}\boldsymbol{p} \boldsymbol{\cdot}\nabla \left(\dfrac{1}{r}\right)
 \]</span></p>
-<p>이며 원했던 대로 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.36</span></a> 을 얻었다.</p>
+<p>이며 원했던 대로 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.37</span></a> 을 얻었다.</p>
 </div>
 </div>
 <p><br></p>
@@ -1094,7 +1130,7 @@ Q_{\text{total induced}} = \int \sigma \,dxdy = -q.
 <p>외부의 전하에 의해 도체에 유도되는 전하의 총합이 외부의 전하와 크기가 같다는 것은 모든 거울 영상법에서 공통적인 사실이다. 또한 전하 <span class="math inline">\(+q\)</span> 는 유도된 표면전하에 의해 원래의 전하 <span class="math inline">\(+q\)</span> 가 힘을 받으며 당연히 그 힘은 아래와 같다.</p>
 <p><span id="eq-FLP_2_6_30"><span class="math display">\[
 \boldsymbol{F} = -\dfrac{q^2}{4\pi\epsilon_0}\dfrac{}{4h^2}\hat{\boldsymbol{z}}
-\tag{7.37}\]</span></span></p>
+\tag{7.38}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -1151,12 +1187,12 @@ c^2(x^2+y^2+z^2) = (x-d)^2+y^2+z^2
 <p>이제 다른 종류의 문제를 풀어보자. 위의 그림과 같이 면적이 <span class="math inline">\(A\)</span> 인 넖은 도체 판 2개가 거리 <span class="math inline">\(d\)</span> 만큼 떨어져 평행하게 위치해 있고 각각의 판에 <span class="math inline">\(+\sigma,\,-\sigma\)</span> 의 표면전하밀도를 갖는다고 하자. 도체 판이 각각 <span class="math inline">\(\phi_+,\,\phi_-\)</span> 의 정전 포텐셜을 갖는다면 전위차 <span class="math inline">\(V = \phi_+-\phi_0\)</span> 를 생각 할 수있다. 두 판 사이에는 균일한 전기장 <span class="math inline">\(E\)</span> 가 존재하며</p>
 <p><span id="eq-FLP_6_33"><span class="math display">\[
 V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
-\tag{7.38}\]</span></span></p>
+\tag{7.39}\]</span></span></p>
 <p>여기서 <span class="math inline">\(Q\)</span> 양전하로 대전된 판의 총 전하량이며 따라서 <span class="math inline">\(-Q\)</span> 가 음전하로 대전된 판의 총 전하량이 된다.</p>
 </div>
 </div>
 <p><br></p>
-<p><a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.38</span></a> 에서 <span class="math inline">\(V\)</span> 는 <span class="math inline">\(Q\)</span> 에 비례하는데 이는 떨어져 있으며 한쪽에 <span class="math inline">\(+Q\)</span> 다른 한쪽에 <span class="math inline">\(-Q\)</span> 만큼의 전하가 대전된 두 도체 사이에 존재하는 관계이다. 도체의 표면은 등전위면이므로 <span class="math inline">\(Q=CV\)</span> 의 관계가 성립한다. <span class="math inline">\(C\)</span> 여기서 <span class="math inline">\(C\)</span> 를 <strong>capacity</strong> 라고 한다. 즉 평행한 금속판의 capacity 는 <span class="math inline">\(\epsilon_0 A/d\)</span> 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다.</p>
+<p><a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.39</span></a> 에서 <span class="math inline">\(V\)</span> 는 <span class="math inline">\(Q\)</span> 에 비례하는데 이는 떨어져 있으며 한쪽에 <span class="math inline">\(+Q\)</span> 다른 한쪽에 <span class="math inline">\(-Q\)</span> 만큼의 전하가 대전된 두 도체 사이에 존재하는 관계이다. 도체의 표면은 등전위면이므로 <span class="math inline">\(Q=CV\)</span> 의 관계가 성립한다. <span class="math inline">\(C\)</span> 여기서 <span class="math inline">\(C\)</span> 를 <strong>capacity</strong> 라고 한다. 즉 평행한 금속판의 capacity 는 <span class="math inline">\(\epsilon_0 A/d\)</span> 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다.</p>
 <div id="fig-FLP_fig_2_6_13" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_fig_2_6_13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1198,7 +1234,7 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 <p>이제 큰 공의 바로 밖의 전기장 <span class="math inline">\(E_a\)</span> 와 작은공 바로 밖의 전기장 <span class="math inline">\(E_b\)</span> 는</p>
 <p><span id="eq-FLP_2_6_35"><span class="math display">\[
 \dfrac{E_a}{E_b}=\dfrac{Q/a^2}{Q/b^2} = \dfrac{b}{a}
-\tag{7.39}\]</span></span></p>
+\tag{7.40}\]</span></span></p>
 <p>이다. 즉 <span class="math inline">\(E_a&lt; E_b\)</span> 이다.</p>
 <p><br></p>
 </section>
@@ -1210,7 +1246,7 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 <p>우리는 6 장에서 다양한 상황에서의 전기장을 계산하는 법을 알았으며, 도체가 있을 때의 전하 분포를 알 수 없으므로 어렵다는 것을 알게되었다. 도체가 있을 경우 전하는 표면에만 분포하며 도체 표면이 등전위면을 이룬다는 사실만 알 수 있다. 이런 문제를 풀기 위해 영상법과 같은 간접적인 방법을 사용하기도 한다. 그러나 우리가 풀고자 하는 문제가 영상법과 같은 방식을 적용할 수 없다면 직접 풀어야 한다. 즉 주어진 경계 조건에서의 라플라스 방정식</p>
 <p><span id="eq-FLP_2_7_1"><span class="math display">\[
 \nabla^2 \Phi = 0
-\tag{7.40}\]</span></span></p>
+\tag{7.41}\]</span></span></p>
 <p>을 풀어야 한다. 이 방정식은 오랬동안 연구되었지만 아주 간단한 몇가지 경우를 제외한다면 수치해석적으로 풀어야 한다. 경계값 문제는 물리적으로 유사한 대상에 대한 측정으로도 해결될 수 있다. 라플라스 방정식은 정상 상태의 열 흐름, 비회전성 유체 흐름, 확장된 매질에서의 전류 흐름, 그리고 탄성 막의 변형 등 다양한 물리적 상황에서 발생하므로 우리가 해결하고자 하는 전기 문제와 유사한 물리 모델을 자주 설정할 수 있다. 모델에 적절한 유사한 물리량을 측정함으로써, 관심 있는 문제에 대한 해를 얻을 수 있다. 예를 들면 정전기학에서 2차원 문제를 해결하기 위해 전해 탱크를 사용하는 것이다. 이것은 균일한 전도성 매질에서의 전위에 대한 미분 방정식이 진공의 경우와 동일하기 때문에 작동한다.</p>
 <p>만약 한 방향에 대해 물리적 장의 변화가 없거나 거의 없는 경우 문제를 2차원 문제로 바꿀 수 있으며, 2차원 문제는 일반적으로 3차원 문제보다 훨씬 쉽다.</p>
 <p><br></p>
@@ -1220,19 +1256,19 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 <p><span class="math inline">\(F:\mathbb{C}\to C\)</span> 함수는 함수의 값을 실수부와 허수부로 나누어 다음과 같이 표현 할 수 있다.</p>
 <p><span id="eq-FLP_2_7_4"><span class="math display">\[
 F(\zeta=x+iy) = U(x,\,y) + iV(x,\,y).
-\tag{7.41}\]</span></span></p>
+\tag{7.42}\]</span></span></p>
 <p>여기서 <span class="math inline">\(U(x,\,y),\, V(x,\,y)\)</span> 는 실함수이다. 그리고 <span class="math inline">\(F\)</span> 가 미분가능하다는 것과 다음 조건은 동치이다.</p>
 <p><span id="eq-FLP_2_7_7"><span class="math display">\[
 \dfrac{\partial U}{\partial x} = \dfrac{\partial V}{\partial y},\qquad \dfrac{\partial V}{\partial x} = - \dfrac{\partial U}{\partial y}.
-\tag{7.42}\]</span></span></p>
+\tag{7.43}\]</span></span></p>
 <p>즉</p>
 <p><span id="eq-FLP_2_7_7_ex"><span class="math display">\[
 (\nabla U) \boldsymbol{\cdot} (\nabla V)=0
-\tag{7.43}\]</span></span></p>
+\tag{7.44}\]</span></span></p>
 <p>이다. 이로부터 <span class="math inline">\(U(x,\,y)=C\)</span> 와 <span class="math inline">\(V(x,\,y)=D\)</span> 에 대한 등위곡선(level curve) 가 만날 때 접점에서의 기울기는 서로 수직이라는 것을 알 수 있다. 또한 <span class="math inline">\(U,\,V\)</span> 가 2차원에서의 라플라스 방정식을 만족한다는 것을 알 수 있다.</p>
 <p><span id="eq-FLP_2_7_9"><span class="math display">\[
 \dfrac{\partial^2 U}{\partial x^2} + \dfrac{\partial^2 U}{\partial y^2} = \dfrac{\partial^2 V}{\partial x^2} + \dfrac{\partial^2 V}{\partial y^2} =0.
-\tag{7.44}\]</span></span></p>
+\tag{7.45}\]</span></span></p>
 <p>현대 수학에서는 어떤 열린 집합에서 미분가능한 복소함수를 <strong>정칙 함수 (holomorphic)</strong> 라고 하고 전체 복소수에서 미분가능한 복소함수를 <strong>전해석 함수 (entire function)</strong> 이라고 한다. 예를 들어</p>
 <p><span class="math display">\[
 F(\zeta) = \zeta^2 = (x^2-y^2) + i(2xy)
@@ -1292,15 +1328,15 @@ F(\zeta) = \zeta^2 = (x^2-y^2) + i(2xy)
 <p><span class="math inline">\(a,\,b\)</span> 두 평면상에 위치한 전자가 <span class="math inline">\(a',\,b'\)</span> 평면상으로 움직였다고 하자. 평형상태의 전자의 1차원 밀도를 <span class="math inline">\(n_0\)</span> 라고 하면 전자의 갯수는 <span class="math inline">\(n_0\Delta x\)</span> 이며 이동한 상황에서의 전자 밀도는 다음과 같다.</p>
 <p><span id="eq-FLP_2_7_16"><span class="math display">\[
 n = \dfrac{n_0 \Delta x}{\Delta x + \Delta s} = \dfrac{n_0}{1+(\Delta s/\Delta x)}.
-\tag{7.45}\]</span></span></p>
+\tag{7.46}\]</span></span></p>
 <p>이다. <span class="math inline">\(\Delta s\Delta x \ll 1\)</span> 이면 위식은 아래와 같이 근사 할 수 있다.</p>
 <p><span id="eq-FLP_2_7_17"><span class="math display">\[
 n=n_0 \left(1-\dfrac{\Delta s}{\Delta x}\right).
-\tag{7.46}\]</span></span></p>
+\tag{7.47}\]</span></span></p>
 <p>여기서 양전하의 밀도는 <span class="math inline">\(n_0\)</span> 이며, 각각의 전자의 전하를 <span class="math inline">\(-q_e\)</span> 라고 하면 전하밀도는</p>
 <p><span id="eq-FLP_2_7_18"><span class="math display">\[
 \rho = -(n-n_0)q_e = n_0 q_e \dfrac{ds}{dx}
-\tag{7.47}\]</span></span></p>
+\tag{7.48}\]</span></span></p>
 <p>이다. 멕스웰 방정식 <span class="math inline">\(\nabla \boldsymbol{\cdot E} = \rho/\epsilon_e\)</span> 에 의해</p>
 <p><span class="math display">\[
 \dfrac{\partial E_x}{\partial x} = \dfrac{n_0 q_e}{\epsilon_0}\dfrac{\partial s}{\partial x}
@@ -1316,7 +1352,7 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <p>이므로 전자는</p>
 <p><span id="eq-FLP_2_7_25"><span class="math display">\[
 \omega_p = \sqrt{\dfrac{n_0 q_e^2}{m_e\epsilon_0}}
-\tag{7.48}\]</span></span></p>
+\tag{7.49}\]</span></span></p>
 <p>의 각진동수를 갖는 단순조화진동을 한다. 여기서 <span class="math inline">\(m_e\)</span> 는 전자의 질량이며 <span class="math inline">\(\omega_p\)</span> 를 <strong>플라즈마 진동수 (plasma frequency)</strong> 라고 한다. 즉 플라즈마의 교란이 전자의 평형 위치에 대해 각진동수 <span class="math inline">\(\omega_p\)</span> 인 자유 진동을 일으키며, 이는 전자 밀도의 제곱근에 비례한다. 플라즈마 전자는 <span class="math inline">\(I\)</span> 권 23 장에서 설명한 것과 같은 공명 시스템처럼 행동한다.</p>
 </div>
 </div>
@@ -1333,7 +1369,7 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <p>이제 전해질 속의 콜로이드를 생각하자. 문제를 단순하게 하기 위해 일차원적인 경우만 생각한다. 콜로이드 입자를 매우 큰 반경을 가진 구라고 생각한다면, 그 표면의 작은 부분을 평면으로 간주할 수 있다. 이온에 의한 전하 분포 <span class="math inline">\(\rho(x)\)</span> 를 생각하자. 1차원 정전 포텐셜 <span class="math inline">\(\Phi\)</span> 는</p>
 <p><span id="eq-FLP_2_7_28"><span class="math display">\[
 \dfrac{d^2\Phi}{dx^2} = - \dfrac{\rho}{\epsilon_0}
-\tag{7.49}\]</span></span></p>
+\tag{7.50}\]</span></span></p>
 <p>를 만족한다.</p>
 <p>.. to be done …</p>
 <p><br></p>
@@ -1350,18 +1386,18 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <p>전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 <span class="math inline">\(r_{12}\)</span> 만큼의 거리에 있도록 해줘야 하는 일은 다음과 같다는 것을 안다.</p>
 <p><span id="eq-FLP_2_8_1"><span class="math display">\[
 \dfrac{q_1q_2}{4\pi\epsilon_0 r_{12}}.
-\tag{7.50}\]</span></span></p>
+\tag{7.51}\]</span></span></p>
 <p>이것을 두 전하의 분포에 대한 <strong>정전기 에너지 (electrostatic energy)</strong> 라고 한다. 이제 <span class="math inline">\(N\)</span> 개의 전하 <span class="math inline">\(q_1,\ldots,\,q_{N}\)</span> 으로 이루어진 시스템을 만들기 위해 해줘야 하는 일은 이 전하 분포에 대한 정전기 에너지 <span class="math inline">\(U\)</span> 라고 하면 <span class="math inline">\(U\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLOP_2_8_3"><span class="math display">\[
 U = \sum_{\text{all pairs}}\dfrac{q_iq_j}{4\pi\epsilon_0 r_{ij}}.
-\tag{7.51}\]</span></span></p>
-<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.51</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
+\tag{7.52}\]</span></span></p>
+<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.52</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electrostatic_energy_of_uniformly_charged_sphere" class="theorem example">
 <p><span class="theorem-title"><strong>예제 7.13 (<strong>균일하게 대전된 구의 정전기 에너지</strong>)</strong></span> 균일하게 대전된 정전기 에너지를 얇은 구 껍질을 차근차근 쌓아가는 방식으로 계산하자. 균일한 전하 밀도를 <span class="math inline">\(\rho\)</span> 라고 하자. 반지름 <span class="math inline">\(r\)</span> 만큼의 구에 전하가 쌓였을 때 이 반지름을 <span class="math inline">\(r+dr\)</span> 만큼 늘리도록 쌓는데 필요한 에너지 <span class="math inline">\(dU\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_4"><span class="math display">\[
 dU = \dfrac{Q_r dQ}{4\pi\epsilon_0 r}.
-\tag{7.52}\]</span></span></p>
+\tag{7.53}\]</span></span></p>
 <p>여기서 <span class="math inline">\(Q_r\)</span> 은 반지름 <span class="math inline">\(r\)</span> 인 구의 총 전하량으로</p>
 <p><span class="math display">\[
 Q_r = \rho \cdot \dfrac{4}{3}\pi r^3
@@ -1377,7 +1413,7 @@ dU = \dfrac{4\pi \rho^2 r^4\,dr}{3\epsilon_0}
 <p>이며 이를 <span class="math inline">\(r=0\)</span> 부터 <span class="math inline">\(r=a\)</span> 까지 적분하면 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_7"><span class="math display">\[
 U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0 a}
-\tag{7.53}\]</span></span></p>
+\tag{7.54}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -1390,15 +1426,15 @@ U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0
 <p><span class="theorem-title"><strong>예제 7.14 (<strong>대전된 도체의 에너지</strong>)</strong></span> 대전된 두 도체, 즉 축전기를 생각하자. 도체 사이의 전위차 <span class="math inline">\(V\)</span> 와 전하 <span class="math inline">\(Q\)</span> 사이에는</p>
 <p><span id="eq-FLP_2_8_8"><span class="math display">\[
 V=\dfrac{Q}{C}
-\tag{7.54}\]</span></span></p>
-<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.54</span></a> 로부터</p>
+\tag{7.55}\]</span></span></p>
+<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.55</span></a> 로부터</p>
 <p><span class="math display">\[
 dU = \dfrac{QdQ}{C}
 \]</span></p>
 <p>이며 <span class="math inline">\(dQ\)</span> 를 <span class="math inline">\(0\)</span> 부터 최종 전하 <span class="math inline">\(Q\)</span> 까지 적분하면</p>
 <p><span id="eq-FLP_2_8_9"><span class="math display">\[
 U = \dfrac{1}{2}\dfrac{Q^2}{C} = \dfrac{1}{2}CV^2
-\tag{7.55}\]</span></span></p>
+\tag{7.56}\]</span></span></p>
 <p>이다.</p>
 </div>
 </div>
