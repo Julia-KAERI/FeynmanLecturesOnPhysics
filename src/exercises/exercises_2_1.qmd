@@ -1,0 +1,251 @@
+---
+title: "연습문제 2~"
+number-sections: true
+number-depth: 0
+crossref:
+  chapters: true
+---
+
+
+{{< include ../../latexmacros.qmd >}} 
+
+## 37. Electromagnetism {#sec-FLPEXR_2_37}
+
+*파인만 물리학 강의 II 권 1장에 해당한다.
+
+
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**37.1** ($a$) 정지한 두 양성자 사이의 중력이 전기력과 같다면 양성자의 질량 $M$ 은 얼마여야 하나? 실제 양성자 질량 $m_p$ 와 비교하면?
+
+($b$) 10 m 교탁의 양 끝에 있는 질량 $2.5\times 10^{-3}\,\text{kg}$ 의 은으로 만들어진 주화 두개에 $1\, \%$ 의 여분의 전자가 존재한다면 정전기력은 얼마나 될까?
+
+</div>
+
+::: {.solution}
+
+($a$) $M=\dfrac{q_p}{\sqrt{4\pi\epsilon_0 G}} = 1.86 \times 10^{-9}\, \text{kg} =1.11\times 10^{18} m_p$.
+
+($b$) $9.93 \times 10^{13}\, \text{N}$.
+:::
+
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**37.2** ($a$) 우라늄 원자의 핵이 반으로 쪼개져 있을 때 이것을 합치기 위해 해야하는 전자기력에 의한 일 $W_\text{U}$ 를 계산하라.
+
+($b$) 두개의 중수소를 합쳐 하나의 헬륨 핵으로 만들기 위해 해야하는 전자기력에 대한 일 $W_\text{He}$ 를 계산하라.
+
+</div>
+
+::: {.solution}
+
+??
+
+:::
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**37.3** 구리 금속에서는 각 원자마다 하나씩의 자유전자가 있다. 10 A 의 전류가 10 게이지 구리 전선(지름이 2.59 mm 이다) 을 통해 흐른다고 하자. 전도 전자의 평균 속도 $\langle v \rangle$ 은 얼마나 되는가? $\langle v \rangle^2/c^2$ 은 어느정도인가? 10 게이지 구리 전선은 파운드당 31.8 피트이다.
+
+</div>
+
+::: {.solution}
+
+10 게이지 구리 전선의 밀도는 1 파운드=0.4536 kg, 1 피트=0.3048 m 임을 고려하면 8842.5 kg/m<sup>3</sup> = 8.842 g/cm<sup>3</sup> 이다. 구리의 원자량은 63.546 이므로 구리 원자 하나의 질량은 1.055x10<sup>-22</sup> g 이며 따라서 1 cm<sup>3</sup> 당 구리의 원자 개수는 8.38x10<sup>22</sup> 개 이며 이는 자유전자의 밀도와 같다. 구리의 평균 속도를 $\langle v \rangle$ 이라고 하면 1초 동안 단면을 통과하는 총 전하량이 전류이므로
+
+$$
+10 = \pi r^2 \langle v \rangle q_e \rho_e
+$$
+
+이다. 여기서 $r=2.59/2=1.3\,\text{mm}=0.13 \,\text{cm}$, $q_e$ 는 전자의 전하량, $\rho_e$ 는 자유전자 밀도이며 이를 이용하여 계산하면 $\langle v \rangle = 1.4 \times 10^{-4}\,\text{m/s}$ 이며 따라서 $\langle v\rangle^2/c^2 \approx 2.22\times 10^{-25}$ 이다.
+
+:::
+
+</br>
+
+## 38. Differential Calculus of Vector Fields {#sec-FLPEXR_2_38}
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**38.2** 다음을 보여라.
+
+&emsp;($a$) $\nabla \cdot (\nabla \times \bf{A})= 0$, 
+
+&emsp;($b$) $\nabla \times (\nabla \times \bf{A}) = \nabla (\nabla \cdot \bf{A}) - \nabla^2 \bf{A}$.
+
+</div>
+
+::: {.solution}
+
+($a$) 레비-치비타 기호 $\varepsilon_{ijk}$ 에 대해 $\nabla \cdot (\nabla \times \bf{A}) = \varepsilon_{ijk}\partial_i \partial_j A_k$ 임을 안다. 고정된 $k=3$ 에 대해 $\partial_1 \partial_2 A_3 - \partial_2\partial_1 A_3=0$ 이며 나머지 인덱스에 대해서도 모두 같은 결과이다. 따라서 $0$ 이다.
+
+($b$) 레비치비타 기호에 대해 $\varepsilon_{ijk}\varepsilon_{klm} = \delta_{il}\delta_{jm}- \delta_{im}\delta_{jl}$ 임을 안다.
+
+$$
+\begin{aligned}
+\left[\nabla \times (\nabla \times \bf{A}) \right]_i &= \varepsilon_{ijk} \partial_j \left(\varepsilon_{klm}\partial_l A_m\right)  \\[0.3em]
+&= (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl})\partial_j \partial_l A_m \\[0.3em]
+&= \partial_j \partial_i A_j - \partial_j \partial_j A_i = \partial_i (\nabla \cdot \bf{A}) - \nabla^2 A_i 
+\end{aligned}
+$$
+
+:::
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**38.3** 반경벡터 $\bf{r}=(x,\,y,\,z)$ 에 대해 다음을 보여라.
+
+&emsp;($a$) $\nabla \cdot \bf{r}= 3$, 
+
+&emsp;($b$) $\nabla \times \bf{r} = \bf{0}$.
+
+$\bf{r}\ne \bf{0}$ 일 때 다음이 성립함을 보여라.
+
+&emsp;($c$) $\nabla \bf{\cdot} \left( \dfrac{\bf{r}}{r^3}\right) = 0$,
+
+&emsp;($d$) $\nabla \times \dfrac{\bf{r}}{r^3} = \bf{0}$,
+
+&emsp;($e$) $\nabla \left(\dfrac{1}{r}\right)= -\dfrac{\bf{r}}{r^3}$.
+
+&emsp;($f$) ($b$) 로부터 $\bf{r}=\nabla \varphi$ 인 $\varphi$ 가 존재함을 안다. $\varphi$ 를 구하라.
+
+</div>
+
+::: {.solution}
+
+($a$) $\partial_i x_i = 3$
+
+($b$) $\varepsilon_{ijk}\partial_j x_k = 0$.
+
+($c$) $\sum_i \partial_i \left[x_i/\left(\sum_j x_j^2\right)^{3/2}\right] = \sum_i \left(\dfrac{1}{r^3} - 3\dfrac{x_i^2}{r^5}\right) = \dfrac{3}{r^3} - \dfrac{3}{r^3} = 0.$
+
+($d$) $\varepsilon_{ijk}\partial_j \left(\dfrac{x_k}{r^3}\right)= \varepsilon_{ijk}\dfrac{-3x_jx_k}{r^5} = 0$.
+
+($e$) $\partial_i (1/r) = -x_i/r^3$.
+
+($f$) $\varphi (\bf{r})= \dfrac{r^2}{2}+C$.
+:::
+
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**38.4** 멕스웰 방정식 
+
+&emsp;($1$) $\nabla \bf{\cdot E} = \rho/\epsilon_0$, 
+
+&emsp;($2$) $\nabla \times \bf{E} =  - \partial \bf{B}/\partial t$, 
+
+&emsp;($3$) $\nabla \bf{\cdot B} = \bf{0}$, 
+
+&emsp;($4$) $c^2\nabla \times \bf{B} = \partial \bf{E}/\partial t+ \bf{J}/\epsilon_0$
+
+과 전하 보존
+
+&emsp;($5$) $\nabla \bf{\cdot J}= - \partial \rho/\partial t$
+
+를 생각하자.
+
+($a$) 식 ($3$) 은 식 ($2$) 의 divergence 와 일관됨을 보여라.
+
+($b$) 식 ($5$) 가 식 ($4$) 의 divergence 로부터 얻어질 수 있음을 보여라.
+
+($c$) 빈 공간 ($\bf{J}=\bf{0},\ \rho=0$) 에서 전기장 $\bf{E}$ 는 아래와 같은 파동방정식을 만족함을 보여라.
+
+$$
+\nabla^2\bf{E}- \dfrac{1}{c^2}\dfrac{\partial^2 \bf{E}}{\partial t^2} = \bf{0}.
+$$
+
+($d$) 빈 공간에서 자기장 $\bf{B}$ 역시 아래와 같은 파동방정식을 만족함을 보여라.
+
+$$
+\nabla^2\bf{B}- \dfrac{1}{c^2}\dfrac{\partial^2 \bf{B}}{\partial t^2} = \bf{0}.
+$$
+
+($e$) 식 ($2$) 로부터 전기장 $\bf{E}$ 가 $\bf{B}=\nabla \times \bf{A}$ 를 만족하는 $\bf{A}$ 에 대해 아래와 같이 표현될 수 있음을 보여라.
+
+$$
+\bf{E}=-\nabla \Phi - \dfrac{\partial \bf{A}}{\partial t}.
+$$
+
+
+($f$) $\bf{B}$ 를 $\nabla \times \bf{A}$ 와 같이 쓸 수 있는 이유는?
+
+</div>
+
+::: {.solution}
+
+($a$) ($2$) 의 양변에 divergence 를 취하면 $\partial_t (\nabla \bf{\cdot B}) = 0$ 이므로 $\nabla \bf{\cdot \bf{B}}$ 는 시간에 대해 constant.
+
+($b$) ($4$) 의 양변에 divergence 를 취하면 $\nabla \bf\cdot (\nabla \times \bf{B})=0$ 이므로
+
+$$
+\nabla \bf{\cdot J} = -\epsilon_0 \nabla \bf{\cdot}(\partial_t\bf{E}) = -\epsilon_0\partial_t (\nabla \bf{\cdot E}) = -\partial_t \rho
+$$
+
+($c$) **38.2** 의 ($b$) 로부터 $\nabla \times (\nabla \times \bf{E})= \nabla (\nabla \bf{\cdot E}) - \nabla^2 \bf{E}$ 임을 안다. 여기서 $\nabla \bf{\cdot E}=0$ 이며, 식 ($2$) 에 curl 을 취하면,
+
+$$
+-\nabla^2 \bf{E} = - \partial_t (\nabla \times \bf{B}) = - \dfrac{1}{c^2}\partial_t^2 \bf{E}.
+$$
+
+
+($d$) **38.2** 의 ($b$) 로부터 $\nabla \times (\nabla \times \bf{B})= \nabla (\nabla \bf{\cdot B}) - \nabla^2 \bf{B}$ 임을 안다. 여기서 $\nabla \bf{\cdot B}=0$ 이며, 식 ($4$) 에 curl 을 취하면,
+
+$$
+-c^2\nabla^2 \bf{B} = -\partial_t^2 \bf{B}.
+$$
+
+($e$) 일단 어떤 $\bf{A}$ 에서 $\bf{B}=\nabla \times \bf{A}$ 라고 하자. $\bf{E}=-\nabla \Phi$ 라면 $\nabla \times \bf{E}=\bf{0}$ 이므로 ($2$) 를 만족할 수 없다. $\bf{E}=-\nabla \Phi - \partial_t \bf{A}$ 이면
+
+$$
+\nabla \times \bf{E}=- \partial t \nabla \bf{A} = - \partial_t \bf{B}
+$$
+
+이며 ($2$) 를 만족한다.
+
+($f$) $\nabla \times \bf{B}=\bf{0}$ 이기 때문.
+
+
+:::
+
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**38.6** ($a$) 상수 벡터 $\bf{A}$ 와 반경 벡터 $\bf{R}$ 에 대해 다음이 성립함을 보여라.
+
+$$
+\nabla \times (\bf{A}\times \bf{R})=2\bf{A}.
+$$
+
+($b$) 벡터에 대해
+
+$$
+\bf{B}\times (\bf{A}\times \bf{C}) = \bf{A}(\bf{B\cdot C}) - (\bf{B \cdot A})\bf{C}
+$$
+
+이 성립하며 이로부터
+
+$$
+\nabla \times (\bf{A} \times \bf{R}) = \bf{A}(\nabla \bf{\cdot R}) - (\nabla \bf{\cdot A})\bf{R}, \tag{False}
+$$
+
+가 성립할 것 같지만 틀렸다. $\bf{B}$ 를 $\nabla$ 로 치환시키면 안되는 이유를 말하라.
+
+</div>
+
+::: {.solution}
+
+($a$) 
+
+$$
+\begin{aligned}
+\left[\nabla \times (\bf{A}\times \bf{R})\right]_i &= \varepsilon_{ijk} \left(\partial_j \varepsilon_{klm}A_lx_m\right) = \left(\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}\right)\partial_j A_l x_m \\[0.3em] 
+&=A_i \partial_j x_j - A_i \partial_j x_i = 3A_i - A_i = 2A_i
+\end{aligned}
+$$
+
+($b$) $\bf{A}(\nabla \bf{\cdot R}) - (\nabla \bf{\cdot A})\bf{R} =3\bf{A}$ 이다. $\nabla$ 는 연산자로서 벡터 인덱스 뿐만 아니라 뒤의 피 연산자의 인덱스까지 고려하여 계산해야 한다.
+
+
+
+:::

@@ -25,6 +25,7 @@ book:
     - part: src/exercises/index.qmd
       chapters:
       - src/exercises/exercises_1_1.qmd
+      - src/exercises/exercises_2_1.qmd
       # - src/Feynmann/feynmann_trans.qmd
   
  
