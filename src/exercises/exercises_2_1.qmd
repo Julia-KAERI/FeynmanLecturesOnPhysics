@@ -246,6 +246,37 @@ $$
 
 ($b$) $\bf{A}(\nabla \bf{\cdot R}) - (\nabla \bf{\cdot A})\bf{R} =3\bf{A}$ 이다. $\nabla$ 는 연산자로서 벡터 인덱스 뿐만 아니라 뒤의 피 연산자의 인덱스까지 고려하여 계산해야 한다.
 
+:::
+
+</br>
+
+## 39. Vector Integral Calculus  {#sec-FLPEXR_2_39}
+
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**39.1** ($a$) 멕스웰 방정식의 [미분 형태](../vol2/vol2_1.qmd#sec-FLP_2_4_1)와 [적분형태](../vol2/vol2_1.qmd#sec-FLP_2_1_4) 가 동등함을 보여라.
+
+($b$) $\rho$ 가 단위 부피당 전하이고 $\bf{J}$ 가 전류 밀도일 때
+
+$$
+\nabla \bf{\cdot J} = - \dfrac{\partial \rho}{\partial t}
+$$
+
+는 전하량 보존과 동등함을 보여라.
+
+
+</div>
+
+::: {.solution}
+
+($a$) 발산 정리(@thm-FLP_divergence_theorem), 스토크스 정리(@thm-FLP_stokes_theorem) 를 이용하여 보일 수 있다.
+
+($b$) 발산정리를 통해
+
+$$
+\dfrac{\partial Q}{\partial t} + \int_S \bf{J\cdot}d\bf{a} =0.
+$$
 
 
 :::
+

@@ -71,11 +71,11 @@ $$
 
 ### II.1-4 전자기의 법칙 {#sec-FLP_2_1_4}
 
-#### **맥스웰 방정식**
+#### **맥스웰 방정식** 
 
 ::: {.callout-important icon="false"}
 
-#### 맥스웰 방정식의 적분 형태
+#### 맥스웰 방정식의 적분 형태 
 
 닫힌 곡면 $S$ 와 $S$ 의 내부의 전하 $Q$, 그리고 진공에서의 유전류 $\epsilon_0$, 자화율 $\mu_0$ 에 대해 다음이 성립한다.
 $$
@@ -170,11 +170,45 @@ $\nabla \bf{\cdot P}=0$ 이면 $\bf{P}=\nabla \times \bf{C}$ 인 벡터장 $\bf{
 
 </br>
 
-## II-3 벡터 적분 {#sec-FLP_2_2}
+## II-3 벡터 적분 {#sec-FLP_2_3}
+
+발산정리와 스토크스 정리에 대해 소개한다. 증명은 미적분학 교재를 참고하라.
 
 ### A. 발산 정리 {#sec-FLP_divergence_theorem}
 
+</br><div class="border" style="background-color:#FFF0F5 ;padding:5px;">
 
+::: {#thm-FLP_divergence_theorem}
+
+#### 발산 정리 (가우스 정리)
+
+공간 속에서 유계이고 닫힌 한 영역 $R$ 에서 정의된 $C^1$ 급 벡터장 $\bf{F}$ 에 대하여 다음이 성립한다.
+
+$$
+\iint_{\partial R}\bf{F \cdot }d \bf{a} = \iiint_R \nabla \bf{\cdot F}\, dV
+$$
+
+:::
+
+</div> </br>
+
+### B. 스토크스 정리 {#sec-FLP_stokes_theorem}
+
+</br><div class="border" style="background-color:#FFF0F5 ;padding:5px;">
+
+::: {#thm-FLP_stokes_theorem}
+
+#### 스토크스 정리
+
+$S$ 가 닫혀있는 조각적으로 부드러운 단순곡선 $\partial S$ 를 경계로 하는 조각적으로 부드러운 유향곡면이라고 하자. 그리고 $\bf{F}$ 가 곡면 $S$ 를 포함하는 $\R^3$ 상의 열린 공간에서 정의된 $C^1$ 급 벡터장일 때 다음이 성립한다.
+
+$$
+\oint_{\partial S}\bf{F \cdot }d \bf{l} = \iint_S (\nabla \times \bf{F})\bf{\cdot} d\bf{a}
+$$
+
+:::
+
+</div>
 
 
 </br>
@@ -186,7 +220,7 @@ $\nabla \bf{\cdot P}=0$ 이면 $\bf{P}=\nabla \times \bf{C}$ 인 벡터장 $\bf{
 
 ::: {.callout-important icon="false"}
 
-#### 맥스웰 방정식의 미분형태
+#### **맥스웰 방정식의 미분형태**
 
 $$
 \nabla \bf{\cdot E} = \dfrac{\rho}{\epsilon_0},

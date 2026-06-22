@@ -255,6 +255,7 @@ window.Quarto = {
   <ul>
   <li><a href="#sec-FLPEXR_2_37" id="toc-sec-FLPEXR_2_37" class="nav-link active" data-scroll-target="#sec-FLPEXR_2_37">37. Electromagnetism</a></li>
   <li><a href="#sec-FLPEXR_2_38" id="toc-sec-FLPEXR_2_38" class="nav-link" data-scroll-target="#sec-FLPEXR_2_38">38. Differential Calculus of Vector Fields</a></li>
+  <li><a href="#sec-FLPEXR_2_39" id="toc-sec-FLPEXR_2_39" class="nav-link" data-scroll-target="#sec-FLPEXR_2_39">39. Vector Integral Calculus</a></li>
   </ul>
 </nav>
     </div>
@@ -415,6 +416,25 @@ window.Quarto = {
 \end{aligned}
 \]</span></p>
 <p>(<span class="math inline">\(b\)</span>) <span class="math inline">\(\boldsymbol{A}(\nabla \boldsymbol{\cdot R}) - (\nabla \boldsymbol{\cdot A})\boldsymbol{R} =3\boldsymbol{A}\)</span> 이다. <span class="math inline">\(\nabla\)</span> 는 연산자로서 벡터 인덱스 뿐만 아니라 뒤의 피 연산자의 인덱스까지 고려하여 계산해야 한다.</p>
+</div>
+<p><br></p>
+</section>
+<section id="sec-FLPEXR_2_39" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLPEXR_2_39">39. Vector Integral Calculus</h2>
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+<p><strong>39.1</strong> (<span class="math inline">\(a\)</span>) 멕스웰 방정식의 <a href="../../src/vol2/vol2_1.html#sec-FLP_2_4_1">미분 형태</a>와 <a href="../../src/vol2/vol2_1.html#sec-FLP_2_1_4">적분형태</a> 가 동등함을 보여라.</p>
+<p>(<span class="math inline">\(b\)</span>) <span class="math inline">\(\rho\)</span> 가 단위 부피당 전하이고 <span class="math inline">\(\boldsymbol{J}\)</span> 가 전류 밀도일 때</p>
+<p><span class="math display">\[
+\nabla \boldsymbol{\cdot J} = - \dfrac{\partial \rho}{\partial t}
+\]</span></p>
+<p>는 전하량 보존과 동등함을 보여라.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>(해답)</em>. </span>(<span class="math inline">\(a\)</span>) 발산 정리(<a href="../vol2/vol2_1.html#thm-FLP_divergence_theorem" class="quarto-xref">정리&nbsp;<span>7.3</span></a>), 스토크스 정리(<a href="../vol2/vol2_1.html#thm-FLP_stokes_theorem" class="quarto-xref">정리&nbsp;<span>7.4</span></a>) 를 이용하여 보일 수 있다.</p>
+<p>(<span class="math inline">\(b\)</span>) 발산정리를 통해</p>
+<p><span class="math display">\[
+\dfrac{\partial Q}{\partial t} + \int_S \boldsymbol{J\cdot}d\boldsymbol{a} =0.
+\]</span></p>
 </div>
 
 

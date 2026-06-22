@@ -268,6 +268,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_2" id="toc-sec-FLP_2_2" class="nav-link" data-scroll-target="#sec-FLP_2_2">II-3 벡터 적분</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_divergence_theorem" id="toc-sec-FLP_divergence_theorem" class="nav-link" data-scroll-target="#sec-FLP_divergence_theorem">A. 발산 정리</a></li>
+  <li><a href="#sec-FLP_stokes_theorem" id="toc-sec-FLP_stokes_theorem" class="nav-link" data-scroll-target="#sec-FLP_stokes_theorem">B. 스토크스 정리</a></li>
   </ul></li>
   <li><a href="#sec-FLP_2_4" id="toc-sec-FLP_2_4" class="nav-link" data-scroll-target="#sec-FLP_2_4">II-4 정전기학</a>
   <ul class="collapse">
@@ -491,8 +492,31 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 </section>
 <section id="sec-FLP_2_2" class="level2">
 <h2 class="anchored" data-anchor-id="sec-FLP_2_2">II-3 벡터 적분</h2>
+<p>발산정리와 스토크스 정리에 대해 소개한다. 증명은 미적분학 교재를 참고하라.</p>
 <section id="sec-FLP_divergence_theorem" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_divergence_theorem">A. 발산 정리</h3>
+<br>
+<div class="border" style="background-color:#FFF0F5 ;padding:5px;">
+<div id="thm-FLP_divergence_theorem" class="theorem">
+<p><span class="theorem-title"><strong>정리 7.3 (발산 정리 (가우스 정리))</strong></span> 공간 속에서 유계이고 닫힌 한 영역 <span class="math inline">\(R\)</span> 에서 정의된 <span class="math inline">\(C^1\)</span> 급 벡터장 <span class="math inline">\(\boldsymbol{F}\)</span> 에 대하여 다음이 성립한다.</p>
+<p><span class="math display">\[
+\iint_{\partial R}\boldsymbol{F \cdot }d \boldsymbol{a} = \iiint_R \nabla \boldsymbol{\cdot F}\, dV
+\]</span></p>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="sec-FLP_stokes_theorem" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_stokes_theorem">B. 스토크스 정리</h3>
+<br>
+<div class="border" style="background-color:#FFF0F5 ;padding:5px;">
+<div id="thm-FLP_stokes_theorem" class="theorem">
+<p><span class="theorem-title"><strong>정리 7.4 (스토크스 정리)</strong></span> <span class="math inline">\(S\)</span> 가 닫혀있는 조각적으로 부드러운 단순곡선 <span class="math inline">\(\partial S\)</span> 를 경계로 하는 조각적으로 부드러운 유향곡면이라고 하자. 그리고 <span class="math inline">\(\boldsymbol{F}\)</span> 가 곡면 <span class="math inline">\(S\)</span> 를 포함하는 <span class="math inline">\(\mathbb{R}^3\)</span> 상의 열린 공간에서 정의된 <span class="math inline">\(C^1\)</span> 급 벡터장일 때 다음이 성립한다.</p>
+<p><span class="math display">\[
+\oint_{\partial S}\boldsymbol{F \cdot }d \boldsymbol{l} = \iint_S (\nabla \times \boldsymbol{F})\boldsymbol{\cdot} d\boldsymbol{a}
+\]</span></p>
+</div>
+</div>
 <p><br></p>
 </section>
 </section>
@@ -672,7 +696,7 @@ W(\text{unit}) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
 <br>
 <div class="border" style="background-color:#FFF0F5 ;padding:5px;">
 <div id="thm-FLP_electrostatic_field_and_stable_equillibrium" class="theorem">
-<p><span class="theorem-title"><strong>정리 7.3 (<strong>정전기장과 안정평형상태</strong>)</strong></span> 정전기장에서 고립된 점전하의 역학적 안정평형상태는 존재하지 않는다.</p>
+<p><span class="theorem-title"><strong>정리 7.5 (<strong>정전기장과 안정평형상태</strong>)</strong></span> 정전기장에서 고립된 점전하의 역학적 안정평형상태는 존재하지 않는다.</p>
 </div>
 </div>
 <div class="proof">
@@ -682,7 +706,7 @@ W(\text{unit}) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
 <br>
 <div class="border" style="background-color:#FFF0F5 ;padding:5px;">
 <div id="thm-FLP_electrostatic_potential_and_equilibrium" class="theorem">
-<p><span class="theorem-title"><strong>정리 7.4 (<strong>라플라스 방정식의 특성</strong>)</strong></span> 어떤 (단순 연결) 자유공간의 전기장 <span class="math inline">\(\boldsymbol{E}(\boldsymbol{r})\)</span> 을 생각하자. 어떤 <span class="math inline">\(P_0\)</span> 의 근처에서(수학적으로는 <span class="math inline">\(P_0\)</span> 를 포함하는 열린 공간) <span class="math inline">\(\boldsymbol{E}=\boldsymbol{0}\)</span> 이면 <span class="math inline">\(\boldsymbol{E}\)</span> 는 전체 자유공간에서 <span class="math inline">\(\boldsymbol{0}\)</span> 이다.</p>
+<p><span class="theorem-title"><strong>정리 7.6 (<strong>라플라스 방정식의 특성</strong>)</strong></span> 어떤 (단순 연결) 자유공간의 전기장 <span class="math inline">\(\boldsymbol{E}(\boldsymbol{r})\)</span> 을 생각하자. 어떤 <span class="math inline">\(P_0\)</span> 의 근처에서(수학적으로는 <span class="math inline">\(P_0\)</span> 를 포함하는 열린 공간) <span class="math inline">\(\boldsymbol{E}=\boldsymbol{0}\)</span> 이면 <span class="math inline">\(\boldsymbol{E}\)</span> 는 전체 자유공간에서 <span class="math inline">\(\boldsymbol{0}\)</span> 이다.</p>
 </div>
 </div>
 <p><br></p>
@@ -721,7 +745,7 @@ W(\text{unit}) = -\int_a^b \boldsymbol{E\cdot}d\boldsymbol{l}.
 <section id="sec-FLP_2_5_3" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_5_3">II.5-3 도체와 평형</h3>
 <p>대전된 도체들이 있다고 하자. 그렇다면 점전하는 이 도체의 외부의 어떤 위치해서 안정평형상태에 있을 수 있을까? 문제를 더 정확히 하자면 이 점전하 <span class="math inline">\(q\)</span> 가 약간 이동할 때 도체 내부의 전하들이 재배치되어 점전하 <span class="math inline">\(q\)</span> 가 자기 위치로 돌아오도록 하는 복원력이 작용하게 하는 것이 가능할까? 일단 답은 <strong>No</strong> 이며 이것을 수학적으로 증명하는 것은 쉽지 않다. 여기서는 원리만 짚기로 한다.</p>
-<div class="page-columns page-full"><p>우선 도체에서 전하가 재배치된다는 것은 이 재배치로 인해 전체 포텐셜 에너지<span class="math inline">\(^1\)</span>가 낮아질 때 가능하다. 그리고 이중 일부의 에너지는 열의 형태로 손실된다. 이제 우리는 이미 보았듯이, 장을 만드는 전하들이 (시간적으로) 정지 상태라면, 장 내의 어떤 위치 <span class="math inline">\(\boldsymbol{r}_0\)</span> 근처에서는 점전하를 <span class="math inline">\(\boldsymbol{r}_0\)</span> 로부터 이동시켰을 때 시스템 에너지를 감소시키는 어떤 방향이 존재한다 (<a href="#thm-FLP_electrostatic_potential_and_equilibrium" class="quarto-xref">정리&nbsp;<span>7.4</span></a> 와 부연설명을 보라). 이 방향으로의 전하의 가상 변위를 <span class="math inline">\(\delta \boldsymbol{r}\)</span> 라고 하고 전체 시스템의 포텐셜 에너지를 <span class="math inline">\(U\)</span> 라고 하면 <span class="math inline">\(U(\boldsymbol{r}+\delta \boldsymbol{r}_0) - U(\boldsymbol{r})&lt; 0\)</span> 이며,</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 원문은 <em>First, we note that when charges redistribute themselves on the conductors, they can only do so if their motion decreases their total potential energy.</em> 인데 원문이 모호하며 물리적으로 전체 포텐셜 에너지가 맞는것 같다.</span></div></div>
+<div class="page-columns page-full"><p>우선 도체에서 전하가 재배치된다는 것은 이 재배치로 인해 전체 포텐셜 에너지<span class="math inline">\(^1\)</span>가 낮아질 때 가능하다. 그리고 이중 일부의 에너지는 열의 형태로 손실된다. 이제 우리는 이미 보았듯이, 장을 만드는 전하들이 (시간적으로) 정지 상태라면, 장 내의 어떤 위치 <span class="math inline">\(\boldsymbol{r}_0\)</span> 근처에서는 점전하를 <span class="math inline">\(\boldsymbol{r}_0\)</span> 로부터 이동시켰을 때 시스템 에너지를 감소시키는 어떤 방향이 존재한다 (<a href="#thm-FLP_electrostatic_potential_and_equilibrium" class="quarto-xref">정리&nbsp;<span>7.6</span></a> 와 부연설명을 보라). 이 방향으로의 전하의 가상 변위를 <span class="math inline">\(\delta \boldsymbol{r}\)</span> 라고 하고 전체 시스템의 포텐셜 에너지를 <span class="math inline">\(U\)</span> 라고 하면 <span class="math inline">\(U(\boldsymbol{r}+\delta \boldsymbol{r}_0) - U(\boldsymbol{r})&lt; 0\)</span> 이며,</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 원문은 <em>First, we note that when charges redistribute themselves on the conductors, they can only do so if their motion decreases their total potential energy.</em> 인데 원문이 모호하며 물리적으로 전체 포텐셜 에너지가 맞는것 같다.</span></div></div>
 <p><span class="math display">\[
 0&gt; U(\boldsymbol{r}+\delta \boldsymbol{r}_0) - U(\boldsymbol{r}) = \dfrac{\partial U}{\partial \boldsymbol{r}}\boldsymbol{\cdot}\delta \boldsymbol{r} = - \boldsymbol{F}_{\delta \boldsymbol{r}}\boldsymbol{\cdot}\delta \boldsymbol{r}
 \]</span></p>
