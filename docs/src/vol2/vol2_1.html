@@ -265,7 +265,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#sec-FLP_helmholtz_theorem" id="toc-sec-FLP_helmholtz_theorem" class="nav-link" data-scroll-target="#sec-FLP_helmholtz_theorem">A. 헬름홀츠 정리</a></li>
   </ul></li>
-  <li><a href="#sec-FLP_2_2" id="toc-sec-FLP_2_2" class="nav-link" data-scroll-target="#sec-FLP_2_2">II-3 벡터 적분</a>
+  <li><a href="#sec-FLP_2_3" id="toc-sec-FLP_2_3" class="nav-link" data-scroll-target="#sec-FLP_2_3">II-3 벡터 적분</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_divergence_theorem" id="toc-sec-FLP_divergence_theorem" class="nav-link" data-scroll-target="#sec-FLP_divergence_theorem">A. 발산 정리</a></li>
   <li><a href="#sec-FLP_stokes_theorem" id="toc-sec-FLP_stokes_theorem" class="nav-link" data-scroll-target="#sec-FLP_stokes_theorem">B. 스토크스 정리</a></li>
@@ -490,8 +490,8 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 <p><br></p>
 </section>
 </section>
-<section id="sec-FLP_2_2" class="level2">
-<h2 class="anchored" data-anchor-id="sec-FLP_2_2">II-3 벡터 적분</h2>
+<section id="sec-FLP_2_3" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLP_2_3">II-3 벡터 적분</h2>
 <p>발산정리와 스토크스 정리에 대해 소개한다. 증명은 미적분학 교재를 참고하라.</p>
 <section id="sec-FLP_divergence_theorem" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_divergence_theorem">A. 발산 정리</h3>
@@ -530,7 +530,7 @@ I_D:=\epsilon_0 \dfrac{d}{dt} \int_S \boldsymbol{E \cdot} d\boldsymbol{a}.
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">중요</span>맥스웰 방정식의 미분형태
+<span class="screen-reader-only">중요</span><strong>맥스웰 방정식의 미분형태</strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1080,9 +1080,9 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 \]</span></p>
 <p>이다. 그러나 이 식은 복잡한 적분 없이 표면 전하 밀도 <span class="math inline">\(\sigma = \sigma_0 \cos \theta\)</span> 를 이용하여 풀 수 있다. 이 때 전기 쌍극자 모먼트 <span class="math inline">\(p\)</span> 는</p>
 <p><span class="math display">\[
-p=\dfrac{4\pi \sigma_ R^3}{3}
+p=\dfrac{4\pi \sigma_0 R^3}{3}
 \]</span></p>
-<p>이며 구 내부에서의 전기장은</p>
+<p>이다. 균일한 전하분포를 가진 구 내부에서의 전기장은 <a href="#eq-FLP_electric_field_inside_of_uniformly_charged_sphere" class="quarto-xref">식&nbsp;<span>7.27</span></a> 이다.</p>
 <p><span class="math display">\[
 E=\dfrac{\sigma_0}{3\epsilon_0}
 \]</span></p>
@@ -1104,23 +1104,23 @@ E=\dfrac{\sigma_0}{3\epsilon_0}
 </figcaption>
 </figure>
 </div>
-<p>정전 포텐셜 <span class="math inline">\(\Phi(\boldsymbol{R})\)</span> 은 다음과 같다.</p>
+<p>정전 포텐셜 <span class="math inline">\(\Phi(\boldsymbol{r})\)</span> 은 다음과 같다.</p>
 <p><span class="math display">\[
-\Phi (\boldsymbol{R}) = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{r_i} = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{\|\boldsymbol{R}-\boldsymbol{d}_i\|}
+\Phi (\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{r_i} = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{\|\boldsymbol{r}-\boldsymbol{d}_i\|}
 \]</span></p>
-<p>여기서 <span class="math inline">\(1/\|\boldsymbol{R}-\boldsymbol{d}_i\|\)</span> 를 <span class="math inline">\(R \gg d_i\)</span> 조건을 이용하여 근사하면</p>
+<p>여기서 <span class="math inline">\(1/\|\boldsymbol{r}-\boldsymbol{d}_i\|\)</span> 를 <span class="math inline">\(R \gg d_i\)</span> 조건을 이용하여 근사하면</p>
 <p><span class="math display">\[
-\dfrac{1}{\|\boldsymbol{R}-\boldsymbol{d}_i\|} = \dfrac{1}{R}\left(1 + \dfrac{\boldsymbol{R\cdot d}_i}{R^2} + \cdots \right)
+\dfrac{1}{\|\boldsymbol{r}-\boldsymbol{d}_i\|} = \dfrac{1}{r}\left(1 + \dfrac{\boldsymbol{r\cdot d}_i}{R^2} + \cdots \right)
 \]</span></p>
 <p>이다. <span class="math inline">\(Q=\sum_i q_i\)</span>, <span class="math inline">\(\boldsymbol{p} = \sum_i q_i \boldsymbol{d}_i\)</span> 라고 하면</p>
 <p><span class="math display">\[
-\Phi (\boldsymbol{R}) = \dfrac{1}{4\pi\epsilon_0} \left(\dfrac{Q}{R} +  \dfrac{\boldsymbol{p \cdot R}}{R^3} + \cdots \right)
+\Phi (\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0} \left(\dfrac{Q}{r} +  \dfrac{\boldsymbol{p \cdot r}}{r^3} + \cdots \right)
 \]</span></p>
 <p>이다 위 식에서 첫번째 항은 전하 분포 전체를 하나의 점전하로 간주하는것이다. 총 전하량이 <span class="math inline">\(0\)</span> 이라면 <span class="math inline">\(Q=0\)</span> 이므로 포텐셜에 기여하지 않는다. 두번째 항은 전체 전하분포에서 기안하는 쌍극자 항이다. 따라서 <span class="math inline">\(\boldsymbol{p}=\sum_i q_i \boldsymbol{d}_i\)</span> 를 이 전하 분포의 쌍극자 모멘트라고 부르며</p>
 <p><span class="math display">\[
-\Phi_d (\boldsymbol{R})= \dfrac{1}{4\pi\epsilon_0}\dfrac{\boldsymbol{p\cdot R}}{R^3}
+\Phi_d (\boldsymbol{r})= \dfrac{1}{4\pi\epsilon_0}\dfrac{\boldsymbol{p\cdot r}}{r^3}
 \]</span></p>
-<p>을 쌍극자 포텐셜 이라고 부른다. 먄약 <span class="math inline">\(Q=0\)</span> 이라면 쌍극자 포텐셜이 가장 주도적인 포텐셜이 되며 <span class="math inline">\(R\)</span> 이 클수록 더욱 그러하다.</p>
+<p>을 쌍극자 포텐셜 이라고 부른다. 먄약 <span class="math inline">\(Q=0\)</span> 이라면 쌍극자 포텐셜이 가장 주도적인 포텐셜이 되며 <span class="math inline">\(r\)</span> 이 클수록 더욱 그러하다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_6_6" class="level3">

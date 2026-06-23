@@ -264,7 +264,6 @@ $$
 
 는 전하량 보존과 동등함을 보여라.
 
-
 </div>
 
 ::: {.solution}
@@ -277,6 +276,27 @@ $$
 \dfrac{\partial Q}{\partial t} + \int_S \bf{J\cdot}d\bf{a} =0.
 $$
 
-
 :::
 
+</br><div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+**39.2** 원점의 전하에 의한 전기장은 아래과 같은 형태이다.
+
+$$
+\bf{E}=\dfrac{K}{r^3}\bf{r}.
+$$
+
+($a$) 원점을 중심으로 반지름이 $a$ 인 구면 $S$ 를 통과하는 전기장 $\bf{E}$ 의 플럭스를 계산하라.
+
+($b$) 가우스 정리를 이용하여 구면에서의 전기장 $\bf{E}$ 를 통과하는 플럭스와 $\nabla \bf{\cdot E}$ 의 부피에 대한 적분의 관계를 설명하라. 
+
+($c$) ... 통과
+
+</div>
+
+::: {.solution}
+
+($a$) $\displaystyle \int_S \bf{E\cdot}d\bf{a} = \int_S \dfrac{K}{r^2}\,da = 4\pi K$
+
+($b$) 원점을 제외한 영역에서 $\nabla \bf{\cdot E} = 0$. 
+:::

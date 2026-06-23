@@ -840,10 +840,10 @@ $$
 이다. 그러나 이 식은 복잡한 적분 없이 표면 전하 밀도 $\sigma = \sigma_0 \cos \theta$ 를 이용하여 풀 수 있다. 이 때 전기 쌍극자 모먼트 $p$ 는
 
 $$
-p=\dfrac{4\pi \sigma_ R^3}{3}
+p=\dfrac{4\pi \sigma_0 R^3}{3}
 $$
 
-이며 구 내부에서의 전기장은 
+이다. 균일한 전하분포를 가진 구 내부에서의 전기장은 @eq-FLP_electric_field_inside_of_uniformly_charged_sphere 이다. 
 
 $$
 E=\dfrac{\sigma_0}{3\epsilon_0}
@@ -861,31 +861,31 @@ $$
 
 ![파인만 물리학 강의 $II$ Fig. 6-7. ](figures/fig_2_6/fig_2_6_7.png){#fig-FLP_2_6_7 width=400}
 
-정전 포텐셜 $\Phi(\bf{R})$ 은 다음과 같다.
+정전 포텐셜 $\Phi(\bf{r})$ 은 다음과 같다.
 
 $$
-\Phi (\bf{R}) = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{r_i} = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{\|\bf{R}-\bf{d}_i\|} 
+\Phi (\bf{r}) = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{r_i} = \dfrac{1}{4\pi\epsilon_0} \sum_i \dfrac{q_i}{\|\bf{r}-\bf{d}_i\|} 
 $$
 
-여기서 $1/\|\bf{R}-\bf{d}_i\|$ 를 $R \gg d_i$ 조건을 이용하여 근사하면
+여기서 $1/\|\bf{r}-\bf{d}_i\|$ 를 $R \gg d_i$ 조건을 이용하여 근사하면
 
 $$
-\dfrac{1}{\|\bf{R}-\bf{d}_i\|} = \dfrac{1}{R}\left(1 + \dfrac{\bf{R\cdot d}_i}{R^2} + \cdots \right)
+\dfrac{1}{\|\bf{r}-\bf{d}_i\|} = \dfrac{1}{r}\left(1 + \dfrac{\bf{r\cdot d}_i}{R^2} + \cdots \right)
 $$
 
 이다. $Q=\sum_i q_i$, $\bf{p} = \sum_i q_i \bf{d}_i$ 라고 하면 
 
 $$
-\Phi (\bf{R}) = \dfrac{1}{4\pi\epsilon_0} \left(\dfrac{Q}{R} +  \dfrac{\bf{p \cdot R}}{R^3} + \cdots \right)
+\Phi (\bf{r}) = \dfrac{1}{4\pi\epsilon_0} \left(\dfrac{Q}{r} +  \dfrac{\bf{p \cdot r}}{r^3} + \cdots \right)
 $$
 
 이다 위 식에서 첫번째 항은 전하 분포 전체를 하나의 점전하로 간주하는것이다. 총 전하량이 $0$ 이라면 $Q=0$ 이므로 포텐셜에 기여하지 않는다. 두번째 항은 전체 전하분포에서 기안하는 쌍극자 항이다. 따라서 $\bf{p}=\sum_i q_i \bf{d}_i$ 를 이 전하 분포의 쌍극자 모멘트라고 부르며
 
 $$
-\Phi_d (\bf{R})= \dfrac{1}{4\pi\epsilon_0}\dfrac{\bf{p\cdot R}}{R^3}
+\Phi_d (\bf{r})= \dfrac{1}{4\pi\epsilon_0}\dfrac{\bf{p\cdot r}}{r^3}
 $$
 
-을 쌍극자 포텐셜 이라고 부른다. 먄약 $Q=0$ 이라면 쌍극자 포텐셜이 가장 주도적인 포텐셜이 되며 $R$ 이 클수록 더욱 그러하다.
+을 쌍극자 포텐셜 이라고 부른다. 먄약 $Q=0$ 이라면 쌍극자 포텐셜이 가장 주도적인 포텐셜이 되며 $r$ 이 클수록 더욱 그러하다.
 
 </br>
 
