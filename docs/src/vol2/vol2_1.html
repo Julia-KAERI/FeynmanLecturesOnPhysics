@@ -983,16 +983,20 @@ E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
 </div>
 <p>두 점전하 <span class="math inline">\(+q\)</span>, <span class="math inline">\(-q\)</span> 가 위의 그림과 같이 <span class="math inline">\(d\)</span> 만큼의 거리를 두고 <span class="math inline">\(z\)</span> 축상에 위치해 있다고 하자. 정전포텐셜은 <span class="math inline">\(\boldsymbol{r}=(x,\,y,\,z)\)</span> 에서의 정전포텐셜은 다음과 같다.</p>
 <p><span id="eq-FLP_2_6_8"><span class="math display">\[
-\Phi(x,\,y,\,z) = \dfrac{1}{4\pi\epsilon_0} \left[\dfrac{q}{\sqrt{x^2+y^2+(z-d/2)^2}}+\dfrac{-q}{\sqrt{x^2+y^2+(z+d/2)^2}}\right].
+\Phi(\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0} \left[\dfrac{q}{\|\boldsymbol{r}-d\hat{\boldsymbol{z}}/2\|}+\dfrac{-q}{\|\boldsymbol{r}+d\hat{\boldsymbol{z}}/2\|}\right].
 \tag{7.33}\]</span></span></p>
+<p><a href="https://julia-kaeri.github.io/MathematicalPhysics/src/special_functions/legendre.html">르장드르 다항식</a></p>
 <p>많은 경우 우리가 관심있는 상황은 <span class="math inline">\(\|\boldsymbol{r}\|\gg d\)</span> 인 경우, 즉 두전하의 거리보다 우리가 관심있는 영역까지의 거리가 훨씬 큰 경우이며 이 때 이런 전하 분포를 <strong>전기 쌍극자 (electric dipole)</strong> 이라고 한다. 원자에 전기장이 가해지는 경우 원자핵과 전자가 서로 반대 방향으로 힘을 받기 때문에 원자핵의 중심과 전자의 중심이 불일치할 수 있으며 이때 발생하는 전기 쌍극자를 <strong>원자 쌍극자 (atomic dipole)</strong> 이라고 한다. 도체의 경우 자유전자는 표면에 모이며 내부의 전기장이 0 이 된다는 것을 안다. 부도체의 경우 전자가 멀리 가지 못하기 때문에 전자가 약간 움직이게 된다. 원자 혹은 분자 수준에서는 전기적으로 중성이며 다만 미시적으로 쌍극자를 이룬다. 그리고 우리가 관심 있는 영역은 이 미시적인 쌍극자의 크기보다 일반적으로 훨씬 크다. 어떤 경우에는 외부에서 가해지는 전기장이 없더라도 분자수준에서 전기쌍극자가 존재할 수 있다. 가장 대표적으로 물 분자이다.</p>
-<p>이제 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.33</span></a> 을 분석해보자. <span class="math inline">\(r \gg d\)</span> 인 경우</p>
+<p>이제 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.33</span></a> 을 분석해보자. <span class="math inline">\(r &gt; d\)</span> 인 경우 <a href="https://julia-kaeri.github.io/MathematicalPhysics/src/special_functions/legendre.html">르장드르 다항식</a> 을 이용하면</p>
 <p><span class="math display">\[
-\dfrac{1}{\sqrt{x^2+y^2+(z-d/2)^2}}\approx \dfrac{1}{\sqrt{r^2 -zd}} \approx \dfrac{1}{r}\left(1-\dfrac{zd}{2r^2}\right)
+\begin{aligned}
+\dfrac{1}{\|\boldsymbol{r}-d\hat{\boldsymbol{z}}/2\|} &amp;= \dfrac{1}{r}\sum_{n=0}^\infty \left(\dfrac{d}{2r}\right)^n P_n(\cos\theta), \\[0.3em]
+\dfrac{1}{\|\boldsymbol{r}+d\hat{\boldsymbol{z}}/2\|} &amp;= \dfrac{1}{r}\sum_{n=0}^\infty \left(\dfrac{-d}{2r}\right)^n P_n(\cos\theta),
+\end{aligned}
 \]</span></p>
 <p>이며 이를 이용하면 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.33</span></a> 은 역시 <span class="math inline">\(r \gg d\)</span> 근사에서</p>
 <p><span id="eq-FLP_2_6_9"><span class="math display">\[
-\Phi(x,\,y,\,z) = \dfrac{1}{4\pi\epsilon_0} \dfrac{qdz}{r^3}
+\Phi(x,\,y,\,z) = \dfrac{1}{4\pi\epsilon_0} \dfrac{qd\cos \theta}{r^2} + \mathcal{O}\left(\dfrac{d^4}{r^4}\right) \approx \dfrac{1}{4\pi\epsilon_0} \dfrac{qdz}{r^3}
 \tag{7.34}\]</span></span></p>
 <p>이다. 이것을 좌표계 독립적인 식으로 바꾸자.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -1082,9 +1086,15 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 <p><span class="math display">\[
 p=\dfrac{4\pi \sigma_0 R^3}{3}
 \]</span></p>
-<p>이다. 균일한 전하분포를 가진 구 내부에서의 전기장은 <a href="#eq-FLP_electric_field_inside_of_uniformly_charged_sphere" class="quarto-xref">식&nbsp;<span>7.27</span></a> 이다.</p>
+<p>이다. 균일한 전하분포를 가진 구 내부에서의 전기장은 <a href="#eq-FLP_electric_field_inside_of_uniformly_charged_sphere" class="quarto-xref">식&nbsp;<span>7.27</span></a> 이다. 이로부터 구의 내부에서의 정전포텐셜은</p>
 <p><span class="math display">\[
-E=\dfrac{\sigma_0}{3\epsilon_0}
+\begin{aligned}
+\Phi_{\text{in}}(\boldsymbol{r}) &amp;= \dfrac{\rho_0}{6\epsilon_0}\left(\left\|\boldsymbol{r}-\dfrac{d\hat{\boldsymbol{z}}}{2}\right\|^2 -\left\|\boldsymbol{r}+\dfrac{d\hat{\boldsymbol{z}}}{2}\right\|^2\right) \\[0.3em]
+&amp;= \dfrac{\rho_0}{3\epsilon_0} rd\cos\theta = \dfrac{\rho_0 d z}{3\epsilon_0}
+\end{aligned}
+\]</span></p>
+<p>이며 전기장은 <span class="math display">\[
+\boldsymbol{E}_{\text{in}}=-\nabla \Phi (\boldsymbol{r}) = - \dfrac{\rho_0 d}{3\epsilon_0}\hat{\boldsymbol{z}}
 \]</span></p>
 <p>로 일정하다.</p>
 </div>
