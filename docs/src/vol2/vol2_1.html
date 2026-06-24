@@ -1326,7 +1326,7 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 <h2 class="anchored" data-anchor-id="ii.7-다양한-상황에서의-전기장-2">II.7 다양한 상황에서의 전기장 2</h2>
 <section id="sec-FLP_2_7_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_1">II.7-1 전기장을 계산하는 방법</h3>
-<p>우리는 6 장에서 다양한 상황에서의 전기장을 계산하는 법을 알았으며, 도체가 있을 때의 전하 분포를 알 수 없으므로 어렵다는 것을 알게되었다. 도체가 있을 경우 전하는 표면에만 분포하며 도체 표면이 등전위면을 이룬다는 사실만 알 수 있다. 이런 문제를 풀기 위해 영상법과 같은 간접적인 방법을 사용하기도 한다. 그러나 우리가 풀고자 하는 문제가 영상법과 같은 방식을 적용할 수 없다면 직접 풀어야 한다. 즉 주어진 경계 조건에서의 라플라스 방정식</p>
+<p>우리는 6 장에서 다양한 상황에서의 전기장을 계산하는 법을 알았으며, 이장에서는 특히 도체에 대한 문제를 해결하기 위한 보다 정교한 방법을 알아본다. 정해진 전하의 분포에서는 전기장 혹은 정전 포텐셜 문제는 근본적으로 적분 문제이다. 그러나 도체가 있을 경우 전하는 표면에만 분포하며 도체 표면이 등전위면을 이룬다는 사실만 알 수 있다. 이런 문제를 풀기 위해 영상법과 같은 간접적인 방법을 사용하기도 한다. 그러나 우리가 풀고자 하는 문제가 영상법과 같은 방식을 적용할 수 없다면 직접 풀어야 한다. 즉 주어진 경계 조건에서의 라플라스 방정식</p>
 <p><span id="eq-FLP_2_7_1"><span class="math display">\[
 \nabla^2 \Phi = 0
 \tag{7.41}\]</span></span></p>
@@ -1336,7 +1336,7 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 </section>
 <section id="sec-FLP_2_7_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_2">II.7-2 2차원 장;복소 함수</h3>
-<p><span class="math inline">\(F:\mathbb{C}\to C\)</span> 함수는 함수의 값을 실수부와 허수부로 나누어 다음과 같이 표현 할 수 있다.</p>
+<p><span class="math inline">\(F:\mathbb{C}\to \mathbb{C}\)</span> 함수는 함수의 값을 실수부와 허수부로 나누어 다음과 같이 표현 할 수 있다.</p>
 <p><span id="eq-FLP_2_7_4"><span class="math display">\[
 F(\zeta=x+iy) = U(x,\,y) + iV(x,\,y).
 \tag{7.42}\]</span></span></p>
@@ -1393,9 +1393,10 @@ F(\zeta) = \zeta^2 = (x^2-y^2) + i(2xy)
 </section>
 <section id="sec-FLP_2_7_3" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_3">II.7-3 플라즈마 진동</h3>
+<p>이제 전기장이 고정된 전하나 도체의 표면전하 둘중 하나에 의해 결정되는 것이 아니라 두가지의 결합에 의해 결정되는 물리적 상황을 생각한다. 다시 말해, 그 장은 두 개의 방정식 (<span class="math inline">\(1\)</span>) 전기장과 전하 분포를 연결하는 전기정역학의 방정식과 (<span class="math inline">\(2\)</span>) 전기장이 존재할 때 전하의 위치 또는 운동을 결정하는 물리학의 다른 분야에서 도출된 방정식의 동시 적요에 의해 결정된다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_plasma_oscillation" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.12 (<strong>1차원 플라즈마 진동</strong>)</strong></span> 이온들과 전자들이 가스상태로 있는 것을 플라즈마라고 한다. 예를 들어 지구 상공 약 60~1,000 <span class="math inline">\(km\)</span> 에 위치한 전리층(이온층, Ionosphere)은 태양 복사 에너지에 의해 대기 기체가 이온화되어 양이온과 자유전자가 밀집된 플라즈마 상태이다.</p>
+<p><span class="theorem-title"><strong>예제 7.12 (<strong>1차원 플라즈마 진동</strong>)</strong></span> 이온들과 전자들이 기체상태로 있는 것을 플라즈마라고 한다. 예를 들어 지구 상공 약 60~1,000 km 에 위치한 전리층(이온층, Ionosphere)은 태양 복사 에너지에 의해 대기 기체가 이온화되어 양이온과 자유전자가 밀집된 플라즈마 상태이다.</p>
 <p>전기적으로 중성인 플라즈마에서 평행상태일 때의 양전하 및 음전하의 밀도를 <span class="math inline">\(n_0\)</span> 라고 하자. 만약 한 지역의 전자밀도가 증가하면 그들이 서로 밀어내므로 원래의 위치로 돌아가려 하겠지만 원위치에서 운동에너지를 가지고 있기 때문에 평형 위치에 멈추지 않고 더 진행한다. 즉 이 전자들은 진동하게 된다. 상황은 음파(sound wave) 와 비슷하다.</p>
 <div id="fig-FLP_2_7_6" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1442,23 +1443,70 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <section id="플라즈마의-공명의-효과" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="플라즈마의-공명의-효과"><strong>플라즈마의 공명의 효과</strong></h4>
 <p><strong>1</strong>. 전리층을 통해 전파를 보낼 때 그 주파수가 플라즈마 주파수보다 높을 때만 침투할 수 있다. 그렇지 않으면 신호가 다시 반사된다. 우주에서 위성과 통신하려면 고주파를 사용해야 하는 반면에, 지평선 너머의 라디오 방송국과 통신하고자 한다면, 신호가 지구로 반사되도록 플라즈마 주파수보다 낮은 주파수를 사용해야 한다.</p>
-<div class="page-columns page-full"><p><strong>2</strong>. 금속은 양이온과 자유 전자로 이루어진 플라즈마로 간주 할 수 있다. 밀도 <span class="math inline">\(n_0\)</span> 가 매우 높으므로 <span class="math inline">\(\omega_p\)</span> 도 매우 크지만 여전히 전자 진동을 관찰할 수 있어야 한다. 양자역학에 따르면, 자연 주파수 <span class="math inline">\(\omega_p\)</span> 를 가진 조화 진동자의 에너지 준위는 <span class="math inline">\(\hbar \omega_p\)</span> 만큼 간격이 있다. 그렇다면, 예를 들어 알루미늄 호일을 통해 전자를 발사하고 반대편의 전자 에너지를 매우 정밀하게 측정한다면, 전자가 때때로 플라즈마 진동에 <span class="math inline">\(\hbar \omega_p\)</span> 만큼의 에너지를 잃을것으로 예상되며 실제로도 그러하다. 1936년에 처음 실험적으로 관찰된 바에 따르면, 몇 백에서 몇 천 전자볼트의 에너지를 가진 전자는 얇은 금속 호일에서 산란하거나 통과할 때 점프하면서 에너지를 잃는 것으로 나타났습니다. 그 효과는 1953년까지 이해되지 않았으나 Bohm 과 Pines<span class="math inline">\(^2\)</span> 는 금속 내 플라즈마 진동의 양자 여기로 설명될 수 있음을 보여주었습니다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> For some recent work and a bibliography see C. J. Powell and J. B. Swann, Phys. Rev.&nbsp;<strong>115</strong>, 869 (1959).</span></div></div>
+<div class="page-columns page-full"><p><strong>2</strong>. 금속은 양이온과 자유 전자로 이루어진 플라즈마로 간주 할 수 있다. 밀도 <span class="math inline">\(n_0\)</span> 가 매우 높으므로 <span class="math inline">\(\omega_p\)</span> 도 매우 크지만 여전히 전자 진동을 관찰할 수 있어야 한다. 양자역학에 따르면, 자연 주파수 <span class="math inline">\(\omega_p\)</span> 를 가진 조화 진동자의 에너지 준위는 <span class="math inline">\(\hbar \omega_p\)</span> 만큼 간격이 있다. 그렇다면, 예를 들어 알루미늄 호일을 통해 전자를 발사하고 반대편의 전자 에너지를 매우 정밀하게 측정한다면, 전자가 때때로 플라즈마 진동에 <span class="math inline">\(\hbar \omega_p\)</span> 만큼의 에너지를 잃을것으로 예상되며 실제로도 그러하다. 1936년에 처음 실험적으로 관찰된 바에 따르면, 몇 백에서 몇 천 전자볼트의 에너지를 가진 전자는 얇은 금속 호일에서 산란하거나 통과할 때 점프하면서 에너지를 잃는 것으로 나타났다. 그 효과는 1953년까지 이해되지 않았으나 Bohm 과 Pines<span class="math inline">\(^2\)</span> 는 금속 내 플라즈마 진동의 양자 여기로 설명될 수 있음을 보여주었다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> For some recent work and a bibliography see C. J. Powell and J. B. Swann, Phys. Rev.&nbsp;<strong>115</strong>, 869 (1959).</span></div></div>
 <p><br></p>
 </section>
 </section>
-<section id="sec-FLP_2_7_4" class="level3">
+<section id="sec-FLP_2_7_4" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_4">II.7-4 전해질 안의 콜로이드 입자</h3>
-<p>콜로이드는 1 <span class="math inline">\(\text{nm}\)</span> ~ 1 <span class="math inline">\(\mathrm{\mu m}\)</span> 정도 크기의 입자로 용매에 퍼져 있는 것을 말한다. 전하를 띄지 않은 콜로이드는 큰 덩어리로 응집되는 경향이 있으며, 전하를 띈 콜로이드는 전하 때문에 서로 반발하여 응집되는 경향이 없다. 또한 물에 약간의 염분이 양이온과 음이온으로 분해되어 있는 용액을 전해질이라고 한다. 콜로이드 입자가 양전하를 띈다면 음이온은 콜로이드 입자에 끌리며 양이온은 반발한다.</p>
-<p>이제 전해질 속의 콜로이드를 생각하자. 문제를 단순하게 하기 위해 일차원적인 경우만 생각한다. 콜로이드 입자를 매우 큰 반경을 가진 구라고 생각한다면, 그 표면의 작은 부분을 평면으로 간주할 수 있다. 이온에 의한 전하 분포 <span class="math inline">\(\rho(x)\)</span> 를 생각하자. 1차원 정전 포텐셜 <span class="math inline">\(\Phi\)</span> 는</p>
+<p>콜로이드는 1 <span class="math inline">\(\text{nm}\)</span> ~ 1 <span class="math inline">\(\mathrm{\mu m}\)</span> 정도 크기의 입자로 용매에 퍼져 있는 것을 말한다. 전하를 띄지 않은 콜로이드는 큰 덩어리로 응집되는 경향이 있으며, 전하를 띈 콜로이드는 전하 때문에 서로 반발하여 응집되는 경향이 없다. 또한 물에 약간의 염분이 양이온과 음이온으로 분해되어 있는 용액을 전해질이라고 한다. 콜로이드 입자는 보통 양전하를 띄며 따라서 음이온은 콜로이드 입자에 끌리며 양이온은 반발한다.</p>
+<p>이제 전해질 속의 콜로이드를 생각하자. 문제를 단순하게 하기 위해 일차원적인 경우만 생각한다. 콜로이드 입자를 원자 크기에 비해 매우 큰 반경을 가진 구라고 생각한다면, 그 표면의 작은 부분을 평면으로 간주할 수 있다. 이온에 의한 전하 분포 <span class="math inline">\(\rho(x)\)</span> 를 생각하자. 1차원 정전 포텐셜 <span class="math inline">\(\Phi\)</span> 는</p>
 <p><span id="eq-FLP_2_7_28"><span class="math display">\[
 \dfrac{d^2\Phi}{dx^2} = - \dfrac{\rho}{\epsilon_0}
 \tag{7.50}\]</span></span></p>
 <p>를 만족한다.</p>
-<p>.. to be done …</p>
+<p>이제 정전 포텐셜 <span class="math inline">\(\Phi(x)\)</span> 에서 이온은 어떻게 분포하는가? 이는 통계역학의 원리를 통해 결정할 수 있다. 문제는 통계역학에서 얻어지는 전하 밀도가 <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>7.50</span></a> 를 만족하도록 <span class="math inline">\(\Phi\)</span> 를 결정하는 것이다. 통계역학에 따르면 힘장 내 열평형에 있는 입자는 밀도 <span class="math inline">\(n(x)\)</span> 이 다음과 같이 주어지는 방식으로 분포한다.</p>
+<p><span id="eq-FLP_2_7_29"><span class="math display">\[
+n(x)=n_0e^{−U(x)/k_BT}
+\tag{7.51}\]</span></span></p>
+<p>여기서 <span class="math inline">\(U(x)\)</span> 는 포텐셜 에너지이고 <span class="math inline">\(k_B\)</span> 는 볼츠만 상수이며, <span class="math inline">\(T\)</span> 는 절대 온도이다. 콜로이드 입자의 표면으로부터 <span class="math inline">\(x\)</span> 만큼 떨어진 거리의 양이온이 갖는 포텐셜 에너지 <span class="math inline">\(U(x)=q_e \Phi(x)\)</span> 이며 따라서 양이온의 밀도 <span class="math inline">\(n_+\)</span> 는</p>
+<p><span class="math display">\[
+n_+(x) = n_0 e^{-q_e \Phi(x)/k_BT}
+\]</span></p>
+<p>이다. 같은 방식으로 음이온의 밀도 <span class="math inline">\(n_-\)</span> 를 아래와 같이 구할 수 있다.</p>
+<p><span class="math display">\[
+n_-(x) = n_0 e^{q_e \Phi(x)/k_BT}.
+\]</span></p>
+<p>그렇다면 총 전하 밀도 <span class="math inline">\(\rho\)</span> 는</p>
+<p><span id="eq-FLP_2_7_30"><span class="math display">\[
+\begin{aligned}
+\rho &amp;= q_e n_+ - q_e n_- = q_e n_0 \left(e^{-q_e \Phi/k_BT} - e^{+ q_e \Phi / k_B T}\right) \\[0.3em]
+&amp;= -{2q_en_0}\sinh \left(\dfrac{q_e \Phi}{k_BT}\right)
+\end{aligned}
+\tag{7.52}\]</span></span></p>
+<p>이다. <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>7.50</span></a> 과 결합하면</p>
+<p><span id="eq-FLP_2_7_31"><span class="math display">\[
+\dfrac{d^2\Phi}{dx^2} =  \dfrac{2q_e n_0}{\epsilon_0}\sinh \left(\dfrac{q_e \Phi}{k_BT}\right)
+\tag{7.53}\]</span></span></p>
+<p>이다. 양변에 <span class="math inline">\(2(d\Phi/dx)\)</span> 를 곱한 후 <span class="math inline">\(x\)</span> 에 대해 적분하면, 그리고 적절한 경계 조건에서 해를 구할 수 있지만 우리는 여기서는 <span class="math inline">\(q_e \Phi \ll k_BT\)</span> 인 조건에서만 다뤄보기로 하자. 그렇다면 미분방정식은</p>
+<p><span id="eq-FLP_2_7_33"><span class="math display">\[
+\dfrac{d^2\Phi}{dx^2} =  \dfrac{2n_0q_e^2}{\epsilon_0 k_B T} \Phi
+\tag{7.54}\]</span></span></p>
+<p>가 되며 이 미분방정식의 해는 다음과 같다는 것을 안다.</p>
+<p><span class="math display">\[
+\Phi(x) = A e^{-x/D}+ Be^{x/D},\qquad \text{where }D = \sqrt{\dfrac{\epsilon_0 k_B T}{2n_0 q_e^2}}.
+\]</span></p>
+<p>여기서 <span class="math inline">\(x\to \infty\)</span> 조건에서 <span class="math inline">\(\Phi\)</span> 가 최소한 유한한 값을 가져야 하므로 <span class="math inline">\(B=0\)</span> 이다. 즉</p>
+<p><span id="eq-FLP_2_7_36"><span class="math display">\[
+\Phi (x) = A e^{-x/D},\qquad \text{where }D = \sqrt{\dfrac{\epsilon_0 k_B T}{2n_0 q_e^2}}.
+\tag{7.55}\]</span></span></p>
+<div class="page-columns page-full"><p>이다. 여기서 <span class="math inline">\(D\)</span> 를 <strong>드바이 길이 (Debey length)</strong> 라고 하며, 전해질 내 큰 하전 입자를 둘러싼 이온층의 두께를 의미하는 값이다. <a href="#eq-FLP_2_7_36" class="quarto-xref">식&nbsp;<span>7.55</span></a> 는 이온 농도(<span class="math inline">\(n_0\)</span>)가 증가하거나 온도가 낮아짐에 따라 드바이 길이가 작아진다는 것을 보여준다. 위 식에서 <span class="math inline">\(A\)</span> 는 콜로이드 입자의 표면 전하 밀도 <span class="math inline">\(\sigma\)</span> 를 안다면<span class="math inline">\(^3\)</span>, 그리고 <span class="math inline">\(E_x = -\partial \Phi/\partial x\)</span> 이므로,</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^3\)</span> 콜로이드의 양전하가 표면에 균일하게 분포하여 콜로이드 내부의 전기장이 마치 금속처럼 0 인것으로 가정하는 듯하다.</span></div></div>
+<p><span id="eq-FLP_2_7_37"><span class="math display">\[
+E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
+\tag{7.56}\]</span></span></p>
+<p>이며, 따라서 <span class="math inline">\(A\)</span>, 즉 <span class="math inline">\(\Phi(0)\)</span> 는 다음과 같다.</p>
+<p><span id="eq-FLP_2_7_39"><span class="math display">\[
+\Phi(0)=A = \dfrac{\sigma D}{\epsilon_0}.
+\tag{7.57}\]</span></span></p>
+<p>평행판 축전기(<a href="#exm-FLP_parallel_plate_condensor" class="quarto-xref">예제&nbsp;<span>7.11</span></a>) 의 <a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.39</span></a> 과 비교해보면 이 전위차는 거리가 <span class="math inline">\(D\)</span> 인 평행판 축전기의 전위차와 같다는 것을 알 수 있다.</p>
+<p>앞서 콜로이드 입자들이 전기 반발에 의해 분리되어 있다고 말했다. 이제 우리는 입자 표면에서 약간 떨어진 전기장이 그 주위에 모이는 이온층에 의해 감소한다는 것을 알게 되었다. 이온층의 두께가 충분히 얇아지면 입자들이 서로 부딪히게 될 가능성이 높기 때문에 콜로이드 입자들이 달라붙고 응고되어 액체에서 침전될 수 있다. 이제 콜로이드에 충분한 소금을 첨가하면 콜로이드가 침전되는 이유를 이해할 수 있으며 이 과정을 <strong>염석</strong> 이라고 한다.</p>
+<p>또 다른 흥미로운 예는 소금 용액이 단백질 분자에 미치는 영향이다. 단백질 분자는 길고 복잡하며 유연한 아미노산 사슬입이고 다양한 전하를 가지고 있으며, 때때로 음전하와 같은 순전하가 사슬을 따라 분포하는 경우가 있다. 음전하들의 상호 반발로 인해 단백질 사슬이 늘어난 상태를 유지한다. 또한, 용액에 다른 유사한 사슬 분자가 존재한다면, 동일한 반발 효과에 의해 분리될 것이다. 따라서 액체에 사슬 분자를 현탁시킬 수 있다. 하지만 액체에 소금을 넣으면 현탁액의 특성이 변하게 된다. 용액에 염을 첨가하면 데바이 거리가 감소하고, 사슬 분자들이 서로 가까워지며 또한 꼬일 수 있다. 용액에 충분한 염을 첨가하면 사슬 분자가 용액에서 침전된다. 이와 같은 화학적 효과는 전기적 힘의 관점에서 이해할 수 있는 것이 많이 있다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_7_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_5">II.7-5 격자의 정전기장</h3>
+<p>마지막 예시로, 전기장의 또 다른 흥미로운 특성을 설명하고자 합니다. 전기 기기 설계, 진공관 제작 및 기타 목적에 사용되는 것입니다. 이것은 전하를 띤 전선 격자 근처에 있는 전기장의 특성입니다. 문제를 가능한 한 간단하게 만들기 위해, 평면에 배치된 평행선 배열을 고려해 보겠습니다. 그 전선들은 무한히 길고 간격이 균일합니다.</p>
+<p>전선의 평면 위에서 멀리 떨어진 장을 보면, 전하가 평면 전체에 고르게 분포된 것처럼 일정한 전기장을 볼 수 있습니다. 전선 격자에 접근함에 따라, 격자에서 멀리 떨어진 곳에서 발견한 균일한 장으로부터 필드가 벗어나기 시작합니다. 우리는 잠재력의 눈에 띄는 변동을 확인하기 위해 그리드에 얼마나 가깝게 위치해야 하는지 추정하고자 합니다. 그림 7–8은 격자로부터 다양한 거리에서의 등전위에 대한 대략적인 스케치를 보여줍니다. 그리드에 가까워질수록 변동이 커집니다. 그리드와 평행하게 이동할 때, 우리는 필드가 주기적으로 변동한다는 것을 관찰합니다.</p>
 <p><br></p>
 </section>
 </section>
@@ -1469,18 +1517,18 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <p>전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 <span class="math inline">\(r_{12}\)</span> 만큼의 거리에 있도록 해줘야 하는 일은 다음과 같다는 것을 안다.</p>
 <p><span id="eq-FLP_2_8_1"><span class="math display">\[
 \dfrac{q_1q_2}{4\pi\epsilon_0 r_{12}}.
-\tag{7.51}\]</span></span></p>
+\tag{7.58}\]</span></span></p>
 <p>이것을 두 전하의 분포에 대한 <strong>정전기 에너지 (electrostatic energy)</strong> 라고 한다. 이제 <span class="math inline">\(N\)</span> 개의 전하 <span class="math inline">\(q_1,\ldots,\,q_{N}\)</span> 으로 이루어진 시스템을 만들기 위해 해줘야 하는 일은 이 전하 분포에 대한 정전기 에너지 <span class="math inline">\(U\)</span> 라고 하면 <span class="math inline">\(U\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLOP_2_8_3"><span class="math display">\[
 U = \sum_{\text{all pairs}}\dfrac{q_iq_j}{4\pi\epsilon_0 r_{ij}}.
-\tag{7.52}\]</span></span></p>
-<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.52</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
+\tag{7.59}\]</span></span></p>
+<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.59</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electrostatic_energy_of_uniformly_charged_sphere" class="theorem example">
 <p><span class="theorem-title"><strong>예제 7.13 (<strong>균일하게 대전된 구의 정전기 에너지</strong>)</strong></span> 균일하게 대전된 정전기 에너지를 얇은 구 껍질을 차근차근 쌓아가는 방식으로 계산하자. 균일한 전하 밀도를 <span class="math inline">\(\rho\)</span> 라고 하자. 반지름 <span class="math inline">\(r\)</span> 만큼의 구에 전하가 쌓였을 때 이 반지름을 <span class="math inline">\(r+dr\)</span> 만큼 늘리도록 쌓는데 필요한 에너지 <span class="math inline">\(dU\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_4"><span class="math display">\[
 dU = \dfrac{Q_r dQ}{4\pi\epsilon_0 r}.
-\tag{7.53}\]</span></span></p>
+\tag{7.60}\]</span></span></p>
 <p>여기서 <span class="math inline">\(Q_r\)</span> 은 반지름 <span class="math inline">\(r\)</span> 인 구의 총 전하량으로</p>
 <p><span class="math display">\[
 Q_r = \rho \cdot \dfrac{4}{3}\pi r^3
@@ -1496,7 +1544,7 @@ dU = \dfrac{4\pi \rho^2 r^4\,dr}{3\epsilon_0}
 <p>이며 이를 <span class="math inline">\(r=0\)</span> 부터 <span class="math inline">\(r=a\)</span> 까지 적분하면 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_7"><span class="math display">\[
 U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0 a}
-\tag{7.54}\]</span></span></p>
+\tag{7.61}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -1509,15 +1557,15 @@ U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0
 <p><span class="theorem-title"><strong>예제 7.14 (<strong>대전된 도체의 에너지</strong>)</strong></span> 대전된 두 도체, 즉 축전기를 생각하자. 도체 사이의 전위차 <span class="math inline">\(V\)</span> 와 전하 <span class="math inline">\(Q\)</span> 사이에는</p>
 <p><span id="eq-FLP_2_8_8"><span class="math display">\[
 V=\dfrac{Q}{C}
-\tag{7.55}\]</span></span></p>
-<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.55</span></a> 로부터</p>
+\tag{7.62}\]</span></span></p>
+<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.62</span></a> 로부터</p>
 <p><span class="math display">\[
 dU = \dfrac{QdQ}{C}
 \]</span></p>
 <p>이며 <span class="math inline">\(dQ\)</span> 를 <span class="math inline">\(0\)</span> 부터 최종 전하 <span class="math inline">\(Q\)</span> 까지 적분하면</p>
 <p><span id="eq-FLP_2_8_9"><span class="math display">\[
 U = \dfrac{1}{2}\dfrac{Q^2}{C} = \dfrac{1}{2}CV^2
-\tag{7.56}\]</span></span></p>
+\tag{7.63}\]</span></span></p>
 <p>이다.</p>
 </div>
 </div>
