@@ -1505,8 +1505,22 @@ E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
 </section>
 <section id="sec-FLP_2_7_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_5">II.7-5 격자의 정전기장</h3>
-<p>마지막 예시로, 전기장의 또 다른 흥미로운 특성을 설명하고자 합니다. 전기 기기 설계, 진공관 제작 및 기타 목적에 사용되는 것입니다. 이것은 전하를 띤 전선 격자 근처에 있는 전기장의 특성입니다. 문제를 가능한 한 간단하게 만들기 위해, 평면에 배치된 평행선 배열을 고려해 보겠습니다. 그 전선들은 무한히 길고 간격이 균일합니다.</p>
-<p>전선의 평면 위에서 멀리 떨어진 장을 보면, 전하가 평면 전체에 고르게 분포된 것처럼 일정한 전기장을 볼 수 있습니다. 전선 격자에 접근함에 따라, 격자에서 멀리 떨어진 곳에서 발견한 균일한 장으로부터 필드가 벗어나기 시작합니다. 우리는 잠재력의 눈에 띄는 변동을 확인하기 위해 그리드에 얼마나 가깝게 위치해야 하는지 추정하고자 합니다. 그림 7–8은 격자로부터 다양한 거리에서의 등전위에 대한 대략적인 스케치를 보여줍니다. 그리드에 가까워질수록 변동이 커집니다. 그리드와 평행하게 이동할 때, 우리는 필드가 주기적으로 변동한다는 것을 관찰합니다.</p>
+<p>마지막 예시로 전하를 띤 전선 격자 근처에 있는 전기장의 특성을 알아보자. 문제를 가능한 한 간단하게 만들기 위해, 동일한 간격으로 무한히 평행하게 배치된 무한히 긴 도선을 생각하자.</p>
+<p>전선 평면 위의 높은 곳에서의 전기장은 일정하며 전선 격자에 접근함에 따라 점점 불균일해진다. 도선에 얼마나 가까워져야 정전 포텐셜의 눈에 띄는 변동이 생기는지 알아보자. <a href="#fig-FLP_2_7_8" class="quarto-xref">그림&nbsp;<span>7.24</span></a> 는 격자로부터 다양한 거리에서의 등전선을 대략적으로 보여준다. 그리드에 가까워질수록 변동이 커지며 그리드와 평행하게 이동할 때 전기장이 주기적으로 변동한다는 것을 볼 수 있다.</p>
+<div id="fig-FLP_2_7_8" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_7_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_7/fig_2_7_8.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_7_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;7.24: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 7-8. 격자로 배치된 균일한 전기 도선 위의 등전위면.
+</figcaption>
+</figure>
+</div>
+<p>포텐셜 역시 주기적일 것이므로 우리는 도선의 간격 <span class="math inline">\(a\)</span> 에 대해 포텐셜을 다음과 같이 쓸 수 있다.</p>
+<p><span id="eq-FLP_2_7_41"><span class="math display">\[
+\Phi(x,\,z) = F_n(z) \cos \dfrac{2\pi n x}{a}.
+\tag{7.58}\]</span></span></p>
 <p><br></p>
 </section>
 </section>
@@ -1517,18 +1531,18 @@ E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
 <p>전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 <span class="math inline">\(r_{12}\)</span> 만큼의 거리에 있도록 해줘야 하는 일은 다음과 같다는 것을 안다.</p>
 <p><span id="eq-FLP_2_8_1"><span class="math display">\[
 \dfrac{q_1q_2}{4\pi\epsilon_0 r_{12}}.
-\tag{7.58}\]</span></span></p>
+\tag{7.59}\]</span></span></p>
 <p>이것을 두 전하의 분포에 대한 <strong>정전기 에너지 (electrostatic energy)</strong> 라고 한다. 이제 <span class="math inline">\(N\)</span> 개의 전하 <span class="math inline">\(q_1,\ldots,\,q_{N}\)</span> 으로 이루어진 시스템을 만들기 위해 해줘야 하는 일은 이 전하 분포에 대한 정전기 에너지 <span class="math inline">\(U\)</span> 라고 하면 <span class="math inline">\(U\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLOP_2_8_3"><span class="math display">\[
 U = \sum_{\text{all pairs}}\dfrac{q_iq_j}{4\pi\epsilon_0 r_{ij}}.
-\tag{7.59}\]</span></span></p>
-<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.59</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
+\tag{7.60}\]</span></span></p>
+<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.60</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electrostatic_energy_of_uniformly_charged_sphere" class="theorem example">
 <p><span class="theorem-title"><strong>예제 7.13 (<strong>균일하게 대전된 구의 정전기 에너지</strong>)</strong></span> 균일하게 대전된 정전기 에너지를 얇은 구 껍질을 차근차근 쌓아가는 방식으로 계산하자. 균일한 전하 밀도를 <span class="math inline">\(\rho\)</span> 라고 하자. 반지름 <span class="math inline">\(r\)</span> 만큼의 구에 전하가 쌓였을 때 이 반지름을 <span class="math inline">\(r+dr\)</span> 만큼 늘리도록 쌓는데 필요한 에너지 <span class="math inline">\(dU\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_4"><span class="math display">\[
 dU = \dfrac{Q_r dQ}{4\pi\epsilon_0 r}.
-\tag{7.60}\]</span></span></p>
+\tag{7.61}\]</span></span></p>
 <p>여기서 <span class="math inline">\(Q_r\)</span> 은 반지름 <span class="math inline">\(r\)</span> 인 구의 총 전하량으로</p>
 <p><span class="math display">\[
 Q_r = \rho \cdot \dfrac{4}{3}\pi r^3
@@ -1544,7 +1558,7 @@ dU = \dfrac{4\pi \rho^2 r^4\,dr}{3\epsilon_0}
 <p>이며 이를 <span class="math inline">\(r=0\)</span> 부터 <span class="math inline">\(r=a\)</span> 까지 적분하면 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_7"><span class="math display">\[
 U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0 a}
-\tag{7.61}\]</span></span></p>
+\tag{7.62}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -1557,15 +1571,15 @@ U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0
 <p><span class="theorem-title"><strong>예제 7.14 (<strong>대전된 도체의 에너지</strong>)</strong></span> 대전된 두 도체, 즉 축전기를 생각하자. 도체 사이의 전위차 <span class="math inline">\(V\)</span> 와 전하 <span class="math inline">\(Q\)</span> 사이에는</p>
 <p><span id="eq-FLP_2_8_8"><span class="math display">\[
 V=\dfrac{Q}{C}
-\tag{7.62}\]</span></span></p>
-<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.62</span></a> 로부터</p>
+\tag{7.63}\]</span></span></p>
+<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.63</span></a> 로부터</p>
 <p><span class="math display">\[
 dU = \dfrac{QdQ}{C}
 \]</span></p>
 <p>이며 <span class="math inline">\(dQ\)</span> 를 <span class="math inline">\(0\)</span> 부터 최종 전하 <span class="math inline">\(Q\)</span> 까지 적분하면</p>
 <p><span id="eq-FLP_2_8_9"><span class="math display">\[
 U = \dfrac{1}{2}\dfrac{Q^2}{C} = \dfrac{1}{2}CV^2
-\tag{7.63}\]</span></span></p>
+\tag{7.64}\]</span></span></p>
 <p>이다.</p>
 </div>
 </div>
