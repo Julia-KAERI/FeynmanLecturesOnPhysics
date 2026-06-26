@@ -1255,7 +1255,7 @@ c^2(x^2+y^2+z^2) = (x-d)^2+y^2+z^2
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_10">II.6-10 평행판 축전기</h3>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_parallel_plate_condensor" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.11</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>예제 7.11 (평행판 축전기에서의 전하와 전위차)</strong></span> &nbsp;</p>
 <div id="fig-FLP_fig_2_6_12" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_fig_2_6_12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1274,7 +1274,7 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 </div>
 </div>
 <p><br></p>
-<p><a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.39</span></a> 에서 <span class="math inline">\(V\)</span> 는 <span class="math inline">\(Q\)</span> 에 비례하는데 이는 떨어져 있으며 한쪽에 <span class="math inline">\(+Q\)</span> 다른 한쪽에 <span class="math inline">\(-Q\)</span> 만큼의 전하가 대전된 두 도체 사이에 존재하는 관계이다. 도체의 표면은 등전위면이므로 <span class="math inline">\(Q\)</span> 와 <span class="math inline">\(V\)</span> 사이예 비례관계가 성립하며 이 때 <span class="math inline">\(Q=CV\)</span> 라고 하고 <span class="math inline">\(C\)</span> 를 <strong>capacity</strong> 라고 한다. 즉 평행한 금속판의 capacity 는 <span class="math inline">\(\epsilon_0 A/d\)</span> 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다.</p>
+<p><a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.39</span></a> 에서 <span class="math inline">\(V\)</span> 는 <span class="math inline">\(Q\)</span> 에 비례하는데 이는 떨어져 있으며 한쪽에 <span class="math inline">\(+Q\)</span> 다른 한쪽에 <span class="math inline">\(-Q\)</span> 만큼의 전하가 대전된 두 도체 사이에 항상 존재하는 관계이다. 도체의 표면은 등전위면이므로 <span class="math inline">\(Q\)</span> 와 <span class="math inline">\(V\)</span> 사이예 비례관계가 성립하며 이 때 <span class="math inline">\(Q=CV\)</span> 라고 하고 <span class="math inline">\(C\)</span> 를 <strong>capacity</strong> 라고 한다. 즉 평행한 금속판의 capacity 는 <span class="math inline">\(\epsilon_0 A/d\)</span> 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다.</p>
 <div id="fig-FLP_fig_2_6_13" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_fig_2_6_13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1519,8 +1519,21 @@ E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
 </div>
 <p>포텐셜 역시 주기적일 것이므로 우리는 도선의 간격 <span class="math inline">\(a\)</span> 에 대해 포텐셜을 다음과 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_2_7_41"><span class="math display">\[
-\Phi(x,\,z) = F_n(z) \cos \dfrac{2\pi n x}{a}.
+\Phi(x,\,z) = \sum_{n=0}^\infty F_n(z) \cos \dfrac{2\pi n x}{a}.
 \tag{7.58}\]</span></span></p>
+<p>2차원에서 라플라스 방정식 <span class="math inline">\(\nabla^2 \Phi = 0\)</span> 을 만족해야 하므로</p>
+<p><span id="eq-FLP_2_7_42"><span class="math display">\[
+\left(\dfrac{\partial^2 F_n(z)}{\partial z^2}-\dfrac{4\pi^2 n^2}{a^2} \right) \cos \dfrac{2\pi n x}{a} = 0,\qquad n = 0,\,1,\,2,\ldots
+\tag{7.59}\]</span></span></p>
+<p>이어야 한다. 위 미분방정식의 해는 다음과 같다.</p>
+<p><span id="eq-FLP_2_7_44"><span class="math display">\[
+F_n (z) = A_n e^{-z/z_0},\qquad \text{where } z_0 = \dfrac{a}{2\pi n}.
+\tag{7.60}\]</span></span></p>
+<p>여기서 <span class="math inline">\(A_n\)</span> 은 경계조건에 의해 결정된다. 이로부터 <span class="math inline">\(n\)</span> 값이 클수록 <span class="math inline">\(z\)</span> 에 대해 급격히 떨어지므로 <span class="math inline">\(a\)</span> 보다 몇배 정도 큰 <span class="math inline">\(z\)</span> 에서는 <span class="math inline">\(n=0\)</span> 인 성분이 지배적이 된다. 즉 <span class="math inline">\(z\gg a\)</span> 일 때</p>
+<p><span class="math display">\[
+\Phi(z) \approx -E_0z
+\]</span></p>
+<p>이다.</p>
 <p><br></p>
 </section>
 </section>
@@ -1528,28 +1541,28 @@ E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
 <h2 class="anchored" data-anchor-id="ii.8-정전기-에너지">II.8 정전기 에너지</h2>
 <section id="sec-FLP_2_8_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_8_1">II.8-1 전하의 정전기 에너지. 균일한 공</h3>
-<p>전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 <span class="math inline">\(r_{12}\)</span> 만큼의 거리에 있도록 해줘야 하는 일은 다음과 같다는 것을 안다.</p>
+<p>여기서는 정전기계(electrostatic system) 에서의 에너지를 다룬다. 전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 <span class="math inline">\(r_{12}\)</span> 만큼의 거리에 있도록 해줘야 하는 일은 다음과 같다는 것을 안다.</p>
 <p><span id="eq-FLP_2_8_1"><span class="math display">\[
 \dfrac{q_1q_2}{4\pi\epsilon_0 r_{12}}.
-\tag{7.59}\]</span></span></p>
+\tag{7.61}\]</span></span></p>
 <p>이것을 두 전하의 분포에 대한 <strong>정전기 에너지 (electrostatic energy)</strong> 라고 한다. 이제 <span class="math inline">\(N\)</span> 개의 전하 <span class="math inline">\(q_1,\ldots,\,q_{N}\)</span> 으로 이루어진 시스템을 만들기 위해 해줘야 하는 일은 이 전하 분포에 대한 정전기 에너지 <span class="math inline">\(U\)</span> 라고 하면 <span class="math inline">\(U\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLOP_2_8_3"><span class="math display">\[
 U = \sum_{\text{all pairs}}\dfrac{q_iq_j}{4\pi\epsilon_0 r_{ij}}.
-\tag{7.60}\]</span></span></p>
-<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.60</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
+\tag{7.62}\]</span></span></p>
+<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLOP_2_8_3" class="quarto-xref">식&nbsp;<span>7.62</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electrostatic_energy_of_uniformly_charged_sphere" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.13 (<strong>균일하게 대전된 구의 정전기 에너지</strong>)</strong></span> 균일하게 대전된 정전기 에너지를 얇은 구 껍질을 차근차근 쌓아가는 방식으로 계산하자. 균일한 전하 밀도를 <span class="math inline">\(\rho\)</span> 라고 하자. 반지름 <span class="math inline">\(r\)</span> 만큼의 구에 전하가 쌓였을 때 이 반지름을 <span class="math inline">\(r+dr\)</span> 만큼 늘리도록 쌓는데 필요한 에너지 <span class="math inline">\(dU\)</span> 는 다음과 같다.</p>
+<p><span class="theorem-title"><strong>예제 7.13 (<strong>균일하게 대전된 구의 정전기 에너지</strong>)</strong></span> 균일하게 대전된 반지름 <span class="math inline">\(a\)</span> 인 구의 정전기 에너지를 얇은 구 껍질을 차근차근 쌓아가는 방식으로 계산하자. 균일한 전하 밀도를 <span class="math inline">\(\rho\)</span> 라고 하자. 반지름 <span class="math inline">\(r\)</span> 만큼의 구에 전하가 쌓였을 때 이 반지름을 <span class="math inline">\(r+dr\)</span> 만큼 늘리도록 쌓는데 필요한 에너지 <span class="math inline">\(dU\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_4"><span class="math display">\[
 dU = \dfrac{Q_r dQ}{4\pi\epsilon_0 r}.
-\tag{7.61}\]</span></span></p>
+\tag{7.63}\]</span></span></p>
 <p>여기서 <span class="math inline">\(Q_r\)</span> 은 반지름 <span class="math inline">\(r\)</span> 인 구의 총 전하량으로</p>
 <p><span class="math display">\[
 Q_r = \rho \cdot \dfrac{4}{3}\pi r^3
 \]</span></p>
 <p>이며 <span class="math inline">\(dQ\)</span> 는 반지름을 <span class="math inline">\(dr\)</span> 만큼 늘리는데 필요한 총 전하로</p>
 <p><span class="math display">\[
-dQ = \rho \cdot 4\phi r^2 dr
+dQ = \rho \cdot 4\pi r^2 dr
 \]</span></p>
 <p>이므로</p>
 <p><span class="math display">\[
@@ -1558,31 +1571,60 @@ dU = \dfrac{4\pi \rho^2 r^4\,dr}{3\epsilon_0}
 <p>이며 이를 <span class="math inline">\(r=0\)</span> 부터 <span class="math inline">\(r=a\)</span> 까지 적분하면 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_7"><span class="math display">\[
 U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0 a}
-\tag{7.62}\]</span></span></p>
+\tag{7.64}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_8_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_8_2">II.8-2 축전기의 에너지. 대전된 도체에 작용하는 힘</h3>
-<p>이제 대전된 도체를 대전시키기 위해 필요한 에너지를 구해보자.</p>
+<p>이제 도체를 대전시키기 위해 필요한 에너지를 구해보자.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electrostatic_energy_of_charged_conductor" class="theorem example">
 <p><span class="theorem-title"><strong>예제 7.14 (<strong>대전된 도체의 에너지</strong>)</strong></span> 대전된 두 도체, 즉 축전기를 생각하자. 도체 사이의 전위차 <span class="math inline">\(V\)</span> 와 전하 <span class="math inline">\(Q\)</span> 사이에는</p>
 <p><span id="eq-FLP_2_8_8"><span class="math display">\[
 V=\dfrac{Q}{C}
-\tag{7.63}\]</span></span></p>
-<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.63</span></a> 로부터</p>
+\tag{7.65}\]</span></span></p>
+<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.65</span></a> 로부터</p>
 <p><span class="math display">\[
 dU = \dfrac{QdQ}{C}
 \]</span></p>
 <p>이며 <span class="math inline">\(dQ\)</span> 를 <span class="math inline">\(0\)</span> 부터 최종 전하 <span class="math inline">\(Q\)</span> 까지 적분하면</p>
 <p><span id="eq-FLP_2_8_9"><span class="math display">\[
 U = \dfrac{1}{2}\dfrac{Q^2}{C} = \dfrac{1}{2}CV^2
-\tag{7.64}\]</span></span></p>
-<p>이다.</p>
+\tag{7.66}\]</span></span></p>
+<p>이다. 이제 반지름 <span class="math inline">\(a\)</span> 인 도체 구의 capacity 를 생각해보자. <span class="math inline">\(V=Q/C_\text{sphere} = Q/(4\pi\epsilon_0 a)\)</span> 로부터</p>
+<p><span class="math display">\[
+C_\text{sphere} = 4\pi \epsilon_0 a
+\]</span></p>
+<p>임을 안다. <a href="#eq-FLP_2_8_9" class="quarto-xref">식&nbsp;<span>7.66</span></a> 로부터 대전된 공의 포텐셜 에너지는 다음과 같다.</p>
+<p><span class="math display">\[
+U_\text{charged sphere} = \dfrac{1}{2} \dfrac{Q^2}{4\pi\epsilon_0 a}
+\]</span></p>
 </div>
 </div>
+<p><br></p>
+<p>포텐셜 에너지 <span class="math inline">\(U\)</span> 에 대해 <span class="math inline">\(d\boldsymbol{r}\)</span> 만큼의 변위가 있을 때</p>
+<p><span class="math display">\[
+\boldsymbol{F} =- \dfrac{\partial U}{\partial \boldsymbol{r}}
+\]</span></p>
+<p>임을 안다. 양쪽이 전하 <span class="math inline">\(\pm Q\)</span> 로 대전된 평행판 축전기를 생각하자.</p>
+<p><strong>1. 대전된 전하량 <span class="math inline">\(Q\)</span> 가 일정한 경우</strong></p>
+<p>포텐셜 에너지 <span class="math inline">\(U=\dfrac{Q^2}{2C}\)</span> 와 <a href="#exm-FLP_parallel_plate_condensor" class="quarto-xref">예제&nbsp;<span>7.11</span></a> 의 <span class="math inline">\(C=\epsilon_0 A/d\)</span> 로부터 평행판 축전기의 판이 밭는 힘을 계산 할 수 있다. 판이 <span class="math inline">\(z\)</span> 축에 수직으로 배치되어 있다면</p>
+<p><span class="math display">\[
+F_z = - \dfrac{\partial U}{\partial z} = -\dfrac{Q^2}{2}\dfrac{d(1/C)}{dz}=-\dfrac{Q^2}{2\epsilon_0 A} = -\dfrac{Q\sigma}{2\epsilon_0}
+\]</span></p>
+<p>임을 안다. 여기서 <span class="math inline">\(\sigma = Q/A\)</span> 는 평행판의 면 전하 밀도이다. 평행판 사이의 전기장 <span class="math inline">\(E_0 = \sigma/\epsilon_0\)</span> 를 생각하면</p>
+<p><span id="eq-FLP_2_8_18"><span class="math display">\[
+F_z = -\dfrac{1}{2}Q E_0
+\tag{7.67}\]</span></span></p>
+<p>이다. 놀랍게도 <span class="math inline">\(QE_0\)</span> 가 아닌 그 값의 <span class="math inline">\(1/2\)</span> 인데 그 이유를 살펴보자. 평행판은 금속이며 따라서 전하는 표면에만 존재한다. 평행판 표면에서의 전기장의 크기는 <span class="math inline">\(E_0\)</span> 이고 평행판 내부의 전기장은 <span class="math inline">\(0\)</span> 이다. 즉 전기장은 전하가 존재하는 얇은 표면층 을 통과하면서 <span class="math inline">\(E_0\)</span> 에서 <span class="math inline">\(0\)</span> 으로 급격히 딸어지게 되며 따라서 <a href="#eq-FLP_2_8_18" class="quarto-xref">식&nbsp;<span>7.67</span></a> 의 결과가 나온다.</p>
+<p><strong>2. 전위차 <span class="math inline">\(V\)</span> 가 일정한 경우</strong></p>
+<p>포텐셜 에너지 <span class="math inline">\(U=\dfrac{CV^2}{2}\)</span> 이다. 이로부터</p>
+<p><span class="math display">\[
+F_z = - \dfrac{\partial U}{\partial z} = -\dfrac{V^2}{2}\dfrac{\partial C}{\partial z}
+\]</span></p>
+<p>이다. 그런데 포텐셜을 일정하게 유지하면서 가상 변위 <span class="math inline">\(dz\)</span> 만큼 움직이면 <span class="math inline">\(\delta Q = (\delta C)V\)</span> 만큼의 전하 변동이 생기게 된다.</p>
 
 
 </section>
