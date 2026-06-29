@@ -1018,7 +1018,7 @@ $$
 
 ![파인만 물리학 강의 $II$. Fig. 6-12. 평행판 축전기](figures/fig_2_6/fig_2_6_12.png){#fig-FLP_fig_2_6_12 width=350}
 
-이제 다른 종류의 문제를 풀어보자. 위의 그림과 같이 면적이 $A$ 인 넖은 도체 판 2개가 거리 $d$ 만큼 떨어져 평행하게 위치해 있고 각각의 판에 $+\sigma,\,-\sigma$ 의 표면전하밀도를 갖는다고 하자. 도체 판이 각각 $\phi_+,\,\phi_-$ 의 정전 포텐셜을 갖는다면 전위차 $V = \phi_+-\phi_0$ 를 생각 할 수있다. 두 판 사이에는 균일한 전기장 $E$ 가 존재하며
+이제 다른 종류의 문제를 풀어보자. 위의 그림과 같이 면적이 $A$ 인 넖은 도체 판 2개가 거리 $d$ 만큼 떨어져 평행하게 위치해 있고 각각의 판에 $+\sigma,\,-\sigma$ 의 표면전하밀도를 갖는다고 하자. 도체 판이 각각 $\Phi_+,\,\Phi_-$ 의 정전 포텐셜을 갖는다면 전위차 $V = \Phi_+-\Phi_0$ 를 생각 할 수있다. 두 판 사이에는 균일한 전기장 $E$ 가 존재하며
 
 $$
 V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
@@ -1030,7 +1030,7 @@ $$ {#eq-FLP_6_33}
 
 </div></br>
 
-@eq-FLP_6_33 에서 $V$ 는 $Q$ 에 비례하는데 이는 떨어져 있으며 한쪽에 $+Q$ 다른 한쪽에 $-Q$ 만큼의 전하가 대전된 두 도체 사이에 항상 존재하는 관계이다. 도체의 표면은 등전위면이므로 $Q$ 와 $V$ 사이예 비례관계가 성립하며 이 때 $Q=CV$ 라고 하고 $C$ 를 **capacity** 라고 한다. 즉 평행한 금속판의 capacity 는 $\epsilon_0 A/d$ 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다. 
+@eq-FLP_6_33 에서 $V$ 는 $Q$ 에 비례하는데 이는 떨어져 있으며 한쪽에 $+Q$ 다른 한쪽에 $-Q$ 만큼의 전하가 대전된 두 도체 사이에 항상 존재하는 관계이다. [정전기 문제의 유일성 정리](https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_uniqueness_theorem_for_electrostatics) 를 참고하라. 이 비례관계를 $Q=CV$ 라고 표현할 때 $C$ 를 **capacity** 라고 한다. 즉 평행한 금속판의 capacity 는 $\epsilon_0 A/d$ 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다. 
 
 ![파인만 물리학 강의 $II$. Fig. 6-13. 평행판 축전기 모서리에서의 전기장](figures/fig_2_6/fig_2_6_13.png){#fig-FLP_fig_2_6_13 width=350}
 
@@ -1333,9 +1333,9 @@ $${#eq-FLP_2_8_1}
 
 $$
 U = \sum_{\text{all pairs}}\dfrac{q_iq_j}{4\pi\epsilon_0 r_{ij}}.
-$$ {#eq-FLOP_2_8_3}
+$$ {#eq-FLP_2_8_3}
 
-만약 점전하가 아닌 전하 분포 $\rho$ 가 주어졌다면 @eq-FLOP_2_8_3 의 $\sum$ 은 적분으로 바뀐다.
+만약 점전하가 아닌 전하 분포 $\rho$ 가 주어졌다면 @eq-FLP_2_8_3 의 $\sum$ 은 적분으로 바뀐다.
 
 
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
@@ -1421,9 +1421,7 @@ $$
 
 :::
 
-</div>
-
-</br>
+</div></br>
 
 포텐셜 에너지 $U$ 에 대해 $d\bf{r}$ 만큼의 변위가 있을 때
 
@@ -1438,10 +1436,10 @@ $$
 포텐셜 에너지 $U=\dfrac{Q^2}{2C}$ 와 @exm-FLP_parallel_plate_condensor 의 $C=\epsilon_0 A/d$ 로부터 평행판 축전기의 판이 밭는 힘을 계산 할 수 있다. 판이 $z$ 축에 수직으로 배치되어 있다면
 
 $$
-F_z = - \dfrac{\partial U}{\partial z} = -\dfrac{Q^2}{2}\dfrac{d(1/C)}{dz}=-\dfrac{Q^2}{2\epsilon_0 A} = -\dfrac{Q\sigma}{2\epsilon_0}
+F_z = - \dfrac{\partial U}{\partial z} = - \dfrac{Q^2}{2C^2}\dfrac{dC}{dz}=-\dfrac{Q^2}{2\epsilon_0 A} = -\dfrac{Q\sigma}{2\epsilon_0}
 $$
 
-임을 안다. 여기서 $\sigma = Q/A$ 는 평행판의 면 전하 밀도이다. 평행판 사이의 전기장 $E_0 = \sigma/\epsilon_0$ 를 생각하면
+임을 안다. 여기서 $dC/dz = - \epsilon_0 A/d^2$ 이며 $\sigma = Q/A$ 는 평행판의 면전하 밀도이다. 평행판 사이의 전기장 $E_0 = \sigma/\epsilon_0$ 를 생각하면
 
 
 $$
@@ -1452,10 +1450,49 @@ $${#eq-FLP_2_8_18}
 
 **2. 전위차 $V$ 가 일정한 경우**
 
-포텐셜 에너지 $U=\dfrac{CV^2}{2}$ 이다. 이로부터
+포텐셜 에너지에 대한 식 가운데 $U=\dfrac{CV^2}{2}$ 를 사용한다. 
+$$
+F_z = - \dfrac{\partial U}{\partial z} = -\dfrac{V^2}{2}\dfrac{d C}{d z}= \dfrac{C^2V^2}{2\epsilon_0 A}
+$${#eq-FLP_2_8_19}
+
+이며 $0$ 보다 크다. 그런데 이것은 틀린 답이다. 포텐셜을 일정하게 유지하면서 가상 변위 $dz$ 만큼 움직이면 $d Q = (dC/dz)V$ 만큼의 전하를 포텐셜 $V$ 가 유지되는 조건에서 추가해야 한다. 이 때 증가하는 포텐셜 에너지가 $(d Q)V= (dC/dz)V^2$ 이며 이는 외부에서 해주는 일이다. 이를 고려하면
 
 $$
-F_z = - \dfrac{\partial U}{\partial z} = -\dfrac{V^2}{2}\dfrac{\partial C}{\partial z}
+F_z = \dfrac{V^2}{2}\dfrac{dC}{dz} = - \dfrac{C^2V^2}{2\epsilon_0 A}<0
 $$
 
-이다. 그런데 포텐셜을 일정하게 유지하면서 가상 변위 $dz$ 만큼 움직이면 $\delta Q = (\delta C)V$ 만큼의 전하 변동이 생기게 된다. 
+이다.
+
+</br>
+
+### II.8-3 이온 격자에서의 포텐셜 에너지 {#sec-FLP_2_8_3}
+
+![파인만 물리학 강의 $II$ Fig. 8-5. 원자 규모에서 소금 결정의 단면.](figures/fig_2_8/fig_2_8_5.png){#fig-FLP_2_8_5 width=350}
+
+</br>
+
+### II.8-4 핵의 정전기 에너지 {#sec-FLP_2_8_4}
+
+</br>
+
+### II.8-5 전기장의 에너지 {#sec-FLP_2_8_5}
+
+점전하 시스템의 정전기 포텐셜은 @eq-FLP_2_8_3 으로, 즉 모든 가능한 쌍에 대한 정전 포텐셜의 합으로 주어진다. @eq-FLP_2_8_3 은 아래와 같이 쓸 수 있다.
+
+$$
+U = \dfrac{1}{2}\sum_i \sum_{j\ne i} \dfrac{q_iq_j}{4\pi\epsilon_0 \|\bf{r}_i-\bf{r}_j\|}
+$$
+
+$\sum_i \sum_{j\ne i}[\cdots]$ 는 같은 쌍을 두번 세므로 이를 고려하여 앞의 $1/2$ 항이 필요하다. 그렇다면 전하 밀도에 대한 정전 포텐셜은 어떻게 주어질까? @eq-FLP_2_8_3 은 다음과 같이 변화할 것이다.
+
+$$
+U = \dfrac{1}{2}\int_V\int_{V} \dfrac{\rho(\bf{r}_1)\rho(\bf{r}_2)}{4\pi\epsilon_0 \|\bf{r}_1-\bf{r}_2\|} \,d^3\bf{r}_1d^3\bf{r}_2
+$$ {#eq-FLP_2_8_27}
+
+이 때 $V$ 는 전체 공간이다. 그렇다면,
+
+$$
+U = \dfrac{1}{2}\int_V \rho(\bf{r}_1)\underbrace{\left[\int_V \dfrac{\rho(\bf{r}_2)d^3\bf{r}_2}{4\pi\epsilon_0 \|\bf{r}_1-\bf{r}_2\|}\right]}_{=\Phi(\bf{r}_1)} d^3\bf{r}_1 = \dfrac{1}{2}\int_V \rho(\bf{r}_1)\Phi(\bf{r}_1)\,d^3\bf{r}_1
+$$ {#eq-FLP_2_8_28}
+
+이 성립한다. 
