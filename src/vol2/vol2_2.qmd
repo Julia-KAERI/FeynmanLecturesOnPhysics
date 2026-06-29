@@ -1,0 +1,13 @@
+---
+title: "$II$-2 : 유전체, 정자기   "
+number-sections: true
+number-depth: 0
+crossref:
+  chapters: true
+---
+
+{{< include ../../latexmacros.qmd >}} 
+
+## 유전체 {#sec-FLP_2_10}
+
+### 유전율 {#sec-FLP_2_10_1} 
