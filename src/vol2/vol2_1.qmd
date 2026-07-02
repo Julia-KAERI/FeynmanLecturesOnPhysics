@@ -1030,7 +1030,7 @@ $$ {#eq-FLP_6_33}
 
 </div></br>
 
-@eq-FLP_6_33 에서 $V$ 는 $Q$ 에 비례하는데 이는 떨어져 있으며 한쪽에 $+Q$ 다른 한쪽에 $-Q$ 만큼의 전하가 대전된 두 도체 사이에 항상 존재하는 관계이다. [정전기 문제의 유일성 정리](https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_uniqueness_theorem_for_electrostatics) 를 참고하라. 이 비례관계를 $Q=CV$ 라고 표현할 때 $C$ 를 **capacity** 라고 한다. 즉 평행한 금속판의 capacity 는 $\epsilon_0 A/d$ 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다. 
+@eq-FLP_6_33 에서 $V$ 는 $Q$ 에 비례하는데 이는 떨어져 있으며 한쪽에 $+Q$ 다른 한쪽에 $-Q$ 만큼의 전하가 대전된 두 도체 사이에 항상 존재하는 관계이다. [정전기 문제의 유일성 정리](https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_uniqueness_theorem_for_electrostatics) 를 참고하라. 이 비례관계를 $Q=CV$ 라고 표현할 때 $C$ 를 **전기용량(capacitance)** 이라고 한다. 즉 평행한 금속판의 전기용량 $\epsilon_0 A/d$ 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다. 
 
 ![파인만 물리학 강의 $II$. Fig. 6-13. 평행판 축전기 모서리에서의 전기장](figures/fig_2_6/fig_2_6_13.png){#fig-FLP_fig_2_6_13 width=350}
 
@@ -1406,7 +1406,7 @@ $$
 U = \dfrac{1}{2}\dfrac{Q^2}{C} = \dfrac{1}{2}CV^2
 $$ {#eq-FLP_2_8_9}
 
-이다. 이제 반지름 $a$ 인 도체 구의 capacity 를 생각해보자. $V=Q/C_\text{sphere} = Q/(4\pi\epsilon_0 a)$ 로부터
+이다. 이제 반지름 $a$ 인 도체 구의 전기용량을 생각해보자. $V=Q/C_\text{sphere} = Q/(4\pi\epsilon_0 a)$ 로부터
 
 $$
 C_\text{sphere} = 4\pi \epsilon_0 a
