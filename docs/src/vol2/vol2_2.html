@@ -276,6 +276,13 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#sec-FLP_2_11_4" id="toc-sec-FLP_2_11_4" class="nav-link" data-scroll-target="#sec-FLP_2_11_4">II.11-4 유전체 공동(cavity)의 전기장</a></li>
   <li><a href="#sec-FLP_2_11_5" id="toc-sec-FLP_2_11_5" class="nav-link" data-scroll-target="#sec-FLP_2_11_5">II.11-5 액체의 유전 장수와 클라우시우스-모소티 관계식</a></li>
+  <li><a href="#sec-FLP_2_11_6" id="toc-sec-FLP_2_11_6" class="nav-link" data-scroll-target="#sec-FLP_2_11_6">II.11-6 고체 유전체</a></li>
+  <li><a href="#sec-FLP_2_11_7" id="toc-sec-FLP_2_11_7" class="nav-link" data-scroll-target="#sec-FLP_2_11_7">II.11-7 강유전체 : BaTiO<sub>3</sub></a></li>
+  </ul></li>
+  <li><a href="#sec-FLP_2_12" id="toc-sec-FLP_2_12" class="nav-link" data-scroll-target="#sec-FLP_2_12">I.12 정전기 상태와 유사한 물리</a>
+  <ul class="collapse">
+  <li><a href="#sec-FLP_2_12_1" id="toc-sec-FLP_2_12_1" class="nav-link" data-scroll-target="#sec-FLP_2_12_1">I.12-1 같은 방정식은 같은 해를 가진다.</a></li>
+  <li><a href="#sec-FLP_2_12_2" id="toc-sec-FLP_2_12_2" class="nav-link" data-scroll-target="#sec-FLP_2_12_2">I.12-2 열의 흐름: 무한한 평면 경계에 가까운 점의 열원</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -402,7 +409,7 @@ C= \dfrac{\epsilon_0 A(1+\chi) }{d} = \dfrac{\epsilon A}{d}
 <p><span id="eq-FLP_2_10_11"><span class="math display">\[
 \epsilon_r := \dfrac{\epsilon}{\epsilon_0}
 \tag{8.10}\]</span></span></p>
-<div class="page-columns page-full"><p>를 <strong>유전 상수 (dielectric constant)</strong> 혹은 <strong>상대적 유전률(relative permittivity)</strong> 라고 한다<span class="math inline">\(^1\)</span>.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 자료에 따라 <span class="math inline">\(\epsilon_r\)</span> 이 아니라 <span class="math inline">\(\kappa\)</span> 를 쓰는 경우도 있다.</span></div></div>
+<div class="page-columns page-full"><p>를 <strong>유전 상수 (dielectric constant)</strong> 혹은 <strong>상대적 유전률(relative permittivity)</strong> 라고 한다<span class="math inline">\(^1\)</span>.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span> 자료에 따라 <span class="math inline">\(\epsilon_r\)</span> 이 아니라 <span class="math inline">\(\epsilon_r\)</span> 를 쓰는 경우도 있다.</span></div></div>
 <p>이제 편극 <span class="math inline">\(\boldsymbol{P}\)</span> 가 모든 곳에서 동일하지 않은 상황을 생각하자. 이 경우 앞서 언급했듯이 부피 전하 밀도가 존재한다. 물질이 편극될 때 가상의 표면을 가로질러 이동하는 전하의 양은 편극이 표면에 수직일 경우 표면적의 <span class="math inline">\(P\)</span> 배에 이며 편극이 표면에 접선이라면 전하가 표면을 가로질러 이동하지 않는다. 어떤 표면 요소를 가로질러 이동한 전하는 <span class="math inline">\(\boldsymbol{P}\)</span> 의 표면에 수직인 성분에 비례한다는 것을 쉽게 알 수 있다. 즉</p>
 <p><span id="eq-FLP_2_10_12"><span class="math display">\[
 \sigma_\text{pol} = \boldsymbol{P\cdot} \hat{\boldsymbol{n}}.
@@ -742,6 +749,173 @@ P = \dfrac{n\alpha}{1-n\alpha/3}\epsilon_0 E
 \epsilon_r =1+ \dfrac{n\alpha}{1-n\alpha/3}
 \tag{8.53}\]</span></span></p>
 <p>이다. 즉 원자의 편극률과 밀도로부터 액체의 유전 상수를 구할 수 있다. 이 식을 <strong>클라우시우스-모소티 관계식 (Clausius-Mossotti relation)</strong> 이라고 한다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_11_6" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_11_6">II.11-6 고체 유전체</h3>
+<p>이제 고체인 유전체에 대해 알아보자. 첫 번째 외부의 전기장이 없어도 영구적인 편극이 존재할 수 있다는 것이다. 예를 들어, 영구적인 쌍극자 모멘트를 가진 긴 분자를 포함하는 왁스를 녹여 액체일 때 강한 전기장을 가하면 쌍극자 모멘트가 부분적으로 정렬된다. 이후 냉각시켜 얼리면 때도 그 상태를 유지하여 전기장이 제거되도 남아 있는 영구적인 편극을 갖게 된다. 이런 고체를 <strong>electret</strong> 라고 한다. Electret 은 표면에 영구적인 편극 전하를 가지고 있지만 공기 중의 자유 전하가 표면으로 끌려 편극 전하를 상쇄하기 때문에 그렇게 유용하지 않다. 이것을 electric 이 <strong>방전 (discharged)</strong> 되어 있다고 하며 electret 에 의한 외부의 전기장은 없다.</p>
+<p>일부 결정 물질은 영구적인 내부의 편극 <span class="math inline">\(P\)</span> 를 갖는다. 이 경우 결정의 각 단위 셀이 동일한 영구 쌍극자 모멘트를 가지며 모든 쌍극자는 전기장이 가해지지 않아도 같은 방향이다. 많은 복잡한 결정은 실제로 이러한 분극을 가지고 있다. 그러나 electret 과 마찬가지로 외부 필드가 방전되기 때문에 우리는 이를 쉽게 알아채지 못한다.</p>
+<p>그러나 결정의 내부 쌍극자 모멘트가 변하면, 외부 전기장이 나타나게 된다. 이는 흩어진 전하가 모여 편극 전하를 상쇄할 시간이 없기 때문이다. 축전지에 유전체가 있는 경우, 전극에 자유 전하가 유도된다. 예를 들어, 유전체를 가열하면 열팽창으로 인해 모멘트가 변할 수 있다. 그 효과는 <strong>열전 (pyroelectricity)</strong> 이라고 한다. 마찬가지로, 결정의 응력을 변화시킬 경우—예를 들어, 다시 구부릴 경우—모멘트가 약간 변할 수 있으며, 소위 <strong>압전 (piezoelectricity)</strong> 이라고 하는 작은 전기 효과를 감지할 수 있다.</p>
+<p>영구 편극 모멘트가 없는 결정의 경우, 원자의 전자적 편극성을 포함하는 유전율 이론을 도출할 수 있으며 액체와 거의 동일하다. 일부 결정은 내부에 회전 가능한 쌍극자를 가지고 있으며, 이러한 쌍극자의 회전이 <span class="math inline">\(\epsilon_r\)</span> 에 기여한다. NaCl 과 같은 이온 결정에서도 이온 편극성이 존재한다. 결정은 양이온과 음이온으로 이루어진 체커보드로 이루어져 있으며, 전기장에서는 양이온이 한쪽으로, 음이온이 반대 방향으로 끌어당겨진다. 플러스와 마이너스 전하의 상대 운동이 존재하여 부피가 분극된다. 우리는 소금 결정의 강성에 대한 지식을 바탕으로 이온 편극성의 크기를 추정할 수 있지만, 여기서는 그 주제에 대해 파고들지 않는다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_11_7" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_11_7">II.11-7 강유전체 : BaTiO<sub>3</sub></h3>
+<div id="fig-FLP_2_11_9" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_11_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_11/fig_2_11_9.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_11_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;8.10: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 11-9 BaTiO<sub>3</sub> 의 단위 셀. 원자들은 실제로 대부분의 공간을 채우지만, 명확성을 위해 중심 위치만 표시한다.
+</figcaption>
+</figure>
+</div>
+<p>강유전체는 영구적인 편극 모멘트를 내장한 특수한 결정이다. 보통 온도를 약간 올리면 영구 모멘트가 사라지는데 이 영구 모멘트가 사라지는 온도를 <strong>큐리 온도 (Curie temperature)</strong> 라고 하고 <span class="math inline">\(T_C\)</span> 로 표기한다. 정육면체에 매우 가까운 결정이라면 영구 모멘트의 회전이 가능하며 외부 전기장으로 모멘트의 방향을 변경 할 수 있다. 이러한 영구 모멘트를 가진 물질을 <strong>강유전체 (ferroelectric)</strong> 라고 한다. 여기서는 강유전체인 BaTiO<sub>3</sub> 만을 다룬다. 이 물질은 결정 격자를 가지고 있으며, 그 기본 셀은 <a href="#fig-FLP_2_11_9" class="quarto-xref">그림&nbsp;<span>8.10</span></a> 와 같다. 큐리 온도는 <span class="math inline">\(120\sim 130\, {}^\circ\text{C}\)</span> 이다.</p>
+<p>고체 물질의 편극을 구할 때는 먼저 각 단위 셀에서 국소 장이 무엇인지 찾아야 한다. 우리는 액체의 경우와 마찬가지로 편극 자체이서 기인한 장를 포함해야 한다. 하지만 결정은 균일한 액체가 아니므로, 구면 구멍에서 얻을 수 있는 것을 국소장에 사용할 수 없고. 결정에 대해 풀어보면 <a href="#eq-FLP_2_11_24" class="quarto-xref">식&nbsp;<span>8.49</span></a> 의 <span class="math inline">\(1/3\)</span> 과 약간 다른 값을 얻는데 일단 BaTiO<sub>3</sub> 에 대해 <span class="math inline">\(1/3\)</span> 이라고 가정하자.</p>
+<p><a href="#eq-FLP_2_11_28" class="quarto-xref">식&nbsp;<span>8.53</span></a> 에서 <span class="math inline">\(n\alpha\)</span> 가 <span class="math inline">\(3\)</span> 보다 커지면 <span class="math inline">\(\epsilon_r\)</span> 이가 음수가 될 수 있을것처럼 보이긴 하지만 그것은 확실히 틀리다. 이를 위해 특정 결정에서 <span class="math inline">\(\alpha\)</span> 를 점진적으로 증가시킬 경우 어떤 일이 일어날지 살펴보자. <span class="math inline">\(\alpha\)</span> 가 커짐에 따라 편극도 커져 더 큰 국소적인 장이 형성된다. 하지만 더 큰 국소장은 각 원자를 더 많이 분극시켜, 국소장을 더욱 증가시킬 것이다. 원자들이 이것을 견딜 수 있다면 이 과정은 계속 진행된다. 각 원자의 분극이 전기장에 비례하여 증가한다는 가정하에, 편광이 제한 없이 증가하는 일종의 피드백이 존재합니다. 이것이 깨지는 조건은 <span class="math inline">\(n\alpha=3\)</span> 일 때 발생한다. 유도된 모멘트와 전기장 사이의 비례관계는 가 높은 전기장에서 붕궤되며 우리의 공식은 더 이상 올바르지 않게 된다. 이 경우 격자가 높은 자체 생성 내부 편극에 “고정”된다.</p>
+<p>BaTiO<sub>3</sub>의 경우, 전자 편극 외에도 비교적 큰 이온 편극이 존재하며, 이는 티타늄 이온이 입방 격자 내에서 약간 움직일 수 있기 때문이라고 추정된다. 격자는 큰 움직임에 저항하며, 티타늄이 약간 움직이면 끼어 멈추게 된다. 이후 결정 셀 내의 영구적인 쌍극자 모멘트가 남게 된다. 대부분의 결정에서는, 이것이 도달할 수 있는 모든 온도에 대한 상황이다. 바륨 티타네이트에 대해 매우 흥미로운 점은 <span class="math inline">\(n\alpha\)</span> 가 조금만 감소하면 고정되지 않는 섬세한 조건이 있다는 것입니다. 열팽창으로 인해 온도가 상승함에 따라 <span class="math inline">\(n\)</span> 이 감소하므로, 우리는 온도를 변화시켜 <span class="math inline">\(n\alpha\)</span> 를 변화시킬 수 있다. 임계 온도 이하에서는 거의 고정되지 않으므로, 외부 필드를 적용함으로써 편극을 이동시켜 다른 방향으로 고정하는 것이 쉽다.</p>
+<p>이제 좀 더 자세히 살펴 보자. <span class="math inline">\(T_C\)</span> 를 <span class="math inline">\(n\alpha\)</span> 가 정확히 <span class="math inline">\(3\)</span> 이 되는 임계 온도라고 하자. 온도가 상승함에 따라 격자의 팽창으로 인해 <span class="math inline">\(n\)</span> 이 약간 감소한다. 팽창이 작기 때문에, 임계 온도에 가깝울 때</p>
+<p><span id="eq-FLP_2_11_30"><span class="math display">\[
+n\alpha = 3−\beta(T−T_C)
+\tag{8.54}\]</span></span></p>
+<p>라고 할 수 있다. 여기서 <span class="math inline">\(\beta\)</span> 는 열팽창 계수와 같은 order의 작은 상수로 <span class="math inline">\(1\,^{\circ}\text{C}\)</span> 당 <span class="math inline">\(10^{−5}\)</span> 에서 <span class="math inline">\(10^{−6}\)</span> 정도이다. 이제 이 관계를 <a href="#eq-FLP_2_11_28" class="quarto-xref">식&nbsp;<span>8.53</span></a> 에 대입하면</p>
+<p><span class="math display">\[
+\epsilon_r −1 = \dfrac{3 −\beta (T−T_C)}{\beta (T−T_C)/3}
+\]</span></p>
+<p>를 얻는다. <span class="math inline">\(\beta (T−T_C)\)</span> 가 <span class="math inline">\(1\)</span> 에 비해 작다고 가정했으므로, 우리는 다음과 같이 근사할 수 있다.</p>
+<p><span id="eq-FP_2_11_31"><span class="math display">\[
+\epsilon_r − 1 = 9\beta (T−T_C).
+\tag{8.55}\]</span></span></p>
+<p>이 관계는 물론 <span class="math inline">\(T&gt;T_C\)</span> 에 대해서만 옳다. 우리는 임계 온도 바로 위에서 <span class="math inline">\(\epsilon_r\)</span> 이 매우 커짐을 알 수 있다. <span class="math inline">\(n\alpha\)</span> 가 <span class="math inline">\(3\)</span> 에 매우 가깝기 때문에, 유전율은 쉽게 50,000에서 100,000까지 높아질 수 있으며 또한 온도에 매우 민감하다. 온도가 상승할 경우 유전율은 온도와 반비례하여 감소하지만, 절대 온도에서 <span class="math inline">\(\epsilon_r-1 \sim 1/T\)</span> 인 양극 기체와 달리, 강유전체에서는 <span class="math inline">\(\epsilon_r-1 \sim 1/(T-T_C)\)</span> 이다. 이 법칙을 <strong>퀴리-바이스 법칙(Curie-Weiss law)</strong> 이라고 한다.</p>
+<p>온도를 임계 온도로 낮추면 어떻게 될까? <a href="#fig-FLP_2_11_9" class="quarto-xref">그림&nbsp;<span>8.10</span></a> 와 같은 단위 셀 격자를 생각하면 수직선을 따라 이온 사슬을 골라낼 수 있음을 알 수 있다. 그 중 하나는 산소 이온과 티타늄 이온이 교대로 구성되어 있다. 바륨 이온 또는 산소 이온으로 구성된 다른 선들을 생각 할 수 있지만, 이 선들을 따라서는 간격이 더 넓다. 우리는 <a href="#fig-FLP_2_11_10" class="quarto-xref">그림&nbsp;<span>8.11</span></a> (a) 와 같dms 이온 사슬들의 연속을 상상함으로써 간단한 모델을 만들 수 있다. 우리가 main chain 이라고 부르는 경로에서 이온들의 간격은 <span class="math inline">\(a\)</span> 이며, 이는 격자 상수의 절반에 해당한다. 동일한 사슬들 사이의 측면 거리는 <span class="math inline">\(2a\)</span> 이다. 이 두 main chain 사이에 밀도가 낮은 사슬들이 있으며, 우리는 당분간 무시할 것이다. 분석을 조금 더 쉽게 하기 위해, 우리는 또한 main chain 의 모든 이온이 동일하다고 가정한다. 모든 중요한 효과가 여전히 나타나기 때문에 이는 심각한 단순화가 아니다.</p>
+<div id="fig-FLP_2_11_10" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_11_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_11/fig_2_11_10.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_11_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;8.11: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 11-10 강유전체 모델: (a) 반강유전체 (b) 일반 강유전체
+</figcaption>
+</figure>
+</div>
+<p>이제 이 모델로 계산해 보자. 각 원자의 쌍극자 모멘트가 <span class="math inline">\(p\)</span> 라고 가정하고, 사슬의 원자 중 하나의 위치에서의 전기장을 계산해보자. 우리는 쌍극자에서 그 축을 따라 방향까지 거리 <span class="math inline">\(r\)</span> 만큼 떨어진 곳에서의 전기장은</p>
+<p><span id="eq-FLP_2_11_32"><span class="math display">\[
+E=\dfrac{1}{4π\epsilon_0}\dfrac{2p}{r^3}
+\tag{8.56}\]</span></span></p>
+<p>이다. 어떤 원자에서든 위와 아래가 같은 거리만큼 떨어진 쌍극자는 같은 방향으로 필드를 형성하므로, 전체 사슬서의 전기장은</p>
+<p><span id="eq-FLP_2_11_33"><span class="math display">\[
+E_\text{chain}=\dfrac{p}{4π\epsilon_0}\dfrac{2}{a^3}\cdot \left(2+\dfrac{2}{8} + \dfrac{2}{27} + \dfrac{2}{64} + \cdots\right) = \dfrac{p}{\epsilon_0}\dfrac{0.383}{a^3}
+\tag{8.57}\]</span></span></p>
+<p>이다. 우리 모델이 완전한 입방체 결정이라면, 즉 다음 동일한 chain 들과의 거리가 <span class="math inline">\(a\)</span> 만큼 떨어져 있다면 <span class="math inline">\(-0.383\)</span> 이라는 숫자가 <span class="math inline">\(1/3\)</span> 으로 변경될 것이라는 것을 보여주는 것이 그리 어렵지 않다. 하지만, 우리가 고려하고 있는 가장 가까운 main chain 은 <span class="math inline">\(2a\)</span> 만큼 떨어져 있으며 주기 구조의 필드는 거리와 대해 지수적으로 감소하므로 <span class="math inline">\(−0.050\)</span> 보다 훨씬 적게 기여하며, 이보다 먼 main chain 의 기여는 훨씬 작다.</p>
+<p>이제는 런어웨이 공정을 작동시키기 위해 필요한 편극률 <span class="math inline">\(\alpha\)</span> 가 무엇인지 알아내는 것이 필요합니다. 체인의 각 원자에 대한 유도 모멘트 <span class="math inline">\(p\)</span> 가 그 원자의 필드에 비례한다고 가정해 보십시오, <a href="#eq-FLP_2_11_6" class="quarto-xref">식&nbsp;<span>8.34</span></a> 에서와 같이 <span class="math inline">\(E_\text{chain}\)</span> 에서 <a href="#eq-FLP_2_11_32" class="quarto-xref">식&nbsp;<span>8.56</span></a> 를 사용하여 원자 위의 쌍극자 모멘트를 구해보자. 다음 두 개의 방정식을 생각한다.</p>
+<p><span class="math display">\[
+p=\alpha \epsilon_0 E_\text{chain}
+\]</span></p>
+<p>과</p>
+<p><span class="math display">\[
+E_\text{chain}=\dfrac{0.383}{a^3}\dfrac{p}{\epsilon_0}.
+\]</span></p>
+<p>위 에는 두 가지 해가 있다: <span class="math inline">\(E_\text{chain}=0\)</span>, <span class="math inline">\(p=0\)</span> 과</p>
+<p><span class="math display">\[
+\alpha=\dfrac{a^3}{0.383}.
+\]</span></p>
+<p><span class="math inline">\(E_\text{chain}\)</span> 과 <span class="math inline">\(p\)</span> 가 모두 유한한 값이다. 따라서 <span class="math inline">\(\alpha = a^3/0.383\)</span> 라면 자체 필드에 의해 유지되는 영구적인 편극이 형성된다. 바륨 티타네이트에 대해 이 중요한 식을 <span class="math inline">\(T_C\)</span> 온도만으로 얻어야 한다. (<span class="math inline">\(\alpha\)</span> 가 작은 필드에 대한 임계값보다 크면, 더 큰 필드에서는 감소하고, 평형 상태에서는 우리가 찾은 동일한 식이 유지된다는 점에 유의하라.)</p>
+<p>BaTiO<sub>3</sub> 의 경우, 간격 <span class="math inline">\(a\)</span> 는 <span class="math inline">\(2\times 10^{10}\,\text{m}\)</span> 이므로 <span class="math inline">\(\alpha=21.8\times 10^{−30}\,\text{m}^3\)</span> 일 것으로 예상된다. 우리는 이를 개별 원자들의 알려진 편극률과 비교할 수 있다. 산소의 경우, <span class="math inline">\(\alpha=30.2\times 10−30\,\text{m}^3\)</span>. 우리는 일단 올바른 방향으로 가고 있다! 하지만 티타늄의 경우 <span class="math inline">\(\alpha=2.4\times 10^{-30}\,\text{m}^3\)</span> 로 다소 작다. 우리 모델을 사용하려면 일단 평균을 사용하는 것이 좋을 것 같다. (우리는 교대 원자 사슬로 이 계산을 할 수 있지만, 결과는 거의 동일할 것이다.) 따라서 <span class="math inline">\(\alpha(\text{평균})=16.3 \times 10^{−24}\,\text{m}^3\)</span> 이며, 이는 영구적인 편극을 제공하기에 충분히 크지 않다. 하지만 지금까지는 전자의 편극성만 생각했다. 티타늄 이온의 이동으로 인한 이온 편극을 생각해야 한다. 우리에게 필요한 것은 <span class="math inline">\(9.2 \times 10^{−24}\,\text{m}^3\)</span> 의 이온 편극성입니다. (교대 원자를 이용한 보다 정밀한 계산에서는 실제로 <span class="math inline">\(11.9 \times 10^{−24}\,\text{m}^3\)</span> 가 필요하다.) BaTiO<sub>3</sub> 의 특성을 이해하려면, 그러한 이온성 편극성이 존재한다고 가정해야 한다.</p>
+<p>바륨 타이타네이트의 티타늄 이온이 그 정도의 이온 편극성을 가져야 하는 이유는 알려져 있지 않다. 게다가, 낮은 온도에서 그것이 육면체의 대각선과 면 대각선을 따라 동일하게 편광되는 이유도 명확하지 않다. <a href="#fig-FLP_2_11_9" class="quarto-xref">그림&nbsp;<span>8.10</span></a> 에 있는 구체들의 실제 크기를 파악하고, 인접한 산소 원자에 의해 형성된 상자 안에서 티타늄이 이동할 여유가 있는지 확인해보면 정반대임을 알게 된다. 매우 꽉 끼인다. 바륨 원자는 약간 느슨하지만, 그것들을 움직이는 것으로 두면 맞지 않는다. 그렇다면 그 주제가 실제로는 100% 명확하지 않다는 것을 보시게 됩니다; 아직 우리가 이해하고자 하는 미스터리가 남아 있습니다.</p>
+<p><a href="#fig-FLP_2_11_10" class="quarto-xref">그림&nbsp;<span>8.11</span></a> (a) 의 간단한 모델로 돌아가면, 하나의 사슬에서 나오는 장이 반대 방향으로 인접한 사슬을 편광시키는 경향이 있다는것을 알 수 있다. 이는 각 사슬이 고정되어 있더라도 단위 부피당 순 영구 모멘트가 존재하지 않을 것임을 의미한다. (외부 전기 효과는 없겠지만, 여전히 관찰할 수 있는 특정 열역학적 효과가 존재합니다.) 그러한 시스템은 존재하며, <strong>반강유전 (antiferroelectric)</strong> 이라고 한다. 그래서 우리가 설명한 것은 실제로 반강유전체이다. 하지만 바륨 티타네이트는 <a href="#fig-FLP_2_11_10" class="quarto-xref">그림&nbsp;<span>8.11</span></a> (b) 의 배치과 같다. 산소-티타늄 사슬은 모두 같은 방향으로 편극되어 있으며, 그 사이에 원자들의 중간 사슬이 존재하기 때문이다. 비록 이 사슬들의 원자들이 매우 분극성이 높지 않거나 밀도가 높지는 않지만, 산소‐티타늄 사슬과 반대 방향으로 다소 분극될 것입니다. 다음 산소‐티타늄 사슬에서 생성되는 작은 필드들은 첫 번째와 평행하게 시작될 것입니다. 따라서 BaTiO<sub>3</sub>는 실제로 강유전체이며, 이는 그 사이의 원자들 때문이다. 아마도 두 O‐Ti 사슬 사이의 직접적인 효과를 궁금해 할 수도 있다. 하지만 우리는 직접적인 효과는 거리에 대해 지수적으로 감소한다는 것을 안다. <span class="math inline">\(2a\)</span> 에서 강한 쌍극자 사슬의 효과는 거리 <span class="math inline">\(a\)</span> 에서 약한 쌍극자 사슬의 효과보다 작을 수 있다.</p>
+<p><br></p>
+</section>
+</section>
+<section id="sec-FLP_2_12" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="sec-FLP_2_12">I.12 정전기 상태와 유사한 물리</h2>
+<section id="sec-FLP_2_12_1" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_12_1">I.12-1 같은 방정식은 같은 해를 가진다.</h3>
+<p>정전기학에서 우리는</p>
+<p><span id="eq-FLP_2_12_1"><span class="math display">\[
+\nabla \boldsymbol{\cdot}(\epsilon_r \boldsymbol{E})= \dfrac{\rho_\text{free}}{\epsilon_0},\qquad \nabla \times \boldsymbol{E}=0
+\tag{8.58}\]</span></span></p>
+<p>을 알게 되었다. 또한 위 식은 아래 식과 동등하다는 것도 안다.</p>
+<p><span id="eq-FLP_2_12_3"><span class="math display">\[
+\boldsymbol{E}=-\nabla \Phi,\qquad ,\qquad \nabla \boldsymbol{\cdot} (\epsilon_r \nabla \Phi) = - \dfrac{\rho_\text{free}}{\epsilon_0}.
+\tag{8.59}\]</span></span></p>
+<p>중요한 것은 위와 같은 형태의 방정식이 매우 다양한 분야에 출현한다는 것이다. 즉 우리가 정전기학을 통해 얻은 수학적 지식이 전혀 다른 분야에 적용 될 수 있다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_12_2" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_12_2">I.12-2 열의 흐름: 무한한 평면 경계에 가까운 점의 열원</h3>
+<p>여러 물질이 섞인, 그리고 온도가 위치마다 다른 블록을 생각하자. 이러한 온도 차이의 결과로 열 흐름이 발생하며, 이는 벡터 <span class="math inline">\(\boldsymbol{h}\)</span> 로 나타낼 수 있다. <span class="math inline">\(\boldsymbol{h}\)</span> 는 단위 시간에 단위 면적을 통과하는 열 에너지의 흐름을 표현한다. 그렇다면 <span class="math inline">\(\nabla \boldsymbol{\cdot h}\)</span> 는 단위 부피를 빠져나가는 단위 시간당 열에너지이다. 물질 내에 열원이 존재하여 단위 부피에서 초당 <span class="math inline">\(s\)</span> 만큼의 열을 생산한다고 하자. 그리고 단위 부피당 물질 내의 열 에너지를 <span class="math inline">\(u\)</span> 라고 하면 다음의 관계가 성립한다.</p>
+<p><span id="eq-FLP_2_12_5"><span class="math display">\[
+\nabla \boldsymbol{\cdot h} = s - \dfrac{du}{dt}.
+\tag{8.60}\]</span></span></p>
+<p>만약 물질 내가 열평형 상태라면, 즉 <span class="math inline">\(du/dt =0\)</span> 이라면 다음을 만족한다.</p>
+<p><span id="eq-FLP_2_12_6"><span class="math display">\[
+\nabla \boldsymbol{\cdot h} = s
+\tag{8.61}\]</span></span></p>
+<p>많은 경우 물질 내의 열 흐름은 대략적으로 위치에서의 온도의 차이에 비례한다. 즉,</p>
+<p><span id="eq-FLP_2_12_7"><span class="math display">\[
+\boldsymbol{h} = - \kappa \nabla T
+\tag{8.62}\]</span></span></p>
+<div class="page-columns page-full"><p>이다<span class="math inline">\(^3\)</span>. 이 때 비례상수 <span class="math inline">\(\kappa\)</span> 를 <strong>열 전도율 (thermal conductivity)</strong> 라고 하며 위치에 대한 함수이다. <a href="#eq-FLP_2_12_6" class="quarto-xref">식&nbsp;<span>8.61</span></a> 보다 <a href="#eq-FLP_2_12_7" class="quarto-xref">식&nbsp;<span>8.62</span></a> 로 부터 우리는 다음 식을 얻는다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^3\)</span> <a href="#eq-FLP_2_12_7" class="quarto-xref">식&nbsp;<span>8.62</span></a> 보다 <a href="#eq-FLP_2_12_5" class="quarto-xref">식&nbsp;<span>8.60</span></a> 가 더근본적이다. <a href="#eq-FLP_2_12_5" class="quarto-xref">식&nbsp;<span>8.60</span></a> 는 에너지 보존법칙이며 <a href="#eq-FLP_2_12_7" class="quarto-xref">식&nbsp;<span>8.62</span></a> 는 물질의 특성에 의존한다.</span></div></div>
+<p><span id="eq-FLP_2_12_8"><span class="math display">\[
+\nabla \boldsymbol{\cdot} (\kappa \nabla T) = -s.
+\tag{8.63}\]</span></span></p>
+<p>이 식과 <a href="#eq-FLP_2_12_1" class="quarto-xref">식&nbsp;<span>8.58</span></a> 의 첫번째 식은 완전히 같은 형태이다. <strong>정적 열 흐름 문제와 정전기 문제는 동일한 문제이다</strong>. 우리는 <span class="math inline">\(T\propto 1/r\)</span> 이며 <span class="math inline">\(\|\nabla T\|\propto 1/r^2\)</span> 임을 알 수 있다.</p>
+<br>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_example_heal_flow_in_cylindrical_geometry" class="theorem example">
+<p><span class="theorem-title"><strong>예제 8.3 (실린더 형태의 배관에서의 열의 흐름)</strong></span> &nbsp;</p>
+<div id="fig-FLP_2_12_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_12_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_12/fig_2_12_1.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_12_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;8.12: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 12-1 (a) 원통형 배관에서의 열 흐름. (b) 해당 전기적 문제.
+</figcaption>
+</figure>
+</div>
+<p>반지름 <span class="math inline">\(a\)</span> 인 원통의 온도가 <span class="math inline">\(T_1\)</span> 이며 이 온도는 실린더 내부의 열 발생에 의해 유지되고 있다고 가정하자. 이 실린더는 열전도율 <span class="math inline">\(\kappa\)</span> 를 가진 절연 재료로 외부 반경이 <span class="math inline">\(b\)</span> 가 되도록 덮여 있으며 외부 관의 온도는 <span class="math inline">\(T_2\)</span> 로 유된다고 가정하자. (<a href="#fig-FLP_2_12_1" class="quarto-xref">그림&nbsp;<span>8.12</span></a> (a)). 이제 전선이나 증기관, 혹은 중앙에 있는 무언가 의해 어느 정도의 열이 손실되는지 알아보자. 파이프의 길이가 <span class="math inline">\(L\)</span> 일 때 손실되는 총 열량 <span class="math inline">\(G\)</span> 를 구해보자.</p>
+<p>이 문제는 정전기학 방정식과 완전히 동일하다. <a href="#fig-FLP_2_12_1" class="quarto-xref">그림&nbsp;<span>8.12</span></a> (b) 와 같이 반지름 <span class="math inline">\(a\)</span> 에서 포텐셜이 <span class="math inline">\(\Phi_1\)</span> 이며 <span class="math inline">\(b\)</span> dptj <span class="math inline">\(\Phi_2\)</span> 인 경우를 생각하자. 그리고 그 사이에 유전체 재료의 동심층이 있다고 생각하자. 이제 열 흐름 <span class="math inline">\(\boldsymbol{h}\)</span> 가 전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 에 해당하므로, 우리가 찾고자 하는 양 <span class="math inline">\(G\)</span> 는 전기장의 플럭스, 즉 <span class="math inline">\(q/\epsilon_0\)</span> 에 해당한다.</p>
+<p>이로부터 다음을 알 수 있다.</p>
+<p><span id="eq-FLP_2_12_12"><span class="math display">\[
+G=\dfrac{2\pi \kappa L (T_1-T_2)}{\ln (b/a)}
+\tag{8.64}\]</span></span></p>
+</div>
+</div>
+<p><br></p>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_example_heal_flow_2" class="theorem example">
+<p><span class="theorem-title"><strong>예제 8.4</strong></span> 지구 표면 약간 아래에 위치한 점열원 또는 큰 금속 블록의 표면 근처에 있는 근처의 열 흐름을 알아야 한다고 하자. 국소적인 열원은 지하에서 발사되어 강렬한 열원을 남기는 원자폭탄일 수도 있고, 혹은 철덩어리 안에 있는 작은 방사성 원소에 대한 문제일 수도 있다. 이 문제를 열전도율이 <span class="math inline">\(\kappa\)</span> 인 균일한 재료의 무한 블록 표면 아래 거리 <span class="math inline">\(a\)</span> 에서 강도 <span class="math inline">\(G\)</span> 인 점열원이라는 이상화된 문제로 다뤄보자. 그리고 재료 외부의 공기에 의한 열전도는 생각하지 않기로 하자. 열원 바로 위와 블록 표면의 여러 위치에서의 온도를 어떻게 구할까?</p>
+<p>어떻게 해결해야 할까? 이는 평면을 경계로 서로 다른 유전 상수 <span class="math inline">\(\epsilon_r\)</span> 를 가진 두 물질이 갖는 정전기 문제와 같다. 아마도 이것은 유전체와 도체 사이의 경계 근처에 있는 점 전하와 유사한 것이다. 열 문제에서의 표면 근처에서 상황이 어떤지 살펴보자. 조건은 표면에서 <span class="math inline">\(\boldsymbol{h}\)</span> 의 직교 성분이 0이라는 것이며, 이는 블록에서 외부로 열이 흐르지 않는다고 가정했기 때문이다. 하지만 정전기 문제에서 <span class="math inline">\(\boldsymbol{E}\)</span> 의 직교 성분이 표면에서 0이라는 조건을 갖지는 않는다.</p>
+<p>그것은 우리가 주의해야 할 것 중 하나이다. 물리적인 이유로, 특정 주제에서 수학적 조건의 종류에 일정한 제한이 있을 수 있다. 따라서 미분 방정식을 특정한 제한이 있는 경우에만 분석했다면, 다른 물리적 상황에서 발생할 수 있는 일부 해들을 놓쳤을 수도 있다. 예를 들어, 유전율이 0 인 물질은 존재하지 않지만, 진공은 열전도율이 0 이다. 따라서 완벽한 열 절연체에 대한 정전기적 유사체는 존재하지 않는다. 하지만 우리는 여전히 같은 방법을 사용할 수 있다. 우리는 유전율이 0이면 어떤 일이 일어날지 상상해 볼 수 있다. (매우 높은 유전율을 가진 물질이 있는 경우가 있을 수 있으며, 그 경우 외부 공기의 유전율을 무시할 수 있다.)</p>
+<p>표면에 수직인 성분이 없는 전기장을 어떻게 찾을 수 있을까? 즉, 표면에서 항상 접선일까? 이 문제는 평면 도체 근처의 점 전하와 정 반대이다. 이 문제에서는 전도체가 모두 같은 전위에 있었기 때문에 전기장은 표면에 수직이 되어야 하며 영상법을 이용하여 금속판 뒤에 점 전하를 상상함으로써 해결했다. 이제 <a href="#fig-FLP_2_12_2" class="quarto-xref">그림&nbsp;<span>8.13</span></a> 와 같이 주어진 전하와 동일한 기호와 동일한 강도를 표면 위의 거리 <span class="math inline">\(a\)</span> 에 배치한 이미지 전하는 전기장이 항상 표면에서 수평이 되도록 한다.</p>
+<div id="fig-FLP_2_12_2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_12_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_12/fig_2_12_2.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_12_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;8.13: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 12-2 좋은 열 전도체의 표면 아래 거리 <span class="math inline">\(a\)</span> 에 있는 점열원 근처의 열 흐름 및 등온선. 그림의 <span class="math inline">\(K\)</span> 는 본문의 <span class="math inline">\(\kappa\)</span> 이다.
+</figcaption>
+</figure>
+</div>
+<p>이제 열 흐름 문제가 해결되었다. 온도는 두 개의 동일한 점 전하에 의한 전위와 동일하다. 무한 매질에서 단일 점원 <span class="math inline">\(G\)</span> 로부터 거리 <span class="math inline">\(r\)</span> 에서의 온도 <span class="math inline">\(T\)</span> 는</p>
+<p><span id="eq-FLP_2_12_13"><span class="math display">\[
+T={G}{4π\kappa r}
+\tag{8.65}\]</span></span></p>
+<p>이며 점 열원의 온도이자 그 이미지 소스의 온도는</p>
+<p><span id="eq-FLP_2_12_14"><span class="math display">\[
+T=\dfrac{G}{4π\kappa r_1}+\dfrac{G}{4π\kappa r_2}
+\tag{8.66}\]</span></span></p>
+<p>이다. 이 식은 블록 전체에 에서의 온도를 제공한다. <a href="#fig-FLP_2_12_2" class="quarto-xref">그림&nbsp;<span>8.13</span></a> 에 여러 등온면 표시되어 있다.또한 <span class="math inline">\(\boldsymbol{h}\)</span> 의 선들이 표시되어 있으며, 이는 <span class="math inline">\(\boldsymbol{h}=−\kappa \nabla T\)</span> 에서 얻을 수 있다.</p>
+<p>표면의 온도는 축으로부터 거리 <span class="math inline">\(\rho\)</span> 인 표면상의 점에 대해, <span class="math inline">\(r_1 = r_2 = \sqrt{\rho^2 + a^2}\)</span> 이므로</p>
+<p><span id="eq-FLP_2_12_15"><span class="math display">\[
+T(\text{표면})=\dfrac{1}{4π\kappa} \dfrac{2G}{\sqrt{\rho^2+a^2}}
+\tag{8.67}\]</span></span></p>
+<p>이다. 이 함수는 그림에도 표현되어 있다.</p>
+</div>
+</div>
 
 
 </section>
