@@ -738,8 +738,6 @@ $$
 \Phi(\bf{r}) = \dfrac{1}{4\pi\epsilon_0} \left[\dfrac{q}{\|\bf{r}-d\hat{\bf{z}}/2\|}+\dfrac{-q}{\|\bf{r}+d\hat{\bf{z}}/2\|}\right].
 $$ {#eq-FLP_2_6_8}
 
-[르장드르 다항식](https://julia-kaeri.github.io/MathematicalPhysics/src/special_functions/legendre.html)
-
 많은 경우 우리가 관심있는 상황은 $\|\bf{r}\|\gg d$ 인 경우, 즉 두전하의 거리보다 우리가 관심있는 영역까지의 거리가 훨씬 큰 경우이며 이 때 이런 전하 분포를 **전기 쌍극자 (electric dipole)** 이라고 한다. 원자에 전기장이 가해지는 경우 원자핵과 전자가 서로 반대 방향으로 힘을 받기 때문에 원자핵의 중심과 전자의 중심이 불일치할 수 있으며 이때 발생하는 전기 쌍극자를 **원자 쌍극자 (atomic dipole)** 이라고 한다. 도체의 경우 자유전자는 표면에 모이며 내부의 전기장이 0 이 된다는 것을 안다. 부도체의 경우 전자가 멀리 가지 못하기 때문에 전자가 약간 움직이게 된다. 원자 혹은 분자 수준에서는 전기적으로 중성이며 다만 미시적으로 쌍극자를 이룬다. 그리고 우리가 관심 있는 영역은 이 미시적인 쌍극자의 크기보다 일반적으로 훨씬 크다. 어떤 경우에는 외부에서 가해지는 전기장이 없더라도 분자수준에서 전기쌍극자가 존재할 수 있다. 가장 대표적으로 물 분자이다.
 
 이제 @eq-FLP_2_6_8 을 분석해보자. $r > d$ 인 경우 [르장드르 다항식](https://julia-kaeri.github.io/MathematicalPhysics/src/special_functions/legendre.html) 을 이용하면
