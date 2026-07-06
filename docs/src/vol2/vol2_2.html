@@ -279,10 +279,11 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_11_6" id="toc-sec-FLP_2_11_6" class="nav-link" data-scroll-target="#sec-FLP_2_11_6">II.11-6 고체 유전체</a></li>
   <li><a href="#sec-FLP_2_11_7" id="toc-sec-FLP_2_11_7" class="nav-link" data-scroll-target="#sec-FLP_2_11_7">II.11-7 강유전체 : BaTiO<sub>3</sub></a></li>
   </ul></li>
-  <li><a href="#sec-FLP_2_12" id="toc-sec-FLP_2_12" class="nav-link" data-scroll-target="#sec-FLP_2_12">I.12 정전기 상태와 유사한 물리</a>
+  <li><a href="#sec-FLP_2_12" id="toc-sec-FLP_2_12" class="nav-link" data-scroll-target="#sec-FLP_2_12">II.12 정전기 상태와 유사한 물리</a>
   <ul class="collapse">
-  <li><a href="#sec-FLP_2_12_1" id="toc-sec-FLP_2_12_1" class="nav-link" data-scroll-target="#sec-FLP_2_12_1">I.12-1 같은 방정식은 같은 해를 가진다.</a></li>
-  <li><a href="#sec-FLP_2_12_2" id="toc-sec-FLP_2_12_2" class="nav-link" data-scroll-target="#sec-FLP_2_12_2">I.12-2 열의 흐름: 무한한 평면 경계에 가까운 점의 열원</a></li>
+  <li><a href="#sec-FLP_2_12_1" id="toc-sec-FLP_2_12_1" class="nav-link" data-scroll-target="#sec-FLP_2_12_1">II.12-1 같은 방정식은 같은 해를 가진다.</a></li>
+  <li><a href="#sec-FLP_2_12_2" id="toc-sec-FLP_2_12_2" class="nav-link" data-scroll-target="#sec-FLP_2_12_2">II.12-2 열의 흐름: 무한한 평면 경계에 가까운 점의 열원</a></li>
+  <li><a href="#sec-FLP_2_12_3" id="toc-sec-FLP_2_12_3" class="nav-link" data-scroll-target="#sec-FLP_2_12_3">II.12-3 펼쳐진 막</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -828,9 +829,9 @@ E_\text{chain}=\dfrac{0.383}{a^3}\dfrac{p}{\epsilon_0}.
 </section>
 </section>
 <section id="sec-FLP_2_12" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="sec-FLP_2_12">I.12 정전기 상태와 유사한 물리</h2>
+<h2 class="anchored" data-anchor-id="sec-FLP_2_12">II.12 정전기 상태와 유사한 물리</h2>
 <section id="sec-FLP_2_12_1" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_2_12_1">I.12-1 같은 방정식은 같은 해를 가진다.</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_2_12_1">II.12-1 같은 방정식은 같은 해를 가진다.</h3>
 <p>정전기학에서 우리는</p>
 <p><span id="eq-FLP_2_12_1"><span class="math display">\[
 \nabla \boldsymbol{\cdot}(\epsilon_r \boldsymbol{E})= \dfrac{\rho_\text{free}}{\epsilon_0},\qquad \nabla \times \boldsymbol{E}=0
@@ -843,7 +844,7 @@ E_\text{chain}=\dfrac{0.383}{a^3}\dfrac{p}{\epsilon_0}.
 <p><br></p>
 </section>
 <section id="sec-FLP_2_12_2" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="sec-FLP_2_12_2">I.12-2 열의 흐름: 무한한 평면 경계에 가까운 점의 열원</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_2_12_2">II.12-2 열의 흐름: 무한한 평면 경계에 가까운 점의 열원</h3>
 <p>여러 물질이 섞인, 그리고 온도가 위치마다 다른 블록을 생각하자. 이러한 온도 차이의 결과로 열 흐름이 발생하며, 이는 벡터 <span class="math inline">\(\boldsymbol{h}\)</span> 로 나타낼 수 있다. <span class="math inline">\(\boldsymbol{h}\)</span> 는 단위 시간에 단위 면적을 통과하는 열 에너지의 흐름을 표현한다. 그렇다면 <span class="math inline">\(\nabla \boldsymbol{\cdot h}\)</span> 는 단위 부피를 빠져나가는 단위 시간당 열에너지이다. 물질 내에 열원이 존재하여 단위 부피에서 초당 <span class="math inline">\(s\)</span> 만큼의 열을 생산한다고 하자. 그리고 단위 부피당 물질 내의 열 에너지를 <span class="math inline">\(u\)</span> 라고 하면 다음의 관계가 성립한다.</p>
 <p><span id="eq-FLP_2_12_5"><span class="math display">\[
 \nabla \boldsymbol{\cdot h} = s - \dfrac{du}{dt}.
@@ -916,6 +917,59 @@ T(\text{표면})=\dfrac{1}{4π\kappa} \dfrac{2G}{\sqrt{\rho^2+a^2}}
 <p>이다. 이 함수는 그림에도 표현되어 있다.</p>
 </div>
 </div>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_12_3" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_12_3">II.12-3 펼쳐진 막</h3>
+<p>이제 전혀 다른 물리적 상황, 그러나 같은 방정식으로 표현되는 상황을 생각해 보자. <a href="#fig-FLP_2_12_3" class="quarto-xref">그림&nbsp;<span>8.14</span></a> 과 같이 얇은 고무 시트를 큰 수평 프레임(드럼 헤드를 생각하라) 위에 늘린 것을 생각해보자. 그리고 이제 막이 한 곳에서 위로, 다른 곳에서 아래로 눌린다고 생각해 보자. 표면의 형태를 어떻게 설명할 수 있을까? 막의 변위가 너무 크지 않을 때 문제를 어떻게 해결할지 알아보자.</p>
+<div id="fig-FLP_2_12_3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_12_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_12/fig_2_12_3.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_12_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;8.14: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 12-3 얇은 고무 시트가 원통형 프레임 위에 드럼 헤드와 같이 펼쳐져 있다. 시트를 A에서 위로, B에서 아래로 눌렀을 때, 표면의 형태는 어떻게 될까?
+</figcaption>
+</figure>
+</div>
+<p>시트가 늘어난다는 것은 힘이 있다는 의미이다. 절개가 있다면 그 양쪽으로 갈라지게 된다. 따라서 시트에는 표면 장력이 있으며, 이는 늘어난 줄의의 일차원 장력과 유사하다. 이제 표면 장력 <span class="math inline">\(\tau\)</span> 의 크기를 단위 길이당 힘으로 정의하며, 이는 <a href="#fig-FLP_2_12_4" class="quarto-xref">그림&nbsp;<span>8.15</span></a> 보인 것처럼 절단면의 양쪽을 단순히 결합한다.</p>
+<div id="fig-FLP_2_12_4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_12_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_12/fig_2_12_4.png" class="img-fluid figure-img" width="250">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_12_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;8.15: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 12-4 늘어진 고무 시트의 표면 장력 <span class="math inline">\(\tau\)</span> 는 직선을 가로지르는 단위 길이당 힘이다.
+</figcaption>
+</figure>
+</div>
+<p>이제 막의 수직 단면은 <a href="#fig-FLP_2_12_5" class="quarto-xref">그림&nbsp;<span>8.16</span></a> 에 있는 것과 같은 곡선으로 나타날 것입니다. <span class="math inline">\(u\)</span> 는 막이 정상 위치로부터의 수직 변위이며, <span class="math inline">\(x\)</span> 와 <span class="math inline">\(y\)</span> 는 수평면의 좌표라고 하자. 그림에 표시된 단면은 <span class="math inline">\(x\)</span> 축과 평행하다.</p>
+<div id="fig-FLP_2_12_5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_12_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_12/fig_2_12_5.png" class="img-fluid figure-img" width="350">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_12_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;8.16: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 12-5 휘어진 시트의 단면
+</figcaption>
+</figure>
+</div>
+<p>길이 <span class="math inline">\(\Delta x\)</span> 와 너비 <span class="math inline">\(\Delta y\)</span> 인 표면의 작은 조각을 생각하자. 이 조각의 가장자리를 따라 표면 장력으로 인해 조각에 힘이 작용하며. 그림의 가장자리 <span class="math inline">\(1\)</span> 에는 <span class="math inline">\(\tau_1 \Delta y\)</span> 의 힘이 가해지며 표면에 접하는 방향으로, 즉 수평면에 대해 <span class="math inline">\(\theta_1\)</span> 각도를 이룬다. 가장자리 <span class="math inline">\(2\)</span> 에는 각도 <span class="math inline">\(\theta_2\)</span> 로 힘 <span class="math inline">\(\tau_2\Delta y\)</span> 가 가해진다. 조각의 다른 두 가장자리에도 비슷한 힘이 가해지지만 일단은 이 두개만 생각하자. 가장자리 <span class="math inline">\(1\)</span> 과 <span class="math inline">\(2\)</span> 에서 조각에 작용하는 위로 향하는 순 힘은</p>
+<p><span class="math display">\[
+\Delta F_x = \tau_2 \Delta y \sin \theta_2 − \tau_1 \Delta y \sin \theta_1
+\]</span></p>
+<p>이다. 우리는 막의 작은 왜곡, 즉 기울기가 작다고 제한한다. 그렇다면 <span class="math inline">\(\sin \theta \approx \tan \theta\)</span> 이며, <span class="math inline">\(\tan\theta = \partial u/\partial x\)</span> 이므로 다음과 같이 쓸 수 있다.</p>
+<p><span class="math display">\[
+\Delta F_x = \left[\tau_2 \left(\dfrac{\partial u}{\partial x}\right)_2 − \tau_1 \left(\dfrac{\partial u}{\partial x}\right)_1\right]\Delta y = \dfrac{\partial }{\partial x}\left(\tau \dfrac{\partial u}{\partial x}\right) \Delta x \Delta y
+\]</span></p>
+<p>이제 <span class="math inline">\(y\)</span> 축 방향에 대해서도 <span class="math inline">\(\Delta F_y\)</span> 를 계산 할 수 있으며 이를 합치면 (둘 다 위로 향하는 힘이다!)</p>
+<p><span id="eq-FLP_2_12_16"><span class="math display">\[
+\Delta F = \Delta F_x + \Delta F_y = \left[\dfrac{\partial }{\partial x}\left(\tau \dfrac{\partial u}{\partial x}\right) + \dfrac{\partial }{\partial y}\left(\tau \dfrac{\partial u}{\partial y}\right)\right]\Delta x \Delta y
+\tag{8.68}\]</span></span></p>
+<p>이다. 이제 표면장력 <span class="math inline">\(f\)</span> 를 단위 면적당 위로 항햐는 단위힘으로 정의하면</p>
+<p><span class="math display">\[
+f = \dfrac{\Delta F}{\Delta x \Delta y}
+\]</span></p>
 
 
 </section>
