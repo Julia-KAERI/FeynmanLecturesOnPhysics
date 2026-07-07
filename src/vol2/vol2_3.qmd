@@ -158,6 +158,17 @@ $$
 
 ![파인만 물리학 강의 $II$ Fig. 13-7. 전류 $I$ 가 흐르는 전선 외부의 자기장.](figures/fig_2_13/fig_2_13_7/fig_2_13_7.png){#fig-FLP_2_13_7 width=450}
 
+원통좌표계 $(r,\,\theta,\,z )$ 를 생각하고 $\bf{I}=I\hat{\bf{z}}$ 라고 하자. $\bf{B}=B_r\hat{\bf{r}} + B_\theta\hat{\bf{\theta}} + B_z\hat{\bf{z}}$ 라고 하면 $\nabla \times \bf{B}$ 는
+$$
+\nabla \times \bf{B}= \dfrac{1}{r}\left(\dfrac{\partial B_z}{\partial \theta}- \dfrac{\partial (r B_\theta)}{\partial z}\right)\hat{\bf{r}} + \left(\dfrac{\partial B_r}{\partial z} - \dfrac{\partial B_z}{\partial r}\right)\hat{\bf{\theta}} + \dfrac{1}{r}\left(\dfrac{\partial (r B_\theta)}{\partial r} - \dfrac{\partial B_r}{\partial \theta}\right)\hat{\bf{z}}
+$$
+
+이며, $\bf{J}=J\hat{\bf{z}}$ 이다. 따라서 
+
+$$
+\dfrac{1}{r}\left(B_\theta + r\dfrac{\partial B_\theta}{\partial \theta}\right) = \mu_0 J
+$$
+
 원통형 단면을 가진 긴 직선형 전선 외부의 자기장을 구해보자. **$\bf{B}$ 의 필드 라인이 전선을 닫힌 원으로 돈다는 것을 가정하겠다**. 이것은 지금까지의 지식으로는 명백하지 않지만 사실이다. 이것을 가정하면 $\bf{B\cdot} d\bf{l}$ 선적분은 매우 쉽다. 반지름 $r$ 에 대해
 
 $$
