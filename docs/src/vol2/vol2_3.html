@@ -105,7 +105,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -272,12 +272,19 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_13_3" id="toc-sec-FLP_2_13_3" class="nav-link" data-scroll-target="#sec-FLP_2_13_3">II.13-3 전류에 의한 자기력</a></li>
   <li><a href="#sec-FLP_2_13_4" id="toc-sec-FLP_2_13_4" class="nav-link" data-scroll-target="#sec-FLP_2_13_4">II.13-4 정상 전류의 자기장과 앙페어 법칙</a></li>
   <li><a href="#sec-FLP_2_13_5" id="toc-sec-FLP_2_13_5" class="nav-link" data-scroll-target="#sec-FLP_2_13_5">II.13–5 직선 도선과 솔레노이드의 자기장, 그리고 원자 전류</a></li>
+  <li><a href="#sec-FLP_2_13_6" id="toc-sec-FLP_2_13_6" class="nav-link" data-scroll-target="#sec-FLP_2_13_6">II.13–6 자기장과 전기장의 상대성</a></li>
+  <li><a href="#sec-FLP_2_13_7" id="toc-sec-FLP_2_13_7" class="nav-link" data-scroll-target="#sec-FLP_2_13_7">II.13–7 전류와 전하의 변환</a></li>
+  <li><a href="#sec-FLP_2_13_8" id="toc-sec-FLP_2_13_8" class="nav-link" data-scroll-target="#sec-FLP_2_13_8">II.13-8 중첩과 오른손 법칙</a></li>
+  </ul></li>
+  <li><a href="#sec-FLP_2_14" id="toc-sec-FLP_2_14" class="nav-link" data-scroll-target="#sec-FLP_2_14">II.14 다양한 상황에서의 자기장</a>
+  <ul class="collapse">
+  <li><a href="#sec-FLP_2_14_1" id="toc-sec-FLP_2_14_1" class="nav-link" data-scroll-target="#sec-FLP_2_14_1">II.14-1 벡터 포텐셜</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
@@ -291,7 +298,7 @@ window.Quarto = {
 \DeclareMathOperator*{\argmax}{argmax}
 \]</span></p>
 </div>
-<section id="sec-FLP_2_13" class="level2">
+<section id="sec-FLP_2_13" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-FLP_2_13">II.13 정자기</h2>
 <section id="sec-FLP_2_13_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_13_1">II.13-1 자기장</h3>
@@ -401,8 +408,9 @@ Q_\text{inside} = \int_V \rho\, d^3\boldsymbol{r}
 <p><br></p>
 </section>
 </section>
-<section id="sec-FLP_2_13_5" class="level3">
+<section id="sec-FLP_2_13_5" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_13_5">II.13–5 직선 도선과 솔레노이드의 자기장, 그리고 원자 전류</h3>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^4\)</span><a href="https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/03_magnetostatics.html#sec-ED_MS_ampere_law_and_biot_savart_law">비오-사바르의 법칙(Biot-Savart’s law)</a> 을 통해 보일 수 있다.</span></div></div>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_magnetic_field_around_current" class="theorem example">
 <p><span class="theorem-title"><strong>예제 9.1 (직선 도선의 전류에 의한 자기장)</strong></span> &nbsp;</p>
@@ -416,27 +424,230 @@ Q_\text{inside} = \int_V \rho\, d^3\boldsymbol{r}
 </figcaption>
 </figure>
 </div>
-<p>원통좌표계 <span class="math inline">\((r,\,\theta,\,z )\)</span> 를 생각하고 <span class="math inline">\(\boldsymbol{I}=I\hat{\boldsymbol{z}}\)</span> 라고 하자. <span class="math inline">\(\boldsymbol{B}=B_r\hat{\boldsymbol{r}} + B_\theta\hat{\boldsymbol{\theta}} + B_z\hat{\boldsymbol{z}}\)</span> 라고 하면 <span class="math inline">\(\nabla \times \boldsymbol{B}\)</span> 는 <span class="math display">\[
-\nabla \times \boldsymbol{B}= \dfrac{1}{r}\left(\dfrac{\partial B_z}{\partial \theta}- \dfrac{\partial (r B_\theta)}{\partial z}\right)\hat{\boldsymbol{r}} + \left(\dfrac{\partial B_r}{\partial z} - \dfrac{\partial B_z}{\partial r}\right)\hat{\boldsymbol{\theta}} + \dfrac{1}{r}\left(\dfrac{\partial (r B_\theta)}{\partial r} - \dfrac{\partial B_r}{\partial \theta}\right)\hat{\boldsymbol{z}}
-\]</span></p>
-<p>이며, <span class="math inline">\(\boldsymbol{J}=J\hat{\boldsymbol{z}}\)</span> 이다. 따라서</p>
-<p><span class="math display">\[
-\dfrac{1}{r}\left(B_\theta + r\dfrac{\partial B_\theta}{\partial \theta}\right) = \mu_0 J
-\]</span></p>
-<p>원통형 단면을 가진 긴 직선형 전선 외부의 자기장을 구해보자. <strong><span class="math inline">\(\boldsymbol{B}\)</span> 의 필드 라인이 전선을 닫힌 원으로 돈다는 것을 가정하겠다</strong>. 이것은 지금까지의 지식으로는 명백하지 않지만 사실이다. 이것을 가정하면 <span class="math inline">\(\boldsymbol{B\cdot} d\boldsymbol{l}\)</span> 선적분은 매우 쉽다. 반지름 <span class="math inline">\(r\)</span> 에 대해</p>
+<p>원통형 단면을 가진 긴 직선형 전선 외부의 자기장을 구해보자. <strong><span class="math inline">\(\boldsymbol{B}\)</span> 의 필드 라인이 전선을 닫힌 원으로 돈다는 것을 가정하겠다</strong><span class="math inline">\(^4\)</span>. 이것은 지금까지의 지식으로는 명백하지 않지만 사실이다. 이것을 가정하면 <span class="math inline">\(\boldsymbol{B\cdot} d\boldsymbol{l}\)</span> 선적분은 매우 쉽다. 반지름 <span class="math inline">\(r\)</span> 에 대해</p>
 <p><span class="math display">\[
 \oint \boldsymbol{B\cdot}\,d\boldsymbol{l} = 2\pi rB
 \]</span></p>
 <p>이며 <span class="math inline">\(\int \boldsymbol{J\cdot}d\boldsymbol{a} = I\)</span> 이므로</p>
 <p><span id="eq-FLP_2_13_17"><span class="math display">\[
-B=\dfrac{\mu_0}{4\pi } \dfrac{2I}{r}
+B=\dfrac{\mu_0}{2\pi } \dfrac{I}{r}
 \tag{9.13}\]</span></span></p>
 <p>이다. 이 식을 벡터식으로 표현하면 다음과 같다.</p>
 <p><span id="eq-FLP_2_13_18"><span class="math display">\[
-\boldsymbol{B}=\dfrac{\mu_0}{4\pi} \dfrac{2\boldsymbol{I}\times \hat{\boldsymbol{r}}}{r}.
+\boldsymbol{B}=\dfrac{\mu_0}{2\pi} \dfrac{\boldsymbol{I}\times \hat{\boldsymbol{r}}}{r}.
 \tag{9.14}\]</span></span></p>
 </div>
 </div>
+<p>전류가 자기장을 만들고 이 자기장은 주변의 전류에 힘을 가한다. 두 평행한 전선은 각각이 다른 전선에 의한 <span class="math inline">\(\boldsymbol{B}\)</span> 에 직각이므로 전류가 같은 방향일 때는 서로 끌어당기고, 반대방향일때는 서로 밀어낸다.</p>
+<br>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-ED_MS_magnetic_field_due_to_solenoid" class="theorem example">
+<p><span class="theorem-title"><strong>예제 9.2 (솔레노이드 내부의 자기장)</strong></span> &nbsp;</p>
+<div id="fig-FLP_2_13_8r" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_13_8r-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_13/solenoid/solenoid.png" class="img-fluid figure-img" width="200">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_13_8r-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.3: 솔레노이드
+</figcaption>
+</figure>
+</div>
+<p>위의 그림과 같이 배치된 솔레노이드를 생각하자. 도선을 단위 길이당 <span class="math inline">\(n\)</span> 번을 감았다고 하자. 원통좌표계 <span class="math inline">\((r,\,\theta,\,z)\)</span> 에서 생각하자. <span class="math inline">\(\pm z\)</span> 양쪽으로 아주 길다고 생각한다. 대칭에 의해 자기장은 <span class="math inline">\(r\)</span> 에만 의존하며 방향은 <span class="math inline">\(\hat{z}\)</span> 이다. 즉 <span class="math inline">\(\boldsymbol{B}(\boldsymbol{r}) = B(r)\hat{\boldsymbol{z}}\)</span> 이다. 초록색으로 표현된 경로 <span class="math inline">\(C_1,\,C_2,\,C_3\)</span> 를 생각하자. 가로 폭이 매우 작고 높이를 <span class="math inline">\(L\)</span> 이라고 하자. 이 가운데 <span class="math inline">\(C_1,\,C_3\)</span> 경로에 대한 적분으로부터</p>
+<p><span class="math display">\[
+\int_{C_1}\boldsymbol{B}\cdot d\boldsymbol{s} = 0,\qquad \int_{C_3} \boldsymbol{B}\cdot d\boldsymbol{s}=0
+\]</span></p>
+<p>이므로 내부와 외부에서 각각 자기장은 상수이다. 각각 <span class="math inline">\(B_{\text{in}}(r),\, B_{\text{out}}(r)\)</span> 이라고 하자.</p>
+<p><span class="math inline">\(C_2\)</span> 경로에 대한 적분으로부터</p>
+<p><span class="math display">\[
+B_\text{in}(r)L - B_\text{out}(r)L = N\mu_0 I
+\]</span></p>
+<p>을 얻는다. 여기서 <span class="math inline">\(N\)</span> 은 <span class="math inline">\(L\)</span> 길이에서 감은 횟수이다. 그런데 <span class="math inline">\(B_\text{out}(r\to\infty) = 0\)</span> 이어야 하므로 외부 자기장은 <span class="math inline">\(0\)</span> 이며 솔레노이드 내부의 자기장은</p>
+<p><span class="math display">\[
+\boldsymbol{B}_{\text{in}}(r) = n\mu_0 I \hat{\boldsymbol{z}}
+\]</span></p>
+<p>이다.</p>
+</div>
+</div>
+<p><br></p>
+<p><span class="math inline">\(\boldsymbol{B}\)</span> 의 선이 솔레노이드 끝에서는 어떨까? 아마도, 그들은 어떤 식으로든 퍼진 뒤 반대쪽 끝에서 솔레노이드에 다시 들어가며, 이는 <a href="#fig-FLP_2_13_9" class="quarto-xref">그림&nbsp;<span>9.4</span></a> 와 같으며 막대 자석의 그것과 같다. 그렇다면 자석이란 도대체 무엇인가? 우리 방정식은 <span class="math inline">\(\boldsymbol{B}\)</span> 가 전류의 존재에서 비롯된다고 말한다. 하지만 우리는 일반적인 쇠막대기도 배터리나 발전기가 없어도 자기장을 발생시킨다는 것을 알고 있다. 혹시 <a href="#eq-FLP_2_13_12" class="quarto-xref">식&nbsp;<span>9.10</span></a> 나 <a href="#eq-FLP_2_13_13" class="quarto-xref">식&nbsp;<span>9.11</span></a> 의 오른쪽에 <strong>자석의 밀도</strong> 혹은 그와 같은 양을 나타내는 다른 항이 있어야 하는거 아닌가 생각할 수도 있다. 하지만 그런 항은 없으며, 우리 이론에 따르면, 철의 자기 효과는 이미 <span class="math inline">\(\boldsymbol{J}\)</span> 항으로 처리되고 있는 어떤 내부 전류에서 비롯된 것이다.</p>
+<div id="fig-FLP_2_13_9" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_13_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_13/fig_2_13_9.png" class="img-fluid figure-img" width="350">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_13_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.4: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 13-9. 전류 <span class="math inline">\(I\)</span> 가 흐르는 전선 외부의 자기장.
+</figcaption>
+</figure>
+</div>
+<p>유전체를 다룰 때 보았듯이 물질은 근본적인 관점에서 볼 때 매우 복잡하다. 지금의 진행을 방해하지 않기 위해, 철과 같은 자기 재료의 내부 메커니즘에 대해서는 나중에 자세히 다룰 것이다. <strong>현재로서는 모든 자기는 전류에 의해 생성되며, 영구자석에는 영구적인 내부 전류가 존재한다는 점을 받아들여야 한다</strong>. 철의 경우, 이러한 전류는 전자가 자신의 축을 중심으로 회전하는 데서 비롯된다. 모든 전자는 이런 스핀을 가지고 있으며, 이는 아주 작은 순환 전류에 해당한다. 물론, 하나의 전자는 많은 자기장을 생성하지 않지만, 일반적인 물질에는 엄청나게 많은 수의 전자가 존재한다. 보통 이것들은 임의의 방향으로 회전하므로 서로 상쇄된다. 그러나 철과 같은 매우 소수의 물질에서 전자의 큰 비율이 같은 방향의 축으로 회전한다는 것이다—철의 경우 각 원자마다 두 개의 전자가 여기에 참여한다. 막대 자석에서는 같은 방향으로 회전하는 많은 전자가 있으며, 그 전체 효과는 막대 표면을 순환하는 전류와 동일하다. (이는 우리가 유전체에 대해 발견한 것—균일하게 편광된 유전체는 그 표면에 전하가 분포한다-는 것과 동등하다.) 따라서, 막대 자석이 솔레노이드와 동등하다는 것은 우연이 아니다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_13_6" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_13_6">II.13–6 자기장과 전기장의 상대성</h3>
+<section id="로런츠-힘과-관성기준틀" class="level4">
+<h4 class="anchored" data-anchor-id="로런츠-힘과-관성기준틀"><strong>로런츠 힘과 관성기준틀</strong></h4>
+<p>로런츠 힘 <a href="#eq-FLP_2_13_1" class="quarto-xref">식&nbsp;<span>9.1</span></a> 에서 보듯 전하에 가해지는 자기력이 전하의 속도에 비례한다. 그렇다면 어떤 관성기준틀에서의 속도를 의미하는가? 여기서의 속도는 우리가 선택한 기준틀에서의 속도이다. 하지만 우리는 자기장을 지정하기 위한 적절한 기준틀에 대해서는 아무 말도 하지 않았다. 결론적으로 어떤 관성 프레임이라도 사용할 수 있다. 이제 우리는 자기와 전기가 독립된 것이 아니라는 것, 뿐만 아니라 항상 하나의 온전한 전자기장으로 같이 받아들여한다는 것을 알게 될 것이다. 정적인 경우에는 맥스웰 방정식이 전기에 대한 한 쌍과 자기에 대한 한 쌍을 가진 두 개의 뚜렷한 쌍으로 분리되며, 두 장 사이에 명백한 연관성이 없지만, 그럼에도 불구하고 자연 자체에서는 상대성 원리에서 비롯된 매우 밀접한 관계가 존재한다. 역사적으로 상대성 원리는 맥스웰 방정식 이후에 발견되으며 실제로 전기와 자기에 대한 연구가 결국 아인슈타인의 상대성 원리 발견으로 이어졌다. 이제 상대성 원리가 전자기학에 적용된다고 가정했을 때 상대성이론이 자기력에 대해 무엇을 알려줄지 살펴보자.</p>
+<p><a href="#fig-FLP_2_13_10" class="quarto-xref">그림&nbsp;<span>9.5</span></a> 과 같이 전류가 흐르는 전선에 평행한 속도 <span class="math inline">\(v_0\)</span> 로 음전하가 움직일 때 두 개의 관성기준틀에서 무슨 일이 일어나는지 알아보자 : (a) 와 같이 전선에 고정된 기준틀 <span class="math inline">\(S\)</span> 와 (b) 와 같이 입자에 대해 고정된 기준틀 <span class="math inline">\(S'\)</span>.</p>
+<div id="fig-FLP_2_13_10" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_13_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_13/fig_2_13_10.png" class="img-fluid figure-img" width="450">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_13_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.5: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 13-10. 전류가 흐르는 전선과 입자가 전하 <span class="math inline">\(q\)</span> 를 가진 상호작용이 두 기준틀에서 관찰된다. (a) 기준틀 <span class="math inline">\(S\)</span> 는 전선에 고정되어 있다. (b) 기준틀 <span class="math inline">\(S'\)</span> 에서는 전하에 고정되어 있다.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="전선이-정지한-기준틀에서" class="level4">
+<h4 class="anchored" data-anchor-id="전선이-정지한-기준틀에서"><strong>전선이 정지한 기준틀에서</strong></h4>
+<p><span class="math inline">\(S\)</span> 기준틀에서는 입자에 전선을 향한 자기력이 작용한다. 하지만 <span class="math inline">\(S'\)</span> 기준틀에서는 입자의 속도가 <span class="math inline">\(0\)</span> 이기 때문에 입자에 대한 자기력이 존재할 수 없다. 상대성 원리에 따르면 <span class="math inline">\(S'\)</span> 에서도 입자가 전선에 더 가깝게 이동하는 것을 볼 수 있어야 한다. 이제 우리는 전류가 흐르는 전선에 대한 원자적 설명으로 돌아가보자. 구리와 같은 일반 전도체에서 전류는 전도전자라고 불리는 전자의 움직임에서 발생하며, 양전하와 나머지 전자는 물질의 몸체에 고정되어 있다. 전도 전자의 전하 밀도를 <span class="math inline">\(\rho_−\)</span> 라고 하고, <span class="math inline">\(S\)</span> 에서의 속도를 <span class="math inline">\(\boldsymbol{v}\)</span> 라고 하자. <span class="math inline">\(S\)</span> 에서 정지 전하의 밀도는 <span class="math inline">\(\rho_+\)</span> 이며, <span class="math inline">\(\rho_+ = - \rho_-\)</span> 이어야 한다. 따라서 전선 외부에는 전기장이 없으며, 움직이는 입자에 작용하는 힘은 단지</p>
+<p><span class="math display">\[
+\boldsymbol{F} = q\boldsymbol{v}_0\times \boldsymbol{B}
+\]</span></p>
+<p>이다. <a href="#eq-FLP_2_13_18" class="quarto-xref">식&nbsp;<span>9.14</span></a> 로부터 입자에 전선 방향으로 아래와 같은 크기의 힘이 가해진다는 것을 안다.</p>
+<p><span class="math display">\[
+F = \dfrac{\mu_0}{2\pi}\dfrac{Iqv_0}{r}
+\]</span></p>
+<p><a href="#eq-FLP_2_13_3" class="quarto-xref">식&nbsp;<span>9.2</span></a> 과 <a href="#eq-FLP_2_13_5" class="quarto-xref">식&nbsp;<span>9.3</span></a> 로 부터 전선의 단면적 <span class="math inline">\(A\)</span> 에 대해 <span class="math inline">\(I = \rho_- vA\)</span> 임을 안다. 따라서</p>
+<p><span id="eq-FLP_2_13_20"><span class="math display">\[
+F = \dfrac{\mu_0}{2\pi}\dfrac{q\rho_- Avv_0}{r}
+\tag{9.15}\]</span></span></p>
+<p>이다. 임의의 <span class="math inline">\(v\)</span> 와 <span class="math inline">\(v_0\)</span> 에 대해 다룰 수도 있지만, 입자의 속도 <span class="math inline">\(v_0\)</span> 가 전도 전자의 속도 <span class="math inline">\(v\)</span> 와 동일한 특수한 경우를 살펴보자. 이 경우</p>
+<p><span id="eq-FLP_2_13_21"><span class="math display">\[
+F=\dfrac{\mu_0}{2π}\dfrac{\rho_− Av^2}{r}
+\tag{9.16}\]</span></span></p>
+<p>이다.</p>
+</section>
+<section id="전하가-정지한-기준틀에서" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="전하가-정지한-기준틀에서"><strong>전하가 정지한 기준틀에서</strong></h4>
+<p>이제 <span class="math inline">\(S'\)</span> 기준틀에서 생각하자. 전선과 함께 움직이는 양전하에 의해 입자에 자기장 <span class="math inline">\(\boldsymbol{B}'\)</span> 가 가해지지만 정지한 입자에는 자기력이 없으며 따라서 입자에 힘이 작용한다면 그것은 전기장 때문이어야 한다. 움직이는 전선이 전기장을 발생시키는 경우는 전선이 전하를 띤 것처럼 보일 때만 그렇다. 즉 전류가 흐르는 중성 전선은 움직일 때 대전된 것처럼 보여야 한다.</p>
+<p><span class="math inline">\(S'\)</span> 기준틀에서 전선의 전하 밀도를 우리가 <span class="math inline">\(S\)</span> 기준틀에 대해 알고 있는 것을 통해 계산해보자. 일견 그들이 동일하다고 생각할 수 있지만, 우리는 길이가 <span class="math inline">\(S\)</span> 와 <span class="math inline">\(S'\)</span> 사이에 변한다는 것을 알고 있으며, 이에 따라 부피도, 그리고 전하 밀도 역시 바뀐다.</p>
+<p><span class="math inline">\(S'\)</span> 에서의 전하 밀도를 결정하기 전에, 전하가 움직일 때 여러 전자의 전하가 어떻게 되는지 알아야 한다. 우리는 상대성 이론에서 많은 양이 <span class="math inline">\(1/\sqrt{1-v^2/c^2}\)</span> 에 따라 변한다는 것을 알고 있다. 그러나 전하는 속도와 무관하게 동일하다.</p>
+<p>대전되지 않은 물질 한덩이, 예를 들면 도체를 가져왔다고 하자. 여기에 열을 가하면 전자는 양성자와 질량이 다르기 때문에 전자와 양성자의 속도는 다르다. 입자의 전하가 그 입자를 운반하는 입자의 속도에 의존한다면, 가열된 블록에서는 전자와 양성자의 전하가 더 이상 균형을 이루지 않으며, 따라서 가열될 때 대전된다. 이 덩이 내의 모든 전자의 전하가 매우 작은 비율이라도 변화를 일으키면 거대한 전기장이 발생할 것이다. 그러나 한번도 이런 현상은 관측되지 않았다.</p>
+<p>또한, 물질 내 전자의 평균 속도가 화학 조성에 따라 달라진다는 점을 지적할 수 있다. 전자의 전하가 속도에 따라 변한다면, 물질의 순전하가 화학 반응에서 변하게 된다. 간단한 계산에 따르면 전하가 속도에 거의 의존하지 않더라도 가장 단순한 화학 반응에서 거대한 전기장을 얻을 수 있다. 그러한 효과 역시 관찰된 적이 없으며, 따라서 <strong>단일 입자의 전하량은 그 운동 상태와 무관하다</strong>고 결론지을 수 있다.</p>
+<div class="page-columns page-full"><p>입자의 전하 <span class="math inline">\(q\)</span> 는 좌표계와 무관한 불변 스칼라량이므로 거리의 상대론적 수축 때문에 부피가 변할 수 있다는 사실에 대해서만 생각하면 된다. 전선의 길이를 <span class="math inline">\(L_0\)</span> 라고 하면 그 안의 정상상태의 전하(stationary charge)<span class="math inline">\(^2\)</span>의 밀도 <span class="math inline">\(\rho_0\)</span> 를 생각할 수 있으며, <span class="math inline">\(Q=\rho_0 L_0 A_0\)</span> 만큼의 전하를 포함한다. 이 전하를 속도 <span class="math inline">\(v\)</span> 로 움직이는 다른 기준틀에서 에서 보면, 이 전하들은 더 짧은 길이 에서 발견되며 그 길이 <span class="math inline">\(L\)</span> 은 </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> 전하를 이루는 개별적인 입자는 이동하지만 계속 채워져서 밀도 자체는 변하지 않는다는 의미에서의 stationary</span></div></div>
+<p><span id="eq-FLP_2_13_22"><span class="math display">\[
+L = L_0\sqrt{1−v^2/c^2}
+\tag{9.17}\]</span></span></p>
+<p>이다. 그러나 도선의 면적 <span class="math inline">\(A_0\)</span> 은 동일하다.</p>
+<div id="fig-FLP_2_13_11" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_13_11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_13/fig_2_13_11.png" class="img-fluid figure-img" width="450">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_13_11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.6: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 13-11. 만약 정지해 있는 전하 입자들의 분포가 전하 밀도 <span class="math inline">\(\rho)_0\)</span> 를 갖는다면, 동일한 전하는 상대 속도 <span class="math inline">\(v\)</span> 를 가진 기준틀에서 볼 때 동일한 전하의 밀도 <span class="math inline">\(\rho=\rho_0\sqrt{1−v2/c2}\)</span> 를 갖게 된다.
+</figcaption>
+</figure>
+</div>
+<p><span class="math inline">\(\rho\)</span> 를 전하들이 이동하는 기준틀에서의 밀도라고 하면, 전체 전하 <span class="math inline">\(Q=\rho LA_0\)</span> 이며 전하가 모든 시스템에서 동일하기 때문에 <span class="math inline">\(ρ_0 L_0 A _0\)</span> 와 같아야 한다. 따라서 <span class="math inline">\(\rho L=\rho_0 L_0\)</span> 이며 <a href="#eq-FLP_2_13_22" class="quarto-xref">식&nbsp;<span>9.17</span></a> 로부터</p>
+<p><span id="eq-FLP_2_13_23"><span class="math display">\[
+\rho = \dfrac{\rho_0}{\sqrt{1−v^2/c^2}}
+\tag{9.18}\]</span></span></p>
+<p>이다. 전하의 이동 분포에서 전하 밀도가 변한다.</p>
+<p>이제 이 결과를 우리 도선의 양전하 밀도 <span class="math inline">\(\rho_+\)</span> 에 사용한다. 이 전하들은 <span class="math inline">\(S\)</span> 기준틀에서 멈춰 있지만 <span class="math inline">\(S'\)</span> 기준틀에서 전선이 속도 <span class="math inline">\(v\)</span>로 움직이는 경우, 양전하 밀도는</p>
+<p><span id="eq-FLP_2_13_24"><span class="math display">\[
+\rho'_+ = \dfrac{\rho_+}{\sqrt{1−v^2/c^2}}
+\tag{9.19}\]</span></span></p>
+<p>이다. 음전하는 <span class="math inline">\(S'\)</span> 기준틀에서 정지되어 있으므로 이 기준틀에서 정지 밀도 <span class="math inline">\(\rho_0\)</span> 를 가지고 있다. <a href="#eq-FLP_2_13_23" class="quarto-xref">식&nbsp;<span>9.18</span></a> 으로부터 <span class="math inline">\(\rho'_− = \rho_0\)</span> 인데 이는 전선이 정지한 경우, 즉 <span class="math inline">\(S\)</span> 기준틀에서 음전하의 속도가 <span class="math inline">\(v\)</span> 인 경우 밀도 <span class="math inline">\(ρ_−\)</span> 를 갖기 때문이다. 전도 전자에 대해서는</p>
+<p><span id="eq-FLP_2_13_25"><span class="math display">\[
+\rho_− = \dfrac{\rho'_−}{\sqrt{1−v^2/c^2}}
+\tag{9.20}\]</span></span></p>
+<p>혹은</p>
+<p><span id="eq-FLP_2_13_26"><span class="math display">\[
+\rho'_- = {\rho_−}{\sqrt{1−v^2/c^2}}
+\tag{9.21}\]</span></span></p>
+<p>이다. 이제 <span class="math inline">\(S'\)</span> 기준틀에 전기장이 왜 존재하는지 알 수 있다. <span class="math inline">\(S'\)</span> 기준틀에서 전선은 순전하 밀도 <span class="math inline">\(\rho'= \rho'_+ + \rho'_−\)</span> 를 가지고 있기 때문이다. <a href="#eq-FLP_2_13_24" class="quarto-xref">식&nbsp;<span>9.19</span></a> 와 <a href="#eq-FLP_2_13_26" class="quarto-xref">식&nbsp;<span>9.21</span></a> 으로부터</p>
+<p><span class="math display">\[
+\rho' = \dfrac{\rho_+}{\sqrt{1−v^2/c^2}} + \rho_− \sqrt{1−v^2/c^2}
+\]</span></p>
+<p>을 얻는다. 정지된 전선은 중성이므로 <span class="math inline">\(\rho_- =− \rho_+\)</span> 이며, 따라서</p>
+<p><span id="eq-FLP_2_13_27"><span class="math display">\[
+\rho' = {\rho_+}\dfrac{v^2/c^2}{\sqrt{1-v^2/c^2}}
+\tag{9.22}\]</span></span></p>
+<p>이다. 움직이는 전선은 양전하를 띄며 외부 고정 입자에 전기장 <span class="math inline">\(\boldsymbol{E}'\)</span> 를 가한다. 원통 축으로부터 거리 <span class="math inline">\(r\)</span> 인 위치에서의 전기장의 크기는</p>
+<p><span id="eq-FLP_2_13_28"><span class="math display">\[
+E'=\dfrac{\rho' A}{2\pi\epsilon_0 r} = \dfrac{\rho_+ A v^2/c^2}{2\pi \epsilon_0 r\sqrt{1−v^2/c^2}}
+\tag{9.23}\]</span></span></p>
+<p>이다. 음전하를 띤 입자에 전선을 향하는 힘이 작용한다. 우리는 최소한 두 관점에서 같은 방향의 힘을 가지고 있다; <span class="math inline">\(S'\)</span> 에서의 전기력은 <span class="math inline">\(S\)</span> 에서의 자기력과 같은 방향을 가지고 있다.</p>
+<p><span class="math inline">\(S'\)</span> 에서 힘의 크기는</p>
+<p><span id="eq-FLP_2_13_29"><span class="math display">\[
+F'=\dfrac{q}{2 \pi \epsilon_0}\dfrac{\rho_+A}{r}\dfrac{v^2/c^2}{\sqrt{1−v^2/c^2}}
+\tag{9.24}\]</span></span></p>
+<p>이다. <span class="math inline">\(F'\)</span> 에 대한 이 결과를 <a href="#eq-FLP_2_13_21" class="quarto-xref">식&nbsp;<span>9.16</span></a> 에서의 <span class="math inline">\(F\)</span> 와 비교하면, 그리고 <span class="math inline">\(c^2=1/(\epsilon_0 \mu_0)\)</span> 를 이용하면</p>
+<p><span id="eq-FLP_2_13_30"><span class="math display">\[
+F'=\dfrac{F}{\sqrt{1−v^2/c^2}}
+\tag{9.25}\]</span></span></p>
+<p>이다. <span class="math inline">\(v \ll c\)</span> 인 경우 두 힘은 동일하다. 거기에 한 기준틀에서 다른 기준틀로 변환할 때도 힘도 변환된다는 사실을 고려한다면, 일어나는 일을 바라보는 두 가지 방식이 어떤 속도에서도 동일한 물리적 결과를 제공한다는 것을 알 수 있다.</p>
+<p>힘이 잠시 작용한 후 입자의 모멘텀은 <span class="math inline">\(S\)</span> 기준틀과 <span class="math inline">\(S'\)</span> 기준틀에서 모두 동일해야 한다. 이제 <span class="math inline">\(\Delta p_y\)</span> 와 <span class="math inline">\(\Delta p'_y\)</span> 를 비교해보자. 상대론적으로 올바른 운동방정식인 <span class="math inline">\(\boldsymbol{F}=d\boldsymbol{p}/dt\)</span> 를 사용하면,</p>
+<p><span id="eq-FLP_2_13_31"><span class="math display">\[
+\Delta p_y = F\Delta t
+\tag{9.26}\]</span></span></p>
+<p>이다. <span class="math inline">\(S'\)</span> 기준틀에서는 다음과 같다.</p>
+<p><span id="eq-FLP_2_13_32"><span class="math display">\[
+\Delta p'_y = F'\Delta t'.
+\tag{9.27}\]</span></span></p>
+<p>또한 우리는</p>
+<p><span id="eq-FLP_2_13_33"><span class="math display">\[
+\Delta t=\dfrac{\Delta t'}{\sqrt{1−v^2/c^2}}
+\tag{9.28}\]</span></span></p>
+<p>임을 안다. 그리고 <a href="#eq-FLP_2_13_31" class="quarto-xref">식&nbsp;<span>9.26</span></a> 과 <a href="#eq-FLP_2_13_32" class="quarto-xref">식&nbsp;<span>9.27</span></a> 로부터</p>
+<p><span class="math display">\[
+\dfrac{\Delta p'_y}{\Delta p_y} = \dfrac{F'\Delta t'}{F\Delta t} = 1
+\]</span></p>
+<p>임을 안다.</p>
+<p>우리는 전선에 대해 정지한 기준틀에서 전선을 따라 움직이는 입자의 움직임을 분석하든, 입자에 대해 정지한 기준틀에서든 동일한 물리적 결과를 얻는다는 것을 확인했다.</p>
+<p>만약 다른 기준틀을 선택했더라도, <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 필드의 다른 혼합을 발견했을 것이다. 전기와 자기력은 입자 간의 전자기 상호작용이라는 물리 현상의 일부이며 이 상호작용을 전기적 및 자기적 부분으로 구분하는 것은 설명에 선택된 기준틀에 크게 좌우된다. 하지만 완전한 전자기 설명은 불변이며, 전기와 자기를 함께 사용할 경우 아인슈타인의 상대성 이론과 일치한다.</p>
+<p>전기장과 자기장은 기준 프레임을 바꾸면 서로 다른 혼합물로 나타나므로, <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 를 보는 방식에 주의해야 한다. 예를 들어, <span class="math inline">\(\boldsymbol{E}\)</span> 나 <span class="math inline">\(\boldsymbol{B}\)</span> 의 <strong>선</strong>을 생각하더라도, 우리는 그것에 너무 많은 현실성을 부여해서는 안된다. 다른 좌표계에서 선을 관찰하려고 하면 선이 사라질 수 있다. 예를 들어, <span class="math inline">\(S'\)</span> 기준틀에는 전기장의 선이 존재하지만, <span class="math inline">\(S\)</span> 기준틀에서는 에서 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 로 우리를 지나가는 것을 찾을 수 없다. 시스템 <span class="math inline">\(S\)</span> 에는 전기장 선이 전혀 없다! 따라서 “자석을 움직일 때, 자석은 그 자기장을 함께 가져가므로 <span class="math inline">\(\boldsymbol{B}\)</span> 의 선도 이동한다” 라는 말은 완전히 틀린 말이다. 일반적으로 “이동하는 장의 선의 속도”라는 개념은 아무 의미가 없다. 장은 우리가 공간의 한 지점에서 일어나는 일을 설명하는 방법이다. 특히, <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 는 움직이는 입자에 작용할 힘에 대해 알려준다. “이동하는 자기장으로부터 전하에 작용하는 힘은 무엇인가?” 라는 질문은 무의미하다. 힘은 전하에서 <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 의 값에 의해 주어지며, <span class="math inline">\(\boldsymbol{E}\)</span> 또는 <span class="math inline">\(\boldsymbol{B}\)</span> 의 소스가 움직이더라도 <a href="#eq-FLP_2_13_11" class="quarto-xref">식&nbsp;<span>9.9</span></a> 은 변하지 않는다. 운동에 의해 변경되는 것은 <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 의 값이다. 전기장이나 자기장은 어떤 관성기준틀에서의 <span class="math inline">\(x,\,y,\,z,\,t\)</span> 의 함수이다.</p>
+<p>우리는 나중에 “우주를 통과하는 전기 및 자기장의 파동”, 예를 들어 빛 파동에 대해 이야기하게 될 것이다. 하지만 그것은 마치 줄을 타고 이동하는 파동에 대해 말하는 것과 같다. 이것은 줄의 일부가 파동 방향으로 움직이고 있다는 뜻이 아니라, 줄의 변위가 먼저 한 곳에서 나타났다가 나중에 다른 위치에 나타난다는 의미이다. 마찬가지로 전자기파에서는 파동이 이동하지만, 장의의 크기는 변한다. 따라서 앞으로 “이동하는” 장에 대해 말한다면 이것은 특정 상황에서 변화하는 장을 설명하는 간편한 표현으로 생각해야 한다.</p>
+<p><br></p>
+</section>
+</section>
+<section id="sec-FLP_2_13_7" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_13_7">II.13–7 전류와 전하의 변환</h3>
+<p>위에서 입자와 전도 전자에 대해 동일한 속도 <span class="math inline">\(v\)</span> 를 적용한 단순화가 너무 지나친것은 아닌가? 이 속도를 다르게 해서 다시 분석할 수도 있지만 이것보다는 전하와 전류 밀도가 4벡터를 이룬다는 것을 알아채는 것이 더 쉽다. <span class="math inline">\(\rho_0\)</span> 가 전하들들이 멈춘 기준틀에서의 밀도라면, 속도가 <span class="math inline">\(\boldsymbol{v}\)</span> 인 프레임에의 밀도는</p>
+<p><span class="math display">\[
+\rho =\dfrac{\rho_0}{\sqrt{1−v^2/c^2}}
+\]</span></p>
+<p>이며, 이 프레임에서 전류 밀도</p>
+<p><span id="eq-FLP_2_13_34"><span class="math display">\[
+\boldsymbol{J}=\rho\boldsymbol{v}=\dfrac{\rho_0 \boldsymbol{v}}{\sqrt{1−v^2/c^2}}
+\tag{9.29}\]</span></span></p>
+<p>이다. 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 로 움직이는 입자의 에너지 <span class="math inline">\(U\)</span> 와 운동량 <span class="math inline">\(\boldsymbol{p}\)</span> 가 다음과 같이 주어진다는 것을 안다.</p>
+<p><span class="math display">\[
+U=\dfrac{mc^2}{\sqrt{1−v^2/c^2}},\qquad \boldsymbol{p}=\dfrac{m\boldsymbol{v}}{\sqrt{1−v^2/c^2}}
+\]</span></p>
+<p>우리는 또한 <span class="math inline">\(U/c = mc/\sqrt{1−v^2/c^2}\)</span> 와 <span class="math inline">\(\boldsymbol{p}\)</span> 가 <span class="math inline">\(P^\mu=(U/c,\,\boldsymbol{p})\)</span> 의 4-벡터를 형성한다는 것을 안다. 이와 같이 <span class="math inline">\(J^\mu=(c\rho,\,\boldsymbol{J})\)</span> 역시 4-벡터를 이룬다는 것을 알 수 있다. 만약 우리가 <span class="math inline">\(\rho\)</span> 와 <span class="math inline">\(\boldsymbol{J}\)</span> 를 <span class="math inline">\(x\)</span> 방향으로 속도 <span class="math inline">\(u\)</span> 로 가 움직이는 좌표계로 변환하고자 한다면 시공간의 로런츠 변환 <a href="../vol1/vol1_2.html#eq-FLP_1_15_3" class="quarto-xref">식&nbsp;<span>2.2</span></a> 에 대해 다음이 성립한다.</p>
+<p><span id="eq-FLP_2_13_35"><span class="math display">\[
+\begin{aligned}
+J'^0 &amp;= c\rho' = \dfrac{J^0- uJ^1/c}{\sqrt{1-u^2/c^2}}, \\[0.3em]
+J'^1 &amp;= J'_x = \dfrac{J^1-uJ^0/c}{\sqrt{1-u^2/c^2}}, \\[0.3em]
+J'^2 &amp;= J'_y = J^2, \\[0.3em]
+J'^3 &amp;= J'_z = J^3.
+\end{aligned}
+\tag{9.30}\]</span></span></p>
+<p>위 식을 통해 한 기준틀의 전하와 전류를 다른 기준틀의 전하와 연결할 수 있다. 두 기준틀의 전하와 전류를 취하면 맥스웰 방정식을 사용하여 해당 기준틀에서 전자기 문제를 해결할 수 있다. 입자 운동에 대한 결과는 어떤 기준틀을 선택하든 동일하다. 우리는 나중에 전자기장의 상대론적 변환을 살펴볼 것이다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_13_8" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_13_8">II.13-8 중첩과 오른손 법칙</h3>
+<p>이 장을 마무리하며 정자기학에 관한 두 가지 사항을 알아보자. 먼저 자기장에 대한 우리의 기본 방정식</p>
+<p><span class="math display">\[
+\nabla \boldsymbol{\cdot B}=0, \qquad \nabla \times \boldsymbol{B}= \mu_0 \boldsymbol{J}
+\]</span></p>
+<p>은 <span class="math inline">\(\boldsymbol{B}\)</span> 와 <span class="math inline">\(\boldsymbol{J}\)</span> 에 대해 선형이다. 이것은 중첩 원리가 자기장에도 적용된다는 것을 의미한다. 즉 두 개의 서로 다른 정상 전류에 의해 생성된 자기장은 각 전류가 단독으로 작용하는 개별 자기장들의 합이다. 두 번째는 소위 오른쪽 규칙에 관한 것이다. 앞서 철 자석의 자화가 물질 내 전자의 스핀을 통해 이해될 수 있음을 보았다. 회전하는 전자의 자기장의 방향은 오른쪽 규칙으로 그 스핀 축과 연관된다. <span class="math inline">\(\boldsymbol{B}\)</span> 벡터 외적 혹은 컬(curl) 에 의해 정해지므로 소위 <strong>축벡터(axial vector)</strong> 이다. 반면에 변위, 속도, 힘 및 <span class="math inline">\(\boldsymbol{E}\)</span> 는 <strong>극벡터 (polar vector)</strong> 라고 한다. 축벡터는 오른쪽 혹은 왼쪽 편향성을 가지고 있다.</p>
+<p>그러나 전자기학에서 물리적으로 관찰할 수 있는 양은 오른쪽(또는 왼쪽)이 아니다. 전자기 상호작용은 반사연산에 대해 대칭이다. 두 전류 사이의 자기력은 손 규칙의 변화에 대해 불변이다. 우리의 방정식은 오른쪽 규칙과는 반대로, 평행 전류가 끌어당기거나 반대 방향의 전류가 밀어낸다는 것을 보여준다. 인력 혹은 쳑력은 극벡터이다. 이는 모든 완전한 상호작용을 설명할 때 오른쪽 법칙을 두 번 사용하기 때문에 발생한다. 한 번은 전류에서 <span class="math inline">\(\boldsymbol{B}\)</span> 를 구할 때, 또 한 번은 <span class="math inline">\(\boldsymbol{B}\)</span> 가 두 번째 전류에 가하는 힘을 구할 때. 오른쪽 규칙을 두 번 사용하는 것은 왼쪽 규칙을 두 번 사용하는 것과 동일하다. 만약 우리가 규칙을 왼쪽 시스템으로 바꾼다면, 모든 <span class="math inline">\(\boldsymbol{B}\)</span> 는 뒤집히게 되지만, 모든 힘—또는 아마도 더 관련성이 높은 것은 물체의 관측된 가속도—은 변하지 않을 것이다.</p>
+<p>물리학자들은 최근에 놀랍게도 모든 자연 법칙이 거울 반사에 대해 항상 불변하지 않다는 사실을 발견했지만, 전자기학의 법칙은 그러한 기본적인 대칭성을 가지고 있다.</p>
+<p><br></p>
+</section>
+</section>
+<section id="sec-FLP_2_14" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLP_2_14">II.14 다양한 상황에서의 자기장</h2>
+<section id="sec-FLP_2_14_1" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_14_1">II.14-1 벡터 포텐셜</h3>
 
 
 </section>
