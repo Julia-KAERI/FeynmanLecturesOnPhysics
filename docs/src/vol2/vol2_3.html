@@ -648,6 +648,49 @@ J'^3 &amp;= J'_z = J^3.
 <h2 class="anchored" data-anchor-id="sec-FLP_2_14">II.14 다양한 상황에서의 자기장</h2>
 <section id="sec-FLP_2_14_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_14_1">II.14-1 벡터 포텐셜</h3>
+<p>자기장은 우리의 기본 방정식에 의해 전류와 관련이 있다.</p>
+<p><span id="eq-FLP_2_14_1"><span class="math display">\[
+\nabla\boldsymbol{\cdot B}=0,
+\tag{9.31}\]</span></span></p>
+<p><span id="eq-FLP_2_14_2"><span class="math display">\[
+\nabla \times \boldsymbol{B}=\mu_0 \boldsymbol{J},
+\tag{9.32}\]</span></span></p>
+<p>이제 이러한 방정식들을 특별한 대칭이나 직관적인 추측 없이 수학적으로 풀어보자. 정전기학에서 우리는 모든 전하의 위치가 알려졌을 때 전기장을 구하기 위해 정전 포텐셜 <span class="math inline">\(\Phi\)</span> 를 계산하고 이를 미분하여 전기장을 구했다. 정자기학에서도 모든 이동전하의 전류 밀도 <span class="math inline">\(\boldsymbol{J}\)</span> 를 알 경우 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 를 찾는 유사한 절차가 존재한다. 바로 <a href="vol2_1.html#thm-FLP_existance_of_vector_potential" class="quarto-xref">정리&nbsp;<span>7.2</span></a> 는</p>
+<p><span id="eq-FLP_2_14_3"><span class="math display">\[
+\boldsymbol{B}= \nabla \times \boldsymbol{A}
+\tag{9.33}\]</span></span></p>
+<p>를 만족하는 벡터장 <span class="math inline">\(\boldsymbol{A}\)</span> 가 존재함을 말한다. 이 <span class="math inline">\(\boldsymbol{A}\)</span> 를 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 에 대한 <strong>벡터 포텐셜 (vector potential)</strong> 이라고 한다. 또한 이로부터 자연스럽게</p>
+<p><span class="math display">\[
+\nabla \boldsymbol{\cdot B} - \nabla \boldsymbol{\cdot}(\nabla \times \boldsymbol{A})=0
+\]</span></p>
+<p>임을 안다. 이에 대비하여 <span class="math inline">\(\boldsymbol{E}= -\nabla \Phi\)</span> 를 만족하는 정전 포텐셜 <span class="math inline">\(\Phi\)</span> 를 <strong>스칼라 포텐셜 (scalar potential)</strong> 이라고 하기도 한다.</p>
+<p>정해진 전기장에 대한 스칼라 포텐셜 <span class="math inline">\(\Phi\)</span> 에 대해 <span class="math inline">\(\Phi+\text{constant}\)</span> 역시 같은 전기장에 대한 스칼라 포텐셜이듯이 정해진 자기장에 대한 벡터포텐셜도 유일하지 않다.</p>
+<br>
+<div class="border" style="background-color:#FFF0F5 ;padding:5px;">
+<div id="thm-FLP_equivalent_vector_potential" class="theorem">
+<p><span class="theorem-title"><strong>정리 9.1</strong></span> 어떤 스칼라장 <span class="math inline">\(\psi\)</span> 에 대해 <span class="math inline">\(\boldsymbol{A}' = \boldsymbol{A} + \nabla \psi\)</span> 이면 <span class="math inline">\(\boldsymbol{A}\)</span> 와 <span class="math inline">\(\boldsymbol{A}'\)</span> 은 같은 자기장에 대한 벡터포텐셜이다.</p>
+</div>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>(증명)</em>. </span><span class="math inline">\(\nabla \times (\boldsymbol{A}+\nabla \Phi) = \nabla \times \boldsymbol{A} + \underbrace{\nabla \times \nabla \psi}_{=0} = \boldsymbol{B},\quad \square\)</span></p>
+</div>
+<p><br></p>
+<p>스칼라 포텐셜 <span class="math inline">\(\Phi\)</span> 에서 <span class="math inline">\(\Phi(r\to\infty) = 0\)</span> 으로 정하듯이 특정한 조건을 만족하는 벡터 포텐셜을 선택 할 수 있다. 예를 들어 <span class="math inline">\(\nabla \boldsymbol{\cdot A}\)</span> 를 <span class="math inline">\(\boldsymbol{B}\)</span> 에 영향을 주지 않고 선택할 수 있다. 사실, <span class="math inline">\(\nabla \boldsymbol{\cdot A}' = \nabla \boldsymbol{\cdot A} + \nabla^2 \psi\)</span> 이며, 적절한 <span class="math inline">\(\psi\)</span> 를 선택함으로써 <span class="math inline">\(\nabla \boldsymbol{\cdot A}'\)</span> 을 원하는 어떤 것이든 만들 수 있다. 그렇다면 <span class="math inline">\(\nabla \boldsymbol{\cdot A}\)</span> 를 무엇으로 선택해야 할까? 이것은 해당 문제를 수학적으로 가장 다루기 편하도록 해야 하며 따라서 문제에 따라 달라진다. 정자기학의 경우 다음과 같이 선택하는 경우가 많다.</p>
+<p><span id="eq-FLP_2_14_6"><span class="math display">\[
+\nabla \boldsymbol{\cdot A}=0.
+\tag{9.34}\]</span></span></p>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_vector_potential_for_uniform_magnetic_field" class="theorem example">
+<p><span class="theorem-title"><strong>예제 9.3 (균일한 자기장에서의 벡터포텐셜)</strong></span> <span class="math inline">\(\boldsymbol{B}=B_0 \hat{\boldsymbol{z}}\)</span> 일 경우 아래와 같은 벡터포텐셜이 가능하다.</p>
+<p> (<span class="math inline">\(1\)</span>) <span class="math inline">\(\boldsymbol{A}=(0,\, xB_0,\,0)\)</span>,</p>
+<p> (<span class="math inline">\(2\)</span>) <span class="math inline">\(\boldsymbol{A}=(-yB_0,\,0,\,0)\)</span>,</p>
+<p> (<span class="math inline">\(3\)</span>) <span class="math inline">\(\boldsymbol{A}=\dfrac{1}{2}(-yB_0,\, xB_0,\,0)\)</span>.</p>
+<p>여기서 (<span class="math inline">\(3\)</span>) 의 경우</p>
+<p><span id="eq-FLP_2_14_9"><span class="math display">\[
+\boldsymbol{A} = \dfrac{1}{2}\boldsymbol{B}_0 \times \boldsymbol{r}
+\tag{9.35}\]</span></span></p>
+</div>
+</div>
 
 
 </section>

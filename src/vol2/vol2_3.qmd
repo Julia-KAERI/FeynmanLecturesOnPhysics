@@ -441,3 +441,76 @@ $$
 
 ### II.14-1 벡터 포텐셜 {#sec-FLP_2_14_1}
 
+자기장은 우리의 기본 방정식에 의해 전류와 관련이 있다.
+
+$$
+\nabla\bf{\cdot B}=0,
+$$ {#eq-FLP_2_14_1}
+
+$$
+\nabla \times \bf{B}=\mu_0 \bf{J},
+$$ {#eq-FLP_2_14_2}
+
+이제 이러한 방정식들을 특별한 대칭이나 직관적인 추측 없이 수학적으로 풀어보자. 정전기학에서 우리는 모든 전하의 위치가 알려졌을 때 전기장을 구하기 위해 정전 포텐셜 $\Phi$ 를 계산하고 이를 미분하여 전기장을 구했다. 정자기학에서도 모든 이동전하의 전류 밀도 $\bf{J}$ 를 알 경우 자기장 $\bf{B}$ 를 찾는 유사한 절차가 존재한다. 바로 @thm-FLP_existance_of_vector_potential 는 
+
+$$
+\bf{B}= \nabla \times \bf{A}
+$$ {#eq-FLP_2_14_3}
+
+를 만족하는 벡터장 $\bf{A}$ 가 존재함을 말한다. 이 $\bf{A}$ 를 자기장 $\bf{B}$ 에 대한 **벡터 포텐셜 (vector potential)** 이라고 한다. 또한 이로부터 자연스럽게
+
+$$
+\nabla \bf{\cdot B} - \nabla \bf{\cdot}(\nabla \times \bf{A})=0
+$$
+
+임을 안다. 이에 대비하여 $\bf{E}= -\nabla \Phi$ 를 만족하는 정전 포텐셜 $\Phi$ 를 **스칼라 포텐셜 (scalar potential)** 이라고 하기도 한다. 
+
+정해진 전기장에 대한 스칼라 포텐셜 $\Phi$ 에 대해 $\Phi+\text{constant}$ 역시 같은 전기장에 대한 스칼라 포텐셜이듯이 정해진 자기장에 대한 벡터포텐셜도 유일하지 않다.
+
+</br><div class="border" style="background-color:#FFF0F5 ;padding:5px;">
+
+::: {#thm-FLP_equivalent_vector_potential}
+
+어떤 스칼라장 $\psi$ 에 대해 $\bf{A}' = \bf{A} + \nabla \psi$ 이면 $\bf{A}$ 와 $\bf{A}'$ 은 같은 자기장에 대한 벡터포텐셜이다.
+
+:::
+
+</div>
+
+::: {.proof}
+
+$\nabla \times (\bf{A}+\nabla \Phi) = \nabla \times \bf{A} + \underbrace{\nabla \times \nabla \psi}_{=0} = \bf{B},\quad \square$
+:::
+
+</br>
+
+스칼라 포텐셜 $\Phi$ 에서 $\Phi(r\to\infty) = 0$ 으로 정하듯이 특정한 조건을 만족하는 벡터 포텐셜을 선택 할 수 있다. 예를 들어 $\nabla \bf{\cdot A}$ 를 $\bf{B}$ 에 영향을 주지 않고 선택할 수 있다. 사실, $\nabla \bf{\cdot A}' = \nabla \bf{\cdot A} + \nabla^2 \psi$ 이며, 적절한 $\psi$ 를 선택함으로써 $\nabla \bf{\cdot A}'$ 을 원하는 어떤 것이든 만들 수 있다. 그렇다면 $\nabla \bf{\cdot A}$ 를 무엇으로 선택해야 할까? 이것은 해당 문제를 수학적으로 가장 다루기 편하도록 해야 하며 따라서 문제에 따라 달라진다. 정자기학의 경우 다음과 같이 선택하는 경우가 많다.
+
+$$
+\nabla \bf{\cdot A}=0.
+$$ {#eq-FLP_2_14_6}
+
+
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+
+::: {#exm-FLP_vector_potential_for_uniform_magnetic_field}
+
+#### 균일한 자기장에서의 벡터포텐셜
+
+$\bf{B}=B_0 \hat{\bf{z}}$ 일 경우 아래와 같은 벡터포텐셜이 가능하다.
+
+&emsp;($1$) $\bf{A}=(0,\, xB_0,\,0)$,
+
+&emsp;($2$) $\bf{A}=(-yB_0,\,0,\,0)$,
+
+&emsp;($3$) $\bf{A}=\dfrac{1}{2}(-yB_0,\, xB_0,\,0)$.
+
+여기서 ($3$) 의 경우
+
+$$
+\bf{A} = \dfrac{1}{2}\bf{B}_0 \times \bf{r}
+$$ {#eq-FLP_2_14_9}
+
+
+:::
+</div>
