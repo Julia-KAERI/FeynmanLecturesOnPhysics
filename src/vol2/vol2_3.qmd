@@ -531,6 +531,11 @@ $$ {#eq-FLP_2_14_19}
 
 ### II.14-3 직선 전선 {#sec-FLP_2_14_3}
 
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+
+::: {#exm-FLP_vector_potential_for_long_wire_current}
+
+
 @exm-FLP_magnetic_field_around_current 을 벡터포텐셜을 이용해서 알아보자. 도선이 반지름 $a$ 인 원통형이라고 하고 전류가 $z$ 축을 따라 $+z$ 방향으로 흐른다고 하면 전선 내부의 전류밀도는 $\bf{J}=I\hat{\bf{z}}/\pi a^2$ 이며 전선 밖은 $0$ 이다.
 
 ![파인만 물리학 강의 $II$ Fig. 14-3. $z$ 축을 따라 균일한 전류 밀도 $\bf{J}$ 를 가진 긴 원통형 전선](figures/fig_2_14/fig_2_14_3.png){#fig-FLP_2_14_3 width=300}
@@ -542,6 +547,36 @@ $$
 A = \dfrac{\mu_0}{4\pi}\int \dfrac{J}{\|\bf{r}-\bf{r}'\|}\,d^3\bf{r}
 $$
 
-이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 @exm-FLP_electric_field_of_inifite_uniform_line_charge  와 같은 문제이다. 
+이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 @exm-FLP_electric_field_of_inifite_uniform_line_charge 수학적으로 와 같은 문제이다. 즉
 
-@exm-FLP_electric_field_of_inifite_uniform_charge_sheet
+$$
+\bf{A}(\bf{r}) = - \dfrac{I\mu_0}{2\pi r}\hat{\bf{z}}
+$$ {#eq-FLP_2_14_21}
+
+이다. 이로부터 $\bf{B} = \nabla \times \bf{A}$ 를 통해 자기장을 구할 수 있다.
+
+$$
+\bf{B}= \nabla \times \bf{A} = \dfrac{\mu_0 I}{2\pi r}\hat{\bf{\theta}}.
+$$ {#eq-FLP_2_14_24}
+
+:::
+</div>
+
+</br>
+
+### II.14-4 긴 솔레노이드 {#sec-FLP_2_14_4}
+
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+
+::: {#exm-FLP_vector_potential_for_long_solenoid}
+
+
+@exm-ED_MS_magnetic_field_due_to_solenoid 을 벡터포텐셜을 이용해서 알아보자. 원통좌표계에서
+
+$$
+\bf{J}(\bf{r}') = J\delta(r'-R)\hat{\bf{\theta}}
+$$
+
+:::
+
+</br>

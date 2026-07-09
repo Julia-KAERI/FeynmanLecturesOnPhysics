@@ -281,6 +281,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_14_1" id="toc-sec-FLP_2_14_1" class="nav-link" data-scroll-target="#sec-FLP_2_14_1">II.14-1 벡터 포텐셜</a></li>
   <li><a href="#sec-FLP_2_14_2" id="toc-sec-FLP_2_14_2" class="nav-link" data-scroll-target="#sec-FLP_2_14_2">II.14-2 알고 있는 전류에 대한 벡터 포텐셜</a></li>
   <li><a href="#sec-FLP_2_14_3" id="toc-sec-FLP_2_14_3" class="nav-link" data-scroll-target="#sec-FLP_2_14_3">II.14-3 직선 전선</a></li>
+  <li><a href="#sec-FLP_2_14_4" id="toc-sec-FLP_2_14_4" class="nav-link" data-scroll-target="#sec-FLP_2_14_4">II.14-4 긴 솔레노이드</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -706,7 +707,9 @@ J'^3 &amp;= J'_z = J^3.
 </section>
 <section id="sec-FLP_2_14_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_14_3">II.14-3 직선 전선</h3>
-<p><a href="#exm-FLP_magnetic_field_around_current" class="quarto-xref">예제&nbsp;<span>9.1</span></a> 을 벡터포텐셜을 이용해서 알아보자. 도선이 반지름 <span class="math inline">\(a\)</span> 인 원통형이라고 하고 전류가 <span class="math inline">\(z\)</span> 축을 따라 <span class="math inline">\(+z\)</span> 방향으로 흐른다고 하면 전선 내부의 전류밀도는 <span class="math inline">\(\boldsymbol{J}=I\hat{\boldsymbol{z}}/\pi a^2\)</span> 이며 전선 밖은 <span class="math inline">\(0\)</span> 이다.</p>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_vector_potential_for_long_wire_current" class="theorem example">
+<p><span class="theorem-title"><strong>예제 9.4</strong></span> <a href="#exm-FLP_magnetic_field_around_current" class="quarto-xref">예제&nbsp;<span>9.1</span></a> 을 벡터포텐셜을 이용해서 알아보자. 도선이 반지름 <span class="math inline">\(a\)</span> 인 원통형이라고 하고 전류가 <span class="math inline">\(z\)</span> 축을 따라 <span class="math inline">\(+z\)</span> 방향으로 흐른다고 하면 전선 내부의 전류밀도는 <span class="math inline">\(\boldsymbol{J}=I\hat{\boldsymbol{z}}/\pi a^2\)</span> 이며 전선 밖은 <span class="math inline">\(0\)</span> 이다.</p>
 <div id="fig-FLP_2_14_3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_2_14_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -721,10 +724,31 @@ J'^3 &amp;= J'_z = J^3.
 <p><span class="math display">\[
 A = \dfrac{\mu_0}{4\pi}\int \dfrac{J}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\,d^3\boldsymbol{r}
 \]</span></p>
-<p>이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 <a href="vol2_1.html#exm-FLP_electric_field_of_inifite_uniform_line_charge" class="quarto-xref">예제&nbsp;<span>7.3</span></a> 와 같은 문제이다.</p>
-<p><a href="vol2_1.html#exm-FLP_electric_field_of_inifite_uniform_charge_sheet" class="quarto-xref">예제&nbsp;<span>7.4</span></a></p>
+<p>이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 <a href="vol2_1.html#exm-FLP_electric_field_of_inifite_uniform_line_charge" class="quarto-xref">예제&nbsp;<span>7.3</span></a> 수학적으로 와 같은 문제이다. 즉</p>
+<p><span id="eq-FLP_2_14_21"><span class="math display">\[
+\boldsymbol{A}(\boldsymbol{r}) = - \dfrac{I\mu_0}{2\pi r}\hat{\boldsymbol{z}}
+\tag{9.37}\]</span></span></p>
+<p>이다. 이로부터 <span class="math inline">\(\boldsymbol{B} = \nabla \times \boldsymbol{A}\)</span> 를 통해 자기장을 구할 수 있다.</p>
+<p><span id="eq-FLP_2_14_24"><span class="math display">\[
+\boldsymbol{B}= \nabla \times \boldsymbol{A} = \dfrac{\mu_0 I}{2\pi r}\hat{\boldsymbol{\theta}}.
+\tag{9.38}\]</span></span></p>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_14_4" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_14_4">II.14-4 긴 솔레노이드</h3>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_vector_potential_for_long_solenoid" class="theorem example">
+<p><span class="theorem-title"><strong>예제 9.5</strong></span> <a href="#exm-ED_MS_magnetic_field_due_to_solenoid" class="quarto-xref">예제&nbsp;<span>9.2</span></a> 을 벡터포텐셜을 이용해서 알아보자. 원통좌표계에서</p>
+<p><span class="math display">\[
+\boldsymbol{J}(\boldsymbol{r}') = J\delta(r'-R)\hat{\boldsymbol{\theta}}
+\]</span></p>
+</div>
+<p><br></p>
 
 
+</div>
 </section>
 </section>
 
