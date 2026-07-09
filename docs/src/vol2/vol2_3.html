@@ -279,6 +279,8 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_14" id="toc-sec-FLP_2_14" class="nav-link" data-scroll-target="#sec-FLP_2_14">II.14 다양한 상황에서의 자기장</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_2_14_1" id="toc-sec-FLP_2_14_1" class="nav-link" data-scroll-target="#sec-FLP_2_14_1">II.14-1 벡터 포텐셜</a></li>
+  <li><a href="#sec-FLP_2_14_2" id="toc-sec-FLP_2_14_2" class="nav-link" data-scroll-target="#sec-FLP_2_14_2">II.14-2 알고 있는 전류에 대한 벡터 포텐셜</a></li>
+  <li><a href="#sec-FLP_2_14_3" id="toc-sec-FLP_2_14_3" class="nav-link" data-scroll-target="#sec-FLP_2_14_3">II.14-3 직선 전선</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -689,8 +691,38 @@ J'^3 &amp;= J'_z = J^3.
 <p><span id="eq-FLP_2_14_9"><span class="math display">\[
 \boldsymbol{A} = \dfrac{1}{2}\boldsymbol{B}_0 \times \boldsymbol{r}
 \tag{9.35}\]</span></span></p>
+<p>이다. 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 가 솔레노이드 내부의 자기장일 경우 <span class="math inline">\(\boldsymbol{A}\)</span> 는 솔레노이드에 흐르는 전류처럼 회전한다.</p>
 </div>
 </div>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_14_2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_14_2">II.14-2 알고 있는 전류에 대한 벡터 포텐셜</h3>
+<p><a href="https://julia-kaeri.github.io/MathematicalPhysics/src/vector_calculus/vectorcalculus.html#sec-ED_MT_Helmholtz_theorem">헬름홀츠 정리</a> 와 <span class="math inline">\(\nabla \times \boldsymbol{B}=\mu_0 \boldsymbol{J}\)</span> 로부터 아래의 <span class="math inline">\(\boldsymbol{A}\)</span> 가 <span class="math inline">\(\nabla \times \boldsymbol{A}=\boldsymbol{B}\)</span> 를 만족시킴을 안다.</p>
+<p><span id="eq-FLP_2_14_19"><span class="math display">\[
+\boldsymbol{A}(\boldsymbol{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\boldsymbol{J}(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}'
+\tag{9.36}\]</span></span></p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_14_3" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_14_3">II.14-3 직선 전선</h3>
+<p><a href="#exm-FLP_magnetic_field_around_current" class="quarto-xref">예제&nbsp;<span>9.1</span></a> 을 벡터포텐셜을 이용해서 알아보자. 도선이 반지름 <span class="math inline">\(a\)</span> 인 원통형이라고 하고 전류가 <span class="math inline">\(z\)</span> 축을 따라 <span class="math inline">\(+z\)</span> 방향으로 흐른다고 하면 전선 내부의 전류밀도는 <span class="math inline">\(\boldsymbol{J}=I\hat{\boldsymbol{z}}/\pi a^2\)</span> 이며 전선 밖은 <span class="math inline">\(0\)</span> 이다.</p>
+<div id="fig-FLP_2_14_3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_14_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_14/fig_2_14_3.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_14_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.7: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 14-3. <span class="math inline">\(z\)</span> 축을 따라 균일한 전류 밀도 <span class="math inline">\(\boldsymbol{J}\)</span> 를 가진 긴 원통형 전선
+</figcaption>
+</figure>
+</div>
+<p><span class="math inline">\(\boldsymbol{J}=J\hat{\boldsymbol{z}}\)</span> 이므로 <span class="math inline">\(\boldsymbol{A}=A\hat{\boldsymbol{z}}\)</span> 이며</p>
+<p><span class="math display">\[
+A = \dfrac{\mu_0}{4\pi}\int \dfrac{J}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\,d^3\boldsymbol{r}
+\]</span></p>
+<p>이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 <a href="vol2_1.html#exm-FLP_electric_field_of_inifite_uniform_line_charge" class="quarto-xref">예제&nbsp;<span>7.3</span></a> 와 같은 문제이다.</p>
+<p><a href="vol2_1.html#exm-FLP_electric_field_of_inifite_uniform_charge_sheet" class="quarto-xref">예제&nbsp;<span>7.4</span></a></p>
 
 
 </section>

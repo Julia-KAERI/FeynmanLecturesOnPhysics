@@ -511,7 +511,7 @@ $$
 
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 
-::: {#exm-FLP_electrif_field_of_inifine_uniform_line_charge}
+::: {#exm-FLP_electric_field_of_inifite_uniform_line_charge}
 
 #### 무한히 긴 선 전하
 
@@ -529,6 +529,13 @@ $$
 \bf{E}(r,\,\theta,\,z)= \dfrac{\lambda}{2\pi \epsilon_0 r}\hat{\bf{r}}
 $${#eq-FLP_2_5_2}
 
+
+이로부터 정전 포텐셜 $\Phi$ 는 다음과 같다.
+
+$$
+\Phi (r) = -\dfrac{\lambda}{2\pi\epsilon_0}\ln r + C
+$${#eq-FLP_electrostatic_potential_of_long_charged_wire}
+
 :::
 
 </div></br>
@@ -537,7 +544,9 @@ $${#eq-FLP_2_5_2}
 
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 
-::: {#exm-FLP_electrif_field_of_inifine_uniform_charge_sheet}
+::: {#exm-FLP_electric_field_of_inifite_uniform_charge_sheet}
+
+#### 균일하게 대전된 무한 평면에서의 전기장
 
 ![균일하게 대전된 무한 평면](figures/fig_2_5/fig_2_5_6.png){#fig-FLP_2_5_6_alt width=400}
 
@@ -613,7 +622,23 @@ $${#eq-ED_ES_electric_field_outside_of_uniformly_charged_sphere}
 
 이다. 이 분포의 총 전하량 $Q=\dfrac{4\pi \rho_0 R^3}{3}$ 을 생각하면 $\bf{E}_{\text{out}}(r)= \dfrac{Q}{4\pi \epsilon_0 r^2}\hat{\bf{r}}$ 이므로 모든 전하가 중심에 모여있을 때의 전기장과 같다. 전기장의 세기 $E(r)$ 을 그래프로 그리면 아래와 같다.
 
-![균일한 구형 전하 분포에서의 전기장](figures/fig_2_5/electrostatics_uniform_sphere/efield.png){#fig-FLP_electrostatics_uniform_sphere width=300}
+![균일한 구형 전하 분포에서의 전기장과 포텐셜](figures/fig_2_5/electrostatics_uniform_sphere/efield.png){#fig-FLP_electrostatics_uniform_sphere width=500}
+
+이 때의 정전 포텐셜을 구해보자. 우선
+
+$$
+\Phi_\text{out} = -\int_{\infty}^r \bf{E\cdot}d\bf{l} = \dfrac{\rho_0 R^3}{3\epsilon_0 r}
+$$ {#eq-FLP_electrostatic_potential_outside_of_uniform_spherical_charge}
+
+이며
+$$
+\begin{aligned}
+\Phi_\text{in}(r) &= -\int_{\infty}^r \bf{E\cdot}d\bf{l} = -\int_{\infty}^R \bf{E\cdot}d\bf{l} - \int_R^r  \bf{E\cdot}d\bf{l} \\[0.3em]
+&=\dfrac{\rho_0 R^2}{2\epsilon_0}- \dfrac{\rho_0 r^2}{6\epsilon_0}
+\end{aligned}
+$${#eq-FLP_electrostatic_potential_inside_of_uniform_spherical_charge}
+
+이다.
 
 :::
 </div></br>

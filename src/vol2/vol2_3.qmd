@@ -511,6 +511,37 @@ $$
 \bf{A} = \dfrac{1}{2}\bf{B}_0 \times \bf{r}
 $$ {#eq-FLP_2_14_9}
 
+이다. 자기장 $\bf{B}$ 가 솔레노이드 내부의 자기장일 경우 $\bf{A}$ 는 솔레노이드에 흐르는 전류처럼 회전한다.
 
 :::
 </div>
+
+</br>
+
+### II.14-2 알고 있는 전류에 대한 벡터 포텐셜 {#sec-FLP_2_14_2}
+
+[헬름홀츠 정리](https://julia-kaeri.github.io/MathematicalPhysics/src/vector_calculus/vectorcalculus.html#sec-ED_MT_Helmholtz_theorem) 와 $\nabla \times \bf{B}=\mu_0 \bf{J}$ 로부터 아래의 $\bf{A}$ 가 $\nabla \times \bf{A}=\bf{B}$ 를 만족시킴을 안다.
+
+$$
+\bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|}d^3\bf{r}'
+$$ {#eq-FLP_2_14_19}
+
+
+</br>
+
+### II.14-3 직선 전선 {#sec-FLP_2_14_3}
+
+@exm-FLP_magnetic_field_around_current 을 벡터포텐셜을 이용해서 알아보자. 도선이 반지름 $a$ 인 원통형이라고 하고 전류가 $z$ 축을 따라 $+z$ 방향으로 흐른다고 하면 전선 내부의 전류밀도는 $\bf{J}=I\hat{\bf{z}}/\pi a^2$ 이며 전선 밖은 $0$ 이다.
+
+![파인만 물리학 강의 $II$ Fig. 14-3. $z$ 축을 따라 균일한 전류 밀도 $\bf{J}$ 를 가진 긴 원통형 전선](figures/fig_2_14/fig_2_14_3.png){#fig-FLP_2_14_3 width=300}
+
+
+$\bf{J}=J\hat{\bf{z}}$ 이므로 $\bf{A}=A\hat{\bf{z}}$ 이며
+
+$$
+A = \dfrac{\mu_0}{4\pi}\int \dfrac{J}{\|\bf{r}-\bf{r}'\|}\,d^3\bf{r}
+$$
+
+이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 @exm-FLP_electric_field_of_inifite_uniform_line_charge  와 같은 문제이다. 
+
+@exm-FLP_electric_field_of_inifite_uniform_charge_sheet

@@ -807,6 +807,10 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p><span id="eq-FLP_2_5_2"><span class="math display">\[
 \boldsymbol{E}(r,\,\theta,\,z)= \dfrac{\lambda}{2\pi \epsilon_0 r}\hat{\boldsymbol{r}}
 \tag{7.24}\]</span></span></p>
+<p>이로부터 정전 포텐셜 <span class="math inline">\(\Phi\)</span> 는 다음과 같다.</p>
+<p><span id="eq-FLP_electrostatic_potential_of_long_charged_wire"><span class="math display">\[
+\Phi (r) = -\dfrac{\lambda}{2\pi\epsilon_0}\ln r + C
+\tag{7.25}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -834,7 +838,7 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p>이 무한 대전 평면이 <span class="math inline">\(xy\)</span> 평면상에 위치한다고 하자. 그렇다면</p>
 <p><span id="eq-FLP_2_5_3"><span class="math display">\[
 \boldsymbol{E}(z&gt;0)= \dfrac{\sigma}{2\epsilon_0}\hat{\boldsymbol{z}},\qquad \boldsymbol{E}(z&lt;0)= - \dfrac{\sigma}{2\epsilon_0}\hat{\boldsymbol{z}}
-\tag{7.25}\]</span></span></p>
+\tag{7.26}\]</span></span></p>
 <p>로 <span class="math inline">\(\boldsymbol{E}\)</span> 는 <span class="math inline">\(z=0\)</span> 에서 <span class="math inline">\(\Delta \boldsymbol{E}(z\approx 0) = \boldsymbol{E}(z=0^+)-\boldsymbol{E}(z=0^-)= \dfrac{\sigma}{\epsilon_0}\)</span> 불연속성을 보여준다.</p>
 </div>
 </div>
@@ -855,7 +859,7 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p>이므로</p>
 <p><span id="eq-FLP_electric_field_due_to_radial-distribution"><span class="math display">\[
 \boldsymbol{E}(\boldsymbol{r}) = \dfrac{1}{4\pi \epsilon_0}\dfrac{Q_r}{r^2}\hat{\boldsymbol{r}}
-\tag{7.26}\]</span></span></p>
+\tag{7.27}\]</span></span></p>
 <p>이다.</p>
 </div>
 </div>
@@ -865,22 +869,33 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p><span class="theorem-title"><strong>예제 7.6 (균일한 구형 전하분포)</strong></span> 반지름 <span class="math inline">\(R\)</span> 이며 전하밀도가 균일하게 <span class="math inline">\(\rho_0\)</span> 인 구형 전하 분포를 생각하자. <span class="math inline">\(0\le r&lt;R\)</span> 일 경우의 전기장 <span class="math inline">\(\boldsymbol{E}_{\text{in}}(r)\)</span> 은</p>
 <p><span id="eq-FLP_electric_field_inside_of_uniformly_charged_sphere"><span class="math display">\[
 \boldsymbol{E}_{\text{in}}(r)= \dfrac{1}{4\pi\epsilon_0}\dfrac{\rho_0 4\pi r^3/3}{r^2}\hat{\boldsymbol{r}}= \dfrac{\rho_0 r}{3\epsilon_0}\hat{\boldsymbol{r}}
-\tag{7.27}\]</span></span></p>
+\tag{7.28}\]</span></span></p>
 <p>이며 <span class="math inline">\(r\ge R\)</span> 일 경우의 전기장 <span class="math inline">\(\boldsymbol{E}_{\text{out}}(r)\)</span> 은</p>
 <p><span id="eq-ED_ES_electric_field_outside_of_uniformly_charged_sphere"><span class="math display">\[
 \boldsymbol{E}_{\text{out}}(r) = \dfrac{1}{4\pi\epsilon_0}\dfrac{\rho_0 4\pi R^3 /3}{r^2}\hat{\boldsymbol{r}} = \dfrac{\rho_0R^3}{3\epsilon_0 r^2} \hat{\boldsymbol{r}}
-\tag{7.28}\]</span></span></p>
+\tag{7.29}\]</span></span></p>
 <p>이다. 이 분포의 총 전하량 <span class="math inline">\(Q=\dfrac{4\pi \rho_0 R^3}{3}\)</span> 을 생각하면 <span class="math inline">\(\boldsymbol{E}_{\text{out}}(r)= \dfrac{Q}{4\pi \epsilon_0 r^2}\hat{\boldsymbol{r}}\)</span> 이므로 모든 전하가 중심에 모여있을 때의 전기장과 같다. 전기장의 세기 <span class="math inline">\(E(r)\)</span> 을 그래프로 그리면 아래와 같다.</p>
 <div id="fig-FLP_electrostatics_uniform_sphere" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_electrostatics_uniform_sphere-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/fig_2_5/electrostatics_uniform_sphere/efield.png" class="img-fluid figure-img" width="300">
+<img src="figures/fig_2_5/electrostatics_uniform_sphere/efield.png" class="img-fluid figure-img" width="500">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_electrostatics_uniform_sphere-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;7.6: 균일한 구형 전하 분포에서의 전기장
+그림&nbsp;7.6: 균일한 구형 전하 분포에서의 전기장과 포텐셜
 </figcaption>
 </figure>
 </div>
+<p>이 때의 정전 포텐셜을 구해보자. 우선</p>
+<p><span id="eq-FLP_electrostatic_potential_outside_of_uniform_spherical_charge"><span class="math display">\[
+\Phi_\text{out} = -\int_{\infty}^r \boldsymbol{E\cdot}d\boldsymbol{l} = \dfrac{\rho_0 R^3}{3\epsilon_0 r}
+\tag{7.30}\]</span></span></p>
+<p>이며 <span id="eq-FLP_electrostatic_potential_inside_of_uniform_spherical_charge"><span class="math display">\[
+\begin{aligned}
+\Phi_\text{in}(r) &amp;= -\int_{\infty}^r \boldsymbol{E\cdot}d\boldsymbol{l} = -\int_{\infty}^R \boldsymbol{E\cdot}d\boldsymbol{l} - \int_R^r  \boldsymbol{E\cdot}d\boldsymbol{l} \\[0.3em]
+&amp;=\dfrac{\rho_0 R^2}{2\epsilon_0}- \dfrac{\rho_0 r^2}{6\epsilon_0}
+\end{aligned}
+\tag{7.31}\]</span></span></p>
+<p>이다.</p>
 </div>
 </div>
 <p><br></p>
@@ -922,8 +937,8 @@ E_r(r) 2\pi r L = \dfrac{\lambda L}{\epsilon_0}
 <p>금속 표면이 등전위면이며 정전 포텐셜은 연속함수이므로 금속 표면의 바로 바깥쪽의 전기장은 표면에 수직 방향이며 가우스 법칙에 따라 전기장의 크기는 다음과 같다.</p>
 <p><span id="eq-FLP_2_5_8"><span class="math display">\[
 E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
-\tag{7.29}\]</span></span></p>
-<p><a href="#eq-FLP_2_5_3" class="quarto-xref">식&nbsp;<span>7.25</span></a> 와 비교해 보면 흥미로운 차이가 있는데 이 이유는 짐작하듯이 도체 내부의 전기장이 <span class="math inline">\(0\)</span> 이기 때문, 또한 도체 내부의 전하들이 내부의 전기장을 <span class="math inline">\(0\)</span> 으로 만들도록 배치되기 때문이다.</p>
+\tag{7.32}\]</span></span></p>
+<p><a href="#eq-FLP_2_5_3" class="quarto-xref">식&nbsp;<span>7.26</span></a> 와 비교해 보면 흥미로운 차이가 있는데 이 이유는 짐작하듯이 도체 내부의 전기장이 <span class="math inline">\(0\)</span> 이기 때문, 또한 도체 내부의 전하들이 내부의 전기장을 <span class="math inline">\(0\)</span> 으로 만들도록 배치되기 때문이다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_5_10" class="level3">
@@ -971,17 +986,17 @@ E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
 <p>라플라시안 연산자 <span class="math inline">\(\nabla^2\)</span> 는 아래와 같이 정의된다.</p>
 <p><span id="eq-FLP_2_6_5"><span class="math display">\[
 \nabla^2 \Phi = \nabla \boldsymbol{\cdot}\nabla \Phi = \dfrac{\partial^2 \Phi}{\partial x^2}+\dfrac{\partial^2 \Phi}{\partial y^2} + \dfrac{\partial^2 \Phi}{\partial^2 z}
-\tag{7.30}\]</span></span></p>
+\tag{7.33}\]</span></span></p>
 </div>
 </div>
 <p>정전기 상황에서의 멕스웰 방정식 <a href="#eq-FLP_2_4_5" class="quarto-xref">식&nbsp;<span>7.13</span></a> 과 <a href="#eq-FLP_2_4_6" class="quarto-xref">식&nbsp;<span>7.14</span></a> 을 생각하자. <a href="#eq-FLP_2_4_6" class="quarto-xref">식&nbsp;<span>7.14</span></a> 에 의해 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span> 인 스칼라장 <span class="math inline">\(\Phi\)</span> 가 존재하며 라플라시안 연산자를 이용하면 정전 포텐셜에 대한 다음 식을 얻는다.</p>
 <p><span id="eq-FLP_2_6_6"><span class="math display">\[
 \nabla^2 \Phi = - \dfrac{\rho}{\epsilon_0}.
-\tag{7.31}\]</span></span></p>
+\tag{7.34}\]</span></span></p>
 <p>이 미분방정식을 <strong>푸아송 방정식 (Poisson equation)</strong> 이라고 한다. 우리는 앞서 전하분포 <span class="math inline">\(\rho\)</span> 를 알 경우 이 전하분포에 의한 정전 포텐셜을 구할 수 있다는 것을 보였다.</p>
 <p><span id="eq-FLP_2_6_7"><span class="math display">\[
 \Phi (\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho (\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}' .
-\tag{7.32}\]</span></span></p>
+\tag{7.35}\]</span></span></p>
 <p>이제 몇몇 상황에서의 정전 포텐셜을 구해보자.</p>
 <p><br></p>
 </section>
@@ -1000,19 +1015,19 @@ E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
 <p>두 점전하 <span class="math inline">\(+q\)</span>, <span class="math inline">\(-q\)</span> 가 위의 그림과 같이 <span class="math inline">\(d\)</span> 만큼의 거리를 두고 <span class="math inline">\(z\)</span> 축상에 위치해 있다고 하자. 정전포텐셜은 <span class="math inline">\(\boldsymbol{r}=(x,\,y,\,z)\)</span> 에서의 정전포텐셜은 다음과 같다.</p>
 <p><span id="eq-FLP_2_6_8"><span class="math display">\[
 \Phi(\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0} \left[\dfrac{q}{\|\boldsymbol{r}-d\hat{\boldsymbol{z}}/2\|}+\dfrac{-q}{\|\boldsymbol{r}+d\hat{\boldsymbol{z}}/2\|}\right].
-\tag{7.33}\]</span></span></p>
+\tag{7.36}\]</span></span></p>
 <p>많은 경우 우리가 관심있는 상황은 <span class="math inline">\(\|\boldsymbol{r}\|\gg d\)</span> 인 경우, 즉 두전하의 거리보다 우리가 관심있는 영역까지의 거리가 훨씬 큰 경우이며 이 때 이런 전하 분포를 <strong>전기 쌍극자 (electric dipole)</strong> 이라고 한다. 원자에 전기장이 가해지는 경우 원자핵과 전자가 서로 반대 방향으로 힘을 받기 때문에 원자핵의 중심과 전자의 중심이 불일치할 수 있으며 이때 발생하는 전기 쌍극자를 <strong>원자 쌍극자 (atomic dipole)</strong> 이라고 한다. 도체의 경우 자유전자는 표면에 모이며 내부의 전기장이 0 이 된다는 것을 안다. 부도체의 경우 전자가 멀리 가지 못하기 때문에 전자가 약간 움직이게 된다. 원자 혹은 분자 수준에서는 전기적으로 중성이며 다만 미시적으로 쌍극자를 이룬다. 그리고 우리가 관심 있는 영역은 이 미시적인 쌍극자의 크기보다 일반적으로 훨씬 크다. 어떤 경우에는 외부에서 가해지는 전기장이 없더라도 분자수준에서 전기쌍극자가 존재할 수 있다. 가장 대표적으로 물 분자이다.</p>
-<p>이제 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.33</span></a> 을 분석해보자. <span class="math inline">\(r &gt; d\)</span> 인 경우 <a href="https://julia-kaeri.github.io/MathematicalPhysics/src/special_functions/legendre.html">르장드르 다항식</a> 을 이용하면</p>
+<p>이제 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.36</span></a> 을 분석해보자. <span class="math inline">\(r &gt; d\)</span> 인 경우 <a href="https://julia-kaeri.github.io/MathematicalPhysics/src/special_functions/legendre.html">르장드르 다항식</a> 을 이용하면</p>
 <p><span class="math display">\[
 \begin{aligned}
 \dfrac{1}{\|\boldsymbol{r}-d\hat{\boldsymbol{z}}/2\|} &amp;= \dfrac{1}{r}\sum_{n=0}^\infty \left(\dfrac{d}{2r}\right)^n P_n(\cos\theta), \\[0.3em]
 \dfrac{1}{\|\boldsymbol{r}+d\hat{\boldsymbol{z}}/2\|} &amp;= \dfrac{1}{r}\sum_{n=0}^\infty \left(\dfrac{-d}{2r}\right)^n P_n(\cos\theta),
 \end{aligned}
 \]</span></p>
-<p>이며 이를 이용하면 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.33</span></a> 은 역시 <span class="math inline">\(r \gg d\)</span> 근사에서</p>
+<p>이며 이를 이용하면 <a href="#eq-FLP_2_6_8" class="quarto-xref">식&nbsp;<span>7.36</span></a> 은 역시 <span class="math inline">\(r \gg d\)</span> 근사에서</p>
 <p><span id="eq-FLP_2_6_9"><span class="math display">\[
 \Phi(x,\,y,\,z) = \dfrac{1}{4\pi\epsilon_0} \dfrac{qd\cos \theta}{r^2} + \mathcal{O}\left(\dfrac{d^4}{r^4}\right) \approx \dfrac{1}{4\pi\epsilon_0} \dfrac{qdz}{r^3}
-\tag{7.34}\]</span></span></p>
+\tag{7.37}\]</span></span></p>
 <p>이다. 이것을 좌표계 독립적인 식으로 바꾸자.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1027,19 +1042,19 @@ E_{\text{condurctor surface}} = \dfrac{\sigma_\text{sufrace}}{\epsilon_0}.
 <p><span class="math inline">\(+q\)</span>, <span class="math inline">\(-q\)</span> 인 두 전하가 각각 <span class="math inline">\(\boldsymbol{r}_+,\,\boldsymbol{r}_-\)</span> 에 위치할 때 위치벡터를 <span class="math inline">\(\boldsymbol{d}=\boldsymbol{r}_+ - \boldsymbol{r}_{-}\)</span> 라고 하자. 이 때 <span class="math inline">\(\boldsymbol{p}= q\boldsymbol{d}\)</span> 를 <strong>전기 쌍극자 모먼트 (electric dipole moment)</strong> 라고 한다.</p>
 </div>
 </div>
-<p>전기 상극자 모먼트 <span class="math inline">\(\boldsymbol{p}\)</span> 에 대해 <a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.34</span></a> 는 다음과 같다.</p>
+<p>전기 상극자 모먼트 <span class="math inline">\(\boldsymbol{p}\)</span> 에 대해 <a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.37</span></a> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_6_13"><span class="math display">\[
 \Phi(\boldsymbol{r}) = \dfrac{1}{4\pi\epsilon_0}\dfrac{\boldsymbol{p\cdot r}}{r^3}.
-\tag{7.35}\]</span></span></p>
+\tag{7.38}\]</span></span></p>
 <p>전기 쌍극자에 의한 정전 포텐셜을 전기 쌍극자 포텐셜 이라고 한다.</p>
-<p><a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.34</span></a> 에 대한 전기장 <span class="math inline">\(\boldsymbol{E}=(E_x,\,E_y,\,E_z)\)</span> 는 아래와 같다.</p>
+<p><a href="#eq-FLP_2_6_9" class="quarto-xref">식&nbsp;<span>7.37</span></a> 에 대한 전기장 <span class="math inline">\(\boldsymbol{E}=(E_x,\,E_y,\,E_z)\)</span> 는 아래와 같다.</p>
 <p><span id="eq-FLP_2_6_14"><span class="math display">\[
 \begin{aligned}
 E_z &amp;= -\dfrac{\partial \Phi}{\partial z}= \dfrac{p}{4\pi\epsilon_0}\dfrac{3\cos^2\theta - 1}{r^3},\\[0.3em]
 E_x &amp;= - \dfrac{\partial \Phi}{\partial x} = \dfrac{p}{4\pi\epsilon_0}\dfrac{3zx}{r^5},\\[0.3em]
 E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3zy}{r^5}.
 \end{aligned}
-\tag{7.36}\]</span></span></p>
+\tag{7.39}\]</span></span></p>
 <p><br></p>
 <div id="fig-FLP_electric_field_of_dipole" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1059,12 +1074,12 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 </section>
 <section id="sec-FLP_2_6_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_4">II.6-4 그래디언트를 사용한 전기 쌍극자 포텐셜</h3>
-<p><a href="#eq-FLP_2_6_13" class="quarto-xref">식&nbsp;<span>7.35</span></a> 은 다음과 같이 쓸 수 있다. <span id="eq-FLP_2_6_16"><span class="math display">\[
+<p><a href="#eq-FLP_2_6_13" class="quarto-xref">식&nbsp;<span>7.38</span></a> 은 다음과 같이 쓸 수 있다. <span id="eq-FLP_2_6_16"><span class="math display">\[
 \Phi(\boldsymbol{r}) = -\dfrac{1}{4\pi\epsilon_0}\boldsymbol{p\cdot}\nabla \left(\dfrac{1}{r}\right)
-\tag{7.37}\]</span></span></p>
+\tag{7.40}\]</span></span></p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electric_dipole_potential_obtained_in_another_way" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.7</strong></span> 전기상극자의 포텐셜이 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.37</span></a> 형태가 되는 것을 다른 방식으로 확인해보자. 원점에서 <span class="math inline">\(\boldsymbol{d}/2\)</span> 만큼 떨어진 곳에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}\)</span> 에서의 포텐셜 <span class="math inline">\(\Phi_+(\boldsymbol{r})\)</span> 은 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}-\boldsymbol{d}/2\)</span> 에서의 포텐셜과 같다. 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 포텐셜을 <span class="math inline">\(\Phi_0\)</span> 라고 하면</p>
+<p><span class="theorem-title"><strong>예제 7.7</strong></span> 전기상극자의 포텐셜이 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.40</span></a> 형태가 되는 것을 다른 방식으로 확인해보자. 원점에서 <span class="math inline">\(\boldsymbol{d}/2\)</span> 만큼 떨어진 곳에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}\)</span> 에서의 포텐셜 <span class="math inline">\(\Phi_+(\boldsymbol{r})\)</span> 은 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 <span class="math inline">\(\boldsymbol{r}-\boldsymbol{d}/2\)</span> 에서의 포텐셜과 같다. 원점에 위치한 <span class="math inline">\(+q\)</span> 전하에 의한 포텐셜을 <span class="math inline">\(\Phi_0\)</span> 라고 하면</p>
 <p><span class="math display">\[
 \Phi_+(\boldsymbol{r}) = \Phi_0\left(\boldsymbol{r}-\dfrac{\boldsymbol{d}}{2}\right) \approx \Phi_0(\boldsymbol{r}) - \nabla \Phi_0(\boldsymbol{r})\boldsymbol{\cdot}\dfrac{\boldsymbol{d}}{2}
 \]</span></p>
@@ -1076,7 +1091,7 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 <p><span class="math display">\[
 \Phi (\boldsymbol{r}) = -\nabla \Phi_0 \cdot \boldsymbol{d} = - \nabla \left(\dfrac{1}{4\pi\epsilon_0}\dfrac{q}{r}\right)\boldsymbol{\cdot d}= -\dfrac{1}{4\pi\epsilon_0}\boldsymbol{p} \boldsymbol{\cdot}\nabla \left(\dfrac{1}{r}\right)
 \]</span></p>
-<p>이며 원했던 대로 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.37</span></a> 을 얻었다.</p>
+<p>이며 원했던 대로 <a href="#eq-FLP_2_6_16" class="quarto-xref">식&nbsp;<span>7.40</span></a> 을 얻었다.</p>
 </div>
 </div>
 <p><br></p>
@@ -1101,7 +1116,7 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 <p><span class="math display">\[
 p=\dfrac{4\pi \sigma_0 R^3}{3}
 \]</span></p>
-<p>이다. 균일한 전하분포를 가진 구 내부에서의 전기장은 <a href="#eq-FLP_electric_field_inside_of_uniformly_charged_sphere" class="quarto-xref">식&nbsp;<span>7.27</span></a> 이다. 이로부터 구의 내부에서의 정전포텐셜은</p>
+<p>이다. 균일한 전하분포를 가진 구 내부에서의 전기장은 <a href="#eq-FLP_electric_field_inside_of_uniformly_charged_sphere" class="quarto-xref">식&nbsp;<span>7.28</span></a> 이다. 이로부터 구의 내부에서의 정전포텐셜은</p>
 <p><span class="math display">\[
 \begin{aligned}
 \Phi_{\text{in}}(\boldsymbol{r}) &amp;= \dfrac{\rho_0}{6\epsilon_0}\left(\left\|\boldsymbol{r}-\dfrac{d\hat{\boldsymbol{z}}}{2}\right\|^2 -\left\|\boldsymbol{r}+\dfrac{d\hat{\boldsymbol{z}}}{2}\right\|^2\right) \\[0.3em]
@@ -1227,7 +1242,7 @@ Q_{\text{total induced}} = \int \sigma \,dxdy = -q.
 <p>외부의 전하에 의해 도체에 유도되는 전하의 총합이 외부의 전하와 크기가 같다는 것은 모든 거울 영상법에서 공통적인 사실이다. 또한 전하 <span class="math inline">\(+q\)</span> 는 유도된 표면전하에 의해 원래의 전하 <span class="math inline">\(+q\)</span> 가 힘을 받으며 당연히 그 힘은 아래와 같다.</p>
 <p><span id="eq-FLP_2_6_30"><span class="math display">\[
 \boldsymbol{F} = -\dfrac{q^2}{4\pi\epsilon_0}\dfrac{}{4h^2}\hat{\boldsymbol{z}}
-\tag{7.38}\]</span></span></p>
+\tag{7.41}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -1284,12 +1299,12 @@ c^2(x^2+y^2+z^2) = (x-d)^2+y^2+z^2
 <p>이제 다른 종류의 문제를 풀어보자. 위의 그림과 같이 면적이 <span class="math inline">\(A\)</span> 인 넖은 도체 판 2개가 거리 <span class="math inline">\(d\)</span> 만큼 떨어져 평행하게 위치해 있고 각각의 판에 <span class="math inline">\(+\sigma,\,-\sigma\)</span> 의 표면전하밀도를 갖는다고 하자. 도체 판이 각각 <span class="math inline">\(\Phi_+,\,\Phi_-\)</span> 의 정전 포텐셜을 갖는다면 전위차 <span class="math inline">\(V = \Phi_+-\Phi_0\)</span> 를 생각 할 수있다. 두 판 사이에는 균일한 전기장 <span class="math inline">\(E\)</span> 가 존재하며</p>
 <p><span id="eq-FLP_6_33"><span class="math display">\[
 V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
-\tag{7.39}\]</span></span></p>
+\tag{7.42}\]</span></span></p>
 <p>여기서 <span class="math inline">\(Q\)</span> 가 양전하로 대전된 판의 총 전하량이며 따라서 <span class="math inline">\(-Q\)</span> 가 음전하로 대전된 판의 총 전하량이 된다.</p>
 </div>
 </div>
 <p><br></p>
-<p><a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.39</span></a> 에서 <span class="math inline">\(V\)</span> 는 <span class="math inline">\(Q\)</span> 에 비례하는데 이는 떨어져 있으며 한쪽에 <span class="math inline">\(+Q\)</span> 다른 한쪽에 <span class="math inline">\(-Q\)</span> 만큼의 전하가 대전된 두 도체 사이에 항상 존재하는 관계이다. <a href="https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_uniqueness_theorem_for_electrostatics">정전기 문제의 유일성 정리</a> 를 참고하라. 이 비례관계를 <span class="math inline">\(Q=CV\)</span> 라고 표현할 때 <span class="math inline">\(C\)</span> 를 <strong>전기용량(capacitance)</strong> 이라고 한다. 즉 평행한 금속판의 전기용량 <span class="math inline">\(\epsilon_0 A/d\)</span> 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다.</p>
+<p><a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.42</span></a> 에서 <span class="math inline">\(V\)</span> 는 <span class="math inline">\(Q\)</span> 에 비례하는데 이는 떨어져 있으며 한쪽에 <span class="math inline">\(+Q\)</span> 다른 한쪽에 <span class="math inline">\(-Q\)</span> 만큼의 전하가 대전된 두 도체 사이에 항상 존재하는 관계이다. <a href="https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_1_electrostatics1.html#sec-ED_ES_uniqueness_theorem_for_electrostatics">정전기 문제의 유일성 정리</a> 를 참고하라. 이 비례관계를 <span class="math inline">\(Q=CV\)</span> 라고 표현할 때 <span class="math inline">\(C\)</span> 를 <strong>전기용량(capacitance)</strong> 이라고 한다. 즉 평행한 금속판의 전기용량 <span class="math inline">\(\epsilon_0 A/d\)</span> 이다. 물론 이 식은 근사식인데 평행판의 끝단에서는 전기장이 균일하지 않기 때문이다.</p>
 <div id="fig-FLP_fig_2_6_13" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_fig_2_6_13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1331,7 +1346,7 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 <p>이제 큰 공의 바로 밖의 전기장 <span class="math inline">\(E_a\)</span> 와 작은공 바로 밖의 전기장 <span class="math inline">\(E_b\)</span> 는</p>
 <p><span id="eq-FLP_2_6_35"><span class="math display">\[
 \dfrac{E_a}{E_b}=\dfrac{Q/a^2}{Q/b^2} = \dfrac{b}{a}
-\tag{7.40}\]</span></span></p>
+\tag{7.43}\]</span></span></p>
 <p>이다. 즉 <span class="math inline">\(E_a&lt; E_b\)</span> 이다.</p>
 <p>이 결과는 기술적으로 매우 중요한데 왜냐하면 전기장이 너무 클 경우 공기가 붕괴되기 때문이다다. 공기 중 어딘가에 있는 느슨한 전하(전자 또는 이온)가 자기장에 의해 가속되고, 자기장이 매우 크면 전하가 다른 원자에 충돌하기 전에 충분한 속도를 올려 그 원자에서 전자를 떨어뜨릴 수 있다는 것입니다. 그 결과, 점점 더 많은 이온이 생성됩니다. 그들의 움직임은 방전 또는 불꽃에 해당합니다. 물체를 높은 전위까지 충전하고 공기 중의 스파크에 의해 방전되지 않도록 하려면, 표면이 매끄럽도록 해야 하며, 그 영역이 비정상적으로 넓은 영역이 존재하지 않도록 해야 합니다.</p>
 <p><br></p>
@@ -1344,7 +1359,7 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 <p>우리는 6 장에서 다양한 상황에서의 전기장을 계산하는 법을 알았으며, 이장에서는 특히 도체에 대한 문제를 해결하기 위한 보다 정교한 방법을 알아본다. 정해진 전하의 분포에서는 전기장 혹은 정전 포텐셜 문제는 근본적으로 적분 문제이다. 그러나 도체가 있을 경우 전하는 표면에만 분포하며 도체 표면이 등전위면을 이룬다는 사실만 알 수 있다. 이런 문제를 풀기 위해 영상법과 같은 간접적인 방법을 사용하기도 한다. 그러나 우리가 풀고자 하는 문제가 영상법과 같은 방식을 적용할 수 없다면 직접 풀어야 한다. 즉 주어진 경계 조건에서의 라플라스 방정식</p>
 <p><span id="eq-FLP_2_7_1"><span class="math display">\[
 \nabla^2 \Phi = 0
-\tag{7.41}\]</span></span></p>
+\tag{7.44}\]</span></span></p>
 <p>을 풀어야 한다. 이 방정식은 오랬동안 연구되었지만 아주 간단한 몇가지 경우를 제외한다면 수치해석적으로 풀어야 한다. 경계값 문제는 물리적으로 유사한 대상에 대한 측정으로도 해결될 수 있다. 라플라스 방정식은 정상 상태의 열 흐름, 비회전성 유체 흐름, 확장된 매질에서의 전류 흐름, 그리고 탄성 막의 변형 등 다양한 물리적 상황에서 발생하므로 우리가 해결하고자 하는 전기 문제와 유사한 물리 모델을 자주 설정할 수 있다. 모델에 적절한 유사한 물리량을 측정함으로써, 관심 있는 문제에 대한 해를 얻을 수 있다. 예를 들면 정전기학에서 2차원 문제를 해결하기 위해 전해 탱크를 사용하는 것이다. 이것은 균일한 전도성 매질에서의 전위에 대한 미분 방정식이 진공의 경우와 동일하기 때문에 작동한다.</p>
 <p>만약 한 방향에 대해 물리적 장의 변화가 없거나 거의 없는 경우 문제를 2차원 문제로 바꿀 수 있으며, 2차원 문제는 일반적으로 3차원 문제보다 훨씬 쉽다.</p>
 <p><br></p>
@@ -1354,19 +1369,19 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 <p><span class="math inline">\(F:\mathbb{C}\to \mathbb{C}\)</span> 함수는 함수의 값을 실수부와 허수부로 나누어 다음과 같이 표현 할 수 있다.</p>
 <p><span id="eq-FLP_2_7_4"><span class="math display">\[
 F(\zeta=x+iy) = U(x,\,y) + iV(x,\,y).
-\tag{7.42}\]</span></span></p>
+\tag{7.45}\]</span></span></p>
 <p>여기서 <span class="math inline">\(U(x,\,y),\, V(x,\,y)\)</span> 는 실함수이다. 그리고 <span class="math inline">\(F\)</span> 가 미분가능하다는 것과 다음 조건은 동치이다.</p>
 <p><span id="eq-FLP_2_7_7"><span class="math display">\[
 \dfrac{\partial U}{\partial x} = \dfrac{\partial V}{\partial y},\qquad \dfrac{\partial V}{\partial x} = - \dfrac{\partial U}{\partial y}.
-\tag{7.43}\]</span></span></p>
+\tag{7.46}\]</span></span></p>
 <p>즉</p>
 <p><span id="eq-FLP_2_7_7_ex"><span class="math display">\[
 (\nabla U) \boldsymbol{\cdot} (\nabla V)=0
-\tag{7.44}\]</span></span></p>
+\tag{7.47}\]</span></span></p>
 <p>이다. 이로부터 <span class="math inline">\(U(x,\,y)=C\)</span> 와 <span class="math inline">\(V(x,\,y)=D\)</span> 에 대한 등위곡선(level curve) 가 만날 때 접점에서의 기울기는 서로 수직이라는 것을 알 수 있다. 또한 <span class="math inline">\(U,\,V\)</span> 가 2차원에서의 라플라스 방정식을 만족한다는 것을 알 수 있다.</p>
 <p><span id="eq-FLP_2_7_9"><span class="math display">\[
 \dfrac{\partial^2 U}{\partial x^2} + \dfrac{\partial^2 U}{\partial y^2} = \dfrac{\partial^2 V}{\partial x^2} + \dfrac{\partial^2 V}{\partial y^2} =0.
-\tag{7.45}\]</span></span></p>
+\tag{7.48}\]</span></span></p>
 <p>현대 수학에서는 어떤 열린 집합에서 미분가능한 복소함수를 <strong>정칙 함수 (holomorphic)</strong> 라고 하고 전체 복소수에서 미분가능한 복소함수를 <strong>전해석 함수 (entire function)</strong> 이라고 한다. 예를 들어</p>
 <p><span class="math display">\[
 F(\zeta) = \zeta^2 = (x^2-y^2) + i(2xy)
@@ -1427,15 +1442,15 @@ F(\zeta) = \zeta^2 = (x^2-y^2) + i(2xy)
 <p><span class="math inline">\(a,\,b\)</span> 두 평면상에 위치한 전자가 <span class="math inline">\(a',\,b'\)</span> 평면상으로 움직였다고 하자. 평형상태의 전자의 1차원 밀도를 <span class="math inline">\(n_0\)</span> 라고 하면 전자의 갯수는 <span class="math inline">\(n_0\Delta x\)</span> 이며 이동한 상황에서의 전자 밀도는 다음과 같다.</p>
 <p><span id="eq-FLP_2_7_16"><span class="math display">\[
 n = \dfrac{n_0 \Delta x}{\Delta x + \Delta s} = \dfrac{n_0}{1+(\Delta s/\Delta x)}.
-\tag{7.46}\]</span></span></p>
+\tag{7.49}\]</span></span></p>
 <p>이다. <span class="math inline">\(\Delta s\Delta x \ll 1\)</span> 이면 위식은 아래와 같이 근사 할 수 있다.</p>
 <p><span id="eq-FLP_2_7_17"><span class="math display">\[
 n=n_0 \left(1-\dfrac{\Delta s}{\Delta x}\right).
-\tag{7.47}\]</span></span></p>
+\tag{7.50}\]</span></span></p>
 <p>여기서 양전하의 밀도는 <span class="math inline">\(n_0\)</span> 이며, 각각의 전자의 전하를 <span class="math inline">\(-q_e\)</span> 라고 하면 전하밀도는</p>
 <p><span id="eq-FLP_2_7_18"><span class="math display">\[
 \rho = -(n-n_0)q_e = n_0 q_e \dfrac{ds}{dx}
-\tag{7.48}\]</span></span></p>
+\tag{7.51}\]</span></span></p>
 <p>이다. 멕스웰 방정식 <span class="math inline">\(\nabla \boldsymbol{\cdot E} = \rho/\epsilon_e\)</span> 에 의해</p>
 <p><span class="math display">\[
 \dfrac{\partial E_x}{\partial x} = \dfrac{n_0 q_e}{\epsilon_0}\dfrac{\partial s}{\partial x}
@@ -1451,7 +1466,7 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <p>이므로 전자는</p>
 <p><span id="eq-FLP_2_7_25"><span class="math display">\[
 \omega_p = \sqrt{\dfrac{n_0 q_e^2}{m_e\epsilon_0}}
-\tag{7.49}\]</span></span></p>
+\tag{7.52}\]</span></span></p>
 <p>의 각진동수를 갖는 단순조화진동을 한다. 여기서 <span class="math inline">\(m_e\)</span> 는 전자의 질량이며 <span class="math inline">\(\omega_p\)</span> 를 <strong>플라즈마 진동수 (plasma frequency)</strong> 라고 한다. 즉 플라즈마의 교란이 전자의 평형 위치에 대해 각진동수 <span class="math inline">\(\omega_p\)</span> 인 자유 진동을 일으키며, 이는 전자 밀도의 제곱근에 비례한다. 플라즈마 전자는 <span class="math inline">\(I\)</span> 권 23 장에서 설명한 것과 같은 공명 시스템처럼 행동한다.</p>
 </div>
 </div>
@@ -1468,12 +1483,12 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <p>이제 전해질 속의 콜로이드를 생각하자. 문제를 단순하게 하기 위해 일차원적인 경우만 생각한다. 콜로이드 입자를 원자 크기에 비해 매우 큰 반경을 가진 구라고 생각한다면, 그 표면의 작은 부분을 평면으로 간주할 수 있다. 이온에 의한 전하 분포 <span class="math inline">\(\rho(x)\)</span> 를 생각하자. 1차원 정전 포텐셜 <span class="math inline">\(\Phi\)</span> 는</p>
 <p><span id="eq-FLP_2_7_28"><span class="math display">\[
 \dfrac{d^2\Phi}{dx^2} = - \dfrac{\rho}{\epsilon_0}
-\tag{7.50}\]</span></span></p>
+\tag{7.53}\]</span></span></p>
 <p>를 만족한다.</p>
-<p>이제 정전 포텐셜 <span class="math inline">\(\Phi(x)\)</span> 에서 이온은 어떻게 분포하는가? 이는 통계역학의 원리를 통해 결정할 수 있다. 문제는 통계역학에서 얻어지는 전하 밀도가 <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>7.50</span></a> 를 만족하도록 <span class="math inline">\(\Phi\)</span> 를 결정하는 것이다. 통계역학에 따르면 힘장 내 열평형에 있는 입자는 밀도 <span class="math inline">\(n(x)\)</span> 이 다음과 같이 주어지는 방식으로 분포한다.</p>
+<p>이제 정전 포텐셜 <span class="math inline">\(\Phi(x)\)</span> 에서 이온은 어떻게 분포하는가? 이는 통계역학의 원리를 통해 결정할 수 있다. 문제는 통계역학에서 얻어지는 전하 밀도가 <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>7.53</span></a> 를 만족하도록 <span class="math inline">\(\Phi\)</span> 를 결정하는 것이다. 통계역학에 따르면 힘장 내 열평형에 있는 입자는 밀도 <span class="math inline">\(n(x)\)</span> 이 다음과 같이 주어지는 방식으로 분포한다.</p>
 <p><span id="eq-FLP_2_7_29"><span class="math display">\[
 n(x)=n_0e^{−U(x)/k_BT}
-\tag{7.51}\]</span></span></p>
+\tag{7.54}\]</span></span></p>
 <p>여기서 <span class="math inline">\(U(x)\)</span> 는 포텐셜 에너지이고 <span class="math inline">\(k_B\)</span> 는 볼츠만 상수이며, <span class="math inline">\(T\)</span> 는 절대 온도이다. 콜로이드 입자의 표면으로부터 <span class="math inline">\(x\)</span> 만큼 떨어진 거리의 양이온이 갖는 포텐셜 에너지 <span class="math inline">\(U(x)=q_e \Phi(x)\)</span> 이며 따라서 양이온의 밀도 <span class="math inline">\(n_+\)</span> 는</p>
 <p><span class="math display">\[
 n_+(x) = n_0 e^{-q_e \Phi(x)/k_BT}
@@ -1488,15 +1503,15 @@ n_-(x) = n_0 e^{q_e \Phi(x)/k_BT}.
 \rho &amp;= q_e n_+ - q_e n_- = q_e n_0 \left(e^{-q_e \Phi/k_BT} - e^{+ q_e \Phi / k_B T}\right) \\[0.3em]
 &amp;= -{2q_en_0}\sinh \left(\dfrac{q_e \Phi}{k_BT}\right)
 \end{aligned}
-\tag{7.52}\]</span></span></p>
-<p>이다. <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>7.50</span></a> 과 결합하면</p>
+\tag{7.55}\]</span></span></p>
+<p>이다. <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>7.53</span></a> 과 결합하면</p>
 <p><span id="eq-FLP_2_7_31"><span class="math display">\[
 \dfrac{d^2\Phi}{dx^2} =  \dfrac{2q_e n_0}{\epsilon_0}\sinh \left(\dfrac{q_e \Phi}{k_BT}\right)
-\tag{7.53}\]</span></span></p>
+\tag{7.56}\]</span></span></p>
 <p>이다. 양변에 <span class="math inline">\(2(d\Phi/dx)\)</span> 를 곱한 후 <span class="math inline">\(x\)</span> 에 대해 적분하면, 그리고 적절한 경계 조건에서 해를 구할 수 있지만 우리는 여기서는 <span class="math inline">\(q_e \Phi \ll k_BT\)</span> 인 조건에서만 다뤄보기로 하자. 그렇다면 미분방정식은</p>
 <p><span id="eq-FLP_2_7_33"><span class="math display">\[
 \dfrac{d^2\Phi}{dx^2} =  \dfrac{2n_0q_e^2}{\epsilon_0 k_B T} \Phi
-\tag{7.54}\]</span></span></p>
+\tag{7.57}\]</span></span></p>
 <p>가 되며 이 미분방정식의 해는 다음과 같다는 것을 안다.</p>
 <p><span class="math display">\[
 \Phi(x) = A e^{-x/D}+ Be^{x/D},\qquad \text{where }D = \sqrt{\dfrac{\epsilon_0 k_B T}{2n_0 q_e^2}}.
@@ -1504,16 +1519,16 @@ n_-(x) = n_0 e^{q_e \Phi(x)/k_BT}.
 <p>여기서 <span class="math inline">\(x\to \infty\)</span> 조건에서 <span class="math inline">\(\Phi\)</span> 가 최소한 유한한 값을 가져야 하므로 <span class="math inline">\(B=0\)</span> 이다. 즉</p>
 <p><span id="eq-FLP_2_7_36"><span class="math display">\[
 \Phi (x) = A e^{-x/D},\qquad \text{where }D = \sqrt{\dfrac{\epsilon_0 k_B T}{2n_0 q_e^2}}.
-\tag{7.55}\]</span></span></p>
-<div class="page-columns page-full"><p>이다. 여기서 <span class="math inline">\(D\)</span> 를 <strong>드바이 길이 (Debey length)</strong> 라고 하며, 전해질 내 큰 하전 입자를 둘러싼 이온층의 두께를 의미하는 값이다. <a href="#eq-FLP_2_7_36" class="quarto-xref">식&nbsp;<span>7.55</span></a> 는 이온 농도(<span class="math inline">\(n_0\)</span>)가 증가하거나 온도가 낮아짐에 따라 드바이 길이가 작아진다는 것을 보여준다. 위 식에서 <span class="math inline">\(A\)</span> 는 콜로이드 입자의 표면 전하 밀도 <span class="math inline">\(\sigma\)</span> 를 안다면<span class="math inline">\(^3\)</span>, 그리고 <span class="math inline">\(E_x = -\partial \Phi/\partial x\)</span> 이므로,</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^3\)</span> 콜로이드의 양전하가 표면에 균일하게 분포하여 콜로이드 내부의 전기장이 마치 금속처럼 0 인것으로 가정하는 듯하다.</span></div></div>
+\tag{7.58}\]</span></span></p>
+<div class="page-columns page-full"><p>이다. 여기서 <span class="math inline">\(D\)</span> 를 <strong>드바이 길이 (Debey length)</strong> 라고 하며, 전해질 내 큰 하전 입자를 둘러싼 이온층의 두께를 의미하는 값이다. <a href="#eq-FLP_2_7_36" class="quarto-xref">식&nbsp;<span>7.58</span></a> 는 이온 농도(<span class="math inline">\(n_0\)</span>)가 증가하거나 온도가 낮아짐에 따라 드바이 길이가 작아진다는 것을 보여준다. 위 식에서 <span class="math inline">\(A\)</span> 는 콜로이드 입자의 표면 전하 밀도 <span class="math inline">\(\sigma\)</span> 를 안다면<span class="math inline">\(^3\)</span>, 그리고 <span class="math inline">\(E_x = -\partial \Phi/\partial x\)</span> 이므로,</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^3\)</span> 콜로이드의 양전하가 표면에 균일하게 분포하여 콜로이드 내부의 전기장이 마치 금속처럼 0 인것으로 가정하는 듯하다.</span></div></div>
 <p><span id="eq-FLP_2_7_37"><span class="math display">\[
 E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
-\tag{7.56}\]</span></span></p>
+\tag{7.59}\]</span></span></p>
 <p>이며, 따라서 <span class="math inline">\(A\)</span>, 즉 <span class="math inline">\(\Phi(0)\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_7_39"><span class="math display">\[
 \Phi(0)=A = \dfrac{\sigma D}{\epsilon_0}.
-\tag{7.57}\]</span></span></p>
-<p>평행판 축전기(<a href="#exm-FLP_parallel_plate_condensor" class="quarto-xref">예제&nbsp;<span>7.11</span></a>) 의 <a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.39</span></a> 과 비교해보면 이 전위차는 거리가 <span class="math inline">\(D\)</span> 인 평행판 축전기의 전위차와 같다는 것을 알 수 있다.</p>
+\tag{7.60}\]</span></span></p>
+<p>평행판 축전기(<a href="#exm-FLP_parallel_plate_condensor" class="quarto-xref">예제&nbsp;<span>7.11</span></a>) 의 <a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>7.42</span></a> 과 비교해보면 이 전위차는 거리가 <span class="math inline">\(D\)</span> 인 평행판 축전기의 전위차와 같다는 것을 알 수 있다.</p>
 <p>앞서 콜로이드 입자들이 전기 반발에 의해 분리되어 있다고 말했다. 이제 우리는 입자 표면에서 약간 떨어진 전기장이 그 주위에 모이는 이온층에 의해 감소한다는 것을 알게 되었다. 이온층의 두께가 충분히 얇아지면 입자들이 서로 부딪히게 될 가능성이 높기 때문에 콜로이드 입자들이 달라붙고 응고되어 액체에서 침전될 수 있다. 이제 콜로이드에 충분한 소금을 첨가하면 콜로이드가 침전되는 이유를 이해할 수 있으며 이 과정을 <strong>염석</strong> 이라고 한다.</p>
 <p>또 다른 흥미로운 예는 소금 용액이 단백질 분자에 미치는 영향이다. 단백질 분자는 길고 복잡하며 유연한 아미노산 사슬입이고 다양한 전하를 가지고 있으며, 때때로 음전하와 같은 순전하가 사슬을 따라 분포하는 경우가 있다. 음전하들의 상호 반발로 인해 단백질 사슬이 늘어난 상태를 유지한다. 또한, 용액에 다른 유사한 사슬 분자가 존재한다면, 동일한 반발 효과에 의해 분리될 것이다. 따라서 액체에 사슬 분자를 현탁시킬 수 있다. 하지만 액체에 소금을 넣으면 현탁액의 특성이 변하게 된다. 용액에 염을 첨가하면 데바이 거리가 감소하고, 사슬 분자들이 서로 가까워지며 또한 꼬일 수 있다. 용액에 충분한 염을 첨가하면 사슬 분자가 용액에서 침전된다. 이와 같은 화학적 효과는 전기적 힘의 관점에서 이해할 수 있는 것이 많이 있다.</p>
 <p><br></p>
@@ -1535,15 +1550,15 @@ E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
 <p>포텐셜 역시 주기적일 것이므로 우리는 도선의 간격 <span class="math inline">\(a\)</span> 에 대해 포텐셜을 다음과 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_2_7_41"><span class="math display">\[
 \Phi(x,\,z) = \sum_{n=0}^\infty F_n(z) \cos \dfrac{2\pi n x}{a}.
-\tag{7.58}\]</span></span></p>
+\tag{7.61}\]</span></span></p>
 <p>2차원에서 라플라스 방정식 <span class="math inline">\(\nabla^2 \Phi = 0\)</span> 을 만족해야 하므로</p>
 <p><span id="eq-FLP_2_7_42"><span class="math display">\[
 \left(\dfrac{\partial^2 F_n(z)}{\partial z^2}-\dfrac{4\pi^2 n^2}{a^2} \right) \cos \dfrac{2\pi n x}{a} = 0,\qquad n = 0,\,1,\,2,\ldots
-\tag{7.59}\]</span></span></p>
+\tag{7.62}\]</span></span></p>
 <p>이어야 한다. 위 미분방정식의 해는 다음과 같다.</p>
 <p><span id="eq-FLP_2_7_44"><span class="math display">\[
 F_n (z) = A_n e^{-z/z_0},\qquad \text{where } z_0 = \dfrac{a}{2\pi n}.
-\tag{7.60}\]</span></span></p>
+\tag{7.63}\]</span></span></p>
 <p>여기서 <span class="math inline">\(A_n\)</span> 은 경계조건에 의해 결정된다. 이로부터 <span class="math inline">\(n\)</span> 값이 클수록 <span class="math inline">\(z\)</span> 에 대해 급격히 떨어지므로 <span class="math inline">\(a\)</span> 보다 몇배 정도 큰 <span class="math inline">\(z\)</span> 에서는 <span class="math inline">\(n=0\)</span> 인 성분이 지배적이 된다. 즉 <span class="math inline">\(z\gg a\)</span> 일 때</p>
 <p><span class="math display">\[
 \Phi(z) \approx -E_0z
@@ -1559,18 +1574,18 @@ F_n (z) = A_n e^{-z/z_0},\qquad \text{where } z_0 = \dfrac{a}{2\pi n}.
 <p>여기서는 정전기계(electrostatic system) 에서의 에너지를 다룬다. 전하 <span class="math inline">\(q_1,\,q_2\)</span> 가 <span class="math inline">\(r_{12}\)</span> 만큼의 거리에 있도록 해줘야 하는 일은 다음과 같다는 것을 안다.</p>
 <p><span id="eq-FLP_2_8_1"><span class="math display">\[
 \dfrac{q_1q_2}{4\pi\epsilon_0 r_{12}}.
-\tag{7.61}\]</span></span></p>
+\tag{7.64}\]</span></span></p>
 <p>이것을 두 전하의 분포에 대한 <strong>정전기 에너지 (electrostatic energy)</strong> 라고 한다. 이제 <span class="math inline">\(N\)</span> 개의 전하 <span class="math inline">\(q_1,\ldots,\,q_{N}\)</span> 으로 이루어진 시스템을 만들기 위해 해줘야 하는 일은 이 전하 분포에 대한 정전기 에너지 <span class="math inline">\(U\)</span> 라고 하면 <span class="math inline">\(U\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_3"><span class="math display">\[
 U = \sum_{\text{all pairs}}\dfrac{q_iq_j}{4\pi\epsilon_0 r_{ij}}.
-\tag{7.62}\]</span></span></p>
-<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.62</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
+\tag{7.65}\]</span></span></p>
+<p>만약 점전하가 아닌 전하 분포 <span class="math inline">\(\rho\)</span> 가 주어졌다면 <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.65</span></a> 의 <span class="math inline">\(\sum\)</span> 은 적분으로 바뀐다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_electrostatic_energy_of_uniformly_charged_sphere" class="theorem example">
 <p><span class="theorem-title"><strong>예제 7.13 (<strong>균일하게 대전된 구의 정전기 에너지</strong>)</strong></span> 균일하게 대전된 반지름 <span class="math inline">\(a\)</span> 인 구의 정전기 에너지를 얇은 구 껍질을 차근차근 쌓아가는 방식으로 계산하자. 균일한 전하 밀도를 <span class="math inline">\(\rho\)</span> 라고 하자. 반지름 <span class="math inline">\(r\)</span> 만큼의 구에 전하가 쌓였을 때 이 반지름을 <span class="math inline">\(r+dr\)</span> 만큼 늘리도록 쌓는데 필요한 에너지 <span class="math inline">\(dU\)</span> 는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_4"><span class="math display">\[
 dU = \dfrac{Q_r dQ}{4\pi\epsilon_0 r}.
-\tag{7.63}\]</span></span></p>
+\tag{7.66}\]</span></span></p>
 <p>여기서 <span class="math inline">\(Q_r\)</span> 은 반지름 <span class="math inline">\(r\)</span> 인 구의 총 전하량으로</p>
 <p><span class="math display">\[
 Q_r = \rho \cdot \dfrac{4}{3}\pi r^3
@@ -1586,7 +1601,7 @@ dU = \dfrac{4\pi \rho^2 r^4\,dr}{3\epsilon_0}
 <p>이며 이를 <span class="math inline">\(r=0\)</span> 부터 <span class="math inline">\(r=a\)</span> 까지 적분하면 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_7"><span class="math display">\[
 U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0 a}
-\tag{7.64}\]</span></span></p>
+\tag{7.67}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -1599,23 +1614,23 @@ U=\dfrac{4\pi\rho^2 a^5}{15\epsilon_0} = \dfrac{3}{5} \dfrac{Q^2}{4\pi\epsilon_0
 <p><span class="theorem-title"><strong>예제 7.14 (<strong>대전된 도체의 에너지</strong>)</strong></span> 대전된 두 도체, 즉 축전기를 생각하자. 도체 사이의 전위차 <span class="math inline">\(V\)</span> 와 전하 <span class="math inline">\(Q\)</span> 사이에는</p>
 <p><span id="eq-FLP_2_8_8"><span class="math display">\[
 V=\dfrac{Q}{C}
-\tag{7.65}\]</span></span></p>
-<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.65</span></a> 로부터</p>
+\tag{7.68}\]</span></span></p>
+<p>의 관계가 성립한다. <span class="math inline">\(V\)</span> 의 전위차를 유지하며 한쪽 도체의 전하 <span class="math inline">\(dQ\)</span> 를 다른쪽 도체로 이동시키는데 필요한 에너지 <span class="math inline">\(dU = Vdq\)</span> 이다. <a href="#eq-FLP_2_8_8" class="quarto-xref">식&nbsp;<span>7.68</span></a> 로부터</p>
 <p><span class="math display">\[
 dU = \dfrac{QdQ}{C}
 \]</span></p>
 <p>이며 <span class="math inline">\(dQ\)</span> 를 <span class="math inline">\(0\)</span> 부터 최종 전하 <span class="math inline">\(Q\)</span> 까지 적분하면</p>
 <p><span id="eq-FLP_2_8_9"><span class="math display">\[
 U = \dfrac{1}{2}\dfrac{Q^2}{C} = \dfrac{1}{2}CV^2
-\tag{7.66}\]</span></span></p>
+\tag{7.69}\]</span></span></p>
 <p>이다. 이제 반지름 <span class="math inline">\(a\)</span> 인 도체 구의 전기용량을 생각해보자. <span class="math inline">\(V=Q/C_\text{sphere} = Q/(4\pi\epsilon_0 a)\)</span> 로부터</p>
 <p><span class="math display">\[
 C_\text{sphere} = 4\pi \epsilon_0 a
 \]</span></p>
-<p>임을 안다. <a href="#eq-FLP_2_8_9" class="quarto-xref">식&nbsp;<span>7.66</span></a> 로부터 대전된 공의 포텐셜 에너지는 다음과 같다.</p>
+<p>임을 안다. <a href="#eq-FLP_2_8_9" class="quarto-xref">식&nbsp;<span>7.69</span></a> 로부터 대전된 공의 포텐셜 에너지는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_11"><span class="math display">\[
 U_\text{charged sphere} = \dfrac{1}{2} \dfrac{Q^2}{4\pi\epsilon_0 a}
-\tag{7.67}\]</span></span></p>
+\tag{7.70}\]</span></span></p>
 </div>
 </div>
 <p><br></p>
@@ -1632,12 +1647,12 @@ F_z = - \dfrac{\partial U}{\partial z} = - \dfrac{Q^2}{2C^2}\dfrac{dC}{dz}=-\dfr
 <p>임을 안다. 여기서 <span class="math inline">\(dC/dz = - \epsilon_0 A/d^2\)</span> 이며 <span class="math inline">\(\sigma = Q/A\)</span> 는 평행판의 면전하 밀도이다. 평행판 사이의 전기장 <span class="math inline">\(E_0 = \sigma/\epsilon_0\)</span> 를 생각하면</p>
 <p><span id="eq-FLP_2_8_18"><span class="math display">\[
 F_z = -\dfrac{1}{2}Q E_0
-\tag{7.68}\]</span></span></p>
-<p>이다. 놀랍게도 <span class="math inline">\(QE_0\)</span> 가 아닌 그 값의 <span class="math inline">\(1/2\)</span> 인데 그 이유를 살펴보자. 평행판은 금속이며 따라서 전하는 표면에만 존재한다. 평행판 표면에서의 전기장의 크기는 <span class="math inline">\(E_0\)</span> 이고 평행판 내부의 전기장은 <span class="math inline">\(0\)</span> 이다. 즉 전기장은 전하가 존재하는 얇은 표면층 을 통과하면서 <span class="math inline">\(E_0\)</span> 에서 <span class="math inline">\(0\)</span> 으로 급격히 딸어지게 되며 따라서 <a href="#eq-FLP_2_8_18" class="quarto-xref">식&nbsp;<span>7.68</span></a> 의 결과가 나온다.</p>
+\tag{7.71}\]</span></span></p>
+<p>이다. 놀랍게도 <span class="math inline">\(QE_0\)</span> 가 아닌 그 값의 <span class="math inline">\(1/2\)</span> 인데 그 이유를 살펴보자. 평행판은 금속이며 따라서 전하는 표면에만 존재한다. 평행판 표면에서의 전기장의 크기는 <span class="math inline">\(E_0\)</span> 이고 평행판 내부의 전기장은 <span class="math inline">\(0\)</span> 이다. 즉 전기장은 전하가 존재하는 얇은 표면층 을 통과하면서 <span class="math inline">\(E_0\)</span> 에서 <span class="math inline">\(0\)</span> 으로 급격히 딸어지게 되며 따라서 <a href="#eq-FLP_2_8_18" class="quarto-xref">식&nbsp;<span>7.71</span></a> 의 결과가 나온다.</p>
 <p><strong>2. 전위차 <span class="math inline">\(V\)</span> 가 일정한 경우</strong></p>
 <p>포텐셜 에너지에 대한 식 가운데 <span class="math inline">\(U=\dfrac{CV^2}{2}\)</span> 를 사용한다. <span id="eq-FLP_2_8_19"><span class="math display">\[
 F_z = - \dfrac{\partial U}{\partial z} = -\dfrac{V^2}{2}\dfrac{d C}{d z}= \dfrac{C^2V^2}{2\epsilon_0 A}
-\tag{7.69}\]</span></span></p>
+\tag{7.72}\]</span></span></p>
 <p>이며 <span class="math inline">\(0\)</span> 보다 크다. 그런데 이것은 틀린 답이다. 포텐셜을 일정하게 유지하면서 가상 변위 <span class="math inline">\(dz\)</span> 만큼 움직이면 <span class="math inline">\(d Q = (dC/dz)V\)</span> 만큼의 전하를 포텐셜 <span class="math inline">\(V\)</span> 가 유지되는 조건에서 추가해야 한다. 이 때 증가하는 포텐셜 에너지가 <span class="math inline">\((d Q)V= (dC/dz)V^2\)</span> 이며 이는 외부에서 해주는 일이다. 이를 고려하면</p>
 <p><span class="math display">\[
 F_z = \dfrac{V^2}{2}\dfrac{dC}{dz} = - \dfrac{C^2V^2}{2\epsilon_0 A}&lt;0
@@ -1665,14 +1680,14 @@ F_z = \dfrac{V^2}{2}\dfrac{dC}{dz} = - \dfrac{C^2V^2}{2\epsilon_0 A}&lt;0
 </section>
 <section id="sec-FLP_2_8_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_8_5">II.8-5 전기장의 에너지</h3>
-<p>점전하 시스템의 정전기 포텐셜은 <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.62</span></a> 으로, 즉 모든 가능한 쌍에 대한 정전 포텐셜의 합으로 주어진다. <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.62</span></a> 은 아래와 같이 쓸 수 있다.</p>
+<p>점전하 시스템의 정전기 포텐셜은 <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.65</span></a> 으로, 즉 모든 가능한 쌍에 대한 정전 포텐셜의 합으로 주어진다. <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.65</span></a> 은 아래와 같이 쓸 수 있다.</p>
 <p><span class="math display">\[
 U = \dfrac{1}{2}\sum_i \sum_{j\ne i} \dfrac{q_iq_j}{4\pi\epsilon_0 \|\boldsymbol{r}_i-\boldsymbol{r}_j\|}
 \]</span></p>
-<p><span class="math inline">\(\sum_i \sum_{j\ne i}[\cdots]\)</span> 는 같은 쌍을 두번 세므로 이를 고려하여 앞의 <span class="math inline">\(1/2\)</span> 항이 필요하다. 그렇다면 전하 밀도에 대한 정전 포텐셜은 어떻게 주어질까? <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.62</span></a> 은 다음과 같이 변화할 것이다.</p>
+<p><span class="math inline">\(\sum_i \sum_{j\ne i}[\cdots]\)</span> 는 같은 쌍을 두번 세므로 이를 고려하여 앞의 <span class="math inline">\(1/2\)</span> 항이 필요하다. 그렇다면 전하 밀도에 대한 정전 포텐셜은 어떻게 주어질까? <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.65</span></a> 은 다음과 같이 변화할 것이다.</p>
 <p><span id="eq-FLP_2_8_27"><span class="math display">\[
 U = \dfrac{1}{2}\int_V\int_{V} \dfrac{\rho(\boldsymbol{r}_1)\rho(\boldsymbol{r}_2)}{4\pi\epsilon_0 \|\boldsymbol{r}_1-\boldsymbol{r}_2\|} \,d^3\boldsymbol{r}_1d^3\boldsymbol{r}_2
-\tag{7.70}\]</span></span></p>
+\tag{7.73}\]</span></span></p>
 <p>이 때 <span class="math inline">\(V\)</span> 는 전체 공간이다. 여기서</p>
 <p><span class="math display">\[
 \Phi(\boldsymbol{r}_1) = \int_V \dfrac{\rho(\boldsymbol{r}_2)}{4\pi\epsilon_0 \|\boldsymbol{r}_1-\boldsymbol{r}_2\|}d^3\boldsymbol{r}_2
@@ -1680,7 +1695,7 @@ U = \dfrac{1}{2}\int_V\int_{V} \dfrac{\rho(\boldsymbol{r}_1)\rho(\boldsymbol{r}_
 <p>이므로</p>
 <p><span id="eq-FLP_2_8_28"><span class="math display">\[
 U =  \dfrac{1}{2}\int_V \rho(\boldsymbol{r})\Phi(\boldsymbol{r})\,d^3\boldsymbol{r}
-\tag{7.71}\]</span></span></p>
+\tag{7.74}\]</span></span></p>
 <p>이 성립한다. <span class="math inline">\(\rho= \epsilon_0 \nabla \boldsymbol{\cdot E}\)</span> 와 발산법칙을 이용하여 다음을 보일 수 있다.</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -1692,11 +1707,11 @@ U &amp;= \dfrac{1}{2}\int_V \rho(\boldsymbol{r})\Phi(\boldsymbol{r})\,d^3\boldsy
 <p>여기서 첫번째 적분항은 <span class="math inline">\(V\)</span> 를 원점을 중심으로 <span class="math inline">\(R\to \infty\)</span> 구를 잡으면 <span class="math inline">\(0\)</span> 이 되므로 포텐셜 에너지는 다음과 같다.</p>
 <p><span id="eq-FLP_2_8_30"><span class="math display">\[
 U = \dfrac{\epsilon_0}{2}\int_V \|\boldsymbol{E}(\boldsymbol{r})\|^2 \,d^3\boldsymbol{r}
-\tag{7.72}\]</span></span></p>
+\tag{7.75}\]</span></span></p>
 <p>우리는 이로부터 에너지 밀도 <span class="math inline">\(u\)</span> 를 정의 할 수 있다.</p>
 <p><span id="eq-FLP_2_8_31"><span class="math display">\[
 u = \dfrac{\epsilon_0}{2}\|\boldsymbol{E}\|^2 = \dfrac{\epsilon_0 E^2}{2}.
-\tag{7.73}\]</span></span></p>
+\tag{7.76}\]</span></span></p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_8_6" class="level3">
@@ -1712,8 +1727,8 @@ u = \dfrac{\epsilon_0 E^2}{2} = \dfrac{q^2}{32\pi^2 \epsilon_0 r^4}
 <p>로 점전하에 의한 에너지 <span class="math inline">\(U\)</span> 는</p>
 <p><span id="eq-FLP_2_8_36"><span class="math display">\[
 U = \int_{r=0}^\infty u^2 r^2\,d\Omega dr = -\dfrac{q^2}{8\pi \epsilon_0}\left.\dfrac{1}{r}\right|_{r=0}^{r=\infty}
-\tag{7.74}\]</span></span></p>
-<p>이다. 보다시피 <span class="math inline">\(r\to 0\)</span> 에서 발산한다. 우리는 점 전하 사이에만 에너지가 존재한다는 생각으로 시작했지만 <a href="#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>7.72</span></a> 은 점전하에 의한 전기장에 무한한 양의 에너지가 존재한다고 말한다. 점전하 집합에 대한 에너지 공식에서 <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.62</span></a> 에서 우리는 전하의 자기 자신과의 상호작용 에너지를 포함하지 않았다. 연속적인 전하 분포에 대한 에너지 계산에서(<a href="#eq-FLP_2_8_27" class="quarto-xref">식&nbsp;<span>7.70</span></a>) 우리는 모든 무한소 전하와 다른 모든 무한소 전하와의 상호작용 에너지를 계산했다. 동일한 고려가 <a href="#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>7.72</span></a> 에 포함된다. 따라서 이를 유한한 점전하에 적용할 때 그 전하를 무한소 부분으로부터 조립하는 데 필요한 에너지를 포함하게 된다. <a href="#eq-FLP_2_8_11" class="quarto-xref">식&nbsp;<span>7.67</span></a> 을 전하를 띤 구의 에너지에 사용하고 <span class="math inline">\(r\to 0\)</span> 극한을 취하면 <a href="#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>7.72</span></a> 의 결과를 얻게 된다.</p>
+\tag{7.77}\]</span></span></p>
+<p>이다. 보다시피 <span class="math inline">\(r\to 0\)</span> 에서 발산한다. 우리는 점 전하 사이에만 에너지가 존재한다는 생각으로 시작했지만 <a href="#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>7.75</span></a> 은 점전하에 의한 전기장에 무한한 양의 에너지가 존재한다고 말한다. 점전하 집합에 대한 에너지 공식에서 <a href="#eq-FLP_2_8_3" class="quarto-xref">식&nbsp;<span>7.65</span></a> 에서 우리는 전하의 자기 자신과의 상호작용 에너지를 포함하지 않았다. 연속적인 전하 분포에 대한 에너지 계산에서(<a href="#eq-FLP_2_8_27" class="quarto-xref">식&nbsp;<span>7.73</span></a>) 우리는 모든 무한소 전하와 다른 모든 무한소 전하와의 상호작용 에너지를 계산했다. 동일한 고려가 <a href="#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>7.75</span></a> 에 포함된다. 따라서 이를 유한한 점전하에 적용할 때 그 전하를 무한소 부분으로부터 조립하는 데 필요한 에너지를 포함하게 된다. <a href="#eq-FLP_2_8_11" class="quarto-xref">식&nbsp;<span>7.70</span></a> 을 전하를 띤 구의 에너지에 사용하고 <span class="math inline">\(r\to 0\)</span> 극한을 취하면 <a href="#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>7.75</span></a> 의 결과를 얻게 된다.</p>
 <p>우리는 에너지를 장에 위치시칸다는 개념이 점전하의 존재 가정과 일치하지 않는다는 결론을 내려야 한다. 이것을 피하는 한 가지 방법은 전자와 같은 기본 전하가 점이 아니라 매우 작은 전하 분포라고 가정하는 것이다. 다른 방법은 매우 짧은 거리에서의 전기 이론에 문제가 있거나, 에너지의 지역 보존이라는 개념에 문제가 있다고 말하는 것이다. 하지만 두 관점 모두 문제가 있다. 이 문제는 아직까지 극복되지 못한 채 오늘날까지도 존재한다. 이후 전자기장의 운동량과 같은 개념들을 논의할 때, 자연을 이해하는 근본적인 어려움에 대해 보다 나은 설명을 제시할 것이다.</p>
 
 
