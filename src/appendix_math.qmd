@@ -1,0 +1,128 @@
+---
+title: "첨부-수학"
+number-sections: true
+number-depth: 0
+crossref:
+  chapters: true
+---
+
+
+{{< include ../latexmacros.qmd >}} 
+
+
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+::: {#exr-Griffith_1_62}
+
+#### Griffith 전자기학 연습문제 1.62
+적분
+
+$$
+\bf{a} :=\int_S d\bf{a}
+$$
+
+를 표면 $S$ 에 대한 벡터 면적이라고 한다. $S$ 가 평평하다면 $\|\bf{a}\|$ 는 일반적인 면적이다.
+
+($a$) 반지름 $R$ 인 반구형 bowl 의 벡터 면적을 구하라.
+
+($b$) 닫힌 표면에 대해 $\bf{a}=0$ 임을 보여라.
+
+($c$) $\bf{a}$ 는 같은 경계를 갖는 모든 표면에 대해 동일함을 보여라.
+
+($d$) $S$ 의 경계 $\Gamma$ 에 대해 다음이 성립함을 보여라.
+
+$$
+\bf{a} =\dfrac{1}{2}\oint_\Gamma \bf{r}\times d\bf{l}.
+$$
+
+($e$) 임의의 상수벡터 $\bf{c}$ 에 대해 다음이 성립함을 보여라.
+
+$$
+\oint (\bf{c \cdot r})\,d\bf{l} = \bf{a}\times \bf{c}.
+$$
+
+:::
+
+</div>
+
+::: {.solution}
+
+($a$) 구면좌표계에서 $\hat{\bf{r}} = (\sin \theta \cos \varphi,\, \sin \theta \sin \varphi, \cos \theta)$ 이므로
+
+$$
+\begin{aligned}
+a_x &= R^2\int_0^{2\pi} \int_{\pi/2}^\pi \sin^2 \theta \cos \varphi d\theta d\varphi = 0, \\[0.3em]
+a_y &= R^2 \int_0^{2\pi} \int_{\pi/2}^\pi \sin^2 \theta \sin \varphi d\theta d\varphi = 0, \\[0.3em]
+a_y &= R^2 \int_0^{2\pi} \int_{\pi/2}^\pi \cos \theta \sin \theta d\theta d\varphi = -\pi R^2. \\[0.3em]
+\end{aligned}
+$$
+
+이므로 $\bf{a} = (0,\,0,\, -\pi R^2)$.
+
+($b$) 닫힌 표면 $S$ 에 포함되는 영역을 $V$ 라고 할 때 다음이 성립함을 보이자.
+
+$$
+\int_V (\nabla f)d^3\bf{r} = \oint_S f\,d\bf{a} \tag{1}
+$$
+
+임의의 영이 아닌 상수 벡터 $\bf{c}$ 에 대해 $\bf{v}=\bf{c}f$ 라고 하자. 발산 정리에 의해
+
+$$
+\int_V \nabla \bf{\cdot v}\,d^3\bf{r} = \oint_S \bf{v\cdot }d\bf{a}
+$$
+
+이다. 이 때 죄변은 $\bf{c \cdot}\int_V \nabla f^3\,d^3\bf{r}$ 이며 우변은 $\bf{c\cdot} \oint_S fd\bf{a}$ 이다. 임의의 $\bf{c}$ 에 대해 성립하므로 식 ($1$) 이 성립한다. 그리고 $f=1$ 로 놓으면 주어진 문제를 보인다.
+
+($c$) 같은 경계를 공유하는 서로 겹치지 않는 두 평면은 닫힌 평면이므로 $\bf{a}=0$ 이다. 또한 $d\bf{a}$ 가 각각의 표면에서 반대방향이므로 같은 경계를 공유하는 두 평면의 벡터 면적은 같다.
+
+($d$) 임의의 벡터 $\bf{c}$ 에 대해 $\bf{c \cdot}(\bf{r}\times d\bf{l})=d\bf{l \cdot}(\bf{c}\times \bf{r})$ 이다. 임의의 표면 $S$ 와 그 경계 $\Gamma$ 를 생각하면
+
+$$
+\begin{aligned}
+\bf{c\cdot} \left(\oint_\Gamma \bf{r}\times d\bf{l}\right) &= \oint_\Gamma(\bf{c}\times \bf{r})\bf{\cdot}d\bf{l} = \int_S \nabla \times (\bf{c} \times \bf{r})\bf{\cdot}d\bf{a} \\[0.3em]
+&= \sum_{i,j,k}\int_S \left(\varepsilon_{ijk}\partial_j \varepsilon_{klm}c_l x_m\right)da_i \\[0.3em]
+&= \sum_{i,j,k}\int_S \left(\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}\right) c_l\partial_j x_m da_i \\[0.3em]
+&= \sum_{i,j,k}\int_S (c_i \partial_j x_j - c_j \partial_j x_i) da_i \\[0.3em]
+&= \int_S (3 c_i da_i - c_j\delta_{ij} da_i ) = 2\bf{c \cdot} \int_S d\bf{a}
+\end{aligned}
+$$
+
+이다. 임의의 $\bf{c}$ 에 대해 성립하므로 증명 끝.
+
+($e$) 우선 표면 $S$ 와 그 경계 $\Gamma$ 에 대해 
+
+$$
+\int_S \nabla f \times d\bf{a} = - \oint_\Gamma f\,d\bf{l} \tag{2}
+$$ 
+
+임을 증명한다. 임의의 벡터 $\bf{b}$ 에 대해 $\bf{v}=\bf{b}f$ 라고 하고 스토크스 정리를 사용하면
+
+$$
+\int_S (\nabla \times \bf{v})\bf{\cdot}d\bf{a} = \oint_\Gamma \bf{v\cdot}d\bf{l}
+$$
+
+이다. 이 때 좌변을 계산하면
+
+$$
+\begin{aligned}
+\int_S (\nabla \times \bf{v})\bf{\cdot}d\bf{a} &= \int_S \varepsilon_{ijk}\partial_j (b_kf) da_i \\[0.3em]
+&= \int_S \varepsilon_{ijk} da_i b_k \partial_j f = -\bf{b \cdot} \int  \nabla f  \times d\bf{a}
+\end{aligned}
+$$
+
+이며 우변은
+
+$$
+\oint_\Gamma \bf{b}f\,d\bf{l} = \bf{b \cdot}\oint_\Gamma f\,d \bf{l}
+$$
+
+이므로 ($2$) 가 성립한다. 이제 임의의 상수벡터 $\bf{c}$ 에 대해 $f=\bf{c\cdot r}$ 라고 하고 ($2$) 에 대힙하면
+
+$$
+\begin{aligned}
+\oint_\Gamma (\bf{c\cdot r})\,d\bf{l} &= - \int_S (\nabla (\bf{c\cdot r}))\times d\bf{a} = -\int_S \varepsilon_{ijk} \partial_j (c_lx_l) da_k \\[0.3em]
+&= -\int_S \varepsilon_{ijk} c_j da_k = -\bf{c} \times \int_S d\bf{a} = \bf{a}\times \bf{c}
+\end{aligned}
+$$
+
+:::

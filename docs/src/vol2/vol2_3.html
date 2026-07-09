@@ -251,6 +251,12 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../src/appendix_math.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">첨부-수학</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -282,6 +288,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_14_2" id="toc-sec-FLP_2_14_2" class="nav-link" data-scroll-target="#sec-FLP_2_14_2">II.14-2 알고 있는 전류에 대한 벡터 포텐셜</a></li>
   <li><a href="#sec-FLP_2_14_3" id="toc-sec-FLP_2_14_3" class="nav-link" data-scroll-target="#sec-FLP_2_14_3">II.14-3 직선 전선</a></li>
   <li><a href="#sec-FLP_2_14_4" id="toc-sec-FLP_2_14_4" class="nav-link" data-scroll-target="#sec-FLP_2_14_4">II.14-4 긴 솔레노이드</a></li>
+  <li><a href="#sec-FLP_2_14_5" id="toc-sec-FLP_2_14_5" class="nav-link" data-scroll-target="#sec-FLP_2_14_5">II.14-5 자기쌍극자</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -701,8 +708,17 @@ J'^3 &amp;= J'_z = J^3.
 <h3 class="anchored" data-anchor-id="sec-FLP_2_14_2">II.14-2 알고 있는 전류에 대한 벡터 포텐셜</h3>
 <p><a href="https://julia-kaeri.github.io/MathematicalPhysics/src/vector_calculus/vectorcalculus.html#sec-ED_MT_Helmholtz_theorem">헬름홀츠 정리</a> 와 <span class="math inline">\(\nabla \times \boldsymbol{B}=\mu_0 \boldsymbol{J}\)</span> 로부터 아래의 <span class="math inline">\(\boldsymbol{A}\)</span> 가 <span class="math inline">\(\nabla \times \boldsymbol{A}=\boldsymbol{B}\)</span> 를 만족시킴을 안다.</p>
 <p><span id="eq-FLP_2_14_19"><span class="math display">\[
-\boldsymbol{A}(\boldsymbol{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\boldsymbol{J}(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}'
+\boldsymbol{A}(\boldsymbol{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\boldsymbol{J}(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}'.
 \tag{9.36}\]</span></span></p>
+<p>여기서 전하 분포 <span class="math inline">\(\rho(\boldsymbol{r}')\)</span> 에 대한 정전 포텐셜</p>
+<p><span class="math display">\[
+\Phi (\boldsymbol{R}) = \dfrac{1}{4\pi\epsilon_0} \int \dfrac{\rho(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}\|'}d^3\boldsymbol{r}
+\]</span></p>
+<p>과 비교해보자. <span class="math inline">\(\boldsymbol{J}=(J_x,\,J_y,\,J_z)\)</span> 일 때</p>
+<p><span class="math display">\[
+A_i = \dfrac{\mu_0}{4\pi} \int \dfrac{J_i(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}', \qquad i=x,\,y,\,z
+\]</span></p>
+<p>이므로 <span class="math inline">\(\rho\)</span> 와 <span class="math inline">\(J_i\)</span> 가 유사하다면 우리가 이미 알고 있는 정전 포텐셜을 통해 벡터포텐셜 문제를 풀 수 있다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_2_14_3" class="level3">
@@ -720,11 +736,7 @@ J'^3 &amp;= J'_z = J^3.
 </figcaption>
 </figure>
 </div>
-<p><span class="math inline">\(\boldsymbol{J}=J\hat{\boldsymbol{z}}\)</span> 이므로 <span class="math inline">\(\boldsymbol{A}=A\hat{\boldsymbol{z}}\)</span> 이며</p>
-<p><span class="math display">\[
-A = \dfrac{\mu_0}{4\pi}\int \dfrac{J}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\,d^3\boldsymbol{r}
-\]</span></p>
-<p>이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 <span class="quarto-unresolved-ref">?exm-FLP_electric_field_of_inifite_uniform_line_charge</span> 수학적으로 와 같은 문제이다. 즉</p>
+<p><span class="math inline">\(\boldsymbol{J}=J\hat{\boldsymbol{z}}\)</span> 이므로 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 문제(<a href="vol2_1.html#exm-FLP_electric_field_of_inifite_uniform_line_charge" class="quarto-xref">예제&nbsp;<span>7.3</span></a>) 와 수학적으로 와 같은 문제이다. 즉</p>
 <p><span id="eq-FLP_2_14_21"><span class="math display">\[
 \boldsymbol{A}(\boldsymbol{r}) = - \dfrac{I\mu_0}{2\pi r}\hat{\boldsymbol{z}}
 \tag{9.37}\]</span></span></p>
@@ -740,15 +752,60 @@ A = \dfrac{\mu_0}{4\pi}\int \dfrac{J}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\,d^3\b
 <h3 class="anchored" data-anchor-id="sec-FLP_2_14_4">II.14-4 긴 솔레노이드</h3>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_vector_potential_for_long_solenoid" class="theorem example">
-<p><span class="theorem-title"><strong>예제 9.5</strong></span> <a href="#exm-ED_MS_magnetic_field_due_to_solenoid" class="quarto-xref">예제&nbsp;<span>9.2</span></a> 을 벡터포텐셜을 이용해서 알아보자. 원통좌표계에서</p>
+<p><span class="theorem-title"><strong>예제 9.5 (솔레노이드에서의 벡터포텐셜)</strong></span> <a href="#exm-ED_MS_magnetic_field_due_to_solenoid" class="quarto-xref">예제&nbsp;<span>9.2</span></a> 을 생각하자. 솔레노이드의 반지름을 <span class="math inline">\(R\)</span> 이라고 하자. 표면 전류 밀도 <span class="math inline">\(\boldsymbol{J} = J\hat{\boldsymbol{\theta}}\)</span> 이므로 <span class="math inline">\(\boldsymbol{A} = A\hat{\boldsymbol{\theta}} = (-A\sin \theta,\, A \cos\theta)\)</span></p>
+<p><span class="math inline">\(xy\)</span> 평면상의 원점을 중심으로 하는 원 경로 <span class="math inline">\(\Gamma\)</span> 와 원 <span class="math inline">\(C\)</span> 에 대해 스토크스 정리를 통해 다음이 성립함을 안다.</p>
 <p><span class="math display">\[
-\boldsymbol{J}(\boldsymbol{r}') = J\delta(r'-R)\hat{\boldsymbol{\theta}}
+\oint_\Gamma \boldsymbol{A\cdot} d\boldsymbol{l} = \int_C \nabla \times \boldsymbol{A\cdot} d\boldsymbol{a} = \int_C \boldsymbol{B\cdot}d\boldsymbol{a}
 \]</span></p>
+<p>그렇다면 <span class="math inline">\(r&gt;R\)</span> 일 때 <span class="math inline">\(2\pi r A_\text{in} = \pi R^2 B_\text{in}\)</span> 이므로</p>
+<p><span class="math display">\[
+\boldsymbol{A}_\text{out} = \dfrac{n\mu_0 R^2 I}{2r}\hat{\boldsymbol{\theta}}
+\]</span></p>
+<p>이며 <span class="math inline">\(r&lt;R\)</span> 일 때 <span class="math inline">\(2 \pi r A_\text{in} = \pi r^2 B_\text{in}\)</span> 이므로</p>
+<p><span class="math display">\[
+\boldsymbol{A}_\text{in} = \dfrac{n\mu_0 r}{2}\hat{\boldsymbol{\theta}}
+\]</span></p>
+<p>이다.</p>
+</div>
 </div>
 <p><br></p>
+</section>
+<section id="sec-FLP_2_14_5" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_14_5">II.14-5 자기쌍극자</h3>
+<p>전류 밀도가 주어졌을 때의 벡터포텐셜 은 <a href="#eq-FLP_2_14_19" class="quarto-xref">식&nbsp;<span>9.36</span></a> 로 주어진다. 전류 밀도 <span class="math inline">\(\boldsymbol{J}\)</span> 는 어떤 닫힌 경로 <span class="math inline">\(\Gamma\)</span> 를 따르는 전류를 이룬다고 하자. 그렇다면</p>
+<p><span id="eq-FLP_vector_potential_for_closed_circuit"><span class="math display">\[
+\boldsymbol{A}(\boldsymbol{r}) = \dfrac{\mu_0}{4\pi}\oint_\Gamma \dfrac{I d\boldsymbol{l}'}{\|\boldsymbol{r}-\boldsymbol{r}'\|}
+\tag{9.39}\]</span></span></p>
+<p>이며 <span class="math inline">\(r&gt;r'\)</span> 일 때 르장드르 다항식을 이용하여 다음과 같이 표현 할 수 있다.</p>
+<p><span id="eq-FLP_expansion_of_vector_potential_for_closed_circuit"><span class="math display">\[
+\begin{aligned}
+\boldsymbol{A}(\boldsymbol{r}) &amp;= \dfrac{\mu_0 I}{4\pi} \sum_{l=0}^\infty \dfrac{1}{r^{l+1}}\oint_\Gamma \left(r'\right)^l P_l (\cos\theta') d\boldsymbol{l}' \\[0.3em]
+&amp;= \dfrac{\mu_0 I}{4\pi} \left[\dfrac{1}{r}\oint_\Gamma d\boldsymbol{l}' + \dfrac{1}{r^2}\oint_\Gamma r' \cos\theta' \,d\boldsymbol{l}' + \cdots \right].
+\end{aligned}
+\tag{9.40}\]</span></span></p>
+<p>이 때 첫번째 <span class="math inline">\(\oint_\Gamma d\boldsymbol{l}'=0\)</span> 이며 두번째 항 이후부터 생각하면 된다. 그리고 두번째 항을 쌍극자 항이라고 한다.</p>
+<p>쌍극자 항에 의한 벡터포텐셜 <span class="math inline">\(\boldsymbol{A}_\text{dip}\)</span> 는</p>
+<p><span class="math display">\[
+\boldsymbol{A}_\text{dip} = \dfrac{\mu_0 I}{4\pi r^2} \oint r' \cos \theta' d\boldsymbol{l'} = \dfrac{\mu_0 I}{4\pi r^2} \oint (\boldsymbol{r}'\boldsymbol{\cdot}\hat{\boldsymbol{r}})\,d\boldsymbol{l}
+\]</span></p>
+<p>이며 <a href="../appendix_math.html#exr-Griffith_1_62" class="quarto-xref">연습문제&nbsp;<span>12.1</span></a> 의 (<span class="math inline">\(e\)</span>) 에서 <span class="math inline">\(\boldsymbol{c}=\hat{\boldsymbol{r}}\)</span> 이라고 하면</p>
+<p><span class="math display">\[
+\oint (\boldsymbol{r}'\boldsymbol{\cdot}\hat{\boldsymbol{r}})\,d\boldsymbol{l} = - \hat{\boldsymbol{r}} \times \int d\boldsymbol{a}'
+\]</span></p>
+<p>이며, 따라서</p>
+<p><span class="math display">\[
+\boldsymbol{A}_\text{dip} = \dfrac{\mu_0}{4\pi} \dfrac{I\left(\int d\boldsymbol{a}'\right) \times \hat{\boldsymbol{r}}}{r^2}
+\]</span></p>
+<p>이다. 이 때</p>
+<p><span id="eq-FLP_2_14_33"><span class="math display">\[
+\boldsymbol{m} := I \int d\boldsymbol{a} = i\boldsymbol{a}
+\tag{9.41}\]</span></span></p>
+<p>를 <strong>자기 쌍극자 모멘트 (magnetic dipole moment)</strong> 라고 하며 자기 쌍극자 모멘트에 의한 벡터포텐셜을 다음과 같이 쓸 수 있다.</p>
+<p><span id="eq-FLP_2_14_34"><span class="math display">\[
+\boldsymbol{A}_\text{dip}(\boldsymbol{r}) = \dfrac{\mu_0}{4\pi} \dfrac{\boldsymbol{m}\times \boldsymbol{r}}{r^3}
+\tag{9.42}\]</span></span></p>
 
 
-</div>
 </section>
 </section>
 

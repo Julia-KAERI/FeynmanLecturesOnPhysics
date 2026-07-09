@@ -30,7 +30,7 @@ book:
       - src/exercises/exercises_2_1.qmd
       # - src/Feynmann/feynmann_trans.qmd
   
- 
+    - src/appendix_math.qmd
     - references.qmd
 
 bibliography: references.bib

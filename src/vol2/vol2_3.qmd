@@ -523,9 +523,22 @@ $$ {#eq-FLP_2_14_9}
 [헬름홀츠 정리](https://julia-kaeri.github.io/MathematicalPhysics/src/vector_calculus/vectorcalculus.html#sec-ED_MT_Helmholtz_theorem) 와 $\nabla \times \bf{B}=\mu_0 \bf{J}$ 로부터 아래의 $\bf{A}$ 가 $\nabla \times \bf{A}=\bf{B}$ 를 만족시킴을 안다.
 
 $$
-\bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|}d^3\bf{r}'
+\bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|}d^3\bf{r}'.
 $$ {#eq-FLP_2_14_19}
 
+여기서 전하 분포 $\rho(\bf{r}')$ 에 대한 정전 포텐셜
+
+$$
+\Phi (\bf{R}) = \dfrac{1}{4\pi\epsilon_0} \int \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}\|'}d^3\bf{r}
+$$
+
+과 비교해보자. $\bf{J}=(J_x,\,J_y,\,J_z)$ 일 때
+
+$$
+A_i = \dfrac{\mu_0}{4\pi} \int \dfrac{J_i(\bf{r}')}{\|\bf{r}-\bf{r}'\|}d^3\bf{r}', \qquad i=x,\,y,\,z
+$$
+
+이므로 $\rho$ 와 $J_i$ 가 유사하다면 우리가 이미 알고 있는 정전 포텐셜을 통해 벡터포텐셜 문제를 풀 수 있다.
 
 </br>
 
@@ -541,13 +554,7 @@ $$ {#eq-FLP_2_14_19}
 ![파인만 물리학 강의 $II$ Fig. 14-3. $z$ 축을 따라 균일한 전류 밀도 $\bf{J}$ 를 가진 긴 원통형 전선](figures/fig_2_14/fig_2_14_3.png){#fig-FLP_2_14_3 width=300}
 
 
-$\bf{J}=J\hat{\bf{z}}$ 이므로 $\bf{A}=A\hat{\bf{z}}$ 이며
-
-$$
-A = \dfrac{\mu_0}{4\pi}\int \dfrac{J}{\|\bf{r}-\bf{r}'\|}\,d^3\bf{r}
-$$
-
-이며 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 @exm-FLP_electric_field_of_inifite_uniform_line_charge 수학적으로 와 같은 문제이다. 즉
+$\bf{J}=J\hat{\bf{z}}$ 이므로 무한히 긴 원통형 전하의 포텐셜을 계산하는 문제, 그리고 무한히 긴 선 전하 문제(@exm-FLP_electric_field_of_inifite_uniform_line_charge) 와 수학적으로 와 같은 문제이다. 즉
 
 $$
 \bf{A}(\bf{r}) = - \dfrac{I\mu_0}{2\pi r}\hat{\bf{z}}
@@ -570,13 +577,82 @@ $$ {#eq-FLP_2_14_24}
 
 ::: {#exm-FLP_vector_potential_for_long_solenoid}
 
+#### 솔레노이드에서의 벡터포텐셜 
 
-@exm-ED_MS_magnetic_field_due_to_solenoid 을 벡터포텐셜을 이용해서 알아보자. 원통좌표계에서
+@exm-ED_MS_magnetic_field_due_to_solenoid 을 생각하자. 솔레노이드의 반지름을 $R$ 이라고 하자. 표면 전류 밀도 $\bf{J} = J\hat{\bf{\theta}}$ 이므로 $\bf{A} = A\hat{\bf{\theta}} = (-A\sin \theta,\, A \cos\theta)$
+
+$xy$ 평면상의 원점을 중심으로 하는 원 경로 $\Gamma$ 와 원 $C$ 에 대해 스토크스 정리를 통해 다음이 성립함을 안다. 
 
 $$
-\bf{J}(\bf{r}') = J\delta(r'-R)\hat{\bf{\theta}}
+\oint_\Gamma \bf{A\cdot} d\bf{l} = \int_C \nabla \times \bf{A\cdot} d\bf{a} = \int_C \bf{B\cdot}d\bf{a}
 $$
+
+그렇다면 $r>R$ 일 때 $2\pi r A_\text{in} = \pi R^2 B_\text{in}$ 이므로 
+
+$$
+\bf{A}_\text{out} = \dfrac{n\mu_0 R^2 I}{2r}\hat{\bf{\theta}}
+$$
+
+이며 $r<R$ 일 때 $2 \pi r A_\text{in} = \pi r^2 B_\text{in}$ 이므로
+
+$$
+\bf{A}_\text{in} = \dfrac{n\mu_0 r}{2}\hat{\bf{\theta}}
+$$
+
+이다.
+
 
 :::
 
+</div>
+
 </br>
+
+### II.14-5 자기쌍극자 {#sec-FLP_2_14_5}
+
+전류 밀도가 주어졌을 때의 벡터포텐셜 은 @eq-FLP_2_14_19 로 주어진다. 전류 밀도 $\bf{J}$ 는 어떤 닫힌 경로 $\Gamma$ 를 따르는 전류를 이룬다고 하자. 그렇다면 
+
+$$
+\bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi}\oint_\Gamma \dfrac{I d\bf{l}'}{\|\bf{r}-\bf{r}'\|}
+$$ {#eq-FLP_vector_potential_for_closed_circuit}
+
+이며 $r>r'$ 일 때 르장드르 다항식을 이용하여 다음과 같이 표현 할 수 있다.
+
+$$
+\begin{aligned}
+\bf{A}(\bf{r}) &= \dfrac{\mu_0 I}{4\pi} \sum_{l=0}^\infty \dfrac{1}{r^{l+1}}\oint_\Gamma \left(r'\right)^l P_l (\cos\theta') d\bf{l}' \\[0.3em]
+&= \dfrac{\mu_0 I}{4\pi} \left[\dfrac{1}{r}\oint_\Gamma d\bf{l}' + \dfrac{1}{r^2}\oint_\Gamma r' \cos\theta' \,d\bf{l}' + \cdots \right].
+\end{aligned}
+$$ {#eq-FLP_expansion_of_vector_potential_for_closed_circuit}
+
+이 때 첫번째 $\oint_\Gamma d\bf{l}'=0$ 이며 두번째 항 이후부터 생각하면 된다. 그리고 두번째 항을 쌍극자 항이라고 한다.
+
+쌍극자 항에 의한 벡터포텐셜 $\bf{A}_\text{dip}$ 는
+
+$$
+\bf{A}_\text{dip} = \dfrac{\mu_0 I}{4\pi r^2} \oint r' \cos \theta' d\bf{l'} = \dfrac{\mu_0 I}{4\pi r^2} \oint (\bf{r}'\bf{\cdot}\hat{\bf{r}})\,d\bf{l}
+$$
+
+이며 @exr-Griffith_1_62 의 ($e$) 에서 $\bf{c}=\hat{\bf{r}}$ 이라고 하면 
+
+$$
+\oint (\bf{r}'\bf{\cdot}\hat{\bf{r}})\,d\bf{l} = - \hat{\bf{r}} \times \int d\bf{a}'
+$$
+
+이며, 따라서
+
+$$
+\bf{A}_\text{dip} = \dfrac{\mu_0}{4\pi} \dfrac{I\left(\int d\bf{a}'\right) \times \hat{\bf{r}}}{r^2}
+$$
+
+이다. 이 때
+
+$$
+\bf{m} := I \int d\bf{a} = i\bf{a}
+$$ {#eq-FLP_2_14_33}
+
+를 **자기 쌍극자 모멘트 (magnetic dipole moment)** 라고 하며 자기 쌍극자 모멘트에 의한 벡터포텐셜을 다음과 같이 쓸 수 있다.
+
+$$
+\bf{A}_\text{dip}(\bf{r}) = \dfrac{\mu_0}{4\pi} \dfrac{\bf{m}\times \bf{r}}{r^3}
+$$ {#eq-FLP_2_14_34}
