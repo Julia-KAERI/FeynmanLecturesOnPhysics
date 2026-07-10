@@ -95,7 +95,7 @@ $$
 \Delta \bf{F} = \bf{I} \times \bf{B} \Delta L
 $$ {#eq-FLP_2_13_11}
 
-이므로 도선에 가해지는 단위길이당 함은 $\bf{I} \times \bf{B}$ 이다.
+이므로 도선에 가해지는 단위길이당 힘은 $\bf{I} \times \bf{B}$ 이다.
 
 즉 전하가 이동함에 따라 전선에 작용하는 자기력은 전체 전류에만 의존하고 각 입자가 운반하는 전하의 양—또는 그 부호—에 의존하지 않는다는 것을 보여준다. 
 
@@ -610,13 +610,13 @@ $$
 
 ### II.14-5 자기쌍극자 {#sec-FLP_2_14_5}
 
-전류 밀도가 주어졌을 때의 벡터포텐셜 은 @eq-FLP_2_14_19 로 주어진다. 전류 밀도 $\bf{J}$ 는 어떤 닫힌 경로 $\Gamma$ 를 따르는 전류를 이룬다고 하자. 그렇다면 
+전류 밀도가 주어졌을 때의 벡터포텐셜 은 @eq-FLP_2_14_19 로 주어진다. 전류 밀도 $\bf{J}$ 는 어떤 닫힌 경로 $\Gamma$ 를 따르는 전류 $I$ 를 이룬다고 하자. 그렇다면 
 
 $$
 \bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi}\oint_\Gamma \dfrac{I d\bf{l}'}{\|\bf{r}-\bf{r}'\|}
-$$ {#eq-FLP_vector_potential_for_closed_circuit}
+$$ {#eq-FLP_2_14_38}
 
-이며 $r>r'$ 일 때 르장드르 다항식을 이용하여 다음과 같이 표현 할 수 있다.
+이며(@sec-FLP_2_14_6 을 보라) $r>r'$ 일 때 르장드르 다항식을 이용하여 다음과 같이 표현 할 수 있다.
 
 $$
 \begin{aligned}
@@ -645,14 +645,227 @@ $$
 \bf{A}_\text{dip} = \dfrac{\mu_0}{4\pi} \dfrac{I\left(\int d\bf{a}'\right) \times \hat{\bf{r}}}{r^2}
 $$
 
-이다. 이 때
+이다. 
 
+::: {.callout-note icon="false"}
+
+#### **자기 쌍극자 모멘트**
+
+::: {#def-FLP_magnetic_dipole_moment}
+
+전류 $I$ 가 닫힌 경로 $\Gamma$ 를 따라 흐를 때 이 경로에 의해 결정되는 표면 $S$ 에 대해
 $$
-\bf{m} := I \int d\bf{a} = i\bf{a}
+\bf{m} := I \int_S d\bf{a} = I\bf{a}
 $$ {#eq-FLP_2_14_33}
 
-를 **자기 쌍극자 모멘트 (magnetic dipole moment)** 라고 하며 자기 쌍극자 모멘트에 의한 벡터포텐셜을 다음과 같이 쓸 수 있다.
+를 **자기 쌍극자 모멘트 (magnetic dipole moment)** 라고 한다.
+
+:::
+
+:::
+
+
+자기 쌍극자 모멘트에 의한 벡터포텐셜을 다음과 같이 쓸 수 있다.
 
 $$
-\bf{A}_\text{dip}(\bf{r}) = \dfrac{\mu_0}{4\pi} \dfrac{\bf{m}\times \bf{r}}{r^3}
+\bf{A}_\text{dip}(\bf{r}) = \dfrac{\mu_0}{4\pi} \dfrac{\bf{m}\times \bf{r}}{r^3}.
 $$ {#eq-FLP_2_14_34}
+
+이를 이용하여 자기 쌍극자 모멘트에 의한 자기장을 구할 수 있다.(@exr-Griffith_electrodynamics_5_34)
+
+$$
+\bf{B}_\text{dip} (\bf{r}) = \dfrac{\mu_0}{4\pi} \left[\dfrac{3(\bf{m\cdot r})\bf{r}}{r^5}- \dfrac{\bf{m}}{r^3} \right] 
+$$ {#eq-FLP_magnetic_field_from_magnetic_dipole_moment}
+
+</br>
+
+### II.14-6 회로의 벡터 표텐셜 {#sec-FLP_2_14_6}
+
+![파인만 물리학 강의 $II$ Fig. 14-6.미세 와이어의 경우 $\bf{J}dV는 Id\bf{l}$ 과 동일하다.](figures/fig_2_14/fig_2_14_6/fig_2_14_6.png){#fig-FLP_2_14_6 width=300}
+
+전류가 흐르는 단힌 회로를 생각하자. 도선의 단면적이 $S$ 일 때 부피 성분 $dV$ 를 위의 그림과 같이 $Sd\bf{l}$ 로 생각 할 수 있으며 이 때
+
+$$
+\bf{J}\,dV = JSd\bf{l} = Id\bf{l} 
+$$
+
+이다. 이를 이용하면 @eq-FLP_2_14_19 로부터 @eq-FLP_2_14_38 을 얻는다.
+
+</br>
+
+### II.14-7 비오-사바르의 법칙 {#sec-FLP_2_14_7}
+
+전류가 흐르는 닫힌 회로에 의한 자기장을 구해보자.
+$$
+\begin{aligned}
+\bf{B}(\bf{r}) &= \nabla \times \bf{A} = \dfrac{\mu_0}{4\pi}  \left[\nabla \times \int \dfrac{\bf{J}(\bf{r}')\, d^3\bf{r}'}{\|\bf{r}-\bf{r}'\|}\right] \\[0.3em]
+&=\dfrac{\mu_0 I}{4\pi}  \left[\nabla \times \oint \dfrac{d\bf{l}'}{\|\bf{r}-\bf{r}'\|}\right] \\[0.3em]
+&= \dfrac{\mu_0I}{4\pi} \sum_{i,j,k} \varepsilon_{ijk}\hat{\bf{e}}_i \left[\oint \nabla \times  \dfrac{d\bf{l}'}{\|\bf{r}-\bf{r}'\|}\right] \\[0.3em]
+&= \dfrac{\mu_0I}{4\pi} \sum_{i,j,k} \varepsilon_{ijk}\hat{\bf{e}}_i \left[\oint \dfrac{\partial}{\partial x_j} \left(\dfrac{dl'_k}{\|\bf{r}-\bf{r}'\|}\right)\right] \\[0.3em]
+&= -\dfrac{\mu_0I}{4\pi} \sum_{i,j,k} \varepsilon_{ijk}\hat{\bf{e}}_i \left[\oint \left(\dfrac{(x_j-x'_j) dl'_k}{\|\bf{r}-\bf{r}'\|^3}\right)\right] \\[0.3em]
+&= -\dfrac{\mu_0I}{4\pi}  \left[\oint \dfrac{(\bf{r}-\bf{r}')\times d\bf{l}'}{\|\bf{r}-\bf{r}'\|^3}\right] \\[0.3em]
+\end{aligned}
+$$
+
+즉
+
+$$
+\bf{B}(\bf{r}) = -\dfrac{\mu_0I}{4\pi}  \left[\oint \dfrac{(\bf{r}-\bf{r}')\times d\bf{l}'}{\|\bf{r}-\bf{r}'\|^3}\right] 
+$$ {#eq-FLP_2_14_43}
+
+이며 이를 **비오-사바르의 법칙 (Biot-Savart's law)** 라고 한다.
+
+</br>
+
+## II.15 벡터 포텐셜 {#sec-FLP_2_15}
+
+### II.15-1 전류가 흐르는 고리에 가해지는 힘 : 쌍극자 에너지
+
+평면상에서 전류 $I$ 가 흐르는 면적 $A$ 이고 전류에 의해 정해지는 $A$ 의 방향 단위 벡터를 $\hat{\bf{n}}$ 이라고 할 때 이 전류에 의한 자기 쌍극자 $\bf{m}=IA\hat{\bf{n}}$ 이다. 이 자기 쌍극자에 의해 발생한 힘은 다른 전류에 힘을 가할 수 있다.
+
+
+![파인만 물리학 강의 $II$ Fig. 15-1. 전류 $I$ 가 흐르는 고리가 $z$ 방향의 균일한 자기장 $\bf{B}$ 에 위치한다.루프의 토크 $\bf{\tau}=\bf{m}\times \bf{B}$ B이며, 자기 모멘트 $m=Iab$ 이다.](figures/fig_2_15/fig_2_15_1/fig_2_15_1.png){#fig-FLP_2_15_1 width=300}
+
+
+위의 그림과 같이 $a\times b$ 의 직사각형 고리가 $xy$ 평면과 $\theta$ 의 각도로 기울어져 있고 길이 $a$ 의 모서리의 중심이 $x$ 축상에 고정되어 있으며 $x$ 축을 중심으로 회전 할 수 있다고 하자. 그리고 이 고리에 전류 $I$ 가 흐르며 $\bf{B}=B\hat{\bf{z}}$ 의 균일한 자기장이 가해진다고 하자. @sec-FLP_2_13_3 에서 보았듯이 자기장 속에서 전류가 흐를 때 단위 길이당 전선이 받는 힘은 $\bf{I}\times \bf{B}$ 이므로
+
+$$
+F_1 = F_2 = IBb
+$$
+
+이며 이 고리가 받는 토크 $\bf{\tau}$ 의 크기는
+
+$$
+\tau = IabB \sin \theta = mB\sin\theta
+$$
+
+이며 
+
+$$
+\bf{\tau} = \bf{m}\times \bf{B}
+$$ {#eq-FLP_2_15_2}
+
+로 쓸 수 있다. 위 식은 특수한 경우를 가정하고 구했지만 실제로 일반적인 작은 루프에서 모두 성립한다는 것을 보일 것이다. 전기장에서의 전기쌍극자가 받는 토크 역시 $\bf{\tau} = \bf{p}\times \bf{E}$ 로 같은 형태이다. 
+
+이제 전류가 흐르는 고리에 가해지는 역학적 에너지를 구해보자. 가상변위원리에 의해 
+
+$$
+dU = \tau d\theta
+$$
+
+임을 안다. $\tau = mB \sin \theta$ 이므로
+
+$$
+U = - mB \cos \theta + \text{constant}
+$$ {#eq-FLP_2_15_3}
+
+이다. 음의 부호가 붙는 것은 토크에 가 $\bf{m}$ 과 $\bf{B}$ 를 같은 방향으로 정렬시키도록 작용하기 때문이다. **뒤에 논의할 이유로 이 에너지는 전류고리가 가진 총 에너지가 아니다.** 이를 기억하게 하기 위해 $U_\text{mech}$ 라는 별도의 이름을 사용하도록 한다. 이로부터
+
+$$
+U_\text{mech} = - \bf{m\cdot B}
+$$ {#eq-FLP_2_15_4}
+
+이다. 전기장의 쌍극자가 갖는 에너지 
+
+$$
+U=-\bf{p\cdot E}
+$$ {#eq-FLP_2_15_5} 
+이다.
+
+@eq-FLP_2_15_5 의 정전기 에너지 $U$ 은 진정한 에너지이지만, @eq-FLP_2_15_4 의 $U_\text{mech}$ 는 실제 에너지가 아니다. $U_\text{mech}$ 는 가상일 원리에 따라 루프 내 전류 혹은 최소한 $\bf{m}$ 이 일정하게 유지된다는 가정하에, 힘을 계산하는 데 사용할 수 있다.
+
+직사각형 고리에 대해 $U_\text{mech}$ 는 이 고리를 자기장 밖에서 자기장 안으로 가져오는 역학적 일에도 해당한다는 것을 보여줄 수 있다. 고리에 작용하는 전체 힘은 균일한 자기장에서만 0이며, 자기장이 균일하지 않다면 에서는 전류 고리에 대해 힘이 작용한다. 따라서 전류고리가 자기장이 없는 영역에서 자기장 영역으로 들어올 때 일이 수행되었다. 계산을 간단하게 하기 위해 전류에 의한 자기쌍극자의 방향이 $\bf{B}$ 와 동일하다고 가정하자. 
+
+
+![파인만 물리학 강의 $II$ Fig. 15-2. 고리는 $\bf{B}$ 를 통과하여 $y$ 방향으로 운반된다.](figures/fig_2_15/fig_2_15_2/fig_2_15_2.png){#fig-FLP_2_15_2 width=350}
+
+
+위의 @fig-FLP_2_15_2 와 같이 $y_1$ dptj $y_2$ 로 이동할 때 해줘야 하는 일 $W$ 를 계산해 보면
+
+$$
+W = - BIab
+$$
+
+이다. 이동하는 방향으로 힘을 받으므로 $W<0$ 이며, 따라서
+
+$$
+U_\text{mech} = -BIab = -\bf{m\cdot B}
+$$ {#eq-FLP_2_15_9}
+
+이다. 앞서 말했듯이 $U_\text{mech}$ 는 시스템의 모든 에너지를 포함한 에너지가 아닌 일종의 가짜 에너지 이지만 가해지는 힘을 계산할 때 사용 할 수 있다.
+
+</br>
+
+### II.15–2 역학적 에너지와 전기 에너지 {#sec-FLP_2_15_2}
+
+이제 앞서 논의된 $U_\text{mech}$ 가 정상 전류에 대한 올바른 에너지가 아니며, 전 세계 전체 에너지를 추적하지 못하는 이유를 보여주고자 한다. 그러나 $U_\text{mech}$ 는 가상 일 원리에서 힘을 계산하는 데 에너지와 같이 활용될 수 있다고 강조했는데 이는 고리 내 전류(및 기타 모든 전류)가 변하지 않는 경우로 제한된다. 이 모든 것이 왜 이렇게 되는지 알아보자.
+
+@fig-FLP_2_15_2 의 고리가 $+y$ 방향으로 움직이고 있다고 가정하고, $\bf{B}=B\hat{\bf{z}}$ 라고 하자. 2번 방향의 전선에 있는 전도 전자는 $+y$ 방향으로의 고리의 이동으로 인해 $-x$ 방향의 로런츠 힘을 받는다. 또한 전류로 인해 같은 방향의 속도가 있으므로 각 전자에 단위시간당 $F_yv_y$ 만큼의 일이 가해진다. 이 일을 **전기적 일**이라고 하자. 이제 고리가 균일한 자기장 $\bf{B}$ 에서 움직이고 있다면 1번 방향의 전선에서 정확히 반대 방향의 일이 수행되기 때문에 그 합은 $0$ 이 된다. 그러나 자기장이 균일하지 않다면 일의 합은 $0$ 이 아닐 수 있다. 일반적으로 이 전기적 일은 전류를 변화시키려 하지만, 전류가 일정하게 유지된다면 배터리 또는 전류를 일정하게 유지하는 다른 원천에 의해 에너지가 흡수되거나 전달되어야 한다. 이 에너지는 우리가 @eq-FLP_2_15_9 에서 $U_\text{mech}$ 를 계산할 때 포함시키지 않았다. 우리의 계산은 전선 본체에 작용하는 역학적 힘만을 포함했기 때문이다.
+
+
+하지만 전자에 작용하는 로런츠 힘은 전선이 얼마나 빠르게 움직이는지에 따라 달라지므로 아마도 전선이 충분히 천천히 움직이면 이 전기 에너지는 무시될 수 있지 않을까?. 전기 에너지가 전달되는 속도가 전선이 움직이는 속도에 비례한다는 것은 사실이지만, 전달되는 총 에너지는 이 속도가 흐르는 시간에도 비례한다. 따라서 전체 전기 에너지는 속도와 시간에 비례하며, 이는 이동한 거리와 같다. 주어진 거리를 자기장 내에서 이동한 경우, 동일한 양의 전기적 일이 수행된다.
+
+전류 $I$ 가 흐르는, 자신과 자기장 $\bf{B}$ 모두에 수직인 방향으로 움직이는 단위 길이의 전선 조각이 속도 $v_\text{wire}$ 로 움직인다고 하자. 전류 때문에 전자는 전선을 따라 표류 속도를 갖게 된다. 표류 방향으로 각 전자에 작용하는 자기력의 성분은 $q_ev_\text{wire}B$ 이다. 따라서 전기적 일의 일률 $Fv_\text{drift}=(q_ev_\text{wire}B)v_\text{drift}$ 이며 전선의 단위 길이에 $N$ 개의 전도 전자가 있을 경우, 전기적 일의 일률은
+
+$$
+\dfrac{dU_\text{elect}}{dt} = N q_e v_\text{wire} B v_\text{drift}
+$$
+
+이다. 여기서 $Nq_ev_\text{drift}=I$, 즉, 전선의 전류이므로 다음이 성립한다.
+
+$$
+\dfrac{dU_\text{elect}}{dt}=Iv_\text{wire}B.
+$$
+
+전류가 일정하게 유지되므로 전도 전자에 가해지는 힘이 전자를 가속시키지 않으며, 전기 에너지는 전자에 들어가는 것이 아니라 전류를 일정하게 유지하는 원천으로 들어간다. 그러나 전선에에 작용하는 힘이 $IB$ 이므로, $IBv_\text{wire}$ 는 전선에 수행되는 기계적 일의 일률이기도 하며, $dU_\text{mech}/dt=IBv_\text{wire}$ 이다. 우리는 전선에 수행된 기계적 일이 전류원에 수행된 전기적 일과 동일하다는 결론을 얻으며, 따라서 고리의 에너지는 일정하다!
+
+이는 우연이 아니라 우리가 이미 알고 있는 법칙의 결과이다. 전선의 각 전하에 작용하는 총 힘은
+
+$$
+\bf{F}=q(\bf{E} + \bf{v} \times \bf{B})
+$$
+
+이며, 따라서 일률은
+
+$$
+\bf{v \cdot F} = q\left[ \bf{v \cdot E} + \bf{v \cdot} (\bf{v}\times \bf{B}) \right]
+$$ {#eq-FLOP_2_15_12}
+
+인데 두번째 항은 항상 $0$ 이므로 $\bf{E}= \bf{0}$ 이면 일률은 항상 $0$ 이 된다. 우리는 나중에 변화하는 자기장이 전기장을 생성한다는 것을 알게 될 것이며, 따라서 우리의 추론은 일정한 자기장 안에서 움직이는 전선에만 적용됩니다.
+
+</br>
+
+## 연습문제 {.unnumbered}
+
+<div class="border" style="background-color:#F0FFFF  ;padding:5px;">
+
+::: {#exr-Griffith_electrodynamics_5_34}
+
+#### 자기 쌍극자에 의한 자기장
+
+@eq-FLP_2_14_34 로부터 자기 쌍극자 모멘트에 의한 자기장 $\bf{B}_\text{dip}(\bf{r})$ 이 다음과 같음을 보여라.
+
+$$
+\bf{B}_\text{dip} (\bf{r}) = \dfrac{\mu_0}{4\pi} \left[\dfrac{3(\bf{m\cdot r})\bf{r}}{r^5}- \dfrac{\bf{m}}{r^3} \right] 
+$$
+
+:::
+
+</div>
+
+::: {.solution}
+
+@eq-FLP_2_14_34 로 부터
+$$
+\begin{aligned}
+\bf{B}_\text{dip}(\bf{r}) &= \nabla \times \bf{A}_\text{dip}(\bf{r}) = \dfrac{\mu_0}{4\pi} \nabla \times \left(\dfrac{\bf{m} \times \bf{r}}{r^3}\right) \\[0.3em]
+&=\dfrac{\mu_0}{4\pi} \sum_{i,j,k} \hat{\bf{e}}_i \varepsilon_{ijk}\partial_j\left(\varepsilon_{klm} m_l x_m r^{-3}\right) \\[0.3em]
+&= \dfrac{\mu_0}{4\pi} \sum_{i,j,k} \hat{\bf{e}}_i \left[\delta_{il}\delta_{jm}- \delta_{im}\delta_{jl})m_l\partial_j (x_m r^{-3}\right] \\[0.3em]
+&= \dfrac{\mu_0}{4\pi} \sum_{i,j,k} \hat{\bf{e}}_i \left[m_i \partial_j(x_j r^{-3})- m_j \partial_j (x_i r^{-3})\right] \\[0.3em]
+&=\dfrac{\mu_0}{4\pi} \sum_{i,j,k} \hat{\bf{e}}_i \left[m_ir^{-3} - 3 m_ix_j^2r^{-5}-m_j\delta_{ij}r^{-3}+3m_jx_ix_jr^{-5}\right] \\[0.3em]
+&= \dfrac{\mu_0}{4\pi} \left[\underbrace{\dfrac{3\bf{m}}{r^3} - \dfrac{3\bf{m}}{r^3}}_{=0} - \dfrac{\bf{m}}{r^3} + \dfrac{3(\bf{m\cdot r})\bf{r}}{r^5}\right] \\[0.3em]
+&=\dfrac{\mu_0}{4\pi} \left[\dfrac{3(\bf{m\cdot r})\bf{r}}{r^5}- \dfrac{\bf{m}}{r^3} \right] 
+\end{aligned}
+$$
+
+:::
