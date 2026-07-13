@@ -23,6 +23,7 @@ book:
       - src/vol2/vol2_1.qmd
       - src/vol2/vol2_2.qmd
       - src/vol2/vol2_3.qmd
+      - src/vol2/vol2_4.qmd
 
     - part: src/exercises/index.qmd
       chapters:

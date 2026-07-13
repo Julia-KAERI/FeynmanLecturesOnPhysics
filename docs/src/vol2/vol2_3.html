@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../src/exercises/index.html" rel="next">
+<link href="../../src/vol2/vol2_4.html" rel="next">
 <link href="../../src/vol2/vol2_2.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -224,6 +224,12 @@ window.Quarto = {
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><span class="math inline">\(II\)</span>-3 : 정자기</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/vol2/vol2_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><span class="math inline">\(II\)</span>-4 : 전기동역학</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -238,13 +244,13 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/exercises/exercises_1_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">연습문제 1~</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">연습문제 1~</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/exercises/exercises_2_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">연습문제 2~</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">연습문제 2~</span></span></a>
   </div>
 </li>
       </ul>
@@ -252,7 +258,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/appendix_math.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">첨부-수학</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">첨부-수학</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -299,6 +305,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_15_13" id="toc-sec-FLP_2_15_13" class="nav-link" data-scroll-target="#sec-FLP_2_15_13">II.15-3 정상 전류의 에너지</a></li>
   <li><a href="#sec-FLP_2_15_4" id="toc-sec-FLP_2_15_4" class="nav-link" data-scroll-target="#sec-FLP_2_15_4">II.15-4 <span class="math inline">\(\boldsymbol{B}\)</span> 와 <span class="math inline">\(\boldsymbol{A}\)</span></a></li>
   <li><a href="#eq-FLP_2_15_5" id="toc-eq-FLP_2_15_5" class="nav-link" data-scroll-target="#eq-FLP_2_15_5">II.15–5 벡터 포텐셜과 양자 역학</a></li>
+  <li><a href="#sec-FLP_2_15_6" id="toc-sec-FLP_2_15_6" class="nav-link" data-scroll-target="#sec-FLP_2_15_6">II.15–6 정역학과 동역학의 차이</a></li>
   </ul></li>
   <li><a href="#연습문제" id="toc-연습문제" class="nav-link" data-scroll-target="#연습문제">연습문제</a></li>
   </ul>
@@ -1068,24 +1075,24 @@ U=\dfrac{1}{2}\int_V \rho \Phi d^3\boldsymbol{r}.
 <blockquote class="blockquote">
 <p>벡터포텐셜은 정전기학에서 스칼라 퍼텐셜이 유용한 것처럼 계산에 유용한 장치에 불과한가, 아니면 벡터 퍼텐셜이 <strong>실제 장</strong> 인가? 자기장은 움직이는 입자에 작용하는 힘을 담당하기 때문에 <strong>실제 장</strong>이지 않나?</p>
 </blockquote>
-<p>먼저 우리는 <strong>실제 장</strong> 이란 것이 그다지 의미가 없다고 말해야 합니다. 우선 자기장은 그다지 실제적이지 않다고 느낄 수 있다. 왜냐하면 장이라는 개념이 대체적으로 추상이기 때문이다. 사람이 오감으로 자기장을 느낄 수 없다. 또한 적절한 움직이는 기준틀에서 자기장이 <span class="math inline">\(0\)</span> 이 되게 할 수 있다는 것을 안다. 즉 기준틀에 따라 값이 달라진다.</p>
+<p>먼저 <strong>실제 장</strong> 이란 것이 그다지 의미가 없다는 것을 고백해야 한다. 우선 자기장은 그다지 실제적이지 않다고 느낄 수 있다. 왜냐하면 장이라는 개념이 대체적으로 추상이기 때문이다. 사람이 오감으로 자기장을 느낄 수 없다. 또한 적절한 움직이는 기준틀에서 자기장이 <span class="math inline">\(0\)</span> 이 되게 할 수 있다는 것을 안다. 즉 기준틀에 따라 값이 달라진다.</p>
 <p>여기서 <strong>실제 장</strong>이 의미하는 바는 다음과 같다: <strong>실제 장</strong> 은 떨어진 위치에서의 무언가의 변화라는 개념을 회피하기 위해 사용하는 수학 함수이다. 위치 <span class="math inline">\(P\)</span> 에 전하를 띤 입자는 <span class="math inline">\(P\)</span> 로부터 어느 정도 떨어진 다른 전하에 의해 영향을 받는다. 이 상호작용을 설명하는 한 가지 방법은 다른 전하들이 <span class="math inline">\(P\)</span> 에서 환경에 어떤 <strong>조건</strong>(그것이 무엇이든)을 만든다고 생각하는 것이다. 전기장과 자기장을 통해 그 조건을 알면, 그 조건이 어떻게 일어났는지에 대해 모르더라도 입자의 행동을 완전히 결정할 수 있다.</p>
-<p>다시 말해, 다른 전하들이 어떤 식으로든 변화하더라도 <span class="math inline">\(P\)</span> 에서 전기장과 자기장에 의해 설명되는 <span class="math inline">\(P\)</span> 의 조건이 동일하게 유지된다면, 전하의 운동도 동일할 것이다. <strong>실제 장</strong> 이란, 특정 지점에서 일어나는 일이 그 지점의 숫자에만 의존하도록 지정하는 숫자 집합이다. 우리는 다른 곳에서 무슨 일이 일어나고 있는지 더 이상 알 필요가 없습니다. 이러한 의미에서 우리는 벡터 퍼텐셜이 <strong>실제 장</strong> 인지 여부를 생각할 것이다.</p>
+<p>다시 말해, 다른 전하들이 어떤 식으로든 변화하더라도 <span class="math inline">\(P\)</span> 에서 전기장과 자기장에 의해 설명되는 <span class="math inline">\(P\)</span> 의 조건이 동일하게 유지된다면, 전하의 운동도 동일할 것이다. <strong>실제 장</strong> 이란, 특정 지점에서 일어나는 일이 그 지점의 숫자에만 의존하도록 지정하는 숫자 집합이다. 우리는 다른 곳에서 무슨 일이 일어나고 있는지 더 이상 알 필요가 없다. 이러한 의미에서 우리는 벡터 퍼텐셜이 <strong>실제 장</strong> 인지 여부를 생각할 것이다.</p>
 <p>벡터 퍼텐셜이 고유하지 않다는 사실에 대해 의아해 할 수도 있다. 입자에 작용하는 힘을 변경시키지 않는 어떤 스칼라 함수의 그래디언트를 더하더라도 동일한 물리에 대한 벡터포텐셜이다. 하지만 그것은 우리가 말하고 있는 <strong>실제</strong>에 관한 질문과는 전혀 관련이 없다. 예를 들어, 자기장은 어느 정도 상대론적인 변화에 의해 변경된다.(<span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{A}\)</span> 도 그렇다.). 하지만 우리는 이렇게 장을 바꾸더라도 어떤 일이 일어날지 걱정하지 않는다. 이것은 실제로 큰 차이를 만들지는 않으며, 이는 벡터 퍼텐셜이 자기 효과를 설명하기 위한 올바른 <strong>실제</strong> 장인지, 혹은 단지 유용한 수학적 도구에 불과한지와는 무관하다.</p>
 <p>우리는 또한 벡터 퍼텐셜 <span class="math inline">\(\boldsymbol{A}\)</span> 의 유용성에 대해 몇 가지 언급을 해야 한다. 벡터포텐셜은 알려진 전류에 의한 자기장을 계산하는 절차에 사용될 수 있다. 정전기학에서 전하 분포 <span class="math inline">\(\rho\)</span> 로부터 <span class="math inline">\(\Phi\)</span> 를 구한후 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span> 를 통해 <span class="math inline">\(\boldsymbol{E}\)</span> 를 구할 수 있었다. 이렇게 구하는 것이 세번의 적분으로 <span class="math inline">\(\boldsymbol{E}\)</span> 를 구하는 것보다 일반적으로 편리하다.</p>
 <p>정자기학에서는 이점이 덜 분명하다. <span class="math inline">\(\boldsymbol{A}\)</span> 에 대한 적분은 이미 벡터 적분이며(<a href="#eq-FLP_2_14_19" class="quarto-xref">식&nbsp;<span>9.37</span></a>), 따라서 세번의 적분이 필요하다. <span class="math inline">\(\nabla \times \boldsymbol{A}\)</span> 로 <span class="math inline">\(\boldsymbol{B}\)</span> 를 얻기 위해 여섯번의 편미분을 한 후 쌍으로 합해야 한다. 대부분의 문제에서 이 과정이 <span class="math inline">\(\boldsymbol{B}\)</span> 를 직접 계산하는 것보다 실제로 더 쉬운지는 쉽게 확인되지 않는다.</p>
-<p>또한 벡터 퍼텐셜을 사용하는 것은 다음과 같은 이유로 간단한 문제에서 종종 더 어렵다. 예를 들어, 우리는 한 지점의 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 에만 관심이 있으며, 그 문제에 좋은 대칭성이 있다고 하자. 예를 들어 전류 고리의 축에 있는 한 지점에 있는 자기장을 구한다고 하자. 대칭성 때문에 식의 적분을 통해 <span class="math inline">\(\boldsymbol{B}\)</span> 를 쉽게 얻을 수 있다. 하지만 먼저 <span class="math inline">\(\boldsymbol{A}\)</span> 를 구한다면 관심있는 위치 주변의 모든 점에서 <span class="math inline">\(\boldsymbol{A}\)</span> 가 무엇인지 알아야 한다. 그리고 대부분의 이러한 위치들은 대칭축에서 벗어나 있기 때문에 <span class="math inline">\(\boldsymbol{A}\)</span> 의 적분이 복잡해진다. 예를 들어, 고리 문제에서는 타원 적분을 사용해야 한다. 이런 문제에서는 <span class="math inline">\(\boldsymbol{A}\)</span> 가 그다지 유용하지 않다. 많은 복잡한 문제에서 <span class="math inline">\(\boldsymbol{A}\)</span> 로 작업하는 것이 더 쉽긴 하지만, 이러한 기술적 편리함이 추가적인 벡터장을 배우게 하는 것을 정당화한다고 주장하기는 어려울 것이다.</p>
+<p>또한 벡터 퍼텐셜을 사용하는 것이 간단한 문제에서 어려운 경우가 종종 발생한다. 예를 들어, 우리는 한 지점의 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 에만 관심이 있으며, 그 문제에 좋은 대칭성이 있다고 하자. 예를 들어 전류 고리의 축에 있는 한 지점에 있는 자기장을 구한다고 하자. 대칭성 때문에 식의 적분을 통해 <span class="math inline">\(\boldsymbol{B}\)</span> 를 쉽게 얻을 수 있다. 하지만 먼저 <span class="math inline">\(\boldsymbol{A}\)</span> 를 구한다면 관심있는 위치 주변의 모든 점에서 <span class="math inline">\(\boldsymbol{A}\)</span> 가 무엇인지 알아야 한다. 그리고 대부분의 이러한 위치들은 대칭축에서 벗어나 있기 때문에 <span class="math inline">\(\boldsymbol{A}\)</span> 의 적분이 복잡해진다. 고리 문제의 경우에는 타원 적분을 사용해야 한다. 이런 문제에서는 <span class="math inline">\(\boldsymbol{A}\)</span> 가 그다지 유용하지 않다. 많은 복잡한 문제에서 <span class="math inline">\(\boldsymbol{A}\)</span> 로 작업하는 것이 더 쉽긴 하지만, 이러한 기술적 편리함이 추가적인 벡터장을 배우게 하는 것을 정당화한다고 주장하기는 어려울 것이다.</p>
 <p><span class="math inline">\(\boldsymbol{A}\)</span> 는 물리적으로 중요한 의미를 가지고 있기 때문에 도입했다. 지난 섹션에서 보았듯이, 그것은 전류의 에너지와 관련될 뿐만 아니라, 위에서 설명한 의미에서 <strong>실제</strong> 물리적 장이기도 하다. 고전 역학에서는 입자에 작용하는 힘을 다음과 같이 쓸 수 있다는 것이 명확하다.</p>
 <p><span id="eq-FLP_2_15_26"><span class="math display">\[
 \boldsymbol{F}=q(\boldsymbol{E}+\boldsymbol{v}\times \boldsymbol{B}).
 \tag{9.59}\]</span></span></p>
-<p>힘을 통해 운동에 관한 모든 것을 결정 할 수 있다. <span class="math inline">\(\boldsymbol{A}\)</span> 가 0이 아니더라도 <span class="math inline">\(\boldsymbol{B}=0\)</span> 이라면, ,예를 들어 솔레노이드 외부, <span class="math inline">\(\boldsymbol{A}\)</span> 의 뚜렷한 효과는 존재하지 않는다. 따라서 오랫동안 <span class="math inline">\(\boldsymbol{A}\)</span> 는 <strong>실제 장</strong> 이 아니라고 믿어졌다. 하지만, 양자역학과 관련된 현상이 존재한다는 것이 졌는데, 이는 우리가 정의한 의미에서 <span class="math inline">\(\boldsymbol{A}\)</span> 가 실제로 <strong>실제 장</strong> 임을 보여준다. 다음 절에서 이것에 대해 알아본다.</p>
+<p>힘을 통해 운동에 관한 모든 것을 결정 할 수 있다. <span class="math inline">\(\boldsymbol{A}\)</span> 가 <span class="math inline">\(0\)</span> 이 아니더라도 <span class="math inline">\(\boldsymbol{B}=0\)</span> 이라면(예를 들어 솔레노이드 외부), <span class="math inline">\(\boldsymbol{A}\)</span> 의 뚜렷한 효과는 존재하지 않는다. 따라서 오랫동안 <span class="math inline">\(\boldsymbol{A}\)</span> 는 <strong>실제 장</strong> 이 아니라고 믿어졌다. 하지만, 양자역학과 관련된 현상이 존재한다는 것이 밝혀졌는데, 이는 우리가 정의한 의미에서 <span class="math inline">\(\boldsymbol{A}\)</span> 가 실제로 <strong>실제 장</strong> 임을 보여준다. 다음 절에서 이것에 대해 알아본다.</p>
 <p><br></p>
 </section>
 </section>
 <section id="eq-FLP_2_15_5" class="level3">
 <h3 class="anchored" data-anchor-id="eq-FLP_2_15_5">II.15–5 벡터 포텐셜과 양자 역학</h3>
-<p>고전학에서 양자역학으로 넘어갈 때, 어떤 개념이 중요한지에 많은 변화가 있었다. 우리는 이미 그 중 일부에 대해 논의했다. 특히 힘 대신에 에너지와 운동량 개념이 가장 중요한 역할을 하게 됩었다. 입자의 운동 대신 시공간에 따라 변하는 확률진폭을 다룬다는 것을 기억하자. 이러한 확률진폭은 운동량와 관련된 파장과 에너지와 관련된 진동수가 관련된다. 따라서 파동 함수의 위상을 결정하는 운동량과 에너지는 양자역학에서 중요한 양이다. 힘 대신에, 우리는 상호작용이 파동의 파장을 변화시키는 방식을 다룬다. 힘에 대한 개념은 그것이 존재하더라도 상당히 부차적인 것이 된다. 예를 들어 사람들이 핵력에 대해 이야기할 때, 그들이 보통 분석하고 작업하는 것은 두 핵자 사이의 상호작용 에너지이며, 그들 사이의 힘이 아니다. 아무도 힘을 찾기 위해 에너지를 미분하지 않는다. 이 절에서는 벡터와 스칼라 포텐셜이 양자역학에 어떻게 들어가는지 설명한다. 실제로 운동량과 에너지가 양자역학에서 중심적인 역할을 하기 때문에 <span class="math inline">\(\boldsymbol{A}\)</span>와 <span class="math inline">\(\Phi\)</span> 는 전자기 효과를 양자 기술에 도입하는 가장 직접적인 방법을 제공한다.</p>
+<p>고전학에서 양자역학으로 넘어갈 때, 어떤 개념이 중요한지에 많은 변화가 있었다. 예를 들어 힘 대신에 에너지와 운동량 개념이 가장 중요한 역할을 하게 되었다. 입자의 운동 대신 시공간에 따라 변하는 확률진폭을 다룬다는 것을 기억하자. 이러한 확률진폭에는 운동량와 관련된 파장과 에너지와 관련된 진동수가 포함된다. 따라서 파동 함수의 위상을 결정하는 운동량과 에너지는 양자역학에서 중요한 양이다. 힘 대신에 상호작용이 파동의 파장을 변화시키는 방식을 다룬다. 힘에 대한 개념은 그것이 존재하더라도 상당히 부차적인 것이 된다. 예를 들어 사람들이 핵력에 대해 이야기할 때, 그들이 보통 분석하고 작업하는 것은 두 핵자 사이의 상호작용 에너지이며, 그들 사이의 힘이 아니다. 아무도 힘을 찾기 위해 에너지를 미분하지 않는다. 이 절에서는 벡터와 스칼라 포텐셜이 양자역학에 어떻게 들어가는지 설명한다. 실제로 운동량과 에너지가 양자역학에서 중심적인 역할을 하기 때문에 <span class="math inline">\(\boldsymbol{A}\)</span> 와 <span class="math inline">\(\Phi\)</span> 는 전자기 효과를 양자 기술에 도입하는 가장 직접적인 방법을 제공한다.</p>
 <div id="fig-FLP_2_15_5" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_2_15_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1132,12 +1139,149 @@ U=\dfrac{1}{2}\int_V \rho \Phi d^3\boldsymbol{r}.
 \tag{9.67}\]</span></span></p>
 <p>이다. 이를 통해 전자 운동이 자기장에 의해 어떻게 변하는지 일 수 있으며 백스톱에서 강도의 최대값과 최소값의 새로운 위치를 찾을 수 있다.</p>
 <p>더 진행하기 전에 중요한 사실을 짚고 넘어가자. 우리는 벡터 퍼텐셜 함수의 임의성을 알 고 있다. 스칼라 함수 <span class="math inline">\(\psi\)</span> 에 대해 <span class="math inline">\(\boldsymbol{A}\)</span> 와 <span class="math inline">\(\boldsymbol{A}'=\boldsymbol{A}+\nabla \psi\)</span> 는 동일한 자기장을 나타내며 따라서 동일한 고전적인 힘 <span class="math inline">\(q\boldsymbol{v}\times \boldsymbol{B}\)</span> 를 나타낸다. 그러나 우리는 닫힌 경로 <span class="math inline">\(\Gamma\)</span> 에 대해 <span class="math inline">\(\oint \nabla \psi\boldsymbol{\cdot}d\boldsymbol{l} = 0\)</span> 임을 안다. 즉 <span class="math inline">\(\boldsymbol{A}\)</span> 와 <span class="math inline">\(\boldsymbol{A}'\)</span> 는 동일한 위상 차이와 동일한 양자역학 간섭 효과를 나타내다. 고전 이론과 양자 이론 모두에서 중요한 것은 <span class="math inline">\(\nabla \times \boldsymbol{A}\)</span> 뿐이다.</p>
-<p><a href="#sec-FLP_2_14_1" class="quarto-xref"><span> 9.2.1</span></a> 에서 보았듯이 닫힌 경로에 대한 <span class="math inline">\(\boldsymbol{A}\)</span> 의 선적분은 이 경로의 안쪽 표면에서의 자기장의 선속(flux)과 같다. 즉 경로 <span class="math inline">\((1-2)\)</span> 로 정해지는 내부를 지나는 자기장의 플럭스를 <span class="math inline">\(\Phi_B\)</span> 라고 하면</p>
+<p><a href="#sec-FLP_2_14_1" class="quarto-xref"><span> 9.2.1</span></a> 에서 보았듯이 닫힌 경로에 대한 <span class="math inline">\(\boldsymbol{A}\)</span> 의 선적분은 이 경로의 안쪽 표면에서의 자기장의 선속(flux)과 같다. 즉 경로 <span class="math inline">\((1-2)\)</span> 로 정해지는 내부를 지나는 자기장의 플럭스를 <span class="math inline">\(\Phi_B\)</span> 라고 하면 다음과 같다.</p>
 <p><span id="eq-FLP_2_15_34"><span class="math display">\[
-δ=δ(B=0)+\dfrac{q}{\hbar}\Phi_B
+δ=δ(B=0)+\dfrac{q}{\hbar}\Phi_B.
 \tag{9.68}\]</span></span></p>
-<p>이다.</p>
+<p>이제 결과를 <span class="math inline">\(\boldsymbol{B}\)</span> 와 <span class="math inline">\(\boldsymbol{A}\)</span> 모두에 대해 쓸 수 있기 때문에, <span class="math inline">\(\boldsymbol{B}\)</span> 가 <strong>실제</strong> 장으로서 그대로 유지되고 <span class="math inline">\(\boldsymbol{A}\)</span> 는 여전히 인위적인 구성물로 간주할 수 있다고 여길 수 있다. 하지만 우리가 처음 제안한 <strong>실제</strong> 장의 정의는 <strong>실제</strong> 장은 거리가 있는 입자에 작용하지 않을 것이라는 생각에 기반하고 있었다. 하지만 우리는 <span class="math inline">\(\boldsymbol{B}\)</span> 가 <span class="math inline">\(0\)</span> 이거나 최소한 임의로 작은 경우를, 입자를 찾을 가능성이 있는 어느 정도의 위치에서 직접 작용한다는 생각을 할 수 없는 예를 제시할 수 있다.</p>
+<div id="fig-FLP_2_15_6" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_15_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_15/fig_2_15_6.png" class="img-fluid figure-img" width="350">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_15_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.14: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 15-6. 긴 솔레노이드의 자기장과 벡터포텐셜
+</figcaption>
+</figure>
+</div>
+<p>전류가 흐르는 긴 솔레노이드의 경우 내부에는 자기장이 존재하지만 외부에서는 <span class="math inline">\(0\)</span> 이며 외부에 많은 <span class="math inline">\(\boldsymbol{A}\)</span> 가 순환하고 있다는 것은 <a href="#fig-FLP_2_15_6" class="quarto-xref">그림&nbsp;<span>9.14</span></a> 에 표현된 바와 같다. 전자를 <span class="math inline">\(\boldsymbol{A}\)</span> 만 존재하는 솔레노이드 외부에 놓는다면 <a href="#eq-FLP_2_15_33" class="quarto-xref">식&nbsp;<span>9.67</span></a> 에 따르면 여전히 운동에 영향을 미치게 된다. 고전적으로는 힘은 오직 <span class="math inline">\(\boldsymbol{B}\)</span> 에만 의존하기 때문에 운동에 영향을 미칠 수 없다. 솔레노이드에 전류가 흐른다는 것을 알기 위해서는 솔레노이드를 통과해야 한다. 하지만 양자역학적으로는 솔레노이드에 가깝게 접근하지 않더라도 한 번 돌면 그 안에 자기장이 존재한다는 것을 알 수 있다!</p>
+<div id="fig-FLP_2_15_7" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_15_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_15/fig_2_15_7.png" class="img-fluid figure-img" width="500">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_15_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.15: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 15-7. 자기장은 전자를 찾을 확률이 임의로 매우 낮은 영역에만 존재함에도 불구하고 전자의 운동에 영향을 줄 수 있다.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-FLP_2_15_7" class="quarto-xref">그림&nbsp;<span>9.15</span></a> 과 같이 벽 바로 뒤와 두 개의 슬릿 사이에 직경이 작은 매우 긴 솔레노이드를 배치한다고 생각해 보자. 솔레노이드의 직경은 두 슬릿 사이의 거리 <span class="math inline">\(d\)</span> 보다 훨씬 작아야 한다. 이러한 상황에서는 슬릿에서 전자가 회절을 통해 솔레노이드에 가까워질 가능성이 거의 없습니다. 이것은 우리의 간섭 실험에 어떤 영향을 미칠까?</p>
+<p>솔레노이드에 흐르는 전류가 있는 경우와 없는 경우를 비교해 보자. 전류가 없으면 이며 백스톱에서 전자 강도의 원래 패턴을 얻을 수 있다. 전류를 켜면 솔레노이드 내부에 <span class="math inline">\(\boldsymbol{B}\)</span> 가, 외부에 <span class="math inline">\(\boldsymbol{A}\)</span> 가 생성된다. 솔레노이드 외부에서 <span class="math inline">\(\oint \boldsymbol{A\cdot} d\boldsymbol{l}\)</span> 에 비례하는 위상 차이의 이동이 있으며, 이는 최대와 최소의 패턴이 새로운 위치로 이동함을 의미한다. 실제로, 내부 <span class="math inline">\(\boldsymbol{B}\)</span> 의 플럭스가 모든 경로 쌍에 대해 상수이므로 <span class="math inline">\(\boldsymbol{A}\)</span> 의 순환도 일정하다. 즉, 각 도착점마다 동일한 위상 변화가 존재하는데 이는 전채 패턴의 새로운 위치로의 평행 이동을 의미한다. 두 파동 사이의 위상 차이가 <span class="math inline">\(0\)</span> 일 때 최대 강도가 발생하는 것을 안다. <a href="#eq-FLP_2_15_33" class="quarto-xref">식&nbsp;<span>9.67</span></a> 혹은 <span class="math inline">\(\delta\)</span> 에 대한 <a href="#eq-FLP_2_15_34" class="quarto-xref">식&nbsp;<span>9.68</span></a> 와 <span class="math inline">\(x\)</span> 에 대한 <a href="#eq-FLP_2_15_28" class="quarto-xref">식&nbsp;<span>9.61</span></a> 로부터 다음과 같다.</p>
+<p><span id="eq-FLP_2_15_35"><span class="math display">\[
+x_0 = -\dfrac{L}{d}\dfrac{\lambda}{2\pi}\dfrac{q}{\hbar} \oint_{(1–2)} \boldsymbol{A \cdot} d\boldsymbol{l}.
+\tag{9.69}\]</span></span></p>
+<p>또는 <span class="math inline">\(\boldsymbol{B}\)</span> 에 의한 자기 선속 <span class="math inline">\({\Phi}_B\)</span> 대해 다음과 같다.</p>
+<p><span id="eq-FLP_2_15_36"><span class="math display">\[
+x_0 = −\dfrac{L}{d}\dfrac{\lambda}{2\pi}\dfrac{q}{\hbar} \Phi_B.
+\tag{9.70}\]</span></span></p>
+<p>솔레노이드가 위치했을 때의 패턴은 <a href="#fig-FLP_2_15_7" class="quarto-xref">그림&nbsp;<span>9.15</span></a> 에 표시된 대로1 나타나야 하는것이 양자역학의 예측이다.</p>
+<p>이 실험은 이 책이 쓰여질 즈음에 수행되었다. 이 당시에는 매우 어려운 실험었는데, 전자의 파장이 매우 짧기 때문에, 장치는 간섭을 관찰하기 위해 아주 작은 크기여야 한다. 슬릿은 서로 매우 가깝게 위치해야 하며, 따라서 매우 작은 솔레노이드가 필요하다. 특정 상황에서는 철 결정이 whisker 이라고 불리는 매우 길고 얇은 필라멘트 형태로 성장하는데 이러한 whisker 가 자화되면 작은 솔레노이드와 같으며, 끝부분 근처를 제외하고는 외부에 장이 없다. 전자 간섭 실험은 두 개의 슬릿 사이에 그런 whisker 를 사용하여 수행되었으며, 예상된 전자 패턴의 변위가 관찰되었다.</p>
+<p>우리의 관점, 즉 입자의 위치에서 운동을 얻기 위해 지정해야 하는 필드가 “실제”라는 관점에서는 <span class="math inline">\(\boldsymbol{A}\)</span> 가 <strong>실제</strong> 이다. Whisker 에 있는 <span class="math inline">\(\boldsymbol{B}\)</span> 가 <u>원격으로</u> 작용한다. 영향을 원격 작용이 아닌 방식으로 설명하고자 한다면, 우리는 벡터 퍼텐셜을 사용해야 한다.</p>
+<p>이 주제는 흥미로운 역사를 가지고 있다. 우리가 설명한 이론은 1926년 양자역학의 시작부터 알려져 있었다. 벡터 퍼텐셜이 양자역학의 파동 방정식, 즉 슈뢰딩거 방정식에 나타난다는 사실은 시작부터 명백했다. 벡터 포텐셜을 자기장으로 대체하려는 시도는 차근차근 실패했다. 이것은 전자가 장이 없는 영역에서 이동하면서도 영향을 받는 우리의 예에서도 명확하다. 하지만 고전역학에서는 <span class="math inline">\(\boldsymbol{A}\)</span> 가 직접적인 중요성을 갖지 않는 것처럼 보였고, 게다가 그래디언트를 추가함으로써 변형될 수 있었기 때문에 사람들은 벡터 퍼텐셜이 직접적인 물리적 의미가 없다고 반복해서 말했으며, 양자역학에서도 자기장과 전기장만이 <strong>올바르다</strong> 라고 말했다. 돌이켜 보면, 1956년 봄(Bohm)과 아하로노프(Aharonov)가 처음 제안하고 전체 질문을 명확히 한 시점까지는 아무도 이 실험에 대해 논의할 생각을 하지 않은 것이 이상하게 보인다. 그 함의는 언제나 존재했지만, 아무도 그것에 주목하지 않았다. 그렇기 때문에 많은 사람들이 그 문제가 제기될 때 다소 충격을 받았다. 따라서 누군가는 오랫동안 믿어졌던 양자역학이 명확한 답을 제시했음에도 불구하고, 실제로 옳은지 확인하기 위해 실험을 수행하는 것이 가치가 있다고 생각했다. 이와 같이 무엇이 중요하고 무엇이 중요하지 않은가에 대한 어떤 편견 때문에 계속 무시되는 것이 30년 동안 지속될 수 있다는 점이 흥미롭다.</p>
+<div id="fig-FLP_2_15_8" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_15_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_15/fig_2_15_8.png" class="img-fluid figure-img" width="500">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_15_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.16: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 15-8. 자기장에 의한 간섭 패턴의 이동.
+</figcaption>
+</figure>
+</div>
+<p>조금 더 진행해보자. 우리가 충분히 큰 규모로 사물을 바라볼 때 입자들이 느끼는 힘이 <span class="math inline">\(q\boldsymbol{v} \times \boldsymbol{A}\)</span> 인지 설명하기 위해 양자역학 공식과 고전적 공식 사이의 연관성을 보여줄 것이다. 양자역학에서 고전역학을 얻기 위해서는, 외부 조건(즉 장)이 크게 달라지는 거리와 비교했을 때 모든 파장이 매우 작은 경우를 고려해야 한다. 우리는 결과를 일반적인 설명으로 입증하지 않고, 어떻게 작동하는지를 보여주기 위해 매우 간단한 예시로만 증명하겠다. 다시 한 번 우리는 같은 슬릿 실험을 고려합니다. 하지만 슬릿 사이의 아주 작은 영역에 자기장을 배치하는 대신, <a href="#fig-FLP_2_15_8" class="quarto-xref">그림&nbsp;<span>9.16</span></a> 에 표현된 바와 같이 슬릿 뒤의 더 큰 영역에 걸쳐 확장된 자기장을 생각한다. 우리는 <span class="math inline">\(L\)</span> 에 비해 작다고 간주되는, 폭 <span class="math inline">\(w\)</span> 의 좁은 띠에서 균일한 자기장이 있는 이상적인 경우를 생각한다. 이것은 백스톱은 원하는 만큼 멀리 배치하여 조정 할 수 있다. 위상 이동을 계산하려면, 두 궤적 <span class="math inline">\((1)\)</span> 과 <span class="math inline">\((2)\)</span> 를 따라 <span class="math inline">\(\boldsymbol{A}\)</span> 의 두 적분을 구해야 하며 이 값들은 경로 사이의 <span class="math inline">\(\boldsymbol{B}\)</span> 의 플럭스에 의해서만 차이가 난다. 우리의 근사치에 따라 플럭스는<span class="math inline">\(\Phi_B=Bwd\)</span> 이며 위상차는</p>
+<p><span id="eq-FLP_2_15_37"><span class="math display">\[
+\delta = \delta (B=0) + \dfrac{q}{\hbar}Bwd.
+\tag{9.71}\]</span></span></p>
+<p>근사에 따르면 위상 이동은 각도와 무관하다. 따라서 다시 그 효과는 전체 패턴을 <span class="math inline">\(\delta x\)</span> 만큼 위쪽으로 이동시키며 <a href="#eq-FLP_2_15_35" class="quarto-xref">식&nbsp;<span>9.69</span></a> 와 <a href="#eq-FLP_2_15_37" class="quarto-xref">식&nbsp;<span>9.71</span></a> 을 사용하여 다음을 보일 수 있다.</p>
+<p><span id="eq-FLP_2_15_38"><span class="math display">\[
+\Delta x = −\dfrac{L\lambda}{2\pi d} \Delta \delta = −\dfrac{L\lambda}{2\pi d}[\delta − \delta(B=0)] = -\dfrac{L\lambda}{2\pi d}\dfrac{q}{\hbar}Bw
+\tag{9.72}\]</span></span></p>
+<p>이러한 이동은 작은 각도 <span class="math inline">\(\alpha\)</span> 에 대해 모든 궤적을 편향시키는 것과 동일하다(<a href="#fig-FLP_2_15_9" class="quarto-xref">그림&nbsp;<span>9.17</span></a>). 여기서</p>
+<p><span id="eq-FLP_2_15_39"><span class="math display">\[
+\alpha = \dfrac{\Delta x}{L} = −\dfrac{\lambda}{2\pi \hbar} qBw.
+\tag{9.73}\]</span></span></p>
+<div id="fig-FLP_2_15_9" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_15_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_15/fig_2_15_9.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_15_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;9.17: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 15-9. 자기장을 통과함에 따라 입자가 회절하는 현상.
+</figcaption>
+</figure>
+</div>
+<p>이제 고전적으로 우리는 또한 얇은 자기장의 띠가 <span class="math inline">\(\alpha′\)</span> 와 같은 작은 각도를 통해 모든 궤적을 편향시킨다고 기대할 수 있으며, 이는 <a href="#fig-FLP_2_15_9" class="quarto-xref">그림&nbsp;<span>9.17</span></a> (a) 에 나타나 있다. 전자가 자기장을 통과할 때, 그들은 일정 시간 동안 지속되는 횡력 <span class="math inline">\(q\boldsymbol{v}\times \boldsymbol{B}\)</span> 를 느낍니다. 그들의 횡모멘텀 변화는 이 충격량과 정확히 동일하므로</p>
+<p><span id="eq-FLP_2_15_40"><span class="math display">\[
+\Delta p_x = −qwB.
+\tag{9.74}\]</span></span></p>
+<p>이다. 이 각변화<a href="#fig-FLP_2_15_9" class="quarto-xref">그림&nbsp;<span>9.17</span></a>는 이 횡운동량과 전체 운동량 <span class="math inline">\(p\)</span> 의 비율과 같다. 따라서</p>
+<p><span id="eq-FLP_2_15_41"><span class="math display">\[
+\alpha′=\dfrac{\Delta p_x}{p} = −\dfrac{qwB}{p}.
+\tag{9.75}\]</span></span></p>
+<p>우리는 이 결과와 <a href="#eq-FLP_2_15_39" class="quarto-xref">식&nbsp;<span>9.73</span></a> 를 비교하여 양자역학 결과와 동일하다는 것을 알 수 있다. 하지만 고전 역학과 양자 역학 사이의 연결은 다음과 같다: 운동량 <span class="math inline">\(p\)</span> 를 갖는 입자는 파장 <span class="math inline">\(\lambda = \hbar/2\pi p\)</span> 에 따라 변하는 양자 진폭에 해당하며 따라서 <span class="math inline">\(\alpha\)</span> 와 <span class="math inline">\(\alpha′\)</span> 는 동일하다. 즉 고전적 계산과 및 양자 계산은 동일한 결과를 제공한다.</p>
+<p>앞의 분석을 통해 우리는 양자역학에서 명시적인 형태로 나타나는 벡터 퍼텐셜이 그 도함수에만 의존하는 고전적 힘을 발생시킨다는 것을 알 수 있다. 양자역학에서 중요한 것은 인근 경로들 사이의 간섭이며, 효과는 언제나 <span class="math inline">\(\boldsymbol{A}\)</span> 장이 점에서 점으로 얼마나 변하는가에만 의존하고, 따라서 값 자체가 아니라 <span class="math inline">\(\boldsymbol{A}\)</span> 의 미분에만 의존한다는 것이 밝혀진다. 그럼에도 불구하고, 벡터 퍼텐셜 <span class="math inline">\(\boldsymbol{A}\)</span> (그리고 스칼라 퍼텐셜 <span class="math inline">\(\Phi\)</span>)는 물리학에 대한 가장 직접적인 설명을 제공하는 것으로 보인다. 양자 이론에 대해 깊이 파고들수록 이것이 점점 더 명확해진다. 양자 전기역학 일반 이론에서는 벡터와 스칼라 퍼텐셜을 맥스웰 방정식을 대체하는 일련의 방정식에서 기본량으로 정한다: <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 는 현대 물리 법칙의 표현에서 서서히 사라지고 있으며, 이들은 <span class="math inline">\(\boldsymbol{A}\)</span> 와 <span class="math inline">\(\Phi\)</span> 로 대체되고 있다.</p>
 <p><br></p>
+</section>
+<section id="sec-FLP_2_15_6" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_15_6">II.15–6 정역학과 동역학의 차이</h3>
+<p>이제 정상(static) 장에 대한 설명의 끝자락에 있다. 이미 이 장에서 우리는 시간에 따라 장이 변할 때 일어나는 일에 대해 가까워지고 있다. 자기 에너지를 다루는 데 있어 상대론적 논증으로 피하여 동역학적인 접근을 간신히 피할 수 있었다. 그럼에도 불구하고, 에너지 문제에 대한 우리의 처리 방식은 다소 인위적이었으며 어쩌면 기묘했을지 모르겠다. 왜냐하면 우리는 움직이는 코일이 변하는 장을 생성한다는 사실을 무시했기 때문이다. 이제 전기역학의 주제인 시간에 따라 변하는 장을 시작해야 한다. 그 전에 몇 가지 점을 강조하려 한다.</p>
+<p>비록 우리는 전기자기학의 완전하고 올바른 방정식을 제시하는 것으로 이 과정을 시작했지만, 동시에 몇몇 미완성된 조각들을, 그게 그다지 어렵지 않았기 때문에, 다루었다. 정상 장의 보다 단순한 이론에서 시작하여, 동적 장을 포함하는 보다 복잡한 이론으로 이후 진행하는 것은 큰 장점이 있다. 한 번에 배울 새로운 사항이 적어지고, 더 큰 과제를 준비하기 위해 지적 근육을 개발할 시간이 있다. 하지만 이 과정에는 전체 이야기를 보기 전에 배운 불완전한 진실이 뿌리내려 전체 진리로 받아들여질 위험이 있다. 진실과 때때로만 사실인 것이 혼동될 수 있다. 따라서 우리는 <a href="../vol1/vol1_1.html#tbl-FLP_1_2_1" class="quarto-xref">표&nbsp;<span>1.1</span></a> 에 우리가 다룬 중요한 공식들의 요약을 제공하며, 일반적으로 참인 것과 정역학에 대해 참이지만 역학에 대해 거짓인 것을 구분한다. 이 요약은 또한 부분적으로 우리가 어디로 가고 있는지를 보여준다, 왜냐하면 우리가 역학을 다루면서 여기서 증명 없이 단순히 진술해야 할 내용을 상세히 공부하게 될 것이기 때문이다.</p>
+<!-- 
+\renewcommand{\arraystretch}{2} 
+\begin{tabular}{ l|l} 
+\hline
+\textbf{False in General} & \textbf{True always} \\
+\hline  
+$\bf{F}=\dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2\bf{r}}{r^3}$ 
+ &$\bf{F}=q(\bf{E}+\bf{v}\times \bf{B})$\\
+{}& $\nabla \bf{\cdot E}= \dfrac{\rho}{\epsilon_0}$  \\ 
+\hline 
+$\nabla \times\bf{E}=0$ & $\nabla \times \bf{E}= - \dfrac{\partial \bf{B}}{\partial t}$ \\
+$\bf{E}=-\nabla \Phi$ & $\bf{E}=-\nabla \Phi - \dfrac{\partial \bf{A}}{\partial t}$ \\
+$\displaystyle \bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,d^3\bf{r}'$ & {} \\
+For conductors, $\bf{E}=0$, $\Phi=\text{constant}$. & In conductor, $\bf{E}$ makes currents. \\
+$Q=CV$ & {} \\
+\hline
+{} & $\nabla \bf{\cdot B} = 0$\\
+{} & $\bf{B} = \nabla \times \bf{A}$ \\
+$\nabla \times \bf{B}=\mu_0 \bf{J}$ & $\nabla \times \bf{B}=\mu_0 \bf{J} + \dfrac{1}{c^2} \dfrac{\partial \bf{E}}{\partial t}$ \\
+$\displaystyle \bf{B}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')\times (\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,d^3\bf{r}'$ & {} \\
+\hline
+$\renewcommand{\arraystretch}{2} \begin{array}{l}\quad \nabla^2 \Phi = -\dfrac{\rho}{\epsilon_0} \\ \left[ \begin{array}{l} \nabla^2\bf{A} = - \mu_0 \bf{J} \\ \nabla \bf{\cdot A} = 0 \end{array}\right.\end{array}$ & $\left[\begin{array}{l} \nabla^2 \Phi - \dfrac{1}{c^2}\dfrac{\partial^2 \Phi}{\partial t^2} = - \dfrac{\rho}{\epsilon_0} \\ \nabla^2\bf{A} - \dfrac{1}{c^2} \dfrac{\partial^2 \bf{A}}{\partial t^2} = - \mu_0 \bf{J} \\ \nabla\bf{\cdot A} + \dfrac{1}{c^2} \dfrac{\partial \Phi}{\partial t} = 0\end{array}\right.$ \\
+\hline
+$\displaystyle \renewcommand{\arraystretch}{2} \begin{array}{l} \displaystyle \Phi(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
+ \displaystyle \bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}'
+\end{array}$ &  
+$\renewcommand{\arraystretch}{2} \left[  \begin{array}{l} \displaystyle \Phi(\bf{r},\,t) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}',\,t')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
+ \displaystyle \bf{A}(\bf{r},\,t) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}',\,t)}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
+\displaystyle t' = t=\dfrac{r_{12}}{c}
+\end{array} \right.$ \\
+\hline
+$\displaystyle U = \dfrac{1}{2} \int_V \rho \Phi \,d^3\bf{r}' + \dfrac{1}{2} \int_V \bf{J\cdot A} \,d^3\bf{r}'$ & $\displaystyle U =\int \left(\dfrac{\epsilon_0 E^2}{2} + \dfrac{B^2}{2\mu_0}\right)\,d^3\bf{r}'$\\
+\hline
+\end{tabular}
+-->
+<div id="tbl-FLP_2_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-FLP_2_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+표&nbsp;9.1: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Table. 15-1.
+</figcaption>
+<div aria-describedby="tbl-FLP_2_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_15/tbl_2_1.png" class="img-fluid figure-img" width="500">
+</div>
+</figure>
+</div>
+<p>테이블에 대해 몇 가지 지적할 것이 있다.</p>
+<ul>
+<li><span class="math inline">\(\boldsymbol{F}=q(\boldsymbol{E}+\boldsymbol{v}\times \boldsymbol{B})\)</span> 은 참이다. 그러나 쿨롱의 법칙은 정적 상태에서만 참이다.</li>
+<li><span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 에 대한 네 개의 맥스웰 방정식도 참이다.</li>
+<li>가우스의 법칙 <span class="math inline">\(\nabla \boldsymbol{\cdot E} = \rho/\epsilon_0\)</span> 는 유지되지만, 일반적으로 <span class="math inline">\(\nabla \times \boldsymbol{E}\ne 0\)</span> 이다. 따라서 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi\)</span> 를 만족하는 <span class="math inline">\(\Phi\)</span> 는 존재하지 않을 수 있으며 <span class="math inline">\(\boldsymbol{E}=-\nabla \Phi -\partial_t \boldsymbol{A}\)</span> 를 만족하는 <span class="math inline">\(\Phi,\,\boldsymbol{A}\)</span> 쌍은 항상 존재한다.</li>
+<li>전도체에서 <span class="math inline">\(\boldsymbol{E}=0\)</span> 이 아니다. 전기장이 시간에 대해 변한다면, 전도체의 전하들은 일반적으로 전기장을 0 으로 만들기 위해 스스로 재배열할 시간이 없다. 유일한 일반적인 진술은 <strong>전도체의 전기장은 전류를 생성한다</strong> 이다. . 따라서 변화하는 전기장에 대해서는 전도체 표면이 등전위가 아니다. 또한 정전용량이라는 개념이 더 이상 정확하지 않게 된다.</li>
+<li>자기 전하가 없기 때문에 <span class="math inline">\(\nabla \boldsymbol{\cdot B}=0\)</span> 이다. 따라서 <span class="math inline">\(\boldsymbol{B}=\nabla \times \boldsymbol{A}\)</span> 를 만족하는 <span class="math inline">\(\boldsymbol{A}\)</span> 는 항상 존재한다. 하지만 <span class="math inline">\(\boldsymbol{B}\)</span> 는 전류 뿐만이 아니라 전기장의 시간에 대한 변화에서도 생성된다. <span class="math inline">\(\nabla \times \boldsymbol{B}\)</span> 는 전류 밀도에 새로운 <span class="math inline">\(\partial_t \boldsymbol{E}\)</span> 를 더한 값에 비례한다. 이는 <span class="math inline">\(\boldsymbol{A}\)</span> 가 새로운 방정식에 의해 전류와 관련이 있음을 의미한다. 그것은 <span class="math inline">\(\Phi\)</span> 와도 관련이 있다.</li>
+<li>편의를 위해 <span class="math inline">\(\nabla \boldsymbol{\cdot A}\)</span> 를 선택할 자유를 활용한다면, <span class="math inline">\(\boldsymbol{A}\)</span> 또는 <span class="math inline">\(\Phi\)</span> 에 대한 방정식을 간단하고 우아한 형태로 배치 할 수 있다. 따라서 우리는 <span class="math inline">\(\nabla \boldsymbol{\cdot A}=−(1/c^2))\partial_t \Phi\)</span> 가 되도록 조건을 정하고, <span class="math inline">\(\boldsymbol{A}\)</span> 또는 <span class="math inline">\(\Phi\)</span> 에 대한 미분 방정식은 표에 표시된 대로 나타난다.</li>
+<li><span class="math inline">\(\boldsymbol{A}\)</span> 와 <span class="math inline">\(\Phi\)</span> 는 전류와 전하에 대한 적분으로 찾을 수 있지만, 정역학과 같은 적분은 아니다. 여기서 <span class="math inline">\(t′=t−r_{12}/c\)</span> 인 이전 시점에서의 <span class="math inline">\(\boldsymbol{j}\)</span> 와 <span class="math inline">\(\rho\)</span> 값을 사용해야 한다. 이 작은 변화를 통해 변화하는 전류와 전하에 대한 장 문제를 풀 수 있다.</li>
+<li>마지막으로, 전기장의 에너지 밀도가 <span class="math inline">\(\dfrac{\epsilon_0 E^2}/2\)</span> 인 경우와 같은 일부 결과가 전기역학뿐만 아니라 정역학에도 해당한다는 것을 알게 될 것이다. 이것이 자연스럽다고 오해해서는 안된다. 정적 경우에서 도출된 모든 공식의 유효성은 동적 경우에 대해 다시 한 번 입증되어야 한다. 반대되는 예는 전기정적 에너지를 <span class="math inline">\(\rho \Phi\)</span> 의 부피 적분으로 표현한 것이다. 이 결과는 정적인 경우에만 해당된다.</li>
+</ul>
 </section>
 </section>
 <section id="연습문제" class="level2 unnumbered">
@@ -1575,8 +1719,8 @@ U=\dfrac{1}{2}\int_V \rho \Phi d^3\boldsymbol{r}.
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../src/exercises/index.html" class="pagination-link" aria-label="파인만의 물리학 강의 연습문제">
-        <span class="nav-page-text">파인만의 물리학 강의 연습문제</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../src/vol2/vol2_4.html" class="pagination-link" aria-label="$II$-4 : 전기동역학">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><span class="math inline">\(II\)</span>-4 : 전기동역학</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
