@@ -293,6 +293,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_3_4" id="toc-sec-FLP_3_4" class="nav-link" data-scroll-target="#sec-FLP_3_4">III.4 동일 입자</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_3_4_1" id="toc-sec-FLP_3_4_1" class="nav-link" data-scroll-target="#sec-FLP_3_4_1">III.4-1 보즈 입자와 페르미 입자</a></li>
+  <li><a href="#sec-FLP_3_4_2" id="toc-sec-FLP_3_4_2" class="nav-link" data-scroll-target="#sec-FLP_3_4_2">III.4–2 두 보즈 입자의 상태</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -560,6 +561,44 @@ D_1 \text{ 에서 어떤 입차가 측정될 확률}=|f(\theta)|^2+|f(\pi−\the
 <h2 class="anchored" data-anchor-id="sec-FLP_3_4">III.4 동일 입자</h2>
 <section id="sec-FLP_3_4_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_3_4_1">III.4-1 보즈 입자와 페르미 입자</h3>
+<p>마지막 장에서는 두 동일한 입자의 과정에서 발생하는 간섭에 대한 특별한 규칙을 고려하기 시작했다. 동일한 입자란 전자와 같이 서로 구별할 수 없는 것들을 의미한다. 동일한 두 입자를 포함하는 과정에서, 한 입자가 검출기에 도달하는 것과 다른 입자가 도달하는 것은 구별할 수 없으며, 구별할 수 없는 모든 대안 사례와 마찬가지로 원래의 교환되지 않은 경우와 간섭이 발생한다. 사건의 진폭은 두 간섭 진폭의 합이며, 흥미롭게도 이 간섭은 경우에 따라 같은 위상 혹은 반대 위상에서 이루어진다.</p>
+<p>두 입자 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 의 충돌을 생각해보자. <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> (a) 에서와 같이 입자 <span class="math inline">\(a\)</span> 는 방향 <span class="math inline">\(1\)</span> 로 산란하고 입자 <span class="math inline">\(b\)</span> 는 방향 <span class="math inline">\(2\)</span> 로 산란하는 과정의 진폭을 <span class="math inline">\(f(\theta)\)</span> 라고 하자. 그렇다면 이러한 사건을 관찰할 확률 <span class="math inline">\(P_1 \propto |f(\theta)|^2\)</span> 이다. 물론, <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> (b) 에 표시된 바와 같이 입자 <span class="math inline">\(b\)</span> 가 <span class="math inline">\(1\)</span> 번 계수기에서 계측되고 입자 <span class="math inline">\(a\)</span> 가 <span class="math inline">\(2\)</span> 번 계수기로 계측 될 수 있다. 스핀 등으로 정의된 특별한 방향이 없다고 가정하면, 이 과정의 확률 <span class="math inline">\(P_2 = |f(\pi - \theta)|^2\)</span> 이며, 이는 1 번 계수기를 <span class="math inline">\(\pi−\theta\)</span> 만큼의 각도로 로 이동했을 때 첫 번째 과정과 동일하기 때문이다. 두 번째 과정의 진폭이 단지 <span class="math inline">\(f(\pi−\theta)\)</span> 라고 생각하실 수도 있지만 발생할 수 있는 임의의 위상 변화를 생각해야 한다. 즉, 진폭은 <span class="math inline">\(e^{iδ}f(\pi−\theta)\)</span> 가 된다. 이 진폭은 역시 <span class="math inline">\(P_2= |f(\pi−\theta)|^2\)</span> 의 확률을 제시한다.</p>
+<div id="fig-FLP_3_4_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_3_4_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_3_4/fig_3_4_1.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_3_4_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;11.10: 파인만 물리학 강의 <span class="math inline">\(III\)</span> Fig. 4-1. 두 개의 동일한 입자가 산란될 때, (a)와 (b) 과정은 구별할 수 없다.
+</figcaption>
+</figure>
+</div>
+<p>이제 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 가 동일한 입자라면 어떤 일이 일어나는지 살펴보자. 그렇다면 <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> 의 두 그림에 표현된 두 개의 서로 다른 과정은 구분할 수 없다. <span class="math inline">\(a\)</span> 또는 <span class="math inline">\(b\)</span> 중 하나가 1번 계수기로 측정되고, 다른 하나는 2번 계수기에 계측되는 진폭이 있다. 이 진폭은 <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> 에 표시된 두 과정에 대한 진폭의 합이다. 첫 번째를 <span class="math inline">\(f(\theta)\)</span> 라고 하면, 두 번째는 <span class="math inline">\(e^{iδ}f(\pi−\theta)\)</span> 이며, 이제 두 진폭을 더해야 하므로 위상 계수가 매우 중요해진다. 두 입자의 역할을 교환할 때 진폭에 특정한 위상 계수를 곱해야 한다고 생각해 보자. 한번 더 역할을 교환하면 같은 위상 계수를 또 곱해야 하며 이 때 다시 첫 번째 과정으로 돌아가야 한다. 즉 위상 계수의 제곱은 <span class="math inline">\(1\)</span> 과 같아야 한다. 가능성은 두 가지뿐이다. <span class="math inline">\(e^{iδ}\)</span> 는 <span class="math inline">\(+1\)</span> 이거나 <span class="math inline">\(−1\)</span> 이어야 한다. 따라서 교환된 경우는 같은 기호로 기여하거나, 반대 기호로 기여한다. 두 경우 모두 자연에 존재하며, 입자의 종류에 따라 고유하게 취한다. 양의 기호에 간섭하는 입자는 <strong>보스 입자 (boson)</strong> 혹은 <strong>보존</strong> 라고 하며, 음의 기호에 간섭하는 입자는 <strong>페르미 입자 (fermion)</strong> 혹은 <strong>페르미온</strong> 이라고 한다. 보스 입자는 광자, 메존, 그리고 중력자며 페르미 입자는 전자, 뮤온, 중성미자, 핵자, 그리고 바리온이다. 그렇다면, 동일한 입자의 산란에 대한 진폭은 다음과 같다:</p>
+<p><span id="eq-FLP_4_4_1"><span class="math display">\[
+보존: (직접 진폭)+(교환 진폭).
+\tag{11.17}\]</span></span></p>
+<p><span id="eq-FLP_4_4_2"><span class="math display">\[
+페르미 입자: (직접 진폭) - (교환 진폭).
+\tag{11.18}\]</span></span></p>
+<p>전자와 같이 스핀을 가진 입자의 경우 추가적인 복잡성이 존재한다. 우리는 입자의 위치뿐만 아니라 그 스핀의 방향도 지정해야 한다. 동일한 스핀 상태를 가진 동일한 입자에 대해서만 입자가 교환될 때 진폭이 간섭한다. 다양한 스핀 상태가 혼합된 비편광 빔의 산란을 생각한다면, 추가적인 연산을 수행해야 한다.</p>
+<div id="fig-FLP_3_4_2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_3_4_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_3_4/fig_3_4_2.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_3_4_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;11.11: 파인만 물리학 강의 <span class="math inline">\(III\)</span> Fig. 4-2. 두 개의 <span class="math inline">\(\alpha\)</span>-입자의 산란. (a)에서는 두 입자가 동일성을 유지하고, (b)에서는 충돌 중에 중성자가 교환된다.
+</figcaption>
+</figure>
+</div>
+<p>두 개 이상의 입자가 서로 단단히 결합되어 있을 때에는 흥미로운 문제가 발생한다. 예를 들어, <span class="math inline">\(\alpha\)</span>-입자는 두개의 중성자와 두개의 양성자,즉 총 네 개의 입자를 포함한다. 두 개의 <span class="math inline">\(\alpha\)</span>-입자가 산란될 때, 여러 가지 가능성이 있다. 산란 과정에서 하나의 <span class="math inline">\(\alpha\)</span>-입자에서 중성자가 다른 <span class="math inline">\(\alpha\)</span>-입자로 점프하는 일정한 진폭이 존재하고, 동시에 다른 <span class="math inline">\(\alpha\)</span>-입자에서 나온 중성자가 반대 방향으로 튀어 산란에서 나오는, 즉 중성자 한 쌍이 교환되어 나오는 경우가 존재할 수 있다. 이 때 두 <span class="math inline">\(\alpha\)</span>-입자는 원래의 각각과 다르다. <a href="#fig-FLP_3_4_2" class="quarto-xref">그림&nbsp;<span>11.11</span></a> 을 보라. 중성자 한 쌍의 교환에 의한 산란 진폭은 그러한 교환이 없는 산란의 진폭에 간섭하게 되며, 한 쌍의 페르미 입자 교환이 있었기 때문에 간섭은 마이너스 기호에 의해 발생해야 한다. 반면에, 두 <span class="math inline">\(\alpha\)</span>-입자의 상대 에너지가 너무 낮아 쿨롱 반발로 인해 비교적 멀리 떨어져 있을 정도이며 내부 입자를 교환할 가능성이 전혀 없을 경우, 우리는 <span class="math inline">\(\alpha\)</span>-입자를 단순한 객체로 간주할 수 있으며 내부의 세부 사항에 대해 걱정할 필요가 없다. 그러한 상황에서는 산란 진폭에 대한 기여가 두 개뿐입니다. 교환이 없거나, 산란에서 네 개의 핵자 모두가 교환되거나. <span class="math inline">\(\alpha\)</span>-입자 내의 양성자와 중성자는 모두 페르미 입자이므로, 어떤 쌍이든 교환하면 산란 진폭의 부호가 뒤바뀐다. <span class="math inline">\(\alpha\)</span>-입자에 내부 변화가 없는 한, 두 <span class="math inline">\(\alpha\)</span>-입자를 교환하는 것은 네 쌍의 페르미 입자를 교환하는 것과 동일하다다. 각 쌍마다 부호가 변하므로, 그 결과는 진폭이 양의 부호와 결합한다는 것이다. <span class="math inline">\(\alpha\)</span>-입자는 보스 입자처럼 행동한다.</p>
+<p>규칙은 다음과 같다.: <strong>복합적 객체가 단일 객체로 간주될 수 있는 상황에서는, 페르미 입자 또는 보스 입자처럼 행동하며, 이는 물체를 이루는 페르미 입자가 홀수인지 짝수인지에 따라 달라진다.</strong></p>
+<p>우리가 언급한 모든 기본 페르미 입자—예를 들어 전자, 양성자, 중성자 등—는 스핀 <span class="math inline">\(j=1/2\)</span> 를 가지고 있다. 여러 개의 페르미 입자를 결합하여 복합 객체를 형성하면, 그 결과의 스핀은 정수일 수도 있고 반정수일 수도 있다. 예를 들어, 두 개의 중성자와 두 개의 양성자로 이루어진 헬륨의 동위 원소인 He<sup>4</sup>는 스핀이 <span class="math inline">\(0\)</span> 인 반면, 세 개의 양성자와 네 개의 중성자를 가진 Li<sup>7</sup>은 스핀이 <span class="math inline">\(3/2\)</span> 이다. 우리는 나중에 각운동량을 합성하는 규칙을 배우게 될 것이며, 이제 반정수 스핀을 가진 모든 복합 객체는 페르미 입자를 모방하고, 정수 스핀을 가진 모든 합성 물체는 보스 입자를 모방한다는 점을 말하겠다.</p>
+<p>이것은 흥미로운 질문을 제기한다: 왜 반정수 스핀을 가진 입자는 진폭이 마이너스 부호로 더해지는 페르미 입자이고, 정수 스핀을 가진 입자는 진폭이 양의 부호로 더해지는 보스 입자인가? 파울리는 양자장 이론과 상대성 이론의 복잡한 논증으로부터 설명을 이끌어 냈다. 하지만 아직 그의 주장을 기본적인 수준에서 표현할 방법을 찾지 못했다. 물리학에서 매우 간단하게 제시할 수 있는 규칙이 존재하는 몇 안 되는 곳 중 하나인 것처럼 보이지만, 그 규칙에 대해 아무도 간단하고 쉬운 설명을 찾지 못했다. 그 설명은 상대론적 양자역학의 심층에 존재한다. 이는 아마도 우리가 관련된 근본 원리를 완전히 이해하지 못하고 있음을 의미하며 당분간은 세상의 규칙 중 하나로 받아들여야 한다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_3_4_2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_3_4_2">III.4–2 두 보즈 입자의 상태</h3>
 
 
 </section>
