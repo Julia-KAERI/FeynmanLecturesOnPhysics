@@ -293,6 +293,8 @@ window.Quarto = {
   <li><a href="#sec-FLP_3_4" id="toc-sec-FLP_3_4" class="nav-link" data-scroll-target="#sec-FLP_3_4">III.4 동일 입자</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_3_4_1" id="toc-sec-FLP_3_4_1" class="nav-link" data-scroll-target="#sec-FLP_3_4_1">III.4-1 보즈 입자와 페르미 입자</a></li>
+  <li><a href="#sec-FLP_3_4_2" id="toc-sec-FLP_3_4_2" class="nav-link" data-scroll-target="#sec-FLP_3_4_2">III.4–2 두 보즈 입자의 상태</a></li>
+  <li><a href="#sec-FLP_3_4_3" id="toc-sec-FLP_3_4_3" class="nav-link" data-scroll-target="#sec-FLP_3_4_3">III.4-3 <span class="math inline">\(n\)</span> 개의 보즈입자의 상태</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -317,10 +319,10 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="sec-FLP_3_3">III.3 확률 진폭</h2>
 <section id="sec-FLP_3_3_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_3_3_1">III.3-1 확률진폭을 결합하는 법칙</h3>
-<p>슈뢰딩거가 양자역학의 올바른 법칙을 처음 발견했을 때, 그는 다양한 위치에서 입자를 찾는 진폭을 기술하는 방정식을 작성했다. 이 방정식은 이미 고전 물리학자들이 알고 있던 방정식들-음파에서 공기의 운동, 빛의 전달 등을 설명하는 데 사용한 방정식들-과 매우 유사했으므로 양자역학 초기에 대부분의 시간은 이 방정식을 푸는 데 사용되었다. 동시에, 특히 보른과 디랙에 의해 양자역학 뒤에 있는 기본적으로 새로운 물리적 개념에 대한 이해가 발전하고 있었다. 양자역학이 더욱 발전함에 따라, 전자의 스핀, 다양한 상대론적 현상과 같이 슈뢰딩거 방정식에 직접적으로 포함되지 않은 많은 것들이 존재한다는 것이 밝혀졌다. 전통적으로 양자역학의 모든 과정은 동일한 방식으로 시작되어, 해당 분야의 역사적 발전 과정에서 따라온 경로를 되밟아 간다. 먼저 고전역학에 대해 많은 것을 배우게 되어 슈뢰딩거 방정식을 푸는 법을 이해할 수 있게 된다. 그는 다양한 풀이법을 배우는 데 오랜 시간을 보낸다. 이 방정식을 상세히 연구한 뒤에야 그는 전자의 스핀이라는 “고급” 주제에 도달한다.</p>
-<p>우리는 원래 이 강의를 마무리하는 올바른 방법은, 예를 들어, 밀폐된 영역의 음파나 원통형 공동에서의 전자기 복사 모드와 같은 복잡한 상황에서 고전 물리학 방정식을 푸는 방법을 보여주는 것이라고 생각했다. 그것은 이 과정에 대한 원래 계획이었다. 하지만 우리는 그 계획을 포기하고 대신 양자역학에 대해 소개하기로 결정했다. 우리는 일반적으로 양자역학의 고급 부분이라고 불리는 것이 실제로는 매우 단순하다는 결론에 도달했다. 관련된 수학은 특히 단순하며, 단순한 대수 연산을 포함하고 미분 방정식은 없으며, 최대한 매우 단순한 방정식만 포함하도록 한다. 유일한 문제는 우리가 더 이상 공간에서의 입자의 행동을 상세히 기술할 수 없게 되는 격차를 뛰어넘어야 한다는 것이다. 그래서 우리가 시도하려는 것은 일반적으로 양자역학의 “고급” 부분이라고 불리는 것에 대해 알려주는 것이다. 하지만 그것들은 가장 단순한 부분 뿐만 아니라 가장 기본적인 부분도 확률에 의해 기술된다. 솔직히 말하자면면, 이것은 교육학적 실험이며, 우리가 알기로는 이전에 한 번도 수행된 적이 없었다.</p>
-<p>이 주제에서는 사물의 양자역학적 행동이 상당히 기묘하다는 어려움이 있다. 일어날 일에 대힌 대략적이고 직관적인 아이디어를 얻기 위해 의존할 일상적인 경험을 가진 사람이 없다. 따라서 주제를 제시하는 방법은 두 가지가 있다: (<span class="math inline">\(1\)</span>) 일어날 수 있는 일을 다소 투박한 물리적 방식으로 설명하면서, 정확한 법칙을 제시하지 않은 채 어떤 일이 발생할 지 어느 정도로 말하거나, (<span class="math inline">\(2\)</span>) 다른 한편으로는 추상적인 형태로 정확한 법칙을 제시할 수 있다. 하지만, 그렇다면 추상화 때문에 물리적으로 그것들이 무엇인지 알 수 없을 것이다. 후자의 방법은 완전히 추상적이기 때문에 만족스럽지 않으며, 첫 번째 방법은 무엇이 진실이고 무엇이 거짓인지 정확히 알지 못하기 때문에 불편한 느낌을 남긴다. 우리는 이 어려움을 어떻게 극복해야 할지 확신하지 못한다. 실제로 <a href="../../src/vol1/vol1_5.html#sec-FLP_1_37">I.37 Quantum benavior</a> 과 <a href="../../src/vol1/vol1_5.html#sec-FLP_1_38">I.38 입자 관점과 파동 관점의 관계</a> 에서 이 문제가 나타난 것을 알게 될 것이다. 첫 번째 장은 비교적 정확했지만, 두 번째 장은 다양한 현상의 특성에 대한 대략적인 설명이었다. 여기에서는 두 극단 사이의 중간을 찾으려고 노력할 것이다.</p>
-<p>이번 장에서는 일반적인 양자역학 개념을 다루며 시작한다. 일부 진술은 꽤 정확할 것이며, 다른 진술은 부분적으로만 정확하다. 진행하면서 어느 것이 어떤것인지 말하기 어려울 수 있지만, 책의 나머지를 다 읽게 될 때쯤에는 어떤 부분이 유지되는지, 어떤 부분이 대략적으로 설명된 부분인지를 되돌아보며 이해하게 될 것이다. 다음 장들은 그렇게 불명확하지 않을 것이다. 사실, 우리가 다음 장들에서 신중하게 정확하게 하려고 노력한 이유 중 하나는 양자역학의 가장 아름다운 점 중 하나인, 작은 것에서 얼마나 많은 것을 추론할 수 있는지를 보여주기 위해서이다.</p>
+<p>슈뢰딩거가 양자역학의 올바른 법칙을 처음 발견했을 때, 그는 다양한 위치에서 입자를 찾는 진폭을 기술하는 방정식을 작성했다. 이 방정식은 이미 고전 물리학자들이 알고 있던 방정식들-음파에서 공기의 운동, 빛의 전달 등을 설명하는 데 사용한 방정식들-과 매우 유사했으므로 양자역학 초기의 대부분의 시간은 이 방정식을 푸는 데 사용되었다. 동시에, 특히 보른과 디랙에 의해 양자역학 배후의 기본적으로 새로운 물리적 개념에 대한 이해가 발전하고 있었다. 양자역학이 더욱 발전함에 따라, 전자의 스핀, 다양한 상대론적 현상과 같이 슈뢰딩거 방정식에 직접적으로 포함되지 않은 많은 것들이 존재한다는 것이 밝혀졌다. 전통적으로 양자역학의 모든 과정은 동일한 방식으로 시작되어, 해당 분야의 역사적 발전 과정에서 따라온 경로를 되밟아 간다. 먼저 고전역학에 대해 많은 것을 배우게 되어 슈뢰딩거 방정식을 푸는 법을 이해할 수 있게 된다. 그는 다양한 풀이법을 배우는 데 오랜 시간을 보낸다. 이 방정식을 상세히 연구한 뒤에야 그는 전자의 스핀이라는 “고급” 주제에 도달한다.</p>
+<p>원래 이 강의는 밀폐된 영역의 음파나 원통형 공동에서의 전자기 복사 모드와 같은 복잡한 상황에서 고전 물리학 방정식을 푸는 방법을 보여주며 마무리하려고 했다. 하지만 우리는 그 계획을 포기하고 대신 양자역학에 대해 소개하기로 결정했다. 일반적으로 양자역학의 고급 부분이라고 불리는 것이 실제로는 매우 단순하다. 관련된 수학은 특히 쉬워서 단순한 대수 연산을 포함하지만 미분 방정식은 없거나 최대한 매우 단순한 방정식만 포함한다. 유일한 문제는 우리가 더 이상 공간에서의 입자의 행동을 상세히 기술할 수 없다는 격차를 뛰어넘어야 한다는 것이다. 그래서 여기서 시도하려는 것은 일반적으로 양자역학의 “고급” 부분이라고 불리는 것에 대해 알려주는 것이다. 하지만 그것들은 가장 단순한 부분 뿐만 아니라 가장 기본적인 부분도 확률에 의해 기술된다. 솔직히 말하자면, 이것은 교육학적 실험이며, 우리가 알기로는 이전에 한 번도 수행된 적이 없었다.</p>
+<p>이 주제에서는 사물의 양자역학적 행동이 상당히 기묘하다는 어려움이 있다. 일어날 일에 대힌 대략적이고 직관적인 아이디어를 얻기 위해 의존할 일상적인 경험을 가진 사람이 없다. 따라서 주제를 제시하는 방법은 두 가지가 있다: (<span class="math inline">\(1\)</span>) 일어날 수 있는 일을 다소 투박한 물리적 방식으로 설명하면서, 정확한 법칙을 제시하지 않은 채 어떤 일이 발생할 지 어느 정도 범위에서 말하거나, (<span class="math inline">\(2\)</span>) 다른 한편으로는 추상적인 형태로 정확한 법칙을 제시하는 것이다. 하지만, 그렇다면 추상화 때문에 물리적으로 그것들이 무엇인지 알 수 없을 것이다. 후자의 방법은 완전히 추상적이기 때문에 만족스럽지 않으며, 첫 번째 방법은 무엇이 진실이고 무엇이 거짓인지 정확히 알지 못하기 때문에 불편한 느낌을 남긴다. 우리는 이 어려움을 어떻게 극복해야 할지 확신하지 못한다. 실제로 <a href="../../src/vol1/vol1_5.html#sec-FLP_1_37">I.37 Quantum benavior</a> 과 <a href="../../src/vol1/vol1_5.html#sec-FLP_1_38">I.38 입자 관점과 파동 관점의 관계</a> 에서 이 문제가 나타난 것을 알게 될 것이다. 첫 번째 장은 비교적 정확했지만, 두 번째 장은 다양한 현상의 특성에 대한 대략적인 설명이었다. 여기에서는 두 극단 사이의 중간을 찾으려고 노력할 것이다.</p>
+<p>이번 장에서는 일반적인 양자역학 개념을 다루며 시작한다. 일부 진술은 꽤 정확할 것이며, 다른 진술은 부분적으로만 정확하다. 진행하면서 어느 것이 어떤것인지 말하기 어려울 수 있지만, 책의 나머지를 다 읽게 될 때 쯤에는 어떤 부분이 유지되는지, 어떤 부분이 대략적으로 설명된 부분인지를 되돌아보며 이해하게 될 것이다. 다음 장들은 그렇게 불명확하지 않을 것이다. 사실, 우리가 다음 장들에서 신중하게 정확하게 하려고 노력한 이유 중 하나는 양자역학의 가장 아름다운 점 중 하나인, 매우 작은 것에서 얼마나 많은 것을 추론할 수 있는지를 보여주기 위해서이다.</p>
 <div id="fig-FLP_3_3_1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_3_3_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -331,25 +333,25 @@ window.Quarto = {
 </figcaption>
 </figure>
 </div>
-<p>우리는 확률 진폭의 중첩에 대해 다시 논의한다. 전자와 같은 입자 <span class="math inline">\(s\)</span> 의 발생기, 두 개의 슬릿이 있는 벽, 그리고 그 벽 뒤에는 <span class="math inline">\(x\)</span> 에 위치한 검출기가 있다. 우리는 입자가 <span class="math inline">\(x\)</span> 에서 발견될 확률을 구하고자 한다. 양자역학에서 첫 번째 일반 원리는 <strong>입자가 <span class="math inline">\(s\)</span> 에서 방출될 때 <span class="math inline">\(x\)</span> 에 도달할 확률을 확률 진폭이라고 하는 복소수의 절대제곱으로 정량적으로 나타낼 수 있다</strong> 는 점이며, 이 경우 <span class="math inline">\(s\)</span> 에서 입자가 <span class="math inline">\(x\)</span> 에 도달할 진폭이라고 한다. 우리는 이러한 진폭을 매우 자주 사용하여 디랙이 고안하고 양자역학에서 일반적으로 사용되는 약식 표기법을 사용하여 이 아이디어를 표현할 것이다. 우리는 확률 진폭을 다음과 같이 표기한다.</p>
+<p>우리는 확률 진폭의 중첩에 대해 다시 논의한다. 전자와 같은 입자 발생기 <span class="math inline">\(s\)</span>, 두 개의 슬릿이 있는 벽, 그리고 그 벽 뒤에는 <span class="math inline">\(x\)</span> 에 위치한 검출기가 있다. 우리는 입자가 <span class="math inline">\(x\)</span> 에서 발견될 확률을 구하고자 한다. 양자역학에서 첫 번째 일반 원리는 <strong>입자가 <span class="math inline">\(s\)</span> 에서 방출될 때 <span class="math inline">\(x\)</span> 에 도달할 확률을 확률 진폭이라고 하는 복소수의 절대제곱으로 정량적으로 나타낼 수 있다</strong> 는 점이며, 이 <u>경우 <span class="math inline">\(s\)</span> 로부터 입자가 <span class="math inline">\(x\)</span> 에 도달할 진폭</u>이라고 한다. 우리는 이러한 진폭을 매우 자주 사용하여 디랙이 고안하고 양자역학에서 일반적으로 사용되는 약식 표기법을 사용하여 이 아이디어를 표현할 것이다. 우리는 확률 진폭을 다음과 같이 표기한다.</p>
 <p><span id="eq-FLP_3_3_1"><span class="math display">\[
 \langle \text{입자는 } x \text{ 에 도착한다}|\text{입자는 } s \text{를 떠나}\rangle.
 \tag{11.1}\]</span></span></p>
-<p>여기서 괄호 기호 <span class="math inline">\(\langle\)</span>, <span class="math inline">\(\rangle\)</span> 은 괄호 내의 내용에 대한 확률 진폭을 의미하는 기호이며 수직선 오른쪽에 있는 표현은 항상 시작 조건을, 왼쪽에 있는 표현은 최종 조건을 나타낸다. 때때로 약어와 초기조건 및 최종 조건을 한 글자로 표기하는 것이 편리할 수도 있다. 예를 들어, 진폭 (<a href="#eq-FLP_3_3_1" class="quarto-xref">식&nbsp;<span>11.1</span></a>) 을 다음과 같이 쓸 수 있다.</p>
+<p>여기서 괄호 기호 <span class="math inline">\(\langle\)</span>, <span class="math inline">\(\rangle\)</span> 은 괄호 내의 내용에 대한 확률 진폭을 의미하는 기호이며 수직선 <span class="math inline">\(|\)</span> 오른쪽에 있는 표현은 항상 시작 조건을, 왼쪽에 있는 표현은 최종 조건을 나타낸다. 때때로 초기조건 및 최종 조건을 한 글자 약어로 표기하는 것이 편리할 수도 있다. 예를 들어, 진폭 (<a href="#eq-FLP_3_3_1" class="quarto-xref">식&nbsp;<span>11.1</span></a>) 을 다음과 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_3_3_2"><span class="math display">\[
 \langle x | s \rangle.
 \tag{11.2}\]</span></span></p>
-<p>이 진폭은 복소수이다.</p>
-<p>우리는 이미 입자가 검출기에 도달하는 방법이 두 가지일 때, 그 최종적인 확률은 두 확률의 합이 아니라 두 진폭의 합의 절대제곱으로 표기해야 함을 확인했다. 두 경로가 가능할 때 전자가 검출기에 도달할 확률은</p>
+<p>중요한 것은 이 진폭이 복소수라는 것이다.</p>
+<p>우리는 이미 입자가 검출기에 도달하는 방법이 두 가지일 때, 그 최종적인 확률은 두 확률의 합이 아니라 두 진폭의 합의 절대제곱으로 표기해야 함을 안다. 두 경로가 가능할 때 전자가 검출기에 도달할 확률은</p>
 <p><span id="eq-FLP_3_3_3"><span class="math display">\[
 P_{12}=|\phi_1 + \phi_2|^2.
 \tag{11.3}\]</span></span></p>
-<p>우리는 이제 이 결과를 새로운 표기법으로 표현하려 한다. 우선, 양자역학의 두 번째 일반 원리는 다음과 같다: <strong>입자가 두 가지 가능한 경로를 통해 주어진 상태에 도달할 수 있을 때, 그 과정의 전체 진폭은 별도로 고려된 두 경로에 대한 진폭의 합이다</strong>. 우리의 새로운 표기법으 표현하면 다ㅁ과 같다.</p>
+<p>우리는 이제 이 결과를 새로운 표기법으로 표현하려 한다. 우선, 양자역학의 두 번째 일반 원리는 다음과 같다: <strong>입자가 두 가지 가능한 경로를 통해 주어진 상태에 도달할 수 있을 때, 그 과정의 전체 진폭은 별도로 고려된 두 경로에 대한 진폭의 합이다</strong>. 우리의 새로운 표기법으 표현하면 다음과 같다.</p>
 <p><span id="eq-FLP_3_3_4"><span class="math display">\[
 \langle x|s\rangle_\text{두 슬릿 모두 열려 있음} = \langle x|s \rangle_\text{1 번 슬릿 통과} + \langle x|s\rangle_\text{2 번 슬릿 통과}.
 \tag{11.4}\]</span></span></p>
-<p>추가하자면 우리는 1번과 2번 슬릿이 충분히 작아서 전자가 슬릿을 통과한다고 말할 때, 각 슬릿의 어느 부분인지 논의할 필요가 없다고 가정한다. 물론 우리는 슬럿을 부분으로 나눠 전자가 각 부분을 통과하는 진폭을 고려할 수도 있다. 우리는 그 슬릿이 충분히 작아 이 세부 사항에 대해 걱정할 필요가 없다고 가정한다. 그것은 관련된 투박함의 일부이며, 사안을 보다 명확히 할 수는 있지만, 현재 단계에서는 그렇게 하지 않을 뿐이다.</p>
-<p>이제 전자가 슬릿 1을 통해 <span class="math inline">\(x\)</span> 의 검출기에 도달하는 과정의 진폭에 대해 더 자세히 알아본다. 여기에 세번째 일반 원리가 필요하다: <strong>입자가 특정 경로를 지나갈 때, 그 경로의 진폭은 경로를 부분으로 나눴을 때 각 부분에 대한 진폭의 곱이다</strong>. <a href="#fig-FLP_3_3_1" class="quarto-xref">그림&nbsp;<span>11.1</span></a> 의 설정에서 슬릿 <span class="math inline">\(1\)</span> 을 통해 <span class="math inline">\(s\)</span> 에서 <span class="math inline">\(x\)</span> 까지 가는 진폭은 <span class="math inline">\(s\)</span> 에서 <span class="math inline">\(1\)</span> 로 가는 진폭에 <span class="math inline">\(1\)</span> 에서 <span class="math inline">\(x\)</span> 로 가는 진폭을 곱한 값과 같다.</p>
+<p>추가하자면 우리는 1번과 2번 슬릿이 충분히 작아서 전자가 슬릿을 통과한다고 말할 때, 각 슬릿의 어느 부분인지 논의할 필요가 없다고 가정한다. 물론 우리는 슬릿을 부분으로 나눠 전자가 각 부분을 통과하는 진폭을 고려할 수도 있다. 우리는 그 슬릿이 충분히 작아 이 세부 사항에 대해 걱정할 필요가 없다고 가정한다. 그것은 관련된 투박함의 일부이며, 명확한 설명은 다음으로 일단 미루도록 하자.</p>
+<p>이제 전자가 슬릿 <span class="math inline">\(1\)</span> 을 통해 <span class="math inline">\(x\)</span> 의 검출기에 도달하는 과정의 진폭에 대해 더 자세히 알아본다. 여기에 세번째 일반 원리가 필요하다: <strong>입자가 특정 경로를 지나갈 때, 그 경로의 진폭은 경로를 부분으로 나눴을 때 각 부분에 대한 진폭의 곱이다</strong>. <a href="#fig-FLP_3_3_1" class="quarto-xref">그림&nbsp;<span>11.1</span></a> 의 설정에서 슬릿 <span class="math inline">\(1\)</span> 을 통해 <span class="math inline">\(s\)</span> 에서 <span class="math inline">\(x\)</span> 까지 가는 진폭은 <span class="math inline">\(s\)</span> 에서 <span class="math inline">\(1\)</span> 로 가는 진폭에 <span class="math inline">\(1\)</span> 에서 <span class="math inline">\(x\)</span> 로 가는 진폭을 곱한 값과 같다.</p>
 <p><span id="eq-FLP_3_3_5"><span class="math display">\[
 \langle x|s \rangle _\text{via 1} = \langle x | 1 \rangle \langle 1 | s\rangle..
 \tag{11.5}\]</span></span></p>
@@ -374,7 +376,7 @@ P_{12}=|\phi_1 + \phi_2|^2.
 \tag{11.6}\]</span></span></p>
 <p>이 방법을 사용하여 계산을 수행하려면, 자연스럽게 한 장소에서 다른 장소로 이동하는 진폭을 알아야 한다. 이제 일반적인 진폭에 대한 대략적인 개념을 제시하겠다. 빛의 편광이나 전자의 스핀과 같은 특정 요소들을 제외하지만, 이러한 특성을 제외하면 상당히 정확하다. 이 방법은 다양한 슬릿 조합과 관련된 문제를 해결하는데 도움을 준다. 정확한 에너지를 가진 입자가 위치 <span class="math inline">\(\boldsymbol{r}_1\)</span> 에서 위치 <span class="math inline">\(\boldsymbol{r}_2\)</span> 로 빈 공간을 이동하고 있다고 하자. 다시 말해, 그것은 힘이 없는 자유 입자이다. 앞에 있는 계수를 제외하고, <span class="math inline">\(\boldsymbol{r}_1\)</span> 에서 <span class="math inline">\(\boldsymbol{r}_2\)</span> 로 가는 진폭은</p>
 <p><span id="eq-FLP_3_3_7"><span class="math display">\[
-\langle \boldsymbol{r}_2|\boldsymbol{r}_1\rangle = \dfrac{e^{ipr_{12}}}{r_{12}}
+\langle \boldsymbol{r}_2|\boldsymbol{r}_1\rangle = \dfrac{e^{ipr_{12}/\hbar}}{r_{12}}
 \tag{11.7}\]</span></span></p>
 <p>이며 여기서 <span class="math inline">\(r_{12}= \|\boldsymbol{r}_2-\boldsymbol{r}_1\|\)</span> 이고, <span class="math inline">\(p\)</span> 는 상대론 방정식 <span class="math display">\[
 p^2c^2=E^2−(mc^2)^2,
@@ -383,18 +385,20 @@ p^2c^2=E^2−(mc^2)^2,
 <p><span class="math display">\[
 \dfrac{p^2}{2m}=\text{운동 에너지}
 \]</span></p>
-<p>를 통해 에너지 <span class="math inline">\(E\)</span> 와 관련된 운동량이다. <a href="#eq-FLP_3_3_7" class="quarto-xref">식&nbsp;<span>11.7</span></a> 은 실질적으로 입자가 파동과 유사한 특성을 가지고 있으며, 진폭이 파동으로 전파되어 파동수가 운동량을 <span class="math inline">\(\hbar\)</span> 로 나눈 것과 같음을 알려준다.</p>
-<p>일반적으로 진폭과 해당 확률에도 시간이 포함된다. 대부분의 초기 논의에서는 전자발생기가 항상 주어진 에너지로 입자를 방출한다고 가정하므로 시간에 대해 걱정할 필요가 없지만 일반적인 경우에는 다른 질문들에 관심이 있을 수도 있다. 입자가 특정 위치 <span class="math inline">\(P\)</span> 에서 특정 시점에 방출되고, 그 입자가 나중에 위치 <span class="math inline">\(\boldsymbol{r}\)</span> 에 도달하는 진폭을 알고자 한다면 이는 진폭 <span class="math inline">\(\langle \boldsymbol{r},t=t_1| P,\,t=0\rangle\)</span> 로 표현될 수 있다. 이것은 <span class="math inline">\(\boldsymbol{r}\)</span> 과 <span class="math inline">\(t\)</span> 모두에 따라 달라진다. 검출기를 서로 다른 장소에 배치하고 서로 다른 시간에 측정하면 다른 결과를 얻을 수 있습니다. 일반적으로 이 <span class="math inline">\(\boldsymbol{r}\)</span> 과 <span class="math inline">\(t\)</span> 함수는 파동 방정식인 미분 방정식을 만족한다. 비상대론적 경우에는 슈뢰딩거 방정식이다. 그렇다면 전자기파 또는 기체의 음파에 대한 방정식과 유사한 파동 방정식을 갖게 된다. 그러나 방정식을 만족하는 파동 함수는 공간의 실제 파동과는 동일하지 않다는 점을 강조해야 한다. 이 파동에 대해서는 음파와 같은 현실성을 생각 할 수 없다.</p>
-<p>하나의 입자를 다룰 때 <strong>입자 파동</strong> 이라는 개념으로 생각하고 싶을 수도 있지만 이는 좋은 생각이 아니다. 예를 들어 두 개의 입자가 존재할 때 <span class="math inline">\(\boldsymbol{r}_1\)</span> 에서 하나와 <span class="math inline">\(\boldsymbol{r}_2\)</span> 에서 다른 입자를 찾는 진폭은 3차원 공간에서 단순한 파동이 아니라 <span class="math inline">\(\boldsymbol{r}_1\)</span> 과 <span class="math inline">\(\boldsymbol{r}_2\)</span> 라는 여섯 개의 공간 변수에 따라 달라진다. 두 개(또는 그 이상)의 입자를 다루는 경우, 다음과 같은 추가 원칙이 필요하다. <strong>두 입자가 상호작용하지 않을 경우, 한 입자가 한 일을 하고 다른 입자가 다른 일을 하는 진폭은 두 입자가 각각 두 일을 수행하는 두 진폭의 곱이다</strong>. 예를 들어 입자 1 이 <span class="math inline">\(s_1\)</span> 으로부터 <span class="math inline">\(a\)</span> 로 갈 때의 확률진폭이 <span class="math inline">\(\langle a|s_1\rangle\)</span> 이고 입자 2 가 <span class="math inline">\(s_2\)</span> 로부터 <span class="math inline">\(b\)</span> 로 갈때의 확률진폭이 <span class="math inline">\(\langle b|s_2\rangle\)</span> 일 때, 두가지 사건이 함께 일어나는 진폭은</p>
+<p>를 통해 에너지 <span class="math inline">\(E\)</span> 와 관련된 운동량이다. <a href="#eq-FLP_3_3_7" class="quarto-xref">식&nbsp;<span>11.7</span></a> 은 실질적으로 입자가 파동과 유사한 특성을 가지고 있으며, 진폭이 파동으로 전파되어 파수(wave number)가 운동량을 <span class="math inline">\(\hbar\)</span> 로 나눈 것과 같음을 알려준다.</p>
+<p>일반적으로 진폭과 해당 확률에도 시간이 포함된다. 대부분의 초기 논의에서는 전자발생기가 항상 주어진 에너지로 입자를 방출한다고 가정하므로 시간에 대해 걱정할 필요가 없지만 일반적인 경우에는 다른 질문들에 관심이 있을 수도 있다. 입자가 특정 위치 <span class="math inline">\(P\)</span> 에서 특정 시점에 방출되고, 그 입자가 나중에 위치 <span class="math inline">\(\boldsymbol{r}\)</span> 에 도달하는 진폭은 <span class="math inline">\(\langle \boldsymbol{r},t=t_1| P,\,t=0\rangle\)</span> 으로 표현될 수 있다. 검출기를 서로 다른 장소에 배치하고 서로 다른 시간에 측정하면 다른 결과를 얻을 수 있다. 진폭은 <span class="math inline">\(\boldsymbol{r}\)</span> 과 <span class="math inline">\(t\)</span> 함수이며 일반적으로 파동 방정식인 미분 방정식을 만족한다. 비상대론적 경우에는 슈뢰딩거 방정식이다. 그렇다면 전자기파 또는 기체의 음파에 대한 방정식과 유사한 파동 방정식을 갖게 된다. 그러나 방정식을 만족하는 파동 함수는 공간의 실제 파동과는 유사하지 않다는 점을 강조해야 한다. 이 파동에 대해서는 음파와 같은 현실성을 생각 할 수 없다.</p>
+<p>하나의 입자를 다룰 때 <strong>입자 파동</strong> 이라는 개념으로 생각하고 싶을 수도 있지만 이는 좋은 생각이 아니다. 예를 들어 두 개의 입자가 존재할 때 <span class="math inline">\(\boldsymbol{r}_1\)</span> 에서 하나와 <span class="math inline">\(\boldsymbol{r}_2\)</span> 에서 다른 입자를 찾는 진폭은 3차원 공간에서 단순한 파동이 아니라 <span class="math inline">\(\boldsymbol{r}_1\)</span> 과 <span class="math inline">\(\boldsymbol{r}_2\)</span> 라는 여섯 개의 공간 변수에 따라 달라진다. 두 개(또는 그 이상)의 입자를 다루는 경우, 다음과 같은 추가 원칙이 필요하다. <strong>두 입자가 상호작용하지 않을 경우, 한 입자가 하나의 일을 하고 다른 입자가 다른 일을 하는 진폭은 두 입자가 각각 두 일을 수행하는 두 진폭의 곱이다</strong>. 예를 들어 입자 1 이 <span class="math inline">\(s_1\)</span> 으로부터 <span class="math inline">\(a\)</span> 로 갈 때의 확률진폭이 <span class="math inline">\(\langle a|s_1\rangle\)</span> 이고 입자 2 가 <span class="math inline">\(s_2\)</span> 로부터 <span class="math inline">\(b\)</span> 로 갈때의 확률진폭이 <span class="math inline">\(\langle b|s_2\rangle\)</span> 일 때, 두가지 사건이 함께 일어나는 진폭은</p>
 <p><span class="math display">\[
 \langle a|s_1\rangle \langle b|s_2\rangle
 \]</span></p>
 <p>이다.</p>
-<p>강조할 점이 하나 더 있습니다. <a href="#fig-FLP_3_3_2" class="quarto-xref">그림&nbsp;<span>11.2</span></a> 에 있는 입자들이 첫 번째 벽의 1번과 2번 스릿에 도달하기 전에 어디에서 오는지 모른다고 가정해 보자. 두 개의 숫자-1에 도달하는 진폭과 2에 도달하는 진폭-가 주어진다면 우리는 여전히 벽 너머에서 일어날 일(예를 들어, <span class="math inline">\(x\)</span> 에 도달하는 진폭)을 예측할 수 있다. 즉 연속적인 사건에 대한 진폭이 곱해진다는 사실 때문에, <a href="#eq-FLP_3_3_6" class="quarto-xref">식&nbsp;<span>11.6</span></a> 에서 알 수 있듯이 분석 위해 필요한 것은 두 개의 숫자-이 경우 <span class="math inline">\(\langle 1|s \rangle\)</span> 와 <span class="math inline">\(\langle 2|s\rangle\)</span>-뿐이다. 이것이 바로 양자역학이 쉬워지는 이유이다. 이후 장에서는 시작 조건으로 두 개(또는 몇 개)의 수를 지정하게 되는데 바로 이런 이유 때문이다. 물론 이러한 수는 전자발생기의 위치와 장치에 대한 세부 사항에 따라 달라지지만, 두 수를 안다면 이러한 세부 사항에 대해 더 이상 알 필요가 없다.</p>
+<p>강조할 점이 하나 더 있다. <a href="#fig-FLP_3_3_2" class="quarto-xref">그림&nbsp;<span>11.2</span></a> 에 있는 입자들이 첫 번째 벽의 1번과 2번 슬릿에 도달하기 전에 어디에서 오는지 모른다고 가정해 보자. 두 개의 숫자-1에 도달하는 진폭과 2에 도달하는 진폭-가 주어진다면 우리는 여전히 벽 너머에서 일어날 일(예를 들어, <span class="math inline">\(x\)</span> 에 도달하는 진폭)을 예측할 수 있다. 즉 연속적인 사건에 대한 진폭이 곱해진다는 사실 때문에, <a href="#eq-FLP_3_3_6" class="quarto-xref">식&nbsp;<span>11.6</span></a> 에서 알 수 있듯이 분석 위해 필요한 것은 두 개의 숫자-이 경우 <span class="math inline">\(\langle 1|s \rangle\)</span> 와 <span class="math inline">\(\langle 2|s\rangle\)</span>-뿐이다. 이것이 바로 양자역학이 쉬워지는 이유이다. 이후 장에서는 시작 조건으로 두 개(또는 몇 개)의 수를 지정하게 되는데 바로 이런 이유 때문이다. 물론 이러한 수는 전자발생기의 위치와 장치에 대한 세부 사항에 따라 달라지지만, 두 수를 안다면 이러한 세부 사항에 대해 더 이상 알 필요가 없다.</p>
 <p><br></p>
 </section>
 <section id="sec-FLP_3_3_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_3_3_2">III.3-2 이중슬릿 간섭무늬</h3>
+<section id="새로운-표기법을-이용한-기술" class="level4">
+<h4 class="anchored" data-anchor-id="새로운-표기법을-이용한-기술"><strong>새로운 표기법을 이용한 기술</strong></h4>
 <p>이제는 진폭 아이디어가 어떻게 작동하는지 보자. <a href="#fig-FLP_3_3_1" class="quarto-xref">그림&nbsp;<span>11.1</span></a> 의 실험에 <a href="#fig-FLP_3_3_3" class="quarto-xref">그림&nbsp;<span>11.3</span></a> 대로 두 슬릿 뒤에 광원을 추가한다. <a href="../vol1/vol1_5.html#sec-FLP_1_37" class="quarto-xref"><span> 5.1</span></a> 에서 다음과 같은 흥미로운 결과를 발견했다. 만약 우리가 슬릿 1 뒤쪽을 살펴보고 그곳에서 산란된 광자를 발견한다면, <span class="math inline">\(x\)</span> 에서 이 광자와 동시에 얻어진 전자들의 분포는 슬릿 2가 닫힌 것과 동일하다. 슬릿 1 또는 슬릿 2에서 관측된 전자들의 전체 분포는 별개의 분포들의 합이며, 조명이 꺼진 경우의 분포와는 완전히 달랐다. 이는 충분히 짧은 파장의 빛을 사용한다면 사실이다. 파장을 더 길게 만들어 산란이 어느 슬릿에서 발생했는지 확신할 수 없게 되면, 분포는 빛이 꺼진 것과 더 비슷해진다.</p>
 <div id="fig-FLP_3_3_3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -406,15 +410,15 @@ p^2c^2=E^2−(mc^2)^2,
 </figcaption>
 </figure>
 </div>
-<p>이제 새로운 표기법과 진폭 결합 원리를 사용하여 분석해보자. 전자가 슬릿 1을 통해 <span class="math inline">\(x\)</span> 에 도달하는 진폭을 <span class="math inline">\(\phi_1\)</span> 이라고 하자. 즉, <span class="math inline">\(\phi_1=\langle x|1\rangle \langle 1|s\rangle\)</span> 이다. 마찬가지로 전자가 슬릿 2를 통해 <span class="math inline">\(x\)</span> 에 도달하는 진폭을 <span class="math inline">\(\phi_2\)</span> 라고 하자. <span class="math inline">\(\phi_2 = \langle x|2\rangle \langle 2|s\rangle\)</span>. 이 진폭은 빛이 없을 경우 두 슬릿을 통과하여 <span class="math inline">\(x\)</span> 에 도달하는 진폭이다. 빛이 존재한다면 다음과 같은 질문을 던질 수 있다. “전자가 <span class="math inline">\(s\)</span> 에서 시작하고 광자가 광원 <span class="math inline">\(L\)</span> 에서 방출되어, <span class="math inline">\(x\)</span> 에서 전자가 끝나고 슬릿 1 뒤에서 보이는 광자로 끝나는 과정의 진폭은 얼마일까? 예를 들어, <a href="#fig-FLP_3_3_3" class="quarto-xref">그림&nbsp;<span>11.3</span></a> 에 표현된 검출기 <span class="math inline">\(D_1\)</span> 을 이용하여 슬릿 1 뒤의 광자를 관찰하고, 유사한 검출기 <span class="math inline">\(D_2\)</span> 를 사용하여 슬릿 2 뒤에 흩어진 광자를 계측한다고 가정하자. 광자가 <span class="math inline">\(D_1\)</span> 에 도달하고 전자가 <span class="math inline">\(x\)</span> 에 도달하는 진폭이 있으며, 광자가 <span class="math inline">\(D_2\)</span> 에 도달하고 전자가 <span class="math inline">\(x\)</span> 에 도달하는 진폭도 존재한다. 이제 계산해 보자.</p>
-<p>비록 이 계산에 들어가는 모든 요인에 대한 올바른 수학 공식은 없지만, 다음 토론에서 그 정신을 확인할 수 있다. 첫째, 전자가 전자발생기에서 슬릿 1 까지 이동하는 진폭은 <span class="math inline">\(\langle 1|s\rangle\)</span> 이다. 그렇다면 전자가 슬릿 1 에 있을 때 광자를 검출기 <span class="math inline">\(D_1\)</span> 으로 산란시키는 일정한 진폭이 있다고 가정할 수 있다. 이 진폭을 <span class="math inline">\(a\)</span> 로 표기한다. 또한 전자가 슬릿 1 에서 <span class="math inline">\(x\)</span> 의 전자 검출기로 이동하는 진폭 <span class="math inline">\(\langle x|1\rangle\)</span> 이 있다. 전자가 슬릿 1을 통해 <span class="math inline">\(s\)</span> 에서 <span class="math inline">\(x\)</span> 로 이동하고 광자를 <span class="math inline">\(D_1\)</span> 으로 산란시키는 진폭은</p>
+<p>이제 새로운 표기법과 진폭 결합 원리를 사용하여 분석해보자. 전자가 슬릿 1을 통해 <span class="math inline">\(x\)</span> 에 도달하는 진폭을 <span class="math inline">\(\phi_1\)</span> 이라고 하자. 즉, <span class="math inline">\(\phi_1=\langle x|1\rangle \langle 1|s\rangle\)</span> 이다. 마찬가지로 전자가 슬릿 2를 통해 <span class="math inline">\(x\)</span> 에 도달하는 진폭을 <span class="math inline">\(\phi_2\)</span> 라고 하자. <span class="math inline">\(\phi_2 = \langle x|2\rangle \langle 2|s\rangle\)</span>. 이 진폭은 빛이 없을 경우 두 슬릿을 통과하여 <span class="math inline">\(x\)</span> 에 도달하는 진폭이다. 빛이 존재한다면 다음과 같은 질문을 던질 수 있다. “전자가 <span class="math inline">\(s\)</span> 에서 시작하고 광자가 광원 <span class="math inline">\(L\)</span> 에서 방출되어, <span class="math inline">\(x\)</span> 에서 전자가 끝나고 광자는 슬릿 1 뒤에서 보이는 것으로 끝나는 과정의 진폭은 얼마일까?” 예를 들어, <a href="#fig-FLP_3_3_3" class="quarto-xref">그림&nbsp;<span>11.3</span></a> 에 표현된 검출기 <span class="math inline">\(D_1\)</span> 을 이용하여 슬릿 1 뒤의 광자를 관찰하고, 유사한 검출기 <span class="math inline">\(D_2\)</span> 를 사용하여 슬릿 2 뒤에 흩어진 광자를 계측한다고 가정하자. 광자가 <span class="math inline">\(D_1\)</span> 에 도달하고 전자가 <span class="math inline">\(x\)</span> 에 도달하는 진폭이 있으며, 광자가 <span class="math inline">\(D_2\)</span> 에 도달하고 전자가 <span class="math inline">\(x\)</span> 에 도달하는 진폭도 존재한다. 이제 계산해 보자.</p>
+<p>비록 이 계산에 들어가는 모든 요인에 대한 올바른 수학 공식은 없지만, 다음 논의에서 그 정신을 확인할 수 있다. 첫째, 전자가 전자발생기에서 슬릿 1 까지 이동하는 진폭은 <span class="math inline">\(\langle 1|s\rangle\)</span> 이다. 그렇다면 전자가 슬릿 1 에 있을 때 광자를 검출기 <span class="math inline">\(D_1\)</span> 으로 산란시키는 일정한 진폭이 있다고 가정할 수 있다. 이 진폭을 <span class="math inline">\(a\)</span> 로 표기한다. 또한 전자가 슬릿 1 에서 <span class="math inline">\(x\)</span> 의 전자 검출기로 이동하는 진폭 <span class="math inline">\(\langle x|1\rangle\)</span> 이 있다. 전자가 슬릿 1을 통해 <span class="math inline">\(s\)</span> 에서 <span class="math inline">\(x\)</span> 로 이동하고 광자를 <span class="math inline">\(D_1\)</span> 으로 산란시키는 진폭은</p>
 <p><span class="math display">\[
 \langle x|1\rangle a \langle 1|s\rangle = a\phi_1
 \]</span></p>
 <p>이다.</p>
-<p>또한, 슬릿 2를 통과하는 전자가 광자를 카운터 <span class="math inline">\(D_1\)</span> 으로 산란시키는 진폭도 존재한다. <span class="math inline">\(D_1\)</span> 은 슬릿 1만 바라보고 있는데 어떻게 슬릿 2 를 통과한 전자와 산란된 빛이 <span class="math inline">\(D_1\)</span> 으로 갈 수 있는지 반론을 제기할 수도 있다. 그러나 파장이 충분히 길면 회절 효과가 발생하므로 가능하다. 장치가 잘 만들어지고 파장이 짧은 광자를 사용할 경우, 슬릿 2 를 통과한 전자에 의해 <span class="math inline">\(D_1\)</span> 방향의 빛 산란이 발생할 진폭은 매우 작다. 하지만 일반성을 유지하기 위해 그러한 진폭이 존재한다는 점을 고려하고자 하며, 이를 <span class="math inline">\(b\)</span> 라고 하자. 그렇다면 전자가 슬릿 2를 통과해 가서 광자를 <span class="math inline">\(D_1\)</span> 으로 산란시키는 진폭은</p>
+<p>또한, 슬릿 2를 통과하는 전자가 광자를 카운터 <span class="math inline">\(D_1\)</span> 으로 산란시키는 진폭도 존재한다. <span class="math inline">\(D_1\)</span> 은 슬릿 1만 바라보고 있는데 어떻게 슬릿 2 를 통과한 전자와 산란된 빛이 <span class="math inline">\(D_1\)</span> 으로 갈 수 있는지 반론을 제기할 수도 있다. 그러나 파장이 충분히 길면 회절이 발생하므로 가능하다. 장치가 잘 만들어지고 파장이 짧은 광자를 사용할 경우 슬릿 2 를 통과한 전자에 의해 <span class="math inline">\(D_1\)</span> 방향의 빛 산란이 발생할 진폭은 매우 작다. 하지만 일반성을 유지하기 위해 그러한 진폭이 존재한다는 것을 고려하여 이를 <span class="math inline">\(b\)</span> 라고 하자. 그렇다면 전자가 슬릿 2를 통과해 가서 광자를 <span class="math inline">\(D_1\)</span> 으로 산란시키는 진폭을 다음과 같이 쓸 수 있다.</p>
 <p><span class="math display">\[
-\langle x|2 \rangle b\langle 2|s\rangle = b\phi_2
+\langle x|2 \rangle b\langle 2|s\rangle = b\phi_2.
 \]</span></p>
 <p><span class="math inline">\(x\)</span> 에서 전자가 측정되는 진폭과 <span class="math inline">\(D_1\)</span> 에서 광자가 측정되는 진폭은 전자의 가능한 두 경로에 대한 항의 합이다. 각 항은 두 인수-(<span class="math inline">\(1\)</span>) 전자가 구멍을 통과하는, (<span class="math inline">\(2\)</span>) 광자가 그러한 전자에 의해 <span class="math inline">\(D_1\)</span> 으로 산란되는-로 구성되어 있으므로 아래의 식을 얻는다.</p>
 <p><span id="eq-FLP_3_3_8"><span class="math display">\[
@@ -424,7 +428,10 @@ p^2c^2=E^2−(mc^2)^2,
 <p><span id="eq-FLP_3_3_9"><span class="math display">\[
 \left\langle \begin{array}{ll} x\text{ 에 전자} \\ D_2 \text{ 에 광자}\end{array} \right|\left. \begin{array}{ll} s \text{ 로부터의 전자} \\ L \text{ 로부터의 광자}\end{array}\right\rangle  = a\phi_2 + b \phi_1.
 \tag{11.9}\]</span></span></p>
-<p>이제 모든 준비를 마쳤고 계산만 하면 된다. 우선 <span class="math inline">\(D_1\)</span> 에서 광자를 <span class="math inline">\(x\)</span> 에서 전자를 얻을 확률은 <span class="math inline">\(|a\phi_1 + b\phi_2|^2\)</span> 이다. 이 표현을 좀 더 자세히 살펴보자. 우선 <span class="math inline">\(b=0\)</span> 이라면(이는 장치가 이상적일 때 작동하는 방식이다) 답은 단순히 <span class="math inline">\(|a|^2|\phi_1|^2\)</span> 으로 전체 진폭에서 <span class="math inline">\(|a|^2\)</span> 를 곱한 만큼 감소한 것이다. <span class="math inline">\(|\phi_1|^2\)</span> 는 슬릿이 하나뿐일 경우 얻을 확률 분포로, <a href="#fig-FLP_3_3_4" class="quarto-xref">그림&nbsp;<span>11.4</span></a> (a) 의 그래프에 표시된 바와 같다. 반면에 파장이 매우 길 경우, 슬릿 2 뒤에서 <span class="math inline">\(D_1\)</span> 으로의 산란은 슬릿 1과 거의 동일할 수 있다. <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 에 어떤 위상이 포함될 수 있지만, 두 위상이 동일한 간단한 경우, 즉 실질적으로 <span class="math inline">\(a=b\)</span> 이면 전체 확률은 <span class="math inline">\(|a|^2|\phi_1+\phi_2|^2\)</span> 가 된다. 그런데 이것은 광자를 전혀 사용하지 않았을 때 얻는 확률 분포이다. 따라서 파장이 매우 긴 경우-그래서 광자 검출이 효과가 없는 경우—, <a href="#fig-FLP_3_3_4" class="quarto-xref">그림&nbsp;<span>11.4</span></a> (b) 와 같이 간섭 효과를 나타내는 원래의 분포 곡선으로 돌아간다. 검출이 부분적으로 효과가 있는 경우, 큰 <span class="math inline">\(\phi_1\)</span> 과 약간의 <span class="math inline">\(\phi_2\)</span> 사이에 간섭이 발생하며, <a href="#fig-FLP_3_3_4" class="quarto-xref">그림&nbsp;<span>11.4</span></a> (c) 에 보이는 중간적인 분포를 얻을 수 있다. 말할 필요도 없이, <span class="math inline">\(D_2\)</span> 에서 광자와 <span class="math inline">\(x\)</span> 에서 전자 측정이 일치하는 수를 찾으면 동일한 종류의 결과를 얻을 수 있다. <a href="../../src/vol1/vol1_5.html#sec-FLP_1_37">I.37 Quantum behavior</a> 의 논의를 기억한다면, 이 결과들이 그곳에서 설명된 내용을 정량적으로 설명하고 있음을 확인할 수 있다.</p>
+</section>
+<section id="확률진폭과-이중슬릿-간섭무늬" class="level4">
+<h4 class="anchored" data-anchor-id="확률진폭과-이중슬릿-간섭무늬"><strong>확률진폭과 이중슬릿 간섭무늬</strong></h4>
+<p>이제 모든 준비를 마쳤고 확률을 계산만 하면 된다. 우선 <span class="math inline">\(D_1\)</span> 에서 광자를, <span class="math inline">\(x\)</span> 에서 전자를 얻을 확률은 <span class="math inline">\(|a\phi_1 + b\phi_2|^2\)</span> 이다. 이 표현을 좀 더 자세히 살펴보자. 우선 <span class="math inline">\(b=0\)</span> 이라면(이는 장치가 이상적일 때 작동하는 방식이다) 답은 단순히 <span class="math inline">\(|a|^2\,|\phi_1|^2\)</span> 으로 전체 진폭에서 <span class="math inline">\(|a|^2\)</span> 를 곱한 만큼 감소한 것이다. <span class="math inline">\(|\phi_1|^2\)</span> 는 슬릿이 하나뿐일 경우 얻을 확률 분포로, <a href="#fig-FLP_3_3_4" class="quarto-xref">그림&nbsp;<span>11.4</span></a> (a) 의 그래프에 표시된 바와 같다. 반면에 파장이 매우 길 경우, 슬릿 2 뒤에서 <span class="math inline">\(D_1\)</span> 으로의 산란은 슬릿 1과 거의 동일할 수 있다. <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 에 어떤 위상이 포함될 수 있지만, 두 위상이 동일한 간단한 경우, 즉 실질적으로 <span class="math inline">\(a=b\)</span> 이면 전체 확률은 <span class="math inline">\(|a|^2|\phi_1+\phi_2|^2\)</span> 가 된다. 그런데 이것은 광자를 전혀 사용하지 않았을 때 얻는 확률 분포이다. 따라서 파장이 매우 긴 경우-그래서 광자 검출이 효과가 없는 경우—, <a href="#fig-FLP_3_3_4" class="quarto-xref">그림&nbsp;<span>11.4</span></a> (b) 와 같이 간섭 효과를 나타내는 원래의 분포 곡선으로 돌아간다. 검출이 부분적으로 효과가 있는 경우, 큰 <span class="math inline">\(\phi_1\)</span> 과 약간의 <span class="math inline">\(\phi_2\)</span> 사이에 간섭이 발생하며, <a href="#fig-FLP_3_3_4" class="quarto-xref">그림&nbsp;<span>11.4</span></a> (c) 에 보이는 중간적인 분포를 얻을 수 있다. 말할 필요도 없이, <span class="math inline">\(D_2\)</span> 에서 광자와 <span class="math inline">\(x\)</span> 에서 전자 측정이 일치하는 수를 찾으면 동일한 종류의 결과를 얻을 수 있다. <a href="../../src/vol1/vol1_5.html#sec-FLP_1_37">I.37 Quantum behavior</a> 의 논의를 기억한다면, 이 결과들이 그곳에서 설명된 내용을 정량적으로 설명하고 있음을 확인할 수 있을 것이다.</p>
 <div id="fig-FLP_3_3_4" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_3_3_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -435,7 +442,10 @@ p^2c^2=E^2−(mc^2)^2,
 </figcaption>
 </figure>
 </div>
-<p>이제 일반적인 실수를 피하는데 도움을 주는 중요한 점을 알아보자. 광자가 <span class="math inline">\(D_1\)</span> 에서 측정되었는지 <span class="math inline">\(D_2\)</span> 에서 측정되었는지와는 관계없이 전자가 <span class="math inline">\(x\)</span> 에 도달하는 진폭만을 원한다고 하자. 그렇다면 <a href="#eq-FLP_3_3_8" class="quarto-xref">식&nbsp;<span>11.8</span></a> 과 <a href="#eq-FLP_3_3_9" class="quarto-xref">식&nbsp;<span>11.9</span></a> 에 주어진 진폭을 더해야 하나? 절대로 아니다. <strong>서로 다른 그리고 구별된 최종 상태에 대해 진폭을 더해서는 안된다.</strong> 광자가 광자 계수기 중 하나에 받아들여지면, 시스템을 추가적으로 교란하지 않고 언제든지 어떤 대안이 발생했는지 판단할 수 있다. 각각의 대안는 서로 완전히 독립된 확률을 가지고 있다. 여기서 <strong>최종</strong> 이란 바로 그 순간에 확률을 원한다는 의미이다. 즉, 실험이 “완료”될 때를 의미한다. 전체 과정이 완료되기 전에 실험 내부의 다양한 구별할 수 없는 다른 대안들에 대한 진폭을 추가한다. 과정이 끝날 때 “광자를 보고 싶지 않다” 라고 말할 수 있다. 그것은 너의 사정이며, 여전히 진폭을 추가하지 안는다. 자연은 당신이 무엇을 보고 있는지 알지 못하고, 데이터를 삭제하든 하지 않든 자연이 해야 할 일을 할 뿐이다. 따라서 여기서는 진폭을 추가해서는 안된다. 우리는 먼저 가능한 모든 다양한 최종 사건에 대한 진폭을 제곱한 다음 합산합니다. <span class="math inline">\(x\)</span> 에 전자를, <span class="math inline">\(D_1\)</span> 또는 <span class="math inline">\(D_2\)</span> 에서 광자를 측정할 올바른 결과는</p>
+</section>
+<section id="확률진폭의-간섭과-확률의-더하기" class="level4">
+<h4 class="anchored" data-anchor-id="확률진폭의-간섭과-확률의-더하기"><strong>확률진폭의 간섭과 확률의 더하기</strong></h4>
+<p>이제 일반적인 실수를 피하는데 도움을 주는 중요한 점을 알아보자. 광자가 <span class="math inline">\(D_1\)</span> 에서 측정되었는지 <span class="math inline">\(D_2\)</span> 에서 측정되었는지와는 관계없이 전자가 <span class="math inline">\(x\)</span> 에 도달하는 진폭만을 원한다고 하자. 그렇다면 <a href="#eq-FLP_3_3_8" class="quarto-xref">식&nbsp;<span>11.8</span></a> 과 <a href="#eq-FLP_3_3_9" class="quarto-xref">식&nbsp;<span>11.9</span></a> 에 주어진 진폭을 더해야 하나? 절대로 아니다. <strong>서로 다른 그리고 구별된 최종 상태에 대해 진폭을 더해서는 안된다.</strong> 광자가 계수기 중 하나에 측정되면, 시스템을 추가적으로 교란하지 않고 언제든지 가능한 것중 어떤 것이 발생했는지 판단할 수 있다. 각각의 대안는 서로 완전히 독립된 확률을 가지고 있다. 여기서 <strong>최종</strong> 이란 바로 그 순간에 확률을 원한다는 의미이다. 즉, 실험이 “완료”될 때를 의미한다. 전체 과정이 완료되기 전에는 실험 내부의 다양한 구별할 수 없는 다른 대안들에 대한 진폭을 추가한다. 과정이 끝날 때 “광자를 보고 싶지 않다” 라고 말할 수 있다. 그것은 너의 사정이며, 여전히 진폭을 추가하지 않는다. 자연은 당신이 무엇을 보고 있는지 알지 못하고, 데이터를 삭제하든 하지 않든 자연이 해야 할 일을 할 뿐이다. 따라서 여기서는 진폭을 추가해서는 안된다. 우리는 먼저 가능한 모든 다양한 최종 사건에 대한 진폭을 제곱한 다음 합산합니다. <span class="math inline">\(x\)</span> 에 전자를, <span class="math inline">\(D_1\)</span> 또는 <span class="math inline">\(D_2\)</span> 에서 광자를 측정할 올바른 결과는 다음과 같다.</p>
 <p><span id="eq-FLP_3_3_10"><span class="math display">\[
 \begin{aligned}
 &amp;\left|\left\langle \begin{array}{ll} x \text{ 에 전자}\\ D_1 \text{ 에 광자} \end{array}\right| \left. \begin{array}{ll} s\text{ 로부터 전자} \\ L \text{ 로부터 광자}\end{array}\right\rangle \right|^2
@@ -445,6 +455,7 @@ p^2c^2=E^2−(mc^2)^2,
 \end{aligned}
 \tag{11.10}\]</span></span></p>
 <p><br></p>
+</section>
 </section>
 <section id="sec-FLP_3_3_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_3_3_3">III.3-3 결정으로부터의 산란</h3>
@@ -458,17 +469,17 @@ p^2c^2=E^2−(mc^2)^2,
 </figcaption>
 </figure>
 </div>
-<p>다음 예는 확률 진폭의 간섭을 다소 신중하게 분석해야 하는 현상이다. 결정으로부터 중성자의 산란 과정을 살펴보자. 중심에 핵을 가진 원자들이 주기적으로 배열된 결정이 있고 멀리서 오는 중성자 빔이 오고 있다고 하자. 결정의 다양한 핵들을 인덱스 <span class="math inline">\(i\)</span> 로 표기할 수 있으며, 전체 원자의 개수를 <span class="math inline">\(N\)</span> 이라고 하자. <a href="#fig-FLP_3_3_5" class="quarto-xref">그림&nbsp;<span>11.5</span></a> 에 표현된 배치을 사용하여 중성자가 카운터에 들어갈 확률을 계산하려고 한다. 특정 원자 <span class="math inline">\(i\)</span> 에 대해, 중성자가 계측기 <span class="math inline">\(C\)</span> 에 도달하는 진폭은 중성자가 중성자원 <span class="math inline">\(S\)</span> 에서 핵 <span class="math inline">\(i\)</span> 까지 도달하는 진폭에, 그곳에서 산란되는 진폭 <span class="math inline">\(a\)</span> 를 곱한 뒤, <span class="math inline">\(i\)</span> 에서 계측기 <span class="math inline">\(C\)</span> 에서 측정되는 진폭을 곱한 것이다. 즉</p>
+<p>다음 예는 확률 진폭의 간섭을 다소 신중하게 분석해야 하는 현상이다. 결정으로부터 중성자의 산란 과정을 살펴보자. 중심에 핵을 가진 원자들이 주기적으로 배열된 결정이 있고 멀리서 중성자 빔이 오고 있다고 하자. 결정의 다양한 핵들을 인덱스 <span class="math inline">\(i\)</span> 로 표기할 수 있으며, 전체 원자의 개수를 <span class="math inline">\(N\)</span> 이라고 하자. <a href="#fig-FLP_3_3_5" class="quarto-xref">그림&nbsp;<span>11.5</span></a> 에 표현된 배치을 사용하여 중성자가 계수기에 들어갈 확률을 계산하려고 한다. 특정 원자 <span class="math inline">\(i\)</span> 에 대해, 중성자가 계측기 <span class="math inline">\(C\)</span> 에 도달하는 진폭은 중성자가 중성자원 <span class="math inline">\(S\)</span> 에서 핵 <span class="math inline">\(i\)</span> 까지 도달하는 진폭에, 그곳에서 산란되는 진폭 <span class="math inline">\(a\)</span> 를 곱한 뒤, <span class="math inline">\(i\)</span> 에서 계측기 <span class="math inline">\(C\)</span> 에서 측정되는 진폭을 곱한 것이다. 즉</p>
 <p><span id="eq-FLP_3_3_11"><span class="math display">\[
 \langle C \text {에 있는 중성자} | S \text{ 로부터의 중성자}\rangle_{\text{via } i} = \langle C|i\rangle a \langle i|S\rangle .
 \tag{11.11}\]</span></span></p>
-<p>이 식을 작성할 때 우리는 모든 원자에 대해 산란 진폭 <span class="math inline">\(a\)</span> 가 동일하다고 가정했다. 여기에는 구별하기 어려운 많은 경로가 있다. 저에너지 중성자가 원자와 산란 할 때 원자를 결정의 자리에서 이동시키지 않고 핵과 산란하기 때문에 경로들을 구별할 수 없다. 즉 산란에 대한 기록이 남지 않는다. 앞선 논의에 따르면, <span class="math inline">\(C\)</span> 에서의 중성자의 전체 진폭은 모든 원자에 대한 <a href="#eq-FLP_3_3_11" class="quarto-xref">식&nbsp;<span>11.11</span></a> 의 합을 포함한다.</p>
+<p>이 식에서 우리는 모든 원자에 대해 산란 진폭 <span class="math inline">\(a\)</span> 가 동일하다고 가정했다. 여기에는 구별하기 어려운 많은 경로가 있다. 저에너지 중성자가 원자와 산란 할 때 원자를 결정의 자리에서 이동시키지 않고 핵과 산란하기 때문에 경로들을 구별할 수 없다. 즉 산란에 대한 기록이 남지 않는다. 앞선 논의에 따르면, <span class="math inline">\(C\)</span> 에서의 중성자의 전체 진폭은 모든 원자에 대한 <a href="#eq-FLP_3_3_11" class="quarto-xref">식&nbsp;<span>11.11</span></a> 의 합을 포함한다.</p>
 <p><span id="eq-FLP_3_3_12"><span class="math display">\[
 \langle C \text { 에 있는 중성자} | S \text{ 로부터의 중성자}\rangle = \sum_{i=1}^N \langle C|i\rangle a \langle i|S\rangle .
 \tag{11.12}\]</span></span></p>
 <p>여기서 서로 다른 공간상의 위치에 있는 원자들의 산란 진폭을 더하므로 진폭은 서로 다른 위상을 갖게 되며, 이는 격자에서 발생하는 빛의 산란에 대해 이미 분석한것과 같은 특징적인 간섭 패턴을 보인다.</p>
-<p>이러한 실험에서 각도에 따른 중성자 강도는 <a href="#fig-FLP_3_3_6" class="quarto-xref">그림&nbsp;<span>11.6</span></a> (a) 에 표시된 바와 같이 매우 날카로운 간섭 피크들과 그 사이의 매우 낮은 강도와 같은 큰 변동을 보인다. 하지만 특정 종류의 결정에 대해서는 이렇게 작동하지 않으며, 위에서 논의한 간섭 피크와 함께 모든 방향으로 발생하는 산란에 의한 백그라운드가 존재한다. 이것은 겉보기엔 신기하지만 그 이유를 이해하려고 노력해야 한다. 지금까지는 중성자의 중요한 특성 하나를 고려하지 않았다. 중성자는 <span class="math inline">\(1/2\)</span> 스핀을 가지며 따라서 “up” 과 “down” 스핀이 존재 한다. 결정의 핵에 스핀이 없으면 중성자의 스핀은 전혀 영향을 미치지 않는다. 하지만 결정 핵이 스핀을 가진다면, 예를 들어 <span class="math inline">\(1/2\)</span>, 위에서 설명한 흐릿한 산란의 백그라운드를 관찰하게 된다.</p>
-<p>중성자가 하나의 스핀 방향을 가지고 원자핵도 동일한 스핀을 가지고 있다면, 산란 과정에서 스핀의 변화는 일어나지 않는다. 중성자와 원자핵이 서로 반대 스핀을 갖는 경우, 스핀이 변하지 않는 과정과 스핀 방향이 교환되는 두 과정에 의해 산란이 발생할 수 있다. 스핀들의 합에 순변화가 없다는 이 규칙은 우리 고전적 각운동량 보존 법칙과 유사하다. 우리는 모든 산란 핵이 한 방향으로 스핀을 가지고 있다고 가정한다면 현상을 이해하기 시작할 수 있다. 같은 스핀을 가진 중성자는 예상되는 급격한 간섭 분포를 가지고 산란합니다. 반대 스핀이 있는 것은 어떨까? 스핀 플립 없이 산란한다면 앞의 결과와 같고, 산란에서 두 스핀이 뒤집힌다면 원칙적으로 어느 핵이 산란을 수행했는지 알 수 있다. 왜냐하면 그 핵만이 스핀을 뒤집힌 유일한 핵이기 때문이다. 산란을 한 원자를 알 수 있다해도 다른 원자들은 그것과 무슨 관련이 있습니까? 물론, 아무 상관이 없다. 산란은 단일 원자에서 발생하는 산란과 정확히 동일하다.</p>
+<p>이러한 실험에서 각도에 따른 중성자 강도는 <a href="#fig-FLP_3_3_6" class="quarto-xref">그림&nbsp;<span>11.6</span></a> (a) 에 표현된 바와 같이 매우 날카로운 간섭 피크들과 그 사이의 거의 아무것도 없는 것과 같은 큰 변동을 보인다. 하지만 특정 종류의 결정에 대해서는 이렇게 작동하지 않으며, 위에서 논의한 간섭 피크와 함께 모든 방향으로 발생하는 산란에 의한 백그라운드가 존재한다. 이것은 겉보기엔 신기하지만 그 이유를 이해하려고 노력해야 한다. 지금까지는 중성자의 중요한 특성 하나를 고려하지 않았다. 중성자는 <span class="math inline">\(1/2\)</span> 스핀을 가지며 따라서 “업(up)” 과 “다운(down)” 스핀이 존재 한다. 결정의 핵에 스핀이 <span class="math inline">\(0\)</span> 이면 중성자의 스핀은 전혀 영향을 미치지 않는다. 하지만 결정 핵의 스핀이 <span class="math inline">\(0\)</span> 이 아니라면 위에서 설명한 흐릿한 산란의 백그라운드를 관찰하게 된다.</p>
+<p>핵의 스핀이 <span class="math inline">\(1/2\)</span> 라고 하자. 중성자와 원자핵이 동일한 스핀 방향을 가지고 있다면 산란 과정에서 스핀의 변화는 일어나지 않는다. 중성자와 원자핵이 서로 반대 스핀을 갖는 경우, 스핀이 변하지 않는 과정과 스핀 방향이 교환되는 두 과정에 의해 산란이 발생할 수 있다. 여기에는 스핀들의 합에 순변화가 없다는 고전적 각운동량 보존 법칙과 유사한 규칙이 존재한다. 우선 모든 산란 핵이 한 방향으로 스핀을 가지고 있다고 가정하자. 같은 스핀을 가진 중성자는 예상되는 뾰족한 간섭 분포를 가지고 산란한다. 하지만 반대 스핀이 있다면? 스핀 플립 없이 산란한다면 앞의 결과와 같고, 산란에서 두 스핀이 뒤집힌다면 원칙적으로 어느 핵이 산란을 수행했는지 알 수 있다. 왜냐하면 그 핵만이 스핀을 뒤집힌 유일한 핵이기 때문이다. 산란을 한 원자를 알 수 있다해도 다른 원자들은 그것과 무슨 관련이 있을까? 물론, 아무 상관이 없다. 산란은 단일 원자에서 발생하는 산란과 정확히 동일하다.</p>
 <div id="fig-FLP_3_3_6" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_3_3_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -479,12 +490,12 @@ p^2c^2=E^2−(mc^2)^2,
 </figcaption>
 </figure>
 </div>
-<p>이 효과를 포함하기 위해 <a href="#eq-FLP_3_3_12" class="quarto-xref">식&nbsp;<span>11.12</span></a> 는 수정되어야 한다. 먼저, 원천의 모든 중성자가 업스핀을 갖고, 결정의 모든 핵이 다운스핀을 갖는 것으로 시작하자. 우선 측정기에서의 모든 중성자의 스핀이 업이고(<span class="math inline">\(C_\uparrow\)</span>) 결정의 모든 스핀이 다운(<span class="math inline">\(X_\downarrow\)</span>)인 진폭은 이전 논의와 같다. 스핀 플립 없이 산란할 진폭을 <span class="math inline">\(a\)</span> 라고 하자. 물론, <span class="math inline">\(i\)</span> 번째 원자로부터의 산란 진폭은 아래와 같다.</p>
+<p>이 효과를 포함하기 위해 <a href="#eq-FLP_3_3_12" class="quarto-xref">식&nbsp;<span>11.12</span></a> 는 수정되어야 한다. 먼저, 중성자원의 모든 중성자가 업스핀을 갖고, 결정의 모든 핵이 다운스핀을 갖는 것으로 시작하자. 우선 측정기에서의 모든 중성자의 스핀이 업이고(<span class="math inline">\(C_\uparrow\)</span>) 결정의 모든 스핀이 다운(<span class="math inline">\(X_\downarrow\)</span>)인 진폭은 이전 논의와 같다. 스핀 플립 없이 산란할 진폭을 <span class="math inline">\(a\)</span> 라고 하자. 당연히 <span class="math inline">\(i\)</span> 번째 원자로부터의 산란 진폭은 아래와 같다.</p>
 <p><span class="math display">\[
 \langle C_\uparrow,\,X_\downarrow | S_\uparrow,\, X_\downarrow \rangle = \langle C|i\rangle a \langle i|S\rangle.
 \]</span></p>
-<p>모든 원자 스핀이 아직 다운인 상태이므로, 다양한 대안(<span class="math inline">\(i\)</span> 의 다른 값)을 구분할 수 없다. 어떤 원자가 산란을 했는지 명확히 알 방법이 없습니다. 이 과정에서는 모든 진폭이 간섭한다.</p>
-<p>하지만 탐지된 중성자의 스핀이 <span class="math inline">\(S\)</span> 에서 시작했음에도 불구하고 스핀이 다운되는 될 수 있으며 이 때 결정에서는 스핀 중 하나가 업으로 바뀌어야 한다. 이를 <span class="math inline">\(k\)</span> 번째 원자라고 하고 이 상태를 <span class="math inline">\(X_{k\uparrow}\)</span> 라고 표기한다. 우리는 모든 원자에 대해 스핀 플립이 일어나는 산란 진폭은 모두 동일한 <span class="math inline">\(b\)</span> 라고 가정하자. (실제 결정에서는 플립된 스핀이 다른 원자로 이동할 가능성이 매우 높지만, 이 확률이 매우 낮은 결정이라고 생각하자) 산란 진폭은 다음과 같다.</p>
+<p>모든 원자 스핀이 아직 다운인 상태이므로, 다양한 대안(<span class="math inline">\(i\)</span> 의 다른 값)을 구분할 수 없다. 어떤 원자가 산란을 했는지 명확히 알 방법이 없다. 이 과정에서는 모든 진폭이 간섭한다.</p>
+<p>하지만 탐지된 중성자의 스핀이 <span class="math inline">\(S\)</span> 에서 시작했음에도 불구하고 스핀이 다운 될 수 있으며 이 때 결정에서는 스핀 중 하나가 업으로 바뀌어야 한다. 바뀐 원자를 <span class="math inline">\(k\)</span> 번째 원자라고 하고 이 상태를 <span class="math inline">\(X_{k\uparrow}\)</span> 라고 표기한다. 우리는 모든 원자에 대해 스핀 플립이 일어나는 산란 진폭은 모두 동일한 <span class="math inline">\(b\)</span> 라고 가정하자. (실제 결정에서는 플립된 스핀이 다른 원자로 이동할 가능성이 매우 높지만, 이 확률이 매우 낮은 결정이라고 생각하자) 산란 진폭은 다음과 같다.</p>
 <p><span id="eq-FLP_3_3_13"><span class="math display">\[
 \langle C_\downarrow,\,X_{k\uparrow} | S_\uparrow,\, X_\downarrow \rangle = \langle C|k\rangle b \langle k|S\rangle.
 \tag{11.13}\]</span></span></p>
@@ -493,7 +504,7 @@ p^2c^2=E^2−(mc^2)^2,
 |b|^2 \sum_{k=1}^N |\langle C|k\rangle \langle k |S\rangle|^2
 \]</span></p>
 <p>이며 이는 <a href="#fig-FLP_3_3_6" class="quarto-xref">그림&nbsp;<span>11.6</span></a> (b) 와 같이 매끄러운 분포를 보여준다.</p>
-<p>당신에게는 “어느 원자의 스핀이 업이든 상관하지 않는다”고 주장할 수도 있다. 당신은 모르지만, 자연은 알고 있다. 그리고 확률은 실제로 위에서 제시한 바와 같다. 즉 간섭이 없다. 반면에, 검출기에서 업스핀 전자를 관측하고, 결정의 모든 원자는 여전히 다운 스핀일 확률은</p>
+<p>당신에게는 “어느 원자의 스핀이 업이든 상관하지 않는다”고 주장할 수도 있다. 그러나 당신은 모르지만, 자연은 알고 있다. 그리고 확률은 실제로 위에서 제시한 바와 같다. 즉 간섭이 없다. 반면에, 검출기에서 업스핀 전자를 관측하고, 결정의 모든 원자는 여전히 다운 스핀일 확률은</p>
 <p><span class="math display">\[
 \left| \sum_{i=1}^N \langle C|i\rangle a \langle i|S\rangle \right|^2
 \]</span></p>
@@ -560,6 +571,112 @@ D_1 \text{ 에서 어떤 입차가 측정될 확률}=|f(\theta)|^2+|f(\pi−\the
 <h2 class="anchored" data-anchor-id="sec-FLP_3_4">III.4 동일 입자</h2>
 <section id="sec-FLP_3_4_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_3_4_1">III.4-1 보즈 입자와 페르미 입자</h3>
+<p>마지막 장에서는 두 동일한 입자의 과정에서 발생하는 간섭에 대한 특별한 규칙을 고려하기 시작했다. 동일한 입자란 전자와 같이 서로 구별할 수 없는 것들을 의미한다. 동일한 두 입자를 포함하는 과정에서, 한 입자가 검출기에 도달하는 것과 다른 입자가 도달하는 것은 구별할 수 없으며, 구별할 수 없는 모든 대안 사례와 마찬가지로 원래의 교환되지 않은 경우와 간섭이 발생한다. 사건의 진폭은 두 간섭 진폭의 합이며, 흥미롭게도 이 간섭은 경우에 따라 같은 위상 혹은 반대 위상에서 이루어진다.</p>
+<p>두 입자 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 의 충돌을 생각해보자. <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> (a) 에서와 같이 입자 <span class="math inline">\(a\)</span> 는 방향 <span class="math inline">\(1\)</span> 로 산란하고 입자 <span class="math inline">\(b\)</span> 는 방향 <span class="math inline">\(2\)</span> 로 산란하는 과정의 진폭을 <span class="math inline">\(f(\theta)\)</span> 라고 하자. 그렇다면 이러한 사건을 관찰할 확률 <span class="math inline">\(P_1 \propto |f(\theta)|^2\)</span> 이다. 물론, <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> (b) 에 표시된 바와 같이 입자 <span class="math inline">\(b\)</span> 가 <span class="math inline">\(1\)</span> 번 계수기에서 계측되고 입자 <span class="math inline">\(a\)</span> 가 <span class="math inline">\(2\)</span> 번 계수기로 계측 될 수 있다. 스핀 등으로 정의된 특별한 방향이 없다고 가정하면, 이 과정의 확률 <span class="math inline">\(P_2 = |f(\pi - \theta)|^2\)</span> 이며, 이는 1 번 계수기를 <span class="math inline">\(\pi−\theta\)</span> 만큼의 각도로 로 이동했을 때 첫 번째 과정과 동일하기 때문이다. 두 번째 과정의 진폭이 단지 <span class="math inline">\(f(\pi−\theta)\)</span> 라고 생각하실 수도 있지만 발생할 수 있는 임의의 위상 변화를 생각해야 한다. 즉, 진폭은 <span class="math inline">\(e^{iδ}f(\pi−\theta)\)</span> 가 된다. 이 진폭은 역시 <span class="math inline">\(P_2= |f(\pi−\theta)|^2\)</span> 의 확률을 제시한다.</p>
+<div id="fig-FLP_3_4_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_3_4_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_3_4/fig_3_4_1.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_3_4_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;11.10: 파인만 물리학 강의 <span class="math inline">\(III\)</span> Fig. 4-1. 두 개의 동일한 입자가 산란될 때, (a)와 (b) 과정은 구별할 수 없다.
+</figcaption>
+</figure>
+</div>
+<p>이제 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 가 동일한 입자라면 어떤 일이 일어나는지 살펴보자. 그렇다면 <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> 의 두 그림에 표현된 두 개의 서로 다른 과정은 구분할 수 없다. <span class="math inline">\(a\)</span> 또는 <span class="math inline">\(b\)</span> 중 하나가 1번 계수기로 측정되고, 다른 하나는 2번 계수기에 계측되는 진폭이 있다. 이 진폭은 <a href="#fig-FLP_3_4_1" class="quarto-xref">그림&nbsp;<span>11.10</span></a> 에 표시된 두 과정에 대한 진폭의 합이다. 첫 번째를 <span class="math inline">\(f(\theta)\)</span> 라고 하면, 두 번째는 <span class="math inline">\(e^{iδ}f(\pi−\theta)\)</span> 이며, 이제 두 진폭을 더해야 하므로 위상 계수가 매우 중요해진다. 두 입자의 역할을 교환할 때 진폭에 특정한 위상 계수를 곱해야 한다고 생각해 보자. 한번 더 역할을 교환하면 같은 위상 계수를 또 곱해야 하며 이 때 다시 첫 번째 과정으로 돌아가야 한다. 즉 위상 계수의 제곱은 <span class="math inline">\(1\)</span> 과 같아야 한다. 가능성은 두 가지뿐이다. <span class="math inline">\(e^{iδ}\)</span> 는 <span class="math inline">\(+1\)</span> 이거나 <span class="math inline">\(−1\)</span> 이어야 한다. 따라서 교환된 경우는 같은 기호로 기여하거나, 반대 기호로 기여한다. 두 경우 모두 자연에 존재하며, 입자의 종류에 따라 고유하게 취한다. 양의 기호에 간섭하는 입자는 <strong>보스 입자 (boson)</strong> 혹은 <strong>보존</strong> 라고 하며, 음의 기호에 간섭하는 입자는 <strong>페르미 입자 (fermion)</strong> 혹은 <strong>페르미온</strong> 이라고 한다. 보스 입자는 광자, 메존, 그리고 중력자며 페르미 입자는 전자, 뮤온, 중성미자, 핵자, 그리고 바리온이다. 그렇다면, 동일한 입자의 산란에 대한 진폭은 다음과 같다:</p>
+<p><span id="eq-FLP_4_4_1"><span class="math display">\[
+보존: (직접 진폭)+(교환 진폭).
+\tag{11.17}\]</span></span></p>
+<p><span id="eq-FLP_4_4_2"><span class="math display">\[
+페르미 입자: (직접 진폭) - (교환 진폭).
+\tag{11.18}\]</span></span></p>
+<p>전자와 같이 스핀을 가진 입자의 경우 추가적인 복잡성이 존재한다. 우리는 입자의 위치뿐만 아니라 그 스핀의 방향도 지정해야 한다. 동일한 스핀 상태를 가진 동일한 입자에 대해서만 입자가 교환될 때 진폭이 간섭한다. 다양한 스핀 상태가 혼합된 비편광 빔의 산란을 생각한다면, 추가적인 연산을 수행해야 한다.</p>
+<div id="fig-FLP_3_4_2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_3_4_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_3_4/fig_3_4_2.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_3_4_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;11.11: 파인만 물리학 강의 <span class="math inline">\(III\)</span> Fig. 4-2. 두 개의 <span class="math inline">\(\alpha\)</span>-입자의 산란. (a)에서는 두 입자가 동일성을 유지하고, (b)에서는 충돌 중에 중성자가 교환된다.
+</figcaption>
+</figure>
+</div>
+<p>두 개 이상의 입자가 서로 단단히 결합되어 있을 때에는 흥미로운 문제가 발생한다. 예를 들어, <span class="math inline">\(\alpha\)</span>-입자는 두개의 중성자와 두개의 양성자,즉 총 네 개의 입자를 포함한다. 두 개의 <span class="math inline">\(\alpha\)</span>-입자가 산란될 때, 여러 가지 가능성이 있다. 산란 과정에서 하나의 <span class="math inline">\(\alpha\)</span>-입자에서 중성자가 다른 <span class="math inline">\(\alpha\)</span>-입자로 점프하는 일정한 진폭이 존재하고, 동시에 다른 <span class="math inline">\(\alpha\)</span>-입자에서 나온 중성자가 반대 방향으로 튀어 산란에서 나오는, 즉 중성자 한 쌍이 교환되어 나오는 경우가 존재할 수 있다. 이 때 두 <span class="math inline">\(\alpha\)</span>-입자는 원래의 각각과 다르다. <a href="#fig-FLP_3_4_2" class="quarto-xref">그림&nbsp;<span>11.11</span></a> 을 보라. 중성자 한 쌍의 교환에 의한 산란 진폭은 그러한 교환이 없는 산란의 진폭에 간섭하게 되며, 한 쌍의 페르미 입자 교환이 있었기 때문에 간섭은 마이너스 기호에 의해 발생해야 한다. 반면에, 두 <span class="math inline">\(\alpha\)</span>-입자의 상대 에너지가 너무 낮아 쿨롱 반발로 인해 비교적 멀리 떨어져 있을 정도이며 내부 입자를 교환할 가능성이 전혀 없을 경우, 우리는 <span class="math inline">\(\alpha\)</span>-입자를 단순한 객체로 간주할 수 있으며 내부의 세부 사항에 대해 걱정할 필요가 없다. 그러한 상황에서는 산란 진폭에 대한 기여가 두 개뿐입니다. 교환이 없거나, 산란에서 네 개의 핵자 모두가 교환되거나. <span class="math inline">\(\alpha\)</span>-입자 내의 양성자와 중성자는 모두 페르미 입자이므로, 어떤 쌍이든 교환하면 산란 진폭의 부호가 뒤바뀐다. <span class="math inline">\(\alpha\)</span>-입자에 내부 변화가 없는 한, 두 <span class="math inline">\(\alpha\)</span>-입자를 교환하는 것은 네 쌍의 페르미 입자를 교환하는 것과 동일하다다. 각 쌍마다 부호가 변하므로, 그 결과는 진폭이 양의 부호와 결합한다는 것이다. <span class="math inline">\(\alpha\)</span>-입자는 보스 입자처럼 행동한다.</p>
+<p>규칙은 다음과 같다.: <strong>복합적 객체가 단일 객체로 간주될 수 있는 상황에서는, 페르미 입자 또는 보스 입자처럼 행동하며, 이는 물체를 이루는 페르미 입자가 홀수인지 짝수인지에 따라 달라진다.</strong></p>
+<p>우리가 언급한 모든 기본 페르미 입자—예를 들어 전자, 양성자, 중성자 등—는 스핀 <span class="math inline">\(j=1/2\)</span> 를 가지고 있다. 여러 개의 페르미 입자를 결합하여 복합 객체를 형성하면, 그 결과의 스핀은 정수일 수도 있고 반정수일 수도 있다. 예를 들어, 두 개의 중성자와 두 개의 양성자로 이루어진 헬륨의 동위 원소인 He<sup>4</sup>는 스핀이 <span class="math inline">\(0\)</span> 인 반면, 세 개의 양성자와 네 개의 중성자를 가진 Li<sup>7</sup>은 스핀이 <span class="math inline">\(3/2\)</span> 이다. 우리는 나중에 각운동량을 합성하는 규칙을 배우게 될 것이며, 이제 반정수 스핀을 가진 모든 복합 객체는 페르미 입자를 모방하고, 정수 스핀을 가진 모든 합성 물체는 보스 입자를 모방한다는 점을 말하겠다.</p>
+<p>이것은 흥미로운 질문을 제기한다: 왜 반정수 스핀을 가진 입자는 진폭이 마이너스 부호로 더해지는 페르미 입자이고, 정수 스핀을 가진 입자는 진폭이 양의 부호로 더해지는 보스 입자인가? 파울리는 양자장 이론과 상대성 이론의 복잡한 논증으로부터 설명을 이끌어 냈다. 하지만 아직 그의 주장을 기본적인 수준에서 표현할 방법을 찾지 못했다. 물리학에서 매우 간단하게 제시할 수 있는 규칙이 존재하는 몇 안 되는 곳 중 하나인 것처럼 보이지만, 그 규칙에 대해 아무도 간단하고 쉬운 설명을 찾지 못했다. 그 설명은 상대론적 양자역학의 심층에 존재한다. 이는 아마도 우리가 관련된 근본 원리를 완전히 이해하지 못하고 있음을 의미하며 당분간은 세상의 규칙 중 하나로 받아들여야 한다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_3_4_2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_3_4_2">III.4–2 두 보즈 입자의 상태</h3>
+<p>여기서 보즈 입자에 대한 덧셈 규칙의 흥미로운 결과에 대해 알아본다. 두 개의 보스 입자가 두 개의 다른 산란체와 각각 산란되는 상황을 생각하자(<a href="#fig-FLP_3_4_3" class="quarto-xref">그림&nbsp;<span>11.12</span></a>). 세부적인 산란 메커니즘은 고려하지 않는다. 입자 <span class="math inline">\(a\)</span> 는 상태 <span class="math inline">\(1\)</span> 로 산란되며 입자 <span class="math inline">\(b\)</span> 는 상태 <span class="math inline">\(2\)</span> 로 산란된다. 우리는 두 상태 <span class="math inline">\(1\)</span> 과 <span class="math inline">\(2\)</span> 가 거의 동일하다고 가정한다. (우리가 궁극적으로 진정으로 알아내고 싶은 것은 두 입자가 동일한 방향이나 상태로 산란되는 진폭이다. 그러나 상태가 거의 동일할 경우 어떤 일이 일어나는지 먼저 생각하고, 그 상태가 동일해졌을 때 어떤 일이 일어나는지 알아내는 것이 가장 좋다.)</p>
+<div id="fig-FLP_3_4_3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_3_4_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_3_4/fig_3_4_3.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_3_4_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;11.12: 파인만 물리학 강의 <span class="math inline">\(III\)</span> Fig. 4-3. 인접한 최종 상태로의 이중 산란.
+</figcaption>
+</figure>
+</div>
+<p>입자 <span class="math inline">\(a\)</span> 만 있을 때의 방향 <span class="math inline">\(1\)</span> 에 대한 산란 진폭은 <span class="math inline">\(\langle 1 | a\rangle\)</span> 로 표현 할 수 있다. <span class="math inline">\(b\)</span> 도 마찬가지로 단독으로 있을 때의 산란진폭은 <span class="math inline">\(\langle 2|b\rangle\)</span> 이다. 두 입자가 동일하지 않다면, 두 산란이 동시에 발생하는 진폭은 단지 <span class="math inline">\(\langle 1|a\rangle \langle 2 |b\rangle\)</span> 이며 확률은 <span class="math inline">\(|\langle 1|a\rangle \langle 2 |b\rangle|^2\)</span> 이다. <span class="math inline">\(a_1=\langle 1 | a\rangle\)</span>, <span class="math inline">\(b_2=\langle 2|b\rangle\)</span> 라고 하면 이중 산란의 확률은 <span class="math inline">\(|a_1|^2|b_2|^2\)</span> 이다. 입자 <span class="math inline">\(b\)</span> 가 방향 <span class="math inline">\(1\)</span> 로, 입자 <span class="math inline">\(a\)</span> 가 방향 <span class="math inline">\(2\)</span> 로 산란되는 경우의 진폭은 <span class="math inline">\(\langle 2|a\rangle \langle 1|b\rangle\)</span> 이며 확률은 <span class="math inline">\(|\langle 2|a\rangle \langle 1|b\rangle|^2=|a_2|^2 |b_1|^2\)</span> 이다.</p>
+<p>이제 두 개의 산란된 입자를 측정하는 작은 계수기 두 개가 있다고 하자. 계수기가 두 입자를 함께 측정할 확률 <span class="math inline">\(P_2\)</span> 는 단지 합일 뿐이다.</p>
+<p><span id="eq-FLP_3_4_3"><span class="math display">\[
+P_2 = |a_1|^2 |b_2|^2 + |a_2|^2 |b_1|^2.
+\tag{11.19}\]</span></span></p>
+<p>이제 방향 <span class="math inline">\(1\)</span> 과 <span class="math inline">\(2\)</span> 가 매우 가깝다고 가정하자. 우리는 <span class="math inline">\(a\)</span> 가 방향에 따라 부드럽게 변할 것으로 기대하므로, <span class="math inline">\(a_1\)</span> 과 <span class="math inline">\(a_2\)</span> 는 <span class="math inline">\(1\)</span> 과 <span class="math inline">\(2\)</span> 가 가까워질 수록 서로 비슷해야 하며 충분히 가깝다면, <span class="math inline">\(a_1=a_2 =a\)</span> 이어야 한다. 마찬가지로 <span class="math inline">\(b_1=b_2=b\)</span>. 그렇다면</p>
+<p><span id="eq-FLP_3_4_4"><span class="math display">\[
+P_2 = 2|a|^2|b|^2.
+\tag{11.20}\]</span></span></p>
+<p>이제 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 가 동일한 보스 입자라고 가정해 보자. 그렇다면 <span class="math inline">\(a\)</span> 가 <span class="math inline">\(1\)</span> 로, <span class="math inline">\(b\)</span> 가 <span class="math inline">\(2\)</span> 로 가는 과정은 <span class="math inline">\(a\)</span> 가 <span class="math inline">\(2\)</span> 로, <span class="math inline">\(b\)</span> 가 <span class="math inline">\(1\)</span> 로 가는 교환 과정과 구별할 수 없으며 이 경우 두 서로 다른 과정의 진폭이 간섭할 수 있다. 따라서 두 계수기 각각에서 입자를 얻기 위한 총 진폭은</p>
+<p><span id="eq-FLP_3_4_5"><span class="math display">\[
+\langle 1|a \rangle \langle 2|b\rangle + \langle 2|a \rangle \langle 1|b\rangle
+\tag{11.21}\]</span></span></p>
+<p>이며 그 확률은</p>
+<p><span id="eq-FLP_3_4_6"><span class="math display">\[
+P_2=|a_1 b_2 + a_2 b_1|^2 = 4|a|^2|b|^2
+\tag{11.22}\]</span></span></p>
+<p>이다. 즉 두 개의 동일한 보스 입자가 같은 상태로 산란될 경우를 찾을 확률이 서로 다르다고 가정했을 때 계산했을 때의 두 배이다.</p>
+<p>위에서 두 입자가 별개의 계수기에서 관측된다고 했지만, 이는 필수적이지 않다. 두 방향 <span class="math inline">\(1\)</span> 과 <span class="math inline">\(2\)</span> 가 어느 정도 떨어진 작은 카운터로 향한다고 하자. 우리는 방향 <span class="math inline">\(1\)</span> 이 계수기의 면적 요소 <span class="math inline">\(dS_1\)</span> 을 향하고, 방향 <span class="math inline">\(2\)</span> 가 <span class="math inline">\(dS_2\)</span> 를 향한다고 하자. (우리는 계수기 표면이 이 방향에 직각이라고 가정한다.) 입자가 정확한 방향이나 특정 지점으로 이동할 확률은 <span class="math inline">\(0\)</span> 이며 계수기의 단위 면적당 도달 확률을 제시하도록 진폭을 정의해야 한다. 입자 <span class="math inline">\(a\)</span> 만 있다고 가정하면, 방향 <span class="math inline">\(1\)</span> 에 대한 산란에 일정한 진폭을 갖게 된다. <span class="math inline">\(\langle 1|a\rangle = a_1\)</span> 을 방향 <span class="math inline">\(1\)</span> 에 따라 계수기의 단위 면적에 <span class="math inline">\(a\)</span> 가 산란하는 진폭으로 정의한다. 다시 말해, <span class="math inline">\(a_1\)</span> 의 스케일이 선택된다—우리는 이를 “정규화 (normalization)” 이라고 부르며 면적 요소 <span class="math inline">\(dS_1\)</span> 로의 산란 확률은</p>
+<p><span id="eq-FLP_3_4_7"><span class="math display">\[
+|\langle 1|a \rangle|^22\,dS_1=|a_1|^2\,dS_1.
+\tag{11.23}\]</span></span></p>
+<p>우리 계수기의 표면을 <span class="math inline">\(\Delta S\)</span> 라고 하면 입자 <span class="math inline">\(a\)</span> 가 계수기 안으로 산란될 전체 확률은</p>
+<p><span id="eq-FLP_3_4_8"><span class="math display">\[
+\int_{\Delta S} |a_1|^2\,dS_1.
+\tag{11.24}\]</span></span></p>
+<p>자주 그랬듯이 우리는 계수기가 충분히 작아 진폭 <span class="math inline">\(a_1\)</span> 이 <span class="math inline">\(\Delta S\)</span> 전체에서 거의 동일하다고 가정한다. 그리고 <span class="math inline">\(a_1=a\)</span> 라고 하면 입자 <span class="math inline">\(a\)</span> 가 계수기의 어느 곳에 산란될 확률</p>
+<p><span id="eq-FLP_3_4_9"><span class="math display">\[
+p_a=|a|^2\Delta S.
+\tag{11.25}\]</span></span></p>
+<p>같은 방식으로, 입자 <span class="math inline">\(b\)</span> 만 있을 때, 면적 성분 <span class="math inline">\(dS_2\)</span> 로 산란될 확률은 <span class="math inline">\(|b_2^2\,dS_2\)</span> 임을 안다. 역시 <span class="math inline">\(b_2\)</span> 가 <span class="math inline">\(dS_2\)</span> 전체 영역에서 거의 일정하며하다면 입자 <span class="math inline">\(b\)</span> 가 계수기의 어느 곳에 산란될 확률</p>
+<p><span id="eq-FLP_3_4_10"><span class="math display">\[
+p_b=|b|^2 \Delta S.
+\tag{11.26}\]</span></span></p>
+<p>이제 두 입자가 모두 존재할 때, <span class="math inline">\(a\)</span> 가 <span class="math inline">\(dS_1\)</span> 에 산란되고 <span class="math inline">\(b\)</span> 가 <span class="math inline">\(dS_2\)</span> 에 산란될 확률은</p>
+<p><span id="eq-FLP_3_4_11"><span class="math display">\[
+|a_1b_2|^2 \,dS_1dS_2=|a|^2|b|^2\,dS_1dS_2.
+\tag{11.27}\]</span></span></p>
+<p><span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 가 모두 계수기에 들어갈 확률은 <span class="math inline">\(dS_1\)</span> 과 <span class="math inline">\(dS_2\)</span> 를 <span class="math inline">\(\Delta S\)</span> 에 대해 적분하여 구한다.</p>
+<p><span id="eq-FLP_3_4_12"><span class="math display">\[
+P_2=|a|^2|b|^2(\Delta S)^2.
+\tag{11.28}\]</span></span></p>
+<p>우연히 우리는 이것이 <span class="math inline">\(p_a\cdot p_b\)</span> 와 동일하다는 것을 알게 되며, 이는 입자 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 가 서로 독립적으로 작용한다고 가정할 때와 같다.</p>
+<p>그러나 두 입자가 동일할 경우, 입자 <span class="math inline">\(a\)</span> 가 <span class="math inline">\(dS_2\)</span> 로, 입자 <span class="math inline">\(b\)</span> 가 <span class="math inline">\(dS_1\)</span> 으로 들어가는 경우와 <span class="math inline">\(a\)</span> 가 <span class="math inline">\(dS_1\)</span> 으로, <span class="math inline">\(b\)</span> 가 <span class="math inline">\(dS_2\)</span> 로 들어가는 것을 구분할 수 없으며, 따라서 이러한 과정의 진폭이 간섭하게 된다. (두 개의 서로 다른 입자의 경우에는, 실제로는 어느 입자가 카운터에서 어디로 가는지는 신경 쓰지 않았지만, 원칙적으로는 알 수 있을 것이며, 따라서 간섭이 없다. 동일한 입자에 대해서는 원칙적으로도 판단할 수 없다.) 그렇다면 두 입자가 <span class="math inline">\(dS_1\)</span> 과 <span class="math inline">\(dS_2\)</span> 에 도달할 확률은</p>
+<p><span id="eq-FLP_3_4_13"><span class="math display">\[
+|a_1b_2 + a_2 b_1|^2 \,dS_1 dS_2.
+\tag{11.29}\]</span></span></p>
+<p>하지만 이제 계수기 영역을 통합할 때는 조심해야 한다. <span class="math inline">\(dS_1\)</span> 과 <span class="math inline">\(dS_2\)</span> 를 <span class="math inline">\(\Delta S\)</span> 에 걸쳐 두면, <a href="#eq-FLP_3_4_13" class="quarto-xref">식&nbsp;<span>11.29</span></a> 은 모든 표면 요소 <span class="math inline">\(dS_1\)</span> 과 <span class="math inline">\(dS_2\)</span> 쌍에서 발생할 수 있는 모든 것을 포함하고 있기 때문에 면적의 각 부분을 두 번 셈하게 되므로 결과를 <span class="math inline">\(2\)</span> 로 나누어 이중 계산을 보정할 수 있다. 그렇다면 동일한 보스 입자에 대한 <span class="math inline">\(P_2\)</span> 는 다음과 같다.</p>
+<p><span id="eq-FLP_3_4_14"><span class="math display">\[
+P_2(\text{Bose})=\dfrac{1}{2} \left[4|a|^2|b|^2(\Delta S)^2\right] = 2|a|^2|b|^2(\Delta S)^2.
+\tag{11.30}\]</span></span></p>
+<p>다시 말하지만, 이것은 우리가 구분 가능한 입자에 대해 <a href="#eq-FLP_3_4_12" class="quarto-xref">식&nbsp;<span>11.28</span></a> 에서 얻은 것의 정확히 두배이다.</p>
+<p>만약 우리가 <span class="math inline">\(b\)</span> 채널이 이미 그 입자를 특정 방향으로 보냈다는 것을 알고 있었다고 잠시 상상해 보면, 두 번째 입자가 같은 방향으로 갈 확률이 독립적인 사건으로 계산했을 경우 예상했던 것보다 두 배라고 말할 수 있다. 보스 입자의 특성에 따르면, 이미 어떤 조건에서 하나의 입자가 존재한다면, 같은 조건에 있는 두 번째 입자를 얻는 확률이 첫 번째 입자가 아직 존재하지 않을 경우보다 두 배 더 높다. 이 사실은 종종 다음과 같이 진술됩니다: <strong>주어진 상태에 이미 하나의 보스 입자가 존재한다면, 동일한 입자를 그 위에 놓는 진폭이 존재하지 않을 때보다 <span class="math inline">\(\sqrt{2}\)</span> 를 곱한것만큼 더 크다</strong>.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_3_4_3" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_3_4_3">III.4-3 <span class="math inline">\(n\)</span> 개의 보즈입자의 상태</h3>
 
 
 </section>
