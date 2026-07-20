@@ -31,6 +31,7 @@ book:
       chapters:
       - src/exercises/exercises_1_1.qmd
       - src/exercises/exercises_2_1.qmd
+      - src/exercises/exercises_3_1.qmd
       # - src/Feynmann/feynmann_trans.qmd
   
     - src/appendix_math.qmd
