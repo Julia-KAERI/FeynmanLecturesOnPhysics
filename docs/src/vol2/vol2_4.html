@@ -528,8 +528,32 @@ window.Quarto = {
 </figcaption>
 </figure>
 </div>
-<p>유도 전기장의 효과에 대한 예로, 변화하는 자기장에서의 전자의 움직임을 생각한다. <a href="#fig-FLP_2_17_4" class="quarto-xref">그림&nbsp;<span>10.11</span></a> 에 표현된 바와 같이 평면 전체에서 수직 방향으로 향하는 자기장을 생각한다. 보통 자기장은 전자석에 의해 생성되지만, 이런 세부 사항에 대해서는 고려하지 않는다. 자기장이 그림과 같이 축에 대해 대칭이라고 하자. 즉 자기장의 강도는 축으로부터의 거리만에 따라 달라진다. 자기장은 또한 시간에 따라 변한다. 우리는 이제 이 장에서 전자가 일정한 반경을 가진 원을 따라 움직이는 전자를 상상합니다. 그 중심은 장의 축에 위치합니다. (이 움직임을 어떻게 배치할 수 있는지 나중에 보겠습니다.) 변화하는 자기장 때문에 전자의 궤도에 접선인 전기장 E가 존재하게 되며, 이는 전자를 원 주위로 이동시킵니다. 대칭성 때문에 이 전기장은 원 전체에 걸쳐 동일한 값을 갖게 됩니다. 전자의 궤도가 반지름 r인 경우, 궤도를 둘러싼 E의 선적분은 원을 통과하는 자기 플럭스 변화율의 뺀 값과 같습니다. E의 선적분은 그 크기에 원의 둘레를 2πr만큼 뉠다. 자기 플럭스는 일반적으로 적분으로부터 얻어야 합니다. 현재로서는 바브가 원 내부의 평균 자기장을 나타하도록 합니다; 그러면 플럭스는 이 평균 자기장에 원의 면적을 곱한 값입니다. 우리는 가질 것입니다</p>
-<p>2πrE=ddt(Bav⋅πr2).</p>
+<p>유도 전기장의 효과에 대한 예로, 변화하는 자기장에서의 전자의 움직임을 생각한다. <a href="#fig-FLP_2_17_4" class="quarto-xref">그림&nbsp;<span>10.11</span></a> 와 같이 평면 전체에서 수직 방향으로 향하는 자기장을 생각한다. 보통 자기장은 전자석에 의해 생성되지만, 이런 세부 사항에 대해서는 고려하지 않는다. 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 가 그림과 같이 축에 대해 대칭이라고 하자. 즉 자기장의 강도는 축으로부터의 거리에만 의존한다. 자기장은 또한 시간에 따라 변한다. 이제 이 자기장에서 자기장의 축을 중심으로 반지름 <span class="math inline">\(r\)</span> 인 원을 따라 움직이는 전자를 생각하자. 변화하는 자기장 때문에 전자의 궤도에 접선방향으로 생기는 전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 로 인해 전자의 원운동이 유지된다. 이 원 내부의 자기장의 평균값을 <span class="math inline">\(\boldsymbol{B}_\text{av}\)</span> 라고 하자. 그렇다면</p>
+<p><span class="math display">\[
+2\pi rE=\dfrac{d}{dt}(B_\text{av}⋅\pi r^2).
+\]</span></p>
+<p>이므로 전기장의 크기는 다음과 같다.</p>
+<p><span id="eq-FLP_2_17_4"><span class="math display">\[
+E=\dfrac{r}{2} \dfrac{dB_\text{av}}{dt}.
+\tag{10.6}\]</span></span></p>
+<p>상대론인 운동방정식 <span class="math inline">\(dp/dt = F\)</span> 로부터</p>
+<p><span id="eq-FLP_2_17_5"><span class="math display">\[
+\dfrac{dp}{dt} = qE
+\tag{10.7}\]</span></span></p>
+<p>이며 <a href="#eq-FLP_2_17_4" class="quarto-xref">식&nbsp;<span>10.6</span></a> 와 <a href="#eq-FLP_2_17_5" class="quarto-xref">식&nbsp;<span>10.7</span></a> 로부터</p>
+<p><span id="eq-FLP_2_17_7"><span class="math display">\[
+p = p_0 + \dfrac{qr}{2}\Delta B_\text{av}
+\tag{10.8}\]</span></span></p>
+<p>을 얻는다. 여기서 <span class="math inline">\(p_0\)</span> 는 시작 시점에서의 전기장의 운동량이며 <span class="math inline">\(\Delta B_\text{av}\)</span> 는 <span class="math inline">\(B_\text{av}\)</span> 의 변화량이다. 베타트론은 전자를 높은 에너지로 가속시키는 장치로 이 아이디어에 기반한다.</p>
+<p>이제 베타트론에서 전자가 원운동에 제한되는 방식을 알아보자. 우리는 이미 전자 궤도에 자기장 <span class="math inline">\(\boldsymbol{B}\)</span> 가 존재하면 힘 <span class="math inline">\(q\boldsymbol{v}\times \boldsymbol{B}\)</span> 이 발생하므로 적절하게 <span class="math inline">\(\boldsymbol{B}\)</span> 를 조절하면 원운동이 가능하다는 것을 안다. 베타트론에서 이 횡력은 전자를 일정한 반지름의 원형 궤도로 움직이게 합니다. 우리는 다시 상대론적 운동 방정식을 사용하여 궤도에서의 자기장이 무엇인지 알 수 있지만, 이번에는 힘의 횡성분에 대해 알 수 있습니다. 베타트론에서 (그림을 참조하십시오. 17–4), B는 v와 직각이므로 횡력은 qvB이다. 따라서 힘은 운동량의 횡성분 pt의 변화율과 같습니다:</p>
+<p>qvB=dptdt.( 17.8)</p>
+<p>입자가 원 안에서 움직일 때, 그 횡운동량의 변화율은 전체 운동량의 크기에 ω를 곱한 값이며, 이는 회전 각속도입니다(제11장, Vol.의 논거에 따라). I):</p>
+<p>Dptdt=ωp,(17.9)</p>
+<p>그곳에서, 움직임이 원형이기 때문에,</p>
+<p>Ω=vr.( 17.10)</p>
+<p>자기력을 횡가속도와 동일하게 설정하면, 우리는</p>
+<p>qvBorbit=pvr,(17.11)</p>
+<p>여기서 Borbit은 반지름 r에 있는 필드입니다.</p>
 
 
 </section>
