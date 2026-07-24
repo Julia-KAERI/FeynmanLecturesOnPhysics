@@ -105,7 +105,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -300,13 +300,17 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_17_1" id="toc-sec-FLP_2_17_1" class="nav-link" data-scroll-target="#sec-FLP_2_17_1">II.17-1 전자기 유도의 물리학</a></li>
   <li><a href="#sec-FLP_2_17_2" id="toc-sec-FLP_2_17_2" class="nav-link" data-scroll-target="#sec-FLP_2_17_2">II.17–2 플럭스 규칙의 예외</a></li>
   <li><a href="#ii.17-3-유도-전기장에-의한-입자-가속-베타트론" id="toc-ii.17-3-유도-전기장에-의한-입자-가속-베타트론" class="nav-link" data-scroll-target="#ii.17-3-유도-전기장에-의한-입자-가속-베타트론">II.17-3 유도 전기장에 의한 입자 가속 ; 베타트론</a></li>
-  </ul></li>
   <li><a href="#eq-FLP_2_17_4" id="toc-eq-FLP_2_17_4" class="nav-link" data-scroll-target="#eq-FLP_2_17_4">II.17–4 A paradox</a></li>
+  <li><a href="#sec-FLP_2_17_5" id="toc-sec-FLP_2_17_5" class="nav-link" data-scroll-target="#sec-FLP_2_17_5">II.17–5 교류 발생기</a></li>
+  <li><a href="#sec-FLP_2_17_6" id="toc-sec-FLP_2_17_6" class="nav-link" data-scroll-target="#sec-FLP_2_17_6">II.17–6 상호 유도</a></li>
+  <li><a href="#eq-FLP_2_17_7" id="toc-eq-FLP_2_17_7" class="nav-link" data-scroll-target="#eq-FLP_2_17_7">II.17–7 자기 유도</a></li>
+  </ul></li>
+  <li><a href="#sec-FLP_2_17_8" id="toc-sec-FLP_2_17_8" class="nav-link" data-scroll-target="#sec-FLP_2_17_8">II.17-8 인덕턴스와 자기 에너지</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
@@ -520,7 +524,7 @@ window.Quarto = {
 <section id="ii.17-3-유도-전기장에-의한-입자-가속-베타트론" class="level3">
 <h3 class="anchored" data-anchor-id="ii.17-3-유도-전기장에-의한-입자-가속-베타트론">II.17-3 유도 전기장에 의한 입자 가속 ; 베타트론</h3>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
-<div id="exm-FLP_dipole_genertor" class="theorem example">
+<div id="exm-FLP_chaper_2_17_3" class="theorem example">
 <p><span class="theorem-title"><strong>예제 10.1 (베타트론)</strong></span> &nbsp;</p>
 <div id="fig-FLP_2_17_4" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -580,9 +584,252 @@ qvB_\text{orbit}=p\dfrac{v}{r},
 <p>베타트론은 전자를 수천만 볼트, 혹은 수억 볼트의 에너지로 가속시키는 데 사용된다. 하지만 여러 가지 이유로 전자가 몇 억 볼트보다 훨씬 높은 에너지로 가속하는 것은 비현실적이다. 그 중 하나는 궤도 내부 자기장에 대한 요구되는 높은 평균값을 달성하는 것이 실제로 어렵다는 점이다. 다른 하나는 <a href="#eq-FLP_2_17_6" class="quarto-xref">식&nbsp;<span>10.8</span></a> 은 매우 높은 에너지에서는 더 이상 올바르지 때문이다. 이 식은 입자의 전자기 에너지 복사를 포함하지 않기 때문이다(<a href="../../src/vol1/vol1_4.html#sec-FLP_1_34">I.34 복사의 상대론적 효과</a> 에서 다룬다). 이러한 이유로 전자를 최고 에너지—수십억 볼트에 달하는 전자볼트—로 가속하는 것은 싱크로트론이라고 하는 다른 종류의 기계에 의해 수행된다.</p>
 <p><br></p>
 </section>
+<section id="eq-FLP_2_17_4" class="level3">
+<h3 class="anchored" data-anchor-id="eq-FLP_2_17_4">II.17–4 A paradox</h3>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_2_17_4" class="theorem example">
+<p><span class="theorem-title"><strong>예제 10.2</strong></span> &nbsp;</p>
+<div id="fig-FLP_2_17_5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_17_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_17/fig_2_17_5.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_17_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;10.12: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 17-5. 전류 <span class="math inline">\(I\)</span> 가 멈추면 디스크가 회전할까?
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-FLP_2_17_5" class="quarto-xref">그림&nbsp;<span>10.12</span></a> 와 같은 장치를 생각하자. 좋은 베어링을 갖춘 동심축에 의해 지지되는 얇은 원형 플라스틱 디스크가 있어 회전이 매우 자유롭다. 디스크 위에 회전축과 중심을 공유하는 짧은 솔레노이드 형태의 와이어 코일이 있다. 이 솔레노이드는 디스크에 장착된 작은 배터리가 제공하는 일정한 전류를 전달한다. 디스크의 가장자리 근처를 따라 균등하게 배치한 여러 작은 금속 구슬이 각자 그리고 솔레노이드와 디스크의 플라스틱 재료에 의해 절연되어 있다. 각각의 작은 전도성 구슬은 동일한 정전기 전하 <span class="math inline">\(Q\)</span> 를 가지고 있다. 원반은 정지해 있고 다른 것들은 고정되어 있다. 이제 외부의 개입 없이 솔레노이드의 전류가 차단되되었다고 하자.</p>
+<p><strong>논리 1.</strong> 전류가 흐를 때는 솔레노이드를 통과하는 자기 플럭스가 디스크 축에 대체로 평행했다. 전류가 차단되었다면 이 플럭스는 <span class="math inline">\(0\)</span> 이 되며 따라서 유도된 전기장이 축을 중심으로 원을 그리며 순환하게 된다. 원반의 둘레에 있는 전하를 띤 구슬에 디스크의 둘레에 접하는 전기장이 가해지고 따라서 디스크에 순 토크가 발생한다. 이러한 논리로 우리는 솔레노이드의 전류가 차단되면 디스크가 회전하기 시작할 것으로 예상할 수 있다. 디스크의 관성 모멘트와 솔레노이드의 전류, 그리고 작은 구체에 있는 전하를 알면 결과 각속도를 계산할 수 있다.</p>
+<p><strong>논리 2.</strong> 하지만 우리는 다른 주장을 제시할 수도 있다. 각운동량 보존 법칙으로부터 디스크와 그 모든 장비의 각운동량이 처음에 <span class="math inline">\(0\)</span> 이며 따라서 조립체의 각운동량은 0으로 유지되어야 합니다. 이 논리에 따르면 전류가 끊기더라도 회전이 없어야 한다.</p>
+</div>
+</div>
+<p>여기에 대한 올바른 답은 배터리의 비대칭적인 위치와 같은 핵심적이지 않은 특성에 의존하지 않다는 것이 유의해야 한다. 실제로는 다음과 같은 이상적인 상황을 상상할 수 있다: 솔레노이드는 전류가 흐르는 초전도 와이어로 만들어집니다. 디스크를 조심스럽게 멈춘 후, 솔레노이드의 온도가 천천히 상승하도록 한다. 도선의 온도가 초전도와 정상 전도도 사이의 전이 온도에 도달하면, 솔레노이드의 전류는 와이어의 저항에 의해 <span class="math inline">\(0\)</span> 이 된다. 플럭스는 이전과 같이 <span class="math inline">\(0\)</span> 으로 감소하며, 축 주위에 전기장이 발생할 것이다. 이것은 속임수가 아니며 해결책 또한 쉽지 않다. 이것을 이해한다는 것은 전기자기학의 중요한 원리를 이해했다는 것이다.</p>
+<p><br></p>
 </section>
-<section id="eq-FLP_2_17_4" class="level2">
-<h2 class="anchored" data-anchor-id="eq-FLP_2_17_4">II.17–4 A paradox</h2>
+<section id="sec-FLP_2_17_5" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_17_5">II.17–5 교류 발생기</h3>
+<div id="fig-FLP_2_17_6" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_17_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_17/fig_2_17_6.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_17_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;10.13: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 17-6. 균일한 자기장 안에서 회전하는 와이어 코일—교류 발전기의 기본 개념.
+</figcaption>
+</figure>
+</div>
+<p>이 장의 나머지 부분에서는 <a href="#sec-FLP_2_17_1">II.17–1 전자기 유도의 물리학</a> 의 원리을 적용하여 <a href="#sec-FLP_2_16">II.16 유도전류</a> 에서 논의된 여러 현상을 분석한다. 먼저 교류 발생기를 더 자세히 알아보자. 교류 발전기는 기본적으로 <a href="#fig-FLP_2_17_6" class="quarto-xref">그림&nbsp;<span>10.13</span></a> 과 같이 균일한 자기장 안에서 회전하는 전선 코일로 구성된다. 또한 코일의 양쪽 끝이 일종의 슬라이딩 접점을 통해 외부 접점에 연결된다고 하자.</p>
+<p>코일의 회전으로 인해 그 코일을 통과하는 자기 플럭스가 변하게 되며 따라서 코일 회로에 기전력이 발생한다. 코일의 면적을 <span class="math inline">\(S\)</span> 라고 하고, <span class="math inline">\(\theta\)</span> 를 자기장과 코일 평면에 대한 법선 사이의 각도라고 하면 코일을 통과하는 자기 플럭스 <span class="math inline">\(\Phi_B\)</span> 는</p>
+<p><span id="eq-FLP_2_17_13"><span class="math display">\[
+\Phi_B= B S \cos \theta.
+\tag{10.14}\]</span></span></p>
+<p>이다. 코일이 일정한 각속도 <span class="math inline">\(\omega\)</span> 로 회전하면, <span class="math inline">\(\theta = \omega t\)</span> 와 같이 변한다. 코일에 <span class="math inline">\(N\)</span> 번 감겨있을 때 코일에 발생하는 기전력 <span class="math inline">\(\mathcal{E}\)</span> 는</p>
+<p><span id="eq-FLP_2_17_14"><span class="math display">\[
+\mathcal{E}= −N\dfrac{d}{dt}(BS \cos \omega t) = NBS \omega \sin \omega t.
+\tag{10.15}\]</span></span></p>
+<p>발전기에서 전선을 회전 코일에서 어느 정도 떨어진 지점으로 이동시켜 자기장이 0이거나 최소한 시간에 따라 변하지 않게 한다면, 이 영역에서 <span class="math inline">\(\nabla \times \boldsymbol{E}=0\)</span> 이므로 전기 포텐셜을 정의할 수 있다. 실제로, 발전기에서 전류가 흐르지 않을 경우, 두 와이어 사이의 전위 차이 <span class="math inline">\(V\)</span> 는 회전 코일의 기전력과 같다. 즉,</p>
+<p><span class="math display">\[
+V = NBS\omega \sin \omega t= V_0 \sin \omega t.
+\]</span></p>
+<p>이렇게 시간에 따라 달라지는 전위를 교류 전압이라고 한다.</p>
+<p>전선 사이에 전기장이 있기 때문에 대전되어야 한다. 발전기의 기전력이 여분의 전하를 전선으로 밀어내어 전기장을 발생시키는 데 이 전기장이 유도에 의해 발생한 전기장을 정확히 상쇄할 만큼 충분히 강해질 때까지 전하를 보낼 것이다. 발전기 외부에서 보았을 때, 두 전선은 전위 차 <span class="math inline">\(V\)</span> 에 전기적으로 전하를 띤 것처럼 보이며, 시간이 지나면서 전하가 변하여 교류 전압을 만들고 있는 것처럼 보인다. 정전기 상황과도 또 다른 차이가 있다. 발전기를 전류가 흐르는 외부 회로에 연결하면, 기전력이 전선이 방전되는 것을 허용하지 않지만 전류가 흐르는 동안 전선에 계속 전하를 공급하여 전선을 항상 동일한 전위 차이로 유지하려고 한다. 실제로 발전기가 총 저항이 <span class="math inline">\(R\)</span> 인 회로에 연결되어 있다면, 회로를 통과하는 전류는 발전기의 전류에 비례하고 <span class="math inline">\(R\)</span> 에 반비례한다. 기전력이 시간과 진동수의 곱에 대한 사인함수이므로 전류도 마찬가지이다. 이를 교류 전류라고 한다.</p>
+<p><span class="math display">\[
+I=\dfrac{\mathcal{E}}{R} = \dfrac{V}{R} \sin \omega t.
+\]</span></p>
+<p>우리는 또한 기전력이 발전기가 공급하는 에너지의 양을 결정한다는 것을 알 수 있다. 전선의 각 전하는 전하에 작용하는 힘 <span class="math inline">\(\boldsymbol{F}\)</span> 와 전하의 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 에 대해 <span class="math inline">\(\boldsymbol{F\cdot v}\)</span> 의 속도로 에너지를 받고 있다. 이제 와이어의 단위 길이당 이동 전하의 수를 <span class="math inline">\(n\)</span> 이라고 하자. 그러면 와이어의 길이 요소 <span class="math inline">\(ds\)</span> 에 전달되는 일률은 <span class="math inline">\(\boldsymbol{F \cdot v }nds\)</span> 이다. 전선의 경우, <span class="math inline">\(\boldsymbol{v}\)</span> 의 방향은 <span class="math inline">\(ds\)</span> 의 방향과 같으므로 <span class="math inline">\(nv\boldsymbol{F \cdot}d\boldsymbol{s}\)</span> 라고 쓸 수 있다. 그렇다면 전체 회로에 전달되는 총 일률은 전체 경로에 대한 이 식의 적분이 된다.</p>
+<p><span id="eq-FLP_2_17_15"><span class="math display">\[
+\text{Power} = \oint nv\boldsymbol{F\cdot} \,d\boldsymbol{s}.
+\tag{10.16}\]</span></span></p>
+<p>여기서 <span class="math inline">\(qnv = I\)</span> 는 전류 I이며, <span class="math inline">\(\mathcal{E}=(1/q)\oint \boldsymbol{F\cdot}d\boldsymbol{s}\)</span> 임을 생각하면</p>
+<p><span id="eq-FLP_2_17_16"><span class="math display">\[
+\text{발전기에서 공급되는 전력}=EI.
+\tag{10.17}\]</span></span></p>
+<p>발전기의 코일에 전류가 흐르면, 그 코일에도 기계적 힘이 작용한다. 실제로, 우리는 코일의 토크가 자기 모멘트, 자기장의 세기 <span class="math inline">\(B\)</span>, 그리고 그 사이 각도의 사인에 비례한다는 것을 알고 있다. 자기 모멘트는 코일 내 전류에 그 면적을 곱한 것이다. 따라서 토크는</p>
+<p><span id="eq-FLP_2_17_17"><span class="math display">\[
+\tau = N I S B \sin \theta.
+\tag{10.18}\]</span></span></p>
+<p>코일을 회전시키기 위해 기계적 작업을 수행해야 하는 속도는 각속도 <span class="math inline">\(\omega\)</span>에 토크를 곱한 것이다:</p>
+<p><span id="eq-FLP_2_17_18"><span class="math display">\[
+\dfrac{dW}{dt} = \omega \tau = \omega NISB \sin \theta.
+\tag{10.19}\]</span></span></p>
+<p>이 식과 <a href="#eq-FLP_2_17_14" class="quarto-xref">식&nbsp;<span>10.15</span></a> 를 비교해보자. 우리는 코일을 자기력에 맞서 회전시키는 데 필요한 기계적 작업의 속도가 <span class="math inline">\(I\mathcal{E}\)</span> 와 정확히 일치한다는 것을 알 수 있다. <span class="math inline">\(\mathcal{E} I\)</span> 는 발전기의 기전력에 의해 전기 에너지가 전달되는 속도이다. 발전기에서 소모된 모든 기계적 에너지는 회로에서 전기 에너지로 나타난다.</p>
+<p>유도된 기전력으로 인한 전류와 힘의 또 다른 예로서, <a href="../vol1/vol1_2.html#fig-FLP_1_17_1" class="quarto-xref">그림&nbsp;<span>2.6</span></a> 의 설정에서 일어나는 현상을 분석해보자. 이제 U 자형 고정된 도선의 맨 왼쪽 수직을 세워진 부분이 고저항 도선으로 만들어졌으며, 양쪽 도선은 구리와 같은 좋은 전도체로 만들어졌다고 가정한다. 그렇다면 크로스바가 이동하면서 회로 저항이 변하는 것을 걱정할 필요가 없다. 회록의 기전력은</p>
+<p><span id="eq-FLP_2_17_19"><span class="math display">\[
+\mathcal{E}=vBw
+\tag{10.20}\]</span></span></p>
+<p>이며 회로의 전류는 이 기전력에 비례하고 회로의 저항 <span class="math inline">\(R\)</span> 에 반비례한다.</p>
+<p><span id="eq-FLP_2_17_20"><span class="math display">\[
+I=\dfrac{\mathcal{E}}{R}=\dfrac{vBw}{R}.
+\tag{10.21}\]</span></span></p>
+<p>이 전류 때문에 크로스바에 아래와 같은 자기력이 작용한다.</p>
+<p><span id="eq-FLP_2_17_21"><span class="math display">\[
+F=BIw.
+\tag{10.22}\]</span></span></p>
+<p><a href="#eq-FLP_2_17_20" class="quarto-xref">식&nbsp;<span>10.21</span></a> 에서의 <span class="math inline">\(I\)</span> 를 대입하면</p>
+<p><span id="eq-FLP_2_17_22"><span class="math display">\[
+F=\dfrac{B^2 \omega^2 v}{R}.
+\tag{10.23}\]</span></span></p>
+<p>우리는 힘이 크로스바의 속도에 비례한하며 힘의 방향은 그 속도와 반대이다. 이렇게 점성력과 유사한 <strong>속도에 비례하는</strong> 힘은 자기장 내에서 움직이는 도체에 의해 유도 전류가 발생할 때마다 발견된다. 지난 장에서 본 와류 전류의 예들은 전도체의 속도에 비례하는 힘을 발생시켰며, 이러한 상황은 일반적으로 해석하기 어려운 복잡한 전류 분포를 보여준다.</p>
+<p>역학적 시스템 설계에서는 속도에 비례하는 감쇠력을 갖는 것이 종종 편리하다. 와류 전류 힘은 이러한 속도 의존력을 얻는 가장 편리한 방법 중 하나이다. 그러한 힘의 적용 사례는 기존의 가정용 전력계에서 찾아볼 수 있다. 전력계에는 영구 자석의 극 사이를 회전하는 얇은 알루미늄 디스크가 있다. 이 디스크는 집의 전기 회로에서 소비되는 전력에 비례하는 토크를 갖는 소형 전기 모터에 의해 구동된다. 디스크의 와전류 힘 때문에 속도에 비례하는 저항력이 존재한다. 평형 상태에서는 속도가 전기 에너지 소비 속도에 비례하며 회전 디스크에 부착된 카운터를 이용하여 회전 횟수를 기록한다. 이 수는 총 에너지 소비량을 나타내는 지표이며, 즉 사용된 와트시 수를 나타낸다.</p>
+<p>우리는 또한 <a href="#eq-FLP_2_17_22" class="quarto-xref">식&nbsp;<span>10.23</span></a> 를 지적할 수도 있습니다. 이 식는 유도 전류에서 발생하는 힘—즉, 모든 와전류의 힘—이 저항에 반비례한다는 것을 보여준다. 힘이 클수록 재료의 전도성이 향상된다. 그 이유는 저항이 낮을 때 기전력이 더 많은 전류를 발생시키고, 강한 전류가 더 큰 기계적 힘을 나타내기 때문이다.</p>
+<p>또한 우리의 식에서 기계적 에너지가 전기 에너지로 어떻게 변환되는지 확인할 수 있다. 이전과 같이 회로의 저항에 공급되는 전기 에너지는 <span class="math inline">\(\mathcal{E}I\)</span> 이다. 전도성 크로스바를 이동시키는 일의 속도는 바에 작용하는 힘에 그 속도를 곱한것이므로</p>
+<p><span class="math display">\[
+\dfrac{dW}{dt}=\dfrac{v^2 B^2w^2}{R}.
+\]</span></p>
+<p>이다. 우리는 이것이 실제로 <a href="#eq-FLP_2_17_19" class="quarto-xref">식&nbsp;<span>10.20</span></a> 와 <a href="#eq-FLP_2_17_20" class="quarto-xref">식&nbsp;<span>10.21</span></a> 에서 얻는 <span class="math inline">\(\mathcal{E}I\)</span> 와 동일하다는 것을 확인했다. 다시 역학적 작업은 전기 에너지로 나타난다.</p>
+<p><br></p>
+</section>
+<section id="sec-FLP_2_17_6" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_17_6">II.17–6 상호 유도</h3>
+<p>이제 고정된 와이어 코일이 존재하지만 자기장이 변하는 상황을 생각해보자. 전류에 의한 자기장 생성을 기술할 때, 우리는 정상 전류만을 고려했었다. 하지만 전류가 충분히천천히 변한다면 자기장은 매 순간 일정한 전류의 자기장과 거의 동일하다. 이 절에서는 전류가 항상 충분히 천천히 변한다고 가정한다.</p>
+<div id="fig-FLP_2_17_8" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_17_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_17/fig_2_17_8.png" class="img-fluid figure-img" width="250">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_17_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;10.14: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 17-8. 코일 <span class="math inline">\(1\)</span> 의 전류는 코일 <span class="math inline">\(2\)</span> 를 통과하는 자기장을 생성한다.
+</figcaption>
+</figure>
+</div>
+<p><a href="#eq-FLP_2_17_8" class="quarto-xref">식&nbsp;<span>10.10</span></a> 은 변압기 작동의 기본 효과를 보여주는 두 개의 코일 배열이 표시되어 있다. 코일 1은 긴 솔레노이드 형태로 감긴 전도성 와이어로 구성됩니다. 이 코일 주변에 이 코일과 절연된 코일 2 가 코일 1을 몇차례 감고 있다. 코일 1을 통과한다면, 그 내부에 자기장이 나타날 것임을 알 수 있습니다. 이 자기장은 또한 코일 2를 통과합니다. 코일 1을 흐르는 전류가 변함에 따라 자기 플럭스가 변하면서 코일 2에 유도기전력이 발생한다. <a href="../../src/vol2/vol2_3.html#sec-FLP_2_13_5">II.13–5 직선 도선과 솔레노이드의 자기장, 그리고 원자 전류</a> 에서 긴 솔레노이드 내부의 균일하고 그 크기는 아래와 같은 자기장이 발생한다는 것을 알게 되었다.</p>
+<p><span id="eq-FLP_2_17_23"><span class="math display">\[
+B=\dfrac{\mu_0 N_1I_1}{l}.
+\tag{10.24}\]</span></span></p>
+<p>여기서 <span class="math inline">\(N_1\)</span>은 코일 1의 회전 수이며, <span class="math inline">\(I_1\)</span> 은 코일 1을 통과하는 전류, <span class="math inline">\(l\)</span> 은 그 길이이다. 코일 1의 단면적을 <span class="math inline">\(S\)</span> 라고 하자. 코일 2에 <span class="math inline">\(N_2\)</span> 회전이 있는 경우 코일 2의 기전력 <span class="math inline">\(\mathcal{E}_2\)</span> 는</p>
+<p><span id="eq-FLP_2_17_24"><span class="math display">\[
+\mathcal{E}_2 = −N_2S\dfrac{dB}{dt}.
+\tag{10.25}\]</span></span></p>
+<p><a href="#eq-FLP_2_17_24" class="quarto-xref">식&nbsp;<span>10.25</span></a> 에서 시간에 따라 변하는 유일한 양은 <span class="math inline">\(I_1\)</span> 이므로</p>
+<p><span id="eq-FLP_2_17_25"><span class="math display">\[
+\mathcal{E}_2=−\dfrac{\mu_0 N_1 N_2 S}{l} \dfrac{dI_1}{dt}.
+\tag{10.26}\]</span></span></p>
+<p>우리는 코일 2의 기전력이 코일 1의 전류 변화율에 비례한다는 것을 확인했다. 비례 상수는 기본적으로 두 코일의 기하학적 요인으로, <strong>상호 인덕턴스 (mutual inductance)</strong> 라고 하며, 일반적으로 <span class="math inline">\(M_{21}\)</span> 으로 표기한다. 이로부터</p>
+<p><span id="eq-FLP_2_17_26"><span class="math display">\[
+\mathcal{E}_2= M_{21}\dfrac{dI_1}{dt}.
+\tag{10.27}\]</span></span></p>
+<p>이제 코일 2 에 흐르는 전류에 의해 코일 1에 발생하는 기전력은</p>
+<p><span id="eq-FLP_2_17_27"><span class="math display">\[
+\mathcal{E}_1 = M_{12}\dfrac{dI_2}{dt}.
+\tag{10.28}\]</span></span></p>
+<p>라고 쓸 수 있다. <span class="math inline">\(M_{12}\)</span> 의 계산은 방금 <span class="math inline">\(M_{21}\)</span> 에 대해 수행한 계산보다 더 어려울 것이다. 그러나 지금 그 계산을 진행하지 않는다. 왜냐하면 이 장에서 <span class="math inline">\(M_{12}=M_{21}\)</span> 임을 보일 것이기 때문이다.</p>
+<div id="fig-FLP_2_17_9" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_17_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_17/fig_2_17_9.png" class="img-fluid figure-img" width="350">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_17_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;10.15: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 17-9. 두 코일 중 어느 것이든 <span class="math inline">\(d\boldsymbol{l}_1⋅d\boldsymbol{l}_2/r_{12}\)</span> 의 적분에 비례하는 상호 인덕턴스 <span class="math inline">\(M\)</span> 을 가진다.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-FLP_2_17_9" class="quarto-xref">그림&nbsp;<span>10.15</span></a> 의 코일들처럼, 임의의 두 코일 사이의 상호 인덕턴스를 계산해 보자. 우리는 코일 1에서의 기전력 <span class="math inline">\(\mathcal{E}_1\)</span> 은 회로 <span class="math inline">\(1\)</span> 을 경계로 갖는 표면 <span class="math inline">\(S_1\)</span> 에 대해</p>
+<p><span class="math display">\[
+\mathcal{E}_1=−\dfrac{d}{dt}\int_{S_1}\boldsymbol{B\cdot}\,d\boldsymbol{a},
+\]</span></p>
+<p>임을 안다. 여기에 벡터 포텐셜을 도입하면</p>
+<p><span id="eq-FLP_2_17_28"><span class="math display">\[
+\mathcal{E}_1 = - \dfrac{d}{dt}\oint_{\Gamma_1} \boldsymbol{A\cdot}d\boldsymbol{l}_1
+\tag{10.29}\]</span></span></p>
+<p>이다. 여기서 <span class="math inline">\(\Gamma_1\)</span> 은 회로 <span class="math inline">\(1\)</span> 을 흐르는 전류 <span class="math inline">\(I_1\)</span> 에 의해 결정되는 경로이다. 이제 회로 1의 벡터포텐셜이 회로 2의 전류에서 온다고 가정하면(<a href="../../src/vol2/vol2_3.html#sec-FLP_2_14_2">II.14-2 알고 있는 전류에 대한 벡터 포텐셜</a> 를 참고하라)</p>
+<p><span id="eq-FLP_2_17_29"><span class="math display">\[
+\boldsymbol{A}=\dfrac{\mu_0}{4\pi}\oint_{\Gamma_2}\dfrac{I_2}{r_{12}}\,d\boldsymbol{l}_2
+\tag{10.30}\]</span></span></p>
+<p>이다. 여기서 <span class="math inline">\(\Gamma_2\)</span> 는 회로 2 를 흐르는 전류 <span class="math inline">\(I_2\)</span> 에 의해 결정되는 경로이다. <a href="#eq-FLP_2_17_28" class="quarto-xref">식&nbsp;<span>10.29</span></a> 와 <a href="#eq-FLP_2_17_29" class="quarto-xref">식&nbsp;<span>10.30</span></a> 로부터</p>
+<p><span class="math display">\[
+\mathcal{E}_1=−\dfrac{\mu_0}{4\pi}\dfrac{d}{dt}\oint_{\Gamma_1}\oint_{\Gamma_2}\dfrac{I_2\, d\boldsymbol{l}_1 \boldsymbol{\cdot}d\boldsymbol{l}_2}{r_{12}}
+\]</span></p>
+<p>이다. 이 방정식에서 적분은 모두 고정된 회로에 대한 것이며 유일한 가변량은 <span class="math inline">\(I_2\)</span> 이고 적분 변수에 의존하지 않는다. 따라서 <span class="math inline">\(\mathcal{E}_1\)</span> 는 다음과 같이 쓸 수 있다.</p>
+<p><span class="math display">\[
+\mathcal{E}_1 = M_{12}\dfrac{dI_2}{dt}.
+\]</span></p>
+<p>여기서</p>
+<p><span id="eq-FLP_2_17_30"><span class="math display">\[
+M_{12}=−\dfrac{\mu_0}{4\pi}\oint_{\Gamma_1} \int_{\Gamma_2} \dfrac{d\boldsymbol{l}_2 \boldsymbol{\cdot} d\boldsymbol{l}_1}{r_12}.
+\tag{10.31}\]</span></span></p>
+<p>우리는 이 적분을 통해 <span class="math inline">\(M_{12}\)</span> 가 회로의 기하학에만 의존한다는 것을 알 수 있다. <a href="#eq-FLP_2_17_30" class="quarto-xref">식&nbsp;<span>10.31</span></a> 은 임의의 형태를 가진 두 회로의 상호 인덕턴스를 계산하는 데 사용할 수 있으며 또한 <span class="math inline">\(M_{12}= M_{21}\)</span> 임을 보여준다. 따라서 두 개의 코일만 있는 시스템의 경우, <span class="math inline">\(M_{12}\)</span> 와 <span class="math inline">\(M_{21}\)</span> 은 종종 기호 <span class="math inline">\(M\)</span> 으로 표시되며, 이를 <strong>상호 인덕턴스 (mutual inductance)</strong> 라고 한다.</p>
+<p><br></p>
+</section>
+<section id="eq-FLP_2_17_7" class="level3">
+<h3 class="anchored" data-anchor-id="eq-FLP_2_17_7">II.17–7 자기 유도</h3>
+<p><a href="#fig-FLP_2_17_8" class="quarto-xref">그림&nbsp;<span>10.14</span></a> 또는 <a href="#fig-FLP_2_17_9" class="quarto-xref">그림&nbsp;<span>10.15</span></a> 에서 유도된 전기전력에 대해 논의할 때, 우리는 두 코일중 하나에만 전류가 흐르는 경우를 고려했다. 두 코일에 전류가 동시에 존재한다면, 두 코일을 연결하는 자기 플럭스는 두 플럭스의 합이 되며, 이는 자기장에 중첩 법칙이 적용되기 때문이다. 따라서 두 코일의 기전력은 다른 코일 뿐만 아니라 자체의 전류 변화에도 비례한다. 따라서 코일 2의 총 기전력은 아래와 같다.</p>
+<p><span id="eq-FLP_2_17_31"><span class="math display">\[
+\mathcal{E}_2=M_{21}\dfrac{dI_1}{dt} + M_{22}\dfrac{dI_2}{dt}.
+\tag{10.32}\]</span></span></p>
+<p>마찬가지로, 코일 1의 기전력은</p>
+<p><span id="eq-FLP_2_17_32"><span class="math display">\[
+\mathcal{E}_1=M_{12}\dfrac{dI_2}{dt} + M_{11}\dfrac{dI_1}{dt}
+\tag{10.33}\]</span></span></p>
+<p>이다. 여기서 계수 <span class="math inline">\(M_{22}\)</span> 와 <span class="math inline">\(M_{11}\)</span> 은 항상 음수이므로 보통 아래와 같이 쓴다.</p>
+<p><span id="eq-FLP_2_17_33"><span class="math display">\[
+M_{11}=−L_1,\qquad M_{22}= −L_2
+\tag{10.34}\]</span></span></p>
+<p>여기서 <span class="math inline">\(L_1\)</span> 과 <span class="math inline">\(L_2\)</span> 를 두 코일의 <strong>자체 인덕턴스 (self inductance)</strong> 라고 한다.</p>
+<p>코일 자체만으로도 자체 인덕턴스 <span class="math inline">\(L\)</span> 을 갖게 된다. 단일 코일의 경우, 기전력과 전류가 같은 방향일 경우 양수로 간주한다는 관례 따라 단일 코일의 기전력을 다음과 같이 쓸 수 있다.</p>
+<p><span id="eq-FLP_2_17_34"><span class="math display">\[
+\mathcal{E}=−L\dfrac{dI}{dt}.
+\tag{10.35}\]</span></span></p>
+<p>마이너스 기호는 전기 전류 변화가 반대임을 나타내며, 흔히 <strong>역기전력 (back electromotive force)</strong> 라고 한다.</p>
+<p>모든 코일은 전류 변화에 반하는 자체 인덕턴스를 가지고 있기 때문에, 코일 내 전류는 일종의 관성을 가지고 있다. 실제로, 코일의 전류를 변경하고자 할 경우, 이 관성을 극복하기 위해 코일을 배터리나 발전기와 같은 외부 전압원에 연결해야 한다(<a href="#fig-FLP_2_17_10" class="quarto-xref">그림&nbsp;<span>10.16</span></a> (a)) 이런 회로에서는 전압 <span class="math inline">\(\mathcal{V}\)</span> 은</p>
+<p><span id="eq-FLP_2_17_35"><span class="math display">\[
+\mathcal{V}=L\dfrac{dI}{dt}.
+\tag{10.36}\]</span></span></p>
+<p>이다.</p>
+<div id="fig-FLP_2_17_10" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_17_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_17/fig_2_17_10.png" class="img-fluid figure-img" width="350">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_17_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;10.16: 파인만 물리학 강의 <span class="math inline">\(II\)</span> Fig. 17-10. (a) 전압원과 인덕턴스를 갖는 회로. (b) 유사한 역학 시스템.
+</figcaption>
+</figure>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="sec-FLP_2_17_8" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="sec-FLP_2_17_8">II.17-8 인덕턴스와 자기 에너지</h2>
+<p>앞선 절의 비유를 이어가면, 변화율이 가해진 힘인 기계적 운동량 p=mv에 해당하는 경우, 변화율이 V인 LI와 동일한 유사량이 있을 것으로 기대합니다. 물론 우리는 LI가 회로의 진정한 모멘텀이라고 말할 권리가 없으며, 실제로는 그렇지 않습니다. 전체 회로가 정지해 있을 수 있으며 동력이 없을 수도 있습니다. 이는 LI가 해당 방정식을 만족한다는 의미에서 운동량 mv와 유사하다는 것뿐입니다. 같은 방식으로, 운동 에너지 12mv²에 해당하는 유사한 양 12LI2가 있습니다. 하지만 거기에 서프라이즈가 있습니다. 이 12LI2는 전기 케이스에서도 실제로 에너지입니다. 이는 인덕턴스에 대한 작업 속도가 VI이고, 기계 시스템에서는 Fv이며, 이는 해당 양입니다. 따라서 에너지의 경우, 양은 수학적으로 일치할 뿐만 아니라 동일한 물리적 의미도 가지고 있습니다.</p>
+<p><a href="#eq-FLP_2_17_16" class="quarto-xref">식&nbsp;<span>10.17</span></a> 에 따라 유도된 힘에 의한 전기적 일의 속도는 기전력과 전류의 곱이다.</p>
+<p><span class="math display">\[
+\dfrac{dW}{dt}=\mathcal{E}I.
+\]</span></p>
+<p><a href="#eq-FLP_2_17_34" class="quarto-xref">식&nbsp;<span>10.35</span></a> 를 이용하여 <span class="math inline">\(\mathcal{E}\)</span> 를 전류에 대한 표현으로 대체하면</p>
+<p><span id="eq-FLP_2_17_36"><span class="math display">\[
+\dfrac{dW}{dt}=−LI\dfrac{dI}{dt}
+\tag{10.37}\]</span></span></p>
+<div class="page-columns page-full"><p>이며, 이 식을 적분하면 전류를 축적하는 동안 자체 인덕턴스에 의한 기전력을 극복하기 위해 외부 전원으로부터 필요한 에너지(이는 저장된 에너지 <span class="math inline">\(U\)</span> 와 동일해야 함)를 알 수 있다<span class="math inline">\(^4\)</span>.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^4\)</span> (저자주) 여기서 코일 저항에 있는 전류로 인한 열의 에너지 손실은 무시하였다. 이러한 손실은 전원으로부터 추가 에너지를 필요로 하지만, 인덕턴스에 들어가는 에너지는 변하지 않는다.</span></div></div>
+<p><span id="eq-FLP_2_17_37"><span class="math display">\[
+−W = U =\dfrac{1}{2}LI^2.
+\tag{10.38}\]</span></span></p>
+<p>따라서 인덕턴스에 저장된 에너지는 <span class="math inline">\(\dfrac{1}{2}LI^2\)</span> 이다.</p>
+<p><a href="#fig-FLP_2_17_8" class="quarto-xref">그림&nbsp;<span>10.14</span></a> 또는 <a href="#fig-FLP_2_17_9" class="quarto-xref">그림&nbsp;<span>10.15</span></a> 와 같은 코일 쌍에 동일한 논리를 적용하면, 시스템의 전체 전기 에너지가 다음과 같이 주어진다는 것을 알 수 있다.</p>
+<p><span id="eq-FLP_2_17_38"><span class="math display">\[
+U=\dfrac{1}{2}L_1 I_1^2 + \dfrac{1}{2}L_2 I^2_2 +M I_1I_2.
+\tag{10.39}\]</span></span></p>
+<p>두 코일 모두에서 <span class="math inline">\(I=0\)</span> 이라고 하자. 먼저 코일 1에서 전류 <span class="math inline">\(I_1\)</span> 을 켜면 (<span class="math inline">\(I_2=0\)</span>) 수행한 일은 단지 <span class="math inline">\(L_1I_1^2/2\)</span> 이다. 하지만 여기에 <span class="math inline">\(I_2\)</span> 를 켜면 회로 2의 기전력에 대해 <span class="math inline">\(L_2I_2^2\)</span> 의 일을 수행할 뿐만 아니라 회로 1의 기전력에 <span class="math inline">\(M(dI_2/dt)\)</span> 에 대한 적분인 <span class="math inline">\(MI_1I_2\)</span> 만큼의 일도 하게 된다.</p>
+<p>이제 전류 <span class="math inline">\(I_1\)</span> 과 <span class="math inline">\(I_2\)</span> 가 흐르는 두 코일 사이의 힘을 구해보자. <a href="#eq-FLP_2_17_38" class="quarto-xref">식&nbsp;<span>10.39</span></a> 에 가상 일 원리를 적용하여 구할 수 있다. 여기서 코일의 상대적 위치를 바꿀 때 변하는 유일한 양은 상호 인덕턴스 <span class="math inline">\(M\)</span> 임을 기억하자. 그렇다면 다음의 식을 얻을 수 있다.</p>
+<p><span class="math display">\[
+−F\Delta x = \Delta U = I_1 I_2 \Delta M(\text{틀리다}).
+\]</span></p>
+<p>하지만 이 식은 잘못되었다. 앞서 보았듯이, 두 코일의 에너지 변화만을 포함하고 전류 <span class="math inline">\(I_1\)</span> 과 <span class="math inline">\(I_2\)</span> 를 일정한 값으로 유지하는 전원의 에너지 변화는 포함하지 않기 때문이다. 우리는 이제 이러한 전원들이 코일이 움직일 때 유도된 기전력에 대해 에너지를 공급해야 한다는 것을 이해할 수 있다. 가상일 원리를 올바르게 적용하고자 한다면, 이러한 에너지도 포함해야 한다. 그러나 우리가 보았듯이, 우리는 단거리를 선택하여 가상 작업의 원리를 활용할 수 있으며, 전체 에너지가 우리가 ’기계적 에너지’라고 부르는 <span class="math inline">\(U_\text{mech}\)</span> 의 음수임을 기억함으로써. 따라서 우리는 그 힘을 위해 쓸 수 있다.</p>
+<p><span id="eq-FLP_2_17_39"><span class="math display">\[
+−F\Delta x=\Delta U_\text{mech} = −\Delta U.
+\tag{10.40}\]</span></span></p>
+<p>두 코일 사이의 힘은 다음과 같이 주어진다.</p>
+<p><span class="math display">\[
+F\Delta x = I_1 I_2 \Delta M.
+\]</span></p>
+<p>두 코일 시스템의 에너지에 대한 식 (17.38)은 상호 인덕턴스 M과 두 코일의 자체 인덕턴스 L1 및 L2 사이에 흥미로운 불평등이 존재함을 보여주는 데 사용될 수 있습니다. 두 코일의 에너지는 양수여야 한다는 것이 명백합니다. 코일의 전류를 0으로 시작하고 이 전류를 일부 값으로 증가시키면, 우리는 시스템에 에너지를 추가하고 있는 것입니다. 그렇지 않다면, 전류는 전 세계에 에너지가 방출될 때 자발적으로 증가할 것이며, 이는 일어날 가능성이 거의 없는 일입니다! 이제 우리의 에너지 방정식, Eq. (17.38)는 다음과 같은 형태로도 동일하게 쓸 수 있습니다:</p>
+<p>U=12L1+12(I1+ML1I2)2(L2−M2L1)I22.( 17.40)</p>
+<p>그것은 단지 대수적 변환일 뿐입니다. 이 양은 I1 및 I2의 모든 값에 대해 항상 양수여야 합니다. 특히, I2가 특수 값을 갖는 경우 양수여야 합니다.</p>
+<p>I2=−L1MI1.( 17.41)</p>
+<p>하지만 I2에 대한 이 전류와 함께, 식의 첫 번째 항은 (17.40)은 0입니다. 에너지가 양수인 경우, (17.40)의 마지막 항은 0보다 커야 합니다. 우리는 요구 사항이 있습니다</p>
+<p>L1L2&gt;M2.</p>
+<p>따라서 우리는 두 코일의 상호 인덕턴스 M의 크기가 두 자기 인덕턴스의 기하학적 평균보다 반드시 작거나 같다는 일반적인 결과를 증명했습니다. (M 자체는 전류 I1과 I2의 부호 규칙에 따라 양수이거나 음수일 수 있습니다.)</p>
+<p>|M|&lt;L1L2−−−−√.( 17.42)</p>
 
 
 </section>
