@@ -1,5 +1,5 @@
 ---
-title: "$III$-1 : 확률진폭과 동일입자"
+title: "$\\text{III}$-1 : 확률진폭과 동일입자"
 number-sections: true
 number-depth: 0
 crossref:
