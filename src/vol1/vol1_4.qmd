@@ -746,6 +746,26 @@ $$
 
 </br>
 
+### $\textrm{I}$.30-5 색깔이 잎혀진 필름: 크리스탈 {#sec-FLP_1_30_5}
+
+</br>
+
+### $\textrm{I}$.30-6 불투명 스크린에 의한 회절 {#sec-FLP_1_30_6}
+
+</br>
+
+### $\textrm{I}$.30-7 진동하는 전하 평면의 장 {#sec-FLP_1_30_7}
+
+
+
+
+$$
+P\text{ 에서의 총 field} = −\dfrac{ηq}{2\epsilon_0 c} [\text{전하의 속도}]_{\text{at } t−z/c} 
+$$ {#eq-FLP_1_30_19}
+
+</br>
+
+
 ## $\textrm{I}$.31 굴절률의 기원 {#sec-FLP_1_31}
 
 </br>
