@@ -629,7 +629,7 @@ $$ {#eq-FLP_1_21_6}
 
 </br>
 
-### $\textrm{I}$.21-3 조화운동과 원운동 {#sec-FLP_21_3}
+### $\textrm{I}$.21-3 조화운동과 원운동 {#sec-FLP_1_21_3}
 
 </br>
 
@@ -686,28 +686,28 @@ $$
 
 $$
 m\ddot{x} = -kx + F(t).
-$$ {#eq-FLP_2_21_8}
+$$ {#eq-FLP_1_21_8}
 
 가장 간단한 경우는 다음과 같은 경우이다.
 
 $$
 F(t) = F_0 \cos \omega t.
-$$ {#eq-FLP_2_21_9}
+$$ {#eq-FLP_1ㄴ_21_9}
 
 
-이제 이 힘에 의한 미분방정식 @eq-FLP_2_21_8 를 풀어보자. 한 특이해(particular solution)$^1$[$^1$파인만은 special solution 이라고 했다.]{.aside} $x_p$ 는 다음과 같이 주어진다.
+이제 이 힘에 의한 미분방정식 @eq-FLP_1_21_8 를 풀어보자. 한 특이해(particular solution)$^1$[$^1$파인만은 special solution 이라고 했다.]{.aside} $x_p$ 는 다음과 같이 주어진다.
 
 $$
 x_p(t) = C \cos \omega t.
-$$ {#eq-FLP_2_21_10}
+$$ {#eq-FLP_1_21_10}
 
-이 식이 @eq-FLP_2_21_8 를 만족한다면
+이 식이 @eq-FLP_1_21_8 를 만족한다면
 
 $$
 C= \dfrac{F_0}{m (\omega_0^2 - \omega^2)}
-$$ {#eq-FLP_2_21_12}
+$$ {#eq-FLP_1_21_12}
 
-이다. 더 일반적인 해는 이후에 구해보기로 하고 @eq-FLP_2_21_12 에 의한 해만 새각해보자. $\omega \ll \omega_0$ 라면 $x(t)$ 와 $F(t)$ 가 거의 같은 방향이며 $\omega >\omega_0$ 이면 $x(t)$ 와 $F(t)$ 가 반대 방향이고 $\omega \gg \omega_0$ 라면 @eq-FLP_2_21_10 는 매우 작은 진폭을 갖게 된다. $\omega \approx \omega_0$ 이면 @eq-FLP_2_21_10 는 매우 큰 진폭을 갖게 되며 $\omega=\omega_0$ 이면 무한대의 진폭을 갖게 된다. 물론 이것은 불가능하다. 
+이다. 더 일반적인 해는 이후에 구해보기로 하고 @eq-FLP_1_21_12 에 의한 해만 새각해보자. $\omega \ll \omega_0$ 라면 $x(t)$ 와 $F(t)$ 가 거의 같은 방향이며 $\omega >\omega_0$ 이면 $x(t)$ 와 $F(t)$ 가 반대 방향이고 $\omega \gg \omega_0$ 라면 @eq-FLP_1_21_10 는 매우 작은 진폭을 갖게 된다. $\omega \approx \omega_0$ 이면 @eq-FLP_1_21_10 는 매우 큰 진폭을 갖게 되며 $\omega=\omega_0$ 이면 무한대의 진폭을 갖게 된다. 물론 이것은 불가능하다. 
 
 </br>
 
@@ -726,7 +726,7 @@ $$
 a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n-1}} + \cdots + a_1 \dfrac{dx}{dt} + a_0 x = f(t) = \hat{f} e^{i\omega t}.
 $$ 
 
-위의 미분방정식을 만족하는 복소함수 $x(t)$ 를 구한다면 $\text{Re}(x(t))$ 는 @eq-FLP_1_21_1 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 @eq-FLP_2_21_8 에 적용하자. 외부의 힘 $F(t) = F_0 \cos \omega t$ 를 $\hat{F}(t) = \hat{F} e^{i\omega t}$ 로 표현하면
+위의 미분방정식을 만족하는 복소함수 $x(t)$ 를 구한다면 $\text{Re}(x(t))$ 는 @eq-FLP_1_21_1 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 @eq-FLP_1_21_8 에 적용하자. 외부의 힘 $F(t) = F_0 \cos \omega t$ 를 $\hat{F}(t) = \hat{F} e^{i\omega t}$ 로 표현하면
 
 $$
 m \dfrac{d^2 x}{dt^2} + k x = \hat{F} e^{i\omega t}
@@ -744,7 +744,7 @@ $$
 \hat{x} = \dfrac{\hat{F}}{\omega_0^2-\omega^2}
 $$ {#eq-FLP_1_23_5}
 
-이며 이것은 @eq-FLP_2_21_12 의 결과를 포함한다. 또한 우리는 $\hat{F}=F_0e^{-i\phi_0}$ 일 때 
+이며 이것은 @eq-FLP_1_21_12 의 결과를 포함한다. 또한 우리는 $\hat{F}=F_0e^{-i\phi_0}$ 일 때 
 
 $$
 \hat{x} = \dfrac{F_0e^{-i\phi_0}}{\omega_0^2-\omega^2}
@@ -812,7 +812,7 @@ $\rho^2$ 와 $\theta$ 의 $\omega$ 의존성은 아래 그림과 같다.
 
 ![$\rho^2(\omega)$ 와 $\theta(\omega)$](figures/fig_1_23/fig_1_23_2.png){#fig-FLP_1_23_2 width=600}
 
-$\omega \approx \omega_0$ 일 경우 @eq-FLP_2_21_12 와 같이 무한히 폭주하지 않지만 $\rho^2$ 값은 유한한 범위에서 매우 커지며 $\theta \approx \pi/2$ 이다. 그리고 $\rho^2(\omega)$ 에서의 반치전폭(Full with at half maximum, FWHM) 은 $\gamma$ 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 아래와 같이 정의된 $Q$ 인자$^2$[$^2$ $Q$ 인자는 두가지 정의가 존재한다.[Wikipedia Q factor](https://en.wikipedia.org/wiki/Q_factor) 를 참고하라. 파인만은 [뒤에](#sec-FLP_second_Q_factor) 별도의 설명 없이 다른 $Q$ 인자를 사용한다.]{.aside}이다.
+$\omega \approx \omega_0$ 일 경우 @eq-FLP_1_21_12 와 같이 무한히 폭주하지 않지만 $\rho^2$ 값은 유한한 범위에서 매우 커지며 $\theta \approx \pi/2$ 이다. 그리고 $\rho^2(\omega)$ 에서의 반치전폭(Full with at half maximum, FWHM) 은 $\gamma$ 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 아래와 같이 정의된 $Q$ 인자$^2$[$^2$ $Q$ 인자는 두가지 정의가 존재한다.[Wikipedia Q factor](https://en.wikipedia.org/wiki/Q_factor) 를 참고하라. 파인만은 [뒤에](#sec-FLP_second_Q_factor) 별도의 설명 없이 다른 $Q$ 인자를 사용한다.]{.aside}이다.
 
 
 $$
@@ -823,7 +823,7 @@ $$ {#eq-FLP_defintion_of_first_Q_factor}
 
 </br>
 
-### $\textrm{I}$.23-3 전기적 공명 {#sec-FLP_2_23_3}
+### $\textrm{I}$.23-3 전기적 공명 {#sec-FLP_1_23_3}
 
 
 ![파인만 물리학 강의 $I$. Fig. 23-4 수동소자 세가지](figures/fig_1_23/fig_1_23_4.png){#fig-FLP_1_23_4 width=300}
@@ -876,11 +876,11 @@ $$ {#eq-FLP_1_23_19}
 
 </br>
 
-### $\textrm{I}$.23-4 자연에서의 공명 {#sec-FLP_2_23_4}
+### $\textrm{I}$.23-4 자연에서의 공명 {#sec-FLP_1_23_4}
 
 </br>
 
-## $\textrm{I}$.24 진동의 감쇄 {#sec-FLP_2_24}
+## $\textrm{I}$.24 진동의 감쇄 {#sec-FLP_1_24}
 
 ### $\textrm{I}$.24-1 진동자의 에너지 {#sec-FLP_1_24_1}
 
@@ -1025,7 +1025,7 @@ $$
 
 </br>
 
-## 25. 선형 시스템 {#sec-FLP_25}
+## 25. 선형 시스템 {#sec-FLP_1_25}
 
 ### 25-1 선형 미분 방정식 {#sec-FLP_1_25_1}
 

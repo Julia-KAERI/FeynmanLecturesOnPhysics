@@ -1,0 +1,180 @@
+% Author: Izaak Neutelings (February 2020)
+\documentclass[border=3pt,tikz]{standalone}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{calc}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.markings}
+\tikzset{>=latex} % for LaTeX arrow head
+
+\colorlet{Ecol}{orange!90!black}
+\colorlet{Bcol}{violet!90}
+\colorlet{Icol}{blue!70!black}
+\colorlet{gausscol}{green!40!black}
+\colorlet{gausscol2}{green!45!blue}
+\tikzstyle{current}=[->,Icol,thick]
+\colorlet{pluscol}{red!60!black}
+\colorlet{minuscol}{blue!60!black}
+\tikzstyle{anode}=[top color=red!20,bottom color=red!50,shading angle=20]
+\tikzstyle{cathode}=[top color=blue!20,bottom color=blue!40,shading angle=20]
+\tikzstyle{gauss surf}=[gausscol,top color=green!2,bottom color=green!80!black!70,shading angle=5,fill opacity=0.4]
+\tikzstyle{metal}=[top color=black!15,bottom color=black!25,middle color=black!20,shading angle=10]
+\tikzstyle{mydashes}=[dash pattern=on 1 off 1]
+\tikzset{
+  EFieldLine/.style={thick,Ecol,line cap=round,decoration={markings,
+                     mark=at position #1 with {\arrow{latex}}},
+                     postaction={decorate}},
+  BFieldLine/.style={thick,Bcol,postaction={decorate},decoration={markings,
+                     mark=at position #1 with {\arrow{latex}},
+                     mark=at position #1+0.5 with {\arrow{latex}}}},
+  EFieldLine/.default=0.5,
+  BFieldLine/.default=0.4}
+%\usetikzlibrary{3d}
+
+\begin{document}
+
+
+% CAPACITOR 3D - displacement current derivation
+\begin{tikzpicture}[scale=1.5]
+
+    \def\RC{1.2}     % radius capacitor
+    \def\RW{0.1*\RC} % radius wire
+    \def\RA{1.6}     % radius ampere loop
+    \def\D{2.6*\RA}  % distance between plates
+    \def\T{0.4}      % plate thickness
+    \def\L{2*\RA}    % wire length
+    \def\NE{5}       % number of electric field lines
+    \def\NB{2}       % number of magnetic field lines
+    
+    \begin{scope}
+        % CATHODE WIRE
+        
+        \coordinate (O) at (0, 0);
+        \coordinate (P1) at (2.3, 1.5);
+        \coordinate (P2) at (0.2, 0.4);
+
+        \draw[thick, ->] (O) -- (0, 3) node [left] {$z$};
+        \draw[thick, ->] (O) -- (4, 0) node [below] {$y$};
+        \draw[thick, ->] (O) -- (-1.3, -1.3) node [left] {$x$};
+
+        \filldraw[gausscol!40, opacity=0.6] (0, 0) circle (20pt);
+
+        \draw[Ecol, very thick, ->] (-1, -0.3) -- (-1, 0.3) node [midway, left] {$\boldsymbol{v}$};
+
+        \draw[Icol, very thick, ->] (O) -- (P1) node [midway, below] {$\boldsymbol{r}$};
+        \draw[Icol, very thick, ->] (P2) -- (P1) node [midway, above] {$\boldsymbol{r}'$};;
+        \filldraw[fill=white] (0.15, 0.35) rectangle (0.25, 0.45);
+
+        \draw[pluscol, thick, ->] (0.5, 1) node[fill=white] {$\Delta V_2$} to[bend right=30] (P2);
+
+        \draw[minuscol, thick, ->] (1.5, -0.8) node[fill=white] {$\rho(x,y,z)$} to[bend left=30] (-0.1, -0.3);
+
+        \node [right] at (P1) {$P_1$};
+
+        % \draw[Icol, very thick, domain=-2:2, samples=100] 
+        % plot ({\x}, { -\x + 0.3* sin(\x*100)});
+
+        % \coordinate (P2) at ({-1}, { 1+ 0.3* sin(-100)});
+        % \coordinate (P1) at ({1}, { -1+ 0.3* sin(100)});
+        % \coordinate (R) at (3, 1);
+
+        % \draw[gausscol, thick, -latex] (P1) node [left, black] {$P_2$} -- (R) node [midway, below] {$\boldsymbol{r}$};
+        % \draw[gausscol, thick, -latex] (P2) node [left, black] {$P'_2$}-- (R) node [midway, above] {$\boldsymbol{r}'$};
+
+        % \node[right] at (R) {$P_1$};
+
+        % \draw[Ecol, very thick, -stealth] (P2) -- ($(P2)!0.2!(R)$) node [above] {$\boldsymbol{e}_{r'}$};
+        % \draw[Bcol, very thick, -stealth] (P2) -- ++(-48:0.5) node [below] {$\boldsymbol{v}$};
+        % \filldraw[] (P2) circle (1pt) node [above] {$q$};
+        % \filldraw[] (P1) circle (1pt) node [above] {$q$};
+
+
+        % \draw[pluscol, thick, ->] (1, -1.7) node[fill=white] {Position at $t$} to[bend left=30] (P1);
+        % \draw[pluscol, thick, ->] (-1, -1) node[fill=white] {Position at $t-r'/c$} to[bend left=30] (P2);
+
+
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (0:2);
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (45:2) node [above, xshift=3] {$\boldsymbol{E}$};
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (90:2);
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (135:2);
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (180:2);
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (225:2);
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (270:2);
+        % \draw[-latex,  thick, color=Ecol] (0, 0) -- (315:2);
+
+        
+        % \begin{scope}[rotate=22.5]
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (0:2);
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (45:2) node [above] {$\boldsymbol{J}$};
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (90:2);
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (135:2);
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (180:2);
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (225:2);
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (270:2);
+        % \draw[-latex, thick, dashed, color=Bcol] (0, 0) -- (315:2);
+        % \end{scope}
+
+        % \begin{scope}[rotate=-22.5]
+        %     \draw[thick, blue] ({0.55*cos(40)}, {1+0.20*sin(40)}) arc[start angle=40, end angle=85, x radius=0.55, y radius=0.20];
+        %     \draw[thick, blue, ->] ({0.55*cos(95)}, {1+0.20*sin(95)}) arc[start angle=95, end angle=140, x radius=0.55, y radius=0.20];
+        %     \draw[thick, blue, ->] ({0.55*cos(160)}, {1+0.20*sin(160)}) arc[start angle=160, end angle=300, x radius=0.55, y radius=0.20];
+        %     \draw[thick, blue] ({0.55*cos(280)}, {1+0.20*sin(280)}) arc[start angle=280, end angle=380, x radius=0.55, y radius=0.20] node [below, yshift=-5]{$\Gamma$};
+        % \end{scope}
+
+        
+        % \draw[metal] (0, 0) circle (0.3) node [midway, scale=0.5] {$Q$};
+        
+        % \draw[thick] (0, 0) circle (1.3);
+        
+        % % CATHODE
+        % \draw[cathode,top color=blue!90!black!30,bottom color=blue!80!black!50]
+        %     (\D,\RC) --++ (\T,0) arc (90:-90:\RC) --++ (-\T,0);
+        % \draw[cathode] (\D,0) circle (\RC);
+        
+        % % ELECTRIC FIELD
+        % \foreach \i [evaluate={\y=-\RC+(\i-0.5)*(2*\RC)/\NE);}] in {1,...,\NE}{
+        %     \draw[EFieldLine={0.68},very thick] (0,\y) --++ (\D,0);
+        % }
+        % \node[Ecol,above] at (0.59*\D,0.9*\RC) {$\boldsymbol{E}$};
+        
+        % % ANODE
+        % \draw[anode,top color=red!90!black!20,bottom color=red!80!black!50]
+        %     (-\T,\RC) --++ (\T,0) arc (90:-90:\RC) --++ (-\T,0);
+        % \draw[anode] (-\T,0) circle (\RC);
+        
+        % % ANODE WIRE LEFT
+        % \draw[metal]
+        %     (-\T,\RW) arc (90:-90:\RW) --++ (-\L,0) arc (-90:90:\RW) -- cycle;
+        
+        % % SURFACE
+        % \draw[gauss surf,very thin,fill opacity=0.3,gausscol2,
+        %         top color=gausscol2!20,bottom color=gausscol2!80!black!70]
+        %     %(-\T-\L,\RA) arc (90:-90:{1.2*(\T+\L+\RA)} and {\RA}) arc (-90:90:\RA);
+        %     (-\T-\L,1.006*\RA) to[out=-4,in=90,looseness=0.7] (\T+\RA,0) to[out=-90,in=4,looseness=0.7] (-\T-\L,-1.006*\RA) arc (-90:90:1.006*\RA);
+        % \draw[gauss surf,thick]
+        %     (-\T-\L,0) circle (\RA);
+        % \node[gausscol] at (-\T-\L-0.7*\RA,\RA) {$C$};
+        % \node[gausscol!70] at (-\T-\L-0.6*\RA,-1.05*\RA) {$S_1$};
+        % \node[gausscol2!70] at (-0.5*\RA,-1.05*\RA) {$S_2$};
+        % \node[pluscol] at (0.7*\RC,-1.15*\RC) {$+Q$};
+        % \node[minuscol] at (\D+0.7*\RC,-1.15*\RC) {$-Q$};
+        
+        % % ANODE WIRE RIGHT
+        % \draw[metal]
+        %     (-\T-\L,\RW) arc (90:-90:\RW) --++ (-\L,0) arc (-90:90:\RW) -- cycle;
+        % \draw[mydashes,black!80,very thin]
+        %     (-\T-\L,0.94*\RW) arc (90:270:0.94*\RW);
+        % \draw[metal]
+        %     (-\T-2*\L,0) circle (\RW);
+        
+        % % CURRENT
+        % \draw[current] (-\T-1.95*\L,1.7*\RW) --++ (0.7*\L,0) node[pos=0.4,above=-1] {$I$};
+        % \draw[current] (\D+\RC+0.15*\L,1.7*\RW) --++ (0.7*\L,0) node[pos=0.4,above=-1] {$I$};
+        
+        % \draw[black] (-4,0) -- (2, 0);
+    \end{scope}
+
+    
+\end{tikzpicture}
+  
+\end{document}

@@ -150,13 +150,13 @@ $$ {#eq-FLP_2_10_13}
 위 식에서 $-$ 부호는 부피 내로 들어오는 전하량이기 때문에 붙었다. 이제 분극 현상에 의해 생긴 부피 $V$ 내부의 전하 밀도를 $\rho_\text{pol}$ 이라고 하면
 
 $$
-\Delta Q_\text{pol} = \int_V \rho_\text{pol}\,d^3\bf{r}
+\Delta Q_\text{pol} = \int_V \rho_\text{pol}\,dV
 $${#eq-FLP_2_10_14}
 
 이다. 따라서
 
 $$
-\int_V \rho_\text{pol}\,d^3 \bf{r} = -\oint_S \bf{P\cdot}d\bf{a}
+\int_V \rho_\text{pol}\,dV = -\oint_S \bf{P\cdot}d\bf{a}
 $${#eq-FLP_2_10_15}
 
 이며 발산법칙으로부터 

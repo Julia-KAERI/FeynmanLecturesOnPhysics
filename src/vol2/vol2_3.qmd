@@ -50,7 +50,7 @@ $$ {#eq-FLP_2_13_6}
 이다.
 
 $$
-Q_\text{inside} = \int_V \rho\, d^3\bf{r}
+Q_\text{inside} = \int_V \rho\, dV
 $$ {#eq-FLP_2_13_7}
 
 이며, @eq-FLP_2_13_6 와 발산법칙을 통해 아래의 전하량 보존식 법칙을 얻는다.
@@ -534,19 +534,19 @@ $$ {#eq-FLP_2_14_11}
 [헬름홀츠 정리](https://julia-kaeri.github.io/MathematicalPhysics/src/vector_calculus/vectorcalculus.html#sec-ED_MT_Helmholtz_theorem) 와 $\nabla \times \bf{B}=\mu_0 \bf{J}$ 로부터 아래의 $\bf{A}$ 가 $\nabla \times \bf{A}=\bf{B}$ 를 만족시킴을 안다.
 
 $$
-\bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|}d^3\bf{r}'.
+\bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|}dV'.
 $$ {#eq-FLP_2_14_19}
 
 여기서 전하 분포 $\rho(\bf{r}')$ 에 대한 정전 포텐셜
 
 $$
-\Phi (\bf{R}) = \dfrac{1}{4\pi\epsilon_0} \int \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}\|'}d^3\bf{r}
+\Phi (\bf{R}) = \dfrac{1}{4\pi\epsilon_0} \int \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}\|'}dV'
 $$
 
 과 비교해보자. $\bf{J}=(J_x,\,J_y,\,J_z)$ 일 때
 
 $$
-A_i = \dfrac{\mu_0}{4\pi} \int \dfrac{J_i(\bf{r}')}{\|\bf{r}-\bf{r}'\|}d^3\bf{r}', \qquad i=x,\,y,\,z
+A_i = \dfrac{\mu_0}{4\pi} \int \dfrac{J_i(\bf{r}')}{\|\bf{r}-\bf{r}'\|}dV', \qquad i=x,\,y,\,z
 $$
 
 이므로 $\rho$ 와 $J_i$ 가 유사하다면 우리가 이미 알고 있는 정전 포텐셜을 통해 벡터포텐셜 문제를 풀 수 있다.
@@ -709,7 +709,7 @@ $$
 전류가 흐르는 닫힌 회로에 의한 자기장을 구해보자.
 $$
 \begin{aligned}
-\bf{B}(\bf{r}) &= \nabla \times \bf{A} = \dfrac{\mu_0}{4\pi}  \left[\nabla \times \int \dfrac{\bf{J}(\bf{r}')\, d^3\bf{r}'}{\|\bf{r}-\bf{r}'\|}\right] \\[0.3em]
+\bf{B}(\bf{r}) &= \nabla \times \bf{A} = \dfrac{\mu_0}{4\pi}  \left[\nabla \times \int \dfrac{\bf{J}(\bf{r}')\, dV'}{\|\bf{r}-\bf{r}'\|}\right] \\[0.3em]
 &=\dfrac{\mu_0 I}{4\pi}  \left[\nabla \times \oint \dfrac{d\bf{l}'}{\|\bf{r}-\bf{r}'\|}\right] \\[0.3em]
 &= \dfrac{\mu_0I}{4\pi} \sum_{i,j,k} \varepsilon_{ijk}\hat{\bf{e}}_i \left[\oint \nabla \times  \dfrac{d\bf{l}'}{\|\bf{r}-\bf{r}'\|}\right] \\[0.3em]
 &= \dfrac{\mu_0I}{4\pi} \sum_{i,j,k} \varepsilon_{ijk}\hat{\bf{e}}_i \left[\oint \dfrac{\partial}{\partial x_j} \left(\dfrac{dl'_k}{\|\bf{r}-\bf{r}'\|}\right)\right] \\[0.3em]
@@ -940,13 +940,13 @@ $$
 로 생각 할 수 있다. 그렇다면 적분을 $I\bf{A\cdot}d\bf{l} \to (\bf{J \cdot A})\,dV$ 로 바꿀 때, 예를 들어 1번 고리의 자기장 + 2번 고리의 전류 조합과 2번 고리의 자기장 + 1번 고리의 전류에 의한 에너지는 동일한데 이것이 두번 계산되게 된다. 따라서 이 중복을 제거한다면 전체 에너지는 다음과 같다.
 
 $$
-U = \dfrac{1}{2}\dfrac{1}{2}\int_V \bf{J\cdot A}\,d^3\bf{r}
+U = \dfrac{1}{2}\dfrac{1}{2}\int_V \bf{J\cdot A}\,dV
 $$ {#eq-FLP_2_15_20}
 
 이 식은 전기에너지에 대해 우리가 찾은 결과와 일치한다.
 
 $$
-U=\dfrac{1}{2}\int_V \rho \Phi d^3\bf{r}.
+U=\dfrac{1}{2}\int_V \rho \Phi dV.
 $$ {#eq-FLP_2_15_21}
 
 따라서 우리는 원한다면 $\bf{A}$ 를 정자기학에서의 일종으 포텐셜로 생각할 수 있다고 생각하겠지만 안타깝게도 이 아이디어는 그다지 유용하지 않다. 왜냐하면 이 식은 정적인 장에만 해당되기 때이다. 실제로, @eq-FLP_2_15_20 과 @eq-FLP_2_15_21 둘 다 시간에 따라 변할 때에는 맞지 않다.
@@ -1143,28 +1143,29 @@ $\bf{F}=\dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2\bf{r}}{r^3}$
 \hline 
 $\nabla \times\bf{E}=0$ & $\nabla \times \bf{E}= - \dfrac{\partial \bf{B}}{\partial t}$ \\
 $\bf{E}=-\nabla \Phi$ & $\bf{E}=-\nabla \Phi - \dfrac{\partial \bf{A}}{\partial t}$ \\
-$\displaystyle \bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,d^3\bf{r}'$ & {} \\
+$\displaystyle \bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,dV'$ & {} \\
 For conductors, $\bf{E}=0$, $\Phi=\text{constant}$. & In conductor, $\bf{E}$ makes currents. \\
 $Q=CV$ & {} \\
 \hline
 {} & $\nabla \bf{\cdot B} = 0$\\
 {} & $\bf{B} = \nabla \times \bf{A}$ \\
 $\nabla \times \bf{B}=\mu_0 \bf{J}$ & $\nabla \times \bf{B}=\mu_0 \bf{J} + \dfrac{1}{c^2} \dfrac{\partial \bf{E}}{\partial t}$ \\
-$\displaystyle \bf{B}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')\times (\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,d^3\bf{r}'$ & {} \\
+$\displaystyle \bf{B}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')\times (\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,dV'$ & {} \\
 \hline
 $\renewcommand{\arraystretch}{2} \begin{array}{l}\quad \nabla^2 \Phi = -\dfrac{\rho}{\epsilon_0} \\ \left[ \begin{array}{l} \nabla^2\bf{A} = - \mu_0 \bf{J} \\ \nabla \bf{\cdot A} = 0 \end{array}\right.\end{array}$ & $\left[\begin{array}{l} \nabla^2 \Phi - \dfrac{1}{c^2}\dfrac{\partial^2 \Phi}{\partial t^2} = - \dfrac{\rho}{\epsilon_0} \\ \nabla^2\bf{A} - \dfrac{1}{c^2} \dfrac{\partial^2 \bf{A}}{\partial t^2} = - \mu_0 \bf{J} \\ \nabla\bf{\cdot A} + \dfrac{1}{c^2} \dfrac{\partial \Phi}{\partial t} = 0\end{array}\right.$ \\
 \hline
-$\displaystyle \renewcommand{\arraystretch}{2} \begin{array}{l} \displaystyle \Phi(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
- \displaystyle \bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}'
-\end{array}$ &  
-$\renewcommand{\arraystretch}{2} \left[  \begin{array}{l} \displaystyle \Phi(\bf{r},\,t) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}',\,t')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
- \displaystyle \bf{A}(\bf{r},\,t) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}',\,t)}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
+$\displaystyle \renewcommand{\arraystretch}{2} \begin{array}{l} \displaystyle \Phi(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,dV' \\
+ \displaystyle \bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,dV'
+\end{array}$ &  dV'
+$\renewcommand{\arraystretch}{2} \left[  \begin{array}{l} \displaystyle \Phi(\bf{r},\,t) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}',\,t')}{\|\bf{r}-\bf{r}'\|} \,dV' \\
+ \displaystyle \bf{A}(\bf{r},\,t) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}',\,t)}{\|\bf{r}-\bf{r}'\|} \,dV' \\
 \displaystyle t' = t=\dfrac{r_{12}}{c}
 \end{array} \right.$ \\
 \hline
-$\displaystyle U = \dfrac{1}{2} \int_V \rho \Phi \,d^3\bf{r}' + \dfrac{1}{2} \int_V \bf{J\cdot A} \,d^3\bf{r}'$ & $\displaystyle U =\int \left(\dfrac{\epsilon_0 E^2}{2} + \dfrac{B^2}{2\mu_0}\right)\,d^3\bf{r}'$\\
+$\displaystyle U = \dfrac{1}{2} \int_V \rho \Phi \,dV' + \dfrac{1}{2} \int_V \bf{J\cdot A} \,dV'$ & $\displaystyle U =\int \left(\dfrac{\epsilon_0 E^2}{2} + \dfrac{B^2}{2\mu_0}\right)\,dV'$\\
 \hline
 \end{tabular}
+
 -->
 
 ![파인만 물리학 강의 $II$ Table. 15-1.](figures/fig_2_15/tbl_2_1.png){#tbl-FLP_2_1 width=500}
@@ -1238,7 +1239,7 @@ $$ {#eq-FLP_induced_emf_by_magnetic_flux}
 
 패러데이의 발견에서 가장 흥미로운 특징 중 하나는 한 코일에서 변하는 전류가 두 번째 코일에서 기전력을 발생시키는 점다. 그리고 놀랍게도, 두 번째 코일에서 유도된 기전력의 크기는 동일한 규칙에 의해 주어진다. 이것이 변압기를 가능하게 한다. @fig-FLP_2_16_5 과 같이 별개의 철판 다발에 감겨 있는 두개의 코일을 생각하자. 이제 코일(a)을 교류 발생기에 연결하면 지속적으로 변하는 자기장을 생기며 이 변하는 자기장은는 코일(b)에서 교대로 발생하는 기전력을 생성한다. 
 
-![파인만 물리학 강의 $\textrm{II}$ Fig. 16-5. 두 개의 코일이 철판 다발에 감겨 있어, 발전기가 직접 연결되지 않은 전구를 켤 수 있다.](figures/fig_2_16/fig_2_16_5.png){#fig-FLP_2_16_5 width=400}
+![파인만 물리학 강의 $\textrm{II}$ Fig. 16-5. 두 개의 코일이 철판 다발에 감겨 있어, 발전기가 직접 연결되지 않은 전구를 켤 수 있다.](figures/fig_2_16/fig_2_16_5.png){#fig-FLP_2_16_5 width=300}
 
 기전력은 코일(b)에서 원래 발잔기의 주파수와 동일하게 교대로 작동지만 코일(b)의 전류는 코일(a)의 전류보다 크거나 작을 수 있다. 코일(b)의 전류는 유도된 기전력과 회로의 나머지 부분의 저항 및 인덕턴스에 따라 달라진다. 코일(b) 를 여러 번 감아 감아 기전력을 발생기보다 훨씬 크게 만들 수 있는데 이는 주어진 자기장에서 코일을 통과하는 플럭스가 더 커지기 때문이다. 두 코일의 이러한 조합을 변압기라고 한다. 그것은 하나의 기전력을 다른 기전력으로 변환시킨다.
 
@@ -1762,13 +1763,13 @@ $$ {#eq-FLP_2_17_43}
 이제 단일 코일의 자체 인덕턴스를 계산하는 다른 방법을 찾아보자. 와이어의 크기가 중요한 매개변수이기 때문에 전선 내부의 전류 분포를 고려해야 한다. <u>따라서 우리는 “회로”의 인덕턴스가 무엇인지 묻는 것이 아니라, 도체 분포의 인덕턴스가 무엇인지 물어야 한다.</u> 아마도 이 인덕턴스를 찾는 가장 쉬운 방법은 자기 에너지를 활용하는 것입니다. 앞서 [$\textrm{II}$.15–3 정상 전류의 에너지](vol2_3.qmd#sec-FLP_2_15_3) 에서 정상 전류 분포의 자기 에너지는
 
 $$
-U=\dfrac{1}{2}\int \bf{J\cdot A}\, d^3\bf{r}.
+U=\dfrac{1}{2}\int \bf{J\cdot A}\, dV.
 $$ {#eq-FLP_2_17_44} 
 
 임을 보였다. 전류 밀도 $\bf{J}$ 의 분포를 알면, 벡터 퍼텐셜 $\bf{A}$ 를 계산하고 그 다음에 식의 적분을 계산하여 에너지를 얻는다. 이 에너지는 자기 유도의 자기 에너지인 $LI^2/2$ 와 같으며 따라서
 
 $$
-L=\dfrac{1}{I^2}\int \bf{J \cdot A} \,d^3\bf{r}
+L=\dfrac{1}{I^2}\int \bf{J \cdot A} \,dV
 $$ {#eq-FLP_2_17_45}
 
 이다. 물론 인덕턴스는 회로의 기하학에만 의존하고 회로 내 전류 $I$ 에 의존하지 않는 수일 것이다.. @eq-FLP_2_17_45 에서 전류는 $\bf{J}$ 를 통해 한 번, 벡터 퍼텐셜 $\bf{A}$ 를 통해 한번 이렇게 두번 나타나며 따라서 전류의 제곱에 비례하게 된다. 이 적분을 $I^2$ 로 나눈 값은 회로의 기하학에 따라 달라지지만 전류 $I$ 에는 의존하지 않게 된다.
@@ -1776,7 +1777,7 @@ $$ {#eq-FLP_2_17_45}
 전류 분포의 에너지에 대한 @eq-FLP_2_17_44 는 경우에 따라 계산에 더 편리할 수 있으며, 보다 일반적으로 유효한 다른 형태로 쓸 수 있다. @eq-FLP_2_17_44 에서 $\bf{A}$ 와 $\bf{J}$ 는 모두 $\bf{B}$ 와 관련될 수 있으므로, 우리는 에너지를 자기장으로 표현하기를 기대할 수 있다(정전기 에너지를 전기장에 대해서 표현할 수 있었던 것을 기억하라). 우선 $\bf{J}=\dfrac{1}{\mu_0} \nabla \times \bf{B}$ 로 바꾸면
 
 $$
-U=\dfrac{1}{2\mu_0}\int \left( \nabla \times \bf{B}\right)\bf{\cdot A} \,d^3\bf{r}
+U=\dfrac{1}{2\mu_0}\int \left( \nabla \times \bf{B}\right)\bf{\cdot A} \,dV
 $$ {#eq-FLP_2_17_46}
 
 이다. 여기서 벡터 항등식
@@ -1788,13 +1789,13 @@ $$
 를 사용하면
 
 $$
-U = \dfrac{1}{2\mu_0} \left[ \int \bf{B \cdot} (\nabla \times \bf{A})\,d^3\bf{r} - \int \nabla \bf{\cdot}(\bf{A}\times \bf{B})\, d^3\bf{r} \right]
+U = \dfrac{1}{2\mu_0} \left[ \int \bf{B \cdot} (\nabla \times \bf{A})\,dV - \int \nabla \bf{\cdot}(\bf{A}\times \bf{B})\, dV \right]
 $$
 
 이다. 이제 우리 시스템(즉, 소스와 장)이 유한하다고 가정하자. 위 식에서 두번째 적분은 $\oint_S (\bf{A\cdot B})\bf{\cdot}d\bf{a}$ 이며 적분되는 3차원 공간을 전 공간에 대해 잡으면 $0$ 이 된다. 이로부터 다음을 얻는다.
 
 $$
-U = \dfrac{1}{2\mu_0} \int_{\text{all space}} \|\bf{B}\|^2\,d^3\bf{r}.
+U = \dfrac{1}{2\mu_0} \int_{\text{all space}} \|\bf{B}\|^2\,dV.
 $$ {#eq-FLP_2_17_48}
 
 이 식을 [$\textrm{II}$.8-5 전기장의 에너지](vol2_1.qmd#sec-FLP_2_8_5) 의 @eq-FLP_2_8_30 와 비교해보면 유사성을 알 수 있다.

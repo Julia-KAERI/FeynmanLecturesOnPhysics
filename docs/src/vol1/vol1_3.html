@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -320,7 +323,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#sec-FLP_1_21_1" id="toc-sec-FLP_1_21_1" class="nav-link" data-scroll-target="#sec-FLP_1_21_1"><span class="math inline">\(\textrm{I}\)</span>.21-1 선형미분방정식</a></li>
   <li><a href="#sec-FLP_1_21_2" id="toc-sec-FLP_1_21_2" class="nav-link" data-scroll-target="#sec-FLP_1_21_2"><span class="math inline">\(\textrm{I}\)</span>.21-2 조화진동자</a></li>
-  <li><a href="#sec-FLP_21_3" id="toc-sec-FLP_21_3" class="nav-link" data-scroll-target="#sec-FLP_21_3"><span class="math inline">\(\textrm{I}\)</span>.21-3 조화운동과 원운동</a></li>
+  <li><a href="#sec-FLP_1_21_3" id="toc-sec-FLP_1_21_3" class="nav-link" data-scroll-target="#sec-FLP_1_21_3"><span class="math inline">\(\textrm{I}\)</span>.21-3 조화운동과 원운동</a></li>
   <li><a href="#textrmi.21-4-초기조건" id="toc-textrmi.21-4-초기조건" class="nav-link" data-scroll-target="#textrmi.21-4-초기조건"><span class="math inline">\(\textrm{I}\)</span>.21-4 초기조건</a></li>
   <li><a href="#sec-FLP_1_21_5" id="toc-sec-FLP_1_21_5" class="nav-link" data-scroll-target="#sec-FLP_1_21_5"><span class="math inline">\(\textrm{I}\)</span>.21-5 강제 진동</a></li>
   </ul></li>
@@ -328,16 +331,16 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#sec-FLP_1_23_1" id="toc-sec-FLP_1_23_1" class="nav-link" data-scroll-target="#sec-FLP_1_23_1"><span class="math inline">\(\textrm{I}\)</span>.23-1. 복소수와 조화 운동</a></li>
   <li><a href="#sec-FLP_1_23_2" id="toc-sec-FLP_1_23_2" class="nav-link" data-scroll-target="#sec-FLP_1_23_2"><span class="math inline">\(\textrm{I}\)</span>.23-2 강제 감쇄 조화진동</a></li>
-  <li><a href="#sec-FLP_2_23_3" id="toc-sec-FLP_2_23_3" class="nav-link" data-scroll-target="#sec-FLP_2_23_3"><span class="math inline">\(\textrm{I}\)</span>.23-3 전기적 공명</a></li>
-  <li><a href="#sec-FLP_2_23_4" id="toc-sec-FLP_2_23_4" class="nav-link" data-scroll-target="#sec-FLP_2_23_4"><span class="math inline">\(\textrm{I}\)</span>.23-4 자연에서의 공명</a></li>
+  <li><a href="#sec-FLP_1_23_3" id="toc-sec-FLP_1_23_3" class="nav-link" data-scroll-target="#sec-FLP_1_23_3"><span class="math inline">\(\textrm{I}\)</span>.23-3 전기적 공명</a></li>
+  <li><a href="#sec-FLP_1_23_4" id="toc-sec-FLP_1_23_4" class="nav-link" data-scroll-target="#sec-FLP_1_23_4"><span class="math inline">\(\textrm{I}\)</span>.23-4 자연에서의 공명</a></li>
   </ul></li>
-  <li><a href="#sec-FLP_2_24" id="toc-sec-FLP_2_24" class="nav-link" data-scroll-target="#sec-FLP_2_24"><span class="math inline">\(\textrm{I}\)</span>.24 진동의 감쇄</a>
+  <li><a href="#sec-FLP_1_24" id="toc-sec-FLP_1_24" class="nav-link" data-scroll-target="#sec-FLP_1_24"><span class="math inline">\(\textrm{I}\)</span>.24 진동의 감쇄</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_1_24_1" id="toc-sec-FLP_1_24_1" class="nav-link" data-scroll-target="#sec-FLP_1_24_1"><span class="math inline">\(\textrm{I}\)</span>.24-1 진동자의 에너지</a></li>
   <li><a href="#sec-FLP_1_24_2" id="toc-sec-FLP_1_24_2" class="nav-link" data-scroll-target="#sec-FLP_1_24_2">24-2 감쇄 진동</a></li>
   <li><a href="#sec-FLP_1_24_3" id="toc-sec-FLP_1_24_3" class="nav-link" data-scroll-target="#sec-FLP_1_24_3">24-3 전기적 감쇄</a></li>
   </ul></li>
-  <li><a href="#sec-FLP_25" id="toc-sec-FLP_25" class="nav-link" data-scroll-target="#sec-FLP_25">25. 선형 시스템</a>
+  <li><a href="#sec-FLP_1_25" id="toc-sec-FLP_1_25" class="nav-link" data-scroll-target="#sec-FLP_1_25">25. 선형 시스템</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_1_25_1" id="toc-sec-FLP_1_25_1" class="nav-link" data-scroll-target="#sec-FLP_1_25_1">25-1 선형 미분 방정식</a></li>
   <li><a href="#sec-FLP_1_25_2" id="toc-sec-FLP_1_25_2" class="nav-link" data-scroll-target="#sec-FLP_1_25_2">25-2해의 중첩</a></li>
@@ -965,8 +968,8 @@ x(t) = A \cos (\omega_0 t + \phi_0),\qquad \text{where }\omega_0 = \sqrt{k/m}.
 <p>여기서 <span class="math inline">\(A\)</span> 를 <strong>진폭 (amplitude)</strong> 이라고 하고 <span class="math inline">\(\phi_0\)</span> 를 <strong>위상차 (phase shift)</strong> 라고 한다.</p>
 <p><br></p>
 </section>
-<section id="sec-FLP_21_3" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_21_3"><span class="math inline">\(\textrm{I}\)</span>.21-3 조화운동과 원운동</h3>
+<section id="sec-FLP_1_21_3" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_21_3"><span class="math inline">\(\textrm{I}\)</span>.21-3 조화운동과 원운동</h3>
 <p><br></p>
 </section>
 <section id="textrmi.21-4-초기조건" class="level3">
@@ -1004,22 +1007,22 @@ E =  T+U = \dfrac{1}{2}m\omega_0^2 A^2 .
 <section id="sec-FLP_1_21_5" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_21_5"><span class="math inline">\(\textrm{I}\)</span>.21-5 강제 진동</h3>
 <p>조화진동자에 외부에서 힘이 가해질 때 <strong>강제조화진동자(forced harmonic oscillator)</strong> 라고 한다. 외부의 힘이 <span class="math inline">\(F(t)\)</span> 라면 운동방정식은 아래와 같다.</p>
-<p><span id="eq-FLP_2_21_8"><span class="math display">\[
+<p><span id="eq-FLP_1_21_8"><span class="math display">\[
 m\ddot{x} = -kx + F(t).
 \tag{3.40}\]</span></span></p>
 <p>가장 간단한 경우는 다음과 같은 경우이다.</p>
-<p><span id="eq-FLP_2_21_9"><span class="math display">\[
+<p><span id="eq-FLP_1ㄴ_21_9"><span class="math display">\[
 F(t) = F_0 \cos \omega t.
 \tag{3.41}\]</span></span></p>
-<div class="page-columns page-full"><p>이제 이 힘에 의한 미분방정식 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>3.40</span></a> 를 풀어보자. 한 특이해(particular solution)<span class="math inline">\(^1\)</span> <span class="math inline">\(x_p\)</span> 는 다음과 같이 주어진다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span>파인만은 special solution 이라고 했다.</span></div></div>
-<p><span id="eq-FLP_2_21_10"><span class="math display">\[
+<div class="page-columns page-full"><p>이제 이 힘에 의한 미분방정식 <a href="#eq-FLP_1_21_8" class="quarto-xref">식&nbsp;<span>3.40</span></a> 를 풀어보자. 한 특이해(particular solution)<span class="math inline">\(^1\)</span> <span class="math inline">\(x_p\)</span> 는 다음과 같이 주어진다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^1\)</span>파인만은 special solution 이라고 했다.</span></div></div>
+<p><span id="eq-FLP_1_21_10"><span class="math display">\[
 x_p(t) = C \cos \omega t.
 \tag{3.42}\]</span></span></p>
-<p>이 식이 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>3.40</span></a> 를 만족한다면</p>
-<p><span id="eq-FLP_2_21_12"><span class="math display">\[
+<p>이 식이 <a href="#eq-FLP_1_21_8" class="quarto-xref">식&nbsp;<span>3.40</span></a> 를 만족한다면</p>
+<p><span id="eq-FLP_1_21_12"><span class="math display">\[
 C= \dfrac{F_0}{m (\omega_0^2 - \omega^2)}
 \tag{3.43}\]</span></span></p>
-<p>이다. 더 일반적인 해는 이후에 구해보기로 하고 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>3.43</span></a> 에 의한 해만 새각해보자. <span class="math inline">\(\omega \ll \omega_0\)</span> 라면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 거의 같은 방향이며 <span class="math inline">\(\omega &gt;\omega_0\)</span> 이면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 반대 방향이고 <span class="math inline">\(\omega \gg \omega_0\)</span> 라면 <a href="#eq-FLP_2_21_10" class="quarto-xref">식&nbsp;<span>3.42</span></a> 는 매우 작은 진폭을 갖게 된다. <span class="math inline">\(\omega \approx \omega_0\)</span> 이면 <a href="#eq-FLP_2_21_10" class="quarto-xref">식&nbsp;<span>3.42</span></a> 는 매우 큰 진폭을 갖게 되며 <span class="math inline">\(\omega=\omega_0\)</span> 이면 무한대의 진폭을 갖게 된다. 물론 이것은 불가능하다.</p>
+<p>이다. 더 일반적인 해는 이후에 구해보기로 하고 <a href="#eq-FLP_1_21_12" class="quarto-xref">식&nbsp;<span>3.43</span></a> 에 의한 해만 새각해보자. <span class="math inline">\(\omega \ll \omega_0\)</span> 라면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 거의 같은 방향이며 <span class="math inline">\(\omega &gt;\omega_0\)</span> 이면 <span class="math inline">\(x(t)\)</span> 와 <span class="math inline">\(F(t)\)</span> 가 반대 방향이고 <span class="math inline">\(\omega \gg \omega_0\)</span> 라면 <a href="#eq-FLP_1_21_10" class="quarto-xref">식&nbsp;<span>3.42</span></a> 는 매우 작은 진폭을 갖게 된다. <span class="math inline">\(\omega \approx \omega_0\)</span> 이면 <a href="#eq-FLP_1_21_10" class="quarto-xref">식&nbsp;<span>3.42</span></a> 는 매우 큰 진폭을 갖게 되며 <span class="math inline">\(\omega=\omega_0\)</span> 이면 무한대의 진폭을 갖게 된다. 물론 이것은 불가능하다.</p>
 <p><br></p>
 </section>
 </section>
@@ -1034,7 +1037,7 @@ f(t) = f_0e^{-i\phi_0}e^{i\omega t} = \hat{f} e^{i\omega t},\quad\text{ where } 
 <p><span class="math display">\[
 a_n \dfrac{d^n x}{dt^n} + a_{n-1}\dfrac{d^{n-1} x}{dt^{n-1}} + \cdots + a_1 \dfrac{dx}{dt} + a_0 x = f(t) = \hat{f} e^{i\omega t}.
 \]</span></p>
-<p>위의 미분방정식을 만족하는 복소함수 <span class="math inline">\(x(t)\)</span> 를 구한다면 <span class="math inline">\(\text{Re}(x(t))\)</span> 는 <a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>3.37</span></a> 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 <a href="#eq-FLP_2_21_8" class="quarto-xref">식&nbsp;<span>3.40</span></a> 에 적용하자. 외부의 힘 <span class="math inline">\(F(t) = F_0 \cos \omega t\)</span> 를 <span class="math inline">\(\hat{F}(t) = \hat{F} e^{i\omega t}\)</span> 로 표현하면</p>
+<p>위의 미분방정식을 만족하는 복소함수 <span class="math inline">\(x(t)\)</span> 를 구한다면 <span class="math inline">\(\text{Re}(x(t))\)</span> 는 <a href="#eq-FLP_1_21_1" class="quarto-xref">식&nbsp;<span>3.37</span></a> 의 해이다. 그리고 많은 경우 이렇게 미분방정식을 복소함수로 구한 후 실수부 혹은 허수부를 취하는 방법이 편리하다. 이제 이 방법을 강제진동 <a href="#eq-FLP_1_21_8" class="quarto-xref">식&nbsp;<span>3.40</span></a> 에 적용하자. 외부의 힘 <span class="math inline">\(F(t) = F_0 \cos \omega t\)</span> 를 <span class="math inline">\(\hat{F}(t) = \hat{F} e^{i\omega t}\)</span> 로 표현하면</p>
 <p><span id="eq-FLP_1_23_2"><span class="math display">\[
 m \dfrac{d^2 x}{dt^2} + k x = \hat{F} e^{i\omega t}
 \tag{3.44}\]</span></span></p>
@@ -1046,7 +1049,7 @@ m \dfrac{d^2 x}{dt^2} + k x = \hat{F} e^{i\omega t}
 <p><span id="eq-FLP_1_23_5"><span class="math display">\[
 \hat{x} = \dfrac{\hat{F}}{\omega_0^2-\omega^2}
 \tag{3.46}\]</span></span></p>
-<p>이며 이것은 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>3.43</span></a> 의 결과를 포함한다. 또한 우리는 <span class="math inline">\(\hat{F}=F_0e^{-i\phi_0}\)</span> 일 때</p>
+<p>이며 이것은 <a href="#eq-FLP_1_21_12" class="quarto-xref">식&nbsp;<span>3.43</span></a> 의 결과를 포함한다. 또한 우리는 <span class="math inline">\(\hat{F}=F_0e^{-i\phi_0}\)</span> 일 때</p>
 <p><span class="math display">\[
 \hat{x} = \dfrac{F_0e^{-i\phi_0}}{\omega_0^2-\omega^2}
 \]</span></p>
@@ -1100,15 +1103,15 @@ x(t) = \rho F_0 \cos (\omega_0 t + \phi_0 + \Delta)
 </figcaption>
 </figure>
 </div>
-<div class="page-columns page-full"><p><span class="math inline">\(\omega \approx \omega_0\)</span> 일 경우 <a href="#eq-FLP_2_21_12" class="quarto-xref">식&nbsp;<span>3.43</span></a> 와 같이 무한히 폭주하지 않지만 <span class="math inline">\(\rho^2\)</span> 값은 유한한 범위에서 매우 커지며 <span class="math inline">\(\theta \approx \pi/2\)</span> 이다. 그리고 <span class="math inline">\(\rho^2(\omega)\)</span> 에서의 반치전폭(Full with at half maximum, FWHM) 은 <span class="math inline">\(\gamma\)</span> 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 아래와 같이 정의된 <span class="math inline">\(Q\)</span> 인자<span class="math inline">\(^2\)</span>이다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> <span class="math inline">\(Q\)</span> 인자는 두가지 정의가 존재한다.<a href="https://en.wikipedia.org/wiki/Q_factor">Wikipedia Q factor</a> 를 참고하라. 파인만은 <a href="#sec-FLP_second_Q_factor">뒤에</a> 별도의 설명 없이 다른 <span class="math inline">\(Q\)</span> 인자를 사용한다.</span></div></div>
+<div class="page-columns page-full"><p><span class="math inline">\(\omega \approx \omega_0\)</span> 일 경우 <a href="#eq-FLP_1_21_12" class="quarto-xref">식&nbsp;<span>3.43</span></a> 와 같이 무한히 폭주하지 않지만 <span class="math inline">\(\rho^2\)</span> 값은 유한한 범위에서 매우 커지며 <span class="math inline">\(\theta \approx \pi/2\)</span> 이다. 그리고 <span class="math inline">\(\rho^2(\omega)\)</span> 에서의 반치전폭(Full with at half maximum, FWHM) 은 <span class="math inline">\(\gamma\)</span> 임을 보일 수 있다. 이 폭에 대한 또다른 척도는 아래와 같이 정의된 <span class="math inline">\(Q\)</span> 인자<span class="math inline">\(^2\)</span>이다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> <span class="math inline">\(Q\)</span> 인자는 두가지 정의가 존재한다.<a href="https://en.wikipedia.org/wiki/Q_factor">Wikipedia Q factor</a> 를 참고하라. 파인만은 <a href="#sec-FLP_second_Q_factor">뒤에</a> 별도의 설명 없이 다른 <span class="math inline">\(Q\)</span> 인자를 사용한다.</span></div></div>
 <p><span id="eq-FLP_defintion_of_first_Q_factor"><span class="math display">\[
 Q:=\dfrac{\omega_0}{\gamma}.
 \tag{3.54}\]</span></span></p>
 <p>위의 <a href="#fig-FLP_1_23_2" class="quarto-xref">그림&nbsp;<span>3.8</span></a> 에서는 <span class="math inline">\(Q=6.67\)</span> 이다.</p>
 <p><br></p>
 </section>
-<section id="sec-FLP_2_23_3" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="sec-FLP_2_23_3"><span class="math inline">\(\textrm{I}\)</span>.23-3 전기적 공명</h3>
+<section id="sec-FLP_1_23_3" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_23_3"><span class="math inline">\(\textrm{I}\)</span>.23-3 전기적 공명</h3>
 <div id="fig-FLP_1_23_4" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_23_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1160,13 +1163,13 @@ L \dfrac{d^2q}{dt} + R \dfrac{dq}{dt} + \dfrac{1}{C}q = V(t).
 \tag{3.61}\]</span></span></p>
 <p><br></p>
 </section>
-<section id="sec-FLP_2_23_4" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_2_23_4"><span class="math inline">\(\textrm{I}\)</span>.23-4 자연에서의 공명</h3>
+<section id="sec-FLP_1_23_4" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_23_4"><span class="math inline">\(\textrm{I}\)</span>.23-4 자연에서의 공명</h3>
 <p><br></p>
 </section>
 </section>
-<section id="sec-FLP_2_24" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="sec-FLP_2_24"><span class="math inline">\(\textrm{I}\)</span>.24 진동의 감쇄</h2>
+<section id="sec-FLP_1_24" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="sec-FLP_1_24"><span class="math inline">\(\textrm{I}\)</span>.24 진동의 감쇄</h2>
 <section id="sec-FLP_1_24_1" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_24_1"><span class="math inline">\(\textrm{I}\)</span>.24-1 진동자의 에너지</h3>
 <section id="강제-감쇄-진동자의-일률" class="level4">
@@ -1283,8 +1286,8 @@ x(t) = (A_1+A_2t)e^{-\gamma t/2}
 <p><br></p>
 </section>
 </section>
-<section id="sec-FLP_25" class="level2">
-<h2 class="anchored" data-anchor-id="sec-FLP_25">25. 선형 시스템</h2>
+<section id="sec-FLP_1_25" class="level2">
+<h2 class="anchored" data-anchor-id="sec-FLP_1_25">25. 선형 시스템</h2>
 <section id="sec-FLP_1_25_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_25_1">25-1 선형 미분 방정식</h3>
 <p>여기에서는 진동 시스템의 일반적인 측면에 대해 다룬다. 지금까지는 아래와 같은 미분방정식을 다루었다.</p>

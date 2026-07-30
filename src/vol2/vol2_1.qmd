@@ -298,7 +298,7 @@ $$ {#eq-FLP_2_4_9}
 전하 밀도 분포 $\rho(\bf{r}')$ 에 의한 전기장 역시 @eq-FLP_2_4_5 에 의해 아래와 같다.
 
 $$
-\bf{E}(\bf{r}) = \dfrac{1}{4\pi \epsilon_0} \int_\text{all space} \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3} \,d^3\bf{r}'
+\bf{E}(\bf{r}) = \dfrac{1}{4\pi \epsilon_0} \int_\text{all space} \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3} \,dV'
 $$ {#eq-FLP_2_4_16}
 
 </br>
@@ -351,7 +351,7 @@ $$
 \Phi (\bf{r}) = \sum_{i}\dfrac{q_i}{4\pi \epsilon_0 \|\bf{r}-\bf{r}_i\|},
 $$ {#eq-FLP_2_4_24}
 $$
-\Phi (\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int\dfrac{\rho(\bf{r}')}{ \|\bf{r}-\bf{r}'\|}\,d^3\bf{r}'.
+\Phi (\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int\dfrac{\rho(\bf{r}')}{ \|\bf{r}-\bf{r}'\|}\,dV'.
 $$ {#eq-FLP_2_4_25}
 
 
@@ -381,7 +381,7 @@ $$
 전하가 원점을 중심으로 구형 대칭으로 분포되었을 때, 즉 $\rho(\bf{r})=\rho(r)$ 라고 하자. 또한 $\rho(r>a)= 0$ 라면 $r>a$ 인 위치에서의 전기장은 다음과 같다.
 
 $$
-\bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\dfrac{Q\hat{\bf{r}}}{r^2},\qquad \text{where }Q=\int_{\|\bf{r}'\|<a} \rho(\bf{r}')d^3\bf{r}'.
+\bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\dfrac{Q\hat{\bf{r}}}{r^2},\qquad \text{where }Q=\int_{\|\bf{r}'\|<a} \rho(\bf{r}')dV'.
 $$ {#eq-FLP_2_4_39}
 
 </br>
@@ -582,13 +582,13 @@ $$ {#eq-FLP_2_5_3}
 전하 분포 $\rho(\bf{r})$ 가 원점을 중심으로 구 대칭을 이룬다면, 즉 $\rho(\bf{r})=\rho(r)$ 이라고 하자. 대칭을 생각하면 당연히 전기장은 $\hat{\bf{r}}$ 방향이며 $\bf{E}(\bf{r}) = E_r(\bf{r})\hat{\bf{r}}$ 로 놓을 수 있고 $E_r(\bf{r})$ 만 고려하면 된다. 반경 $r$ 인 구면을 $S_r$, 그 내부의 부피를 $V_r$ 이라고 하고 그 $S_r$ 의 내부에 있는 전하량을 $Q_r$ 이라고 하면 가우스 법칙에 의해
 
 $$
-\int_{V_r} \nabla \cdot \bf{E}(\bf{r'}) d^3\bf{r}' = \oint_{S_r}E_r(r)dS= 4\pi r^2 E_r(r)
+\int_{V_r} \nabla \cdot \bf{E}(\bf{r'}) dV' = \oint_{S_r}E_r(r)dS= 4\pi r^2 E_r(r)
 $$
 
 이며
 
 $$
-\int_{V_r} \dfrac{\rho(\bf{r}')}{\epsilon_0}\, d^3\bf{r}' = \dfrac{Q_r}{\epsilon_0}
+\int_{V_r} \dfrac{\rho(\bf{r}')}{\epsilon_0}\, dV' = \dfrac{Q_r}{\epsilon_0}
 $$
 
 이므로
@@ -746,7 +746,7 @@ $$ {#eq-FLP_2_6_6}
 이 미분방정식을 **푸아송 방정식 (Poisson equation)** 이라고 한다. 우리는 앞서 전하분포 $\rho$ 를 알 경우 이 전하분포에 의한 정전 포텐셜을 구할 수 있다는 것을 보였다.
 
 $$
-\Phi (\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho (\bf{r}')}{\|\bf{r}-\bf{r}'\|}d^3\bf{r}' .
+\Phi (\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho (\bf{r}')}{\|\bf{r}-\bf{r}'\|}dV' .
 $$ {#eq-FLP_2_6_7}
 
 이제 몇몇 상황에서의 정전 포텐셜을 구해보자.
@@ -1509,35 +1509,35 @@ $$
 $\sum_i \sum_{j\ne i}[\cdots]$ 는 같은 쌍을 두번 세므로 이를 고려하여 앞의 $1/2$ 항이 필요하다. 그렇다면 전하 밀도에 대한 정전 포텐셜은 어떻게 주어질까? @eq-FLP_2_8_3 은 다음과 같이 변화할 것이다.
 
 $$
-U = \dfrac{1}{2}\int_V\int_{V} \dfrac{\rho(\bf{r}_1)\rho(\bf{r}_2)}{4\pi\epsilon_0 \|\bf{r}_1-\bf{r}_2\|} \,d^3\bf{r}_1d^3\bf{r}_2
+U = \dfrac{1}{2}\int_V\int_{V} \dfrac{\rho(\bf{r}_1)\rho(\bf{r}_2)}{4\pi\epsilon_0 \|\bf{r}_1-\bf{r}_2\|} \,dV_1dV_2
 $$ {#eq-FLP_2_8_27}
 
 이 때 $V$ 는 전체 공간이다. 여기서
 
 $$
-\Phi(\bf{r}_1) = \int_V \dfrac{\rho(\bf{r}_2)}{4\pi\epsilon_0 \|\bf{r}_1-\bf{r}_2\|}d^3\bf{r}_2 
+\Phi(\bf{r}_1) = \int_V \dfrac{\rho(\bf{r}_2)}{4\pi\epsilon_0 \|\bf{r}_1-\bf{r}_2\|}dV_2 
 $$
 
 이므로
 
 $$
-U =  \dfrac{1}{2}\int_V \rho(\bf{r})\Phi(\bf{r})\,d^3\bf{r}
+U =  \dfrac{1}{2}\int_V \rho(\bf{r})\Phi(\bf{r})\,dV
 $$ {#eq-FLP_2_8_28}
 
 이 성립한다. $\rho= \epsilon_0 \nabla \bf{\cdot E}$ 와 발산법칙을 이용하여 다음을 보일 수 있다.
 
 $$
 \begin{aligned}
-U &= \dfrac{1}{2}\int_V \rho(\bf{r})\Phi(\bf{r})\,d^3\bf{r} = \dfrac{1}{2}\int_V \epsilon_0 \left(\nabla \bf{\cdot E}\right)\Phi(\bf{r})\,d^3\bf{r} \\[0.3em]
-&= \dfrac{\epsilon_0}{2} \int_V\nabla\bf{\cdot} \left[\Phi\bf{E}\right]\,d^3\bf{r} - \dfrac{\epsilon_0}{2}\int_V (\nabla \Phi)\bf{\cdot}\bf{E}\,d^3\bf{r} \\[0.3em]
-&=\dfrac{\epsilon_0}{2}\int_{\partial V} \Phi \bf{E\cdot}\,d\bf{a} + \dfrac{\epsilon_0}{2}\int_V \|\bf{E}\|^2\,d^3\bf{r}.
+U &= \dfrac{1}{2}\int_V \rho(\bf{r})\Phi(\bf{r})\,dV = \dfrac{1}{2}\int_V \epsilon_0 \left(\nabla \bf{\cdot E}\right)\Phi(\bf{r})\,dV \\[0.3em]
+&= \dfrac{\epsilon_0}{2} \int_V\nabla\bf{\cdot} \left[\Phi\bf{E}\right]\,dV - \dfrac{\epsilon_0}{2}\int_V (\nabla \Phi)\bf{\cdot}\bf{E}\,dV \\[0.3em]
+&=\dfrac{\epsilon_0}{2}\int_{\partial V} \Phi \bf{E\cdot}\,d\bf{a} + \dfrac{\epsilon_0}{2}\int_V \|\bf{E}\|^2\,dV.
 \end{aligned}
 $$
 
 여기서 첫번째 적분항은 $V$ 를 원점을 중심으로 $R\to \infty$ 구를 잡으면 $0$ 이 되므로 포텐셜 에너지는 다음과 같다.
 
 $$
-U = \dfrac{\epsilon_0}{2}\int_V \|\bf{E}(\bf{r})\|^2 \,d^3\bf{r}
+U = \dfrac{\epsilon_0}{2}\int_V \|\bf{E}(\bf{r})\|^2 \,dV
 $$ {#eq-FLP_2_8_30}
 
 우리는 이로부터 에너지 밀도 $u$ 를 정의 할 수 있다.

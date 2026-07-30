@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -391,7 +394,7 @@ I = \int_S \boldsymbol{J\cdot}\hat{\boldsymbol{n}}\,da
 \tag{10.4}\]</span></span></p>
 <p>이다.</p>
 <p><span id="eq-FLP_2_13_7"><span class="math display">\[
-Q_\text{inside} = \int_V \rho\, d^3\boldsymbol{r}
+Q_\text{inside} = \int_V \rho\, dV
 \tag{10.5}\]</span></span></p>
 <p>이며, <a href="#eq-FLP_2_13_6" class="quarto-xref">식&nbsp;<span>10.4</span></a> 와 발산법칙을 통해 아래의 전하량 보존식 법칙을 얻는다.</p>
 <p><span id="eq-FLP_2_13_8"><span class="math display">\[
@@ -767,15 +770,15 @@ J'^3 &amp;= J'_z = J^3.
 <h3 class="anchored" data-anchor-id="sec-FLP_2_14_2"><span class="math inline">\(\textrm{II}\)</span>.14-2 알고 있는 전류에 대한 벡터 포텐셜</h3>
 <p><a href="https://julia-kaeri.github.io/MathematicalPhysics/src/vector_calculus/vectorcalculus.html#sec-ED_MT_Helmholtz_theorem">헬름홀츠 정리</a> 와 <span class="math inline">\(\nabla \times \boldsymbol{B}=\mu_0 \boldsymbol{J}\)</span> 로부터 아래의 <span class="math inline">\(\boldsymbol{A}\)</span> 가 <span class="math inline">\(\nabla \times \boldsymbol{A}=\boldsymbol{B}\)</span> 를 만족시킴을 안다.</p>
 <p><span id="eq-FLP_2_14_19"><span class="math display">\[
-\boldsymbol{A}(\boldsymbol{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\boldsymbol{J}(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}'.
+\boldsymbol{A}(\boldsymbol{r}) = \dfrac{\mu_0}{4\pi} \int \dfrac{\boldsymbol{J}(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}dV'.
 \tag{10.37}\]</span></span></p>
 <p>여기서 전하 분포 <span class="math inline">\(\rho(\boldsymbol{r}')\)</span> 에 대한 정전 포텐셜</p>
 <p><span class="math display">\[
-\Phi (\boldsymbol{R}) = \dfrac{1}{4\pi\epsilon_0} \int \dfrac{\rho(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}\|'}d^3\boldsymbol{r}
+\Phi (\boldsymbol{R}) = \dfrac{1}{4\pi\epsilon_0} \int \dfrac{\rho(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}\|'}dV'
 \]</span></p>
 <p>과 비교해보자. <span class="math inline">\(\boldsymbol{J}=(J_x,\,J_y,\,J_z)\)</span> 일 때</p>
 <p><span class="math display">\[
-A_i = \dfrac{\mu_0}{4\pi} \int \dfrac{J_i(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}d^3\boldsymbol{r}', \qquad i=x,\,y,\,z
+A_i = \dfrac{\mu_0}{4\pi} \int \dfrac{J_i(\boldsymbol{r}')}{\|\boldsymbol{r}-\boldsymbol{r}'\|}dV', \qquad i=x,\,y,\,z
 \]</span></p>
 <p>이므로 <span class="math inline">\(\rho\)</span> 와 <span class="math inline">\(J_i\)</span> 가 유사하다면 우리가 이미 알고 있는 정전 포텐셜을 통해 벡터포텐셜 문제를 풀 수 있다.</p>
 <p><br></p>
@@ -907,7 +910,7 @@ A_i = \dfrac{\mu_0}{4\pi} \int \dfrac{J_i(\boldsymbol{r}')}{\|\boldsymbol{r}-\bo
 <h3 class="anchored" data-anchor-id="sec-FLP_2_14_7"><span class="math inline">\(\textrm{II}\)</span>.14-7 비오-사바르의 법칙</h3>
 <p>전류가 흐르는 닫힌 회로에 의한 자기장을 구해보자. <span class="math display">\[
 \begin{aligned}
-\boldsymbol{B}(\boldsymbol{r}) &amp;= \nabla \times \boldsymbol{A} = \dfrac{\mu_0}{4\pi}  \left[\nabla \times \int \dfrac{\boldsymbol{J}(\boldsymbol{r}')\, d^3\boldsymbol{r}'}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\right] \\[0.3em]
+\boldsymbol{B}(\boldsymbol{r}) &amp;= \nabla \times \boldsymbol{A} = \dfrac{\mu_0}{4\pi}  \left[\nabla \times \int \dfrac{\boldsymbol{J}(\boldsymbol{r}')\, dV'}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\right] \\[0.3em]
 &amp;=\dfrac{\mu_0 I}{4\pi}  \left[\nabla \times \oint \dfrac{d\boldsymbol{l}'}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\right] \\[0.3em]
 &amp;= \dfrac{\mu_0I}{4\pi} \sum_{i,j,k} \varepsilon_{ijk}\hat{\boldsymbol{e}}_i \left[\oint \nabla \times  \dfrac{d\boldsymbol{l}'}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\right] \\[0.3em]
 &amp;= \dfrac{\mu_0I}{4\pi} \sum_{i,j,k} \varepsilon_{ijk}\hat{\boldsymbol{e}}_i \left[\oint \dfrac{\partial}{\partial x_j} \left(\dfrac{dl'_k}{\|\boldsymbol{r}-\boldsymbol{r}'\|}\right)\right] \\[0.3em]
@@ -1093,11 +1096,11 @@ Id\boldsymbol{l} = \boldsymbol{J}dV
 \]</span></p>
 <p>로 생각 할 수 있다. 그렇다면 적분을 <span class="math inline">\(I\boldsymbol{A\cdot}d\boldsymbol{l} \to (\boldsymbol{J \cdot A})\,dV\)</span> 로 바꿀 때, 예를 들어 1번 고리의 자기장 + 2번 고리의 전류 조합과 2번 고리의 자기장 + 1번 고리의 전류에 의한 에너지는 동일한데 이것이 두번 계산되게 된다. 따라서 이 중복을 제거한다면 전체 에너지는 다음과 같다.</p>
 <p><span id="eq-FLP_2_15_20"><span class="math display">\[
-U = \dfrac{1}{2}\dfrac{1}{2}\int_V \boldsymbol{J\cdot A}\,d^3\boldsymbol{r}
+U = \dfrac{1}{2}\dfrac{1}{2}\int_V \boldsymbol{J\cdot A}\,dV
 \tag{10.57}\]</span></span></p>
 <p>이 식은 전기에너지에 대해 우리가 찾은 결과와 일치한다.</p>
 <p><span id="eq-FLP_2_15_21"><span class="math display">\[
-U=\dfrac{1}{2}\int_V \rho \Phi d^3\boldsymbol{r}.
+U=\dfrac{1}{2}\int_V \rho \Phi dV.
 \tag{10.58}\]</span></span></p>
 <p>따라서 우리는 원한다면 <span class="math inline">\(\boldsymbol{A}\)</span> 를 정자기학에서의 일종으 포텐셜로 생각할 수 있다고 생각하겠지만 안타깝게도 이 아이디어는 그다지 유용하지 않다. 왜냐하면 이 식은 정적인 장에만 해당되기 때이다. 실제로, <a href="#eq-FLP_2_15_20" class="quarto-xref">식&nbsp;<span>10.57</span></a> 과 <a href="#eq-FLP_2_15_21" class="quarto-xref">식&nbsp;<span>10.58</span></a> 둘 다 시간에 따라 변할 때에는 맞지 않다.</p>
 <p><br></p>
@@ -1273,28 +1276,29 @@ $\bf{F}=\dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2\bf{r}}{r^3}$
 \hline 
 $\nabla \times\bf{E}=0$ & $\nabla \times \bf{E}= - \dfrac{\partial \bf{B}}{\partial t}$ \\
 $\bf{E}=-\nabla \Phi$ & $\bf{E}=-\nabla \Phi - \dfrac{\partial \bf{A}}{\partial t}$ \\
-$\displaystyle \bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,d^3\bf{r}'$ & {} \\
+$\displaystyle \bf{E}(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')(\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,dV'$ & {} \\
 For conductors, $\bf{E}=0$, $\Phi=\text{constant}$. & In conductor, $\bf{E}$ makes currents. \\
 $Q=CV$ & {} \\
 \hline
 {} & $\nabla \bf{\cdot B} = 0$\\
 {} & $\bf{B} = \nabla \times \bf{A}$ \\
 $\nabla \times \bf{B}=\mu_0 \bf{J}$ & $\nabla \times \bf{B}=\mu_0 \bf{J} + \dfrac{1}{c^2} \dfrac{\partial \bf{E}}{\partial t}$ \\
-$\displaystyle \bf{B}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')\times (\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,d^3\bf{r}'$ & {} \\
+$\displaystyle \bf{B}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')\times (\bf{r}-\bf{r}')}{\|\bf{r}-\bf{r}'\|^3}\,dV'$ & {} \\
 \hline
 $\renewcommand{\arraystretch}{2} \begin{array}{l}\quad \nabla^2 \Phi = -\dfrac{\rho}{\epsilon_0} \\ \left[ \begin{array}{l} \nabla^2\bf{A} = - \mu_0 \bf{J} \\ \nabla \bf{\cdot A} = 0 \end{array}\right.\end{array}$ & $\left[\begin{array}{l} \nabla^2 \Phi - \dfrac{1}{c^2}\dfrac{\partial^2 \Phi}{\partial t^2} = - \dfrac{\rho}{\epsilon_0} \\ \nabla^2\bf{A} - \dfrac{1}{c^2} \dfrac{\partial^2 \bf{A}}{\partial t^2} = - \mu_0 \bf{J} \\ \nabla\bf{\cdot A} + \dfrac{1}{c^2} \dfrac{\partial \Phi}{\partial t} = 0\end{array}\right.$ \\
 \hline
-$\displaystyle \renewcommand{\arraystretch}{2} \begin{array}{l} \displaystyle \Phi(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
- \displaystyle \bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}'
-\end{array}$ &  
-$\renewcommand{\arraystretch}{2} \left[  \begin{array}{l} \displaystyle \Phi(\bf{r},\,t) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}',\,t')}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
- \displaystyle \bf{A}(\bf{r},\,t) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}',\,t)}{\|\bf{r}-\bf{r}'\|} \,d^3\bf{r}' \\
+$\displaystyle \renewcommand{\arraystretch}{2} \begin{array}{l} \displaystyle \Phi(\bf{r}) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,dV' \\
+ \displaystyle \bf{A}(\bf{r}) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}')}{\|\bf{r}-\bf{r}'\|} \,dV'
+\end{array}$ &  dV'
+$\renewcommand{\arraystretch}{2} \left[  \begin{array}{l} \displaystyle \Phi(\bf{r},\,t) = \dfrac{1}{4\pi\epsilon_0}\int_V \dfrac{\rho(\bf{r}',\,t')}{\|\bf{r}-\bf{r}'\|} \,dV' \\
+ \displaystyle \bf{A}(\bf{r},\,t) = \dfrac{\mu_0}{4\pi}\int_V \dfrac{\bf{J}(\bf{r}',\,t)}{\|\bf{r}-\bf{r}'\|} \,dV' \\
 \displaystyle t' = t=\dfrac{r_{12}}{c}
 \end{array} \right.$ \\
 \hline
-$\displaystyle U = \dfrac{1}{2} \int_V \rho \Phi \,d^3\bf{r}' + \dfrac{1}{2} \int_V \bf{J\cdot A} \,d^3\bf{r}'$ & $\displaystyle U =\int \left(\dfrac{\epsilon_0 E^2}{2} + \dfrac{B^2}{2\mu_0}\right)\,d^3\bf{r}'$\\
+$\displaystyle U = \dfrac{1}{2} \int_V \rho \Phi \,dV' + \dfrac{1}{2} \int_V \bf{J\cdot A} \,dV'$ & $\displaystyle U =\int \left(\dfrac{\epsilon_0 E^2}{2} + \dfrac{B^2}{2\mu_0}\right)\,dV'$\\
 \hline
 \end{tabular}
+
 -->
 <div id="tbl-FLP_2_1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1387,7 +1391,7 @@ $\displaystyle U = \dfrac{1}{2} \int_V \rho \Phi \,d^3\bf{r}' + \dfrac{1}{2} \in
 <div id="fig-FLP_2_16_5" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_2_16_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/fig_2_16/fig_2_16_5.png" class="img-fluid figure-img" width="400">
+<img src="figures/fig_2_16/fig_2_16_5.png" class="img-fluid figure-img" width="300">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_16_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 그림&nbsp;10.21: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span> Fig. 16-5. 두 개의 코일이 철판 다발에 감겨 있어, 발전기가 직접 연결되지 않은 전구를 켤 수 있다.
@@ -1842,16 +1846,16 @@ M = k\sqrt{L_1 L_2}.
 <h4 class="anchored" data-anchor-id="단일-코일의-자기-인덕턴스"><strong>단일 코일의 자기 인덕턴스</strong></h4>
 <p>이제 단일 코일의 자체 인덕턴스를 계산하는 다른 방법을 찾아보자. 와이어의 크기가 중요한 매개변수이기 때문에 전선 내부의 전류 분포를 고려해야 한다. <u>따라서 우리는 “회로”의 인덕턴스가 무엇인지 묻는 것이 아니라, 도체 분포의 인덕턴스가 무엇인지 물어야 한다.</u> 아마도 이 인덕턴스를 찾는 가장 쉬운 방법은 자기 에너지를 활용하는 것입니다. 앞서 <a href="../../src/vol2/vol2_3.html#sec-FLP_2_15_3"><span class="math inline">\(\textrm{II}\)</span>.15–3 정상 전류의 에너지</a> 에서 정상 전류 분포의 자기 에너지는</p>
 <p><span id="eq-FLP_2_17_44"><span class="math display">\[
-U=\dfrac{1}{2}\int \boldsymbol{J\cdot A}\, d^3\boldsymbol{r}.
+U=\dfrac{1}{2}\int \boldsymbol{J\cdot A}\, dV.
 \tag{10.120}\]</span></span></p>
 <p>임을 보였다. 전류 밀도 <span class="math inline">\(\boldsymbol{J}\)</span> 의 분포를 알면, 벡터 퍼텐셜 <span class="math inline">\(\boldsymbol{A}\)</span> 를 계산하고 그 다음에 식의 적분을 계산하여 에너지를 얻는다. 이 에너지는 자기 유도의 자기 에너지인 <span class="math inline">\(LI^2/2\)</span> 와 같으며 따라서</p>
 <p><span id="eq-FLP_2_17_45"><span class="math display">\[
-L=\dfrac{1}{I^2}\int \boldsymbol{J \cdot A} \,d^3\boldsymbol{r}
+L=\dfrac{1}{I^2}\int \boldsymbol{J \cdot A} \,dV
 \tag{10.121}\]</span></span></p>
 <p>이다. 물론 인덕턴스는 회로의 기하학에만 의존하고 회로 내 전류 <span class="math inline">\(I\)</span> 에 의존하지 않는 수일 것이다.. <a href="#eq-FLP_2_17_45" class="quarto-xref">식&nbsp;<span>10.121</span></a> 에서 전류는 <span class="math inline">\(\boldsymbol{J}\)</span> 를 통해 한 번, 벡터 퍼텐셜 <span class="math inline">\(\boldsymbol{A}\)</span> 를 통해 한번 이렇게 두번 나타나며 따라서 전류의 제곱에 비례하게 된다. 이 적분을 <span class="math inline">\(I^2\)</span> 로 나눈 값은 회로의 기하학에 따라 달라지지만 전류 <span class="math inline">\(I\)</span> 에는 의존하지 않게 된다.</p>
 <p>전류 분포의 에너지에 대한 <a href="#eq-FLP_2_17_44" class="quarto-xref">식&nbsp;<span>10.120</span></a> 는 경우에 따라 계산에 더 편리할 수 있으며, 보다 일반적으로 유효한 다른 형태로 쓸 수 있다. <a href="#eq-FLP_2_17_44" class="quarto-xref">식&nbsp;<span>10.120</span></a> 에서 <span class="math inline">\(\boldsymbol{A}\)</span> 와 <span class="math inline">\(\boldsymbol{J}\)</span> 는 모두 <span class="math inline">\(\boldsymbol{B}\)</span> 와 관련될 수 있으므로, 우리는 에너지를 자기장으로 표현하기를 기대할 수 있다(정전기 에너지를 전기장에 대해서 표현할 수 있었던 것을 기억하라). 우선 <span class="math inline">\(\boldsymbol{J}=\dfrac{1}{\mu_0} \nabla \times \boldsymbol{B}\)</span> 로 바꾸면</p>
 <p><span id="eq-FLP_2_17_46"><span class="math display">\[
-U=\dfrac{1}{2\mu_0}\int \left( \nabla \times \boldsymbol{B}\right)\boldsymbol{\cdot A} \,d^3\boldsymbol{r}
+U=\dfrac{1}{2\mu_0}\int \left( \nabla \times \boldsymbol{B}\right)\boldsymbol{\cdot A} \,dV
 \tag{10.122}\]</span></span></p>
 <p>이다. 여기서 벡터 항등식</p>
 <p><span class="math display">\[
@@ -1859,11 +1863,11 @@ U=\dfrac{1}{2\mu_0}\int \left( \nabla \times \boldsymbol{B}\right)\boldsymbol{\c
 \]</span></p>
 <p>를 사용하면</p>
 <p><span class="math display">\[
-U = \dfrac{1}{2\mu_0} \left[ \int \boldsymbol{B \cdot} (\nabla \times \boldsymbol{A})\,d^3\boldsymbol{r} - \int \nabla \boldsymbol{\cdot}(\boldsymbol{A}\times \boldsymbol{B})\, d^3\boldsymbol{r} \right]
+U = \dfrac{1}{2\mu_0} \left[ \int \boldsymbol{B \cdot} (\nabla \times \boldsymbol{A})\,dV - \int \nabla \boldsymbol{\cdot}(\boldsymbol{A}\times \boldsymbol{B})\, dV \right]
 \]</span></p>
 <p>이다. 이제 우리 시스템(즉, 소스와 장)이 유한하다고 가정하자. 위 식에서 두번째 적분은 <span class="math inline">\(\oint_S (\boldsymbol{A\cdot B})\boldsymbol{\cdot}d\boldsymbol{a}\)</span> 이며 적분되는 3차원 공간을 전 공간에 대해 잡으면 <span class="math inline">\(0\)</span> 이 된다. 이로부터 다음을 얻는다.</p>
 <p><span id="eq-FLP_2_17_48"><span class="math display">\[
-U = \dfrac{1}{2\mu_0} \int_{\text{all space}} \|\boldsymbol{B}\|^2\,d^3\boldsymbol{r}.
+U = \dfrac{1}{2\mu_0} \int_{\text{all space}} \|\boldsymbol{B}\|^2\,dV.
 \tag{10.123}\]</span></span></p>
 <p>이 식을 <a href="../../src/vol2/vol2_1.html#sec-FLP_2_8_5"><span class="math inline">\(\textrm{II}\)</span>.8-5 전기장의 에너지</a> 의 <a href="vol2_1.html#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>8.75</span></a> 와 비교해보면 유사성을 알 수 있다.</p>
 <p>이 두 에너지 공식을 강조하는 한 가지 이유는 때때로 사용하기에 더 편리하기 때문이며, 더 중요한 점은, 동역학장, 즉 시간에 따라 변하는 <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 의 경우에도 <a href="vol2_1.html#eq-FLP_2_8_30" class="quarto-xref">식&nbsp;<span>8.75</span></a> 와 <a href="#eq-FLP_2_17_48" class="quarto-xref">식&nbsp;<span>10.123</span></a> 은 참이며, 반면에 전기 또는 자기 에너지에 대해 제시한 다른 공식들은 오직 정적인 장 에만 적용된다.</p>
