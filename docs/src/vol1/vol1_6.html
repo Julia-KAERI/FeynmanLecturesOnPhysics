@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -1076,7 +1079,7 @@ P(\omega)\,d \omega = \dfrac{2k_BT}{\pi} \,d\omega.
 <p>반대로, 빛이 무한의 영역으로 사라지지 않도록 전체를 상자에 가두면 결국 열평형을 얻을 수 있다. 우리는 상자 벽에 빛을 되 쏘아주는 라디에이터가 있다고 할 수 도 있고 그 상자에 거울 벽이 있다고 가정할 수도 있으며 이중 후자가 더 쉽다. 따라서 우리는 진동자에서 방출되는 모든 빛이 상자 안에서 계속 흐르고 있다고 가정한다. 그렇다면 진동자가 복사하기 시작하는 것은 사실이지만, 복사하고 있음에도 불구하고 에너지 <span class="math inline">\(k_B T\)</span> 를 유지할 수 있다. 이는 상자의 벽에서 반사된 자체 빛에 의해 비추어지고 있기 때문이라고 말할 수 있다. 즉, 진동자가 일부를 복사하고 있지만 빛이 돌아와 복사된 에너지의 일부를 반환한다.</p>
 <p>이제 우리는 온도 <span class="math inline">\(T\)</span> 에서 얼마나 많은 빛이 상자 안에 있어야 진동자에 비춰지는 빛이 지속적인 복사를 유지할 수 있는지를 결정 할 수 있다.</p>
 <p>기체 원자들이 서로 매우 떨어져 있고 밀도가 낮다면 복사 저항(radiation resistance)을 제외한 저항이 전혀 없는 이상적인 진동자를 갖는다. 열평형에서 진동자가 동시에 두 가지 일을 수행하고 있다볼수 있다. 먼저 평균 에너지 <span class="math inline">\(k_B T\)</span> 를 가지고 있으며 방출하는 복사의 양을 계산할 수 있다. 둘째, 이 양은 빛이 진동자에 산란되는 결과와 정확히 같아야 한다. 에너지가 갈 수 있는 다른 곳이 없으므로, 이 효과적인 복사는 실제로 그 안에 있는 빛으로부터 산란된 빛에 불과하다.</p>
-<p>따라서 진동자가 특정 에너지를 가지고 있을 경우, 진동자가 초당 방출하는 에너지를 먼저 계산해보자. (여기서 <a href="vol1_4.html#sec-FLP_1_32">복사 감쇄와 광산란</a>의 여러 결과를 사용한다) 라디안당 방출되는 에너지를 진동자의 에너지로 나눈 것을 <span class="math inline">\(1/Q\)</span> (<a href="vol1_4.html#eq-FLP_1_32_8" class="quarto-xref">식&nbsp;<span>4.39</span></a>) 라고 하며 <span class="math inline">\(1/Q=(dW/dt)/\omega_0 W\)</span> 이다. 감쇠 상수 <span class="math inline">\(\gamma\)</span> 를 이용하여 <span class="math inline">\(1/Q=\gamma/\omega_0\)</span> 로 표기할 수 있으며, 여기서 <span class="math inline">\(\omega_0\)</span> 는 진동자의 고유 주파수이다. <span class="math inline">\(\gamma\)</span> 가 매우 작으면 <span class="math inline">\(Q\)</span> 는 매우 크다. 그때 초당 방출되는 에너지는</p>
+<p>따라서 진동자가 특정 에너지를 가지고 있을 경우, 진동자가 초당 방출하는 에너지를 먼저 계산해보자. (여기서 <a href="vol1_4.html#sec-FLP_1_32">복사 감쇄와 광산란</a>의 여러 결과를 사용한다) 라디안당 방출되는 에너지를 진동자의 에너지로 나눈 것을 <span class="math inline">\(1/Q\)</span> (<a href="vol1_4.html#eq-FLP_1_32_8" class="quarto-xref">식&nbsp;<span>4.41</span></a>) 라고 하며 <span class="math inline">\(1/Q=(dW/dt)/\omega_0 W\)</span> 이다. 감쇠 상수 <span class="math inline">\(\gamma\)</span> 를 이용하여 <span class="math inline">\(1/Q=\gamma/\omega_0\)</span> 로 표기할 수 있으며, 여기서 <span class="math inline">\(\omega_0\)</span> 는 진동자의 고유 주파수이다. <span class="math inline">\(\gamma\)</span> 가 매우 작으면 <span class="math inline">\(Q\)</span> 는 매우 크다. 그때 초당 방출되는 에너지는</p>
 <p><span id="eq-FLP_1_41_4"><span class="math display">\[
 \dfrac{dW}{dt}=\dfrac{\omega_0 W }{Q}= \dfrac{\omega_0 W \gamma}{\omega_0}=\gamma W
 \tag{6.41}\]</span></span></p>
@@ -1084,7 +1087,7 @@ P(\omega)\,d \omega = \dfrac{2k_BT}{\pi} \,d\omega.
 <p><span id="eq-FLP_1_41_5"><span class="math display">\[
 \left\langle \dfrac{dW}{dt}\right \rangle =\gamma k_B T.
 \tag{6.42}\]</span></span></p>
-<p>이제 우리는 감마만 구하면 된다. <a href="vol1_4.html#eq-FLP_1_32_12" class="quarto-xref">식&nbsp;<span>4.40</span></a> 로부터</p>
+<p>이제 우리는 감마만 구하면 된다. <a href="vol1_4.html#eq-FLP_1_32_12" class="quarto-xref">식&nbsp;<span>4.42</span></a> 로부터</p>
 <p><span id="eq-FLP_1_41_6"><span class="math display">\[
 \gamma = \dfrac{\omega_0}{Q}=\dfrac{2}{3}\dfrac{r_0 \omega_0^2}{c},
 \tag{6.43}\]</span></span></p>
@@ -1094,7 +1097,7 @@ P(\omega)\,d \omega = \dfrac{2k_BT}{\pi} \,d\omega.
 \tag{6.44}\]</span></span></p>
 <p>이다.</p>
 <p>다음으로 우리는 진동자에 얼마나 많은 빛이 비추어야 하는지 알아보자. 빛으로부터 흡수된 에너지(그리고 그에 따라 산란되는)가 정확히 이 정도일 정도로 충분해야 한다. 방출된 빛과 공동 내 진동자에 비추는 빛의 양이 같아야 한다. 이제 진동자에 비치는 특정 양의—알 수 없는—복사량이 있을 경우, 산란되는 양을 계산해야 한다. <span class="math inline">\(\omega\)</span> 주위의 <span class="math inline">\(d\omega\)</span> 범위에서 존재하는 빛의 양을 <span class="math inline">\(I(\omega)\,d\omega\)</span> 라고 하자. 여기서 <span class="math inline">\(I(\omega)\)</span> 는 우리가 알아야 할 스펙트럼 분포이며, 온도 <span class="math inline">\(T\)</span> 에서 우리가 문을 열고 구멍을 통해 보이는 용광로의 색이다. 지금 얼마나 많은 빛이 흡수되는가? 우리는 주어진 입사광선으로부터 흡수되는 방사선량을 계산하고, 이를 단면을 기준으로 계산했다. 마치 우리가 특정 단면에 떨어지는 모든 빛이 흡수된다고 말한 것과 같다. 따라서 재방사(산란)되는 총량은 입사 강도 <span class="math inline">\(I(\omega)\,d\omega\)</span> 에 단면적 <span class="math inline">\(\sigma\)</span> 를 곱한 값이다.</p>
-<p>우리가 유도한 단면에 대한 공식 <a href="vol1_4.html#eq-FLP_1_32_19" class="quarto-xref">식&nbsp;<span>4.41</span></a> 에는 감쇄가 포함되지 않았다. 우리가 넘어간 저항 항을 넣고 단면을 계산하면</p>
+<p>우리가 유도한 단면에 대한 공식 <a href="vol1_4.html#eq-FLP_1_32_19" class="quarto-xref">식&nbsp;<span>4.43</span></a> 에는 감쇄가 포함되지 않았다. 우리가 넘어간 저항 항을 넣고 단면을 계산하면</p>
 <p><span id="eq-FLP_1_41_8"><span class="math display">\[
 \sigma_s=\dfrac{8\pi r_0^2}{3}\left[ \dfrac{\omega^4}{(ω^2−ω^2_0)^2+\gamma^2 \omega^2} \right]
 \tag{6.45}\]</span></span></p>
