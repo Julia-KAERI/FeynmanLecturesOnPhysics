@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -342,6 +345,9 @@ window.Quarto = {
   <li><a href="#sec-FLP_1_31" id="toc-sec-FLP_1_31" class="nav-link" data-scroll-target="#sec-FLP_1_31"><span class="math inline">\(\textrm{I}\)</span>.31 굴절률의 기원</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_1_31_1" id="toc-sec-FLP_1_31_1" class="nav-link" data-scroll-target="#sec-FLP_1_31_1"><span class="math inline">\(\textrm{I}\)</span>.31-1 굴절률</a></li>
+  <li><a href="#sec-FLP_1_31_2" id="toc-sec-FLP_1_31_2" class="nav-link" data-scroll-target="#sec-FLP_1_31_2"><span class="math inline">\(\textrm{I}\)</span>.31-2 물질에 의한 장</a></li>
+  <li><a href="#sec-FLP_1_31_3" id="toc-sec-FLP_1_31_3" class="nav-link" data-scroll-target="#sec-FLP_1_31_3"><span class="math inline">\(\textrm{I}\)</span>.31-3 분산 관계</a></li>
+  <li><a href="#sec-FLP_1_31_4" id="toc-sec-FLP_1_31_4" class="nav-link" data-scroll-target="#sec-FLP_1_31_4"><span class="math inline">\(\textrm{I}\)</span>.31-4 흡수</a></li>
   </ul></li>
   <li><a href="#sec-FLP_1_32" id="toc-sec-FLP_1_32" class="nav-link" data-scroll-target="#sec-FLP_1_32"><span class="math inline">\(\textrm{I}\)</span>.32 복사 감쇄와 광산란</a>
   <ul class="collapse">
@@ -1257,7 +1263,7 @@ P\text{ 에서의 총 field} = −\dfrac{ηq}{2\epsilon_0 c} [\text{전하의 �
 <p><br></p>
 </section>
 </section>
-<section id="sec-FLP_1_31" class="level2">
+<section id="sec-FLP_1_31" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-FLP_1_31"><span class="math inline">\(\textrm{I}\)</span>.31 굴절률의 기원</h2>
 <section id="sec-FLP_1_31_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_31_1"><span class="math inline">\(\textrm{I}\)</span>.31-1 굴절률</h3>
@@ -1307,15 +1313,15 @@ P\text{ 에서의 총 field} = −\dfrac{ηq}{2\epsilon_0 c} [\text{전하의 �
 </div>
 <p><br></p>
 <p>이제 <a href="#fig-FLP_1_31_1" class="quarto-xref">그림&nbsp;<span>4.33</span></a> 에 표시된 상황으로 돌아가자. 우리는 유리판의 모든 진동 전하에 의해 <span class="math inline">\(P\)</span> 에서 생성되는 전기장 <span class="math inline">\(E_a\)</span> 를 계산해야 한다. 이는 <a href="#eq-FLP_1_31_2" class="quarto-xref">식&nbsp;<span>4.39</span></a> 의 두번째 향 <span class="math inline">\(\sum [\cdots]\)</span> 이다.</p>
-<p>우리가 어디로 가는지 보기 위해, 먼저 <span class="math inline">\(P\)</span> 에서의 전체 필드가 얇은 판을 통과하면서 속도가 감소하는 원천으로부터의 복사처럼 보일 경우, “보정 필드” <span class="math inline">\(E_a\)</span> 가 무엇인지 알아보겠습니다. 만약 판이 그것에 영향을 미치지 않았다면, 오른쪽으로 이동하는 파동의 장(z축을 따라)은</p>
+<p>먼저 <span class="math inline">\(P\)</span> 에서의 전체 필드가 얇은 판을 통과하면서 속도가 감소하는 원천으로부터의 복사처럼 보인다면 <span class="math inline">\(E_a\)</span> 가 어떠해야 하는지 알야보자. 만약 판이 영향을 미치지 않았다면, 오른쪽으로 이동하는 파동의 장(<span class="math inline">\(z\)</span> 축을 따라)은</p>
 <p><span id="eq-FLP_1_31_3"><span class="math display">\[
-E_s=E_0 \cos \omega (t−z/c)
+E_\text{source}=E_0 \cos \omega (t−z/c)
 \tag{4.40}\]</span></span></p>
 <p>혹은</p>
 <p><span id="eq-FLP_1_31_4"><span class="math display">\[
-E_s=E_0e^{i\omega (t−z/c)}.
+E_\text{source}=E_0e^{i\omega (t−z/c)}.
 \tag{4.41}\]</span></span></p>
-<p>그렇다면 파동이 판을 통과할 때 더 천천히 이동하면 어떻게 될까요? 판의 두께를 <span class="math inline">\(\Delta z\)</span> 라고 하자. 판이 없으면 파동은 시간 <span class="math inline">\(Delta z/c\)</span> 에서 <span class="math inline">\(\Delta z\)</span> 거리만큼 이동한다. 하지만 그것이 <span class="math inline">\(c/n\)</span> 의 속도로 이동하는 것으로 보인다면, <span class="math inline">\(\Delta t=(n−1)Δz/c\)</span> 만큼의 추가시긴이 걸릴 것입니다. 그 후에는 다시 <span class="math inline">\(c\)</span> 속도로 계속 이동한다. 우리는 <span class="quarto-unresolved-ref">?eq-FLP_2_31_4</span> 에서 <span class="math inline">\((t−\Delta t)\)</span> 즉 <span class="math inline">\([t−(n−1)\Delta z/c]\)</span> 로 바꿔서 추가 시간의 기여를 고려 할 수 있다. 따라서 판을 삽입한 후의 파동은</p>
+<p>그렇다면 파동이 판을 통과할 때 더 천천히 이동하면 어떻게 될까요? 판의 두께를 <span class="math inline">\(\Delta z\)</span> 라고 하자. 판이 없으면 파동은 시간 <span class="math inline">\(Delta z/c\)</span> 에서 <span class="math inline">\(\Delta z\)</span> 거리만큼 이동한다. 하지만 그것이 <span class="math inline">\(c/n\)</span> 의 속도로 이동하는 것으로 보인다면, <span class="math inline">\(\Delta t=(n−1)Δz/c\)</span> 만큼의 추가시긴이 걸릴 것입니다. 그 후에는 다시 <span class="math inline">\(c\)</span> 속도로 계속 이동한다. 우리는 <a href="#eq-FLP_1_31_4" class="quarto-xref">식&nbsp;<span>4.41</span></a> 에서 <span class="math inline">\((t−\Delta t)\)</span> 즉 <span class="math inline">\([t−(n−1)\Delta z/c]\)</span> 로 바꿔서 추가 시간의 기여를 고려 할 수 있다. 따라서 판을 삽입한 후의 파동은</p>
 <p><span id="eq-FLP_1_31_5"><span class="math display">\[
 E_\text{after plate}=E_0e^{i\omega [t−(n−1)\Delta z/c−z/c]},
 \tag{4.42}\]</span></span></p>
@@ -1324,15 +1330,159 @@ E_\text{after plate}=E_0e^{i\omega [t−(n−1)\Delta z/c−z/c]},
 E_\text{after plate}=e^{−i\omega (n−1)\Delta z/c} E_0e^{i\omega (t−z/c)}
 \tag{4.43}\]</span></span></p>
 <p>으로 쓸 수 있다. 즉 판에 의해 위상이 <span class="math inline">\(\omega (n−1)\Delta z/c\)</span> 만큼 지연되었다.</p>
-<p>우리는 앞서 판에 의해 원래의 전기장 <span class="math inline">\(E_\text{source}=\)</span>E_0e&amp;{i(t−z/c)}$ 에 전기장 <span class="math inline">\(E_a\)</span> 를 추가해야 한다고 말했지만, 실제로는 판의 효과는 전기장의 위상을 이동시키는 것임을 알게되었다. 그러나 적절한 복소수를 더하면 동일한 결과를 얻을 수 있으므로 어떻게 말하든 상관 없다. <span class="math inline">\(\Delta z\)</span> 가 작을 경우는 특히 쉽다.</p>
+<p>우리는 앞서 판에 의해 원래의 전기장 <span class="math inline">\(E_\text{source}=E_0e^{i\omega (t−z/c)}\)</span> 에 전기장 <span class="math inline">\(E_a\)</span> 를 추가해야 한다고 말했지만, 실제로는 판의 효과는 전기장의 위상을 이동시키는 것임을 알게되었다. 그러나 적절한 복소수를 더하면 동일한 결과를 얻을 수 있으므로 어떻게 말하든 상관 없다. <span class="math inline">\(\Delta z\)</span> 가 작을 경우는 특히 쉽다.</p>
 <p><span id="eq-FLP_1_31.7"><span class="math display">\[
 e^{−i\omega (n−1)\Delta z/c} \approx 1−i\dfrac{\omega (n−1)\Delta z}{c}.
 \tag{4.44}\]</span></span></p>
 <p>이며 이 근사를 <a href="#eq-FLP_1_31_6" class="quarto-xref">식&nbsp;<span>4.43</span></a> 에 사용하면</p>
 <p><span id="eq-FLP_1_31_8"><span class="math display">\[
-E_\text{after plate}=E_0e^{i\omega (t−z/c)} −i\dfrac{\omega (n−1)\Delta z}{c}E_0e^{i\omega (t−z/c)}
+E_\text{after plate}=\underbrace{E_0e^{i\omega (t−z/c)}}_{\Large E_\text{source}} −\underbrace{i\dfrac{\omega (n−1)\Delta z}{c}E_0e^{i\omega (t−z/c)}}_{\Large E_a}.
 \tag{4.45}\]</span></span></p>
-<p>첫 번째 항은 원천으로부터의 필드에 불과하며, 두 번째 항은 판의 진동 전하에 의해 플레이트 오른쪽에 생성되는 필드인 Ea와 동일해야 합니다—여기서는 굴절률 n으로 표현되며, 물론 원천으로부터 파동의 강도에 따라 달라집니다.</p>
+<p>첫 번째 항은 소스으로부터의 전기장이며, 두 번째 항은 판의 진동 전하에 의해 판 오른쪽에 생성되는 필드인 <span class="math inline">\(E_a\)</span> 와 동일해야 한다.</p>
+</section>
+<section id="sec-FLP_1_31_2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_31_2"><span class="math inline">\(\textrm{I}\)</span>.31-2 물질에 의한 장</h3>
+<p>이제 <a href="#eq-FLP_1_31_8" class="quarto-xref">식&nbsp;<span>4.45</span></a> 에서의 두번째 항 <span class="math inline">\(E_a\)</span> 가 판에서 진동하는 전하로부터 기대할 수 있는 종류의 전기장인가를 물어야 한다. 이것을 보인다면 우리는 인덱스 <span class="math inline">\(n\)</span> 의 기원을 알 수있다! 우리는 이제 물질의 전하가 생성할 전기장을 계산하겠다. 많은 기호가 사용될 것이기 때문에 미리 정리하도록 하자 (<a href="#tbl-FLP_1_31_1" class="quarto-xref">표&nbsp;<span>4.1</span></a>). 표 31–1</p>
+<div id="tbl-FLP_1_31_1" class="quarto-float quarto-figure quarto-figure-center anchored" style="max-width: 300px; margin: auto;">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-FLP_1_31_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+표&nbsp;4.1
+</figcaption>
+<div aria-describedby="tbl-FLP_1_31_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">기호들</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(E_s=\)</span> 소스의 필드 (이전의 <span class="math inline">\(E_\text{source}\)</span>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(E_a=\)</span> 플레이트 내 전하에 의해 생성된 필드</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\Delta z=\)</span> 판의 두께</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(z=\)</span> 판으로부터 수직 거리</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(n=\)</span> 굴절률</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\omega=\)</span> 방사선의 진동수</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(N=\)</span> 판 내 단위 부피당 전하 수</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\eta=\)</span> 판의 단위 면적당 전하 수</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(q_e=\)</span> 전자의 전하량</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(m=\)</span> 전자의 질량</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\omega_0=\)</span> 원자에 결합된 전자의 공명 진동수</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>만약 <a href="#fig-FLP_1_31_1" class="quarto-xref">그림&nbsp;<span>4.33</span></a> 의 소스 <span class="math inline">\(S\)</span> 가 왼쪽으로 충분히 멀리 떨어져 있다면, 필드 <span class="math inline">\(E_s\)</span> 는 판의 모든 위상에서 동일한 위상을 갖는 것으로 근사 할 수 있다. 그렇다면 판에서의 전기장은</p>
+<p><span id="eq-FLP_1_31_9"><span class="math display">\[
+E_s=E_0e^{iω(t−z/c)}.
+\tag{4.46}\]</span></span></p>
+<p>이며, 판의 <span class="math inline">\(z=0\)</span> 인 면에서</p>
+<p><span id="eq-FLP_1_31_10"><span class="math display">\[
+E_s=E_0e^{iωt}
+\tag{4.47}\]</span></span></p>
+<p>판의 원자에 있는 각 전자는 이 전기장을 느끼며 전기력 <span class="math inline">\(qE\)</span> 에 의해 위아래로 움직이게 된다(<span class="math inline">\(E_0\)</span> 의 방향이 수직이라고 가정한다). 전자의 움직임을 계산하기 위해 원자을 작은 진동자라고 가정한다. 즉, 전자는 원자에 탄성적으로 붙어 있는 조화진동자이다.</p>
+<p>전자가 궤도에서 회전한다는 이야기를 들어봤다면, 앞의 모델은 원자에 대한 재미있는 모델이라고 생각할 수도 있다. 하지만 그것은 단지 과도하게 단순화된 모델일 뿐이다. 파동역학 이론에 의해 제시된 원자에 대한 올바른 모델은, 빛과 관련된 문제에 대해서는 전자가 마치 스프링에 부착된 것처럼 행동한다는 것을 보여준다. 따라서 전자들이 질량 <span class="math inline">\(m\)</span>, 공명 주파수 <span class="math inline">\(\omega_0\)</span> 를 가지는 선형 진동자로 모델링하는 것은 타당하다. 이 경우의 운동방정식은 추진력 <span class="math inline">\(F\)</span> 에 대해 다음과 같다.</p>
+<p><span id="eq-FLP_1_31_11"><span class="math display">\[
+m\left(\dfrac{d^2 x}{dt^2} + \omega^2_0 x\right)=F.
+\tag{4.48}\]</span></span></p>
+<p>여기서 추진력은 소스로부터의 전기장에서 기인하므로</p>
+<p><span id="eq-FLP_1_31_12"><span class="math display">\[
+F=q_eE_s=q_eE_0e^{iωt}
+\tag{4.49}\]</span></span></p>
+<p>이고 이 <span class="math inline">\(F\)</span> 에 대한 운동방정식 <a href="#eq-FLP_1_31_11" class="quarto-xref">식&nbsp;<span>4.48</span></a> 의 해는</p>
+<p><span id="eq-FLP_1_31_16"><span class="math display">\[
+x=\dfrac{q_eE_0}{m(\omega_0^2 -\omega^2)}e^{i\omega t}
+\tag{4.50}\]</span></span></p>
+<p>임을 안다.</p>
+<p>이제 이 원자들이 <span class="math inline">\(P\)</span> 에 생성하는 장 <span class="math inline">\(E_a\)</span> 를 구해보자. 우리는 이미 <a href="#sec-FLP_1_30"><span class="math inline">\(\textrm{I}\)</span>.30</a> 에서 모든 전하가 함께 움직이는 전하 시트에 의해 생성되는 전기장이 무엇인지 알고 있다. <a href="#eq-FLP_1_30_19" class="quarto-xref">식&nbsp;<span>4.37</span></a> 를 보자. 우리는 <span class="math inline">\(P\)</span> 에서의 필드 <span class="math inline">\(E_a\)</span> 가 음의 상수에 <span class="math inline">\(z/c\)</span> 만큼 지연된 전하의 속도임을 알고 있다. <a href="#eq-FLP_1_31_16" class="quarto-xref">식&nbsp;<span>4.50</span></a> 에서 <span class="math inline">\(x\)</span> 를 미분하여 속도를 얻고,그리고 지연을 적용하여 <span class="math inline">\(t\to t-z/c\)</span> 로 하면 다음을 얻는다.</p>
+<p><span id="eq-FLP_1_31_17"><span class="math display">\[
+E_a=−\dfrac{\eta q_e}{2\epsilon_0 c}\left[ \dfrac{i \omega q_e E_0}{m(\omega_0^2 − \omega^2)}e^{i\omega (t−z/c)}\right].
+\tag{4.51}\]</span></span></p>
+<p>예상대로 전자의 추동된 운동은 오른쪽으로 이동하는 추가 파동을 생성했으며(이는 <span class="math inline">\(e^{i\omega(t−z/c)}\)</span> factor 라고 한다), 이 파동의 진폭은 판 내 단위 면적당 원자 수(<span class="math inline">\(\eta\)</span>)와 소스 필드의 강도(<span class="math inline">\(E_0\)</span>)에 비례한다. 또한 예상할 수 있듯이 원자적 특성에서 기인하는 몇가지 요인(<span class="math inline">\(q_e\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(\omega_0\)</span>) 에 의존한다.</p>
+<p>하지만 가장 중요한 점은 <a href="#eq-FLP_1_31_17" class="quarto-xref">식&nbsp;<span>4.51</span></a> 의 <span class="math inline">\(E_a\)</span> 가 <a href="#eq-FLP_1_31_8" class="quarto-xref">식&nbsp;<span>4.45</span></a> 의 <span class="math inline">\(E_a\)</span> 와 매우 유사하다는 것이다. 후자는 파동이 굴절률 <span class="math inline">\(n\)</span> 을 가진 물질을 통과할 때의 지연과 관련된다. 두 <span class="math inline">\(E_a\)</span> 가 동일할 조건은 다음과 같다.</p>
+<p><span id="eq-FLP_1_31_18"><span class="math display">\[
+(n−1)\Delta z=\dfrac{\eta q_e^2}{2\epsilon_0 m(\omega_0^2−\omega^2)}
+\tag{4.52}\]</span></span></p>
+<p>여기서 단위 면적당 전하 수 <span class="math inline">\(\eta = N\Delta z\)</span> 이므로 양변이 <span class="math inline">\(\Delta z\)</span> 에 비례한다. 이를 이용하면</p>
+<p><span id="eq-FLP_1_31_19"><span class="math display">\[
+n=1+\dfrac{Nq_e^2}{2\epsilon_0 m(\omega_0^2 −\omega^2)}.
+\tag{4.53}\]</span></span></p>
+<p>이 방정식은 우리가 얻고자 하는 굴절률을 설명한다.</p>
+</section>
+<section id="sec-FLP_1_31_3" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_31_3"><span class="math inline">\(\textrm{I}\)</span>.31-3 분산 관계</h3>
+<p>앞절의 과정으로부터 기본적인 원자에 관계된 양으로부터 굴절률을 계산했을 뿐만 아니라 빛의 진동수 <span class="math inline">\(\omega\)</span> 에 따라 굴절률이 어떻게 변하는지도 알게 되었다. 이는 “빛은 투명한 물질에서 더 천천히 이동한다” 와 같은 단순한 진술로는 결코 이해할 수 없는 것이다. 물론 우리는 여전히 단위 부피당 원자 수, 자연 주파수 <span class="math inline">\(\omega_0\)</span> 와 같은 값을 알아야 하는 문제가 있다. 이 값은 재료마다 다르며, 지금은 그에 대한 일반적인 이론을 알지 못하므로 이 값들을 알 수 없다. 이런 다양한 물질의 특성에 대한 일반 이론은 양자 원자 역학에서만 가능하다. 또한, 서로 다른 재료는 서로 다른 특성과 서로 다른 굴절률을 가지고 있기 때문에, 어쨌든 모든 물질에 적용되는 지표에 대한 일반적인 공식을 기대할 수 없다.</p>
+<p>하지만, 우리는 다양한 상황에서 우리가 얻은 식에 대해 논의 할 수 있다. 대부분의 보통의 기체(예를 들어 공기, 무색 기체, 수소, 헬륨 등)의 경우 전자 진동자의 자연 진동수는 자외선에 해당한다. 즉 <span class="math inline">\(\omega_0\)</span> 는 가시광선의 진동수 <span class="math inline">\(\omega\)</span> 보다 매우 커서 <span class="math inline">\(\omega_0^2 - \omega^2 \approx \omega_0^2\)</span> 으로 근사 할 수 있다. 즉 굴절률이 전파의 진동수와 거의 무관하다. 이 현상은 유리와 같은 대부분의 다른 투명 물질에도 해당된다. 그래도 조금의 변화가 있으며 청색광의 굴절률이 적색광보다 크다. 그것이 프리즘이 빛을 빨간색보다 파란색에서 더 많이 굽히는 이유이다.</p>
+<p>굴절률이 진동수에 의존하는 현상을 <strong>분산 현상 (phenomenon of dispersion)</strong> 이라고 하며, <span class="math inline">\(n(\omega)\)</span> 를 <strong>분산 방정식 (dispersion equation)</strong> 이라고 한다.</p>
+<p>분산 방정식을 통해 흥미로운 현상을 예상 할 수 있다. 자연 진동수 <span class="math inline">\(\omega_0\)</span> 가 가시광선 영역에 위치하거나, 유리와 같은 물질의 굴절률을 자외선에서 측정한다면 <span class="math inline">\(\omega \approx \omega_0\)</span> 일 수 있으며 따라서 굴절률이 매우 크게 증가할 수 있다. 게다가 <span class="math inline">\(\omega &gt; \omega_0\)</span>, 혹은 X-선과 같은 매우 높은 진동수의 빛을 사용한다면 <span class="math inline">\(\omega \gg \omega_0\)</span> 일 수 있다.</p>
+<p>자유 전자 가스에 라디오파 혹은 또는 가시광선를 비추면 유사한 상황이 발생한다. 상층 대기에서는 태양으로부터 방출되는 자외선에 의해 원자에서 방출된 전자가 자유 전자 형태로 존재한다. 자유 전자의 경우 탄성 복원력이 없으므로 <span class="math inline">\(\omega_0=0\)</span> 이며, 따라서 분산 방정식 <a href="#eq-FLP_1_31_19" class="quarto-xref">식&nbsp;<span>4.53</span></a> 에서 <span class="math inline">\(\omega_0=0\)</span> 로 놓으면 성층권 내 전파의 굴절률에 대한 올바른 식이 얻어진다. 여기서 <span class="math inline">\(N\)</span> 은 이제 성층권 내의 자유 전자의 밀도이다. 하지만 그 결과 <span class="math inline">\(n&lt;1\)</span>, 즉 물질 내 파동의 유효 속도가 <span class="math inline">\(c\)</span> 보다 큰 결과를 얻는다. 이것은 옿은가?</p>
+<p>이것은 옳다. 빛의 속도보다 더 빠른 신호를 보낼 수 없다고 해도, 특정 진동수에서 물질의 굴절률이 <span class="math inline">\(1\)</span> 보다 크거나 작을 수 있다는 것이 여전히 사실이다. 이는 산란된 빛에 의해 발생하는 위상 이동이 양수이거나 음수일 수 있음을 의미한다. 그러나 신호를 보낼 수 있는 속도는 한 주파수의 굴절률에 의해 결정되는 것이 아니라, 여러 주파수의 굴절률에 따라 달라진다는 것을 보일 수 있다. 굴절률이 우리에게 알려주는 것은 파동의 노드(또는 마루)가 이동하는 속도이며, 파동의 노드는 그 자체로 신호가 아니다. 어떠한 변조도 없는 소위 완전파(perfect wave) 는 시작 시점을 알 수 없으므로 타이밍 신호로 사용할 수 없다. 신호를 보내려면 파동을 어떻게든 변화시켜 그 안에 노치(notch)를 약간 더 두껍게나 혹은 얇게 만들어야 한다. 즉, 파동에 두 개 이상의 주파수가 있어야 하며, 신호가 이동하는 속도는 굴절률 뿐만 아니라 진동수에 따라 굴절률이 변하는 방식에도 의존한다. 그러나 이 주제는 <a href="../../src/vol1/vol1_7.html#sec-FLP_1_48"><span class="math inline">\(\textrm{I}\)</span>.48 비트</a> 까지 미뤄야 한다. 이후 우리는 그러한 유리를 통과하는 신호의 실제 속도를 계산할 수 있으며, 신호의 속도는 빛의 속도보다 빠를 수 없다는 것과, 수학적 점인 노드들은 빛의 속도보다 빠르게 이동할 수 있다는것을 확인할 수 있다.</p>
+<p>그 현상이 어떻게 일어나는지에 대한 약간의 힌트를 주자면, 실제 어려움은 전하의 반응이 필드와 반대이며, 즉 부호가 뒤집혔기 때문이다. 따라서 <span class="math inline">\(x\)</span> 에 대한 <a href="#eq-FLP_1_31_16" class="quarto-xref">식&nbsp;<span>4.50</span></a> 에서 전하의 변위는 추진력과 반대방향인데 이는 <span class="math inline">\((\omega_0^2 −\omega^2)\)</span> 은 <span class="math inline">\(\omega_0\)</span> 가 작을 때 음수이기 때문이다. 이 식은 전기장이 한 방향으로 당겨지면 전하가 반대 방향으로 이동한다고는 것을 보여준다.</p>
+<p>전하는 왜 반대 방향으로 가는가? 전기장이 처음 켜졌을 때는 분명히 반대 방향으로 움직이기 시작하지 않는다. 운동이 처음 시작될 때는 일시적인 현상이 존재하고, 잠시 후에 진정되며, 그때서야 전하의 진동 위상이 구동장과 반대쪽에 위치한다. 그리고 그때 전송된 필드의 위상이 원본 파에 비해 진행된 것으로 보일 수 있다. <strong>위상 속도(phase velocity)</strong> 즉 노드의 속도가 <span class="math inline">\(c\)</span> 보다 크다고 말할 때는, 바로 이러한 위상의 진행을 의미한다. <a href="#fig-FLP_1_31_4" class="quarto-xref">그림&nbsp;<span>4.35</span></a> 에서는 파가 갑자기 켜져(신호를 만들기 위해) 파동이 어떻게 향할 수 있는지에 대한 도식적인 아이디어를 보여준다. 그림에서 보시다시피, 신호(즉, 파동의 시작)는 위상 전진으로 끝나는 파동에 대해 더 일찍 시작되지 않는다.</p>
+<div id="fig-FLP_1_31_4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_1_31_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_1_31/fig_1_31_4.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_1_31_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;4.35: 파인만 물리학 강의 <span class="math inline">\(\textrm{I}\)</span> Fig. 31-4 파동 신호.
+</figcaption>
+</figure>
+</div>
+<p>이제 분산 방정식을 다시 살펴보자. 우선 굴절률에 대한 우리의 분석이 실제로 자연에서 찾을 수 있는 것보다 다소 단순한 결과를 제시한다는 것을 유념해야 한다. 완전히 정확하려면 약간 고쳐야 한다. 우선, 원자 진동자 모델에 약간의 감쇠력이 있어 할 것이다. 그렇지 않으면 한번 시작된 진동은 영원히 계속되는데 이것은 그럴법 하지 않다. 감쇠하는 진동자의 해는 <a href="vol1_3.html#eq-FLP_1_23_8" class="quarto-xref">식&nbsp;<span>3.50</span></a> 이다. 감쇠 진동자의 운동과 그 결과는 <a href="#eq-FLP_1_31_16" class="quarto-xref">식&nbsp;<span>4.50</span></a> 과 <a href="#eq-FLP_1_31_19" class="quarto-xref">식&nbsp;<span>4.53</span></a> 의 분모가 <span class="math inline">\((\omega_0^2−\omega^2)\)</span> 에서 <span class="math inline">\((\omega_0^2 − \omega^2 + i\gamma \omega)\)</span> 로 변경되며, 여기서 <span class="math inline">\(\gamma\)</span> 는 감쇠 계수이다.</p>
+<p>특정 종류의 원자에 대해 여러 개의 공명 주파수가 존재한다는 사실을을 고려하여 두 번째 수정이 필요하다. 여러 종류의 진동자가 존재하지만 각 진동자가 별도로 작용한다고 가정하면 우리의 분산 방정식을 쉽게 수정할 수 있다. 즉 모든 오실레이터의 기여도를 단순히 더한다. 단위 부피당 <span class="math inline">\(N_k\)</span> 전자가 존재하고, 그 고유 진동수가 <span class="math inline">\(\omega_k\)</span> 이며 감쇠 계수가 <span class="math inline">\(\gamma_k\)</span> 라고 하면 분산방정식은 다음과 같다.</p>
+<p><span id="eq-FLP_1_31_20"><span class="math display">\[
+n=1+\dfrac{q_e^2}{2\epsilon_0 m} \sum_k \dfrac{N_k}{\omega_k^2 −\omega^2+i\gamma \omega_k}.
+\tag{4.54}\]</span></span></p>
+<div class="page-columns page-full"><p>우리는 마침내 많은 물질에 대해 관찰되는 굴절률을 설명하는 완전한 식을 갖게 되었다<span class="math inline">\(^3\)</span>. 이 식에 의한 굴절률의 실수부는 <a href="#fig-FLP_1_31_5" class="quarto-xref">그림&nbsp;<span>4.36</span></a> (a) 에 표시된 곡선과 같이 진동수에 따라 변화한다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^3\)</span> 실제로, 양자역학에서는 <a href="#eq-FLP_1_31_20" class="quarto-xref">식&nbsp;<span>4.54</span></a> 은 여전히 유효하지만, 그 해석은 다소 다르다. 양자역학에서는 수소와 같이 전자가 하나인 원자조차도 여러 개의 공명 주파수를 가지고 있습니다. 따라서 <span class="math inline">\(N_k\)</span> 는 실제로 주파수 <span class="math inline">\(\omega_kk\)</span> 를 가진 전자의 수가 아니라 <span class="math inline">\(Nf_k\)</span> 로 대체되며, 여기서 <span class="math inline">\(N\)</span> 은 단위 부피당 원자 수를 의미하고 <span class="math inline">\(f_k\)</span> 는 원자가 각 공명 주파수 <span class="math inline">\(\omega_k\)</span> 를 얼마나 강하게 나타내는지를 나타내는 인자이다</span></div></div>
+<div id="fig-FLP_1_31_5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_1_31_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_1_31/fig_1_31_5.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_1_31_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;4.36: 파인만 물리학 강의 <span class="math inline">\(\textrm{I}\)</span> Fig. 31-5 진동수에 따른 굴절률.
+</figcaption>
+</figure>
+</div>
+<p><span class="math inline">\(\omega\)</span> 가 공명 주파수 가운데 하나에 너무 가깝지 않은 한, 곡선의 기울기는 양수이다. 그러한 양의 기울기를 <strong>정상 (normal)</strong> 분산이라고 한다. 공명 주파수에 매우 가까운, 그러나 기울기가 음수인 <span class="math inline">\(\omega\)</span> 의 짧은 범위가 존재한다. 이러한 음의 기울기는 종종 <strong>비정상(anomalous)</strong> 분산이라고 불리는데, 전자의 발견보다 훨씬 이전에 처음 관측되었을 때 매우 비정상적으로 여겨졌기 때문이다. 현대의 우리 관점에서는 두 경사면이 꽤 정상적이다!</p>
+</section>
+<section id="sec-FLP_1_31_4" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_31_4"><span class="math inline">\(\textrm{I}\)</span>.31-4 흡수</h3>
+<p>혹시 분산관계의 마지막 형태 <a href="#eq-FLP_1_31_20" class="quarto-xref">식&nbsp;<span>4.54</span></a> 에서 약간 이상함을 느꼈는가? 감쇠를 고려하기 위해 넣은 <span class="math inline">\(i\gamma\)</span> 항 때문에 굴절률이 이제 복소수가 되었다! <span class="math inline">\(n\)</span> 을 실수부와 허수부로 다음과 같이 나눠 보자.</p>
+<p><span id="eq-FLP_1_31_21"><span class="math display">\[
+n = n'−i n''
+\tag{4.55}\]</span></span></p>
+<p>여기서 <span class="math inline">\(n'\)</span> 와 <span class="math inline">\(n''\)</span> 은 실수이다. <span class="math inline">\(in''\)</span> 앞에 <span class="math inline">\(-\)</span> 가 붙은 것은 <span class="math inline">\(n''\)</span> 을 양수로 유지하기 위해서이다.</p>
+<p><a href="#eq-FLP_1_31_5" class="quarto-xref">식&nbsp;<span>4.42</span></a> 로 돌아가서 공명 주파수가 하나뿐인 경우를 살펴보면 이러한 복소 굴절률이 의미하는 바를 알 수 있다. <a href="#eq-FLP_1_31_6" class="quarto-xref">식&nbsp;<span>4.43</span></a> 은 굴절률 <span class="math inline">\(n\)</span> 인 물질 판을 통과한 후의 파동에 대한 방정으로 여기에 복소수 <span class="math inline">\(n\)</span> 을 넣고 식을 다시 배치하면 다음과 같다.</p>
+<p><span id="eq-FLP_1_31_22"><span class="math display">\[
+E_\text{after plate}=\underbrace{e^{−\omega n'' \Delta z/c}}_{A} \underbrace{e^{−i\omega(n'−1) \Delta z/c} E_0e^{i\omega (t−z/c)}}_{B}.
+\tag{4.56}\]</span></span></p>
+<p><span class="math inline">\(B\)</span> 는 이전에 가졌던 형태일 뿐이며, 물질을 통과하는 각도 <span class="math inline">\(\omega (n'−1)\Delta z/c\)</span> 에 의해 위상이 지연된 파동을 기술한다. <span class="math inline">\(A\)</span> 는 새로운 것이며 실수 지수를 가진 지수함수이다. 또한, 지수가 음수이므로 <span class="math inline">\(1\)</span> 보다 작은 실수이다. 이는 전기장의 크기가 <span class="math inline">\(\Delta z\)</span> 가 클수록 더 큰게 감소한다는 것을 의미한다. 파동이 물질을 통과할 때 약해진다. 물질은 파동의 일부를 <strong>흡수</strong>하고 있다. 반대쪽으로 나온 파동은 에너지가 감소했다. 이것은 놀랍지 않다. 왜냐하면 진동자에 가하는 감쇠란 실제로 마찰력이며 에너지 손실을 초래하기 때문이다. 이로부터 복소 굴절률의 허수 부분 <span class="math inline">\(n''\)</span> 이 파동의 흡수, 또는 감쇠를 나타낸다는 것을 알 수 있다. 사실 <span class="math inline">\(n''\)</span> 은 때때로 <strong>흡수 굴절률 (absorption index)</strong> 라고 불린다.</p>
+<p>보통은 <a href="#eq-FLP_1_31_20" class="quarto-xref">식&nbsp;<span>4.54</span></a> 에서 <span class="math inline">\(|i\gamma_k ω| \ll |\omega_k^2-\omega^2|\)</span> 이므로 빛의 흡수는 매우 작다. 하지만 <span class="math inline">\(\omega \approx \omega_k\)</span> 라면 빛의 흡수가 지배적인 효과가 된다. 우리가 태양으로부터 받는 빛의 스펙트럼에 어두운 선이 보이는 것은 이때문이다. 태양 표면에서 나오는 빛은 태양의 대기(지구와 마찬가지로)를 통과했으며, 그 빛은 태양 대기의 원자들의 공명 주파수에서 강하게 흡수되었다.</p>
+<p>태양빛에서 이러한 스펙트럼 선을 관찰함으로써 우리는 원자의 공명 주파수를 알 수 있게 되며, 따라서 태양 대기의 화학 조성도 파악할 수 있습니다. 같은 종류의 관측이 별의 물질에 대해 알려줍니다. 이러한 측정을 통해 우리는 태양과 별에 있는 화학 원소가 지구에서 발견되는 것과 동일하다는 것을 알 수 있습니다.</p>
 </section>
 </section>
 <section id="sec-FLP_1_32" class="level2">
@@ -1341,7 +1491,7 @@ E_\text{after plate}=E_0e^{i\omega (t−z/c)} −i\dfrac{\omega (n−1)\Delta z}
 <h3 class="anchored" data-anchor-id="sec-FLP_1_32_1"><span class="math inline">\(\textrm{I}\)</span>.32-1 복사 저항</h3>
 <p>지난 장에서 시스템이 진동할 때 에너지가 전달된다는 것을 배웠으며, 진동 시스템에 의해 방사되는 에너지에 대한 공식을 얻었다. 복사 방향에 수직인 표면의 단위면적을 초당 통과하는 에너지 <span class="math inline">\(S\)</span> 는 아래와 같다. <span id="eq-FLP_1_32_1"><span class="math display">\[
 S=\epsilon_0 c \langle E^2\rangle .
-\tag{4.46}\]</span></span></p>
+\tag{4.57}\]</span></span></p>
 <p>모든 진동하는 전하는 에너지를 방출한다. 일례로 안테나를 생각 할 수 있다. 시스템이 에너지를 방출한다면, 에너지 보존으로부터 안테나로 연결되는 전선을 따라 전력이 전달되고 있다는 것을 안다. 즉, 구동 회로에서 안테나는 저항처럼 작용하며 에너지가 소실될 수 있는 위치가 된다. 물론 에너지는 실제로 손실되는 것이 아니라 방사되지만 회로에 한정한다면 에너지는 손실된다. 일반적인 저항에서는 에너지가 열로 전환되지만 이경우는 우주로 방출된다. 하지만 회로 이론의 관점에서는 에너지는 손실되는 것 뿐이다. 따라서 안테나는 발전기에 저항이 있는 것으로 간주 할 수 있다. 실제로 잘 제작된 안테나는 거의 순수한 저항처럼 인덕턴스나 정전용량이 거의 없다. 이는 안테나에서 가능한 한 많은 에너지를 방출하고자 하기 때문이다. 안테나가 나타내는 이 저항을 <strong>복사 저항 (radiation resistance)</strong> 라고 한다.</p>
 <p>전류 <span class="math inline">\(I\)</span> 가 공급되는 경우 안테나에 공급되는 전력은 <span class="math inline">\(\langle I^2R\rangle\)</span> 이다. 안테나에서 복사되는 전력은 <span class="math inline">\(\langle I^2\rangle\)</span> 에 비례하는데 이는 모든 장이 전류에 비례하고, 방출된 에너지는 장의 제곱에 비례하기 때문이다. 복사되는 전력과 <span class="math inline">\(\langle I^2]\rangle\)</span> 사이의 비례계수가 복사 저항이다.</p>
 <p>그렇다면 이 복사 저항은 무엇 때문에 발생하는가? 간단한 예를 들어 보자: 안테나에서 전류가 위아래로 구동될 때 안테나가 에너지를 방출하려면 일을 해야 한다. 전하를 띤 물체를 위아래로 가속하면 에너지를 방출한다. 전하가 없으면 에너지를 방출하지 않을 것이다. 에너지 보존을 통해 에너지가 손실된다는 것을 계산하는 것과 우리가 어떤 힘에 대응하여 일을 하고 있는가 하는 질문에 답하는 것은 별개의 문제이다. 그것은 흥미롭고 매우 어려운 질문으로, 전자에 대해서는 아직 완전하고 만족스럽게 답변된 적이 없으며, 안테나에 대해서는 그렇게 된 적이 있다. 일어나는 일은 다음과 같다: 안테나에서는 안테나의 한 부분에서 움직이는 전하가 생성하는 장이 안테나의 다른 부분에서 움직이는 전하에 반응합니다. 우리는 이러한 힘을 계산하고 그들이 수행하는 일을 파악한 뒤, 방사선 저항에 대한 올바른 규칙을 찾을 수 있다. “우리는 계산할 수 있다” 라고 말했지만 아직은 할 수 없다. 왜냐하면 우리는 아직 짧은 거리에서 전기의 법칙을 연구하지 않으며 먼 거리에서만 전기장이 무엇인지 알 수 있다. 우리는 <a href="#eq-FLP_1_28_3" class="quarto-xref">식&nbsp;<span>4.20</span></a> 을 확인했지만, 현재는 파동 구역 내부의 장을 계산하기에 너무 복잡하다. 물론, 에너지 보존이 유효하기 때문에 우리는 짧은 거리의 필드를 모른 채 결과를 올바르게 계산할 수 있다. (사실, 이 논증을 거꾸로 적용하면, 매우 먼 거리에서의 장을 알고 에너지 보존 법칙을 이용해서만 짧은 거리에서의 힘의 공식을 찾을 수 있다는 것이 밝혀졌지만, 여기서는 이에 대해 자세히 파고들지 않는다.)</p>
@@ -1357,39 +1507,39 @@ S=\epsilon_0 c \langle E^2\rangle .
 <img src="figures/fig_1_32/fig_1_32_1.png" class="img-fluid figure-img" width="200">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_1_32_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;4.35: 파인만 물리학 강의 <span class="math inline">\(\textrm{I}\)</span> Fig. 32-1 구면 구간의 면적은 <span class="math inline">\(2\pi r \sin \theta \cdot rd\theta\)</span> 이다.
+그림&nbsp;4.37: 파인만 물리학 강의 <span class="math inline">\(\textrm{I}\)</span> Fig. 32-1 구면 구간의 면적은 <span class="math inline">\(2\pi r \sin \theta \cdot rd\theta\)</span> 이다.
 </figcaption>
 </figure>
 </div>
 <p>전기장에 대한 <a href="#eq-FLP_1_29_1" class="quarto-xref">식&nbsp;<span>4.24</span></a> 로 부터</p>
 <p><span id="eq-FLP_2_32_2"><span class="math display">\[
 S=\dfrac{q^2a'^2 \sin^2\theta}{16\pi^2 \epsilon_0 r^2c^3}
-\tag{4.47}\]</span></span></p>
-<p>이며 이는 <span class="math inline">\(\theta\)</span> 방향으로 방사되는 제곱미터당 전력이다. 앞서 말했듯이 <span class="math inline">\(1/r^2\)</span> 에 비례한다. 이제 전체 에너지를 모든 방향으로 복사한다면 모든 방향에 대해 <a href="#eq-FLP_2_32_2" class="quarto-xref">식&nbsp;<span>4.47</span></a> 를 적분해야 한다. 구면좌표계에서 적분하면</p>
+\tag{4.58}\]</span></span></p>
+<p>이며 이는 <span class="math inline">\(\theta\)</span> 방향으로 방사되는 제곱미터당 전력이다. 앞서 말했듯이 <span class="math inline">\(1/r^2\)</span> 에 비례한다. 이제 전체 에너지를 모든 방향으로 복사한다면 모든 방향에 대해 <a href="#eq-FLP_2_32_2" class="quarto-xref">식&nbsp;<span>4.58</span></a> 를 적분해야 한다. 구면좌표계에서 적분하면</p>
 <p><span class="math display">\[
 P=\int S r^2\sin\theta d\theta d\varphi dr = \dfrac{q2a'^2}{8\pi \epsilon_0 c^3}\int_0\pi \sin 3\theta d\theta
 \]</span></p>
 <p>이며 이로부터 다음을 얻는다.</p>
 <p><span id="eq-FLP_2_32_5"><span class="math display">\[
 P=\dfrac{q^2a'^2}{6\pi \epsilon_0 c^3}.
-\tag{4.48}\]</span></span></p>
-<p>이 식에 대해 좀 더 알아보자. <a href="#eq-FLP_2_32_5" class="quarto-xref">식&nbsp;<span>4.48</span></a> 는 지연 가속도를 사용하여 계산되었다. 즉, 현재 구를 통과하고 있는 에너지가 복사된 시점의 가속도이다. 우리는 이 에너지가 실제로 이 시기에 해방된 것이라고 말하고 싶습니다. 이는 정확히 사실이 아니며, 단지 대략적인 아이디어일 뿐입니다. 에너지가 해방되는 정확한 시간을 정확히 정의할 수 없습니다. 우리가 실제로 정확히 계산할 수 있는 것은 가속도가 결국 멈추는 완전한 운동, 예를 들어 진동과 같은 현상에서 일어나는 일입니다. 그렇다면 우리가 발견하는 바는 전체 사이클당 총 에너지 플럭스가 전체 사이클의 가속도 제곱 평균이라는 것입니다. 이것이 실제로 (32.5)에 표시되어야 할 내용입니다. 또는, 가속도가 처음에 0이고 최종적으로 0인 경우, 날아간 총 에너지는 (32.5)의 시간 적분이 됩니다.</p>
+\tag{4.59}\]</span></span></p>
+<p>이 식에 대해 좀 더 알아보자. <a href="#eq-FLP_2_32_5" class="quarto-xref">식&nbsp;<span>4.59</span></a> 는 지연 가속도를 사용하여 계산되었다. 즉, 현재 구를 통과하고 있는 에너지가 복사된 시점의 가속도이다. 우리는 이 에너지가 실제로 이 시기에 해방된 것이라고 말하고 싶습니다. 이는 정확히 사실이 아니며, 단지 대략적인 아이디어일 뿐입니다. 에너지가 해방되는 정확한 시간을 정확히 정의할 수 없습니다. 우리가 실제로 정확히 계산할 수 있는 것은 가속도가 결국 멈추는 완전한 운동, 예를 들어 진동과 같은 현상에서 일어나는 일입니다. 그렇다면 우리가 발견하는 바는 전체 사이클당 총 에너지 플럭스가 전체 사이클의 가속도 제곱 평균이라는 것입니다. 이것이 실제로 (32.5)에 표시되어야 할 내용입니다. 또는, 가속도가 처음에 0이고 최종적으로 0인 경우, 날아간 총 에너지는 (32.5)의 시간 적분이 됩니다.</p>
 </section>
 <section id="sec-FLP_1_32_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_32_3"><span class="math inline">\(\textrm{I}\)</span>.32-3 복사 감쇄</h3>
 <p><span id="eq-FLP_1_32_8"><span class="math display">\[
 Q = - \dfrac{\omega W}{dW/dt}.
-\tag{4.49}\]</span></span></p>
+\tag{4.60}\]</span></span></p>
 <p><span id="eq-FLP_1_32_12"><span class="math display">\[
 Q=\dfrac{3\lambda}{4\pi r_0} \approx 5 \times 10^7.
-\tag{4.50}\]</span></span></p>
+\tag{4.61}\]</span></span></p>
 <p><br></p>
 </section>
 <section id="sec-FLP_1_32_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_32_5"><span class="math inline">\(\textrm{I}\)</span>.32-5 광산란</h3>
 <p><span id="eq-FLP_1_32_19"><span class="math display">\[
 \sigma_s = \dfrac{8 \pi r_0^2}{3} \cdot \dfrac{\omega^4}{\left(\omega^2 - \omega_0^2\right)^2}
-\tag{4.51}\]</span></span></p>
+\tag{4.62}\]</span></span></p>
 <p><br></p>
 </section>
 </section>
