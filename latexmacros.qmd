@@ -27,7 +27,7 @@ format: html
 \newcommand{\tr}{\operatorname{tr}}
 \newcommand{\sgn}{\operatorname{sgn}}
 \newcommand{\bfhat}{\bf{}}
-
+\newcommand{\AA}{\mathrm{\mathring{A}}}
 
 
 \def\Xint#1{\mathchoice

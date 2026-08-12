@@ -334,13 +334,13 @@ window.Quarto = {
   <li><a href="#sec-FLP_1_24" id="toc-sec-FLP_1_24" class="nav-link" data-scroll-target="#sec-FLP_1_24"><span class="math inline">\(\textrm{I}\)</span>.24 진동의 감쇄</a>
   <ul class="collapse">
   <li><a href="#sec-FLP_1_24_1" id="toc-sec-FLP_1_24_1" class="nav-link" data-scroll-target="#sec-FLP_1_24_1"><span class="math inline">\(\textrm{I}\)</span>.24-1 진동자의 에너지</a></li>
-  <li><a href="#sec-FLP_1_24_2" id="toc-sec-FLP_1_24_2" class="nav-link" data-scroll-target="#sec-FLP_1_24_2">24-2 감쇄 진동</a></li>
-  <li><a href="#sec-FLP_1_24_3" id="toc-sec-FLP_1_24_3" class="nav-link" data-scroll-target="#sec-FLP_1_24_3">24-3 전기적 감쇄</a></li>
+  <li><a href="#sec-FLP_1_24_2" id="toc-sec-FLP_1_24_2" class="nav-link" data-scroll-target="#sec-FLP_1_24_2"><span class="math inline">\(\textrm{I}\)</span>.24-2 감쇄 진동</a></li>
+  <li><a href="#sec-FLP_1_24_3" id="toc-sec-FLP_1_24_3" class="nav-link" data-scroll-target="#sec-FLP_1_24_3"><span class="math inline">\(\textrm{I}\)</span>.24-3 전기적 감쇄</a></li>
   </ul></li>
-  <li><a href="#sec-FLP_1_25" id="toc-sec-FLP_1_25" class="nav-link" data-scroll-target="#sec-FLP_1_25">25. 선형 시스템</a>
+  <li><a href="#sec-FLP_1_25" id="toc-sec-FLP_1_25" class="nav-link" data-scroll-target="#sec-FLP_1_25"><span class="math inline">\(\textrm{I}\)</span>.25. 선형 시스템</a>
   <ul class="collapse">
-  <li><a href="#sec-FLP_1_25_1" id="toc-sec-FLP_1_25_1" class="nav-link" data-scroll-target="#sec-FLP_1_25_1">25-1 선형 미분 방정식</a></li>
-  <li><a href="#sec-FLP_1_25_2" id="toc-sec-FLP_1_25_2" class="nav-link" data-scroll-target="#sec-FLP_1_25_2">25-2해의 중첩</a></li>
+  <li><a href="#sec-FLP_1_25_1" id="toc-sec-FLP_1_25_1" class="nav-link" data-scroll-target="#sec-FLP_1_25_1"><span class="math inline">\(\textrm{I}\)</span>.25-1 선형 미분 방정식</a></li>
+  <li><a href="#sec-FLP_1_25_2" id="toc-sec-FLP_1_25_2" class="nav-link" data-scroll-target="#sec-FLP_1_25_2"><span class="math inline">\(\textrm{I}\)</span>.25-2해의 중첩</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1204,16 +1204,16 @@ P = F\dfrac{dx}{dt} &amp;= m \left[\left(\dfrac{dx}{dt}\right)\left(\dfrac{dx^2}
 </section>
 <section id="sec-FLP_second_Q_factor" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="sec-FLP_second_Q_factor"><strong><span class="math inline">\(Q\)</span> 인자</strong></h4>
-<div class="page-columns page-full"><p>한 주기에서 강제 감쇄 조화진동자에 외부의 힘이 해주는 일과 저장되는 에너지 사이의 비율에 <span class="math inline">\(2\pi\)</span> 를 곱한 값을 <span class="math inline">\(Q\)</span> 값, 혹은 <span class="math inline">\(Q\)</span> 인자<span class="math inline">\(^4\)</span>라고 한다. </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^4\)</span> <a href="#eq-FLP_defintion_of_first_Q_factor" class="quarto-xref">식&nbsp;<span>3.54</span></a> 와 같은 이름, 다른 정의의 <span class="math inline">\(Q\)</span> 인자이다.</span></div></div>
+<div class="page-columns page-full"><p><span class="math inline">\(Q\)</span> 는 평균 저장 에너지에 <span class="math inline">\(2\pi\)</span> 를 곱하고 한 주기당 수행된 일으로 나눈 값으로 정의된다<span class="math inline">\(^4\)</span>. </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^4\)</span> <a href="#eq-FLP_defintion_of_first_Q_factor" class="quarto-xref">식&nbsp;<span>3.54</span></a> 와 같은 이름, 다른 정의의 <span class="math inline">\(Q\)</span> 인자이다.</span></div></div>
 <p><span id="eq-FLP_1_24_7"><span class="math display">\[
-Q := 2\pi \dfrac{\langle P\rangle}{\langle T+U\rangle} = \dfrac{\omega^2 + \omega_0^2}{2\gamma \omega}.
+Q := 2\pi \dfrac{\langle E\rangle}{\langle P\rangle \cdot 2\pi/\omega} = \dfrac{\omega^2 + \omega_0^2}{2\gamma \omega}.
 \tag{3.66}\]</span></span></p>
 <p><span class="math inline">\(Q\)</span> 값은 이 진동자가 얼마나 효율적인지에 대한 척도이다.</p>
 <p><br></p>
 </section>
 </section>
 <section id="sec-FLP_1_24_2" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_24_2">24-2 감쇄 진동</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_1_24_2"><span class="math inline">\(\textrm{I}\)</span>.24-2 감쇄 진동</h3>
 <p><em>파인만의 내용전개와 다르게…</em></p>
 <section id="강제감쇄진동-미분방정식의-해" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="강제감쇄진동-미분방정식의-해"><strong>강제감쇄진동 미분방정식의 해</strong></h4>
@@ -1269,7 +1269,7 @@ x(t) = (A_1+A_2t)e^{-\gamma t/2}
 </section>
 </section>
 <section id="sec-FLP_1_24_3" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_24_3">24-3 전기적 감쇄</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_1_24_3"><span class="math inline">\(\textrm{I}\)</span>.24-3 전기적 감쇄</h3>
 <div id="fig-FLP_1_24_2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_24_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1284,9 +1284,9 @@ x(t) = (A_1+A_2t)e^{-\gamma t/2}
 </section>
 </section>
 <section id="sec-FLP_1_25" class="level2">
-<h2 class="anchored" data-anchor-id="sec-FLP_1_25">25. 선형 시스템</h2>
+<h2 class="anchored" data-anchor-id="sec-FLP_1_25"><span class="math inline">\(\textrm{I}\)</span>.25. 선형 시스템</h2>
 <section id="sec-FLP_1_25_1" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_25_1">25-1 선형 미분 방정식</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_1_25_1"><span class="math inline">\(\textrm{I}\)</span>.25-1 선형 미분 방정식</h3>
 <p>여기에서는 진동 시스템의 일반적인 측면에 대해 다룬다. 지금까지는 아래와 같은 미분방정식을 다루었다.</p>
 <p><span id="eq-FLP_1_25_1"><span class="math display">\[
 m \dfrac{d^2x}{dt^2}+ \gamma m \dfrac{dx}{dt}+m\omega_0^2 x = F(t).
@@ -1318,7 +1318,7 @@ m \dfrac{d^2x}{dt^2}+ \gamma m \dfrac{dx}{dt}+m\omega_0^2 x = F(t).
 <p><br></p>
 </section>
 <section id="sec-FLP_1_25_2" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_1_25_2">25-2해의 중첩</h3>
+<h3 class="anchored" data-anchor-id="sec-FLP_1_25_2"><span class="math inline">\(\textrm{I}\)</span>.25-2해의 중첩</h3>
 <section id="중첩" class="level4">
 <h4 class="anchored" data-anchor-id="중첩"><strong>중첩</strong></h4>
 <p><span class="math inline">\(\mathcal{L}(x_a)=F_a\)</span> 이고 <span class="math inline">\(\mathcal{L}(x_b)=F_b\)</span> 일 때 <span class="math inline">\(\mathcal{L}(x_a+x_b) = F_a+F_b\)</span> 이다. 이를 해의 <strong>중첩 (superposition)</strong> 이라고 한다. 이것은 매우 중요한데 만약 <span class="math inline">\(\mathcal{L}(x)=F(t)\)</span> 에서 <span class="math inline">\(F(t)\)</span> 자체는 복잡하지만 <span class="math inline">\(F=\sum_i F_i\)</span> 이며 <span class="math inline">\(\mathcal{L}(x_i)=F_i\)</span> 는 비교적 쉽게 구할 수 있다면 <span class="math inline">\(x= \sum_i x_i\)</span> 가 <span class="math inline">\(\mathcal{L}(x)=F(t)\)</span> 의 해가 되기 때문이다.</p>

@@ -929,17 +929,17 @@ $\omega \approx \omega_0$ 이면 $x_0$ 가 매우 커지기 때문에(@eq-FLP_1_
 
 #### **$Q$ 인자** {#sec-FLP_second_Q_factor}
 
-한 주기에서 강제 감쇄 조화진동자에 외부의 힘이 해주는 일과 저장되는 에너지 사이의 비율에 $2\pi$ 를 곱한 값을 $Q$ 값, 혹은 $Q$ 인자$^4$라고 한다. [$^4$ @eq-FLP_defintion_of_first_Q_factor 와 같은 이름, 다른 정의의 $Q$ 인자이다.]{.aside}
+$Q$ 는 평균 저장 에너지에 $2\pi$ 를 곱하고 한 주기당 수행된 일으로 나눈 값으로 정의된다$^4$. [$^4$ @eq-FLP_defintion_of_first_Q_factor 와 같은 이름, 다른 정의의 $Q$ 인자이다.]{.aside}
 
 $$
-Q := 2\pi \dfrac{\langle P\rangle}{\langle T+U\rangle} = \dfrac{\omega^2 + \omega_0^2}{2\gamma \omega}.
+Q := 2\pi \dfrac{\langle E\rangle}{\langle P\rangle \cdot 2\pi/\omega} = \dfrac{\omega^2 + \omega_0^2}{2\gamma \omega}.
 $$ {#eq-FLP_1_24_7}
 
 $Q$ 값은 이 진동자가 얼마나 효율적인지에 대한 척도이다.
 
 </br>
 
-### 24-2 감쇄 진동 {#sec-FLP_1_24_2}
+### $\textrm{I}$.24-2 감쇄 진동 {#sec-FLP_1_24_2}
 
 *파인만의 내용전개와 다르게...*
 
@@ -1017,7 +1017,7 @@ $$
 
 </br>
 
-### 24-3 전기적 감쇄 {#sec-FLP_1_24_3}
+### $\textrm{I}$.24-3 전기적 감쇄 {#sec-FLP_1_24_3}
 
 
 ![파인만 물리학 강의 $\textrm{I}$. Fig. 24-2. 전기적 감쇄를 표현하기 위한 전기 회로](figures/fig_1_24/fig_1_24_2.png){#fig-FLP_1_24_2 width=360}
@@ -1025,9 +1025,9 @@ $$
 
 </br>
 
-## 25. 선형 시스템 {#sec-FLP_1_25}
+## $\textrm{I}$.25. 선형 시스템 {#sec-FLP_1_25}
 
-### 25-1 선형 미분 방정식 {#sec-FLP_1_25_1}
+### $\textrm{I}$.25-1 선형 미분 방정식 {#sec-FLP_1_25_1}
 
 여기에서는 진동 시스템의 일반적인 측면에 대해 다룬다. 지금까지는 아래와 같은 미분방정식을 다루었다. 
 
@@ -1076,7 +1076,7 @@ $$
 
 </br>
 
-### 25-2해의 중첩 {#sec-FLP_1_25_2}
+### $\textrm{I}$.25-2해의 중첩 {#sec-FLP_1_25_2}
 
 #### **중첩**
 
