@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -356,7 +359,10 @@ window.Quarto = {
   <li><a href="#sec-FLP_1_32_4" id="toc-sec-FLP_1_32_4" class="nav-link" data-scroll-target="#sec-FLP_1_32_4"><span class="math inline">\(\textrm{I}\)</span>.32.4 독립적인 소스</a></li>
   <li><a href="#sec-FLP_1_32_5" id="toc-sec-FLP_1_32_5" class="nav-link" data-scroll-target="#sec-FLP_1_32_5"><span class="math inline">\(\textrm{I}\)</span>.32-5 광산란</a></li>
   </ul></li>
-  <li><a href="#sec-FLP_1_33" id="toc-sec-FLP_1_33" class="nav-link" data-scroll-target="#sec-FLP_1_33"><span class="math inline">\(\textrm{I}\)</span>.33 편광</a></li>
+  <li><a href="#sec-FLP_1_33" id="toc-sec-FLP_1_33" class="nav-link" data-scroll-target="#sec-FLP_1_33"><span class="math inline">\(\textrm{I}\)</span>.33 편광</a>
+  <ul class="collapse">
+  <li><a href="#sec-FLP_1_33_1" id="toc-sec-FLP_1_33_1" class="nav-link" data-scroll-target="#sec-FLP_1_33_1"><span class="math inline">\(\textrm{I}\)</span>.33-1 빛의 전기 벡터</a></li>
+  </ul></li>
   <li><a href="#sec-FLP_1_34" id="toc-sec-FLP_1_34" class="nav-link" data-scroll-target="#sec-FLP_1_34"><span class="math inline">\(\textrm{I}\)</span>.34 복사의 상대론적 효과</a></li>
   </ul>
 </nav>
@@ -1808,7 +1814,23 @@ P=\left(\dfrac{1}{2}\epsilon_0cE_0^2\right)\sigma_s.
 </section>
 <section id="sec-FLP_1_33" class="level2">
 <h2 class="anchored" data-anchor-id="sec-FLP_1_33"><span class="math inline">\(\textrm{I}\)</span>.33 편광</h2>
+<section id="sec-FLP_1_33_1" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_33_1"><span class="math inline">\(\textrm{I}\)</span>.33-1 빛의 전기 벡터</h3>
+<p>이 장에서는 빛을 기술하는 전기장이 벡터라는 사실에 의존하는 현상들을 다룬다. 이전 장들에서는 전기장의 진동 방향에 대해 다루지 않았으며, 전기장 벡터가 전달 방향에 수직인 평면에 놓여 있다는 것만 이야기했고 이 평면에서의 특정 방향애는 관심을 두지 않았다. 우리는 이제 전기장의 특정 진동 방향이 중심적인 현상을 알아본다.</p>
+<p>이상적인 단색광에서는 전기장이 일정한 진동수를 갖지만 <span class="math inline">\(x\)</span>-성분과 <span class="math inline">\(y\)</span>-성분이가 일정한 진동수에서 독립적으로 진동할 수 있기 때문에, 먼저 두 개의 독립적인 진동을 서로 직각으로 중첩시켜 발생하는 효과를 생각한다. 동일한 진동수로 진동하는 <span class="math inline">\(x\)</span>-성분과 <span class="math inline">\(y\)</span>-성분으로 구성된 전기장은 어떤 종류입니까? 같은 위상에서 <span class="math inline">\(x\)</span>-진동에 일정량의 <span class="math inline">\(y\)</span>-진동을 추가하면, 그 결과는 <span class="math inline">\(xy\)</span>-평면에서의 새로운 방향으로 진동이다. <a href="#fig-FLP_1_33_1" class="quarto-xref">그림&nbsp;<span>4.45</span></a> 은 <span class="math inline">\(x\)</span>-진동과 <span class="math inline">\(y\)</span>-진동에 대한 서로 다른 진폭의 중첩을 보여준다. 하지만 <a href="#fig-FLP_1_33_1" class="quarto-xref">그림&nbsp;<span>4.45</span></a> 에 표현된 것만 가능한 것은 아니다. 또한 <span class="math inline">\(x\)</span>-진동과 <span class="math inline">\(y\)</span>-진동이 같은 위상이라고 가정했지만 위상이 어긋나 있을 수 있다.</p>
+<div id="fig-FLP_1_33_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_1_33_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_1_33/fig_1_33_1/fig_1_33_1.png" class="img-fluid figure-img" width="550">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_1_33_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;4.45: 파인만 물리학 강의 <span class="math inline">\(\textrm{I}\)</span> Fig. 33-1 위상에서 <span class="math inline">\(x\)</span>-진동과 <span class="math inline">\(y\)</span>-진동의 중첩.
+</figcaption>
+</figure>
+</div>
+<p><span class="math inline">\(x\)</span>-진동과 <span class="math inline">\(y\)</span>-진동의 위상이 어긋나 있다면, 전기장 벡터는 타원처럼 움직이며, 우리는 이를 친숙하게 설명할 수 있습니다. 긴 끈으로 지지대에 공을 걸어 수평면에서 자유롭게 흔들 수 있게 하면, 그 공은 사인파 진동을 수행합니다. 수평 x와 y 좌표가 공의 나머지 위치에서 그 원점을 가지고 있다고 가정한다면, 공은 동일한 진자 주파수로 x 또는 y 방향으로 흔들릴 수 있습니다. 적절한 초기 변위와 초기 속도를 선택함으로써, 우리는 공을 x축 또는 y축을 따라, 혹은 xy 평면의 어느 직선을 따라 진동하도록 설정할 수 있습니다. 공의 이러한 움직임은 그림에 표시된 전기장 벡터의 진동과 유사합니다. 33–1. 각 경우마다 x-진동과 y-진동이 동시에 최대와 최소에 도달하므로, x와 y 진동은 위상에 맞춰 있습니다. 하지만 우리는 공의 가장 일반적인 운동이 타원에서의 움직임이며, 이는 x와 y 방향이 같은 위상에 있지 않은 진동에 해당한다는 것을 알고 있습니다. 위상이 아닌 x와 y 진동의 중첩은 그림 33–2에서 x 진동의 위상과 y 진동의 위상 사이의 다양한 각도에 대해 설명되어 있습니다. 일반적인 결과는 전기 벡터가 타원 주위를 움직인다는 것입니다. 직선에서의 운동은 위상 차이가 0인 경우(또는 π의 정수 배수)에 해당하는 특정 경우이며, 원 안의 운동은 위상 차이가 90∘인 동일한 진폭(또는 π/2의 홀수 정수 배수)에 해당합니다.</p>
 <p><br></p>
+</section>
 </section>
 <section id="sec-FLP_1_34" class="level2">
 <h2 class="anchored" data-anchor-id="sec-FLP_1_34"><span class="math inline">\(\textrm{I}\)</span>.34 복사의 상대론적 효과</h2>
