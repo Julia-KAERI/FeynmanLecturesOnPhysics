@@ -20,32 +20,42 @@
     \begin{scope}  
         \draw [line width=2, myred] (-1, -1) -- (1, 1);
         \node [] at (0, -1.2) {$\boldsymbol{E}=(\cos \omega t,\, \cos \omega t)$};
+        \node [] at (0, 1.2) {(a)};
     \end{scope}
     \begin{scope} [xshift=80]
-        \draw [myred, line width=2,  domain=40:400, samples=40, -stealth] plot ({cos(\x)}, {cos(\x+45)} );
-        
-        \node [] at (0, -1.2) {$\boldsymbol{E}=(\cos (\omega t),\, \cos(\omega t+\pi/4)$};
+        \draw [myred, line width=2,  domain=40:400, samples=40, -stealth] plot ({cos(\x)}, {cos(\x+45)} );  
+        \node [] at (0, -1.2) {$\boldsymbol{E}=\left(\cos \omega t,\, \cos(\omega t+\frac{\pi}{4})\right)$};
+        \node [] at (0, 1.2) {(b)};
     \end{scope}
     \begin{scope} [xshift=160]
         \draw [myred, line width=2,  domain=40:400, samples=40, -stealth] plot ({cos(\x)}, {-sin(\x)} );
-        \node [] at (0, -1.2) {$\boldsymbol{E}=(\cos (\omega t),\, -\sin(\omega t)$};
+        \node [] at (0, -1.2) {$\boldsymbol{E}=(\cos \omega t,\, -\sin\omega t)$};
+        \node [] at (0, 1.2) {(c)};
     \end{scope}
     \begin{scope} [xshift=240] 
         \draw [myred, line width=2,  domain=80:440, samples=40, -stealth] plot ({cos(\x)}, {cos(\x+135)} );
-        
-        \node [] at (0, -1.2) {$\boldsymbol{E}=(\cos (\omega t),\, \cos(\omega t+3\pi/4)$};
+        \node [] at (0, -1.2) {$\boldsymbol{E}=\left(\cos \omega t,\, \cos(\omega t+\frac{3\pi}{4})\right)$};
+        \node [] at (0, 1.2) {(d)};
     \end{scope}
-    \begin{scope} [xshift=80, yshift=-80]
-        \draw (-1, 0) -- (1, 0) node [right] {$x$};
-        \draw (0, -1) -- (0, 1) node [above] {$y$};
-        \draw [line width=2, myred] (-1, 1) -- (1, -1);
-        \node [] at (0, -1.2) {$E_y=1,\, E_x=-1$};
+    \begin{scope}  [xshift=0, yshift=-90]
+        \draw [myred, line width=2,  domain=80:440, samples=40] plot ({cos(\x)}, {-cos(\x)} );
+        \node [] at (0, -1.2) {$\boldsymbol{E}=(\cos \omega t,\, -\cos \omega t)$};
+        \node [] at (0, 1.2) {(d)};
     \end{scope}
-    \begin{scope} [xshift=160, yshift=-80]
-        \draw (-1, 0) -- (1, 0) node [right] {$x$};
-        \draw (0, -1) -- (0, 1) node [above] {$y$};
-        \draw [line width=2, myred] (-1, 1) -- (1, -1);
-        \node [] at (0, -1.2) {$E_y=-1,\, E_x=1$};
+    \begin{scope} [xshift=80, yshift=-90]
+        \draw [myred, line width=2,  domain=40:400, samples=40, -stealth] plot ({cos(\x)}, {-cos(\x+45)} );  
+        \node [] at (0, -1.2) {$\boldsymbol{E}=\left(\cos \omega t,\, -\cos\left(\omega t+\frac{\pi}{4}\right)\right)$};
+        \node [] at (0, 1.2) {(f)};
+    \end{scope}
+    \begin{scope} [xshift=160, yshift=-90]
+        \draw [myred, line width=2,  domain=40:400, samples=40, -stealth] plot ({cos(\x)}, {sin(\x)} );  
+        \node [] at (0, -1.2) {$\boldsymbol{E}=(\cos \omega t,\, \sin\omega t)$};
+        \node [] at (0, 1.2) {(g)};
+    \end{scope}
+     \begin{scope} [xshift=240, yshift=-90]
+        \draw [myred, line width=2,  domain=40:400, samples=40, -stealth] plot ({cos(\x)}, {-cos(\x+135)} );  
+        \node [] at (0, -1.2) {$\boldsymbol{E}=\left(\cos \omega t,\, -\cos\left(\omega t+ \frac{3\pi}{4}\right)\right)$};
+        \node [] at (0, 1.2) {(h)};
     \end{scope}
   
 
