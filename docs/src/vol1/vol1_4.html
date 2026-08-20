@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,13 +12,10 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -44,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-221f8d40ef94b7d7736ec4c1e420c32a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -77,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -378,6 +375,8 @@ window.Quarto = {
   <li><a href="#sec-FLP_1_34_5" id="toc-sec-FLP_1_34_5" class="nav-link" data-scroll-target="#sec-FLP_1_34_5"><span class="math inline">\(\mathrm{I}\)</span>.34–5 제동복사</a></li>
   <li><a href="#sec-FLP_1_34_6" id="toc-sec-FLP_1_34_6" class="nav-link" data-scroll-target="#sec-FLP_1_34_6"><span class="math inline">\(\mathrm{I}\)</span>.34–6 도플러 효과</a></li>
   <li><a href="#sec-FLP_1_34_7" id="toc-sec-FLP_1_34_7" class="nav-link" data-scroll-target="#sec-FLP_1_34_7"><span class="math inline">\(\mathrm{I}\)</span>.34–7 진동수-파수 4 벡터</a></li>
+  <li><a href="#sec-FLP_1_34_8" id="toc-sec-FLP_1_34_8" class="nav-link" data-scroll-target="#sec-FLP_1_34_8"><span class="math inline">\(\mathrm{I}\)</span>.34-8 광행차</a></li>
+  <li><a href="#sec-FLP_1_34_9" id="toc-sec-FLP_1_34_9" class="nav-link" data-scroll-target="#sec-FLP_1_34_9"><span class="math inline">\(\textrm{I}\)</span>.34–9 빛의 운동량</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -2243,7 +2242,71 @@ k' = \dfrac{k+\omega v/c^2}{\sqrt{1-v^2/c^2}}.
 </section>
 <section id="sec-FLP_1_34_7" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_34_7"><span class="math inline">\(\mathrm{I}\)</span>.34–7 진동수-파수 4 벡터</h3>
-<p><a href="#eq-FLP_1_34_17" class="quarto-xref">식&nbsp;<span>4.107</span></a> 과 <a href="#eq-FLP_1_34_18" class="quarto-xref">식&nbsp;<span>4.108</span></a> 은 새로운 주파수와 파수 <span class="math inline">\(\omega',\,k'\)</span> 이 각각 기존 주파수와 파수의 선형결합임을 보여준다. 파수는 거리에 대해 위상이 변하는 속도이며, 진동수는 시간에 대해 변하는 위상의 속도이다. 이 두 식에서 위치와 시간의 로렌츠 변환과의 유사성을 볼 수 있습니다: <span class="math inline">\(\omega\)</span> 가 <span class="math inline">\(t\)</span> 와 같고 <span class="math inline">\(k\)</span> 가 <span class="math inline">\(x\)</span> 를 <span class="math inline">\(c^2\)</span> 로 나눈 것으로 생각된다면, 새로운 ω′는 t′와 같고, 새로운 k′는 x′/c2와 같습니다. 즉, 로렌츠 변환 하에서 ω와 k는 do t와 x와 같은 방식으로 변환됩니다. 그들은 우리가 ’사벡터’라고 부르는 것을 구성합니다; 시간이와 공간처럼 변환되는 네 성분을 가진 양은 사벡터입니다. 그렇다면 모든 것이 괜찮은 것 같습니다만, 한 가지 작은 점을 제외하고는: 우리는 네 개의 벡터가 네 개의 구성 요소를 가져야 한다고 말했는데, 나머지 두 구성 요소는 어디에 있나요? 우리는 ω와 k가 한 공간 방향에서는 시간과 공간과 같지만 모든 방향에서는 그렇지 않다는 것을 확인했으며, 따라서 지금까지 해오던 것처럼 빛의 전파가 한 방향이 아니라 세 차원에 걸쳐 전파되는 문제를 연구해야 합니다.</p>
+<p><a href="#eq-FLP_1_34_17" class="quarto-xref">식&nbsp;<span>4.107</span></a> 과 <a href="#eq-FLP_1_34_18" class="quarto-xref">식&nbsp;<span>4.108</span></a> 은 새로운 주파수와 파수 <span class="math inline">\(\omega',\,k'\)</span> 이 각각 기존 주파수와 파수의 선형결합임을 보여준다. 파수는 거리에 대해 위상이 변하는 속도이며, 진동수는 시간에 대해 변하는 위상의 속도이다. 이 두 식에서 위치와 시간의 로렌츠 변환과의 유사성을 볼 수 있다. 그러나 로렌츠 변환은 4-벡터 사이의 변환이며 우리는 진동수와 파수, 두가지 값만 가지고 있다. 이제 파동의 진행방향으로의 단위벡터 <span class="math inline">\(\boldsymbol{e}_k\)</span>, 그리고 파장 <span class="math inline">\(\lambda\)</span> 에 대해 파수벡터 <span class="math inline">\(\boldsymbol{k}\)</span> 를 다음과 같이 정의한다.</p>
+<p><span id="eq-FLP_1_34_19"><span class="math display">\[
+\boldsymbol{k} := 2\pi \boldsymbol{e}_k/\lambda = k\boldsymbol{e}_k
+\tag{4.109}\]</span></span></p>
+<p>그렇다면</p>
+<p><span class="math display">\[
+e^{i(\omega t - \boldsymbol{k\cdot r})} = e^{i(\omega t - k_x x - k_y y - k_z z)}
+\]</span></p>
+<p>이며 <span class="math inline">\(k_x\)</span> 는 <span class="math inline">\(x\)</span> 방향으로의 위상 변화율이다. <span class="math inline">\(e^{i(\omega t- kx)}\)</span> 는 1차원상의 파동의 전달을 기술했지만 <span class="math inline">\(e^{i(\omega t - \boldsymbol{k\cdot r})}\)</span> 은 3차원상에서의 파동의 전달을 기술한다. 이로부터 파동에 대한 4-벡터 <span class="math inline">\(K^\mu\)</span> 를 다음과 같이 정의한다.</p>
+<p><span class="math display">\[
+K^\mu = (\omega/c,\, k_x,\,k_y,\, k_z)
+\]</span></p>
+<p>그렇다면</p>
+<p><span class="math display">\[
+K^\mu K_\mu = \omega^2/c^2 -k^2 =0
+\]</span></p>
+<p>이며</p>
+<p><span id="eq-FLP_1_34_21"><span class="math display">\[
+K^\mu X_\mu = \omega t - k_x x - k_y y - k_z z
+\tag{4.110}\]</span></span></p>
+<p>이다. 이 양은 스칼라이므로 변환에 대해 불변이며 특히 <a href="#eq-FLP_1_34_21" class="quarto-xref">식&nbsp;<span>4.110</span></a> 은 평면파에서의 파동의 위상이 로렌츠 변환에 대해 불변임을 말한다.</p>
+</section>
+<section id="sec-FLP_1_34_8" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_34_8"><span class="math inline">\(\mathrm{I}\)</span>.34-8 광행차</h3>
+<div id="fig-FLP_1_34_12" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_1_34_12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_1_34/fig_1_34_12.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_1_34_12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;4.61: 파인만 물리학 강의 <span class="math inline">\(\textrm{I}\)</span> Fig. 34-12 멀리 떨어진 소스 <span class="math inline">\(S\)</span> 는 (a) 고정식 망원경과 (b) 측면으로 이동하는 망원경에 의해 관측된다.
+</figcaption>
+</figure>
+</div>
+<p><a href="#eq-FLP_1_34_17" class="quarto-xref">식&nbsp;<span>4.107</span></a> 과 <a href="#eq-FLP_1_34_18" class="quarto-xref">식&nbsp;<span>4.108</span></a> 식을 유도할 때 <span class="math inline">\(\boldsymbol{k}\)</span> 가 운동 방향에 있었던 간단한 예를 들었지만, 다른 경우에도 일반화할 수 있다. 예를 들어, 한 사람의 시점에서 특정 방향으로 빛을 보내는 원천이 존재하지만, 우리는 지구 위를 이동하고 있다고 하자(<a href="#fig-FLP_1_34_12" class="quarto-xref">그림&nbsp;<span>4.61</span></a>). 빛이 어느 방향에서 오는 지 알아내기 위해서는 <span class="math inline">\(K^\mu\)</span> 의 네 가지 구성 요소를 적고 로렌츠 변환을 적용해야 한다. 하지만 다음과 같은 논리로도 찾을 수 있다. 빛을 보려면 망원경을 특정 각도로 기울여야 한다. 빛이 속도 <span class="math inline">\(c\)</span> 로 내려오고, 우리는 속도 <span class="math inline">\(v\)</span> 로 옆으로 움직이고 있기 때문에, 빛이 내려올 때 빛이 튜브를 <strong>직진하여</strong> 내려가도록 망원경을 기울여야 한다. 수직 거리가 <span class="math inline">\(ct\)</span> 일 때 수평 거리가 <span class="math inline">\(vt\)</span> 임을 매우 쉽게 알 수 있으며, 따라서 기울기 각도 <span class="math inline">\(\theta'\)</span> 은 <span class="math inline">\(\tan \theta'=v/c\)</span> 를 만족해야 한다(?). 하자만 이것은 “고정된” 관찰자의 관점에서 분석을 했기 때문에 틀렸다. 우리가 수평 거리가 <span class="math inline">\(vt\)</span> 라고 말했을 때, 지구에 있는 사람은 상대성 이론에 따라 축소된 자로 측정했기 때문에 다른 거리를 찾았을 것이다. 따라서</p>
+<p><span id="eq-FLP_1_34_22"><span class="math display">\[
+\tan \theta = \dfrac{v/c}{\sqrt{1−v^2/c^2}},
+\tag{4.111}\]</span></span></p>
+<p>혹은</p>
+<p><span id="eq-FLP_1_34_23"><span class="math display">\[
+\sin \theta = v/c.
+\tag{4.112}\]</span></span></p>
+<p>이것을 유도하는 것은 연습으로 남긴다. 이 현상, 즉 망원경을 기울여야 하는 현상을 <strong>광행차 (aberration)</strong> 라고 하며, 관측되었다. 우리는 어떻게 그것을 관찰할 수 있을까? 누가 주어진 별이 어디에 있어야 할지 말할 수 있는가? 예를 들어, 별을 보기 위해 잘못된 방향을 바라봐야 한다면, 그것이 잘못된 방향인지 어떻게 알 수 있는가? 답은 지구가 태양을 공전하는 것에 있다. 오늘 망원경을 한 방향으로 향했다면 6개월 후에는 망원경을 반대 방향으로 기울여야 한다. 그것이 우리가 그런 효과가 있다는 것을 알 수 있는 방법이다.</p>
+</section>
+<section id="sec-FLP_1_34_9" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_34_9"><span class="math inline">\(\textrm{I}\)</span>.34–9 빛의 운동량</h3>
+<p>이제 다른 주제로 전환한다.. 우리는 지난 몇 장의 모든 논의에서 빛과 연관된 자기장의 효과에 대해 한 번도 말한 적이 없다. 보통 자기장의 영향은 매우 작지만, 자기장의 결과인 흥미롭고 중요한 효과가 하나 있다. 광원에서 빛이 나오고 전하에 작용하여 그 전하를 위아래로 구동한다고 하자. 전기장이 <span class="math inline">\(x\)</span> 방향에 있다고 가정하면, 전하의 움직임도 <span class="math inline">\(x\)</span> 방향이다. 전하는 위치 <span class="math inline">\(x\)</span> 와 속도 <span class="math inline">\(v\)</span> 를 가지고 있다. 자기장은 전기장과 직각이다. 전기장이 전하에 작용하여 위아래로 움직일 때, <span class="math inline">\(qvB\)</span> 의 힘이 빛의 전파 방향으로 가해진다. 즉 전하에 빛이 비추고 그 빛에 반응하여 진동할 때, 빛 광선의 방향에 구동력이 작용한다. 이를 <strong>복사압 (radiation pressure)</strong> 또는 <strong>광압 (light pressure)</strong> 이라고 한다.</p>
+<p>이 복사압을 계산해 보자. <span class="math inline">\(F=qvB\)</span> 이며 모든것이 진동하므로 시간에 대한 평균인 <span class="math inline">\(\langle F\rangle\)</span> 을 구해야 한다. <a href="#eq-FLP_1_34_2" class="quarto-xref">식&nbsp;<span>4.92</span></a> 로 부터 <span class="math inline">\(\langle F\rangle = q\langle vE\rangle/c\)</span> 임을 안다. 그리고 힘에 속도를 곱한 것은 단위 시간당 수행하는 일 <span class="math inline">\(dW/dt\)</span> 이다. 빛에 의해 초당 전달되는 힘, 즉 “푸싱 모멘텀”은 빛으로부터 초당 흡수하는 에너지의 <span class="math inline">\(1/c\)</span> 와 같다! 그것은 일반적인 규칙이며, 우리는 오실레이터의 강도와 일부 충전이 상쇄되는지 여부를 밝히지 않았기 때문입니다. 빛이 흡수되는 모든 상황에서는 압력이 존재한다. 빛이 전달하는 운동량은 항상 흡수된 에너지를 <span class="math inline">\(c\)</span> 로 나눈 값과 같다.</p>
+<p><span id="eq-FLP_1_34_24"><span class="math display">\[
+\langle F\rangle = \dfrac{dW/dt}{c}.
+\tag{4.113}\]</span></span></p>
+<p>이 빛은 우리가 이미 알고 있는 에너지를 담고 있다. 또한 빛은 또한 운동량을 전송한다는 것을 이해했으며, 더 나아가 운반되는 운동량은 항상 에너지의 <span class="math inline">\(1/c\)</span> 배임을 알게 되었다. 광원에서 빛이 방출될 때 반동 효과가 발생합니다: 반대로도 같은 현상이 발생합니다. 원자가 어떤 방향으로 에너지 <span class="math inline">\(W\)</span> 를 방출하고 있다면, 반동 모멘텀 <span class="math inline">\(p=W/c\)</span> 가 존재합니다. 빛이 거울에 정상적으로 반사되면, 우리는 두 배의 힘을 얻게 된다. 고전적인 빛 이론을 사용하여 우리가 갈 수 있는 이 정도이다. 물론 우리는 양자 이론이 존재한다는 것과 많은 면에서 빛이 입자처럼 작용한다는 것을 알고 있다. 빛 입자의 에너지는</p>
+<p><span id="eq-FLP_1_34_25"><span class="math display">\[
+W=h\nu = \hbar \omega .
+\tag{4.114}\]</span></span></p>
+<p>빛의 운동량은 에너지를 <span class="math inline">\(c\)</span> 로 나눈 값이므로</p>
+<p><span id="eq-FLP_1_34_26"><span class="math display">\[
+p=W/c=\hbar \omega/c = \hbar k.
+\tag{4.115}\]</span></span></p>
+<p>이것을 벡터 형태로 표현하면</p>
+<p><span id="eq-FLP_1_34_27"><span class="math display">\[
+W=\hbar \omega ,\qquad \boldsymbol{p}=\hbar \boldsymbol{k}.
+\tag{4.116}\]</span></span></p>
+<p>우리는 입자의 에너지와 운동량이 4-벡터를 형성해야 한다는 것을 알고 있다. 우리는 앞서 4-벡터 <span class="math inline">\(K^\mu\)</span> 를 찾았다. 따라서 <span class="citation" data-cites="eq0-FLP_1_34_27">(<a href="../../references.html#ref-eq0-FLP_1_34_27" role="doc-biblioref"><strong>eq0-FLP_1_34_27?</strong></a>)</span> 이 연관된 입자에 대해 상대론적 방정식인 <span class="math inline">\(P^\mu\)</span> = K^$ 로 보다 우아하게 표현될 수 있다. 비록 우리는 <span class="math inline">\(k=\omega/c\)</span>, <span class="math inline">\(p=W/c\)</span> 인 광자에 대해서만 논의했지만, 그 관계는 훨씬 더 일반적이다. 양자역학에서 모든 입자는 광자뿐만 아니라 파동과 같은 특성을 나타내며, 파동의 주파수와 파수는 입자의 에너지와 운동량에 <a href="#eq-FLP_1_34_27" class="quarto-xref">식&nbsp;<span>4.116</span></a> (드브로이 관계) 의 관계가 있으며, <span class="math inline">\(p\)</span> 가 <span class="math inline">\(W/c\)</span> 와 같지 않을 때도 그러하다.</p>
+<p>지난 장에서는 오른쪽 또는 왼쪽으로 원형으로 편광된 빛의 광선이 파동의 에너지 <span class="math inline">\(E\)</span> 에 비례하는 만큼 각운동량을 가지고 있음을 보았다. 양자모델에서, 원형으로 편광된 빛의 광선은 전파 방향을 따라 각각 각운동량을 <span class="math inline">\(\pm \hbar\)</span> 의 광자 흐름으로 간주한다. 그것이 입자 시점에서 편광이 되는 것이며, 광자는 회전하는 소총 탄환처럼 각운동량을 운반한다. 하지만 이 탄환 모델은 “파동” 모델만큼 정말 불완전하며, 우리는 양자 행동에 관한 다음 장에서 이러한 아이디어들을 더 자세히 논의해야 한다.</p>
 <p><br></p>
 
 
