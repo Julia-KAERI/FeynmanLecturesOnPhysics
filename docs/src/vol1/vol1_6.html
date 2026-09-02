@@ -1991,9 +1991,9 @@ Q_2=\dfrac{T_2}{T_1}Q_1,
 W=Q_1 \left(1−\dfrac{T_2}{T_1}\right)=Q_1 \dfrac{T_1−T_2}{T_1}
 \tag{6.125}\]</span></span></p>
 <p>이며, 위 식은 기관의 효율을 말한다. 많은 열로부터 얻을 수 있는 일의 양. 기관의 효율 <span class="math inline">\(\eta\)</span> 는 기관이 작동하는 온도 차이를 더 높은 온도로 나눈 값에 비례한다:</p>
-<p><span class="math display">\[
+<p><span id="eq-flp_1_4_14"><span class="math display">\[
 \eta :=\dfrac{W}{Q_1}=\dfrac{T_1−T_2}{T_1}.
-\]</span> {#eq-FLP_1_$4_14}d</p>
+\tag{6.126}\]</span></span></p>
 <p>효율은 1보다 클 수 없으며 절대 온도는 0 보다 작을 수 없다. <span class="math inline">\(T_2\)</span> 가 양수여야 하므로 효율은 항상 1보다 적다. 그것이 우리의 첫 번째 결론이다.</p>
 </section>
 </section>
@@ -2003,7 +2003,7 @@ W=Q_1 \left(1−\dfrac{T_2}{T_1}\right)=Q_1 \dfrac{T_1−T_2}{T_1}
 <p>흥미로운 점은 온도와 부피의 함수인 압력과 내부 에너지 외에도, 역시 조건의 함수인 물질의 엔트로피라는 양을 발견했다는 것이다. 이제 엔트로피를 어떻게 계산하는지, 엔트로피가 <strong>조건의 함수</strong> 라고 하는 것이 무슨 의미인지 알아보자. 앞서 단열 및 등온 팽창을 다루었을 때 처럼 다른 두 조건의 시스템을 생각하자. 참고로, 열 기관이 단 두 개의 열저장소만 가질 필요는 없으며 많은 열저장소를 가질 수 있다. <span class="math inline">\(pV\)</span> 다이어그램 상에서 여기저기 움직일 수 있고, 한 조건에서 다른 조건으로 이동할 수 있다. 다시 말해, 우리는 기체가 특정 조건 <span class="math inline">\(a\)</span> 에서 다른 조건 <span class="math inline">\(b\)</span> 로 이동할 수 있다. 단 가역적이어야 한다. 이제 <span class="math inline">\(a\)</span> 에서 <span class="math inline">\(b\)</span> 까지의 경로 전체에 서로 다른 온도의 작은 열저장소가 존재한다고 가정하면, 각 작은 단계에서 물질에서 제거되는 열 <span class="math inline">\(dQ\)</span> 가 경로상의 각 지점에 해당하는 온도로 각 열저장소에 전달된다. 이제 가역 열기관을 사용하여 이 모든 열저장소를 단위 온도의 하나의 열저장소에 연결한다. 우리가 물질을 <span class="math inline">\(a\)</span> 에서 <span class="math inline">\(b\)</span> 로 이동시키면 모든 열저장소를 원래 상태로 되돌릴 것이다. 온도 <span class="math inline">\(T\)</span> 에서 물질로부터 흡수된 모든 열 <span class="math inline">\(dQ\)</span> 는 이제 가역 기계에 의해 변환되었으며, 다음과 같이 단위 온도에서 일정량의 엔트로피 <span class="math inline">\(dS\)</span> 가 전달된다.</p>
 <p><span id="eq-FLP_1_44_15"><span class="math display">\[
 dS=\dfrac{dQ}{T}
-\tag{6.126}\]</span></span></p>
+\tag{6.127}\]</span></span></p>
 <div id="fig-FLP_1_44_10" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_44_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2017,16 +2017,16 @@ dS=\dfrac{dQ}{T}
 <p>그렇다면 전달된 엔트로피의 총량은</p>
 <p><span id="eq-FLP_1_44_16"><span class="math display">\[
 S_b−S_a=\int_a^b \dfrac{dQ}{T}
-\tag{6.127}\]</span></span></p>
+\tag{6.128}\]</span></span></p>
 <p>이다. 문제는 엔트로피 차이의 경로의존성 여부이다. <span class="math inline">\(a\)</span> 에서 <span class="math inline">\(b\)</span> 로 가는 경로는 무한하다. 카르노 순환에서는 <a href="#fig-FLP_1_44_6" class="quarto-xref">그림&nbsp;<span>6.20</span></a> 의 <span class="math inline">\(a\)</span> 에서 <span class="math inline">\(c\)</span> 까지 등온 팽창-단열 팽창의 경로를 밟았지만 단열 팽창-등온 팽창의 경로를 따를 수도 있다. 답을 먼저 말하자면 엔트로피 차이는 경로의존성이 없다. 한 경로로 전진하고 다른 경로로 후진한하는 순환에서 동일해야만 가역 기관, 즉 단위 온도에서 열저장소에 열이 손실되지 않을 것이기 때문이다. 완전히 가역적인 순환에서는 단위 온도에서 열저장소에서 열을 취할 필요가 없으며, 따라서 <span class="math inline">\(a\)</span> 에서 <span class="math inline">\(b\)</span> 로 이동하기 위해 필요한 엔트로피는 경로와 무관하며, 오직 시작과 종료 지점에만 의존한다. <strong>따라서 우리는 물질의 엔트로피라고 부르는 특정 함수가 존재한다고 말할 수 있다.</strong></p>
 <p>물질이 가역 경로를 따라 이동함에 따라 단위 온도에서 벼려진 열로 엔트로피 변화를 계산할 경우, 엔트로피의 성질을 갖는 함수 <span class="math inline">\(S(V,T)\)</span> 를 아래와 같이 구할 수 있다.</p>
 <p><span id="eq-FLP_1_44_17"><span class="math display">\[
 \Delta S=\int \dfrac{dQ}{T}.
-\tag{6.128}\]</span></span></p>
+\tag{6.129}\]</span></span></p>
 <p>여기서 <span class="math inline">\(dQ\)</span> 는 온도 <span class="math inline">\(T\)</span> 에서 물질에서 제거되는 열을 의미한다. 전체 엔트로피 변화는 시작조건과 최종조건에서의 엔트로피의 변화이다.</p>
 <p><span id="eq-FLP_1_44_18"><span class="math display">\[
 \Delta S=S(V_b,T_b)−S(V_a,T_a)=\int_a^b \dfrac{dQ}{T}.
-\tag{6.129}\]</span></span></p>
+\tag{6.130}\]</span></span></p>
 <p>이 식은 엔트로피가 아닌 두 조건 사이의 엔트로피 차이만을 정의한다. 어떤 특정 조건에 대한 엔트로피를 계산 할 수 있다면 우리는 <span class="math inline">\(S\)</span> 를 절대적으로 정의할 수 있다.</p>
 <p>오랫동안 절대 엔트로피는 아무 의미도 없으며 차이만 정의될 수 있다고 믿어졌지만, 네른스트(Nernst) <strong>열역학 제 3 법칙</strong> 을 제안했다. 네른스트 공리는 단순히 절대 영도에서 모든 물체의 엔트로피가 0 이라고 정한다. 우리는 <span class="math inline">\(T\)</span> 와 <span class="math inline">\(V\)</span> 의 한 경우, 즉 <span class="math inline">\(T=0\)</span> 이며 <span class="math inline">\(S=0\)</span> 인 경우를 알고 있으며, 따라서 다른 모든 지점에서 엔트로피를 정할 수 있다.</p>
 <p>이상기체의 엔트로피를 계산해 보자. 등온 팽창에서는 <span class="math inline">\(\int dQ/T = Q/T\)</span> 이며 따라서 엔트로피의 변화는 <a href="#eq-FLP_1_44_4" class="quarto-xref">식&nbsp;<span>6.115</span></a> 로부터</p>
@@ -2046,7 +2046,7 @@ S(V,T)=Nk_B \left[\ln V+\dfrac{1}{\gamma−1} \ln T\right] + a
 <p>두번째 예는 다음과 같다. 높은 온도 <span class="math inline">\(T_1\)</span> 과 낮은 온도 <span class="math inline">\(T_2\)</span> 의 두 물체를 함께 배치하면, 일정량의 열이 <span class="math inline">\(T_1\)</span> $ 의 물체에서 낮은 온도 <span class="math inline">\(T_2\)</span> 의 물체로 자연스럽게 전달된다. 그렇다면 특정 열 <span class="math inline">\(\Delta Q\)</span> 가 <span class="math inline">\(T_1\)</span> 에서 <span class="math inline">\(T_2\)</span> 로 전달될 때, 뜨거운 물체의 엔트로피는 <span class="math inline">\(\Delta Q/T_1\)</span> 만큼 감소하며 차가운 물체의 엔트로피는 <span class="math inline">\(\Delta Q/T_2\)</span> 만큼 증가한다. 열은 물론 고온의 물체에서 저온의 물체로 흐르므로 <span class="math inline">\(\Delta Q&gt; 0\)</span> 이고 따라서 엔트로피의 총합의 변화는 양수이다.</p>
 <p><span id="eq-FLP_1_44_19"><span class="math display">\[
 \Delta S=\dfrac{\Delta Q}{T_2}−\dfrac{\Delta Q}{T_1}.
-\tag{6.130}\]</span></span></p>
+\tag{6.131}\]</span></span></p>
 <p>따라서 다음 명제는 옳다.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -2102,15 +2102,15 @@ W=Q_1−Q_2=Q_1\left( \dfrac{T_1−T_2}{T_1}\right).
 <p>이제 온도와 부피의 변화에 따른 내부 에너지 <span class="math inline">\(U(T,V)\)</span> 의 변화는 다음과 같이 표현 할 수 있다.</p>
 <p><span id="eq-FLP_1_45_2"><span class="math display">\[
 \Delta U=\left(\dfrac{\partial U}{\partial T}\right)_V \Delta T +  \left(\dfrac{\partial U}{\partial V}\right)_T \Delta V.
-\tag{6.131}\]</span></span></p>
+\tag{6.132}\]</span></span></p>
 <p>기체에 열 <span class="math inline">\(\Delta Q\)</span> 를 더했을 때 내부 에너지 변화 <span class="math inline">\(\Delta U\)</span> 는 다음과 같다는 것을 안다.</p>
 <p><span id="eq-FLP_1_45_3"><span class="math display">\[
 \Delta U=\Delta Q−P\Delta V.
-\tag{6.132}\]</span></span></p>
-<p><a href="#eq-FLP_1_45_2" class="quarto-xref">식&nbsp;<span>6.131</span></a> 와 <a href="#eq-FLP_1_45_3" class="quarto-xref">식&nbsp;<span>6.132</span></a> 을 비교하면 <span class="math inline">\(P=−(\partial U/\partial V)_T\)</span> 라고 생각할 수 있지만, 이는 옳지 않다. 올바른 관계를 얻기 위해, 먼저 부피를 일정하게 유지하면서(<span class="math inline">\(\Delta V=0\)</span>) 기체에 열 <span class="math inline">\(\Delta Q\)</span> 를 더한다면 <a href="#eq-FLP_1_45_3" class="quarto-xref">식&nbsp;<span>6.132</span></a> 으로부터 <span class="math inline">\(\Delta U=\Delta Q\)</span> 이며, <a href="#eq-FLP_1_45_2" class="quarto-xref">식&nbsp;<span>6.131</span></a> 로부터 <span class="math inline">\(\Delta U=(\partial U/\partial T)_V \Delta T\)</span> 이며, 따라서 <span class="math inline">\((\partial U/\partial T)_V = \Delta Q/\Delta T\)</span> 라고 할 수 있다. <span class="math inline">\(\Delta Q/\Delta T\)</span> 는 부피를 일정하게 유지한 물질에 온도를 1도 변화시키는 데 필요한 열량으로, <strong>정적 비열</strong> 이라고 하며 기호 <span class="math inline">\(C_V\)</span> 로 표기한다. 즉</p>
+\tag{6.133}\]</span></span></p>
+<p><a href="#eq-FLP_1_45_2" class="quarto-xref">식&nbsp;<span>6.132</span></a> 와 <a href="#eq-FLP_1_45_3" class="quarto-xref">식&nbsp;<span>6.133</span></a> 을 비교하면 <span class="math inline">\(P=−(\partial U/\partial V)_T\)</span> 라고 생각할 수 있지만, 이는 옳지 않다. 올바른 관계를 얻기 위해, 먼저 부피를 일정하게 유지하면서(<span class="math inline">\(\Delta V=0\)</span>) 기체에 열 <span class="math inline">\(\Delta Q\)</span> 를 더한다면 <a href="#eq-FLP_1_45_3" class="quarto-xref">식&nbsp;<span>6.133</span></a> 으로부터 <span class="math inline">\(\Delta U=\Delta Q\)</span> 이며, <a href="#eq-FLP_1_45_2" class="quarto-xref">식&nbsp;<span>6.132</span></a> 로부터 <span class="math inline">\(\Delta U=(\partial U/\partial T)_V \Delta T\)</span> 이며, 따라서 <span class="math inline">\((\partial U/\partial T)_V = \Delta Q/\Delta T\)</span> 라고 할 수 있다. <span class="math inline">\(\Delta Q/\Delta T\)</span> 는 부피를 일정하게 유지한 물질에 온도를 1도 변화시키는 데 필요한 열량으로, <strong>정적 비열</strong> 이라고 하며 기호 <span class="math inline">\(C_V\)</span> 로 표기한다. 즉</p>
 <p><span id="eq-FLP_1_45_4"><span class="math display">\[
 C_V := \left(\dfrac{\partial U}{\partial T}\right)_V
-\tag{6.133}\]</span></span></p>
+\tag{6.134}\]</span></span></p>
 <p>이다.</p>
 <p>이제 다시 기체에 열량 <span class="math inline">\(\Delta Q\)</span> 를 더하는데 <span class="math inline">\(T\)</span> 를 일정하게 유지하고 부피가 <span class="math inline">\(\Delta V\)</span> 만큼 변했다고 하자. 이미 아는 바와 같이, 가역 사이클에서 기체가 수행한 총 일은 <span class="math inline">\(\Delta Q(\Delta T/T)\)</span> 이며, 여기서 <span class="math inline">\(\Delta Q\)</span> 는 기체가 온도 <span class="math inline">\(T\)</span> 에서 <span class="math inline">\(V\)</span> 에서 <span class="math inline">\(V+\Delta V\)</span> 까지 등온 팽창하면서 가해지는 열에너지의 양이고, <span class="math inline">\(T−\Delta T\)</span> 는 기체가 사이클의 두 번째 구간에서 단열 팽창하면서 도달하는 최종 온도이다. 이제 우리는 이 작업이 그림에 있는 음영 영역으로도 제공된다는 것을 보여드리겠습니다. 45–1. 어떠한 상황에서도 가스가 수행하는 일은 ∫PdV이며, 가스가 팽창할 때는 양수이고 압축될 때는 음수입니다. 우리가 P를 플롯한다면 vs.&nbsp;V, P와 V의 변동은 특정 V의 값에 해당하는 P 값을 제공하는 곡선으로 표현됩니다. 부피가 한 값에서 다른 값으로 변함에 따라, 기체에 의해 수행되는 일(적분 ∫PdV)은 V의 초기값과 최종값을 연결하는 곡선 아래 면적입니다. 이 아이디어를 카르노 사이클에 적용하면, 사이클을 돌면서 가스가 수행한 일의 표시를 주의 깊게 보면, 가스가 수행한 순일은 그림에 표시된 음영 영역에 불과합니다. 45–1.</p>
 <p>이제 우리는 음영 영역을 기하학적으로 평가하고자 합니다. 그림 45‐1에서 사용한 사이클은 이전 장에서 사용된 사이클과 달리, 이제 ΔT와 ΔQ가 무한히 작다고 가정합니다. 우리는 매우 가깝게 배열된 단열선과 등온선 사이를 작업하고 있으며, 그림 45‐1에 있는 무거운 선들에 의해 설명된 그림은 ΔT와 ΔQ의 증분이 0에 가까워짐에 따라 평행사변형에 근접합니다. 이 평행사변형의 면적은 단순히 ΔVΔP이며, 여기서 ΔV는 일정한 온도에서 기체에 에너지 ΔQ가 추가되는 부피의 변화이고, ΔP는 일정한 부피에서 온도가 ΔT에 의해 변하는 압력의 변화입니다. 그림 45–1의 음영 영역이 ΔVΔP로 주어짐을 쉽게 알 수 있으며, 이는 그림 45–2의 점선으로 둘러싸인 면적과 동일함을 인식함으로써, 그림 45–2의 점선으로 둘러싸인 면적과 동일하다는 점을 인식함으로써, ΔP와 ΔV로 둘러싸인 직사각형과는 동일 삼각형 영역의 덧셈 및 뺄셈에 의해서만 차이가 됩니다. 45–2.</p>
