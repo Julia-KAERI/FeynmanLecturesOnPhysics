@@ -10,8 +10,8 @@ format: html
 %\newcommand{\bf}[1]{\boldsymbol{#1}}
 \newcommand{\bftilde}[1]{\bf{\widetilde{{#1}}}}
 
-\newcommand{\dbar}{{d\hspace{-0.08em}\bar{}\hspace{0.1em}}}
-
+\newcommand{\dbarx}{{d\hspace{-0.08em}\bar{}\hspace{0.1em}}}
+\newcommand{\dbar}{\rlap{\raise{0.8ex}{\hspace{0.12em}\scriptstyle -}}d}
 
 
 
