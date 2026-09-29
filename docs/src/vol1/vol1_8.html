@@ -316,6 +316,8 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#sec-FLP_1_48_1" id="toc-sec-FLP_1_48_1" class="nav-link" data-scroll-target="#sec-FLP_1_48_1"><span class="math inline">\(\mathrm{I}\)</span>.48–1 두 파동의 합</a></li>
   <li><a href="#sec-FLP_1_48_2" id="toc-sec-FLP_1_48_2" class="nav-link" data-scroll-target="#sec-FLP_1_48_2"><span class="math inline">\(\mathrm{I}\)</span>.48–2 비트와 변조</a></li>
+  <li><a href="#mathrmi.48-3-사이드-밴드" id="toc-mathrmi.48-3-사이드-밴드" class="nav-link" data-scroll-target="#mathrmi.48-3-사이드-밴드"><span class="math inline">\(\mathrm{I}\)</span>.48-3 사이드 밴드</a></li>
+  <li><a href="#sec-FLP_1_48_4" id="toc-sec-FLP_1_48_4" class="nav-link" data-scroll-target="#sec-FLP_1_48_4"><span class="math inline">\(\mathrm{I}\)</span>.48-4 국소화된 파동의 연쇄</a></li>
   </ul></li>
   <li><a href="#sec-FLP_1_49" id="toc-sec-FLP_1_49" class="nav-link" data-scroll-target="#sec-FLP_1_49"><span class="math inline">\(\textrm{I}\)</span>.49 모드</a></li>
   <li><a href="#sec-FLP_1_50" id="toc-sec-FLP_1_50" class="nav-link" data-scroll-target="#sec-FLP_1_50"><span class="math inline">\(\textrm{I}\)</span>.50 화음</a></li>
@@ -532,13 +534,13 @@ c_s=\left(\dfrac{\gamma}{3}\right)^{1/2}v_\text{av}.
 <p><br></p>
 </section>
 </section>
-<section id="sec-FLP_1_48" class="level2">
+<section id="sec-FLP_1_48" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-FLP_1_48"><span class="math inline">\(\textrm{I}\)</span>.48 비트</h2>
 <section id="sec-FLP_1_48_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_48_1"><span class="math inline">\(\mathrm{I}\)</span>.48–1 두 파동의 합</h3>
 <p>이 장에서는 서로 다른 진동수를 가진 두 소스의 간섭으로 인해 발생하는 현상 중 일부를 다룬다.</p>
 <p>같은 진동수를 가진 두 개의 동일한 진동원이 있다고 가정해 보겠습니다. 이들의 위상이 예를 들어 <span class="math inline">\(P\)</span> 지점에서 같은 위상을 갖도록 맞추어 졌다고 하자. <span class="math inline">\(P\)</span> 에서 빛이라면 빛이 매우 강하고, 소리라면 매우 시끄럽으며, 전자라면 다수가 도착한다. 반면에, 도착하는 신호의 위상차가 <span class="math inline">\(\pi\)</span> 라면, <span class="math inline">\(P\)</span> 에서는 신호를 받지 못한다. 왜냐하면 그때의 순진폭이 최소가 되기 때문이다. 둘중 하나의 소스에 위상 조절기가 있어서 <span class="math inline">\(P\)</span> 에서의 위상을 앞뒤로 바꿀 수 있다고 하자. 그렇다면 그때 순 신호 강도에서 차이를을 발견하게 될 것이다. 이 위상이 다른 원천에 비해 점진적이고 균일한 방식으로 서서히 변하며, <span class="math inline">\(0\)</span> 에서 시작해 <span class="math inline">\(\pi/18\)</span>, <span class="math inline">\(2\pi/18\)</span>, <span class="math inline">\(3\pi/18\)</span> 로 증가한다면, <span class="math inline">\(P\)</span> 에서는 강한 펄스와 약한 “펄싱”의 연속을 관측하게 되고 위상이 <span class="math inline">\(2\pi\)</span> 만큼 이동하면 진폭이 최대가 되기 될것이다. 물론, 한 소스가 다른 소스에 대해 균일한 속도로 위상을 이동하고 있다고 말하는 것은 두 파동원의 진동수가 다르다는 말과 동일하다.</p>
-<p>따라서 답은 이것이다: 약간 다른 주파수를 가진 두 개의 소스가 있다면, 결과적으로 천천히 맥동하는 강도의 진동을 발견하게 된다. 그것이 바로 그 주제에 대한 전부입니다!</p>
+<p>따라서 답은 이것이다: 약간 다른 주파수를 가진 두 개의 소스가 있다면, 결과적으로 천천히 맥동하는 강도의 진동을 발견하게 된다.</p>
 <div id="fig-FLP_1_48_1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_1_48_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -549,15 +551,51 @@ c_s=\left(\dfrac{\gamma}{3}\right)^{1/2}v_\text{av}.
 </figcaption>
 </figure>
 </div>
+<p>정해진 지점 <span class="math inline">\(P\)</span> 에서 두 파동 <span class="math inline">\(A_1 e^{i\omega_1 t}\)</span> 와 <span class="math inline">\(A_2 e^{i\omega_2 t}\)</span> 가 만난다고 하자.</p>
+<p><span id="eq-FLP_1_48_7"><span class="math display">\[
+A_1e^{i\omega_1 t} + A_2 e^{i\omega_2 t} = e^{i(\omega_1 + \omega_2)t }\left[A_1e^{i(\omega_1 - \omega_2) t} + A_2 e^{-i(\omega_1-\omega_2)t}\right]
+\tag{8.24}\]</span></span></p>
+<p>이므로 우리는 저주파수(<span class="math inline">\(\omega_1 - \omega_2\)</span>) 로 변조된 고주파수 (<span class="math inline">\(\omega_1 + \omega_2\)</span>) 의 파동을 얻게 된다.</p>
 </section>
 <section id="sec-FLP_1_48_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_1_48_2"><span class="math inline">\(\mathrm{I}\)</span>.48–2 비트와 변조</h3>
-<p>파동이 <span class="math inline">\(A_1e^{i \omega_1 t}\)</span> 와 <span class="math inline">\(A_2 e^{-i\omega_2 t}\)</span> 로 기술될 때 이 파동의 합의 강도 <span class="math inline">\(I\)</span> 는</p>
+<p>파동이 <span class="math inline">\(A_1e^{i \omega_1 t}\)</span> 와 <span class="math inline">\(A_2 e^{-i\omega_2 t}\)</span> 로 기술될 때 이 파동의 합의 강도 <span class="math inline">\(I\)</span> 는 <a href="#eq-FLP_1_48_7" class="quarto-xref">식&nbsp;<span>8.24</span></a> 로 부터</p>
 <p><span id="eq-FLP_1_48_8"><span class="math display">\[
-I = \left|A_1e^{i\omega t}+A^2 e^{i\omega_2 t}\right|^2 = A_1^2  + A_2^2 + 2A_1A_2\cos (\omega_1-\omega_2)t
-\tag{8.24}\]</span></span></p>
-<p>이며 <span class="math inline">\((A_1+A_2)^2 \le I \le (A_1-A_2)^2\)</span> 이다.</p>
-<p><br></p>
+I = \left|A_1e^{i\omega_1 t}+A^2 e^{i\omega_2 t}\right|^2 = A_1^2  + A_2^2 + 2A_1A_2\cos (\omega_1-\omega_2)t
+\tag{8.25}\]</span></span></p>
+<p>이며, <span class="math inline">\(I\)</span> 는 <span class="math inline">\((A_1+A_2)^2\)</span> 과 <span class="math inline">\((A_1-A_2)^2\)</span> 사이에서 변한다. 따라서 <span class="math inline">\(A_1 \ne A_2\)</span> 이면 <span class="math inline">\(I\)</span> 는 <span class="math inline">\(0\)</span> 이 되지 않는다.</p>
+<p>진폭변조(amplitude modulation, AM) 방식의 라디오는 500 ~ 1,500 KHz 영역에서 고정된 진동수의 반송파(carrier wave) 를 진폭을 바꿔가며 전송한다.</p>
+</section>
+<section id="mathrmi.48-3-사이드-밴드" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="mathrmi.48-3-사이드-밴드"><span class="math inline">\(\mathrm{I}\)</span>.48-3 사이드 밴드</h3>
+<p>수학적으로, 위에서 설명한 변조 파동은 다음과 같이 표현된다.</p>
+<p><span id="eq-FLP_1_48_9"><span class="math display">\[
+S = ( 1 + b \cos \omega_m t) \cos\omega_c t.
+\tag{8.26}\]</span></span></p>
+<p>여기서 <span class="math inline">\(\omega_c\)</span> 는 반송파의 진동수, <span class="math inline">\(\omega_m\)</span> 은 오디오 톤의 진동수이다. 위 식으로부터</p>
+<p><span id="eq-FLP_1_48_10"><span class="math display">\[
+S=\cos \omega_c t + \dfrac{b}{2}\cos(\omega_c + \omega_m)t + \dfrac{b}{2} \cos(\omega_c − \omega_m)t.
+\tag{8.27}\]</span></span></p>
+<p>이 식을 다른 관점에서 보면 시스템의 출력 파동은 중첩된 세 개의 파동으로 구성된다고 말할 수 있다: 첫째, 진동수 <span class="math inline">\(\omega_c\)</span>, 즉 반송파 진동수에서의 정규 파동이며, 그 다음 두 개의 새로운 진동수에서 두 개의 새로운 파동. 하나는 반송파 진동수에 변조 진동수를 더한 값이며, 다른 하나는 뺀 값이다. 따라서 발생기에 의해 생성되는 강도를 진동수의 함수로 표현하는 그래프를 그린다면, 반송파의 주파수에서 자연스럽게 많은 강도를 발견하게 되지만, 가수가 노래를 시작하면 갑자기 가수의 강도에 비례하는 강도 <span class="math inline">\(b/2\)</span> 의 파동을 진동수 <span class="math inline">\(\omega_c + \omega_m\)</span> 및 <span class="math inline">\(\omega_c−\omega_m\)</span> 에서 발견하게 되는데, 이것들은 <strong>사이드 밴드(side bands)</strong> 라고 한다. 송신기에서 변조된 신호가 있을 때 사이드 밴드가 존재한다. 동시에 두 개 이상의 음-예를 들어 <span class="math inline">\(\omega_m\)</span> 과 <span class="math inline">\(\omega'_m\)</span> 와 같이-이 있다면 두 개의 악기가 연주되고 있는 것이다. 혹은 다른 복잡한 코사인파가 있다면, 물론 수학을 통해 우리는 <span class="math inline">\(\omega_c \pm  \omega_m'\)</span> 진동수에 해당하는 파동을 더 많이 얻는다는 것을 알 수 있다.</p>
+<div class="page-columns page-full"><p>따라서, 많은 코사인의 합으로 표현될 수 있는 복잡한 변조가 존재할 때<span class="math inline">\(^4\)</span>, 실제 송신기는 진동수 영역-말하자면 반송파 진동수에 변조 신호가 포함하는 최대 최대 진동수의 플러스 또는 마이너스-을 통해 전송한다. </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^4\)</span> 일반적인 모든 상황에서 곡선을 많은 코사인의 합으로 나타낼 수 있다. 물론, 그 곡선은 주어진 지점에서 단 하나의 값만 가져야 하며, 무한히 미미한 거리에서 무한히 여러 번 점프하는 미친 곡선이 되어서는 안 된다.</span></div></div>
+</section>
+<section id="sec-FLP_1_48_4" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_1_48_4"><span class="math inline">\(\mathrm{I}\)</span>.48-4 국소화된 파동의 연쇄</h3>
+<p>다음으로 논의할 주제는 공간과 시간 모두에서의 파동의 간섭이다. 우주에서 두 개의 파동이 이동하고 있다고 가정하자. 우주에서 이동하는 파동을 <span class="math inline">\(e^{i(\omega t−kx)}\)</span> 로 표현할 수 있다는 것을 알고 있다. 이는 파동방정식의 해로 파동의 전파속도 <span class="math inline">\(c\)</span> 에 대해 <span class="math inline">\(\omega^2=k^2c^2\)</span> 이다. 이제 진동수 <span class="math inline">\(\omega_1\)</span> 과 <span class="math inline">\(\omega_2\)</span> 를 가지는 두 파동을 생각하자. 진폭이 다른 경우는 독자에게 맡기고 여기서는 동일하다고 가정한다. 그렇다면 둘을 더하면 <span class="math inline">\(e^{i(\omega_1 t−k_1 x)}+e^{i(\omega_2t−k_2x)}\)</span> 이며 다음과 같이 쓸 수 있다.</p>
+<p><span id="eq-FLP_1_48_11"><span class="math display">\[
+e^{i\omega_1 (t−x/c)} + e^{i\omega_2(t−x/c)} = e^{iω_1t'}+e^{i\omega_2t'}.
+\tag{8.28}\]</span></span></p>
+<p>여기서는 <span class="math inline">\(t\)</span> 가 아닌 <span class="math inline">\(t'=t−x/c\)</span> 가 변수이다. 이렇게 자연스럽게 같은 종류의 변조를 얻지만, 물론 그 변조들이 파동과 함께 움직이고 있음을 보게 된다. 다시 말하면, 두 개의 파동을 더했지만 그 파동이 단순히 진동하는 것이 아니라 공간에서도 움직이고 있다면, 결과 파동도 같은 속도로 따라 움직이게 됩니다.</p>
+<p>이제 우리는 이를 진동수와 파수 <span class="math inline">\(k\)</span> 사이의 관계가 그리 단순하지 않은 파동-예를 들면 굴절율을 가진 물질-의 경우로 일반화하고자 한다. 우리는 <a href="../../src/vol1/vol1_4.html#sec-FLP_1_31"><span class="math inline">\(\mathrm{I}\)</span>.31 굴절률의 기원</a> 에서 굴절률을 다뤘으며 굴절률 <span class="math inline">\(n\)</span> 에 대해 <span class="math inline">\(k=n\omega/c\)</span> 임을 안다. 또한 x선의 경우 굴절률 <span class="math inline">\(n\)</span> 은 아래와 같다.</p>
+<p><span id="eq-FLP_1_48_12"><span class="math display">\[
+n=1−\dfrac{Nq_e^2}{2\epsilon_0 m\omega^2}.
+\tag{8.29}\]</span></span></p>
+<p>우리는 실제로 <a href="../../src/vol1/vol1_4.html#sec-FLP_1_31"><span class="math inline">\(\mathrm{I}\)</span>.31 굴절률의 기원</a> 에서 더 복잡한 공식을 유도했지만, 이 공식도 예시로서 괜찮다.</p>
+<p><span class="math inline">\(\omega\)</span> 와 <span class="math inline">\(k\)</span> 가 비례관계가 아닐 때에도, 비율 <span class="math inline">\(\omega/k\)</span> 는 확실히 해당 진동수와 파수의 전파 속도임을 알고 있다. 우리는 이 비율을 <strong>위상 속도 (phase velocity)</strong> 라고 부른다. 위상속도는 위상, 즉 단일 파동의 노드가 이동하는 속도이다:</p>
+<p><span id="eq-FLP_1_48_13"><span class="math display">\[
+\boxed{v_p:=\dfrac{\omega}{k}.}
+\tag{8.30}\]</span></span></p>
+<p>이 위상 속도는 유리의 X선 경우 진공에서의 빛의 속도보다 높으며(48.12의 n이 1보다 작기 때문에), 이는 다소 번거롭습니다. 왜냐하면 우리는 빛의 속도보다 빠른 신호를 보낼 수 없다고 생각하기 때문입니다.</p>
 </section>
 </section>
 <section id="sec-FLP_1_49" class="level2">
