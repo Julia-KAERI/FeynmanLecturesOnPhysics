@@ -1092,7 +1092,6 @@ E_y &amp;= - \dfrac{\partial \Phi}{\partial y}\dfrac{p}{4\pi\epsilon_0}\dfrac{3z
 </figcaption>
 </figure>
 </div>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_6_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_3"><span class="math inline">\(\textrm{II}\)</span>.6-3 벡터 방정식에 대한 소고</h3>
@@ -1187,13 +1186,11 @@ p=\dfrac{4\pi \sigma_0 R^3}{3}
 \Phi_d (\boldsymbol{r})= \dfrac{1}{4\pi\epsilon_0}\dfrac{\boldsymbol{p\cdot r}}{r^3}
 \]</span></p>
 <p>을 쌍극자 포텐셜 이라고 부른다. 먄약 <span class="math inline">\(Q=0\)</span> 이라면 쌍극자 포텐셜이 가장 주도적인 포텐셜이 되며 <span class="math inline">\(r\)</span> 이 클수록 더욱 그러하다.</p>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_6_6" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_6"><span class="math inline">\(\textrm{II}\)</span>.6-6 대전된 도체에 의한 전기장</h3>
 <p>지금까지는 전하의 분포를 아는 상태에서 포텐셜이든 전기장이든 계산 할 수 있었다. 만약 전하 <span class="math inline">\(Q\)</span> 가 도체에 대전되어 있다고 생각해보자. 우리는 정확히 전하가 어떻게 분포하는지 못하며 단지 표면이 등전위면이 되도록 표면에만 분포한다는 것을 안다. 표면이 등전위면이 되지 않는다면 전기장이 <span class="math inline">\(0\)</span> 이 아니며 내부의 자유전하가 힘을 받아 표면이 등전위면이 될 때 까지 이동하게 된다.</p>
 <p>우리가 표면 전하 분포를 계산하려면 우선 표면 전하 분포를 예상하고 이에 대해 풀어보고 표면이 등전위면이 되지 않는 다면 다른 전하분포를 이용하여 풀어보는, 매우 지루하고 어쩌면 가망 없는 trial and error 과정을 반복해야 한다. 컴퓨터의 도움을 받을 수도 있지만 만약 도체의 분포가 복잡하다면 매우 지루하고 복잡한 과정이 된다. 그러나 몇가지 경우에는 매우 실용적으로 구할 수 있다.</p>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_6_7" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_7"><span class="math inline">\(\textrm{II}\)</span>.6-7 영상법</h3>
@@ -1208,7 +1205,6 @@ p=\dfrac{4\pi \sigma_0 R^3}{3}
 </figure>
 </div>
 <p>위 그림은 두 점전하에 의한 전기장과 등전위면을 보여준다. 등전위면 <span class="math inline">\(A\)</span> 를 생각하자. 등전위면 <span class="math inline">\(A\)</span> 와 같은 모양이 되도록 금속 박판을 가공하여 <span class="math inline">\(A\)</span> 의 위치에 맞추고 <span class="math inline">\(A\)</span> 에서의 전위와 같은 전위를 걸어준다고 하자. 동시에 왼쪽의 <span class="math inline">\(-\)</span> 전하를 제거한다. 그렇다면 금속 박판 외부의 상황은 금속 박판 설치 이전의 상황과 전혀 달라지는것이 없다. 수학적으로도 증명할 수 있는데 이는 <a href="https://julia-kaeri.github.io/ClassicalPhysics/src/Electrodynamics/02_2_electrostatics2.html#sec-ED_ES_boundary_value_problem_in_conductors">도체에서의 경계값 문제</a> 를 보라. 일단 경계값을 만족하는 포텐셜을 찾기만 하면 그것은 만족하는 라플라스 방정식의 해는 유일하다는 것이 보장된다.</p>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_6_8" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_8"><span class="math inline">\(\textrm{II}\)</span>.6-8 도체 평면 근처의 점전하</h3>
@@ -1267,11 +1263,10 @@ Q_{\text{total induced}} = \int \sigma \,dxdy = -q.
 \]</span></p>
 <p>외부의 전하에 의해 도체에 유도되는 전하의 총합이 외부의 전하와 크기가 같다는 것은 모든 거울 영상법에서 공통적인 사실이다. 또한 전하 <span class="math inline">\(+q\)</span> 는 유도된 표면전하에 의해 원래의 전하 <span class="math inline">\(+q\)</span> 가 힘을 받으며 당연히 그 힘은 아래와 같다.</p>
 <p><span id="eq-FLP_2_6_30"><span class="math display">\[
-\boldsymbol{F} = -\dfrac{q^2}{4\pi\epsilon_0}\dfrac{}{4h^2}\hat{\boldsymbol{z}}
+\boldsymbol{F} = -\dfrac{1}{4\pi\epsilon_0}\dfrac{q^2}{4h^2}\hat{\boldsymbol{z}}
 \tag{9.41}\]</span></span></p>
 </div>
 </div>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_6_9" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_9"><span class="math inline">\(\textrm{II}\)</span>.6-9 대전된 구 근처의 점전하</h3>
@@ -1305,7 +1300,6 @@ c^2(x^2+y^2+z^2) = (x-d)^2+y^2+z^2
 <p><strong>도체 표면에서의 정전 포텐셜이 <span class="math inline">\(0\)</span> 이 아닌 경우</strong> : 접지는 전위를 <span class="math inline">\(0\)</span> 으로 고정시므로 이 경우 도체 구는 접지되어 있지 않아야 한다. 그리고 도체의 총 알짜 전하가 <span class="math inline">\(0\)</span> 이어야 하므로 구의 중심에 <span class="math inline">\(q''=-q\)</span> 인 가상전하를 위치시키면 된다. 그렇게 되면 구와 점전하 <span class="math inline">\(q\)</span> 사이에 인력이 작용할 것임을 알 수 있다. 그 원인은 무엇일까? 양전하를 구에 접근시키면, 양전하는 음전하를 끌어당기고 먼 쪽 표면에는 양전하만 남는다. 이 음전하에 의한 인력이 양전하에 의한 반발보다 크기 때문에 전체적으로 인력이 존재한다. <span class="math inline">\(q'\)</span> 와 <span class="math inline">\(q''\)</span> 에 의해 생성된 장에서 <span class="math inline">\(q\)</span> 에 작용하는 힘을 계산함으로써 인력이 얼마나 큰지 알 수 있다. 알차힘은 거리 <span class="math inline">\(b−(a^2/b)\)</span>에서 <span class="math inline">\(q\)</span>와 전하 <span class="math inline">\(q'=−(a/b)q\)</span> 사이의 인력과 거리 <span class="math inline">\(b\)</span> 에서 전하 <span class="math inline">\(q'''=+(a/b)q\)</span> 사이의 반발력의 합이다.</p>
 </div>
 </div>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_6_10" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_6_10"><span class="math inline">\(\textrm{II}\)</span>.6-10 평행판 축전기</h3>
@@ -1374,21 +1368,19 @@ V=Ed=\dfrac{\sigma}{\epsilon_0}d = \dfrac{d}{\epsilon_0 A}Q
 \dfrac{E_a}{E_b}=\dfrac{Q/a^2}{Q/b^2} = \dfrac{b}{a}
 \tag{9.43}\]</span></span></p>
 <p>이다. 즉 <span class="math inline">\(E_a&lt; E_b\)</span> 이다.</p>
-<p>이 결과는 기술적으로 매우 중요한데 왜냐하면 전기장이 너무 클 경우 공기가 붕괴되기 때문이다다. 공기 중 어딘가에 있는 느슨한 전하(전자 또는 이온)가 자기장에 의해 가속되고, 자기장이 매우 크면 전하가 다른 원자에 충돌하기 전에 충분한 속도를 올려 그 원자에서 전자를 떨어뜨릴 수 있다는 것입니다. 그 결과, 점점 더 많은 이온이 생성됩니다. 그들의 움직임은 방전 또는 불꽃에 해당합니다. 물체를 높은 전위까지 충전하고 공기 중의 스파크에 의해 방전되지 않도록 하려면, 표면이 매끄럽도록 해야 하며, 그 영역이 비정상적으로 넓은 영역이 존재하지 않도록 해야 합니다.</p>
-<p><br></p>
+<p>이 결과는 기술적으로 매우 중요한데 왜냐하면 전기장이 너무 클 경우 공기가 붕괴되기 때문이다다. 공기 중 어딘가에 있는 느슨한 전하(전자 또는 이온)가 자기장에 의해 가속되고, 자기장이 매우 크면 전하가 다른 원자에 충돌하기 전에 충분한 속도를 올려 그 원자에서 전자를 떨어뜨릴 수 있다는 것입니다. 그 결과, 점점 더 많은 이온이 생성됩니다. 그들의 움직임은 방전 또는 불꽃에 해당합니다. 물체를 높은 전위까지 충전하고 공기 중의 스파크에 의해 방전되지 않도록 하려면, 표면이 매끄럽도록 해야 하며, 그 영역이 비정상적으로 넓은 영역이 존재하지 않도록 해야한다.</p>
 </section>
 </section>
 <section id="textrmii.7-다양한-상황에서의-전기장-2" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="textrmii.7-다양한-상황에서의-전기장-2"><span class="math inline">\(\textrm{II}\)</span>.7 다양한 상황에서의 전기장 2</h2>
 <section id="sec-FLP_2_7_1" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_1"><span class="math inline">\(\textrm{II}\)</span>.7-1 전기장을 계산하는 방법</h3>
-<p>우리는 6 장에서 다양한 상황에서의 전기장을 계산하는 법을 알았으며, 이장에서는 특히 도체에 대한 문제를 해결하기 위한 보다 정교한 방법을 알아본다. 정해진 전하의 분포에서는 전기장 혹은 정전 포텐셜 문제는 근본적으로 적분 문제이다. 그러나 도체가 있을 경우 전하는 표면에만 분포하며 도체 표면이 등전위면을 이룬다는 사실만 알 수 있다. 이런 문제를 풀기 위해 영상법과 같은 간접적인 방법을 사용하기도 한다. 그러나 우리가 풀고자 하는 문제가 영상법과 같은 방식을 적용할 수 없다면 직접 풀어야 한다. 즉 주어진 경계 조건에서의 라플라스 방정식</p>
+<p>앞장에서 다양한 상황에서의 전기장을 계산하는 법을 알았으며, 이장에서는 특히 도체에 대한 문제를 해결하기 위한 보다 정교한 방법을 알아본다. 정해진 전하의 분포에서는 전기장 혹은 정전 포텐셜 문제는 근본적으로 적분 문제이다. 그러나 도체가 있을 경우 전하는 표면에만 분포하며 도체 표면이 등전위면을 이룬다는 사실만 알 수 있다. 이런 문제를 풀기 위해 영상법과 같은 간접적인 방법을 사용하기도 한다. 그러나 우리가 풀고자 하는 문제가 영상법과 같은 방식을 적용할 수 없다면 직접 풀어야 한다. 즉 주어진 경계 조건에서의 라플라스 방정식</p>
 <p><span id="eq-FLP_2_7_1"><span class="math display">\[
 \nabla^2 \Phi = 0
 \tag{9.44}\]</span></span></p>
-<p>을 풀어야 한다. 이 방정식은 오랬동안 연구되었지만 아주 간단한 몇가지 경우를 제외한다면 수치해석적으로 풀어야 한다. 경계값 문제는 물리적으로 유사한 대상에 대한 측정으로도 해결될 수 있다. 라플라스 방정식은 정상 상태의 열 흐름, 비회전성 유체 흐름, 확장된 매질에서의 전류 흐름, 그리고 탄성 막의 변형 등 다양한 물리적 상황에서 발생하므로 우리가 해결하고자 하는 전기 문제와 유사한 물리 모델을 자주 설정할 수 있다. 모델에 적절한 유사한 물리량을 측정함으로써, 관심 있는 문제에 대한 해를 얻을 수 있다. 예를 들면 정전기학에서 2차원 문제를 해결하기 위해 전해 탱크를 사용하는 것이다. 이것은 균일한 전도성 매질에서의 전위에 대한 미분 방정식이 진공의 경우와 동일하기 때문에 작동한다.</p>
+<p>을 풀어야 한다. 이 방정식은 오랬동안 연구되었지만 아주 간단한 몇가지 경우를 제외한다면 수치해석적으로 풀 수 밖에 없다. 경계값 문제는 물리적으로 유사한 대상에 대한 측정으로도 해결될 수 있다. 라플라스 방정식은 정상 상태의 열 흐름, 비회전성 유체 흐름, 확장된 매질에서의 전류 흐름, 그리고 탄성 막의 변형 등 다양한 물리적 상황에서 발생하므로 우리가 해결하고자 하는 전기 문제와 유사한 물리 모델을 자주 설정할 수 있다. 모델에 적절한 유사한 물리량을 측정함으로써, 관심 있는 문제에 대한 해를 얻을 수 있다. 예를 들면 정전기학에서 2차원 문제를 해결하기 위해 전해조(electrolytic tank)를 사용하는 것이다. 이것은 균일한 전도성 매질에서의 전위에 대한 미분 방정식이 진공의 경우와 동일하기 때문에 작동한다.</p>
 <p>만약 한 방향에 대해 물리적 장의 변화가 없거나 거의 없는 경우 문제를 2차원 문제로 바꿀 수 있으며, 2차원 문제는 일반적으로 3차원 문제보다 훨씬 쉽다.</p>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_7_2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_2"><span class="math inline">\(\textrm{II}\)</span>.7-2 2차원 장;복소 함수</h3>
@@ -1404,7 +1396,7 @@ F(\zeta=x+iy) = U(x,\,y) + iV(x,\,y).
 <p><span id="eq-FLP_2_7_7_ex"><span class="math display">\[
 (\nabla U) \boldsymbol{\cdot} (\nabla V)=0
 \tag{9.47}\]</span></span></p>
-<p>이다. 이로부터 <span class="math inline">\(U(x,\,y)=C\)</span> 와 <span class="math inline">\(V(x,\,y)=D\)</span> 에 대한 등위곡선(level curve) 가 만날 때 접점에서의 기울기는 서로 수직이라는 것을 알 수 있다. 또한 <span class="math inline">\(U,\,V\)</span> 가 2차원에서의 라플라스 방정식을 만족한다는 것을 알 수 있다.</p>
+<p>이다. 이로부터 <span class="math inline">\(U(x,\,y)=C\)</span> 와 <span class="math inline">\(V(x,\,y)=D\)</span> 에 대한 등위곡선(level curve) 이 만날 때 접점에서의 기울기는 서로 수직이라는 것을 알 수 있다. 또한 <span class="math inline">\(U,\,V\)</span> 가 2차원에서의 라플라스 방정식을 만족한다는 것을 알 수 있다.</p>
 <p><span id="eq-FLP_2_7_9"><span class="math display">\[
 \dfrac{\partial^2 U}{\partial x^2} + \dfrac{\partial^2 U}{\partial y^2} = \dfrac{\partial^2 V}{\partial x^2} + \dfrac{\partial^2 V}{\partial y^2} =0.
 \tag{9.48}\]</span></span></p>
@@ -1445,11 +1437,10 @@ F(\zeta) = \zeta^2 = (x^2-y^2) + i(2xy)
 </figcaption>
 </figure>
 </div>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_7_3" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_3"><span class="math inline">\(\textrm{II}\)</span>.7-3 플라즈마 진동</h3>
-<p>이제 전기장이 고정된 전하나 도체의 표면전하 둘중 하나에 의해 결정되는 것이 아니라 두가지의 결합에 의해 결정되는 물리적 상황을 생각한다. 다시 말해, 그 장은 두 개의 방정식 (<span class="math inline">\(1\)</span>) 전기장과 전하 분포를 연결하는 전기정역학의 방정식과 (<span class="math inline">\(2\)</span>) 전기장이 존재할 때 전하의 위치 또는 운동을 결정하는 물리학의 다른 분야에서 도출된 방정식의 동시 적요에 의해 결정된다.</p>
+<p>이제 전기장이 고정된 전하나 도체의 표면전하 둘중 하나에 의해 결정되는 것이 아니라 두가지의 결합에 의해 결정되는 물리적 상황을 생각한다. 다시 말해, 그 장은 두 개의 방정식 (<span class="math inline">\(1\)</span>) 전기장과 전하 분포를 연결하는 전기정역학의 방정식과 (<span class="math inline">\(2\)</span>) 전기장이 존재할 때 전하의 위치 또는 운동을 결정하는 물리학의 다른 분야에서 도출된 방정식의 동시 적용에 의해 결정된다.</p>
 <div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 <div id="exm-FLP_plasma_oscillation" class="theorem example">
 <p><span class="theorem-title"><strong>예제 9.12 (<strong>1차원 플라즈마 진동</strong>)</strong></span> 이온들과 전자들이 기체상태로 있는 것을 플라즈마라고 한다. 예를 들어 지구 상공 약 60~1,000 km 에 위치한 전리층(이온층, Ionosphere)은 태양 복사 에너지에 의해 대기 기체가 이온화되어 양이온과 자유전자가 밀집된 플라즈마 상태이다.</p>
@@ -1469,7 +1460,7 @@ F(\zeta) = \zeta^2 = (x^2-y^2) + i(2xy)
 <p><span id="eq-FLP_2_7_16"><span class="math display">\[
 n = \dfrac{n_0 \Delta x}{\Delta x + \Delta s} = \dfrac{n_0}{1+(\Delta s/\Delta x)}.
 \tag{9.49}\]</span></span></p>
-<p>이다. <span class="math inline">\(\Delta s\Delta x \ll 1\)</span> 이면 위식은 아래와 같이 근사 할 수 있다.</p>
+<p><span class="math inline">\(\Delta s/\Delta x \ll 1\)</span> 이면 위식은 아래와 같이 근사 할 수 있다.</p>
 <p><span id="eq-FLP_2_7_17"><span class="math display">\[
 n=n_0 \left(1-\dfrac{\Delta s}{\Delta x}\right).
 \tag{9.50}\]</span></span></p>
@@ -1483,7 +1474,7 @@ n=n_0 \left(1-\dfrac{\Delta s}{\Delta x}\right).
 \]</span></p>
 <p>이므로</p>
 <p><span class="math display">\[
-E_x = \dfrac{n_0 q_e}{\epsilon_0} s + K,\text{where }K=\text{constant.}
+E_x = \dfrac{n_0 q_e}{\epsilon_0} s + K,\qquad \text{where }K=\text{constant.}
 \]</span></p>
 <p>이다. 여기서 <span class="math inline">\(s=0\)</span> 일 때 <span class="math inline">\(E_x=0\)</span> 이어야 하므로 <span class="math inline">\(K=0\)</span> 이다. 이 전기장에 의해 전자가 받는 힘은</p>
 <p><span class="math display">\[
@@ -1493,14 +1484,13 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 <p><span id="eq-FLP_2_7_25"><span class="math display">\[
 \omega_p = \sqrt{\dfrac{n_0 q_e^2}{m_e\epsilon_0}}
 \tag{9.52}\]</span></span></p>
-<p>의 각진동수를 갖는 단순조화진동을 한다. 여기서 <span class="math inline">\(m_e\)</span> 는 전자의 질량이며 <span class="math inline">\(\omega_p\)</span> 를 <strong>플라즈마 진동수 (plasma frequency)</strong> 라고 한다. 즉 플라즈마의 교란이 전자의 평형 위치에 대해 각진동수 <span class="math inline">\(\omega_p\)</span> 인 자유 진동을 일으키며, 이는 전자 밀도의 제곱근에 비례한다. 플라즈마 전자는 <span class="math inline">\(I\)</span> 권 23 장에서 설명한 것과 같은 공명 시스템처럼 행동한다.</p>
+<p>의 각진동수를 갖는 단순조화진동을 한다. 여기서 <span class="math inline">\(m_e\)</span> 는 전자의 질량이며 <span class="math inline">\(\omega_p\)</span> 를 <strong>플라즈마 진동수 (plasma frequency)</strong> 라고 한다. 즉 플라즈마의 교란이 전자의 평형 위치에 대해 각진동수 <span class="math inline">\(\omega_p\)</span> 인 자유 진동을 일으키며, 이는 전자 밀도의 제곱근에 비례한다. 플라즈마 전자는 <a href="../../src/vol1/vol1_3.html#sec-FLP_1_23"><span class="math inline">\(I\)</span>.23 공명</a> 에서 설명한 것과 같은 공명 시스템처럼 행동한다.</p>
 </div>
 </div>
 <section id="플라즈마의-공명의-효과" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="플라즈마의-공명의-효과"><strong>플라즈마의 공명의 효과</strong></h4>
 <p><strong>1</strong>. 전리층을 통해 전파를 보낼 때 그 주파수가 플라즈마 주파수보다 높을 때만 침투할 수 있다. 그렇지 않으면 신호가 다시 반사된다. 우주에서 위성과 통신하려면 고주파를 사용해야 하는 반면에, 지평선 너머의 라디오 방송국과 통신하고자 한다면, 신호가 지구로 반사되도록 플라즈마 주파수보다 낮은 주파수를 사용해야 한다.</p>
 <div class="page-columns page-full"><p><strong>2</strong>. 금속은 양이온과 자유 전자로 이루어진 플라즈마로 간주 할 수 있다. 밀도 <span class="math inline">\(n_0\)</span> 가 매우 높으므로 <span class="math inline">\(\omega_p\)</span> 도 매우 크지만 여전히 전자 진동을 관찰할 수 있어야 한다. 양자역학에 따르면, 자연 주파수 <span class="math inline">\(\omega_p\)</span> 를 가진 조화 진동자의 에너지 준위는 <span class="math inline">\(\hbar \omega_p\)</span> 만큼 간격이 있다. 그렇다면, 예를 들어 알루미늄 호일을 통해 전자를 발사하고 반대편의 전자 에너지를 매우 정밀하게 측정한다면, 전자가 때때로 플라즈마 진동에 <span class="math inline">\(\hbar \omega_p\)</span> 만큼의 에너지를 잃을것으로 예상되며 실제로도 그러하다. 1936년에 처음 실험적으로 관찰된 바에 따르면, 몇 백에서 몇 천 전자볼트의 에너지를 가진 전자는 얇은 금속 호일에서 산란하거나 통과할 때 점프하면서 에너지를 잃는 것으로 나타났다. 그 효과는 1953년까지 이해되지 않았으나 Bohm 과 Pines<span class="math inline">\(^2\)</span> 는 금속 내 플라즈마 진동의 양자 여기로 설명될 수 있음을 보여주었다.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^2\)</span> For some recent work and a bibliography see C. J. Powell and J. B. Swann, Phys. Rev.&nbsp;<strong>115</strong>, 869 (1959).</span></div></div>
-<p><br></p>
 </section>
 </section>
 <section id="sec-FLP_2_7_4" class="level3 page-columns page-full">
@@ -1511,11 +1501,11 @@ F_x = -\dfrac{n_0 q_e^2}{\epsilon_0}s
 \dfrac{d^2\Phi}{dx^2} = - \dfrac{\rho}{\epsilon_0}
 \tag{9.53}\]</span></span></p>
 <p>를 만족한다.</p>
-<p>이제 정전 포텐셜 <span class="math inline">\(\Phi(x)\)</span> 에서 이온은 어떻게 분포하는가? 이는 통계역학의 원리를 통해 결정할 수 있다. 문제는 통계역학에서 얻어지는 전하 밀도가 <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>9.53</span></a> 를 만족하도록 <span class="math inline">\(\Phi\)</span> 를 결정하는 것이다. 통계역학에 따르면 힘장 내 열평형에 있는 입자는 밀도 <span class="math inline">\(n(x)\)</span> 이 다음과 같이 주어지는 방식으로 분포한다.</p>
+<p>이제 정전 포텐셜 <span class="math inline">\(\Phi(x)\)</span> 에서 이온은 어떻게 분포하는가? 이는 통계역학의 원리를 통해 결정할 수 있다. 문제는 통계역학에서 얻어지는 전하 밀도가 <a href="#eq-FLP_2_7_28" class="quarto-xref">식&nbsp;<span>9.53</span></a> 를 만족하도록 <span class="math inline">\(\Phi\)</span> 를 결정하는 것이다. 통계역학에 따르면 힘장 내 열평형에 있는 입자는 밀도 <span class="math inline">\(n(x)\)</span> 는 포텐셜 에너지 <span class="math inline">\(U(x)\)</span> 에 대해 다음과 같이 주어지는 방식으로 분포한다.</p>
 <p><span id="eq-FLP_2_7_29"><span class="math display">\[
-n(x)=n_0e^{−U(x)/k_BT}
+n(x)=n_0e^{−U(x)/k_BT}.
 \tag{9.54}\]</span></span></p>
-<p>여기서 <span class="math inline">\(U(x)\)</span> 는 포텐셜 에너지이고 <span class="math inline">\(k_B\)</span> 는 볼츠만 상수이며, <span class="math inline">\(T\)</span> 는 절대 온도이다. 콜로이드 입자의 표면으로부터 <span class="math inline">\(x\)</span> 만큼 떨어진 거리의 양이온이 갖는 포텐셜 에너지 <span class="math inline">\(U(x)=q_e \Phi(x)\)</span> 이며 따라서 양이온의 밀도 <span class="math inline">\(n_+\)</span> 는</p>
+<p>콜로이드 입자의 표면으로부터 <span class="math inline">\(x\)</span> 만큼 떨어진 거리의 양이온이 갖는 포텐셜 에너지 <span class="math inline">\(U(x)=q_e \Phi(x)\)</span> 이며 따라서 양이온의 밀도 <span class="math inline">\(n_+\)</span> 는</p>
 <p><span class="math display">\[
 n_+(x) = n_0 e^{-q_e \Phi(x)/k_BT}
 \]</span></p>
@@ -1557,7 +1547,6 @@ E_x(0) = \dfrac{\sigma}{\epsilon_0} = \dfrac{A}{D}
 <p>평행판 축전기(<a href="#exm-FLP_parallel_plate_condensor" class="quarto-xref">예제&nbsp;<span>9.11</span></a>) 의 <a href="#eq-FLP_6_33" class="quarto-xref">식&nbsp;<span>9.42</span></a> 과 비교해보면 이 전위차는 거리가 <span class="math inline">\(D\)</span> 인 평행판 축전기의 전위차와 같다는 것을 알 수 있다.</p>
 <p>앞서 콜로이드 입자들이 전기 반발에 의해 분리되어 있다고 말했다. 이제 우리는 입자 표면에서 약간 떨어진 전기장이 그 주위에 모이는 이온층에 의해 감소한다는 것을 알게 되었다. 이온층의 두께가 충분히 얇아지면 입자들이 서로 부딪히게 될 가능성이 높기 때문에 콜로이드 입자들이 달라붙고 응고되어 액체에서 침전될 수 있다. 이제 콜로이드에 충분한 소금을 첨가하면 콜로이드가 침전되는 이유를 이해할 수 있으며 이 과정을 <strong>염석</strong> 이라고 한다.</p>
 <p>또 다른 흥미로운 예는 소금 용액이 단백질 분자에 미치는 영향이다. 단백질 분자는 길고 복잡하며 유연한 아미노산 사슬입이고 다양한 전하를 가지고 있으며, 때때로 음전하와 같은 순전하가 사슬을 따라 분포하는 경우가 있다. 음전하들의 상호 반발로 인해 단백질 사슬이 늘어난 상태를 유지한다. 또한, 용액에 다른 유사한 사슬 분자가 존재한다면, 동일한 반발 효과에 의해 분리될 것이다. 따라서 액체에 사슬 분자를 현탁시킬 수 있다. 하지만 액체에 소금을 넣으면 현탁액의 특성이 변하게 된다. 용액에 염을 첨가하면 데바이 거리가 감소하고, 사슬 분자들이 서로 가까워지며 또한 꼬일 수 있다. 용액에 충분한 염을 첨가하면 사슬 분자가 용액에서 침전된다. 이와 같은 화학적 효과는 전기적 힘의 관점에서 이해할 수 있는 것이 많이 있다.</p>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_7_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_7_5"><span class="math inline">\(\textrm{II}\)</span>.7-5 격자의 정전기장</h3>
