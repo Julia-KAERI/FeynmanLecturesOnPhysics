@@ -423,13 +423,13 @@ Q_\text{inside} = \int_V \rho\, dV
 <p><span class="math display">\[
 \boldsymbol{F}=q\boldsymbol{v}\times \boldsymbol{B}
 \]</span></p>
-<p>의 힘을 받는다. 단위 부피당 <span class="math inline">\(n\)</span> 개의 전하가 있는 경우, 도선의 <span class="math inline">\(ΔV\)</span> 만큼의 부피 성분에서 받는 힘 <span class="math inline">\(\Delta \boldsymbol{F}\)</span> 는</p>
+<p>의 힘을 받는다. 단위 부피당 <span class="math inline">\(n\)</span> 개의 전하가 있는 경우, 도선의 <span class="math inline">\(Δ\mathcal{V}\)</span> 만큼의 부피 성분에서 받는 힘 <span class="math inline">\(\Delta \boldsymbol{F}\)</span> 는</p>
 <p><span class="math display">\[
-\Delta \boldsymbol{F}=(n\Delta V)(q\boldsymbol{v}\times \boldsymbol{B})
+\Delta \boldsymbol{F}=(n\Delta \mathcal{V})(q\boldsymbol{v}\times \boldsymbol{B})
 \]</span></p>
 <p>이다. 여기서 <span class="math inline">\(\boldsymbol{J}=nq\boldsymbol{v}\)</span> 이므로</p>
 <p><span id="eq-FLP_2_13_9"><span class="math display">\[
-\Delta \boldsymbol{F} = (\boldsymbol{J}\times \boldsymbol{B}) \Delta V
+\Delta \boldsymbol{F} = (\boldsymbol{J}\times \boldsymbol{B}) \Delta \mathcal{V}
 \tag{11.7}\]</span></span></p>
 <p>이다. 즉 도선은 단위 부피당 <span class="math inline">\(\boldsymbol{J}\times \boldsymbol{B}\)</span> 만큼의 힘을 받는다. 전류가 단면적이 <span class="math inline">\(A\)</span> 인 도선에서 균일하면, 부피 요소로 면적 <span class="math inline">\(A\)</span> 와 길이 <span class="math inline">\(\Delta L\)</span> 인 원통으로 간주 할 수 있다. 그렇다면</p>
 <p><span id="eq-FLP_2_13_10"><span class="math display">\[
@@ -1068,8 +1068,7 @@ U_\text{total}=+\boldsymbol{m\cdot B}.
 <p><span id="eq-FLP_2_15_15"><span class="math display">\[
 \Delta U_\text{mech}=Δ\left(−\dfrac{CV^2}{2}\right)=-\dfrac{V^2}{2}\Delta C
 \tag{11.54}\]</span></span></p>
-<p>이며 이는 <a href="#eq-FLP_2_15_14" class="quarto-xref">식&nbsp;<span>11.53</span></a> 와 동일하다. 우리는 전압을 일정하게 유지하기 위해 전기 시스템이 하는 일을 무시하고 있음에도 불구하고 올바른 결과를 얻고 있다. 다시 말하지만, 이 전기 에너지는 기계 에너지보다 두 배 정도 크고 부호가 반대이다. 따라서 전원이 전압을 일정하게 유지하기 위해 작업을 해야 한다는 사실을 무시하고 인위적으로 계산한다면, 우리는 올바른 답을 얻을 수 있다. 이는 정자기학의 상황과 정확히 유사하다. <br></p>
-<p><br></p>
+<p>이며 이는 <a href="#eq-FLP_2_15_14" class="quarto-xref">식&nbsp;<span>11.53</span></a> 와 동일하다. 우리는 전압을 일정하게 유지하기 위해 전기 시스템이 하는 일을 무시하고 있음에도 불구하고 올바른 결과를 얻고 있다. 다시 말하지만, 이 전기 에너지는 기계 에너지보다 두 배 정도 크고 부호가 반대이다. 따라서 전원이 전압을 일정하게 유지하기 위해 작업을 해야 한다는 사실을 무시하고 인위적으로 계산한다면, 우리는 올바른 답을 얻을 수 있다. 이는 정자기학의 상황과 정확히 유사하다.</p>
 </section>
 <section id="sec-FLP_2_15_3" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_15_3"><span class="math inline">\(\textrm{II}\)</span>.15-3 정상 전류의 에너지</h3>
@@ -1103,16 +1102,15 @@ U = I\int_S (\hat{\boldsymbol{n}}\boldsymbol{\cdot B}) da = I\int_S \boldsymbol{
 <p><span class="math display">\[
 Id\boldsymbol{l} = \boldsymbol{J}\,d\mathcal{V}
 \]</span></p>
-<p>로 생각 할 수 있다. 그렇다면 적분을 <span class="math inline">\(I\boldsymbol{A\cdot}d\boldsymbol{l} \to (\boldsymbol{J \cdot A})\,dV\)</span> 로 바꿀 때, 예를 들어 1번 고리의 자기장 + 2번 고리의 전류 조합과 2번 고리의 자기장 + 1번 고리의 전류에 의한 에너지는 동일한데 이것이 두번 계산되게 된다. 따라서 이 중복을 제거한다면 전체 에너지는 다음과 같다.</p>
+<p>로 생각 할 수 있다. 그렇다면 적분을 <span class="math inline">\(I\boldsymbol{A\cdot}d\boldsymbol{l} \to (\boldsymbol{J \cdot A})\,d\mathcal{V}\)</span> 로 바꿀 때, 예를 들어 1번 고리의 자기장 + 2번 고리의 전류 조합과 2번 고리의 자기장 + 1번 고리의 전류에 의한 에너지는 동일한데 이것이 두번 계산되게 된다. 따라서 이 중복을 제거한다면 전체 에너지는 다음과 같다.</p>
 <p><span id="eq-FLP_2_15_20"><span class="math display">\[
-U = \dfrac{1}{2}\dfrac{1}{2}\int_V \boldsymbol{J\cdot A}\,d\mathcal{V}
+U = \dfrac{1}{2}\int_V \boldsymbol{J\cdot A}\,d\mathcal{V}
 \tag{11.57}\]</span></span></p>
 <p>이 식은 전기에너지에 대해 우리가 찾은 결과와 일치한다.</p>
 <p><span id="eq-FLP_2_15_21"><span class="math display">\[
 U=\dfrac{1}{2}\int_V \rho \Phi\, d\mathcal{V}.
 \tag{11.58}\]</span></span></p>
 <p>따라서 우리는 원한다면 <span class="math inline">\(\boldsymbol{A}\)</span> 를 정자기학에서의 일종으 포텐셜로 생각할 수 있다고 생각하겠지만 안타깝게도 이 아이디어는 그다지 유용하지 않다. 왜냐하면 이 식은 정적인 장에만 해당되기 때이다. 실제로, <a href="#eq-FLP_2_15_20" class="quarto-xref">식&nbsp;<span>11.57</span></a> 과 <a href="#eq-FLP_2_15_21" class="quarto-xref">식&nbsp;<span>11.58</span></a> 둘 다 시간에 따라 변할 때에는 맞지 않다.</p>
-<p><br></p>
 </section>
 <section id="sec-FLP_2_15_4" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_15_4"><span class="math inline">\(\textrm{II}\)</span>.15-4 <span class="math inline">\(\boldsymbol{B}\)</span> 와 <span class="math inline">\(\boldsymbol{A}\)</span></h3>
