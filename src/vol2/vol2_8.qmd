@@ -1,0 +1,17 @@
+---
+title: "$\\text{II}$-5 : 물질의 자성"
+number-sections: true
+number-depth: 0
+crossref:
+  chapters: true
+---
+
+{{< include ../../latexmacros.qmd >}} 
+
+## $\textrm{II}$.34 자성 {#sec-FLP_2_34}
+
+## $\textrm{II}$.35 상자성과 자기 공명 {#sec-FLP_2_35}
+
+## $\textrm{II}$.36 강자성 {#sec-FLP_2_36}
+
+## $\textrm{II}$.37 자성체 {#sec-FLP_2_37}
