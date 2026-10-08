@@ -1,0 +1,16 @@
+---
+title: "$\\text{II}$-5 : 교류 전자기"
+number-sections: true
+number-depth: 0
+crossref:
+  chapters: true
+---
+
+{{< include ../../latexmacros.qmd >}} 
+
+## $\textrm{II}$.22 교류 회로 {#sec-FLP_2_22}
+
+
+## $\textrm{II}$.23 공동 공진 {#sec-FLP_2_23}
+
+## $\textrm{II}$.24 웨이브가이드 {#sec-FLP_2_24}
