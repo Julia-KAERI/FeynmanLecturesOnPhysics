@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -342,7 +342,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_22_4" id="toc-sec-FLP_2_22_4" class="nav-link" data-scroll-target="#sec-FLP_2_22_4"><span class="math inline">\(\mathrm{II}\)</span>.22-4 등가 회로</a></li>
   <li><a href="#sec-FLP_2_22_5" id="toc-sec-FLP_2_22_5" class="nav-link" data-scroll-target="#sec-FLP_2_22_5"><span class="math inline">\(\mathrm{II}\)</span>.22-5 에너지</a></li>
   <li><a href="#sec-FLP_2_22_6" id="toc-sec-FLP_2_22_6" class="nav-link" data-scroll-target="#sec-FLP_2_22_6"><span class="math inline">\(\mathrm{II}\)</span>.22–6 사다리 네트워크</a></li>
-  <li><a href="#sec-FLP_2_22_6" id="toc-sec-FLP_2_22_6" class="nav-link" data-scroll-target="#sec-FLP_2_22_6"><span class="math inline">\(\mathrm{II}\)</span>.22-6 필터</a></li>
+  <li><a href="#sec-FLP_2_22_7" id="toc-sec-FLP_2_22_7" class="nav-link" data-scroll-target="#sec-FLP_2_22_7"><span class="math inline">\(\mathrm{II}\)</span>.22-7 필터</a></li>
   </ul></li>
   <li><a href="#sec-FLP_2_23" id="toc-sec-FLP_2_23" class="nav-link" data-scroll-target="#sec-FLP_2_23"><span class="math inline">\(\textrm{II}\)</span>.23 공동 공진</a></li>
   <li><a href="#sec-FLP_2_24" id="toc-sec-FLP_2_24" class="nav-link" data-scroll-target="#sec-FLP_2_24"><span class="math inline">\(\textrm{II}\)</span>.24 웨이브가이드</a></li>
@@ -510,6 +510,9 @@ z(\text{저항})=z_R=R.
 <p>지금까지 살펴본 세 회로 요소-인덕터, 축전지, 저항-에 대해 <a href="#fig-FLP_2_22_4" class="quarto-xref">그림&nbsp;<span>13.4</span></a> 에 요약하였다. 이 그림과 앞선 그림들에서도 전압은 한 단자에서 다른 단자를 가리키는 화살표로 표시되었다. 전압이 양수인 경우—즉, 단자 <span class="math inline">\(a\)</span> 가 단자 <span class="math inline">\(b\)</span> 보다 높은 전위에 있는 경우—화살표는 양의 “전압 강하” 방향을 나타낸다.</p>
 <p>우리는 교류에 대해 이야기하고 있지만, 진동수 <span class="math inline">\(\omega \to 0\)</span> 극한을 취함으로써 정상 전류를 가진 회로의 특수한 경우를 포함시킬 수 있다. 진동수가 0인 경우—즉, 직류의 경우—인덕턴스의 임피던스가 <span class="math inline">\(0\)</span> 이 되며, 이는 단락 회로가 된다. 직류에서는 축전지의 임피던스가 무한대로 올라가며, 이는 개방 회로가 된다. 저항기의 임피던스는 주파수와 무관하므로, 직류 회로를 분석할 때 남은 유일한 요소이다.</p>
 <p>지금까지 설명한 회로 소자에서는 전류와 전압이 서로 비례한다. 우리는 보통 다음과 같은 용어로 생각합니다: 적용된 전압은 전류를 <strong>책임지며</strong>, 전류는 단자 전체에 전압을 <strong>유도한다</strong>. 이는 어느 정도 소자들은 적용된 외부 조건에 반응한다 의미이므로 이런 소자들을 <strong>수동소자 (passive element)</strong> 라고 부른다. 다음 절에서 검토할 발전기와 같은 능동소자와 대비될 수 있다.</p>
+<p>마지막으로 수동소자의 임피던스를 요약하면 다음과 같다. <span id="eq-FLP_summary_impedence_of_passive_element"><span class="math display">\[
+\boxed{z_R = R,\qquad z_L = i\omega L,\qquad z_C = 1/i\omega C.}
+\tag{13.10}\]</span></span></p>
 </section>
 </section>
 <section id="sec-FLP_2_22_2" class="level3">
@@ -534,7 +537,7 @@ V=−\oint \boldsymbol{E\cdot}\,d\boldsymbol{l}.
 \]</span></p>
 <p>이 선 적분은 회로의 기전력과 동일하므로, 발전기의 단자 간 전위 차 <span class="math inline">\(V\)</span> 는 코일을 연결하는 자기 플럭스 <span class="math inline">\(\Phi_B\)</span> 의 변화율과 동일하다: <span id="eq-FLP_2_22_11"><span class="math display">\[
 V=−\mathcal{E}= \dfrac{d}{dt}\Phi_B.
-\tag{13.10}\]</span></span></p>
+\tag{13.11}\]</span></span></p>
 <p>이상적인 발전기의 경우, 코일에 대한 자기 플럭스는 회전하는 자기장의 각속도와 같은 외부 조건에 의해 결정되며, 발전기를 통과하는 전류에 의해 어떠한 방식으로도 영향을 받지 않는다고 가정한다. 따라서 적어도 우리가 고려하고 있는 이상적인 발전기는 임피던스가 아니다. 그 말단에 걸친 전위 차이는 임의로 할당된 기전력 <span class="math inline">\(\mathcal{E}(t)\)</span> 에 의해 결정된다. 이러한 이상적인 발전기는 <a href="#fig-FLP_2_22_6" class="quarto-xref">그림&nbsp;<span>13.6</span></a> 에 표시된 기호로 표현된다. 작은 화살표는 양수일 때의 기전력의 방향을 나타냅니다. <a href="#fig-FLP_2_22_6" class="quarto-xref">그림&nbsp;<span>13.6</span></a> 의 발전기는 단자 <span class="math inline">\(a\)</span> 가 단자 <span class="math inline">\(b\)</span> 보다 <span class="math inline">\(V=\mathcal{E}\)</span> 만큼 높은 전위를 가진다.</p>
 </section>
 <section id="발전기-타입-2-고정된-자기장과-회전하는-코일" class="level4">
@@ -563,13 +566,13 @@ V=−\mathcal{E}= \dfrac{d}{dt}\Phi_B.
 <p><a href="#fig-FLP_2_22_7" class="quarto-xref">그림&nbsp;<span>13.7</span></a> 의 시스템에서는 변하는 자기장이 존재하지 않으므로, 처음에는 발전기 단자에 전압이 어떻게 나타날 수 있는지 궁금해 할 수 있다. 사실, 발전기 내부 어디에도 전기장이 없다. 우리는 평소와 같이 이상적인 소자에 대해 내부의 전선이 완전 전도성 물질로 만들어졌다고 가정하고 있으며, 여러 차례 말했듯이, 완전 도체 내부의 전기장은 0 이라고 가정하였다. 하지만 그것은 도체가 자기장 안에서 움직이고 있을 때는 사실이 아니다. 진정한 명제는 <strong>완전 도체 내부의 모든 전하에 대한 전체 힘이 0이어야 한다</strong> 는 것이다. 그렇지 않으면 자유 전자가 무한히 흐르게 될 것이다. <strong>따라서 언제나 참인 것은 도체 내에서 로렌츠 힘은 항상 <span class="math inline">\(0\)</span> 이다.</strong></p>
 <p><span id="eq-FLP_2_22_12"><span class="math display">\[
 \dfrac{\boldsymbol{F}}{\text{단위 전하}} = \boldsymbol{E} + \boldsymbol{v} \times \boldsymbol{B} = \boldsymbol{0}\qquad (\text{완전한 도체 내부에서}).
-\tag{13.11}\]</span></span></p>
-<p>완전 도체 내부에 전기장이 없다는 앞서의 명제는 도체의 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 가 0 이면 모두 옳으며, 그렇지 않은 경우 올바른 명제는 <a href="#eq-FLP_2_22_12" class="quarto-xref">식&nbsp;<span>13.11</span></a> 에 의해 제시된다.</p>
+\tag{13.12}\]</span></span></p>
+<p>완전 도체 내부에 전기장이 없다는 앞서의 명제는 도체의 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 가 0 이면 모두 옳으며, 그렇지 않은 경우 올바른 명제는 <a href="#eq-FLP_2_22_12" class="quarto-xref">식&nbsp;<span>13.12</span></a> 에 의해 제시된다.</p>
 <p><a href="#fig-FLP_2_22_7" class="quarto-xref">그림&nbsp;<span>13.7</span></a> 의 발전기로 돌아가면, 이제 우리는 발전기의 전도 경로를 통해 단자 <span class="math inline">\(a\)</span> 에서 단자 <span class="math inline">\(b\)</span> 까지의 전기장 <span class="math inline">\(\boldsymbol{E}\)</span> 의 선적분이 동일한 경로상의 <span class="math inline">\(\boldsymbol{v}\times \boldsymbol{B}\)</span> 의 선적분과 같아야 함을 알 수 있다.</p>
 <p><span id="eq-FLP_2_22_13"><span class="math display">\[
 \underset{\text{conductor}}{\underset{\text{inside}}{\int_a^b}} \boldsymbol{E\cdot}\,d\boldsymbol{l}=−\underset{\text{conductor}}{\underset{\text{inside}}{\int_a^b}} (\boldsymbol{v}\times \boldsymbol{B})\boldsymbol{\cdot} \, d\boldsymbol{l}.
-\tag{13.12}\]</span></span></p>
-<p>그러나 전체 루프에 대한 <span class="math inline">\(\boldsymbol{E}\)</span> 의 선적분은 발전기 밖에서의 <span class="math inline">\(b\)</span> 에서 <span class="math inline">\(a\)</span> 로의 선적분을 포함하며, 변동하는 자기장이 없기 때문에 반드시 <span class="math inline">\(0\)</span> 이어야 한다.(<span class="math inline">\(\nabla \times \boldsymbol{E}=-\partial \boldsymbol{B}/\partial t\)</span> 를 생각하라.) 따라서 <a href="#eq-FLP_2_22_13" class="quarto-xref">식&nbsp;<span>13.12</span></a> 의 첫 번째 적분은 또한 두 단자 사이의 전압인 <span class="math inline">\(V\)</span> 와 같다. 식의 오른쪽 적분이 밝혀졌다. <a href="#eq-FLP_2_22_13" class="quarto-xref">식&nbsp;<span>13.12</span></a> 은 코일을 통과하는 플럭스의 변화율에 불과하며, 따라서 플럭스 규칙에 따라 코일 내의 기전력과 같으며 이는 <a href="#eq-FLP_2_22_11" class="quarto-xref">식&nbsp;<span>13.10</span></a> 과 일치한다. 고정된 코일 근처에서 자기장이 변하는 발전기이든, 코일이 고정된 자기장 안에서 움직이는 발전기이든, 발전기의 외부 특성은 동일하다. 단자 전체에 전압 차이 <span class="math inline">\(V\)</span> 가 존재하며, 이는 회로의 전류와는 무관하지만 발전기 내부의 된 조건에만 의존한다.</p>
+\tag{13.13}\]</span></span></p>
+<p>그러나 전체 루프에 대한 <span class="math inline">\(\boldsymbol{E}\)</span> 의 선적분은 발전기 밖에서의 <span class="math inline">\(b\)</span> 에서 <span class="math inline">\(a\)</span> 로의 선적분을 포함하며, 변동하는 자기장이 없기 때문에 반드시 <span class="math inline">\(0\)</span> 이어야 한다.(<span class="math inline">\(\nabla \times \boldsymbol{E}=-\partial \boldsymbol{B}/\partial t\)</span> 를 생각하라.) 따라서 <a href="#eq-FLP_2_22_13" class="quarto-xref">식&nbsp;<span>13.13</span></a> 의 첫 번째 적분은 또한 두 단자 사이의 전압인 <span class="math inline">\(V\)</span> 와 같다. 식의 오른쪽 적분이 밝혀졌다. <a href="#eq-FLP_2_22_13" class="quarto-xref">식&nbsp;<span>13.13</span></a> 은 코일을 통과하는 플럭스의 변화율에 불과하며, 따라서 플럭스 규칙에 따라 코일 내의 기전력과 같으며 이는 <a href="#eq-FLP_2_22_11" class="quarto-xref">식&nbsp;<span>13.11</span></a> 과 일치한다. 고정된 코일 근처에서 자기장이 변하는 발전기이든, 코일이 고정된 자기장 안에서 움직이는 발전기이든, 발전기의 외부 특성은 동일하다. 단자 전체에 전압 차이 <span class="math inline">\(V\)</span> 가 존재하며, 이는 회로의 전류와는 무관하지만 발전기 내부의 된 조건에만 의존한다.</p>
 </section>
 <section id="발전기-타입-3-화학전지" class="level4">
 <h4 class="anchored" data-anchor-id="발전기-타입-3-화학전지"><strong>발전기 타입 3 : 화학전지</strong></h4>
@@ -618,7 +621,7 @@ V=−\mathcal{E}= \dfrac{d}{dt}\Phi_B.
 <p>전체 선 적분이 <span class="math inline">\(0\)</span> 이므로, 회로 전체 루프 주변의 전위 차이의 합이 <span class="math inline">\(0\)</span> 이라고 할 수 있다:</p>
 <p><span id="eq-FLP_2_22_14"><span class="math display">\[
 \sum_{\text{around any loop}} V_n=0.
-\tag{13.13}\]</span></span></p>
+\tag{13.14}\]</span></span></p>
 <p>이 결과는 맥스웰 방정식 중 하나의 결론이다.</p>
 </section>
 <section id="노드를-통과하는-전류" class="level4">
@@ -637,15 +640,15 @@ V=−\mathcal{E}= \dfrac{d}{dt}\Phi_B.
 <p>현재 우리의 이상화 중 하나는 임피던스의 단자에 축적되는 전하는 무시할 만 하다는 것이다. <strong>우리는 이제 단자를 연결하는 전선에 있는 모든 전하도 무시될 수 있다고 가정한다. 그렇다면 전하 보존에 따라 한 회로 요소를 떠나는 모든 전하는 즉시 다른 회로 요소로 들어가야 한다. 즉 주어진 모든 노드에 들어가는 전류들의 대수적 합이 0이어야 한다.</strong> 노드란 <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span> 와 같은 연결된 모든 단자 집합을 의미한다.</p>
 <p><span id="eq-FLP_2_22_15"><span class="math display">\[
 I_1 − I_2 − I_3 − I_4 = 0.
-\tag{13.14}\]</span></span></p>
+\tag{13.15}\]</span></span></p>
 <p><span class="math inline">\(e\)</span>, <span class="math inline">\(f\)</span>, <span class="math inline">\(g\)</span>, <span class="math inline">\(h\)</span> 네 개의 단자로 구성된 노드에 들어가는 전류의 합도 0 이어야 한다:</p>
 <p><span id="eq-FLP_1_22_16"><span class="math display">\[
 −I_1 + I_2 + I_3 + I_4 = 0.
-\tag{13.15}\]</span></span></p>
-<p>이는 물론 <a href="#eq-FLP_2_22_15" class="quarto-xref">식&nbsp;<span>13.14</span></a> 와 동일하다. 두 방정식은 독립적이지 않다. 일반적인 규칙은 모든 노드에 대한 전류의 합이 0이어야 한다는 것이다:</p>
+\tag{13.16}\]</span></span></p>
+<p>이는 물론 <a href="#eq-FLP_2_22_15" class="quarto-xref">식&nbsp;<span>13.15</span></a> 와 동일하다. 두 방정식은 독립적이지 않다. 일반적인 규칙은 모든 노드에 대한 전류의 합이 0이어야 한다는 것이다:</p>
 <p><span id="eq-FLP_2_22_17"><span class="math display">\[
 \sum_{\text{into a node}} I_n = 0.
-\tag{13.16}\]</span></span></p>
+\tag{13.17}\]</span></span></p>
 </section>
 <section id="키르히호프의-규칙" class="level4">
 <h4 class="anchored" data-anchor-id="키르히호프의-규칙"><strong>키르히호프의 규칙</strong></h4>
@@ -711,11 +714,11 @@ I_3 − I_4 + I_8 − I_5 = 0.
 <p><a href="../../src/vol1/vol1_3.html#sec-FLP_1_25"><span class="math inline">\(\mathrm{I}\)</span>.25 선형 시스템</a> 에서 우리는 두 임피던스 <span class="math inline">\(z_1\)</span> 과 <span class="math inline">\(z_2\)</span> 가 직렬일 경우, 아래와 같이 주어진 단일 임피던스 <span class="math inline">\(z_s\)</span> 와 동등함을 보였다.</p>
 <p><span id="eq-FLP_2_22_18"><span class="math display">\[
 z_s = z_1 + z_2.
-\tag{13.17}\]</span></span></p>
+\tag{13.18}\]</span></span></p>
 <p>또한 두 임피던스가 병렬로 연결될 경우에는 아래와 같은 단일 임피던스 <span class="math inline">\(z_p\)</span> 와 동등함을 보였다.</p>
 <p><span id="eq-FLP_2_22_19"><span class="math display">\[
 z_p = \dfrac{1}{1/z_1 + 1/z_2} = \dfrac{z_1 z_2}{z_1+z_2}.
-\tag{13.18}\]</span></span></p>
+\tag{13.19}\]</span></span></p>
 <p>돌이켜보면 이결과를 유도할 때 사실상 키르히호프의 규칙을 사용하고 있었다. 복잡한 회로를 직렬 및 병렬 임피던스 공식을 반복적으로 적용함으로써 분석하는 것이 종종 가능하다. 예를 들어, <a href="#fig-FLP_2_22_12" class="quarto-xref">그림&nbsp;<span>13.12</span></a> 의 회로. 우선, 임피던스 <span class="math inline">\(z_4\)</span> 와 <span class="math inline">\(z_5\)</span> 는 그들의 병렬 등가값으로 대체될 수 있으며, <span class="math inline">\(z_6\)</span> 과 <span class="math inline">\(z_7\)</span> 도 마찬가지다. 그렇다면 임피던스 <span class="math inline">\(z_2\)</span> 는 직렬 규칙에 따라 <span class="math inline">\(z_6\)</span> 및 <span class="math inline">\(z_7\)</span> 의 병렬 등가값과 결합될 수 있다. 이와 같이 진행하면 전체 회로를 단일 임피던스 <span class="math inline">\(Z\)</span> 를 가진 직렬 발전기로 축소할 수 있다. 그때 발전기를 통과하는 전류는 단순히 <span class="math inline">\(\mathcal{E}/Z\)</span> 가 된다. 그런 다음 역방향으로 작업함으로써 각 임피던스의 전류를 구할 수 있다.</p>
 </div>
 </div>
@@ -747,11 +750,11 @@ I_3 = −( I_1 + I_2).
 \]</span></p>
 <p>두 개의 방정식과 두 개의 미지의 전류가 있다. <span class="math inline">\(I_1\)</span> 과 <span class="math inline">\(I_2\)</span> 에 대한 이 방정식들을 풀면,</p>
 <p><span id="eq-FLP_2_22_20"><span class="math display">\[
-I_1 = \dfrac{z_2 \mathcal{E}_2 − ( z_2 + z_3 ) \mathcal{E}_1}{z_1 ( z_2 + z_3 ) + z_2 z_3}, \tag{13.19}\]</span></span></p>
+I_1 = \dfrac{z_2 \mathcal{E}_2 − ( z_2 + z_3 ) \mathcal{E}_1}{z_1 ( z_2 + z_3 ) + z_2 z_3}, \tag{13.20}\]</span></span></p>
 <p>그리고</p>
 <p><span id="eq-FLP_2_22_21"><span class="math display">\[
 I_2 = \dfrac{z_1\mathcal{E}_2 + z_3\mathcal{E}_1}{z_1(z_2 + z_3) + z_2z_3}.
-\tag{13.20}\]</span></span></p>
+\tag{13.21}\]</span></span></p>
 <p>세 번째 전류는 이 두 개의 합으로부터 얻을 수 있다.</p>
 </div>
 </div>
@@ -779,7 +782,7 @@ I_2 = \dfrac{z_1\mathcal{E}_2 + z_3\mathcal{E}_1}{z_1(z_2 + z_3) + z_2z_3}.
 <div id="fig-FLP_2_22_15" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_2_22_15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/fig_2_22/fig_2_22_15.png" class="img-fluid figure-img" width="450">
+<img src="figures/fig_2_22/fig_2_22_15.png" class="img-fluid figure-img" width="300">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_22_15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 그림&nbsp;13.15: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span>. Fig. 22-15. 수동 소자의 두 종단 네트워크는 유효 임피던스와 동등합니다.
@@ -794,7 +797,7 @@ I=\dfrac{\mathcal{E}}{z_\text{eff}}.
 <div id="fig-FLP_2_22_16" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-FLP_2_22_16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/fig_2_22/fig_2_22_16.png" class="img-fluid figure-img" width="400">
+<img src="figures/fig_2_22/fig_2_22_16.png" class="img-fluid figure-img" width="300">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_22_16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 그림&nbsp;13.16: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span>. Fig. 22-16. 두 단자 네트워크는 임피던스를 가진 직렬 발전기로 대체될 수 있다.
@@ -804,20 +807,20 @@ I=\dfrac{\mathcal{E}}{z_\text{eff}}.
 <p>이 아이디어는 발전기와 임피던스를 모두 포함하는 회로에 일반화될 수 있다. 예를 들어 <a href="#fig-FLP_2_22_16" class="quarto-xref">그림&nbsp;<span>13.16</span></a> (a)에서와 같이, 우리가 <span class="math inline">\(z_n\)</span> 이라고 부르는 임피던스 중 하나의 관점에서 회로를 살펴본다고 가정하자. 전체 회로에 대한 방정식을 풀면, 두 단자 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 사이의 전압 <span class="math inline">\(V_n\)</span> 이 <span class="math inline">\(I_n\)</span> 의 선형 함수임을 알 수 있으며, 이를 다음과 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_2_22_22"><span class="math display">\[
 V_n = A − B I_n.
-\tag{13.21}\]</span></span></p>
-<p>여기서 <span class="math inline">\(A\)</span> 와 <span class="math inline">\(B\)</span> 는 터미널 왼쪽에 있는 회로의 발전기와 임피던스에 의존한다. 예를 들어 <a href="#fig-FLP_2_22_13" class="quarto-xref">그림&nbsp;<span>13.13</span></a> 의 회로에 대해 우리는 <span class="math inline">\(V_1 = I_1 z_1\)</span> 임을 안다. <a href="#eq-FLP_2_22_20" class="quarto-xref">식&nbsp;<span>13.19</span></a> 을 재배열함으로써</p>
+\tag{13.22}\]</span></span></p>
+<p>여기서 <span class="math inline">\(A\)</span> 와 <span class="math inline">\(B\)</span> 는 터미널 왼쪽에 있는 회로의 발전기와 임피던스에 의존한다. 예를 들어 <a href="#fig-FLP_2_22_13" class="quarto-xref">그림&nbsp;<span>13.13</span></a> 의 회로에 대해 우리는 <span class="math inline">\(V_1 = I_1 z_1\)</span> 임을 안다. <a href="#eq-FLP_2_22_20" class="quarto-xref">식&nbsp;<span>13.20</span></a> 을 재배열함으로써</p>
 <p><span id="eq-FLP_2_22_23"><span class="math display">\[
 V_1=\left[\left(\dfrac{z_2}{z_2+z_3}\right)\mathcal{E}_2 − \mathcal{E}_1\right] − \dfrac{z_2z_3}{z_2 + z_3}I_1.
-\tag{13.22}\]</span></span></p>
-<p>을 얻는다. 완전한 해는 이 방정식을 임피던스 <span class="math inline">\(z_1\)</span> 에 대한 방정식, 즉 <span class="math inline">\(V_1 = I_1 z_1\)</span> 과 결합하거나 일반적인 경우에는 <a href="#eq-FLP_2_22_22" class="quarto-xref">식&nbsp;<span>13.21</span></a> 를 결합함으로써 얻을 수 있다.</p>
+\tag{13.23}\]</span></span></p>
+<p>을 얻는다. 완전한 해는 이 방정식을 임피던스 <span class="math inline">\(z_1\)</span> 에 대한 방정식, 즉 <span class="math inline">\(V_1 = I_1 z_1\)</span> 과 결합하거나 일반적인 경우에는 <a href="#eq-FLP_2_22_22" class="quarto-xref">식&nbsp;<span>13.22</span></a> 를 결합함으로써 얻을 수 있다.</p>
 <p><span class="math display">\[
 V_n = I_n z_n.
 \]</span></p>
-<p>만약 지금 우리가 <span class="math inline">\(z_n\)</span> 이 <a href="#fig-FLP_2_22_16" class="quarto-xref">그림&nbsp;<span>13.16</span></a> (b) 와 같이 발전기와 임피던스의 단순 직렬 회로에 연결된다고 간주한다면, 방정식은 <a href="#eq-FLP_2_22_22" class="quarto-xref">식&nbsp;<span>13.21</span></a> 에 해당한다.</p>
+<p>만약 지금 우리가 <span class="math inline">\(z_n\)</span> 이 <a href="#fig-FLP_2_22_16" class="quarto-xref">그림&nbsp;<span>13.16</span></a> (b) 와 같이 발전기와 임피던스의 단순 직렬 회로에 연결된다고 간주한다면, 방정식은 <a href="#eq-FLP_2_22_22" class="quarto-xref">식&nbsp;<span>13.22</span></a> 에 해당한다.</p>
 <p><span class="math display">\[
 V_n = \mathcal{E}_\text{eff} − I_n z_\text{eff}.
 \]</span></p>
-<p>이는 <span class="math inline">\(\mathcal{E}_\text{eff}=A\)</span> 와 <span class="math inline">\(z_\text{eff}=B\)</span> 에 대해 <a href="#eq-FLP_2_22_22" class="quarto-xref">식&nbsp;<span>13.21</span></a> 와 동일하다. 따라서 단자 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 의 오른쪽에서 일어나는 일에만 관심이 있다면, <a href="#fig-FLP_2_22_16" class="quarto-xref">그림&nbsp;<span>13.16</span></a> 의 회로는 임피던스를 갖는 직렬 발전기의 동등한 조합으로 언제든지 대체될 수 있다.</p>
+<p>이는 <span class="math inline">\(\mathcal{E}_\text{eff}=A\)</span> 와 <span class="math inline">\(z_\text{eff}=B\)</span> 에 대해 <a href="#eq-FLP_2_22_22" class="quarto-xref">식&nbsp;<span>13.22</span></a> 와 동일하다. 따라서 단자 <span class="math inline">\(a\)</span> 와 <span class="math inline">\(b\)</span> 의 오른쪽에서 일어나는 일에만 관심이 있다면, <a href="#fig-FLP_2_22_16" class="quarto-xref">그림&nbsp;<span>13.16</span></a> 의 회로는 임피던스를 갖는 직렬 발전기의 동등한 조합으로 언제든지 대체될 수 있다.</p>
 </section>
 <section id="sec-FLP_2_22_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_22_5"><span class="math inline">\(\mathrm{II}\)</span>.22-5 에너지</h3>
@@ -829,7 +832,7 @@ V_n = \mathcal{E}_\text{eff} − I_n z_\text{eff}.
 <p>발전기가 임의의 임피던스 <span class="math inline">\(z\)</span> 에 연결될 때 에너지 손실은 어떻게 될까? (여기서 손실은 전기 에너지를 열 에너지로 변환하는 것을 의미한다.) 임피던스 <span class="math inline">\(z\)</span> 는 실수부와 허수 부분의 합으로 표현될 수 있습니다.</p>
 <p><span id="eq-FLP_2_22_24"><span class="math display">\[
 z=R+iX.
-\tag{13.23}\]</span></span></p>
+\tag{13.24}\]</span></span></p>
 <p>등가 회로의 관점에서 볼 때, 모든 임피던스는 저항(<span class="math inline">\(R\)</span>) 과 순허수인 임피던스(<span class="math inline">\(X\)</span> 이를 <strong>리액턴스(reactance)</strong> 라고 한다)의 직렬연결과 동등하다고 말할 수 있다(<a href="#fig-FLP_2_22_17" class="quarto-xref">그림&nbsp;<span>13.17</span></a>).</p>
 <div id="fig-FLP_2_22_17" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -845,17 +848,17 @@ z=R+iX.
 <p>만약 기전력 <span class="math inline">\(\mathcal{E}\)</span> 를 가진 발전기가 <a href="#fig-FLP_2_22_17" class="quarto-xref">그림&nbsp;<span>13.17</span></a> 의 임피던스 <span class="math inline">\(z\)</span> 에 연결되어 있다면, 기전력과 발전기로부터의 전류 <span class="math inline">\(I\)</span> 는 아래의 관계가 있다.</p>
 <p><span id="eq-FLP_2_22_25"><span class="math display">\[
 \mathcal{E} = I(R+iX).
-\tag{13.24}\]</span></span></p>
+\tag{13.25}\]</span></span></p>
 <p>에너지가 전달되는 평균 속도를 찾기 위해, 우리는 <span class="math inline">\(\mathcal{E}I\)</span> 의 평균을 구해야 한다. 여기서 조심할 할 것은 실제 양 <span class="math inline">\(\mathcal{E}(t)\)</span> 와 <span class="math inline">\(I(t)\)</span> 를 다루어야 한다는 것이다. (복소 함수의 실수 부분은 선형 방정식이 있을 때만 실제 물리량을 나타낸다. 그러나 지금은 확실히 선형이 아닌 곱에 대해 논의하고 있다.)</p>
 <p><span class="math inline">\(\hat{I}\)</span> 가 실수가 되도록 <span class="math inline">\(t\)</span> 의 원점을 선택하여 <span class="math inline">\(\hat{I}=I_0\)</span> 라고 하면</p>
 <p><span class="math display">\[
 I(t) =I_0 \cos\omega t.
 \]</span></p>
-<p><a href="#eq-FLP_2_22_25" class="quarto-xref">식&nbsp;<span>13.24</span></a> 의 기전력 <span class="math inline">\(\mathcal{E}=\text{Re}(I_0e^{i\omega t}(R+iX))\)</span> 이다. 즉</p>
+<p><a href="#eq-FLP_2_22_25" class="quarto-xref">식&nbsp;<span>13.25</span></a> 의 기전력 <span class="math inline">\(\mathcal{E}=\text{Re}(I_0e^{i\omega t}(R+iX))\)</span> 이다. 즉</p>
 <p><span id="eq-FLP_2_22_26"><span class="math display">\[
 \mathcal{E} = I_0 R \cos \omega t−I_0 X \sin \omega t.
-\tag{13.25}\]</span></span></p>
-<p><a href="#eq-FLP_2_22_26" class="quarto-xref">식&nbsp;<span>13.25</span></a> 의 두 항은 <a href="#fig-FLP_2_22_17" class="quarto-xref">그림&nbsp;<span>13.17</span></a> 에서 <span class="math inline">\(R\)</span> 과 <span class="math inline">\(X\)</span> 에 걸친 전압 강하를 나타냅니다. 우리는 저항을 가로지르는 전압 강하가 전류와 위상이 같으며, 리액턴스를 가로지르는 전압 강하는 전류와 위상이 맞지 않음을 알 수 있다.</p>
+\tag{13.26}\]</span></span></p>
+<p><a href="#eq-FLP_2_22_26" class="quarto-xref">식&nbsp;<span>13.26</span></a> 의 두 항은 <a href="#fig-FLP_2_22_17" class="quarto-xref">그림&nbsp;<span>13.17</span></a> 에서 <span class="math inline">\(R\)</span> 과 <span class="math inline">\(X\)</span> 에 걸친 전압 강하를 나타냅니다. 우리는 저항을 가로지르는 전압 강하가 전류와 위상이 같으며, 리액턴스를 가로지르는 전압 강하는 전류와 위상이 맞지 않음을 알 수 있다.</p>
 <p>발전기에서 발생하는 평균 에너지 손실률 <span class="math inline">\(\langle P \rangle_\text{av}\)</span> 는 한 사이클 동안의 <span class="math inline">\(\mathcal{E}I\)</span> 의 적분을 주기 <span class="math inline">\(T\)</span> 로 나눈 값이다. 즉</p>
 <p><span class="math display">\[
 \langle P\rangle_\text{av}=\dfrac{1}{T}\int_{0}^T \mathcal{E}I\,dt = \dfrac{1}{T}\left[\int_0^T I^2_0 R \cos^2 \omega t\, dt - \int_0^T I^2_0 X \cos \omega t \sin \omega t\, dt\right].
@@ -905,7 +908,7 @@ z_0 = z_1 + \dfrac{z_2 z_0}{z_2+z_0}.
 <p>비로소 <span class="math inline">\(z_0\)</span> 를 얻을 수 있다.</p>
 <p><span id="eq-FLP_2_22_27"><span class="math display">\[
 z_0 = \dfrac{z_1}{2} + \sqrt{(z_1^2/4)^2  + z_1z_2}.
-\tag{13.26}\]</span></span></p>
+\tag{13.27}\]</span></span></p>
 <p>우리는 반복되는 직렬 및 병렬 임피던스의 무한 사다리에 대한 임피던스를 구했다. 이 때 임피던스 <span class="math inline">\(z_0\)</span> 를 이러한 무한 네트워크의 <strong>특성 임피던스 (characteristic impedance)</strong> 라고 한다.</p>
 </div>
 </div>
@@ -923,10 +926,10 @@ z_0 = \dfrac{z_1}{2} + \sqrt{(z_1^2/4)^2  + z_1z_2}.
 </figcaption>
 </figure>
 </div>
-<p>이제 <a href="#fig-FLP_2_22_20" class="quarto-xref">그림&nbsp;<span>13.20</span></a> (a) 에 표시된 바와 같이, 직렬 요소가 인덕턴스 <span class="math inline">\(L\)</span> 이고 분기된 요소가 정전용량 <span class="math inline">\(C\)</span> 인 구체적인 예를 살펴보자. 이 경우 우리는 <span class="math inline">\(z_1 = i\omega L\)</span> 와 <span class="math inline">\(z_2 = 1/i\omega C\)</span> 로 설정하여 앞서 보았던 무한 네트워크의 임피던스를 구하고자 한다. <a href="#eq-FLP_2_22_27" class="quarto-xref">식&nbsp;<span>13.26</span></a> 의 첫 번째 항 <span class="math inline">\(z_1/2\)</span> 은 첫 번째 요소의 임피던스의 절반에 해당한다. 따라서 무한 네트워크를 <a href="#fig-FLP_2_22_20" class="quarto-xref">그림&nbsp;<span>13.20</span></a> (b) 와 같이 그리면 더 자연스럽거나 최소한 다소 단순해 보일 것이다. <span class="math inline">\(a'\)</span> 단자에서 무한 네트워크를 보면 특성 임피던스를 확인할 수 있다.</p>
+<p>이제 <a href="#fig-FLP_2_22_20" class="quarto-xref">그림&nbsp;<span>13.20</span></a> (a) 에 표시된 바와 같이, 직렬 요소가 인덕턴스 <span class="math inline">\(L\)</span> 이고 분기된 요소가 정전용량 <span class="math inline">\(C\)</span> 인 구체적인 예를 살펴보자. 이 경우 우리는 <span class="math inline">\(z_1 = i\omega L\)</span> 와 <span class="math inline">\(z_2 = 1/i\omega C\)</span> 로 설정하여 앞서 보았던 무한 네트워크의 임피던스를 구하고자 한다. <a href="#eq-FLP_2_22_27" class="quarto-xref">식&nbsp;<span>13.27</span></a> 의 첫 번째 항 <span class="math inline">\(z_1/2\)</span> 은 첫 번째 요소의 임피던스의 절반에 해당한다. 따라서 무한 네트워크를 <a href="#fig-FLP_2_22_20" class="quarto-xref">그림&nbsp;<span>13.20</span></a> (b) 와 같이 그리면 더 자연스럽거나 최소한 다소 단순해 보일 것이다. <span class="math inline">\(a'\)</span> 단자에서 무한 네트워크를 보면 특성 임피던스를 확인할 수 있다.</p>
 <p><span id="eq-FLP_2_22_28"><span class="math display">\[
 z_0 = \sqrt{(L/C)−(\omega^2L^2/4)}.
-\tag{13.27}\]</span></span></p>
+\tag{13.28}\]</span></span></p>
 <p>이제 진동수 <span class="math inline">\(\omega\)</span> 에 따라 두 가지 흥미로운 경우가 있다. <span class="math inline">\(\omega^2 &lt; 4/LC\)</span> 이면 임피던스 <span class="math inline">\(z_0\)</span> 는 실수이며, <span class="math inline">\(\omega^2 &gt; 4/LC\)</span> 이면 <span class="math inline">\(z_0\)</span> 는 허수로</p>
 <p><span class="math display">\[
 z_0=i\sqrt{(\omega^2L^2/4)-(L/C)}
@@ -936,8 +939,8 @@ z_0=i\sqrt{(\omega^2L^2/4)-(L/C)}
 </div>
 </div>
 </section>
-<section id="sec-FLP_2_22_6" class="level3">
-<h3 class="anchored" data-anchor-id="sec-FLP_2_22_6"><span class="math inline">\(\mathrm{II}\)</span>.22-6 필터</h3>
+<section id="sec-FLP_2_22_7" class="level3">
+<h3 class="anchored" data-anchor-id="sec-FLP_2_22_7"><span class="math inline">\(\mathrm{II}\)</span>.22-7 필터</h3>
 <p>우리는 마지막 절에서 <a href="#fig-FLP_2_22_20" class="quarto-xref">그림&nbsp;<span>13.20</span></a> 의 무한 사다리 네트워크가 특정 임계 진동수 <span class="math inline">\(\sqrt{4/LC}\)</span> 이하의 진동수로 구동될 경우 지속적으로 에너지를 흡수한다는 것을 확인했다. 앞으로 이를 <strong>차단 진동수 (cutoff frequency)</strong> <span class="math inline">\(\omega_0\)</span> 라고 부를 것이다. 우리는 이 효과를 지속적인 에너지 전달이라는 관점에서 이해될 수 있다고 제안했다. 반면에, <span class="math inline">\(\omega &gt; \omega_0\)</span> 인 고주파에서는 에너지의 연속적인 흡수가 존재하지 않으며, 따라서 전류가 매우 멀리 “penetrate”되지 않을 수도 있다고 예상할 수 있다. 이 아이디어들이 옳은지 확인해 보자.</p>
 <p>사다리의 앞부분을 어떤 교류 발전기에 연결했다고 가정하고, 사다리의 754번째 구간에서 전압이 어떻게 보이는지 물어보는다고 가정해 보자. 네트워크가 무한하기 때문에, 한 구간에서 다음 구간으로 전압이 변하는 일은 항상 동일합니다; 따라서 어떤 구간, 예를 들어 <span class="math inline">\(n\)</span> 번째 구간에서 다음 구간으로 갈 때 어떤 일이 일어나는지 살펴보겠습니다. 우리는 <a href="#fig-FLP_2_22_21" class="quarto-xref">그림&nbsp;<span>13.21</span></a> (a) 에 표시된 대로 전류 <span class="math inline">\(I_n\)</span> 과 전압 <span class="math inline">\(V_n\)</span> 을 정의한다.</p>
 <div id="fig-FLP_2_22_21" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -961,25 +964,25 @@ V_n − V_{n+1} = I_n z_1 = V_n\dfrac{z_1}{z_0}.
 <p>이 비율을 사다리의 한 구간에 대한 전파 계수라고 하며, <span class="math inline">\(\alpha\)</span> 라고 표기하자. 이 관계는 모든 섹션에서 동일하다.</p>
 <p><span id="eq-FLP_2_22_29"><span class="math display">\[
 \alpha := \dfrac{z_0−z_1}{z_0}.
-\tag{13.28}\]</span></span></p>
+\tag{13.29}\]</span></span></p>
 <p>이 때 <span class="math inline">\(n\)</span> 번째 구간 이후의 전압은</p>
 <p><span id="eq-FLP_2_22_30"><span class="math display">\[
 V_n = \alpha^n\mathcal{E}.
-\tag{13.29}\]</span></span></p>
+\tag{13.30}\]</span></span></p>
 <p>이제 754 구간 이후에 전압은 <span class="math inline">\(\alpha^{754}\mathcal{E}\)</span> 임을 안다.</p>
-<p><a href="#fig-FLP_2_22_20" class="quarto-xref">그림&nbsp;<span>13.20</span></a> (a) 의 <span class="math inline">\(L‐C\)</span> 사다리에서 <span class="math inline">\(α\)</span> 가 어떻게 보이는지 생각해보자. <a href="#eq-FLP_2_22_27" class="quarto-xref">식&nbsp;<span>13.26</span></a> 에서 <span class="math inline">\(z_0\)</span> 를 사용한다. 그리고 <span class="math inline">\(z_1=i\omega L\)</span> 이다. 이로부터</p>
+<p><a href="#fig-FLP_2_22_20" class="quarto-xref">그림&nbsp;<span>13.20</span></a> (a) 의 <span class="math inline">\(L‐C\)</span> 사다리에서 <span class="math inline">\(α\)</span> 가 어떻게 보이는지 생각해보자. <a href="#eq-FLP_2_22_27" class="quarto-xref">식&nbsp;<span>13.27</span></a> 에서 <span class="math inline">\(z_0\)</span> 를 사용한다. 그리고 <span class="math inline">\(z_1=i\omega L\)</span> 이다. 이로부터</p>
 <p><span id="eq-FLP_2_22_31"><span class="math display">\[
 \alpha = \dfrac{\sqrt{(L/C)−(\omega^2L^2/4)} - i (\omega L/2)}{\sqrt{(L/C)−(\omega^2L^2/4)} + i (\omega L/2)}
-\tag{13.30}\]</span></span></p>
+\tag{13.31}\]</span></span></p>
 <p>구동 진동수가 차단진동수 <span class="math inline">\(\omega_0=\sqrt{4/LC}\)</span> 이하인 경우, <span class="math inline">\(|\alpha|=1\)</span> 이므로</p>
 <p><span class="math display">\[
 \alpha = e^{i\delta},
 \]</span></p>
 <p>로 쓸 수 있다. 즉, 전압의 크기는 모든 구간에서 동일하고 위상만 변화한다. 위상 변화 <span class="math inline">\(\delta\)</span> 는 실제로 음수이며, 전압이 네트워크를 따라 전달되는 동안의 <em>지연(delay)</em> 을 나타낸다.</p>
-<p><span class="math inline">\(\omega &gt; \omega_0\)</span> 에 대해서는 <a href="#eq-FLP_2_22_31" class="quarto-xref">식&nbsp;<span>13.30</span></a> 의 분자와 분모에서 <span class="math inline">\(i\)</span> 를 제거하면</p>
+<p><span class="math inline">\(\omega &gt; \omega_0\)</span> 에 대해서는 <a href="#eq-FLP_2_22_31" class="quarto-xref">식&nbsp;<span>13.31</span></a> 의 분자와 분모에서 <span class="math inline">\(i\)</span> 를 제거하면</p>
 <p><span id="eq-FLP_2_22_32"><span class="math display">\[
 \alpha = \dfrac{\sqrt{(\omega^2L^2/4)-(L/C)} - (\omega L/2)}{\sqrt{(\omega^2L^2/4)- (L/C)} + (\omega L/2)}.
-\tag{13.31}\]</span></span></p>
+\tag{13.32}\]</span></span></p>
 <p>전파 계수 <span class="math inline">\(\alpha\)</span> 이며, <span class="math inline">\(\alpha&lt;1\)</span> 이다. 즉, 어느 구간의 전압은 항상 이전 구간의 전압보다 <span class="math inline">\(\alpha\)</span> 배 낮다. <span class="math inline">\(\omega_0\)</span> 보다 높은 모든 진동수에 대해, 네트워크를 따라 이동함에 따라 전압이 빠르게 소모된다. <span class="math inline">\(\alpha\)</span> 의 절대값을 <span class="math inline">\(\omega\)</span> 함수로 보면 <a href="#fig-FLP_2_22_22" class="quarto-xref">그림&nbsp;<span>13.22</span></a> 와 같다.</p>
 <div id="fig-FLP_2_22_22" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1003,6 +1006,21 @@ V_n = \alpha^n\mathcal{E}.
 </figcaption>
 </figure>
 </div>
+<p>우리의 <span class="math inline">\(L‐C\)</span> 사다리에서 <span class="math inline">\(L\)</span> 과 <span class="math inline">\(C\)</span> 의 위치를 교환하여 <a href="#fig-FLP_2_22_23" class="quarto-xref">그림&nbsp;<span>13.23</span></a> (a) 에 표시된 사다리를 만들면, 고주파를 전파하고 저주파를 차단하는 필터가 된다. <a href="#eq-FLP_summary_impedence_of_passive_element" class="quarto-xref">식&nbsp;<span>13.10</span></a> 을 보면 <a href="#eq-FLP_2_22_32" class="quarto-xref">식&nbsp;<span>13.32</span></a> 에서 <span class="math inline">\((L,\,C,\,\omega)\)</span> 를 <span class="math inline">\((C,\, L,\,1/\omega)\)</span> 로 바꾸면 된다. 이는 <a href="#fig-FLP_2_22_23" class="quarto-xref">그림&nbsp;<span>13.23</span></a> (b) 에서 보이는 것고 ㅏ같다.</p>
+<p>이러한 low-pass 및 high-pass 필터는 다양하게 이용된다. <span class="math inline">\(L-C\)</span> low-pass 필터는 직류 전원 공급 장치에서 종종 “smoothing” 필터로 사용된다. 교류 전원으로부터 직류 전력을 만들려면 전류가 한 방향으로만 흐르도록 허용하는 정류기부터 시작한다. 정류기에서 <a href="#fig-FLP_2_22_24" class="quarto-xref">그림&nbsp;<span>13.24</span></a> 에 표시된 함수 <span class="math inline">\(V(t)\)</span> 와 같은 일련의 펄스를 얻을 수 있는데, 이는 위아래로 흔들리기 때문에 형편없는 직류이다. 정류기와 부하 사이에 low-pass 필터를 삽입함으로써 직류에 근접한 전류를 얻을 수 있다.</p>
+<div id="fig-FLP_2_22_24" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_22_24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_22/fig_2_22_24.png" class="img-fluid figure-img" width="350">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_22_24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;13.24: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span>. Fig. 22-24. 전파 정류기의 출력 전압.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-FLP_2_22_24" class="quarto-xref">그림&nbsp;<span>13.24</span></a> 의 시간에 대한 함수는 푸리에 급수로 의해 표현될 수 있다는 것을 안다. 우리의 필터가 선형이라면(우리가 가정해 온 바와 같이 <span class="math inline">\(L\)</span> 과 <span class="math inline">\(C\)</span> 가 전류나 전압에 따라 변하지 않는 경우) 필터에서 나오는 것은 입력에서 각 부품의 출력이 겹쳐진다. 우리 필터의 절단 주파수 <span class="math inline">\(\omega_0\)</span> 가 함수 <span class="math inline">\(V(t)\)</span> 에서 가장 낮은 주파수보다 훨씬 낮게 배치하면, ω=0인 dc는 잘 흐르지만 첫 번째 고조파의 진폭이 크게 감소합니다. 그리고 고조화음의 진폭은 더욱 감소될 것입니다. 따라서 우리는 원하는 만큼 부드러운 출력을 얻을 수 있으며, 이는 우리가 구매할 의향이 있는 필터 섹션의 수에만 달려 있습니다.</p>
+<p>특정 저주파를 차단하고자 할 경우 고역통과 필터를 사용합니다. 예를 들어, 축음기 앰프에서는 고역통과 필터를 사용하여 음악을 통과시키는 동시에 턴테이블 모터에서 발생하는 저음의 울림을 차단할 수 있습니다.</p>
+<p>또한 “밴드패스” 필터를 만들어 특정 주파수 ω1 이하와 다른 주파수 ω2 이상(ω1보다 큰 주파수)을 차단하고, ω1과 ω2 사이의 주파수를 통과하도록 하는 것이 가능합니다. 이는 고역 통과 필터와 저역 통과 필터를 결합함으로써 간단히 수행할 수 있지만, 일반적으로는 임피던스 z1과 z2가 더 복잡한 사다리를 만들어 각각 L과 C의 조합이 되도록 하는 경우가 더 일반적입니다. 이러한 대역통과 필터는 그림 22–25(a)에 표시된 것과 같은 전파 상수를 가질 수 있습니다. 예를 들어, 고주파 전화 케이블의 여러 음성 채널 각각이나 라디오 전송의 변조 반송선과 같이 주파수 간격만을 차지하는 신호를 분리하는 데 사용될 수 있습니다.</p>
 </section>
 </section>
 <section id="sec-FLP_2_23" class="level2">
