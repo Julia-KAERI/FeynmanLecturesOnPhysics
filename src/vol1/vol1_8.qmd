@@ -1,5 +1,5 @@
 ---
-title: "$\\text{I}$-7 : 파동"
+title: "$\\text{I}$-8 : 파동"
 number-sections: true
 number-depth: 0
 crossref:
