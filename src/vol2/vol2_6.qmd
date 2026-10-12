@@ -27,8 +27,6 @@ crossref:
 
 ### $\textrm{II}$.27-6 장 운동량 {#sec-FLP_2_27_6}
 
-### $\textrm{II}$.27-6 장 운동량 {#sec-FLP_2_27_6}
-
 ## $\textrm{II}$.28 전자기적 질량 {#sec-FLP_2_28}
 
 ## $\textrm{II}$.29 전자기장에서의 전하의 운동 {#sec-FLP_2_29}

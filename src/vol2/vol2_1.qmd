@@ -1,5 +1,5 @@
 ---
-title: "$\\text{II}$-1 : 정전기와 정자기"
+title: "$\\text{II}$-1 : 정전기"
 number-sections: true
 number-depth: 0
 crossref:
