@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -424,12 +424,44 @@ t'^2−x'^2=t^2−x^2.
 <p><span class="math display">\[
 t^2−x^2−y^2−z^2.
 \]</span></p>
-<p>이는 “완전 로런츠 군”이라고 불리는 불변량이며, 이는 일정한 속도와 회전에서 두 평행 이동을 변환하는 것을 의미한다.</p>
-<p>이제 이 불변성은 방정식의 변환 규칙 <a href="#eq-FLP_2_25_1" class="quarto-xref">식&nbsp;<span>14.1</span></a> 과 회전에만 의존하는 대수적 문제이므로 이는 모든 사변수 <span class="math inline">\(X^\mu\)</span> 에 대해 참이다(정의상 모두 동일하게 변환됩니다).</p>
+<p>이는 <strong>완전 로런츠 군 (complete Lorentz group)</strong> 이라고 불리는 불변량이며, 이는 일정한 속도와 회전에서 두 평행 이동을 변환하는 것을 의미한다.</p>
+<p>이제 이 불변성은 방정식의 변환 규칙 <a href="#eq-FLP_2_25_1" class="quarto-xref">식&nbsp;<span>14.1</span></a> 과 회전에만 의존하는 대수적 문제이므로 이는 모든 사변수 <span class="math inline">\(X^\mu\)</span> 에 대해 참이다(정의상 모두 동일하게 변환된다.)</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">노트</span>4-벡터의 제곱 거리
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>아래와 같이 정의된 <span class="math inline">\(|X^\mu|^2\)</span> 을 4-벡터 <span class="math inline">\(X^\mu\)</span> 의 제곱거리라고 한다. <span id="eq-FLP_2_25_8"><span class="math display">\[
+|X^\mu|^2 = X_\mu X^\mu := (X^0)^2-(X^1)^2 - (X^2)^2 - (X^3)^2 = X'_\mu X'^\mu
+\tag{14.6}\]</span></span></p>
+</div>
+</div>
+<p>이제 두 벡터 <span class="math inline">\(A^\mu\)</span> 와 <span class="math inline">\(B^\mu\)</span> 에 대해</p>
+<p><span id="eq-FLP_2_25_7"><span class="math display">\[
+A_\mu B^\mu = A^\mu B_\mu = A^0B^0-A^1B^1 - A^2B^2 - A^3B^3
+\tag{14.7}\]</span></span></p>
+<p>역시 불변(스칼라) 양이다. 로렌츠 변환 하에서 스칼라 곱의 불변성은 다음과 같이 표현될 수 있다.</p>
 <p><span class="math display">\[
-X_\mu X^\mu := (X^0)^2-(X^1)^2 - (X^2)^2 - (X^3)^2 = X'_\mu X'^\mu
+A'_\mu B'^\mu   = A_\mu B^\mu.
 \]</span></p>
-<p>우리는 이 양을 4-벡터 <span class="math inline">\(X^\mu\)</span> 의 길이의 제곱이라고 부른다.</p>
+<p><a href="#eq-FLP_2_25_7" class="quarto-xref">식&nbsp;<span>14.7</span></a> 의 마지막 세 항은 3차원에서의 스칼라곱이므로, <span class="math inline">\(A^\mu = (A^0,\,\boldsymbol{a})\)</span>, <span class="math inline">\(B^\mu = (B^0,\,\boldsymbol{b})\)</span> 일 때 종종 이렇게 쓰기도 한다.</p>
+<p><span class="math display">\[
+A_\mu B^\mu = A^0B^0 − \boldsymbol{a \cdot b}.
+\]</span></p>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_chaper_2_24_1" class="theorem example">
+<p><span class="theorem-title"><strong>예제 14.1 (반양성자 생성)</strong></span> 반양성자 <span class="math inline">\(\overline{p}\)</span> 는 거대 가속기에서 다음 반응으로 생성된다.</p>
+<p><span class="math display">\[
+p+p  \to p + p + p + \overline{p}.
+\]</span></p>
+<p>즉, 높은 에너지의 양성자(<span class="math inline">\(p\)</span>) 가 정지 중인 양성자와 충돌하할 때, 입사 양성자에 충분한 에너지가 있다면 원래의 두 양성자 외에 양성자‐반양성자 쌍이 생성될 수 있습니다.1 질문은 다음과 같습니다: 이 반응을 에너지적으로 가능하게 하려면 입사 양성자에 얼마나 많은 에너지를 제공해야 하는가?</p>
+</div>
+</div>
 </section>
 </section>
 <section id="sec-FLP_2_26" class="level2">
