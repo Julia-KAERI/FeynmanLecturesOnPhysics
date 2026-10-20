@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -348,6 +348,7 @@ window.Quarto = {
   <li><a href="#sec-FLP_2_26_1" id="toc-sec-FLP_2_26_1" class="nav-link" data-scroll-target="#sec-FLP_2_26_1"><span class="math inline">\(\mathrm{II}\)</span>.26-1 움직이는 전하의 4-포텐셜</a></li>
   <li><a href="#sec-FLP_2_26_2" id="toc-sec-FLP_2_26_2" class="nav-link" data-scroll-target="#sec-FLP_2_26_2"><span class="math inline">\(\mathrm{II}\)</span>.26–2 일정한 속도로 움직이는 전하에 의한 장</a></li>
   <li><a href="#sec-FLP_2_26_3" id="toc-sec-FLP_2_26_3" class="nav-link" data-scroll-target="#sec-FLP_2_26_3"><span class="math inline">\(\mathrm{II}\)</span>.26–3 장의 상대론적 변환</a></li>
+  <li><a href="#mathrmii.264-운동방정식의-상대론적-표기법" id="toc-mathrmii.264-운동방정식의-상대론적-표기법" class="nav-link" data-scroll-target="#mathrmii.264-운동방정식의-상대론적-표기법"><span class="math inline">\(\mathrm{II}\)</span>.26–4 운동방정식의 상대론적 표기법</a></li>
   <li><a href="#연습문제" id="toc-연습문제" class="nav-link" data-scroll-target="#연습문제">연습문제</a></li>
   </ul></li>
   <li><a href="#sec-FLP_2_27" id="toc-sec-FLP_2_27" class="nav-link" data-scroll-target="#sec-FLP_2_27"><span class="math inline">\(\textrm{II}\)</span>.27 장의 에너지와 운동량</a>
@@ -915,16 +916,107 @@ X'^\mu = \Lambda^\mu_\nu X^\nu,\qquad \dfrac{\partial}{\partial X_\mu} = \Lambda
 <p><span class="math display">\[
 F'^{\mu\nu} = \dfrac{\partial A'^\nu}{\partial X'_\mu} - \dfrac{\partial A'^\mu}{\partial X'_\nu} = \Lambda^\nu_\eta\Lambda^\mu_\delta \left(\dfrac{\partial A^\eta}{\partial X_\delta}-\dfrac{\partial A^\delta}{\partial X_\eta}\right) = \Lambda^\mu_\delta \Lambda^\nu_\eta F^{\delta\eta}
 \]</span></p>
-<p><span class="math display">\[
+<p>로부터 <span class="math inline">\(\boldsymbol{E}',\,\boldsymbol{B}'\)</span> 의 각 성분을 아래와 같이 계산 할 수 있다. <span id="eq-FLP_2_26_3_lorentz_transform_of_fields"><span class="math display">\[
 \begin{aligned}
 E_x' &amp;= - {F'}^{01} = -\Lambda^0_\delta \Lambda^1_\eta F^{\delta \eta} = E_x, \\[0.3em]
 E_y' &amp; = - (F')^{02} = -\Lambda^0_\delta \Lambda^2_\eta F^{\delta \eta} = \dfrac{E_y-vB_z}{\sqrt{1-v^2}}, \\[0.3em]
 E_z' &amp;= - (F')^{03} = -\Lambda^0_\delta \Lambda^3_\eta F^{\delta \eta} = \dfrac{E_z-vB_y}{\sqrt{1-v^2}}, \\[0.3em]
 B_x' &amp;= - (F')^{23} = -\Lambda^2_\delta \Lambda^3_\eta F^{\delta \eta} = B_x, \\[0.3em]
-B_y' &amp;=  (F')^{13} = \Lambda^1_\delta \Lambda^3_\eta F^{\delta \eta} = \dfrac{B_x + vE_z}{\sqrt{1-v^2}}, \\[0.3em]
+B_y' &amp;=  (F')^{13} = \Lambda^1_\delta \Lambda^3_\eta F^{\delta \eta} = \dfrac{B_y + vE_z}{\sqrt{1-v^2}}, \\[0.3em]
 B_z' &amp;=  -(F')^{12} = \Lambda^1_\delta \Lambda^2_\eta F^{\delta \eta} = \dfrac{B_z - vE_y}{\sqrt{1-v^2}}.
 \end{aligned}
+\tag{14.46}\]</span></span></p>
+<p>이것을 관성기준틀과 평행한 방향 (<span class="math inline">\(E_\parallel\)</span>, <span class="math inline">\(B_\parallel\)</span>) 과 수직한 방향 (<span class="math inline">\(E_\perp\)</span>, <span class="math inline">\(B_\perp\)</span>) 로 표현하면 (그리고 생략되었던 <span class="math inline">\(c\)</span> 를 명시적으로 표기하면)</p>
+<p><span id="eq-FLP_table_26_4"><span class="math display">\[
+\boxed{
+\begin{aligned}
+E'_\parallel &amp;= E_\parallel,\quad &amp; E'_\perp &amp;= \dfrac{(\boldsymbol{E}+\boldsymbol{v}\times\boldsymbol{B})_\perp}{\sqrt{1-v^2/c^2}},\\[0.3em]
+B'_\parallel &amp;= B_\parallel,&amp; B'_\perp &amp;= \dfrac{\left(\boldsymbol{B}-\dfrac{\boldsymbol{v}\times\boldsymbol{E}}{c^2}\right)_\perp}{\sqrt{1-v^2/c^2}}.
+\end{aligned}
+}
+\tag{14.47}\]</span></span></p>
+<p>장의 변환은 우리가 이전에 수행한 문제들을 해결하는 또 다른 방법을 제공한다. 예를 들어, 움직이는 점 전하의 장를 구하기 위해 이전에는 포텐셜을 미분하였다. 하지만 이제 우리는 쿨롱장을 변환한다. <span class="math inline">\(S\)</span>-기준틀에 점전하가 정지하고 있다면, 단순 방사형 <span class="math inline">\(\boldsymbol{E}\)</span> 만 존재한다. <span class="math inline">\(S'\)</span> 기준틀이 <span class="math inline">\(S\)</span> 기준틀에 대해 속도 <span class="math inline">\(v=-u\)</span> 로 움직이고 있다면 <span class="math inline">\(S'\)</span> 기준틀에서는 점전하가 속도 <span class="math inline">\(u\)</span> 로 움직인다. 우리는 <a href="#eq-FLP_2_26_3_lorentz_transform_of_fields" class="quarto-xref">식&nbsp;<span>14.46</span></a> 와 <a href="#eq-FLP_table_26_4" class="quarto-xref">식&nbsp;<span>14.47</span></a> 의 변환을 통해 얻은 장이 <a href="#sec-FLP_2_26_2"><span class="math inline">\(\mathrm{II}\)</span>.26-2 일정한 속도로 움직이는 전하에 의한 장</a> 에서 얻은 전기장 및 자기장과 동일하다는 것을 보일 수 있다.</p>
+<div id="fig-FLP_2_26_7" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_26_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_26/fig_2_26_7.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_26_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;14.9: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span>. Fig. 26-7. 좌표계 <span class="math inline">\(S'\)</span> 이 정전기장을 통과하고 있다.
+</figcaption>
+</figure>
+</div>
+<p><a href="#eq-FLP_2_26_3_lorentz_transform_of_fields" class="quarto-xref">식&nbsp;<span>14.46</span></a> 의 변환은 전하가 고정된 기준틀에서 움직일 때 우리가 보는 것에 대한 흥미롭고 간단한 답을 제시한다. 예를 들어, 우리가 그림 <a href="#eq-FLP_2_26_7" class="quarto-xref">식&nbsp;<span>14.35</span></a> 에서 표현된 바와 같이 축전지의 의 판 사이를 이동하고 있을 때 우리의 <span class="math inline">\(S'\)</span> 기준틀에서의 장을 구한다고 하자. (당연히, 전하를 띤 축전지가 우리 옆을 지나는 것과 동일하다.) 이 경우 변환은 원래 기준틀에서 <span class="math inline">\(\boldsymbol{B}=0\)</span> 이므로 쉽다. 먼저, 우리가 <span class="math inline">\(\boldsymbol{E}\)</span> 에 수직으로 움직인다고 가정하면 <span class="math inline">\(\boldsymbol{E}' = \boldsymbol{E}/\sqrt{1−v^2/c^2}\)</span> 은 여전히 완전히 횡방향이다. 여기에 추가로 자기장 <span class="math inline">\(\boldsymbol{B}' = −\boldsymbol{v}\times \boldsymbol{E}'/c^2\)</span> 이다.(<a href="#eq-FLP_table_26_4" class="quarto-xref">식&nbsp;<span>14.47</span></a> 의 <span class="math inline">\(\boldsymbol{E}\)</span> 를 <span class="math inline">\(\boldsymbol{E}'\)</span> 으로 바꾼다.) 따라서 정전기장에 수직으로 이동한다면, 추가된 횡방향 <span class="math inline">\(\boldsymbol{B}\)</span> 를 보게 된다. 우리의 운동이 <span class="math inline">\(\boldsymbol{E}\)</span> 에 수직이 아니면, <span class="math inline">\(\boldsymbol{E}\)</span> 를 <span class="math inline">\(\boldsymbol{E}_\parallel\)</span> 와 <span class="math inline">\(\boldsymbol{E}_\perp\)</span> 로 분해하여 계산한다.</p>
+<p>반대의 경우, 즉 우리가 순수한 정적 자기장을 장에 수직인 방향으로 지나고 있다고 하자. 이번에는 전기장 <span class="math inline">\(\boldsymbol{E}' = \boldsymbol{v}\times \boldsymbol{B}'\)</span> 이며 <span class="math inline">\(\boldsymbol{B}' = \boldsymbol{B}/\sqrt{1-v^2/c^2}\)</span> 이다. <span class="math inline">\(v \ll c\)</span> 라면 자기장의 변화는 무시할만 하며, 주된 효과는 전기장이 나타나는 것이다. 이 효과의 한 예로, 한때 유명했던 비행기의 속도를 결정하는 문제가 있다. 이제는 레이더를 이용해 지면 반사를 통해 항공 속도를 측정할 수 있게 되었기 때문에 더 이상 유명하지 않지만, 수년간 악천후에서 비행기의 속도를 알기가 매우 어려웠다. 땅을 볼 수 없었고, 어느 방향이 위인지 알지 못했으며, 다른 여러 상황이 있었다. 하지만 지구에 비해 비행기가 얼마나 빠르게 움직이고 있는지를 아는 것이 중요했다. 지구를 보지 않고는 어떻게 할 수 있을까? 변환 공식을 알고 있던 많은 사람들은 비행기가 지구의 자기장 안에서 움직인다는 사실을 활용하는 아이디어를 생각했다. 비행기가 어느 정도 알려진 자기장이 있는 곳을 비행하고 있다고 가정해 보자. 자기장이 수직인 단순한 경우를 생각한다. 만약 비행기가 수평 속도 <span class="math inline">\(\boldsymbol{v}\)</span> 로 비행한다면, 전기장은 <span class="math inline">\(\boldsymbol{v}\times \boldsymbol{B}\)</span>, 즉 운동에 수직인 자기장을 보게 된다. 비행기에 절연된 전선을를 매달면, 이 전기장은 와이어 끝에 전하를 유도한다. 그것은 새로운 것이 아니다. 지면에 있는 사람의 관점에서 보면, 우리는 전선을 장에서 이동시키고 있으며, <span class="math inline">\(\boldsymbol{v}\times \boldsymbol{B}\)</span> 의 힘이 전하를 전선의 끝으로 이동하게 한다. 변환 방정식은 같은 말을 다른 방식으로 말한다. (우리가 그 말을 여러 가지 방법으로 말할 수 있다는 사실이 한 방법이 다른 방법보다 낫다는 뜻은 아니다.) 우리는 매우 다양한 방법과 도구를 많이 활용하고 있어 보통 65가지 다른 방법으로 동일한 결과를 얻을 수 있다!</p>
+<p>따라서 <span class="math inline">\(\boldsymbol{v}\)</span> 를 측정하려면 전선 끝 사이의 전압 측정하기만 하면 된다. 동일한 장이 전압계의 전선에 작용하기 때문이 전압계로는 이 일을수행할 수 없다. 이러한 장을 측정하는 방법이 있습니다. 우리는 9장에서 대기 전기에 대해 논의할 때 그 중 일부에 대해 이야기했다. 따라서 비행기의 속도를 측정할 수 있어야 한다.</p>
+<p>하지만 이 중요한 문제는 결코 이렇게 해결되지 않았다. 그 이유는 발생한 전기장이 미터당 밀리볼트 정도이기 때문이다. 이러한 장을 측정하는 것은 가능하지만, 문제는 안타깝게도 이러한 필드가 다른 전기장과 전혀 다르지 않다는 점이다. 자기장을 통한 운동에 의해 생성되는 장은 이미 다른 원인, 예를 들어 공기 중의 정전하나 구름에 존재하는 전기장과 구별할 수 없다. 우리는 9장에서 일반적으로 지구 표면 위에 약 100볼트/미터의 강도를 가진 전기장이 존재한다는 것을 설명했다. 하지만 그것들은 꽤 불규칙하며, 따라서 비행기가 공중을 비행할 때, 대기 전기장의 변동을 관측하게 되는데, 이는 <span class="math inline">\(\boldsymbol{v}\times \boldsymbol{B}\)</span> 에 의해 생성된 작은 전기장에 비해 매우 거대하고, 실용적인 이유로 비행기의 속도를 지구 자기장을 통과하는 운동으로 측정하는 것이 불가능하다는 것이 밝혀졌다.</p>
+</section>
+<section id="mathrmii.264-운동방정식의-상대론적-표기법" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="mathrmii.264-운동방정식의-상대론적-표기법"><span class="math inline">\(\mathrm{II}\)</span>.26–4 운동방정식의 상대론적 표기법</h3>
+<p>전기장과 자기장이 무엇을 하는지 모른다면 맥스웰 방정식에서 전기장과 자기장을 찾는 것은 큰 도움이 안된다. 장은 전하에 가해지는 힘을 정하며, 그 힘이 전하의 움직임을 결정한다. 따라서 당연히 전기역학 이론의 일부는 전하의 운동과 힘 사이의 관계이다.</p>
+<p><span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 내부의 단일 전하에 가해지는 힘은</p>
+<p><span id="eq-FLP_2_26_23"><span class="math display">\[
+\boldsymbol{F} = q (\boldsymbol{E} + \boldsymbol{v}\times \boldsymbol{B}).
+\tag{14.48}\]</span></span></p>
+<p>이 힘은 저속에서는 질량에 가속도를 곱한 값과 같지만, 모든 속도에 대한 올바른 법칙은 힘이 <span class="math inline">\(d\boldsymbol{p}/dt\)</span> 와 같다는 것이다. <span class="math inline">\(\boldsymbol{p} = m\boldsymbol{v}/\sqrt{1−v^2/c^2}\)</span> 으로부터 상대론적으로 올바른 운동 방정식을 얻는다.</p>
+<p><span id="eq-FLP_2_26_24"><span class="math display">\[
+\dfrac{d}{dt}\left(\dfrac{m\boldsymbol{v}}{\sqrt{1−v^2/c^2}}\right) =\boldsymbol{F} = q (\boldsymbol{E} + \boldsymbol{v} × \boldsymbol{B}).
+\tag{14.49}\]</span></span></p>
+<p>우리는 이제 상대성 이론의 관점에서 이 방정식을 논의하고자 한다. 맥스웰 방정식을 상대론적 형태로 넣었으므로, 운동 방정식이 상대론적 형태로 어떻게 보일지 알아보자. 방정식을 4-벡터 표기법으로 다시 쓸 수 있는지 확인해 보자.</p>
+<p>우리는 운동량 4-벡터의 시간 성분이 에너지 <span class="math inline">\(mc^2/\sqrt{1−v^2/c^2}\)</span> 를 <span class="math inline">\(c\)</span> 로 나눈 값임을 안다. 따라서 우리는 <a href="#eq-FLP_2_26_24" class="quarto-xref">식&nbsp;<span>14.49</span></a> 의 오른쪽 항을 교체하는 것을 생각할 수 있습니다. 그렇다면 우리는 <span class="math inline">\(\boldsymbol{F}\)</span> 와 함께 사용할 네 번째 구성 요소만 찾으면 된다. 이 네 번째 구성 요소는 에너지의 변화율, 즉 작업 수행 속도, 즉 <span class="math inline">\(\boldsymbol{F \cdot v}\)</span> 와 관련되어야 한다. 그렇다면 <a href="#eq-FLP_2_26_24" class="quarto-xref">식&nbsp;<span>14.49</span></a> 의 오른쪽 항을 <span class="math inline">\((\boldsymbol{F\cdot v}/c,\,F_x,\,F_y,\,F_z)\)</span> 와 같은 형태로 시도해 볼 수 있을 것이다. 하지만 이것은 4-벡터를 만들지 않는다.</p>
+<p>4-벡터의 시간 미분은 더 이상 4벡터가 아니다. 왜냐하면 <span class="math inline">\(d/dt\)</span> 는 <span class="math inline">\(t\)</span> 를 측정하기 위해 특별한 프레임을 선택해야 하기 때문이다. 우리는 <span class="math inline">\(\boldsymbol{v}\)</span> 를 4-벡터로 만들려고 시도했을 때 그 문제를 겪었다. 우리의 첫 번째 추측은 시간 구성 요소가 <span class="math inline">\(cdt/dt=c\)</span> 가 될 것이라는 것이었다. 하지만</p>
+<p><span id="eq-FLP_2_26_25"><span class="math display">\[
+\left( c,\, \dfrac{dx}{dt},\,\dfrac{dy}{dt},\, \dfrac{dz}{dt}\right) = (c,\,\boldsymbol{v})
+\tag{14.50}\]</span></span></p>
+<p>는 4-벡터의 구성 요소가 아니다. 그러나 각 구성 요소에 <span class="math inline">\(1/\sqrt{1−v^2/c^2}\)</span> 를 곱하면 1 로 만들 수 있음을 발견했다. 아래의 <span class="math inline">\(U^\mu\)</span> 는 4-벡터이다.</p>
+<p><span id="eq-FLP_2_26_26"><span class="math display">\[
+U^\mu = \left(\dfrac{c}{\sqrt{1−v^2/c^2}},\,\dfrac{\boldsymbol{v}}{\sqrt{1−v^2/c^2}}\right).
+\tag{14.51}\]</span></span></p>
+<p>이로부터 생각해보면 미분을 4-벡터로 만들고자 한다면, <span class="math inline">\(d/dt\)</span> 에 <span class="math inline">\(1/\sqrt{1−v^2/c^2}\)</span> 를 곱하는 것이 요령인 것으로 보인다. 그렇다면 우리의 두 번째 선택은</p>
+<p><span id="eq-FLP_2_26_27"><span class="math display">\[
+\dfrac{1}{\sqrt{1−v^2/c^2}}\dfrac{d}{dt}P^\mu
+\tag{14.52}\]</span></span></p>
+<p>이 4-벡터이어야 한다는 것이다. 하지만 <span class="math inline">\(\boldsymbol{v}\)</span> 가 무엇인가? 그것은 입자의 속도이며, 좌표계가 아니다! 그렇다면</p>
+<p><span id="eq-FLP_2_26_28"><span class="math display">\[
+K^\mu = \left(\dfrac{\boldsymbol{F \cdot v}/c}{\sqrt{1−v^2/c^2}},\qquad \dfrac{\boldsymbol{F}}{\sqrt{1−v^2/c^2}}\right)
+\tag{14.53}\]</span></span></p>
+<p>로 정의된 <span class="math inline">\(K^\mu\)</span> 는 힘의 4-차원 확장으로, 우리는 이를 4-힘이라고 부를 수 있다. 이는 실제로 네 개의 벡터이며, 그 공간 성분은 <span class="math inline">\(\boldsymbol{F}\)</span> 의 성분이 아니라 <span class="math inline">\(\boldsymbol{F}/\sqrt{1−v^2/c^2}\)</span> 의 성분이다.</p>
+<div class="page-columns page-full"><p>문제는 <span class="math inline">\(K^\mu\)</span> 가 4-벡터인 이유이다. 그 <span class="math inline">\(1/\sqrt{1−v^2/c^2}\)</span> 인자에 대해 조금이라도 이해하면 좋겠다. 두 번이나 등장했으니 <span class="math inline">\(d/dt\)</span> 가 항상 같은 인자로 고정될 수 있는 이유를 확인할 때이다. 답은 다음과 같다: 어떤 함수 <span class="math inline">\(x\)</span> 의 시간 미분은 변수 <span class="math inline">\(t\)</span> 의 작은 구간 <span class="math inline">\(\Delta t\)</span> 에서 증분 <span class="math inline">\(\Delta x\)</span> 를 계산한다. 하지만 다른 프레임에서는 구간 <span class="math inline">\(\Delta t\)</span> 가 <span class="math inline">\(t'\)</span> 과 <span class="math inline">\(x'\)</span> 모두의 변화에 해당할 수 있으므로, <span class="math inline">\(t'\)</span> 만 변하면 <span class="math inline">\(x\)</span> 의 변화가 달라진다. 우리는 미분을 위한 변수를 찾아야 하는데, 이는 시공간의 “구간”을 측정하는 것이며, 그 변수는 모든 좌표계에서 동일하게 된다. 그 구간에 대해 <span class="math inline">\(\Delta x\)</span> 를 취하면, 모든 좌표계에 대해 동일하다. 입자가 4-공간에서 “움직일” 때, <span class="math inline">\(\Delta t, \Delta x, \Delta y, \Delta z\)</span> 와 같은 변화가 있다. 그것들로 불변 구간을 만들 수 있습니까? 음, 그것들은 네 벡터 <span class="math inline">\(x^\mu =(ct,x,y,z)\)</span> 의 구성 요소이며, 따라서 <span class="math inline">\(\Delta \tau\)</span><span class="math inline">\(^4\)</span> 랴는 양을 </p><div class="no-row-height column-margin column-container"><span class="margin-aside"><span class="math inline">\(^4\)</span> 파인만은 <span class="math inline">\(s\)</span> 라는 변수를 썼지만 여기서는 현재 훨씬 널리 쓰이는 <span class="math inline">\(\tau\)</span> 표기법을 사용한다.</span></div></div>
+<p><span id="eq-FLP_2_26_29"><span class="math display">\[
+(\Delta \tau)^2 := \dfrac{1}{c^2}ΔX_\mu \Delta X^\mu =\dfrac{1}{c^2}\left(c^2\Delta t^2−\Delta x^2−\Delta y^2−\Delta z^2\right)
+\tag{14.54}\]</span></span></p>
+<p>로 정의한다. 이는 4-벡터 스칼라곱으로 이후 4차원 구간의 측정값으로 사용할 수 있는 좋은 4스칼라를 갖게 된다. <span class="math inline">\(\Delta \tau\)</span> -또는 그 극한 <span class="math inline">\(d\tau\)</span>—로부터 우리는 매개변수 <span class="math inline">\(\tau = \int d\tau\)</span> 를 정의할 수 있다. 그리고 <span class="math inline">\(s\)</span> 에 대한 미분, <span class="math inline">\(d/d\tau\)</span> 는 로렌츠 변환에 대해 불변이기 때문에 좋은 4차원 연산이다.</p>
+<p>움직이는 입자에 대해 <span class="math inline">\(d\tau\)</span> 를 <span class="math inline">\(dt\)</span> 와 연관시키는 것은 쉽다. 움직이는 점 입자에 대해,</p>
+<p><span id="eq-FLP_2_26_30"><span class="math display">\[
+dx=v_x\,dt,\quad dy=v_y\,dt,\quad dz=v_z\,dt,
+\tag{14.55}\]</span></span></p>
+<p>그리고</p>
+<p><span id="eq-FLP_2_26_31"><span class="math display">\[
+d\tau=\sqrt{\left( dt^2/c^2\right) \left( c^2 − v_x^2 − v_y^2 − v_z^2 \right)} = dt\sqrt{1-v^2/c^2}.
+\tag{14.56}\]</span></span></p>
+<p>그래서 연산자</p>
+<p><span class="math display">\[
+\dfrac{1}{\sqrt{1−v^2/c^2}}\dfrac{d}{dt}
 \]</span></p>
+<p>는 불변 연산자이다. 그것으로 어떤 네 벡터에 대해 연산하면, 또 다른 네 벡터를 얻게 된다. 예를 들어, <span class="math inline">\((ct,x,y,z)\)</span> 에 대해 연산하면 4속도 <span class="math inline">\(U^\mu\)</span> 를 얻을 수 있다:</p>
+<p><span class="math display">\[
+\dfrac{dX^\mu}{d\tau} = U^\mu.
+\]</span></p>
+<p>우리는 이제 <span class="math inline">\(\sqrt{1−v^2/c^2}\)</span> 이 문제를 해결하는 이유를 알게 되었다.</p>
+<p>불변 변수 <span class="math inline">\(\tau\)</span> 는 유용한 물리량이다. 입자의 경로를 따라르는 <strong>고유 시간 (proper time)</strong> 라고 불리는데, 이는 <span class="math inline">\(d\tau\)</span> 가 특정 순간에 입자와 함께 움직이는 프레임 내에서 항상 시간 구간이기 때문이다. (그렇다면, <span class="math inline">\(\Delta x= \Delta y= \Delta z= 0\)</span>, 그리고 <span class="math inline">\(\Delta \tau = \Delta t\)</span>.) 가속도에 의존하지 않는 “시계”를 상상할 수 있다면, 입자와 함께 실려 있는 그런 시계는 시간 <span class="math inline">\(\tau\)</span> 를 표시하게 된다.</p>
+<p>이제 우리는 (아인슈타인에 의해 수정된) 뉴턴의 법칙을 깔끔한 형태로 다시 쓸 수 있다.</p>
+<p><span id="eq-FLP_2_26_32"><span class="math display">\[
+\dfrac{dP^\mu}{d\tau} =K^\mu.
+\tag{14.57}\]</span></span></p>
+<p>여기서 <span class="math inline">\(K^\mu\)</span> 는 <a href="#eq-FLP_2_26_28" class="quarto-xref">식&nbsp;<span>14.53</span></a> 로 주어진다. 또한, 운동량 <span class="math inline">\(P^\mu\)</span> 는 다음과 같이 쓸 수 있다.</p>
+<p><span id="eq-FLP_26_33"><span class="math display">\[
+P^\mu = mU^\mu = m\dfrac{dX^\mu}{d\tau}.
+\tag{14.58}\]</span></span></p>
+<p>여기서 좌표 <span class="math inline">\(X^\mu=(ct,x,y,z)\)</span> 는 이제 입자의 궤적을 기술한다. 마지막으로, 4차원 표기법은 우리에게 이 매우 간단한 형태의 운동 방정식을 제시한다:</p>
+<p><span id="eq-FLP_2_26_34"><span class="math display">\[
+K^\mu =m \dfrac{d^2X^\mu}{d\tau^2}.
+\tag{14.59}\]</span></span></p>
+<p>이는 <span class="math inline">\(F=ma\)</span> 를 연상시킨다. <span class="quarto-unresolved-ref">?eq-FLP_2_</span><span class="citation" data-cites="6_34">(<a href="../../references.html#ref-6_34" role="doc-biblioref"><strong>6_34?</strong></a>)</span> 는 <span class="math inline">\(F=ma\)</span> 와 동일하지 않으며 빠른 속도에서 뉴턴 법칙과 다른 상대론적 역학이 포함되어 있다. 맥스웰 방정식의 경우와는 달리, 우리는 의미를 전혀 바꾸지 않고 상대론적 형태로 방정식을 다시 쓸 수 있었지만 표기법만 바꾸면 된다.</p>
 </section>
 <section id="연습문제" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="연습문제">연습문제</h3>
