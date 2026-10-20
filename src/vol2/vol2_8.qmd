@@ -1,5 +1,5 @@
 ---
-title: "$\\text{II}$-5 : 물질의 자성"
+title: "$\\text{II}$-8 : 물질의 자성"
 number-sections: true
 number-depth: 0
 crossref:
