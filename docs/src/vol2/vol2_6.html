@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-deb0270857c9bdf5e055ff61468a997e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -1198,6 +1198,85 @@ u_E:=\dfrac{\epsilon_0}{2}\boldsymbol{E\cdot E},\qquad u_B  :=\dfrac{\epsilon_0c
 </section>
 <section id="sec-FLP_2_27_5" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_27_5"><span class="math inline">\(\textrm{II}\)</span>.27-5 에너지 흐름의 예</h3>
+<div id="fig-FLP_2_27_2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_27_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_27/fig_2_27_2.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_27_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;14.11: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span>. Fig. 27-2. 빛 파동의 벡터 <span class="math inline">\(\boldsymbol{E},\,\boldsymbol{B},\,\boldsymbol{S}\)</span>.
+</figcaption>
+</figure>
+</div>
+<p>에너지 흐름 벡터 <span class="math inline">\(\boldsymbol{S}\)</span> 에 대한 식은 상당히 새로운 것이다. 특정 경우에 <span class="math inline">\(\boldsymbol{S}\)</span> 가 어떻게 동작하는지 확인하고, 또한 이전에 알았던 것이 있는지 알아보자. 우리가 생각할 첫 번째 예는 빛이다. 빛 파동에서는 <span class="math inline">\(\boldsymbol{E}\)</span> 와 <span class="math inline">\(\boldsymbol{B}\)</span> 가 서로 직각을 이루며 파동 전파 방향에도 직각을 이룬다. (<a href="#fig-FLP_2_27_2" class="quarto-xref">그림&nbsp;<span>14.11</span></a>) 전자기파에서 <span class="math inline">\(B=E/c\)</span> 이며 서로 직각을 이루므로 <span class="math inline">\(|\boldsymbol{E}\times\boldsymbol{B}|=E^2/c\)</span> 이다. 따라서 빛의 경우, 단위 면적당 초당 에너지 흐름은</p>
+<p><span id="eq-FLP_2_27_16"><span class="math display">\[
+S=\epsilon_0 cE^2.
+\tag{14.76}\]</span></span></p>
+<p><span class="math inline">\(E=E_0 \cos \omega(t−x/c)\)</span> 인 파동에 대해, 단위 면적을 통과하는 초당 에너지 흐름의 평균인 <span class="math inline">\(\langle S\rangle_\text{av}\)</span> 는 전기장의 제곱에 <span class="math inline">\(\epsilon_0 c\)</span> 를 곱한 값이며 빛의 <strong>강도 (intensity)</strong> 라고 불린다:</p>
+<p><span id="eq-FLP_2_27_17"><span class="math display">\[
+\text{강도} = \langle S\rangle_\text{av} = \epsilon_0 c \langle E^2\rangle_\text{av}.
+\tag{14.77}\]</span></span></p>
+<p>믿든 말든, 우리는 이미 <a href="../../src/vol1/vol1_4.html#sec-FLP_1_31_5"><span class="math inline">\(\mathrm{I}\)</span>.31–5 전파가 운반하는 에너지</a> 에서 이 결과를 얻었다. 빛의 빔이 있을 때, 공간에 주어진 에너지 밀도는 <a href="#eq-FLP_2_27_14" class="quarto-xref">식&nbsp;<span>14.74</span></a> 로 알 수 있다. <span class="math inline">\(cB=E\)</span> 사용하면,</p>
+<p><span class="math display">\[
+u=\dfrac{\epsilon_0E^2}{2} + \dfrac{\epsilon_0 c^2 (E/c)^2}{2}=\epsilon_0E^2.
+\]</span></p>
+<p><span class="math inline">\(\boldsymbol{E}\)</span> 는 공간에서 변하기 때문에 평균 에너지 밀도는</p>
+<p><span id="eq-FLP_2_27_18"><span class="math display">\[
+\langle u\rangle_\text{av} = \epsilon_0 \langle E^2\rangle_\text{av}.
+\tag{14.78}\]</span></span></p>
+<p>빛 파동은 속도 <span class="math inline">\(c\)</span> 로 이동하므로, 1초에 1제곱미터를 통과하는 에너지는 1 세제곱 미터당 에너지 양의 <span class="math inline">\(c\)</span> 배라고 생각해야 한다. 그렇다면</p>
+<p><span class="math display">\[
+\langle S \rangle_\text{av} = \epsilon_0 c \langle E^2\rangle_\text{av}.
+\]</span></p>
+<p>이 식은 <a href="#eq-FLP_2_27_17" class="quarto-xref">식&nbsp;<span>14.77</span></a> 과 동일하다.</p>
+<div class="border" style="background-color:#F2F4F4  ;padding:5px;">
+<div id="exm-FLP_chaper_2_27_1" class="theorem example">
+<p><span class="theorem-title"><strong>예제 14.2 (축전기의 포인팅 벡터)</strong></span> &nbsp;</p>
+<div id="fig-FLP_2_27_3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_27_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_27/fig_2_27_3.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_27_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;14.12: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span>. Fig. 27-3. 충전된 축전기 근처에서 포인팅 벡터 <span class="math inline">\(\boldsymbol{S}\)</span> 는 축을 향해 안쪽을 향한다.
+</figcaption>
+</figure>
+</div>
+<p>천천히 충전되고 있는 충전기의 에너지 흐름을 보자. (이 충전기에 흐르는 전류는 공진 공동처럼 보일 정도로 진동수가 너무 크지는 않으며 반대로 직류도 아니라고 하자) 우리가 일반적으로 사용하는 원형 평행판 커패시터를 생각한다(<a href="#fig-FLP_2_27_3" class="quarto-xref">그림&nbsp;<span>14.12</span></a>). 내부에 거의 균일한 전기장이 있으며, 시간이 지나면서 변한다. 어떤 순간이든 내부의 총 전자기 에너지는 부피의 <span class="math inline">\(u\)</span> 배이다. 원의 반지름 이 <span class="math inline">\(a\)</span> 이고 간격이 <span class="math inline">\(h\)</span> 라면 두 판 사이의 전자기 에너지 <span class="math inline">\(U\)</span> 는</p>
+<p><span id="eq-FLP_2_27_19"><span class="math display">\[
+U=\left(\dfrac{\epsilon_0 E^2}{2}\right)(\pi a^2h).
+\tag{14.79}\]</span></span></p>
+<p>축전기가 충전될 때, 판 사이의 부피에서의 에너지의 변화는</p>
+<p><span id="eq-FLP_2_27_20"><span class="math display">\[
+\dfrac{dU}{dt} = \epsilon_0 \pi a^2 h E ̇\dfrac{dE}{dt}.
+\tag{14.80}\]</span></span></p>
+<p>그러므로 어딘가에서 그 부피로 에너지 흐름이 있어야 한다. 당연히 그것이 충전선으로 들어와야 한다고 알고 있겠지만, 전혀 그렇지 않다! 그 방향에서 판 사이의 공간에 들어갈 수 없습니다, 왜냐하면 <span class="math inline">\(\boldsymbol{E}\)</span> 는 판에 수직이며 따라서 <span class="math inline">\(\boldsymbol{E}\times \boldsymbol{B}\)</span> 는 판에 평행하다. 우리는 <a href="vol2_5.html#sec-FLP_2_23"><span class="math inline">\(\mathrm{II}\)</span>.23 공동 공진</a> 에서 축전지가 충전될 때 축을 중심으로 회전하는 자기장이 존재한다는 것을 알아보았다. 맥스웰 방정식의 마지막을 사용하면 축전기 가장자리의 자기장이 다음과 같다는 것을 안다.</p>
+<p><span class="math display">\[
+B =  \dfrac{a}{2c^2}\dfrac{dE}{dt} .
+\]</span></p>
+<p>자기장의 방향은 <a href="#fig-FLP_2_27_3" class="quarto-xref">그림&nbsp;<span>14.12</span></a> 에 표시되어 있다. 따라서 그림에 표시된 바와 같이 가장자리 전체에 <span class="math inline">\(\boldsymbol{E}\times \boldsymbol{B}\)</span> 에 비례하는 에너지 흐름이 존재한다. 에너지는 실제로 전선을 통해 들어오는 것이 아니라, 커패시터를 둘러싼 공간에서 공급된다.</p>
+<p>판의 가장자리 사이 전체 표면을 통과하는 총 흐름량이 내부 에너지 변화 속도와 항상 일치하지 않는지 확인해 보자. 표면의 면적은 <span class="math inline">\(2\pi ah\)</span> 이며, <span class="math inline">\(\boldsymbol{S}=\epsilon_0c^2\boldsymbol{E}\times \boldsymbol{B}\)</span> 의 크기는</p>
+<p><span class="math display">\[
+\epsilon_0c^2 E \left(\dfrac{a}{2c^2}\dfrac{dE}{dt}E\right)
+\]</span></p>
+<p>이므로 에너지의 총 플럭스는</p>
+<p><span class="math display">\[
+\pi a^2 h \epsilon_0E\dfrac{dE}{dt}.
+\]</span></p>
+<p><a href="#eq-FLP_2_27_20" class="quarto-xref">식&nbsp;<span>14.80</span></a> 와 동일하다. 하지만 그것은 우리에게 특별한 사실을 알려준다. <strong>우리가 축전기를 충전할 때, 에너지가 전선을 통해 들어오는 것이 아니라 틈의 가장자리를 통해 들어온다.</strong> 그것이 바로 이 이론이 말하는 바이다!</p>
+<div id="fig-FLP_2_27_4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-FLP_2_27_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig_2_27/fig_2_27_4.png" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-FLP_2_27_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;14.13: 파인만 물리학 강의 <span class="math inline">\(\textrm{II}\)</span>. Fig. 27-4. 축전기가 큰 거리에서 두 개의 전하를 가져와 충전될 때 외부의 장.
+</figcaption>
+</figure>
+</div>
+<p>어떻게 이것이 가능한가? 쉬운 질문이 아니지만, 여기 한 가지 생각하는 방법이 있다. 축전기 위와 아래에 전하가 있고 멀리 떨어져 있다고 생각핮. 전하가 멀리 떨어져 있을 때, 축전기를 둘러싸는 약하지만 매우 넓게 퍼진 장이 존재한다. (<a href="#fig-FLP_2_27_4" class="quarto-xref">그림&nbsp;<span>14.13</span></a>) 그때, 전하들이 모이면서 장은 축전기에 가까워질수록 더 강해진다. 따라서 멀리 외부에 있는 장의 에너지는 축전기 쪽으로 이동하여 결국 판 사이에 도달한다.</p>
+</div>
+</div>
 </section>
 <section id="sec-FLP_2_27_6" class="level3">
 <h3 class="anchored" data-anchor-id="sec-FLP_2_27_6"><span class="math inline">\(\textrm{II}\)</span>.27-6 장 운동량</h3>
