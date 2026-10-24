@@ -1,5 +1,5 @@
 ---
-title: "$\\text{II}$-9 : 물질의 탄성과 유체"
+title: "$\\text{II}$-8 : 물질의 자성"
 number-sections: true
 number-depth: 0
 crossref:
@@ -8,10 +8,10 @@ crossref:
 
 {{< include ../../latexmacros.qmd >}} 
 
-## $\textrm{II}$.38 탄성 {#sec-FLP_2_38}
+## $\textrm{II}$.34 자성 {#sec-FLP_2_34}
 
-## $\textrm{II}$.39 탄성 물질 {#sec-FLP_2_39}
+## $\textrm{II}$.35 상자성과 자기 공명 {#sec-FLP_2_35}
 
-## $\textrm{II}$.40 마른 물의 흐름 {#sec-FLP_2_40}
+## $\textrm{II}$.36 강자성 {#sec-FLP_2_36}
 
-## $\textrm{II}$.41 젖은 물의 흐름 {#sec-FLP_2_41}
+## $\textrm{II}$.37 자성체 {#sec-FLP_2_37}
