@@ -1253,7 +1253,6 @@ $$ {#eq-FLP_2_27_23}
 ### 연습문제 {.unnumbered}
 
 
-
 <div class="border" style="background-color:#F0FFFF  ;padding:5px;">
 
 ::: {#exr-FLP_2_27_1}
