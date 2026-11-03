@@ -1,0 +1,43 @@
+
+\documentclass[border=10pt]{standalone}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+    \def\w0{2.0}
+    \def\g{0.3}
+    \def\k1{1.84}
+    \def\l1{2.15}
+    \begin{scope}
+        \begin{axis}
+        [
+            axis line style={shorten >=-10pt, shorten <=-10pt},
+            axis y line=center,
+            axis x line=middle,
+            no markers,
+            xmode=log,
+            yticklabels=\empty,
+            %xtick={0.5, 1.0, 1.5, \w0, 2.5, 3.0, 3.5},
+            %xticklabels={, , , $\omega_0$, , ,},
+            xlabel style={
+                        anchor=west,
+                        at={(ticklabel* cs:1.0)},
+                        xshift=10pt
+            },
+                    ylabel style={
+                        anchor=south,
+                        at={(ticklabel* cs:1.0)},
+                        yshift=10pt
+                    },
+            xlabel=$\hbar \omega/k_B T$,
+            ylabel = $\overline{n}$,
+        ]
+        \addplot+[blue, thick, domain=0.1:100, samples=250] {1/(exp(\x)-1)};
+        
+        \end{axis}
+    \end{scope}
+   
+
+\end{tikzpicture}
+\end{document}
