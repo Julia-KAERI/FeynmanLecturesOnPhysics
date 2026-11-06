@@ -143,13 +143,13 @@ $$ {#eq-FLP_3_5_8}
 이제 중요한 질문이 제기된다: 두 번째 장치를 다른 각도로 기울여 그 장축이 첫 번째와 더 이상 평행하지 않게 되면 어떻게 될까? 그것은 단순히 기울어질 수 있을 뿐만 아니라 다른 방향(예를 들어, 원래 방향에 대해 $90^\circ$ 에서 빔을 분리하는 것)을 향할 수도 있다. 우선, 먼저 @fig-FLP_3_5_6 에 표시된 바와 같이 두 번째 슈테른-게를라흐 실험이 $y$ 축을 중심으로 각도 $\alpha$ 만큼 기울어진 배치를 생각해 보자. 두 번째 장치를 $T$ 라고 한다. 이제 다음 실험을 설정해보자.
 
 $$
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + & \\ 0 &  ⎮ \\ 0 & ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + & \\ 0 &  ⎮ \\ 0 & ⎮ \end{array}\right\}\\ T \end{array}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + & \\ 0 &  ⎮ \\ - & ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + & \\ 0 &  ⎮ \\ - & ⎮ \end{array}\right\}\\ T \end{array}.
 $$
 
 혹은
 
 $$
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + & \\ 0 &  ⎮ \\ 0 & ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &  ⎮ \\ 0 &   \\ 0 & ⎮ \end{array}\right\}\\ T \end{array}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + & \\ 0 &  ⎮ \\ - & ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &  ⎮ \\ 0 &   \\ - & ⎮ \end{array}\right\}\\ T \end{array}.
 $$
 
 이런 경우 최종적으로 나오는 것은?
@@ -496,12 +496,12 @@ $$ {#eq-FLP_3_5_31}
 만약 $(0R)$ 과 $(+S)$ 를 일반적인 상태 $\chi$ 와 $\phi$ 로 대체한다면, 우리는 같은 종류의 식을 갖게 되며, 일반젹인 표기법을 사용하면 다음과 같다.
 
 $$
-\langle \chi |A| \phi \rangle = \sum_{ij} \langle 0R | j \rangle \langle j |A| i\rangle \langle i|+S \rangle.
+\langle \chi |A| \phi \rangle = \sum_{ij} \langle \chi | j \rangle \langle j |A| i\rangle \langle i|\phi \rangle.
 $$ {#eq-FLP_3_5_32}
 
-@eq-FLP_3_5_32 의 오른쪽 항은 왼쪽 항보다 실제로 더 간단하다. 장치 $T$ 의 세 기저 집합에 대한 장치 $A$ 의 반응을  $\langle j| A | i\rangle$ 라는 수로 표현하며, 장치 $A$ 는 이렇게 표현되는 아홉 개의 수에 의해 완전히 기술된다. 우리가 이 아홉개의 수를 알면, 입력 및 출력 상태 $\phi$, $\chi$ 각각에 대해 세 개의 진폭 $\langle i |\phi\rangle$ 과 $\langle \chi | j\rangle$ 으로 정의하면 처리할 수 있습니다. 실험 결과는 @eq-FLP_3_5_32 를 사용하여 예측한다.
+@eq-FLP_3_5_32 의 오른쪽 항은 왼쪽 항보다 실제로 더 간단하다. 장치 $T$ 의 세 기저 집합에 대한 장치 $A$ 의 반응을  $\langle j| A | i\rangle$ 라는 수로 표현하며, 장치 $A$ 는 이렇게 표현되는 아홉 개의 수에 의해 완전히 기술된다. 우리가 이 아홉개의 수를 알면, 입력 및 출력 상태 $\phi$, $\chi$ 각각에 대해 세 개의 진폭 $\langle i |\phi\rangle$ 과 $\langle \chi | j\rangle$ 으로 정의하면 처리할 수 있다. 실험 결과는 @eq-FLP_3_5_32 를 사용하여 예측한다.
 
-이것은 스핀 1 입자에 대한 양자역학적 처리법이다. 모든 상태는 선택된 기저 상태 집합 각각에 포함되는 진폭인 세 개의 숫자로 설명된다. 모든 장치는 장치 내에서 한 기저 상태에서 다른 기본 상태로 이동하는 진폭인 아홉 개의 숫자로 설명된다. 이 숫자들로부터 모든 것을 계산할 수 있다.
+이것은 스핀-1 입자에 대한 양자역학적 처리법이다. 모든 상태는 선택된 기저 상태 집합 각각에 포함되는 진폭인 세 개의 숫자로 설명된다. 모든 장치는 장치 내에서 한 기저 상태에서 다른 기본 상태로 이동하는 진폭인 아홉 개의 숫자로 설명된다. 이 숫자들로부터 모든 것을 계산할 수 있다.
 
 장치를 설명하는 아홉 개의 진폭은 종종 $\langle j|A|i\rangle$ 행렬이라고 불리는 정사각형 행렬로 표현된다:
 
@@ -529,7 +529,7 @@ $$
 \left\{\begin{array}{c} {} \\ C \\ {} \end{array}\right\} = \left\{\begin{array}{c} {} \\ A \\ {}\end{array}\right\} \cdot \left\{\begin{array}{c} {} \\ B \\ {}\end{array}\right\}
 $$ {#eq-FLP_3_5_35}
 
-그렇다면 $C$ 장치를 $A$ 와 $B$ 의 “곱”이라고 부를 수 있다. 또한 우리가 이미 두 부분을 분석하는 방법을 알고 있다면, $A$ 와 $B$ 의 $T$ 에 관한 행렬을 얻을 수 있다. 우리의 문제는 이제 해결된다. 임의의 입력과 출력 상태 $\phi$, $\chi$ 에 대해 $\langle \chi | C \phi\rangle$ 는
+그렇다면 $C$ 장치를 $A$ 와 $B$ 의 "곱"이라고 부를 수 있다. 또한 우리가 이미 두 부분을 분석하는 방법을 알고 있다면, $A$ 와 $B$ 의 $T$ 에 관한 행렬을 얻을 수 있다. 우리의 문제는 이제 해결된다. 임의의 입력과 출력 상태 $\phi$, $\chi$ 에 대해 $\langle \chi | C \phi\rangle$ 는
 
 $$
 \langle \chi|C|\phi \rangle = \sum_k \langle \chi | B |k \rangle \langle k|A|\phi \rangle.
@@ -538,7 +538,7 @@ $$
 이렇게 쓸 수 있는 이유를 이해했는가? (힌트: $A$ 와 $B$  사이에 $T$ 장치를 넣는다고 상상해 보라.) 그렇다면 $\phi$ 와 $\chi$ 역시 $T$ 의 기본 상태인 특수한 경우, 예를 들어 $i$ 와 $j$ 라면,
 
 $$
-\langle j|C|i \rangle =\sum_k k \langle j | B | k \rangle \langle k | A | i \rangle.
+\langle j|C|i \rangle =\sum_k \langle j | B | k \rangle \langle k | A | i \rangle.
 $$ {#eq-FLP_3_5_36}
 
 이 방정식은 장치 $A$ 와 $B$ 의 두 행렬을 기준으로 곱 장치 $C$ 에 대한 행렬을 제공한다. 수학자들은 @eq-FLP_3_5_36 에 명시된 합 규칙에 따라 두 행렬 $\langle j|B|i\rangle$ 와 $\langle j|A|i\rangle$ 로 구성된 새로운 행렬 $\langle j|C|i\rangle$ 을 두 행렬 $B$ 와 $A$ 의 곱 행렬 $BA$ 라고 부른다. (순서는 중요하다, $AB\ne BA$.) 따라서, 두 개의 장치가 연속될 때 행렬은 첫 번째 장치를 곱의 오른쪽에 배치한 경우 두 장치에 대한 행렬들의 행렬 곱이라고 말할 수 있다 행렬 대수를 아는 사람이라면 누구나 우리가 단순히 @eq-FLP_3_5_36 이라는 것을 이해한다.

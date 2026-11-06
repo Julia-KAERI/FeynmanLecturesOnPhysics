@@ -527,11 +527,11 @@ window.Quarto = {
 </div>
 <p>이제 중요한 질문이 제기된다: 두 번째 장치를 다른 각도로 기울여 그 장축이 첫 번째와 더 이상 평행하지 않게 되면 어떻게 될까? 그것은 단순히 기울어질 수 있을 뿐만 아니라 다른 방향(예를 들어, 원래 방향에 대해 <span class="math inline">\(90^\circ\)</span> 에서 빔을 분리하는 것)을 향할 수도 있다. 우선, 먼저 <a href="#fig-FLP_3_5_6" class="quarto-xref">그림&nbsp;<span>20.6</span></a> 에 표시된 바와 같이 두 번째 슈테른-게를라흐 실험이 <span class="math inline">\(y\)</span> 축을 중심으로 각도 <span class="math inline">\(\alpha\)</span> 만큼 기울어진 배치를 생각해 보자. 두 번째 장치를 <span class="math inline">\(T\)</span> 라고 한다. 이제 다음 실험을 설정해보자.</p>
 <p><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp;  ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp;  ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ T \end{array}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp;  ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp;  ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ T \end{array}.
 \]</span></p>
 <p>혹은</p>
 <p><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp;  ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ 0 &amp; ⎮ \end{array}\right\}\\ T \end{array}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp;  ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ - &amp; ⎮ \end{array}\right\}\\ T \end{array}.
 \]</span></p>
 <p>이런 경우 최종적으로 나오는 것은?</p>
 <p>답은 다음과 같다: 원자들이 <span class="math inline">\(S\)</span> 에 대해 특정 상태에 있다면, <span class="math inline">\(T\)</span> 에 대해서는 동일한 상태에 있지 않다. <span class="math inline">\((+S)\)</span> 상태는 <span class="math inline">\((+T)\)</span> 상태가 아니다. 그러나 원자를 <span class="math inline">\((+T)\)</span> 상태, 또는 <span class="math inline">\((0T)\)</span> 상태나 <span class="math inline">\((−T)\)</span> 상태에서 찾기 위한 일정한 진폭이 존재한다.</p>
@@ -777,10 +777,10 @@ a = \langle +S|+T\rangle \langle +T|+S\rangle + \langle +S | 0T\rangle \langle 0
 \tag{20.32}\]</span></span></p>
 <p>만약 <span class="math inline">\((0R)\)</span> 과 <span class="math inline">\((+S)\)</span> 를 일반적인 상태 <span class="math inline">\(\chi\)</span> 와 <span class="math inline">\(\phi\)</span> 로 대체한다면, 우리는 같은 종류의 식을 갖게 되며, 일반젹인 표기법을 사용하면 다음과 같다.</p>
 <p><span id="eq-FLP_3_5_32"><span class="math display">\[
-\langle \chi |A| \phi \rangle = \sum_{ij} \langle 0R | j \rangle \langle j |A| i\rangle \langle i|+S \rangle.
+\langle \chi |A| \phi \rangle = \sum_{ij} \langle \chi | j \rangle \langle j |A| i\rangle \langle i|\phi \rangle.
 \tag{20.33}\]</span></span></p>
-<p><a href="#eq-FLP_3_5_32" class="quarto-xref">식&nbsp;<span>20.33</span></a> 의 오른쪽 항은 왼쪽 항보다 실제로 더 간단하다. 장치 <span class="math inline">\(T\)</span> 의 세 기저 집합에 대한 장치 <span class="math inline">\(A\)</span> 의 반응을 <span class="math inline">\(\langle j| A | i\rangle\)</span> 라는 수로 표현하며, 장치 <span class="math inline">\(A\)</span> 는 이렇게 표현되는 아홉 개의 수에 의해 완전히 기술된다. 우리가 이 아홉개의 수를 알면, 입력 및 출력 상태 <span class="math inline">\(\phi\)</span>, <span class="math inline">\(\chi\)</span> 각각에 대해 세 개의 진폭 <span class="math inline">\(\langle i |\phi\rangle\)</span> 과 <span class="math inline">\(\langle \chi | j\rangle\)</span> 으로 정의하면 처리할 수 있습니다. 실험 결과는 <a href="#eq-FLP_3_5_32" class="quarto-xref">식&nbsp;<span>20.33</span></a> 를 사용하여 예측한다.</p>
-<p>이것은 스핀 1 입자에 대한 양자역학적 처리법이다. 모든 상태는 선택된 기저 상태 집합 각각에 포함되는 진폭인 세 개의 숫자로 설명된다. 모든 장치는 장치 내에서 한 기저 상태에서 다른 기본 상태로 이동하는 진폭인 아홉 개의 숫자로 설명된다. 이 숫자들로부터 모든 것을 계산할 수 있다.</p>
+<p><a href="#eq-FLP_3_5_32" class="quarto-xref">식&nbsp;<span>20.33</span></a> 의 오른쪽 항은 왼쪽 항보다 실제로 더 간단하다. 장치 <span class="math inline">\(T\)</span> 의 세 기저 집합에 대한 장치 <span class="math inline">\(A\)</span> 의 반응을 <span class="math inline">\(\langle j| A | i\rangle\)</span> 라는 수로 표현하며, 장치 <span class="math inline">\(A\)</span> 는 이렇게 표현되는 아홉 개의 수에 의해 완전히 기술된다. 우리가 이 아홉개의 수를 알면, 입력 및 출력 상태 <span class="math inline">\(\phi\)</span>, <span class="math inline">\(\chi\)</span> 각각에 대해 세 개의 진폭 <span class="math inline">\(\langle i |\phi\rangle\)</span> 과 <span class="math inline">\(\langle \chi | j\rangle\)</span> 으로 정의하면 처리할 수 있다. 실험 결과는 <a href="#eq-FLP_3_5_32" class="quarto-xref">식&nbsp;<span>20.33</span></a> 를 사용하여 예측한다.</p>
+<p>이것은 스핀-1 입자에 대한 양자역학적 처리법이다. 모든 상태는 선택된 기저 상태 집합 각각에 포함되는 진폭인 세 개의 숫자로 설명된다. 모든 장치는 장치 내에서 한 기저 상태에서 다른 기본 상태로 이동하는 진폭인 아홉 개의 숫자로 설명된다. 이 숫자들로부터 모든 것을 계산할 수 있다.</p>
 <p>장치를 설명하는 아홉 개의 진폭은 종종 <span class="math inline">\(\langle j|A|i\rangle\)</span> 행렬이라고 불리는 정사각형 행렬로 표현된다:</p>
 <p><span id="eq-FLP_3_5_33"><span class="math display">\[
 \begin{bmatrix}
@@ -805,7 +805,7 @@ a = \langle +S|+T\rangle \langle +T|+S\rangle + \langle +S | 0T\rangle \langle 0
 \]</span></p>
 <p>이렇게 쓸 수 있는 이유를 이해했는가? (힌트: <span class="math inline">\(A\)</span> 와 <span class="math inline">\(B\)</span> 사이에 <span class="math inline">\(T\)</span> 장치를 넣는다고 상상해 보라.) 그렇다면 <span class="math inline">\(\phi\)</span> 와 <span class="math inline">\(\chi\)</span> 역시 <span class="math inline">\(T\)</span> 의 기본 상태인 특수한 경우, 예를 들어 <span class="math inline">\(i\)</span> 와 <span class="math inline">\(j\)</span> 라면,</p>
 <p><span id="eq-FLP_3_5_36"><span class="math display">\[
-\langle j|C|i \rangle =\sum_k k \langle j | B | k \rangle \langle k | A | i \rangle.
+\langle j|C|i \rangle =\sum_k \langle j | B | k \rangle \langle k | A | i \rangle.
 \tag{20.37}\]</span></span></p>
 <p>이 방정식은 장치 <span class="math inline">\(A\)</span> 와 <span class="math inline">\(B\)</span> 의 두 행렬을 기준으로 곱 장치 <span class="math inline">\(C\)</span> 에 대한 행렬을 제공한다. 수학자들은 <a href="#eq-FLP_3_5_36" class="quarto-xref">식&nbsp;<span>20.37</span></a> 에 명시된 합 규칙에 따라 두 행렬 <span class="math inline">\(\langle j|B|i\rangle\)</span> 와 <span class="math inline">\(\langle j|A|i\rangle\)</span> 로 구성된 새로운 행렬 <span class="math inline">\(\langle j|C|i\rangle\)</span> 을 두 행렬 <span class="math inline">\(B\)</span> 와 <span class="math inline">\(A\)</span> 의 곱 행렬 <span class="math inline">\(BA\)</span> 라고 부른다. (순서는 중요하다, <span class="math inline">\(AB\ne BA\)</span>.) 따라서, 두 개의 장치가 연속될 때 행렬은 첫 번째 장치를 곱의 오른쪽에 배치한 경우 두 장치에 대한 행렬들의 행렬 곱이라고 말할 수 있다 행렬 대수를 아는 사람이라면 누구나 우리가 단순히 <a href="#eq-FLP_3_5_36" class="quarto-xref">식&nbsp;<span>20.37</span></a> 이라는 것을 이해한다.</p>
 </section>
