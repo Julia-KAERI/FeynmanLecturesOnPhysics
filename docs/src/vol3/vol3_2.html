@@ -608,11 +608,11 @@ window.Quarto = {
 <p>물론 기저 상태는 사용되는 필터에 따라 달라진다; 예를 들어, 세 상태 <span class="math inline">\((+T)\)</span>, <span class="math inline">\((0T)\)</span>, <span class="math inline">\((−T)\)</span> 는 하나의 기저 상태 집합이며, <span class="math inline">\((+S)\)</span>, <span class="math inline">\((0S)\)</span>, <span class="math inline">\((−S)\)</span> 역시 또 다른 집합이다. 원하는 만큼의 선택지가 존재한다.</p>
 <p>여기서 필터는 실제로 “순수” 빔을 생성할 만큼의 좋은 필터를 의미한다. 예를 들어, 우리의 슈테른-게를라흐 장치가 세 개의 빔을 충분히 분리하지 못해 마스크로 이를 깔끔하게 분리할 수 없다면 우리는 각각의 기저 상태로 분리 할 수 없다. 우리는 동일한 종류의 다른 필터에서 빔을 다시 분류할 수 있는지 여부를 확인함으로써 순수한 기저 상태를 가지고 있는지를 판단할 수 있다. 예를 들어 순수한 <span class="math inline">\((+T)\)</span> 상태가 있다면, 모든 원자는 아래 필터를 통과한다.</p>
 <p><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ T \end{array}
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ T \end{array}
 \]</span></p>
 <p>그리고 아무도 아래 필터를 통과하지 못할 것이다.</p>
 <p><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp; \\ 0 &amp; ⎮ \end{array}\right\}\\ T \end{array} \qquad \text{or}\qquad \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  ⎮ \\ 0 &amp;\end{array}\right\}\\ T \end{array}
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp; \\ - &amp; ⎮ \end{array}\right\}\\ T \end{array} \qquad \text{or}\qquad \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  ⎮ \\ - &amp;\end{array}\right\}\\ T \end{array}
 \]</span></p>
 <p><strong>기저 상태는 순수한 상태로 필터링 될 수 있는 상태이며 따라서 동일한 장치에 의한 추가 필터링은 불가능하다.</strong></p>
 <p>지금 우리가 말하고 있는 것은 다소 이상화된 상황에서만 정확히 사실임을 지적해야 한다. 실제 슈테른-게르라흐 장치에서는 슬릿에 의한 회절이 일부 원자를 서로 다른 각도에 해당하는 상태로 만들 수 있는지, 혹은 빔에 내부 상태가 서로 다른 들뜬 원자를 포함할 수 있는지 등을 고민해야 한다. 우리는 상황을 이상화하여 자기장 안에서 분리된 상태에 대해서만 이야기하고 있으며, 위치, 운동량, 내부 들뜸와 관련된 것들을 무시하고 있다. 일반적으로, 그러한 것들에 대해서도 분리된 기저 상태도 고려해야 한다. 하지만 개념을 단순하게 유지하기 위해 우리는 세 가지 상태만을 고려하고 있으며, 이는 원자가 장치를 통과하면서 파열되지 않거나 부적절하게 처리되지 않고 장치를 떠날 때 정지되는 이상적인 상황을 정확히 다루기에 충분하다.</p>
@@ -622,22 +622,22 @@ window.Quarto = {
 <h4 class="anchored" data-anchor-id="언제-기억을-잃는가"><strong>언제 기억을 잃는가?</strong></h4>
 <p>이제 본론으로 돌아가서 하나의 필터에 대한 기저 상태에서 다른 필터에 대한 기본 상태로 이동했을 때 어떤 일이 일어나는지 살펴보자. 이제 다음으로 다시 시작한다.:</p>
 <p><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ 0 &amp; ⎮ \end{array}\right\}\\ T \end{array} .
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ - &amp; ⎮ \end{array}\right\}\\ T \end{array} .
 \]</span></p>
 <p><span class="math inline">\(T\)</span> 에서 나오는 원자들은 기저 상태 <span class="math inline">\((0T)\)</span> 이며 한때 <span class="math inline">\((+S)\)</span> 상태였다는 기억이 없다. <span style="color:darkred;">어떤 사람들은 장치 <span class="math inline">\(T\)</span> 에서 원자를 세 개의 빔으로 분리했을 때 원자를 방해했기(disturbe) 때문에 <span class="math inline">\(T\)</span> 에 의한 필터링에서 이전 상태 <span class="math inline">\((+S)\)</span> 에 대한 “정보를 잃었다”고 말할 지도 모른다. 그러나 이는 사실이 아니다. 과거의 정보는 세 개의 빔으로 분리되는 것이 아니라, 삽입되는 차단 마스크에 의해 손실되었다.</span> 다음 실험 집합을 통해 확인할 수 있다.</p>
 <p><span class="math inline">\(+S\)</span> 필터를 통과하는 원자 수를 <span class="math inline">\(N\)</span> 이라고 하자. 여기에 <span class="math inline">\(0T\)</span> 필터를 적용한다면, 나오는 원자 수는 원래 수의 일부이며 이를 <span class="math inline">\(\alpha N\)</span> 이라고 할 수 있다. 여기에 또 다른 <span class="math inline">\(+S\)</span> 필터를 적용하면, 이러한 원자 중 <span class="math inline">\(\beta\)</span> 만큼만 최종단계에 도달하게 된다. 이를 다음과 같이 쓸 수 있다.</p>
 <p><span id="eq-FLP_3_5_14"><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ 0 &amp; ⎮ \end{array}\right\}\\ T \end{array} \xrightarrow{\alpha N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{\beta\alpha N}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ - &amp; ⎮ \end{array}\right\}\\ T \end{array} \xrightarrow{\alpha N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{\beta\alpha N}.
 \tag{20.14}\]</span></span></p>
 <p>세번째 장치 <span class="math inline">\(S'\)</span> 이 다른 상태, 예를 들어 <span class="math inline">\((0S)\)</span> 상태를 선택한다면, 다른 비율 <span class="math inline">\(\gamma\)</span> 만큼만 통과하게 될 것이다. <span id="eq-FLP_3_5_15"><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ 0 &amp; ⎮ \end{array}\right\}\\ T \end{array} \xrightarrow{\alpha N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{\gamma\alpha N}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  ⎮ \\ 0 &amp;   \\ - &amp; ⎮ \end{array}\right\}\\ T \end{array} \xrightarrow{\alpha N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{\gamma\alpha N}.
 \tag{20.15}\]</span></span></p>
 <p>이제 이 두 실험을 반복하면서 <span class="math inline">\(T\)</span> 의 모든 마스크를 제거해 보자. 그러면 다음과 같은 놀라운 결과가 나타난다:</p>
 <p><span id="eq-FLP_3_5_16"><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c} + \\ 0  \\ 0  \end{array}\right\}\\ T \end{array} \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{ N}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c} + \\ 0  \\ -  \end{array}\right\}\\ T \end{array} \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{ N}.
 \tag{20.16}\]</span></span></p>
 <p><span id="eq-FLP_3_5_17"><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c} +  \\ 0    \\ 0   \end{array}\right\}\\ T \end{array} \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{0}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array}  \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c} +  \\ 0    \\ -   \end{array}\right\}\\ T \end{array} \xrightarrow{N} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \xrightarrow{0}.
 \tag{20.17}\]</span></span></p>
 <p>첫 번째 경우에는 모든 원자가 <span class="math inline">\(S'\)</span> 를 통과하지만, 두 번째 경우에는 전혀 통과하지 못한다! 이는 양자역학의 위대한 법칙 중 하나이다. 자연이 이렇게 작동한다는 것은 자명한 것이 아니지만, 이 결과는 이상화된 상황에 대해 수많은 실험에서 관찰된 양자역학이다.</p>
 </section>
@@ -666,11 +666,11 @@ a = \langle +S|+T\rangle \langle +T|+S\rangle + \langle +S | 0T\rangle \langle 0
 \tag{20.21}\]</span></span></p>
 <p>마찬가지로, <span class="math inline">\(S'\)</span> 이 완전히 임의의 필터 <span class="math inline">\(R\)</span> 로 대체되는 아래와 같은 실험을 생각하자.</p>
 <p><span id="eq-FLP_3_5_22"><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c} + \\ 0 \\ 0 \end{array}\right\}\\ T \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ R \end{array}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c} + \\ 0 \\ - \end{array}\right\}\\ T \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ R \end{array}.
 \tag{20.22}\]</span></span></p>
 <p>결과는 <span class="math inline">\(T\)</span> 장치를 제외하고 우리가 단지 가지고 있었던 경우와 항상 동일하다.</p>
 <p><span id="eq-FLP_3_5_23"><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ R \end{array}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array} \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ R \end{array}.
 \tag{20.23}\]</span></span></p>
 <p>이것을 수학적으로 표현하면,</p>
 <p><span id="eq-FLP_3_5_23"><span class="math display">\[
@@ -741,7 +741,7 @@ a = \langle +S|+T\rangle \langle +T|+S\rangle + \langle +S | 0T\rangle \langle 0
 <p>앞서 배운 법칙들의 유용함을 알아보자. 예를 들어, 특정 조건(즉, 특정 방식으로 준비된 원자를 의미함)에 원자에 대해 어떤 실험에서 그 원자가 어떻게 될지를 알아본다고 하자. 공식적으로 말한다면 <span class="math inline">\(\phi\)</span> 상태의 원자에서 시작했을 때, <span class="math inline">\(\chi\)</span> 조건에서만 원자를 받아들이는 장치를 통과할 확률이 얼마나 되는지 알고자 한다. 법칙에 따르면 우리는 장치를 세 개의 복소수 <span class="math inline">\(\langle \chi|i\rangle\)</span>, 즉 각 기저 상태의 <span class="math inline">\(\chi\)</span> 조건에 대한 진폭으로 완전히 기술할 수 있으며, 원자를 장치에 넣었을 때 어떤 일이 일어날지를 세 개의 숫자 <span class="math inline">\(\langle i |\phi\rangle\)</span>, 즉 원자의 원자의 원래 상태에 있는 진폭을 세 개의 기저 상태 각각에 대해 기술함으로써 설명할 수 있다. 이것은 중요한 아이디어이다.</p>
 <p>다른 예시를 보자. <span class="math inline">\(S\)</span> 장치에서 시작해서, 그 다음에는 <span class="math inline">\(A\)</span> 라고 부를 수 있는 복잡한 잡동사니가 있으며, 그 다음에 <span class="math inline">\(R\)</span> 장치가 있다고 하자.</p>
 <p><span id="eq-FLP_3_5_28"><span class="math display">\[
-\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ 0 &amp; ⎮ \end{array}\right\}\\ S \end{array}  \begin{array}{c}\left\{\begin{array}{c} {}  \\ A  \\ {}   \end{array}\right\}\\ {} \end{array}  \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  \\ 0 &amp; ⎮ \end{array}\right\}\\ R \end{array}.
+\begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp;  \\ 0 &amp; ⎮ \\ - &amp; ⎮ \end{array}\right\}\\ S \end{array}  \begin{array}{c}\left\{\begin{array}{c} {}  \\ A  \\ {}   \end{array}\right\}\\ {} \end{array}  \begin{array}{c}\left\{\begin{array}{c@{\hspace{0pt}}c@{\hspace{0pt}}} + &amp; ⎮ \\ 0 &amp;  \\ - &amp; ⎮ \end{array}\right\}\\ R \end{array}.
 \tag{20.29}\]</span></span></p>
 <p><span class="math inline">\(A\)</span> 는 마스크, 또는 반 마스크가 있는슈테른-게를라흐 장치들의 복잡한 배열로, 특이한 각도로 배치되고 특이한 전기 및 자기장을 가진 것을 의미하며, 원칙상 거의 모든 것을 넣을 수 있다 (사고 실험!—실제로 장치를 만드는 모든 수고를 들일 필요가 없다!). 다음과 같은 문제를 생각하자: <span class="math inline">\((+S)\)</span> 상태에서 <span class="math inline">\(A\)</span> 에 진입하는 입자가 <span class="math inline">\((0R)\)</span> 상태로 <span class="math inline">\(A\)</span> 를 빠져 나와 마지막 <span class="math inline">\(R\)</span> 필터를 통과하는 진폭은 얼마인가? 그러한 진폭에 대한 일반적인 표기법은 다음과 같다.</p>
 <p><span class="math display">\[
