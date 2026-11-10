@@ -36,6 +36,7 @@ book:
 
       - src/vol3/vol3_1.qmd
       - src/vol3/vol3_2.qmd
+      - src/vol3/vol3_3.qmd
 
     - part: src/exercises/index.qmd
       chapters:

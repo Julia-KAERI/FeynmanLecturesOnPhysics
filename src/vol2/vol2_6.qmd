@@ -1228,7 +1228,6 @@ $$ {#eq-FLP_2_27_23}
 
 </div>
 
-
 </br><div class="border" style="background-color:#F2F4F4  ;padding:5px;">
 
 ::: {#exm-FLP_chaper_2_27_7}
